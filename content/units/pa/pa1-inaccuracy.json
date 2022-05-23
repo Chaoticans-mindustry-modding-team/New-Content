@@ -1,0 +1,63 @@
+{
+        "localizedName": "Inaccuracy",
+	    "description": "Fires short sapping beams at all nearby enemies.",
+        "research": {
+			"requirements": [
+			"silicon/100",
+			"spore-pod/50"
+			],
+			"parent": "dagger"
+		},
+        "speed": 3,
+        "accel": 0.04,
+        "drag": 0.01,
+        "flying": true,
+        "health": 210,
+        "armor": 1.5,
+        "engineOffset": 5.5,
+		"TargetAir": true,
+        "commandLimit": 5,
+        "circleTarget": false,
+	    "weapons": [
+		{
+    "name": "mount-purple-weapon",
+    "shootCone": 15,
+    "mirror": true,
+	"alternate": true,
+    "top": false,
+	"rotate": true,
+	"rotateSpeed": 2.5,
+    "x": 2,
+    "y": -1,
+    "reload": 45,
+    "shootSound": "sap",
+	"shots": 3,
+	"spacing": 3.5,
+    "recoil": 2.5,
+    "bullet": {
+    "type": "SapBulletType",
+	"hitEffect": {
+		"type": "ParticleEffect"
+		"particles": 7,
+		"sizeFrom": 2,
+		"sizeTo": 0,
+		"length": 20
+		"cone": 30,
+		"colorFrom": "efa4faff",
+		"colorTo": "bf92f9ff",
+	}
+	"color": "bf92f9ff",
+    "damage": 9,
+	"knockback": -1,
+	"impact": true,
+	"keepVelocity": "false",
+    "speed": 0.01,
+	"pierce": true,
+    "lifetime": 45,
+	"length": 100,
+	"status": "sapped",
+	"statusDuration": 100,
+			}
+		}
+	]
+}

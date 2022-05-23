@@ -1,0 +1,46 @@
+{
+"localizedName": "Reclusa",
+"research": {
+	"parent": "dagger",
+	"requirements": [
+	"silicon/120",
+	"titanium/70"
+	]
+}
+"description": "Fires sapping arcs at all nearby enemies.",
+"type": "mech",
+"armor": 1,
+"commandLimit": 6,
+"speed": 0.5,
+"flying": false,
+"targetAir": true,
+"health": 345,
+"immunities": [
+		"burning"
+		],
+"weapons": [
+  {
+  "name": "reclusa-weapon",
+  "mirror": true,
+  "x": 4,
+  "y": 1,
+  "reload": 20,
+  "recoil": 2,
+  "top": false,
+  "shots": 3,
+  "shootSound": "spark",
+  "ejectEffect": "none",
+  "shake": 3,
+  "bullet": {
+            "type": "LightningBulletType",
+            "lightningColor": "BF92F9",
+			"damage": 6,
+			"lightning": 0,
+            "lightningLength": 6,
+            "lightningLengthRand": 1,
+			"status": "sapped",
+			"statusDuration": 100
+     }
+  }
+]
+}

@@ -1,0 +1,105 @@
+{
+        "localizedName": "Ghoul",
+	"description": "[gray]The upgraded wraith, its equipped with upgraded slowing shotguns and dark energy bolters.",
+        "research": "flare",
+        "speed": 3,
+        "accel": 0.04,
+        "drag": 0.01,
+        "flying": true,
+        "health": 140,
+        "armor": 3,
+        "engineOffset": 5.5,
+		"range": 120
+		"TargetAir": true,
+        "commandLimit": 8,
+        "circleTarget": false,
+	    "weapons": [
+		{
+    "name": "ghoul-upgraded-blaster",
+    "shootCone": 15,
+    "mirror": true,
+	"alternate": true,
+    "top": true,
+    "x": 1,
+    "y": 1,
+    "reload": 35,
+    "shootSound": "shotgun",
+    "recoil": 2.5,
+	"shots": 5,
+	"shake": 3.5,
+	"shotDelay": 0,
+	"spacing": 5.5,
+    "bullet": {
+    "type": "ShrapnelBulletType",
+    "buildingDamageMultiplier": 1.5,
+    "shootEffect": {
+		"type": "WaveEffect",
+		"colorFrom": "ffffffff",
+		"colorTo": "000000ff",
+		"sizeTo": 15.5
+	},
+    "damage": 25,
+    "speed": 0.01,
+	"pierce": true,
+    "frontColor": "F3E979FF",
+    "backColor": "ECD36FFF",
+    "trailColor": "ECD36FFF",
+    "lifetime": 45,
+	"serrations": 12,
+	"length": 120,
+	"width": 20,
+	"status": "slow",
+	"statusDuration": 30,
+	"toColor": "000000ff"			
+			}
+		}
+		{
+    "name": "dark-bolter",
+    "shootCone": 15,
+    "mirror": true,
+	"alternate": true,
+    "top": true
+	"rotate": true,
+	"rotateSpeed": 2.5,
+    "x": 5,
+    "y": 1,
+    "reload": 10,
+    "shootSound": "sap",
+    "recoil": 0.5,
+    "bullet": {
+    "type": "LaserBoltBulletType",
+    "buildingDamageMultiplier": 1.15,
+    "shootEffect": {
+		"type": "WaveEffect",
+		"colorFrom": "ffffffff",
+		"colorTo": "000000ff",
+		"sizeTo": 15.5,
+	},
+    "damage": 10,
+    "speed": 6.5,
+	"frontColor": "F3E979FF",
+    "backColor": "ECD36FFF",
+    "trailColor": "ECD36FFF",
+    "lifetime": 70,
+	"hitEffect": {
+		"type": "WaveEffect",
+		"colorFrom": "ffffffff",
+		"colorTo": "000000ff",
+		"sizeTo": 3.5,
+	},
+	"despawnEffect": {
+		"type": "WaveEffect",
+		"colorFrom": "ffffffff",
+		"colorTo": "000000ff",
+		"sizeTo": 3.5,
+	},
+	"status": "slow",
+	"width": 1.0,
+	"height": 4.0,
+	"statusDuration": 10,
+    "frontColor": "252525ff",
+    "backColor": "000000ff",	
+			}
+		}
+	]
+}

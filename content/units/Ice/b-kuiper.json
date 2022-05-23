@@ -1,0 +1,193 @@
+{
+    "localizedName": "Snowstorm",
+    "description": "[sky] A strong freezer unit. it has snowball shooters it fires 1 snowball and many snowballs at foes.",
+    "type": "legs",
+    "groundLayer": 75,
+    "research": "b-galileo",
+	"speed": 0.34,
+	"hitSize": 21,
+	"health": 2600,
+	"armor": 9,
+	"faceTarget": true,
+	"drag": 0.2,
+	"range": 180,
+	"flying": false,
+	"targetAir": true,
+	"rotateSpeed": 2.5,
+	"legCount": 4,
+    "legMoveSpace": 1,
+    "legLength": 15,
+    "legExtension": -10,
+    "legBaseOffset": 9,
+    "legTrns": 0.9,
+    "landShake": 0.8,
+    "legSpeed": 0.2,
+    "legLengthScl": 0.96,
+    "rippleScale": 2,
+    "legSplashDamage": 22,
+    "legSplashRange": 30,
+	"visualElevation": 0.78,
+	"allowLegStep": true,
+	"hovering": true,
+	"immunities": [
+		"burning", 
+		"melting",
+		"freezing"
+	],
+	"weapons": [
+	    {
+    "name": "laserbolt",
+    "reload": 65,
+    "mirror": true,
+	"alternade": true,
+    "x": 7,
+    "y": -4,
+    "shootY": 3,
+    "recoil": 1.5,
+    "shake": 1,
+    "rotate": true,
+    "shootSound": "artillery",
+    "shootCone": 45,
+			"bullet": {
+              "type": "BasicBulletType",
+              "width": 10,
+			  "height": 7.5,
+              "damage": 20,
+			  "speed": 4.5,
+			  "lifetime": 30,
+			  "frontColor": "00ffe6ff",
+			  "backColor": "00eed5ff",
+			  "hitSound": "explosion"
+			  "hitEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+				  },
+				  "despawnEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+				  },
+			  "fragBullets": 5,
+			  "fragBullet": {
+				  "damage": 7,
+				  "lifetime": 5,
+				  "width": 7.5,
+				  "height": 5
+				  "hitEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 1,
+					  "sizeTo": 0.2
+				  },
+				  "despawnEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 1,
+					  "sizeTo": 0.2
+				  },
+				  "splashDamageRadius": 10,
+				  "splashDamage": 5,
+				  "status": "freezing",
+				  "statusDuration": 160,
+				  "frontColor": "00ffe6ff",
+				  "backColor": "00eed5ff",
+				  "speed": 5,
+				  "hitEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 2,
+					  "sizeTo": 0.2
+				  },
+				  "despawnEffect": {
+					"type": "ParticleEffect",
+					"colorTo": "00ffe6ff",
+					"sizeFrom": 2,
+					"sizeTo": 0.2  
+				  }
+				  
+			  },
+			}
+		},
+		{
+    "name": "zaper",
+    "reload": 125,
+    "mirror": true,
+	"alternade": true,
+    "x": 11,
+    "y": -7.5,
+    "shootY": 3,
+    "recoil": 1.5,
+	"shots": 5,
+	"shotDelay": 1.1,
+    "shake": 1,
+    "rotate": false,
+    "shootSound": "bang",
+    "shootCone": 45,
+			"bullet": {
+              "type": "BasicBulletType",
+              "width": 10,
+			  "height": 7.5,
+              "damage": 20,
+			  "speed": 4.5,
+			  "lifetime": 30,
+			  "frontColor": "00ffe6ff",
+			  "backColor": "00eed5ff",
+			  "hitSound": "explosion"
+			  "hitEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+				  },
+				  "despawnEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+				  },
+			  "fragBullets": 5,
+			  "fragBullet": {
+				  "damage": 7,
+				  "lifetime": 5,
+				  "width": 7.5,
+				  "height": 5
+				  "hitEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 1,
+					  "sizeTo": 0.2
+				  },
+				  "despawnEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 1,
+					  "sizeTo": 0.2
+				  },
+				  "splashDamageRadius": 10,
+				  "splashDamage": 5,
+				  "status": "freezing",
+				  "statusDuration": 160,
+				  "frontColor": "00ffe6ff",
+				  "backColor": "00eed5ff",
+				  "speed": 5,
+				  "hitEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 2,
+					  "sizeTo": 0.2
+				  },
+				  "despawnEffect": {
+					"type": "ParticleEffect",
+					"colorTo": "00ffe6ff",
+					"sizeFrom": 2,
+					"sizeTo": 0.2  
+				  }
+				  
+			  },
+			}
+		}
+	]
+}

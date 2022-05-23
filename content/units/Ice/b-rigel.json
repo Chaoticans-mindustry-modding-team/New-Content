@@ -1,0 +1,218 @@
+{
+    "localizedName": "Iceflood",
+    "description": "[sky]A powerful snow unit it has gunners that fire iceballs rapidly and it also has cold plasma missile launchers.",
+    "research": "ravthian-reconstructor",
+    "details": "Show them what the power of a far away star can do",
+    "groundLayer": 75,
+    "singleTarget": true,
+	"lightRadius": 200,
+    "type": "legs",
+	"speed": 0.30,
+	"hitSize": 52,
+	"health": 557000,
+	"armor": 34,
+	"drag": 0.2,
+	"range": 380,
+	"flying": false,
+	"targetAir": true,
+	"rotateSpeed": 1.5,
+	"legCount": 6,
+    "legMoveSpace": 0.6,
+    "legLength": 27.8,
+    "legBaseOffset": 14,
+    "legTrns": 0.56,
+    "landShake": 2.4,
+    "legSpeed": 0.3,
+    "rippleScale": 3,
+    "legSplashDamage": 86,
+    "legSplashRange": 30,
+	"visualElevation": 0.75,
+	"allowLegStep": true,
+	"hovering": true,
+	"immunities": [
+		"burning", 
+		"melting",
+		"freezing"
+	],
+	"weapons": [
+	{
+		"name": "cold-plasma-shotgun",
+		"reload": 5,
+		"x": 10,
+		"y": -7,
+		"mirror": true,
+		"alternate": false,
+		"inaccuracy": 10,
+		"shootSound": "shootSnap"
+		"shots": 3,
+		"shotDelay": 1,
+		"bullet": {
+			"damage": 25,
+			"frontColor": "ccccffff",
+			"backColor": "aaaaddff",
+			"trailParam": 5,
+			"width": 16,
+			"height": 14
+			"trailColor": "ccccffff",
+			"trailWidth": 4.5,
+			"trailLength": 3,
+			"speed": 5,
+			"lifetime": 150,
+			"hitEffect": {
+					  "type": "ParticleEffect",
+					  "colorTo": "ccccffff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+		    },
+			"despawnEffect": {
+					  "type": "ParticleEffect",
+					  "colorTo": "ccccffff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+	        },
+			"status": "freezing",
+			"statusDuration": 500,
+		}
+
+	},
+	{
+		"name": "cold-plasma-shotgun",
+		"reload": 10,
+		"x": 15,
+		"y": -12,
+		"mirror": true,
+		"alternate": true,
+		"inaccuracy": 10,
+		"shootSound": "shootSnap"
+		"shots": 3,
+		"shotDelay": 1,
+		"bullet": {
+			"damage": 25,
+			"frontColor": "ccccffff",
+			"backColor": "aaaaddff",
+			"trailParam": 5,
+			"width": 16,
+			"height": 14
+			"trailColor": "ccccffff",
+			"trailWidth": 4.5,
+			"trailLength": 8,
+			"speed": 10,
+			"lifetime": 150,
+			"hitEffect": {
+					  "type": "ParticleEffect",
+					  "colorTo": "ccccffff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+		    },
+			"despawnEffect": {
+					  "type": "ParticleEffect",
+					  "colorTo": "ccccffff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+	        },
+			"status": "freezing",
+			"statusDuration": 500,
+		}
+	}
+		{
+		"name": "zaper",
+		"reload": 120,
+		"x": 21,
+		"y": -3,
+		"mirror": true,
+		"alternate": true,
+		"inaccuracy": 5,
+		"shootSound": "shootSnap"
+		"shots": 10,
+		"shotDelay": 1,
+		"bullet": {
+			"damage": 50,
+			"frontColor": "ccccffff",
+			"backColor": "aaaaddff",
+			"trailParam": 5,
+			"width": 16,
+			"height": 14
+			"trailColor": "ccccffff",
+			"trailWidth": 4.5,
+			"trailLength": 3,
+			"speed": 5,
+			"lifetime": 150,
+			"hitEffect": {
+					  "type": "ParticleEffect",
+					  "colorTo": "ccccffff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+		    },
+			"despawnEffect": {
+					  "type": "ParticleEffect",
+					  "colorTo": "ccccffff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+	        },
+			"status": "freezing",
+			"statusDuration": 500,
+		}
+
+	},
+	{
+		"name": "cold-plasma-artillery",
+		"reload": 20,
+		"x": 27,
+		"y": -7,
+		"mirror": true,
+		"alternate": false,
+		"inaccuracy": 25,
+		"xRand": 5,
+		"shootSound": "missile"
+		"shots": 8,
+		"shotDelay": 1,
+		"bullet": {
+			"damage": 50,
+			"type": "MissileBulletType"
+			"hitSound": "explosion",
+			"frontColor": "ccccffff",
+			"backColor": "aaaaddff",
+			"trailParam": 5,
+			"width": 8,
+			"height": 6,
+			"sprite": "missile",
+			"weaveScale": 5,
+			"trailChance": 0,
+			"weaveMag": 3,
+			"homingPower": 0.2,
+			"homingRange": 75,
+			"splashDamageRadius": 80,
+			"splashDamage": 75,
+			"trailColor": "ccccffff",
+			"trailWidth": 2.25,
+			"trailLength": 3,
+			"speed": 5,
+			"lifetime": 85,
+			"hitEffect": {
+					  "type": "ParticleEffect",
+					  "colorTo": "ccccffff",
+					  "sizeFrom": 7,
+					  "sizeTo": 0.2
+		    },
+			"despawnEffect": {
+					  "type": "ParticleEffect",
+					  "colorTo": "ccccffff",
+					  "sizeFrom": 7,
+					  "sizeTo": 0.2
+	        },
+			"status": "blasted",
+			"statusDuration": 500,
+		}
+
+	}
+     ],
+    "abilities": [
+        {
+            "type": "mindustry.entities.abilities.ForceFieldAbility",
+            "radius": 100,
+            "regen": 8,
+            "max": 10000,
+            "cooldown": 360
+            }
+        ]
+}

@@ -1,0 +1,140 @@
+{
+"localizedName": "Sterile",
+"research": {
+	"parent": "pg1-reclusa",
+	"requirements": [
+	"silicon/350",
+	"titanium/90",
+	"lead/120"
+	]
+}
+"description": "Fires Large energy bombs at all nearby enemies.",
+"type": "mech",
+"armor": 2,
+"commandLimit": 6,
+"speed": 0.5,
+"flying": false,
+"targetAir": true,
+"health": 645,
+"immunities": [
+		"burning"
+		],
+"weapons": [
+  {
+  "name": "bomblauncher",
+  "mirror": true,
+  "x": 5,
+  "y": 1,
+  "reload": 65,
+  "recoil": 2,
+  "top": false,
+  "inaccuracy": 5,
+  "shots": 2
+  "shotDelay": 1
+  "shootSound": "laser",
+  "ejectEffect": "none",
+  "shake": 4.1,
+  "bullet": {
+            "type": "BasicBulletType",
+            "sprite": "circle-bullet",
+			"frontColor": "BF92F9FF",
+			"backColor": "9D70DDFF",
+			"damage": 14,
+			"speed": 3,
+			"shrinkX": 0,
+			"shrinkY": 0,
+			"width": 10,
+			"height": 10,
+			"splashDamageRadius": 32,
+			"splashDamage": 35,
+			"trailColor": "9D70DDFF",
+			"trailLength": 7,
+			"trailWidth":4
+			"scaleVelocity": true,
+			"hitSound": "plasmaboom",
+			"despawnSound": "plasmaBoom",
+			"hitShake": 3.9,
+			"despawnShake": 3.9,
+			"status": "sapped",
+			"statusDuration": 100
+			"lightning": 3,
+			"lightningColor": "9D70DDFF",
+			"lightningDamage": 5,
+			"lightningLength": 8,
+			"lightningLengthRand": 2,
+			"shootEffect": {
+				"type": "ParticleEffect",
+				"particles": 5,
+				"line": true,
+				"colorFrom": "BF92F9FF",
+				"colorTo": "BF92F9FF",
+				"length": 13,
+				"interp": "circleOut",
+				"sizeInterp": "swingIn",
+				"lifetime": 50,
+				"sizeFrom": 2
+				"followParent": false,
+			}
+			"hitEffect": {
+				"type": "MultiEffect",
+				"effects": [
+				{
+					"type": "ExplosionEffect",
+				    "waveRad": 41.3,
+					"waveColor": "BF92F9FF",
+					"sparkColor": "BF92F9FF",
+					"smokes": 0,
+					"sparks": 0
+				},
+				{
+				    "type": "ParticleEffect",
+				    "particles": 15,
+				    "line": true,
+				    "colorFrom": "BF92F9FF",
+				    "colorTo": "BF92F9FF",
+				    "length": 45,
+				    "interp": "circleOut",
+					"sizeInterp": "swingIn",
+				    "lifetime": 50,
+				    "sizeFrom": 5
+			    },
+				{
+				    "type": "ParticleEffect",
+				    "particles": 9,
+				    "colorFrom": "BF92F988",
+				    "colorTo": "BF92F988",
+				    "length": 37.5,
+				    "interp": "circleOut",
+					"sizeInterp": "swingIn",
+				    "lifetime": 100,
+				    "sizeFrom": 5
+			},
+			{
+				    "type": "ParticleEffect",
+				    "particles": 9,
+				    "colorFrom": "BF92F988",
+				    "colorTo": "BF92F988",
+				    "length": 37.5,
+				    "interp": "circleOut",
+					"sizeInterp": "swingIn",
+				    "lifetime": 82,
+				    "sizeFrom": 3
+			},
+			{
+				    "type": "ParticleEffect",
+				    "particles": 9,
+				    "colorFrom": "BF92F988",
+				    "colorTo": "BF92F988",
+				    "length": 37.5,
+				    "interp": "circleOut",
+					"sizeInterp": "swingIn",
+				    "lifetime": 114,
+				    "sizeFrom": 7
+			},
+				
+				]
+			}
+     }
+  }
+]
+}

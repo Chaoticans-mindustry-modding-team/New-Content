@@ -1,0 +1,69 @@
+{
+        "localizedName": "Circulation",
+	"description": "An Armored unit created by unknown civilization. Fires basic laser bolts at all nearby enemies.",
+        "research": {
+			"requirements": [
+			"silicon/100",
+			"titanium/50"
+			],
+			"parent": "dagger"
+		},
+        "speed": 2.32,
+        "accel": 0.07,
+        "drag": 0.06,
+		"outlineColor": "28292EFF",
+        "flying": true,
+        "health": 210,
+        "armor": 2,
+        "engineOffset": 5.5,
+		"TargetAir": true,
+        "commandLimit": 8,
+        "circleTarget": false,
+	    "weapons": [
+		{
+    "name": "red-laser-weapon",
+    "shootCone": 15,
+    "mirror": false,
+	"alternate": false,
+    "top": false,
+	"rotate": false,
+    "y": 1,
+	"x": 0,
+    "reload": 15,
+    "shootSound": "laser",
+	"shootEffect": "shootBig",
+	"ejectEffect": "none",
+	"smokeEffect": "none",
+    "recoil": 2.5,
+    "bullet": {
+    "type": "LaserBoltBulletType",
+	"frontColor": "FF6666FF",
+	"backColor": "DD4444FF",
+	"lifetime": 16,
+	"speed": 3,
+	"damage": 7,
+	"shootEffect": "shootBig",
+	"hitEffect": {
+	    		"type": "WaveEffect"	
+                "sizeTo": 6,
+				"strokeFrom": 3,
+				"strokeTo": 2.7
+        		"colorFrom": "FF66666FF",
+        		"colorTo": "FF6666FF",
+        		"lifetime": 8,
+			},
+    "despawnEffect": {
+	    		"type": "WaveEffect"	
+                "sizeTo": 6,
+				"strokeFrom": 3,
+				"strokeTo": 2.7
+        		"colorFrom": "FF66666FF",
+        		"colorTo": "FF6666FF",
+        		"lifetime": 8,
+        		"interp": "circleOut",
+			}
+			
+		}
+		}
+	]
+}

@@ -1,0 +1,69 @@
+{
+    "localizedName": "Voyager",
+    "description": "[blue]The Support core unit. it will has a very weak flash feild. it regens very fast but has 1 hp. it destroys all projectiles and regens quickly. its weakness is lasers.",
+    "type": "legs",
+	"speed": 1.2,
+	"hitSize": 13,
+	"health": 1160,
+	"isCounted": false,
+    "mineSpeed": 12,
+    "buildSpeed": 5,
+    "mineTier": 5,
+    "itemCapacity": 110,
+	"armor": 8,
+	"faceTarget": true,
+	"range": 180,
+	"flying": false,
+	"targetAir": true,
+	"rotateSpeed": 3,
+    "legTrns": 0.01,
+	"legCount": 100,
+	"legMoveSpace": 1.2,
+	"legLength": 1,
+	"visualElevation": 03,
+	"allowLegStep": true,
+	"hovering": true,
+	"immunities": [
+		"burning", 
+		"melting",
+		"freezing"
+	],
+	"weapons": [
+	    {
+    "name": "laserbolt",
+    "reload": 0.2,
+    "alternate": true,
+    "mirror": true,
+    "x": 6,
+    "y": -1.5,
+    "shootY": 3,
+    "recoil": 1.5,
+    "shake": 1,
+    "rotate": true,
+    "shootSound": "laser",
+    "rotateSpeed": 10,
+    "shootCone": 45,
+			"bullet": {
+              "type": "LaserBulletType",
+              "length": 180,
+              "width": 10,
+              "damage": 1,
+              "hitColor": "79F2EEFF",
+              "shootEffect": "lightningShoot",
+              "colors":["74C2E8FF", "79F2EEFF", "FFFFFF"],
+              "sideAngle": 25,
+              "sideLength": 32,
+              "sideWidth": 1
+			}
+		}
+     ],
+    "abilities": [
+        {
+            "type": "mindustry.entities.abilities.ForceFieldAbility",
+            "radius": 20,
+            "regen": 1,
+            "max": 30,
+            "cooldown": 0
+            }
+        ]
+}

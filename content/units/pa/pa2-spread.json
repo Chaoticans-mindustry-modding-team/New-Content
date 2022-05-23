@@ -1,0 +1,67 @@
+{
+        "localizedName": "Spread",
+	"description": "Fires purple shells behind itself.",
+        "research": {
+			"requirements": [
+			"silicon/25",
+			"spore-pod/15",
+			"titanium/30"
+			],
+			"parent": "dagger"
+		},
+        "speed": 2.1,
+        "accel": 0.035,
+        "drag": 0.03,
+        "flying": true,
+        "health": 455,
+        "armor": 2.75,
+        "engineOffset": 5.5,
+		"TargetAir": true,
+        "commandLimit": 8,
+        "circleTarget": true,
+	    "weapons": [
+		{
+    "name": "backfire-weapon",
+    "shootCone": 360,
+    "mirror": true,
+	"alternate": true,
+    "top": false,
+    "x": 6.5,
+    "y": 0,
+    "reload": 30,
+    "shootSound": "bang",
+    "recoil": -2.5,
+    "bullet": {
+    "type": "BasicBulletType",
+	"hitEffect": {
+		"type": "ExplosionEffect",
+        "waveColor": "bf92f9ff",
+		"sparkColor": "bf92f9ff",
+		"smokes": 8,
+	}
+	"frontColor": "bf92f9ff",
+	"backColor": "ae81e8ee",
+    "damage": 12,
+	"keepVelocity": "false",
+    "speed": -2,
+	"splashDamageRadius": 30,
+	"splashDamage": 10,
+	"width": 12,
+	"height": 10,
+	"trailColor": "ae81e8ee",
+	"trailWidth": 3,
+	"trailLength": 5,
+	"hitSound": "exlosion",
+	"lifetime": 45,
+	"status": "sapped",
+	"statusDuration": 100,
+	"lightning": 3,
+	"lightningColor": "bf92f9ff",
+	"lightningDamage": 5,
+	"lightningLength": 2,
+	"lightningLengthRand": 3,
+	"lightningCone": 30
+			}
+		}
+	]
+}

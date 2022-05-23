@@ -1,0 +1,380 @@
+{
+    "localizedName": "Avalanche",
+    "description": "[sky]The Avalanche can spray extreme blizzards and snowballs, and it can fire a devastating wave of powerful snowballs.",
+    "research": "b-kuiper",
+    "groundLayer": 75,
+    "type": "legs",
+	"speed": 0.37,
+	"hitSize": 26,
+	"health": 12000,
+	"faceTarget": true,
+	"armor": 12,
+	"drag": 0.2,
+	"range": 180,
+	"flying": false,
+	"targetAir": true,
+	"rotateSpeed": 1.5,
+	"legCount": 4,
+    "legMoveSpace": 1.5,
+    "legLength": 14,
+    "legBaseOffset": 12,
+    "legTrns": 0.58,
+    "landShake": 0.8,
+    "legSpeed": 0.2,
+    "rippleScale": 2.5,
+    "legSplashDamage": 36,
+    "legSplashRange": 30,
+	"visualElevation": 0.75,
+	"allowLegStep": true,
+	"hovering": true,
+	"immunities": [
+		"burning", 
+		"melting",
+		"freezing"
+	],
+	"weapons": [
+ {
+    "name": "blue-EB",
+    "reload": 10,
+    "mirror": true,
+	"alternade": true,
+    "x": 10,
+    "y": 1,
+	"inaccuracy": 30,
+	"shots": 10,
+	"shotDelay": 0.1,
+    "shootY": 3,
+    "recoil": 0.5,
+    "rotate": true,
+    "shootSound": "flame",
+    "shootCone": 45,
+			"bullet": {
+              "type": "BasicBulletType",
+              "collidesAir": true,
+              "speed": 1,
+			  "pierce": true,
+              "damage": 15,
+              "width": 0.1,
+              "height": 0.1,
+			  "status": "unmoving",
+			  "statusDuration": 300,
+			  "shootEffect": {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "length": 50,
+              "lifetime": 58,
+              "interp": "circleOut",
+               "colorFrom": "ffffffff",
+               "colorTo": "ffffffff",
+                "cone": 75
+                               },
+			  "incendAmount": 0,
+			  "incendChance": 0,
+			  "incendSpread": 0,
+			  "makeFire": "false",
+			  "lifetime": 30,
+			  "frontColor": "ffffffff",
+			  "backColor": "00eed5ff",
+			  "hitSound": "explosion"
+			  "hitEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+				  },
+				  "despawnEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+				  },
+			}
+		},
+		{
+    "name": "blue-EB",
+    "reload": 15,
+    "mirror": true,
+	"alternade": true,
+    "x": 17,
+    "y": -2,
+	"inaccuracy": 30,
+	"shots": 10,
+	"shotDelay": 0.1,
+    "shootY": 3,
+    "recoil": 0.5,
+    "rotate": true,
+    "shootSound": "flame",
+    "shootCone": 45,
+			"bullet": {
+              "type": "BasicBulletType",
+              "collidesAir": true,
+              "speed": 1,
+			  "pierce": true,
+              "damage": 15,
+              "width": 0.1,
+              "height": 0.1,
+			  "status": "unmoving",
+			  "statusDuration": 300,
+			  "shootEffect": {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "length": 50,
+              "lifetime": 58,
+              "interp": "circleOut",
+               "colorFrom": "ffffffff",
+               "colorTo": "ffffffff",
+                "cone": 75
+                               },
+			  "incendAmount": 0,
+			  "incendChance": 0,
+			  "incendSpread": 0,
+			  "makeFire": "false",
+			  "lifetime": 30,
+			  "frontColor": "ffffffff",
+			  "backColor": "00eed5ff",
+			  "hitSound": "explosion"
+			  "hitEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+				  },
+				  "despawnEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+				  },
+			}
+		},
+		{
+    "name": "cold-plasma-shotgun",
+    "reload": 30,
+    "mirror": true,
+	"alternade": true,
+    "x": 5,
+    "y": -4,
+    "shootY": 3,
+    "recoil": 1.5,
+	"inaccuracy": 10
+	"shots": 2,
+	"shotDelay": 0.5,
+    "shake": 1,
+    "rotate": false,
+    "shootSound": "artillery",
+    "shootCone": 45,
+			"bullet": {
+              "type": "BasicBulletType",
+              "width": 10,
+			  "height": 7.5,
+              "damage": 20,
+			  "speed": 4.5,
+			  "lifetime": 30,
+			  "frontColor": "00ffe6ff",
+			  "backColor": "00eed5ff",
+			  "hitSound": "explosion"
+			  "hitEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+				  },
+				  "despawnEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+				  },
+			  "fragBullets": 5,
+			  "fragBullet": {
+				  "damage": 7,
+				  "lifetime": 5,
+				  "width": 7.5,
+				  "height": 5
+				  "hitEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 1,
+					  "sizeTo": 0.2
+				  },
+				  "despawnEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 1,
+					  "sizeTo": 0.2
+				  },
+				  "splashDamageRadius": 10,
+				  "splashDamage": 5,
+				  "status": "freezing",
+				  "statusDuration": 160,
+				  "frontColor": "00ffe6ff",
+				  "backColor": "00eed5ff",
+				  "speed": 5,
+				  "hitEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 2,
+					  "sizeTo": 0.2
+				  },
+				  "despawnEffect": {
+					"type": "ParticleEffect",
+					"colorTo": "00ffe6ff",
+					"sizeFrom": 2,
+					"sizeTo": 0.2  
+				  }
+				  
+			  },
+			}
+		},
+		{
+    "name": "blue-EB",
+    "reload": 10,
+    "mirror": true,
+	"alternade": true,
+    "x": 10,
+    "y": 1,
+	"inaccuracy": 30,
+	"shots": 10,
+	"shotDelay": 0.1,
+    "shootY": 3,
+    "recoil": 0.5,
+    "rotate": true,
+    "shootSound": "flame",
+    "shootCone": 45,
+			"bullet": {
+              "type": "BasicBulletType",
+              "collidesAir": true,
+              "speed": 1,
+			  "pierce": true,
+              "damage": 15,
+              "width": 0.1,
+              "height": 0.1,
+			  "status": "unmoving",
+			  "statusDuration": 300,
+			  "shootEffect": {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "length": 50,
+              "lifetime": 58,
+              "interp": "circleOut",
+               "colorFrom": "ffffffff",
+               "colorTo": "ffffffff",
+                "cone": 75
+                               },
+			  "incendAmount": 0,
+			  "incendChance": 0,
+			  "incendSpread": 0,
+			  "makeFire": "false",
+			  "lifetime": 30,
+			  "frontColor": "ffffffff",
+			  "backColor": "00eed5ff",
+			  "hitSound": "explosion"
+			  "hitEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+				  },
+				  "despawnEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+				  },
+			}
+		},
+		{
+    "name": "avalache-weapon",
+    "reload": 300,
+    "mirror": true,
+	"alternade": true,
+    "x": 17,
+    "y": -2,
+	"inaccuracy": 5,
+	"shots": 35,
+	"shotDelay": 0.1,
+    "shootY": 3,
+    "recoil": 0.5,
+    "rotate": true,
+    "shootSound": "bang",
+    "shootCone": 45,
+			"bullet": {
+              "type": "BasicBulletType",
+              "width": 10,
+			  "height": 7.5,
+              "damage": 50,
+			  "speed": 4.5,
+			  "lifetime": 30,
+			  "frontColor": "00ffe6ff",
+			  "backColor": "00eed5ff",
+			  "hitSound": "explosion"
+			  "hitEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+				  },
+				  "despawnEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 3,
+					  "sizeTo": 0.2
+				  },
+			  "fragBullets": 5,
+			  "fragBullet": {
+				  "damage": 7,
+				  "lifetime": 5,
+				  "width": 7.5,
+				  "height": 5
+				  "hitEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 1,
+					  "sizeTo": 0.2
+				  },
+				  "despawnEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 1,
+					  "sizeTo": 0.2
+				  },
+				  "splashDamageRadius": 10,
+				  "splashDamage": 5,
+				  "status": "freezing",
+				  "statusDuration": 160,
+				  "frontColor": "00ffe6ff",
+				  "backColor": "00eed5ff",
+				  "speed": 5,
+				  "hitEffect":{
+					  "type": "ParticleEffect",
+					  "colorTo": "00ffe6ff",
+					  "sizeFrom": 2,
+					  "sizeTo": 0.2
+				  },
+				  "despawnEffect": {
+					"type": "ParticleEffect",
+					"colorTo": "00ffe6ff",
+					"sizeFrom": 2,
+					"sizeTo": 0.2  
+				  }
+				  
+			  },
+			}
+		},
+     ],
+    "abilities": [
+        {
+            "type": "mindustry.entities.abilities.ForceFieldAbility",
+            "radius": 60,
+            "regen": 5,
+            "max": 2500,
+            "cooldown": 220
+            }
+    ]
+}

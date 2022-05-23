@@ -1,0 +1,65 @@
+"localizedName": "Staff"
+"description": "A Prototype created by Dagger Inc. it is used to invade small bases it can fire missiles and blasts of piercing flak"
+"details": "its a failure, me: i know right its terrible XP)"
+"health": 160
+"speed": 1.01
+"drag": 0.13
+"accel": 0.5
+"type": "mech"
+"hitSize": 7.5
+"rotateShooting": true
+"commandLimit": 8
+"omniMovement": true
+"singleTarget": false
+"rotateSpeed": 5
+"trailLength": 15
+"weapons": [
+ {
+ "name": "mount-artillery"
+ "x": 7.5
+ "y": 0
+ "top": true
+ "rotate": true
+ "alternate": true
+ "rotateSpeed": 1
+ "height": 25
+ "exposionRadius": 50
+ "shootSound": "missile"
+ "width": 25
+ "reload": 10
+ "ejectEffect": "casing1"
+ "bullet": "missileExplosive"
+ },
+ {
+ "name": "mount-weapon"
+ "x": 3.5
+ "y": 0
+ "inaccuracy": 6
+ "shootCone": 25
+ "top": true
+ "rotate": true
+ "alternate": true
+ "rotateSpeed": 2
+ "height": 25
+ "exposionRadius": 50
+ "shootSound": "bang"
+ "width": 25
+ "reload": 10
+ "shots": 2
+ "ejectEffect": "casing1"
+ "bullet": {
+	 "damage": 2
+	 "width": 7.5
+	 "height": 6.5
+	 "speed": 5
+	 "splashDamageRadius": 30
+	 "splashDamage": 40
+	 "pierceCap": 2
+	 "hitEffect": "blastExplosion"
+	 "hitSound": "boom"
+ }
+ 
+ }
+ ]
+  
+ 

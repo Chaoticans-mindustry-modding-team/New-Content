@@ -1,0 +1,61 @@
+{
+        "localizedName": "Divinus",
+    	"description": "[gold] Fires a Eletricity Aura at anything that comes near",
+        "speed": 2.3,
+     	"isCounted": false,
+        "mineSpeed": 6,
+        "buildSpeed": 1.8,
+        "mineTier": 4,
+        "itemCapacity": 110,
+        "accel": 0.03,
+        "drag": 0.02,
+        "flying": true,
+        "health": 1280,
+        "hitSize": 13,
+        "armor": 6,
+        "engineOffset": 8.5,
+        "range": 140,
+        "targetAir": true,
+        "commandLimit": 18,
+        "faceTarget": false,
+	    "weapons": [
+	   {
+  "name": "surge-bolter",
+    "shootCone": 15,
+    "mirror": true,
+    "alternate": false,
+    "x":5,
+    "y": 7.75,
+    "reload": 2,
+	"rotate": true
+	"rotateSpeed": 4
+    "recoil": 0.5,
+	"top": false
+    "shootSound": "flame",
+    "bullet": {
+    "shootEffect": "shootHealYellow",
+    "hitEffect": "shootHealYellow",
+    "trailEffect": "shootHealYellow",
+    "despawnEffect": "shootHealYellow",
+    "width": 3,
+    "height": 3,
+    "lightning": 200,
+    "lightningDamage": 3,
+    "lightningLength": 1,
+    "lightningCone": 0,
+    "lightningLengthRand":5,
+    "homingRange": 100,
+    "homingPower": 1,
+    "homingDelay": 0,
+    "type": "BasicBulletType",
+    "shrinkX": 1,
+    "shrinkY": 1,
+    "damage": 20,
+    "speed": 7,
+    "frontColor": "F3E979FF",
+    "backColor": "F3E979FF",
+    "lifetime": 3
+			}
+		}
+	]
+}

@@ -1,0 +1,101 @@
+{
+        "localizedName": "Zephr",
+	"description": "A large hovering missile Array. Fires large swarms of missiles.",
+        "research": {
+			"requirements": [
+			"silicon/100",
+			"lead/300",
+			"titanium/250"
+			],
+			"parent": "zenith"
+		},
+        "speed": 1.3,
+        "accel": 0.3,
+        "drag": 0.1,
+		"lowAltitude": true,
+        "flying": true,
+        "health": 670,
+        "armor": 5,
+        "engineOffset": 12,
+		"engineSize": 3,
+		"TargetAir": true,
+        "commandLimit": 8,
+        "circleTarget": false,
+	    "weapons": [
+		{
+    "name": "missile-array",
+    "shootCone": 10,
+    "mirror": true,
+	"alternate": true,
+    "top": false,
+    "x": 6,
+    "y": -7,
+    "reload": 75,
+	"xRand": 5,
+	"shots": 5,
+	"shotDelay": 4
+	"inaccuracy": 3
+    "shootSound": "missile",
+    "recoil": 2,
+	"shake": 5,
+    "bullet": {
+		"lifetime": 10,
+"type": "MissileBulletType",
+	"hitEffect": "flakExplosionBig"
+	"trailLength": 35,
+	"trailChance": 0,
+	"trailParam": 5,
+	"trailWidth": 2.5,
+	"sprite": "missile",
+    "damage": 5,
+	"keepVelocity": "true",
+	"splashDamageRadius": 45,
+	"splashDamage": 15,
+	"weaveScale": 2,
+	"weaveMag": 2,
+	"homingRange": 50,
+	"speed": 5,
+	"homingPower": 0.09,
+	"lifetime": 45,
+	"hitSound": "explosion2",
+	"hitSoundVolume": 0.7,
+	"hitSoundPitch": 0.7,
+	"width": 6,
+	"height": 6,
+	"status": "blasted",
+	"statusDuration": 10,
+		"fragBullets": 2,
+		"fragCone": 30
+		"fragLifeMin": 1.9,
+		"fragLifeMax": 3.2,
+		"fragVelocityMin": 1.2,
+		"fragVelocityMax": 3.5,
+		"fragBullet": {
+    "type": "MissileBulletType",
+	"hitEffect": "blastExplosion"
+	"trailLength": 35,
+	"trailChance": 0,
+	"trailParam": 5,
+	"trailWidth": 1.25,
+	"sprite": "missile",
+    "damage": 10,
+	"keepVelocity": "true",
+	"splashDamageRadius": 27,
+	"splashDamage": 26,
+	"weaveScale": 5,
+	"weaveMag": 3,
+	"homingRange": 24,
+	"homingPower": 0.09,
+	"lifetime": 45,
+	"hitSound": "explosion2",
+	"hitSoundVolume": 0.7,
+	"hitSoundPitch": 0.7,
+	"width": 3,
+	"height": 3,
+	"status": "blasted",
+	"statusDuration": 10,
+		}
+			}
+		}
+	]
+}

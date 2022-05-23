@@ -1,0 +1,53 @@
+{
+"localizedName": "Flame",
+"research": {
+	"parent": "dagger",
+	"requirements": [
+	"silicon/120",
+	"titanium/70"
+	]
+}
+"description": "Fires a constant stream of flame at ground targets.",
+"type": "mech",
+"armor": 2,
+"commandLimit": 6,
+"speed": 0.5,
+"flying": false,
+"targetAir": false,
+"health": 225,
+"immunities": [
+		"burning"
+		],
+"weapons": [
+  {
+  "name": "flame-weapon",
+  "mirror": false,
+  "x": 0,
+  "y": -2,
+  "reload": 6.5,
+  "recoil": 0,
+  "top": false,
+  "shots": 1,
+  "shootSound": "flame",
+  "ejectEffect": "none",
+  "parentizeEffects": false,
+  "bullet": {
+            "damage": 4,
+			"collidesAir": false,
+            "width": 8,
+            "pierce": true,
+			"pierceBuilding": false,
+            "type": "BasiclBulletType",
+            "lifetime": 5,
+		    "shootEffect": "shootSmallFlame"
+			"speed": 5,
+            "frontColor": "00000000",
+            "backColor": "00000000",
+            "hitEffect": "none",
+			"status": "burning",
+			"statusDuration": 5
+			"despawnEffect": "none"
+     }
+  }
+]
+}

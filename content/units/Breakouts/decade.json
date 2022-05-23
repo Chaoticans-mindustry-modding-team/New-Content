@@ -1,0 +1,53 @@
+{
+            "localizedName": "Advance",
+            "description": "[purple]Fires sapping short-lasers at enemies",
+            "type": "mech",
+            "research": "quasar",
+            "flying": false,
+            "speed": 0.55,
+            "hitSize": 8,
+            "health": 276,
+            "buildSpeed": 0.8,
+            "armor": 4,
+            "commandLimit": 8,
+
+            "weapons": [
+                    {
+                "name": "purp-smoll",
+                "top": false,
+                "shootY": 2,
+                "shots": 2,
+				"spacing": 2.5,
+                "shootCone": 10,
+                "inaccuracy": 7,
+                "reload": 64,
+                "x": 4.5,
+                "alternate": true,
+                "ejectEffect": "none",
+                "recoil": 2,
+                "shootSound": "laser",
+                  "bullet": { 
+                    "type": "laserBulletType",
+					"hitEffect": "none"
+					"colors":["665C9FFF", "B992F9FF", "FFFFFF"],
+					"length": 50,
+					"laserEffect": "none"
+					"status": "sapped",
+					"statusDuration": 100
+                    "damage": 10,
+                    "speed": 0.001,
+                    "width": 8,
+					"xShrink": 5
+                    "trailChance": 1,
+                    "trailColor": "BF92F9FF",
+                    "height": 8,
+                    "shootEffect": "none",
+                    "despawnEffect": "none",
+                    "hitColor": "BF92F9FF",
+                    "hitEffect": "none",
+                    "backColor": "665C9FFF",
+                    "frontColor": "BF92F9FF"
+     }
+  }
+]
+}

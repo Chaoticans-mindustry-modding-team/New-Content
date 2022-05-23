@@ -1,0 +1,57 @@
+{
+        "localizedName": "Wraith",
+	"description": "[gray]A basic unit created by Terrux. Can fire a short slowing shot.",
+        "research": "flare",
+        "speed": 3,
+        "accel": 0.04,
+        "drag": 0.01,
+        "flying": true,
+        "health": 140,
+        "armor": 3,
+        "engineOffset": 5.5,
+		"range": 120
+		"TargetAir": true,
+        "commandLimit": 8,
+        "circleTarget": false,
+	    "weapons": [
+		{
+    "name": "wraith-blaster",
+    "shootCone": 15,
+    "mirror": true,
+	"alternate": true,
+    "top": true,
+    "x": 1,
+    "y": 1,
+    "reload": 50,
+    "shootSound": "shotgun",
+    "recoil": 2.5,
+	"shots": 3,
+	"shake": 3,
+	"shotDelay": 0,
+	"spacing": 2,
+    "bullet": {
+    "type": "ShrapnelBulletType",
+    "buildingDamageMultiplier": 1.3,
+    "shootEffect": {
+		"type": "WaveEffect",
+		"colorFrom": "ffffffff",
+		"colorTo": "000000ff",
+		"sizeTo": 15.5
+	},
+    "damage": 12,
+    "speed": 0.01,
+	"pierce": true,
+    "frontColor": "F3E979FF",
+    "backColor": "ECD36FFF",
+    "trailColor": "ECD36FFF",
+    "lifetime": 45,
+	"serrations": 8,
+	"length": 65,
+	"width": 10,
+	"status": "slow",
+	"statusDuration": 30,
+	"toColor": "000000ff"			
+			}
+		}
+	]
+}

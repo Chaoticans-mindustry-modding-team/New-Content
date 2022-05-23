@@ -1,0 +1,57 @@
+{
+"name": "shockingburn",
+"localizedName": "Eletric Burn",
+"description": "you have been hit by eletric fire."
+"effect": {
+"type": "MultiEffect",
+"effects": [
+{     
+"type": "ParticleEffect",
+"particles": 20,
+"offset": 30,
+"sizeFrom": 5,
+"sizeTo": 0,
+"length": 50,
+"interp": "pow3In",
+"sizeInterp": "pow5Out",
+"lifetime": 20,
+"colorFrom": "fffaa6ff",
+"colorTo": "fffff6ff",
+"cone": 360
+},
+{
+"type": "ParticleEffect",
+"particles": 6,
+"offset": 30,
+"sizeFrom": 9,
+"sizeTo": 6,
+"length": 60,
+"lifetime": 30,
+"colorFrom": "fffaa6ff",
+"colorTo": "fffff6ff",
+"cone": 360
+},
+{
+"type": "ParticleEffect",
+"line": true,
+"particles": 2,
+"lifetime": 30,
+"length": 25,
+"lightColor": "fffaa6ff",
+"cone": -360,
+"lenFrom": 5,
+"lenTo": 0,
+"colorFrom": "fffaa6ff",
+"colorTo": "fbbc36ff"
+}
+]
+},
+"damage": 30,
+"affinities": ["burning", "shocked", "eletrified", "melting", "wet" ],
+"opposites":  ["freezing"],
+"transitionDamage": 100,
+"damageMultiplier": 0.75,
+"speedMultiplier": 0.04,
+"reloadMultiplier": 0.3,
+"healthMultiplier": 0.3
+}

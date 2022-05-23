@@ -1,0 +1,247 @@
+{
+        "localizedName": "Renevant",
+	"description": "[gray]A flying stauger, can fire powerful blasts of dark energy it has upgraded dark bolters and it can shoot large dark energy shells over large distance."
+        "accel": 0.04,
+        "drag": 0.01,
+        "flying": true,
+        "health": 850,
+        "armor": 6,
+        "engineOffset": 7.55,
+		"range": 120
+		"TargetAir": true,
+        "commandLimit": 8,
+		"faceTarget": true,
+		"rotateShooting": false,
+        "circleTarget": false,
+	    "weapons": [
+		{
+    "name": "renevant-super-upgraded-blaster",
+    "shootCone": 15,
+    "mirror": true,
+	"alternate": true,
+    "top": true,
+    "x": 1,
+    "y": 2,
+    "reload": 35,
+    "shootSound": "shotgun",
+    "recoil": 2.5,
+	"shots": 5,
+	"shake": 6.5,
+	"shotDelay": 0,
+	"spacing": 5.5,
+    "bullet": {
+    "type": "ShrapnelBulletType",
+    "buildingDamageMultiplier": 1.5,
+    "shootEffect": {
+		"type": "WaveEffect",
+		"colorFrom": "ffffffff",
+		"colorTo": "000000ff",
+		"sizeTo": 15.5
+	},
+    "damage": 25,
+    "speed": 0.01,
+	"pierce": true,
+    "frontColor": "F3E979FF",
+    "backColor": "ECD36FFF",
+    "trailColor": "ECD36FFF",
+    "lifetime": 45,
+	"serrations": 17,
+	"length": 155,
+	"width": 25,
+	"status": "slow",
+	"statusDuration": 75,
+	"toColor": "000000ff"			
+			}
+		},
+		{
+    "name": "dark-bolter",
+    "shootCone": 15,
+    "mirror": true,
+	"alternate": true,
+    "top": true
+	"rotate": true,
+	"rotateSpeed": 2.5,
+    "x": 3,
+    "y": 2.5,
+    "reload": 5,
+    "shootSound": "sap",
+    "recoil": 0.5,
+    "bullet": {
+    "type": "LaserBoltBulletType",
+    "buildingDamageMultiplier": 1.15,
+    "shootEffect": {
+		"type": "WaveEffect",
+		"colorFrom": "ffffffff",
+		"colorTo": "000000ff",
+		"sizeTo": 5,
+	},
+    "damage": 25,
+    "speed": 6.5,
+	"frontColor": "242424ff",
+    "backColor": "111111ff",
+    "trailColor": "242424ff",
+    "lifetime": 120,
+	"hitEffect": {
+		"type": "WaveEffect",
+		"colorFrom": "ffffffff",
+		"colorTo": "000000ff",
+		"sizeTo": 3.5,
+	},
+	"despawnEffect": {
+		"type": "WaveEffect",
+		"colorFrom": "ffffffff",
+		"colorTo": "000000ff",
+		"sizeTo": 3.5,
+	},
+	"status": "slow",
+	"width": 1.0,
+	"height": 4.0,
+	"statusDuration": 25,
+    "frontColor": "252525ff",
+    "backColor": "000000ff",	
+			}
+		},
+		{
+    "name": "dark-artillery",
+    "shootCone": 100,
+    "mirror": true,
+	"alternate": true,
+    "top": false,
+	"rotate": true,
+	"rotateSpeed": 1.1,
+    "x": 6,
+    "y": -4,
+    "reload": 50,
+	"inaccuracy": 1,
+    "shootSound": "bang",
+    "recoil": 2.5,
+	"shots": 5,
+	"shake": 9.5,
+	"shotDelay": 1,
+	"shootEffect": {
+	"type": "MultiEffect",
+	"effects":[
+	{
+   "type": "ParticleEffect",
+    "particles": 1,
+    "sizeFrom": 13,
+    "sizeTo": 0,
+    "length": 0,
+    "lightColor": "FFFFFFFF",
+    "interp": "swingIn",
+    "lifetime": 30,
+    "colorFrom": "FFFFFFFF",
+    "colorTo": "FFFFFFFF"
+    },
+    {
+    "type": "ParticleEffect",
+    "lightOpacity": 0,
+    "particles": 1,
+    "sizeFrom": 8,
+    "sizeTo": 0,
+    "interp": "swingIn",
+    "length": 0,
+    "lifetime": 30,
+    "colorFrom": "000000FF",
+    "colorTo": "000000FF"
+    }
+	],
+	},
+    "bullet": {
+	"frontColor": "F3E979FF",
+    "backColor": "ECD36FFF",
+    "type": "ArtilleryBulletType",
+    "buildingDamageMultiplier": 2.5,
+    "damage": 45,
+    "speed": 3.5,
+	"pierce": true,
+	"frontColor": "242424ff",
+    "backColor": "111111ff",
+    "trailColor": "242424ff",
+	"trailChance": 0.5,
+	"splashDamageRadius": 45,
+	"splashDamage": 34.5,
+	"trailLength": 3.5,
+    "lifetime": 67.3,
+	"scaleVelocity": true,
+	"maxRange": 67.3,
+	"serrations": 17,
+    "height": 6,
+	"width": 6,
+	"hitSound": "plasmaboom",
+	"hitEffect": {
+	"type": "MultiEffect",
+	"effects":[
+	{
+		"type": "WaveEffect",
+		"colorFrom": "ffffffff",
+		"colorTo": "000000ff",
+		"sizeTo": 15.5
+	},
+	{
+   "type": "ParticleEffect",
+    "particles": 1,
+    "sizeFrom": 13,
+    "sizeTo": 0,
+    "length": 0,
+    "lightColor": "FFFFFFFF",
+    "interp": "swingIn",
+    "lifetime": 30,
+    "colorFrom": "FFFFFFFF",
+    "colorTo": "FFFFFFFF"
+    },
+    {
+    "type": "ParticleEffect",
+    "lightOpacity": 0,
+    "particles": 1,
+    "sizeFrom": 8,
+    "sizeTo": 0,
+    "interp": "swingIn",
+    "length": 0,
+    "lifetime": 30,
+    "colorFrom": "000000FF",
+    "colorTo": "000000FF"
+    }
+	],
+	},
+	"despawnEffect": {
+	"type": "MultiEffect",
+	"effects":[
+	{
+		"type": "WaveEffect",
+		"colorFrom": "ffffffff",
+		"colorTo": "000000ff",
+		"sizeTo": 15.5
+	},
+	{
+   "type": "ParticleEffect",
+    "particles": 1,
+    "sizeFrom": 13,
+    "sizeTo": 0,
+    "length": 0,
+    "lightColor": "FFFFFFFF",
+    "interp": "swingIn",
+    "lifetime": 30,
+    "colorFrom": "FFFFFFFF",
+    "colorTo": "FFFFFFFF"
+    },
+    {
+    "type": "ParticleEffect",
+    "lightOpacity": 0,
+    "particles": 1,
+    "sizeFrom": 8,
+    "sizeTo": 0,
+    "interp": "swingIn",
+    "length": 0,
+    "lifetime": 30,
+    "colorFrom": "000000FF",
+    "colorTo": "000000FF"
+    }
+	],
+	},
+	"status": "slow",
+	"statusDuration": 75			
+			}
+		}
+	]
+}

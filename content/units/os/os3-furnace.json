@@ -1,0 +1,123 @@
+{
+"localizedName": "Furnace",
+"research": {
+	"parent": "os2-kiln",
+	"requirements": [
+	"silicon/350",
+	"titanium/230",
+	"graphite/125",
+	"lead/750"
+	]
+}
+"description": "Fires a barrage of missiles, bullets and a constant stream of flame at all nearby enemies.",
+"type": "legs",
+"legCount": 5,
+"legLength": 19.5,
+"legTrns": 0.6,
+"visualElevation": 0.4,
+"legMoveSpace": 1.7,
+"hovering": true,
+"armor": 5,
+"commandLimit": 8,
+"speed": 0.75,
+"flying": false,
+"health": 935,
+"rotateShooting": false,
+"immunities": [
+		"burning",
+		"melting"
+		],
+"weapons": [
+  {
+  "name": "furnace-weapon",
+  "mirror": false,
+  "rotate": true,
+  "rotateSpeed": 15,
+  "x": 0,
+  "y": 0,
+  "reload": 6.5,
+  "recoil": 0,
+  "shootY": 0,
+  "top": false,
+  "shots": 2,
+  "shake": 0.2
+  "shootSound": "flame",
+  "ejectEffect": "none",
+  "parentizeEffects": false,
+  "bullet": {
+            "damage": 15,
+            "width": 8,
+            "pierce": true,
+			"pierceBuilding": false,
+            "type": "BasicBulletType",
+            "lifetime": 5,
+		    "shootEffect": "shootSmallFlame"
+			"speed": 6.5,
+            "frontColor": "00000000",
+            "backColor": "00000000",
+            "hitEffect": "none",
+			"status": "burning",
+			"statusDuration": 15.5,
+			"despawnEffect": "none"
+     }
+  },
+  {
+	  "name": "zenith-missiles",
+	  "mirror": true,
+	  "alternate": true,
+	  "rotate": true,
+	  "rotateSpeed": 4,
+	  "x": 5,
+	  "y": -3,
+	  "reload": 15,
+	  "recoil": 2,
+	  "shake": 0.7
+	  "shots": 2,
+	  "shotDelay": 3,
+	  "shootSound": "missile",
+	  "top": true,
+	  "ejectEffect": "casing2",
+	  "bullet": {
+		  "type": "MissileBulletType",
+		  "damage": 17,
+		  "speed": 4.5,
+		  "frontColor": "FFF8E8FF",
+		  "backColor": "F9C27AFF",
+		  "trailColor": "F9C27AFF",
+		  "lifetime": 70,
+		  "weaveScale": 3
+		  "weaveMag": 2
+		  "homingRange": 20,
+		  "homingPower": 0.1,
+		  "hitSound": "explosion",
+		  "sprite": "missile",
+		  "width": 7,
+		  "height": 7,
+		  "hitEffect": "blastExplosion",
+		  "splashDamageRadius": 17.5,
+		  "splashDamage": 3,
+		  "shootEffect": "shootBig",
+		  "status": "blasted",
+		  "statusDuration": 6,
+		  "fragBullets": 3,
+		  "fragBullet": {
+			  "damage": 3,
+			  "despawnEffect": "none",
+			  "xShrink": 1,
+			  "lifetime": 16
+		  }
+	  }
+  },
+  {
+	  "name": "mount-weapon",
+	  "reload": 20
+	  "x": 4,
+	  "y": 4,
+	  "rotate": true,
+	  "rotateSpeed": 15,
+	  "shots": 1,
+	  "ejectEffect": "casing1",
+	  "bullet": "standardCopper"
+  }
+]
+}

@@ -1,0 +1,25 @@
+{
+        "localizedName": "Constructor",
+	"description": "Constructs missile units.",
+        "research": "dagger",
+        "speed": 2.3,
+        "accel": 0.05,
+        "drag": 0.05,
+        "flying": true,
+        "health": 345,
+        "armor": 1,
+        "engineOffset": 4.5,
+		"engineSize": 2.4,
+		"TargetAir": true,
+        "commandLimit": 5,
+        "circleTarget": false,
+	"abilities": [
+ {
+              "type": "UnitSpawnAbility",
+              "spawnX": 0,
+              "spawnY": -3,
+              "unit": "missiledroneheal",
+              "spawnTime": 125
+  }
+  ]
+}

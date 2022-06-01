@@ -1,0 +1,46 @@
+{
+        "localizedName": "Healer Missile Drone",
+	"description": "Fires basic missiles at all nearby enemies.",
+        "research": "constructor",
+        "speed": 3.5,
+        "accel": 0.010,
+        "drag": 0.05,
+        "flying": true,
+        "health": 45,
+        "armor": 0,
+        "engineOffset": 2,
+		"engineSize": 2.4,
+		"TargetAir": true,
+        "commandLimit": 5,
+        "circleTarget": false,
+		"weapons": [
+		{
+			"name": "weapon",
+			"x": 0,
+			"y": 3,
+			"reload": 20,
+			"shootSound": "missile",
+			"mirror": false,
+			"shootCone": 15,
+			"bullet": {
+		  "type": "MissileBulletType",
+		  "damage": 5,
+		  "speed": 4.5,
+		  "frontColor": "80FFB7FF",
+		  "backColor": "60DDB5FF",
+		  "trailColor": "60DDB5FF",
+		  "lifetime": 70,
+		  "weaveScale": 4
+		  "weaveMag": 2
+		  "homingRange": 20,
+		  "homingPower": 0.1,
+		  "sprite": "missile",
+		  "width": 4,
+		  "height": 4,
+		  "hitEffect": "shootHeal",
+		  "shootEffect": "shootHeal"
+	  }
+		}
+		]
+  ]
+}

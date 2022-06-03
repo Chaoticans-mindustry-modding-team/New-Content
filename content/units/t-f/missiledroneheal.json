@@ -4,6 +4,7 @@
         "research": "constructor",
         "speed": 3.5,
         "accel": 0.010,
+	"hitsize": 6,
         "drag": 0.05,
         "flying": true,
         "health": 45,
@@ -22,6 +23,7 @@
 			"shootSound": "missile",
 			"mirror": false,
 			"shootCone": 15,
+			"ejectEffect": "none"
 			"bullet": {
 		  "type": "MissileBulletType",
 		  "damage": 5,
@@ -34,7 +36,7 @@
 		  "weaveMag": 2
 		  "homingRange": 20,
 		  "homingPower": 0.1,
-	          "healPrecent": 2,
+	          "healPercent": 2,
 		  "sprite": "missile",
 		  "width": 7,
 		  "height": 7,
@@ -56,7 +58,8 @@
 				"sizeInterp": "swingIn",
 				"colorFrom": "80FFB7FF",
 				"colorTo": "80FFB7FF",
-				"length": 7
+				"length": 7,
+			        "followParent": false
 			},
 			"despawnEffect": {
 				"type": "ParticleEffect",

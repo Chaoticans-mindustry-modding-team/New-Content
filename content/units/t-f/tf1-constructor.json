@@ -19,7 +19,7 @@
               "spawnX": 0,
               "spawnY": -3,
               "unit": "missiledroneheal",
-              "spawnTime": 125
+              "spawnTime": 500
   }
   ]
 }

@@ -34,11 +34,40 @@
 		  "weaveMag": 2
 		  "homingRange": 20,
 		  "homingPower": 0.1,
+	          "healPrecent": 2,
 		  "sprite": "missile",
-		  "width": 4,
-		  "height": 4,
-		  "hitEffect": "shootHeal",
-		  "shootEffect": "shootHeal"
+		  "width": 7,
+		  "height": 7,
+		  "hitEffect": {
+				"type": "ParticleEffect",
+				"particles": 5,
+				"sizeFrom": 2.5
+				"interp": "circleOut",
+				"sizeInterp": "swingIn",
+				"colorFrom": "80FFB7FF",
+				"colorTo": "80FFB7FF",
+				"length": 7
+			},
+		  "shootEffect": {
+				"type": "ParticleEffect",
+				"particles": 5,
+				"sizeFrom": 2.5
+				"interp": "circleOut",
+				"sizeInterp": "swingIn",
+				"colorFrom": "80FFB7FF",
+				"colorTo": "80FFB7FF",
+				"length": 7
+			},
+			"despawnEffect": {
+				"type": "ParticleEffect",
+				"particles": 5,
+				"sizeFrom": 2.5
+				"interp": "circleOut",
+				"sizeInterp": "swingIn",
+				"colorFrom": "80FFB7FF",
+				"colorTo": "80FFB7FF",
+				"length": 7
+			}
 	  }
 		}
 		]

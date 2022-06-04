@@ -1,7 +1,7 @@
 {
         "localizedName": "Healer Missile Drone",
 	"description": "Fires basic missiles at all nearby enemies.",
-        "research": "constructor",
+        "research": "tf1-constructor",
         "speed": 5,
         "accel": 0.05,
 	"hitsize": 6,
@@ -9,7 +9,7 @@
         "flying": true,
         "health": 45,
         "armor": 0,
-	"range": 32
+	"range": 32,
         "engineOffset": 2,
 		"engineSize": 2.4,
 		"TargetAir": true,

@@ -9,6 +9,7 @@
         "flying": true,
         "health": 45,
         "armor": 0,
+	"range": 32
         "engineOffset": 2,
 		"engineSize": 2.4,
 		"TargetAir": true,
@@ -18,7 +19,7 @@
 		{
 			"name": "weapon",
 			"x": 0,
-			"y": 3,
+			"y": 2,
 			"reload": 20,
 			"shootSound": "missile",
 			"mirror": false,
@@ -43,33 +44,33 @@
 		  "hitEffect": {
 				"type": "ParticleEffect",
 				"particles": 5,
-				"sizeFrom": 2.5
+				"sizeFrom": 1,
 				"interp": "circleOut",
 				"sizeInterp": "swingIn",
 				"colorFrom": "80FFB7FF",
 				"colorTo": "80FFB7FF",
-				"length": 7
+				"length": 5
 			},
 		  "shootEffect": {
 				"type": "ParticleEffect",
 				"particles": 5,
-				"sizeFrom": 2.5
+				"sizeFrom": 1,
 				"interp": "circleOut",
 				"sizeInterp": "swingIn",
 				"colorFrom": "80FFB7FF",
 				"colorTo": "80FFB7FF",
-				"length": 7,
+				"length": 5,
 			        "followParent": false
 			},
 			"despawnEffect": {
 				"type": "ParticleEffect",
 				"particles": 5,
-				"sizeFrom": 2.5
+				"sizeFrom": 1,
 				"interp": "circleOut",
 				"sizeInterp": "swingIn",
 				"colorFrom": "80FFB7FF",
 				"colorTo": "80FFB7FF",
-				"length": 7
+				"length": 5
 			}
 	  }
 		}

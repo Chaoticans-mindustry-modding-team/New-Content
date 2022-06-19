@@ -11,7 +11,7 @@
         "armor": 0,
 	"range": 32,
         "engineOffset": 2,
-		"engineSize": 2.4,
+		"engineSize": 1.4,
 		"TargetAir": true,
         "commandLimit": 5,
         "circleTarget": false,
@@ -37,7 +37,7 @@
 		  "weaveMag": 2
 		  "homingRange": 20,
 		  "homingPower": 0.1,
-	          "healPercent": 2,
+	          "healPercent": 0.06,
 		  "sprite": "missile",
 		  "width": 7,
 		  "height": 7,

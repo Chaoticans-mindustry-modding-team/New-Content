@@ -1,0 +1,64 @@
+{
+    "localizedName": "Swarm",
+    "description": "Fires a barrage of bullets and artillery at all nearby enemies",
+	"details": "Risso Clickbait.",
+    "research": "bn1-barrage",
+    "type": "naval",
+    "speed": 1.3,
+    "drag": 0.13,
+    "armor": 4.5,
+	"targetAir": true,
+    "hitSize": 13.1,
+    "health": 445,
+    "accel": 0.4,
+    "rotateSpeed": 3.3,
+    "trailLength": 20,
+    "rotateShooting": false,
+	"weapons": [
+		{
+    "name": "minigun",
+    "reload": 5,
+	"mirror": false,
+    "x": 0,
+    "y": 1,
+    "shootY": 4,
+    "recoil": 1.5,
+	"recoilTime": 100,
+	"inaccuracy": 5,
+    "rotate": true,
+    "shootSound": "shootSnap",
+    "rotateSpeed": 4.2,
+    "shootCone": 2,
+	"ejectEffect": "casing1",
+	"bullet": {
+		"damage": 9,
+		"speed": 5,
+		"shrinkX": 0.1,
+	}
+    }
+    {
+    "name": "barragement-gun",
+    "reload": 18,
+	"mirror": true,
+    "x": 6,
+    "y": -2,
+    "shootY": 4,
+    "recoil": 1.5,
+	"recoilTime": 100,
+	"inaccuracy": 1,
+    "rotate": true,
+    "shootSound": "bang",
+    "rotateSpeed": 2,
+    "shootCone": 25,
+	"ejectEffect": "casing1",
+	"bullet": {
+		"damage": 10,
+		"speed": 3,
+		"trailParam": 5,
+    "width": 5
+    
+	}
+    }
+	
+	]
+}

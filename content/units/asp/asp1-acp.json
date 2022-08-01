@@ -4,13 +4,13 @@
 	"details": "Anticlimactic Central Protector.",
     "research": "dagger",
     "type": "naval",
-    "speed": 0.9,
+    "speed": 1.2,
     "drag": 0.13,
     "armor": 1,
     "hitSize": 9.5,
     "health": 360,
     "accel": 0.4,
-    "rotateSpeed": 1,
+    "rotateSpeed": 3.4,
     "trailLength": 15,
 "abilities": [
         {

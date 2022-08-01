@@ -18,7 +18,7 @@
         "engineOffset": 5.5,
 		"TargetAir": true,
         "commandLimit": 8,
-        "circleTarget": false,
+        "circleTarget": true,
 	    "weapons": [
 		{
     "name": "red-laser-weapon",
@@ -30,8 +30,16 @@
     "y": 1,
 	"x": 0,
     "reload": 15,
-    "shootSound": "laser",
-	"shootEffect": "shootBig",
+    "shootSound": "laserPew",
+	"shootEffect": {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+		"line": true,
+		"sizeTo": 1,
+        		"lifetime": 8,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF",
+			},
 	"ejectEffect": "none",
 	"smokeEffect": "none",
     "recoil": 2.5,
@@ -44,23 +52,22 @@
 	"damage": 7,
 	"shootEffect": "shootBig",
 	"hitEffect": {
-	    		"type": "WaveEffect"	
-                "sizeTo": 6,
-				"strokeFrom": 3,
-				"strokeTo": 2.7
-        		"colorFrom": "FF66666FF",
-        		"colorTo": "FF6666FF",
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+		"line": true,
+		"sizeTo": 1,
         		"lifetime": 8,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF",
 			},
     "despawnEffect": {
-	    		"type": "WaveEffect"	
-                "sizeTo": 6,
-				"strokeFrom": 3,
-				"strokeTo": 2.7
-        		"colorFrom": "FF66666FF",
-        		"colorTo": "FF6666FF",
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+	    "line": true,
+		"sizeTo": 1,
         		"lifetime": 8,
-        		"interp": "circleOut",
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF",
 			}
 			
 		}

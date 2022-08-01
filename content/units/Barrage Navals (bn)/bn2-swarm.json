@@ -55,7 +55,7 @@
 	"bullet": {,
 		"damage": 10,
 		"speed": 3,
-		"width" 10,
+		"width": 10,
 		"height":5,
 		"hitEffect": "flakExplosion",
 		"splashDamageRadius": 10,

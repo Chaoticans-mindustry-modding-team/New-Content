@@ -1,0 +1,75 @@
+{
+    "localizedName": "Scatter",
+    "description": "Fires Large piercing shells and a barrage of standard bullets at all nearby enemies.",
+	"details": "Risso Clickbait.",
+    "research": "bn2-swarm",
+    "type": "naval",
+    "speed": 1.1,
+    "drag": 0.14,
+    "armor": 7.5,
+	"targetAir": true,
+    "hitSize": 25,
+    "health": 1250,
+    "accel": 0.4,
+    "rotateSpeed": 3.3,
+    "trailLength": 30,
+    "rotateShooting": false,
+	"weapons": [
+		{
+    "name": "big-cannon",
+    "reload": 100,
+	"mirror": false,
+    "x": 0,
+    "y": 1,
+    "shootY": 4,
+	"recoilTime": 100,
+	"inaccuracy": 1,
+    "rotate": true,
+    "shootSound": "shootBig",
+    "rotateSpeed": 4.2,
+    "shootCone": 2,
+    "shots": 4,
+    "shotDelay": 1,
+    "shake": 5,
+	"ejectEffect": "casing2",
+	"bullet": {
+		"damage": 20,
+		"speed": 5,
+		"shrinkX": 0.1,
+    "width": 12,
+    "height": 7,
+    "pierceBuilding": true,
+    "pierce": true,
+    "pierceCap": 2
+	}
+    },
+    {
+    "name": "mount-weapon",
+    "reload": 18,
+	"mirror": true,
+    "x": 7,
+    "y": 4,
+	"inaccuracy": 5,
+    "rotate": true,
+    "rotateSpeed": 10,
+    "shootCone": 25,
+	"ejectEffect": "casing1",
+	"bullet": "standardCopper"
+    },
+    {
+    "name": "mount-weapon",
+    "reload": 23,
+	"mirror": true,
+    "x": 7,
+    "y": -4,
+    "shootY": 4,
+	"inaccuracy": 5,
+    "rotate": true,
+    "rotateSpeed": 10,
+    "shootCone": 25,
+	"ejectEffect": "casing1",
+	"bullet": "standardCopper"
+    }
+	
+	]
+}

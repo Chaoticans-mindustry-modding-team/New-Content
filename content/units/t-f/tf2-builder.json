@@ -1,0 +1,98 @@
+{
+        "localizedName": "Constructor",
+	"description": "Constructs missile units.",
+        "research": "tf1-constructor",
+        "speed": 2.7,
+        "accel": 0.05,
+        "drag": 0.05,
+        "flying": true,
+        "health": 575,
+        "armor": 1,
+        "engineOffset": 6.5,
+		"engineSize": 2.4,
+		"TargetAir": true,
+        "commandLimit": 6,
+        "circleTarget": false,
+	"weapons": [
+		{
+			"name": "tiny-bolter-green",
+			"x": 4,
+			"y": 2,
+			"reload": 20,
+			"shootSound": "missile",
+			"mirror": true,
+			"shootCone": 15,
+			"ejectEffect": "none"
+			"bullet": {
+		  "type": "MissileBulletType",
+		  "damage": 10,
+		  "speed": 4.5,
+		  "frontColor": "80FFB7FF",
+		  "backColor": "60DDB5FF",
+		  "trailColor": "60DDB5FF",
+		  "lifetime": 70,
+		  "weaveScale": 4
+		  "weaveMag": 2
+		  "homingRange": 20,
+		  "homingPower": 0.1,
+	          "healPercent": 2,
+		  "sprite": "missile",
+		  "width": 7,
+		  "height": 7,
+		  "hitEffect": {
+				"type": "ParticleEffect",
+				"particles": 5,
+				"sizeFrom": 1,
+				"interp": "circleOut",
+				"sizeInterp": "swingIn",
+				"colorFrom": "80FFB7FF",
+				"colorTo": "80FFB7FF",
+				"length": 5
+			},
+		  "shootEffect": {
+				"type": "ParticleEffect",
+				"particles": 5,
+				"sizeFrom": 1,
+				"interp": "circleOut",
+				"sizeInterp": "swingIn",
+				"colorFrom": "80FFB7FF",
+				"colorTo": "80FFB7FF",
+				"length": 5,
+			        "followParent": false
+			},
+			"despawnEffect": {
+				"type": "ParticleEffect",
+				"particles": 5,
+				"sizeFrom": 1,
+				"interp": "circleOut",
+				"sizeInterp": "swingIn",
+				"colorFrom": "80FFB7FF",
+				"colorTo": "80FFB7FF",
+				"length": 5
+			}
+	  }
+		]
+	"abilities": [
+ {
+              "type": "UnitSpawnAbility",
+              "spawnX": 3,
+              "spawnY": -3,
+              "unit": "missiledroneheal",
+              "spawnTime": 500
+  },
+		{
+              "type": "UnitSpawnAbility",
+              "spawnX": -3,
+              "spawnY": -3,
+              "unit": "missiledroneheal",
+              "spawnTime": 500
+  }
+		{
+              "type": "UnitSpawnAbility",
+              "spawnX": 3,
+              "spawnY": -3,
+              "unit": "tf1-constructor",
+              "spawnTime": 550
+  }
+  ]
+}

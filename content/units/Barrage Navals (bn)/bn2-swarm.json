@@ -35,7 +35,7 @@
 		"speed": 5,
 		"shrinkX": 0.1,
 	}
-    }
+    },
     {
     "name": "side-cannon",
     "reload": 18,
@@ -52,7 +52,7 @@
     "rotateSpeed": 2,
     "shootCone": 25,
 	"ejectEffect": "casing1",
-	"bullet": {,
+	"bullet": {
 		"damage": 10,
 		"speed": 3,
 		"width": 10,

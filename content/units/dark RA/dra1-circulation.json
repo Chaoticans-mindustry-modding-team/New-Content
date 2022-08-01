@@ -30,7 +30,7 @@
     "y": 1,
 	"x": 0,
     "reload": 15,
-    "shootSound": "laserPew",
+    "shootSound": "laserpew",
 	"shootEffect": {
 	    		"type": "ParticleEffect"	
                         "sizeFrom": 2,

@@ -1,6 +1,6 @@
 {
     "localizedName": "Swarm",
-    "description": "Fires a barrage of bullets and artillery at all nearby enemies",
+    "description": "Fires a barrage of heavy bullets at all nearby enemies",
 	"details": "Risso Clickbait.",
     "research": "bn1-barrage",
     "type": "naval",
@@ -37,7 +37,7 @@
 	}
     }
     {
-    "name": "barragement-gun",
+    "name": "side-cannon",
     "reload": 18,
 	"mirror": true,
     "x": 6,
@@ -45,18 +45,21 @@
     "shootY": 4,
     "recoil": 1.5,
 	"recoilTime": 100,
-	"inaccuracy": 1,
+	"inaccuracy": 5,
     "rotate": true,
-    "shootSound": "bang",
+    "shootSound": "bang"
+    "shake": 4
     "rotateSpeed": 2,
     "shootCone": 25,
 	"ejectEffect": "casing1",
-	"bullet": {
+	"bullet": {,
 		"damage": 10,
 		"speed": 3,
-		"trailParam": 5,
-    "width": 5
-    
+		"width" 10,
+		"height":5,
+		"hitEffect": "flakExplosion",
+		"splashDamageRadius": 10,
+		"splashDamage": 14
 	}
     }
 	

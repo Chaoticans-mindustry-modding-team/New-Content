@@ -1,0 +1,26 @@
+{
+    "localizedName": "ACP",
+    "description": "Guards other units with it's weak sheild.",
+	"details": "Anticlimactic Central Protector.",
+    "research": "dagger",
+    "type": "naval",
+    "speed": 1.5,
+    "drag": 0.13,
+    "armor": 1,
+	"targetAir": true,
+    "hitSize": 9.5,
+    "health": 360,
+    "accel": 0.4,
+    "rotateSpeed": 3.3,
+    "trailLength": 15,
+    "rotateShooting": false,
+"abilities": [
+        {
+            "type": "mindustry.entities.abilities.ForceFieldAbility",
+            "radius": 21,
+            "regen": 16,
+            "max": 350,
+            "cooldown": 100
+            }
+        ]
+     }

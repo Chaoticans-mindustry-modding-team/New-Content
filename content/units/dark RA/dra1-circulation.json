@@ -15,6 +15,7 @@
         "flying": true,
         "health": 210,
         "armor": 2,
+	"range": 120,
         "engineOffset": 5.5,
 		"TargetAir": true,
         "commandLimit": 8,
@@ -38,8 +39,8 @@
     "type": "LaserBoltBulletType",
 	"frontColor": "FF6666FF",
 	"backColor": "DD4444FF",
-	"lifetime": 16,
-	"speed": 3,
+	"lifetime": 30,
+	"speed": 4,
 	"damage": 7,
 	"shootEffect":  {
 	    		"type": "ParticleEffect"	

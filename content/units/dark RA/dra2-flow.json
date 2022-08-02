@@ -143,8 +143,8 @@
 			    "type": "lightningBulletType",
 			    "damage": 20,
 			    "lightningColor": "FF6666FF",
-			    "lightningLength": 13,
-			    "lightningLengthRand": 4
+			    "lightningLength": 10,
+			    "lightningLengthRand": 2
 		    }
 		    }
 	]

@@ -14,57 +14,10 @@
         "commandLimit": 8,
         "circleTarget": false,
 	    "weapons": [
-		{
+		    {
     "name": "flying-segments",
     "type": "PointDefenseWeapon",
-	"shootCone": 15,
-    "mirror": true,
-	"alternate": true,
-    "top": true,
-	"targetInterval": 0,
-    "targetSwitchInterval": 0,
-	"rotate": true,
-	"controllable": false,
-	"autoTarget": true,
-	"rotateSpeed": 15,
-    "x": 3,
-    "y": 1,
-    "reload": 4,
-    "shootSound": "shotgun",
-    "recoil": 2.5,
-    "bullet": {
-		"damage": 1000,
-		"speed": 999,
-		"maxRange": 500,
-	}
-		},
-	{
-    "name": "flying-segments",
-    "type": "PointDefenseWeapon",
-	"shootCone": 15,
-    "mirror": true,
-	"alternate": true,
-    "top": true,
-	"targetInterval": 0,
-    "targetSwitchInterval": 0,
-	"rotate": true,
-	"controllable": false,
-	"autoTarget": true,
-	"rotateSpeed": 10,
-    "x": 3,
-    "y": 1,
-    "reload": 5,
-    "shootSound": "shotgun",
-    "recoil": 2.5,
-    "bullet": {
-		"damage": 1000,
-		"speed": 999,
-		"maxRange": 500,
-	}
-		},
-		{
-    "name": "flying-segments",
-    "type": "PointDefenseWeapon",
+			    "reload": 10
 	"shootCone": 15,
     "mirror": true,
 	"alternate": true,
@@ -78,22 +31,13 @@
     "x": 3,
     "y": 1,
     "reload": 3,
-    "shootSound": "shotgun",
+    "shootSound": "lasershoot",
     "recoil": 2.5,
     "bullet": {
-		"damage": 1000,
+		"damage": 10,
 		"speed": 999,
-		"maxRange": 500,
+		"maxRange": 35,
 	}
 		}
-	],
-	"abilities": [
- {
-              "type": "UnitSpawnAbility",
-              "spawnX": 0,
-              "spawnY": -3,
-              "unit": "fly",
-              "spawnTime": 100
-  }
-  ]
+	]
 }

@@ -29,17 +29,8 @@
 	"rotate": false,
     "y": 1,
 	"x": 0,
-    "reload": 15,
+    "reload": 12,
     "shootSound": "laserpew",
-	"shootEffect": {
-	    		"type": "ParticleEffect"	
-                        "sizeFrom": 2,
-		"line": true,
-		"sizeTo": 1,
-        		"lifetime": 8,
-		"colorFrom": "FF6666FF",
-		"colorTo": "FF6666FF",
-			},
 	"ejectEffect": "none",
 	"smokeEffect": "none",
     "recoil": 2.5,
@@ -50,7 +41,15 @@
 	"lifetime": 16,
 	"speed": 3,
 	"damage": 7,
-	"shootEffect": "shootBig",
+	"shootEffect":  {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+		"line": true,
+		"sizeTo": 1,
+        		"lifetime": 8,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF",
+			},
 	"hitEffect": {
 	    		"type": "ParticleEffect"	
                         "sizeFrom": 2,

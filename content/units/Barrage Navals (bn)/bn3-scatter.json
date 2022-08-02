@@ -33,9 +33,10 @@
     "shake": 5,
 	"ejectEffect": "casing2",
 	"bullet": {
-		"damage": 20,
+		"damage": 25,
 		"speed": 10,
 		"shrinkX": 0,
+		"shrinkY": 0.1,
     "width": 12,
     "height": 7,
     "pierceBuilding": true,

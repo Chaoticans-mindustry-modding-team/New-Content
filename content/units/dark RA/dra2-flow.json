@@ -1,0 +1,150 @@
+{
+        "localizedName": "Flow",
+	"description": "Fires large laser bolts and lasers at all enarby enemies and explodes on death.",
+        "research": {
+			"requirements": [
+			"silicon/270",
+			"titanium/100"
+      "graphite/100"
+			],
+			"parent": "dagger"
+		},
+        "speed": 2.32,
+        "accel": 0.07,
+        "drag": 0.06,
+		"outlineColor": "28292EFF",
+        "flying": true,
+        "health": 2570,
+        "armor": 4,
+	"range": 120,
+        "engineOffset": 5.5,
+		"TargetAir": true,
+        "commandLimit": 8,
+        "circleTarget": true,
+	"destructableWreck": false,
+	    "weapons": [
+		{
+    "name": "flow-weapon",
+    "shootCone": 15,
+    "mirror": true,
+	"alternate": true,
+    "top": false,
+	"rotate": false,
+    "y": 3,
+	"x": 4,
+    "reload": 9,
+    "shootSound": "laserpew",
+	"ejectEffect": "none",
+	"smokeEffect": "none",
+    "recoil": 2.5,
+    "bullet": {
+    "type": "LaserBoltBulletType",
+	"frontColor": "FF6666FF",
+	"backColor": "DD4444FF",
+	"lifetime": 30,
+	"speed": 4,
+	"damage": 8,
+	"shootEffect":  {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+		"line": true,
+		"sizeTo": 1,
+        		"lifetime": 8,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF",
+			},
+	"hitEffect": {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+		"line": true,
+		"sizeTo": 1,
+        		"lifetime": 8,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF",
+			},
+    "despawnEffect": {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+	    "line": true,
+		"sizeTo": 1,
+        		"lifetime": 8,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF",
+			}
+			
+		}
+		},
+        {
+    "name": "flow-lasers",
+    "shootCone": 15,
+    "mirror": false,
+	"alternate": true,
+    "top": false,
+	"rotate": false,
+    "y": 3,
+	"x": 0,
+    "reload": 9,
+    "shootSound": "laserpew",
+	"ejectEffect": "none",
+	"smokeEffect": "none",
+    "recoil": 2.5,
+     "bullet": {
+    "type": "laserBulletType",
+      "damage": 30,
+      "sideAngle": 20,
+      "sideWidth": 1.5,
+      "sideLength": 5,
+      "width": 25,
+      "colors":["DD4444FF", "FF6666FF", "FFFFFFFF"],
+      "length": 280
+	"shootEffect":  {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+		"line": true,
+		"sizeTo": 1,
+        		"lifetime": 8,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF",
+			},
+	"hitEffect": {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+		"line": true,
+		"sizeTo": 1,
+        		"lifetime": 8,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF",
+			},
+    "despawnEffect": {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+	    "line": true,
+		"sizeTo": 1,
+        		"lifetime": 8,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF",
+			}
+			
+		}
+		},
+		    {
+			    "name": "circulation-death-lightning"
+			    "x": 0,
+			    "y": 0,
+			    "reload": 99999
+			    "shootSound": "spark",
+			    "inaccuracy": 360,
+			    "shots": 4,
+			    "shootCone": 360,
+			    "ignoreRotation": true,
+			    "shootOnDeath": true,
+			    "bullet": {
+			    "type": "lightningBulletType",
+			    "damage": 10,
+			    "lightningColor": "FF6666FF",
+			    "lightningLength": 8,
+			    "lightningLengthRand": 2
+		    }
+		    }
+	]
+}

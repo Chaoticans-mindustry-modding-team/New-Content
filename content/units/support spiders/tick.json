@@ -1,0 +1,45 @@
+{
+"localizedName": "Tick",
+"research": {
+	"parent": "dagger",
+	"requirements": [
+	"silicon/230",
+	"titanium/120",
+	"lead/70",
+  "metaglass/100"
+	]
+}
+"description": "Sprays water at fires and units.",
+"type": "legs",
+"legCount": 3,
+"legLength": 6,
+"legTrns": 0.6,
+"legMoveSpace": 1.4,
+"hovering": true,
+"armor": 4,
+"commandLimit": 8,
+"speed": 0.6,
+"flying": false,
+"health": 435,
+"rotateShooting": false,
+"immunities": [
+		"wet"
+		],
+"weapons": [
+  {
+  "name": "stream-weapon",
+  "mirror": false,
+  "rotate": true,
+  "rotateSpeed": 15,
+  "x": 0,
+  "y": 0,
+  "reload": 3.5,
+  "recoil": 0,
+  "top": false,
+  "inaccuracy": 3,
+  "shootSound": "spray",
+  "parentizeEffects": false,
+  "bullet": "waterShot"
+  }
+]
+}

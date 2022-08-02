@@ -43,7 +43,7 @@
 	"backColor": "DD4444FF",
 	"lifetime": 30,
 	"speed": 4,
-	"damage": 8,
+	"damage": 18,
 	"shootEffect":  {
 	    		"type": "ParticleEffect"	
                         "sizeFrom": 2,
@@ -97,7 +97,7 @@
       "sideLength": 15,
       "width": 12,
       "colors":["DD4444FF", "FF6666FF", "FFFFFFFF"],
-      "length": 60
+      "length": 86
 	"shootEffect":  {
 	    		"type": "ParticleEffect"	
                         "sizeFrom": 2,
@@ -143,7 +143,7 @@
 			    "type": "lightningBulletType",
 			    "damage": 20,
 			    "lightningColor": "FF6666FF",
-			    "lightningLength": 10,
+			    "lightningLength": 11,
 			    "lightningLengthRand": 2
 		    }
 		    }

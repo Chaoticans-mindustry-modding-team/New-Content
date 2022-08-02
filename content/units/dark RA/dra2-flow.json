@@ -79,7 +79,7 @@
     "shootCone": 15,
     "mirror": false,
 	"alternate": true,
-		"shake": 1,
+		"shake": 3,
     "top": false,
 	"rotate": false,
     "y": 3,

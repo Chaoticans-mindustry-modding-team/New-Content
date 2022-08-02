@@ -31,7 +31,7 @@
     "top": false,
 	"rotate": false,
     "y": 3.5,
-	"x": 5,
+	"x": 4.6,
     "reload": 9,
     "shootSound": "laserpew",
 	"ejectEffect": "none",
@@ -95,9 +95,9 @@
       "sideAngle": 35,
       "sideWidth": 1.5,
       "sideLength": 15,
-      "width": 5,
+      "width": 12,
       "colors":["DD4444FF", "FF6666FF", "FFFFFFFF"],
-      "length": 47
+      "length": 60
 	"shootEffect":  {
 	    		"type": "ParticleEffect"	
                         "sizeFrom": 2,

@@ -20,6 +20,7 @@
 		"TargetAir": true,
         "commandLimit": 8,
         "circleTarget": true,
+	"destructableWreck": false,
 	    "weapons": [
 		{
     "name": "red-laser-weapon",
@@ -80,6 +81,7 @@
 			    "shootSound": "spark",
 			    "inaccuracy": 360,
 			    "shots": 3,
+			    "ignoreRotation",
 			    "shootOnDeath": true,
 			    "bullet": {
 			    "type": "lightningBulletType",

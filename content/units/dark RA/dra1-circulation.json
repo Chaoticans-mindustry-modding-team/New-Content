@@ -81,7 +81,8 @@
 			    "shootSound": "spark",
 			    "inaccuracy": 360,
 			    "shots": 3,
-			    "ignoreRotation",
+			    "shootCone": 360,
+			    "ignoreRotation": true,
 			    "shootOnDeath": true,
 			    "bullet": {
 			    "type": "lightningBulletType",

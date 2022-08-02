@@ -30,8 +30,8 @@
 	"alternate": true,
     "top": false,
 	"rotate": false,
-    "y": 3,
-	"x": 4,
+    "y": 5,
+	"x": 6,
     "reload": 9,
     "shootSound": "laserpew",
 	"ejectEffect": "none",
@@ -83,8 +83,8 @@
 	"rotate": false,
     "y": 3,
 	"x": 0,
-    "reload": 9,
-    "shootSound": "laserpew",
+    "reload": 27,
+    "shootSound": "shootSnap",
 	"ejectEffect": "none",
 	"smokeEffect": "none",
     "recoil": 2.5,
@@ -93,10 +93,10 @@
       "damage": 30,
       "sideAngle": 20,
       "sideWidth": 1.5,
-      "sideLength": 5,
-      "width": 25,
+      "sideLength": 8,
+      "width": 3,
       "colors":["DD4444FF", "FF6666FF", "FFFFFFFF"],
-      "length": 280
+      "length": 47
 	"shootEffect":  {
 	    		"type": "ParticleEffect"	
                         "sizeFrom": 2,

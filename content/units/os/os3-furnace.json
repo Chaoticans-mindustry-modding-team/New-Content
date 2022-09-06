@@ -117,7 +117,9 @@
 	  "rotateSpeed": 15,
 	  "shots": 1,
 	  "ejectEffect": "casing1",
-	  "bullet": "standardCopper"
+	  "bullet": {
+		"damage": 9
+	}
   }
 ]
 }

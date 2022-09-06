@@ -55,7 +55,9 @@
     "rotateSpeed": 10,
     "shootCone": 25,
 	"ejectEffect": "casing1",
-	"bullet": "standardCopper"
+	"bullet": {
+		"damage": 9
+	}
     },
     {
     "name": "mount-weapon",
@@ -69,7 +71,9 @@
     "rotateSpeed": 10,
     "shootCone": 25,
 	"ejectEffect": "casing1",
-	"bullet": "standardCopper"
+	"bullet": {
+		"damage": 9
+	}
     }
 	
 	]

@@ -1,0 +1,54 @@
+{
+"localizedName": "radium",
+"research": {
+	"parent": "dagger",
+	"requirements": [
+	"silicon/120",
+	"titanium/70"
+	]
+}
+"description": "Expels a radioactive shockwave at all nearby enemies.",
+"type": "mech",
+"armor": 1,
+"commandLimit": 6,
+"speed": 2.5,
+"flying": false,
+"targetAir": true,
+"health": 345,
+"immunities": [
+		"burning"
+		],
+"weapons": [
+  {
+  "name": "radium-weapon",
+  "mirror": false,
+  "x": 0,
+  "y": 0,
+  "reload": 20,
+  "recoil": 2,
+  "top": false,
+  "shots": 36,
+    "spacing": 10,
+  "shootSound": "spark",
+  "shootEffect":{
+    "type": "WaveEffect"
+    "waveColor": "7CCF53FF",
+    "waveRadius": 15,
+    "lifetime": 3
+  },
+  "ejectEffect": "none",
+  "shake": 1.5,
+  "bullet": {
+            "type": "BasicBulletType",
+    "frontColor": "00000000",
+    "backColor": "00000000",
+    "pierceBuilding": true,
+    "pierce": true,
+    "speed": 5,
+    "lifetime": 3,
+			"damage": 10,
+			"status": "new-units-radiun"
+     }
+  }
+]
+}

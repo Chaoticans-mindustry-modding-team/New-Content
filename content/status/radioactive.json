@@ -1,0 +1,20 @@
+{
+"name": "Radioactive",
+"permanent": true,
+"effect": {
+"type": "ParticleEffect",
+"line": true,
+"particles": 1,
+"lifetime": 30,
+"interp": "circleOut",
+"sizeInterp": "swingIn",
+"length": 25,
+"cone": -360,
+"colorFrom": "7CCF53FF",
+"colorTo": "7CCF53FF"
+},
+"damage": 0.1,
+"reloadMultiplier": 0.70,
+"speedMultiplier": 0.80,
+"healthMultiplier": 0.65
+}

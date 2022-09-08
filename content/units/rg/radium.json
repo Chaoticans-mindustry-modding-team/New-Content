@@ -45,9 +45,11 @@
     "pierceBuilding": true,
     "pierce": true,
     "speed": 5,
+	  "despawnEffect": "none",
+	  "hitEffect": "none",
     "lifetime": 3,
 			"damage": 10,
-			"status": "new-units-radiun"
+			"status": "newunits-radioactive"
      }
   }
 ]

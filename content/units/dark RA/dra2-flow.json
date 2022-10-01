@@ -113,7 +113,7 @@
 	    		"type": "ParticleEffect"	
                         "sizeFrom": 2,
 		"sizeTo": 1,
-		"length: 6,
+		"length": 6,
 		"interp": "circleOut",
 		"sizeInterp": "swingIn",
         		"lifetime": 13,

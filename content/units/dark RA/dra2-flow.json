@@ -121,6 +121,7 @@
 		"colorFrom": "FF6666FF",
 		"colorTo": "FF666600"
 			}
+		    }
 		    },
 	"hitEffect": {
 	    		"type": "ParticleEffect"	

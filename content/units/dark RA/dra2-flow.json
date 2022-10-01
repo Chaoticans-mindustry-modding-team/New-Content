@@ -99,6 +99,8 @@
       "colors":["DD4444FF", "FF6666FF", "FFFFFFFF"],
       "length": 86
 	"shootEffect":  {
+	     "type": "MultiEffect"
+	     "effects": {
 	    		"type": "ParticleEffect"	
                         "sizeFrom": 2,
 		"line": true,
@@ -107,6 +109,18 @@
 		"colorFrom": "FF6666FF",
 		"colorTo": "FF6666FF",
 			},
+		{
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+		"sizeTo": 1,
+		"length: 6,
+		"interp": "circleOut",
+		"sizeInterp": "swingIn",
+        		"lifetime": 13,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF666600"
+			}
+		    },
 	"hitEffect": {
 	    		"type": "ParticleEffect"	
                         "sizeFrom": 2,

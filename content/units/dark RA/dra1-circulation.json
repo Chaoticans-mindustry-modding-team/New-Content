@@ -32,7 +32,7 @@
     "y": 1,
 	"x": 0,
     "reload": 12,
-    "shootSound": "laserpew",
+    "shootSound": "bolt",
 	"ejectEffect": "none",
 	"smokeEffect": "none",
     "recoil": 2.5,

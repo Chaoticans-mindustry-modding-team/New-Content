@@ -101,6 +101,7 @@
 	"shootEffect":  {
 	     "type": "MultiEffect"
 	     "effects": {
+	     {
 	    		"type": "ParticleEffect"	
                         "sizeFrom": 2,
 		"line": true,

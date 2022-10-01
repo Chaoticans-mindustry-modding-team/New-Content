@@ -100,7 +100,7 @@
       "length": 86
 	"shootEffect":  {
 	     "type": "MultiEffect"
-	     "effects": {
+	     "effects": [
 	     {
 	    		"type": "ParticleEffect"	
                         "sizeFrom": 2,
@@ -121,7 +121,7 @@
 		"colorFrom": "FF6666FF",
 		"colorTo": "FF666600"
 			}
-		    }
+		    ]
 		    },
 	"hitEffect": {
 	    		"type": "ParticleEffect"	

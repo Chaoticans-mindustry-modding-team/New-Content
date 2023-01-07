@@ -80,13 +80,16 @@
 			    "reload": 99999
 			    "shootSound": "spark",
 			    "inaccuracy": 360,
-			    "shots": 3,
+			    "shot": {
+			    "shots": 5,
+			    "shotDelay": 0
+		    }
 			    "shootCone": 360,
 			    "ignoreRotation": true,
 			    "shootOnDeath": true,
 			    "bullet": {
 			    "type": "lightningBulletType",
-			    "damage": 10,
+			    "damage": 20,
 			    "lightningColor": "FF6666FF",
 			    "lightningLength": 8,
 			    "lightningLengthRand": 2

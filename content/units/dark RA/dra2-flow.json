@@ -5,9 +5,10 @@
 			"requirements": [
 			"silicon/270",
 			"titanium/100"
-      "graphite/100"
+                        "graphite/100"
+			"copper/50"
 			],
-			"parent": "dagger"
+			"parent": "dra1-circulation"
 		},
         "speed": 2.32,
         "accel": 0.07,

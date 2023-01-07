@@ -19,7 +19,8 @@
         "health": 1080,
         "armor": 7,
 	"range": 225,
-        "engineOffset": 15,
+	"lowAltitude": true,
+        "engineOffset": 12.5,
 		"TargetAir": true,
         "commandLimit": 8,
 	"hitSize": 21.5,
@@ -33,9 +34,9 @@
 	"alternate": true,
     "top": false,
 	"rotate": false,
-    "y": 8.5,
-	"x": 10,
-    "reload": 9,
+    "y": 12,
+	"x": 7.1,
+    "reload": 7,
     "shootSound": "bolt",
 	"ejectEffect": "none",
 	"smokeEffect": "none",
@@ -155,6 +156,7 @@
   "rotate": true,
   "rotatespeed": 0.75,
   "reload": 135,
+  "shake": 8,
   "shootSound": "shockBlast",
   "inaccuracy": 10,
   "shootCone": 50,
@@ -162,8 +164,8 @@
   "ejectEffect": "none",
   "bullet": {
   "type": "BasicBulletType",
-  "width": 6,
-  "height": 6,
+  "width": 24,
+  "height": 12,
   "speed": 3.5,
   "lifetime": 80,
   "damage": 53,
@@ -182,6 +184,11 @@
   "lightningColor": "FF6666FF",
   "lightningLength": 9.3,
   "lightningLengthRand": 4.5,
+  "homingRadius": 24,
+  "homingPower": 0.05
+  "hitShake": 8,
+  "despawnShake": 8,
+  "hitSound": "plasmaboom",
   "shootEffect": {
     "type": "ParticleEffect"
     "particles": 8,
@@ -246,7 +253,7 @@
 			    "type": "lightningBulletType",
 			    "damage": 45,
 			    "lightningColor": "FF6666FF",
-			    "lightningLength": 11,
+			    "lightningLength": 25,
 			    "lightningLengthRand": 2
 		    }
 		    }

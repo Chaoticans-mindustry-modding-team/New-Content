@@ -3,21 +3,23 @@
 	"description": "Barrages enemies with lasers and energy orbs. Explodes into lightning on death.",
         "research": {
 			"requirements": [
-			"silicon/270",
-			"titanium/100"
-      "graphite/100"
+			"silicon/500",
+			"titanium/250",
+                        "graphite/200",
+			"lead/50",
+			"copper/100"
 			],
-			"parent": "dagger"
+			"parent": "dra2-flow"
 		},
-        "speed": 2.32,
-        "accel": 0.07,
-        "drag": 0.06,
+        "speed": 21.78,
+        "accel": 0.12,
+        "drag": 0.11,
 		"outlineColor": "28292EFF",
         "flying": true,
-        "health": 570,
-        "armor": 4,
-	"range": 120,
-        "engineOffset": 5.5,
+        "health": 1080,
+        "armor": 7,
+	"range": 225,
+        "engineOffset": 15,
 		"TargetAir": true,
         "commandLimit": 8,
         "circleTarget": true,
@@ -160,8 +162,8 @@
   "type": "BasicBulletType",
   "width": 6,
   "height": 6,
-  "speed": 2.5,
-  "lifetime": 15,
+  "speed": 3.5,
+  "lifetime": 31,
   "damage": 53,
   "sprite": "circle-bullet",
   "frontColor": "FF6666FF",

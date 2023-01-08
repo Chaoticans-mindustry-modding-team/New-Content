@@ -1,0 +1,50 @@
+{
+        "localizedName": "Spark",
+	"description": "Fires basic lightning bolts at all nearby enemies. Flies at incredible speeds.",
+        "research": {
+			"requirements": [
+			"silicon/100",
+			"surge-allow/10"
+			],
+			"parent": "dagger"
+		},
+        "speed": 7.53,
+        "accel": 0.07,
+        "drag": 0.06,
+		"outlineColor": "28292EFF",
+        "flying": true,
+        "health": 210,
+        "armor": 2,
+	"range": 12,
+        "engineOffset": 5.5,
+		"TargetAir": true,
+        "commandLimit": 8,
+        "circleTarget": true,
+	"destructableWreck": true,
+	    "weapons": [
+		
+		    {
+			    "name": "zap-bolter"
+			    "x": 0,
+			    "y": -4.5,
+          "rotate": true,
+          "rotateSpeed": 0.3,
+			    "reload": 19,
+			    "shootSound": "spark",
+			    "inaccuracy": 4,
+			    "shot": {
+			    "shots": 2,
+			    "shotDelay": 1
+		    }
+			    "shootCone": 30,
+			    "bullet": {
+			    "type": "lightningBulletType",
+			    "damage": 15,
+			    "lightningLength": 12,
+			    "lightningLengthRand": 2
+		    }
+		    }
+    }
+	
+	]
+}

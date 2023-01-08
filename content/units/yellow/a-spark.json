@@ -11,11 +11,11 @@
         "speed": 7.53,
         "accel": 0.07,
         "drag": 0.06,
-		"outlineColor": "28292EFF",
+	"lowAltitude": true,
         "flying": true,
         "health": 210,
         "armor": 2,
-	"range": 40,
+	"range": 20,
         "engineOffset": 3.5,
 		"TargetAir": true,
         "commandLimit": 8,
@@ -26,10 +26,10 @@
 		    {
 			    "name": "zap-bolter"
 			    "x": 0,
-			    "y": -2.9,
+			    "y": -1.35,
           "rotate": true,
-          "rotateSpeed": 1.8,
-			    "reload": 5,
+          "rotateSpeed": 5.9,
+			    "reload": 8,
 			    "mirror": false,
 			    "shootSound": "spark",
 			    "inaccuracy": 4,
@@ -42,8 +42,8 @@
 			    "type": "lightningBulletType",
 			    "damage": 15,
 		    "lightningColor": "FFF582FF",
-			    "lightningLength": 30,
-			    "lightningLengthRand": 10,
+			    "lightningLength": 15,
+			    "lightningLengthRand": 5,
 		    "hitEffect": "shootHealYellow"
 		    }
 }

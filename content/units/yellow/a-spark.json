@@ -4,7 +4,7 @@
         "research": {
 			"requirements": [
 			"silicon/100",
-			"surge-allow/10"
+			"surge-alloy/10"
 			],
 			"parent": "dagger"
 		},

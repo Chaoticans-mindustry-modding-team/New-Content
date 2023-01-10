@@ -1,0 +1,56 @@
+"type": "flying",
+"name": "Zap",
+"description": "Uses an auto-fire shocker to rapidy fire lasers at enemy targets. Exceptionally fast.",
+"health": 490,
+"research": {
+			"requirements": [
+			"silicon/350",
+			"surge-alloy/25"
+        "graphite/5"
+			],
+			"parent": "dagger"
+		},
+"armor": 5,
+"engineOffset": 7,
+"range": 52,
+"flying": true,
+"speed": 6.4,
+"engines": [
+  {
+    "x": 3,
+    "y": -1.5,
+    "rotation": 315,
+    "radius": 3,
+  }
+  {
+    "x": -3,
+    "y": -1.5,
+    "rotation": 215,
+    "radius": 3,
+  }
+]
+"weapons": [
+  {
+    "name": "shocker-mount",
+    "alternate": false,
+    "controllable": false,
+    "autoTarget": true,
+    "y": -4,
+    "x": 0,
+    "mirror": false,
+    "reload": 5,
+    "shootSound": "laser"
+    "bullet": {
+      "type": "LaserBulletType",
+      "colors":["FFF954FF", "FFFC96FF", "FFFFFFFF"],
+      "speed": 0,
+      "lifetime": 5,
+      "damage": 10,
+      "pierce": true,
+      "pierceCap": 4,
+      "length": 52,
+      "status": "shocked",
+      "statusDuration": 3
+    }
+  }
+  ]

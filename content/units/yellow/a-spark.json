@@ -1,6 +1,6 @@
 {
         "localizedName": "Spark",
-	"description": "Fires basic lightning bolts at all nearby enemies. Flies at incredible speeds.",
+	"description": "Uses an auto-fire mount to fire lightning bolts at enemy targets. Unimaginaably fast.",
         "research": {
 			"requirements": [
 			"silicon/100",
@@ -27,6 +27,8 @@
 			    "name": "zap-bolter"
 			    "x": 0,
 			    "y": -1.35,
+			    "controllable": false,
+			    "autoTarget": true,
           "rotate": true,
           "rotateSpeed": 5.9,
 			    "reload": 8,

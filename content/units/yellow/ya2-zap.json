@@ -6,15 +6,16 @@
 			"requirements": [
 			"silicon/350",
 			"surge-alloy/25"
-        "graphite/5"
+        "graphite/45"
 			],
-			"parent": "dagger"
+			"parent": "ya1-spark"
 		},
 "armor": 5,
 "engineOffset": 7,
 "range": 52,
 "flying": true,
 "speed": 6.4,
+"hitSize": 13
 "engines": [
   {
     "x": 3,

@@ -11,6 +11,7 @@
 			"parent": "ya1-spark"
 		},
 "armor": 5,
+"lowAltitude": true,
 "engineOffset": 7,
 "range": 73,
 "flying": true,

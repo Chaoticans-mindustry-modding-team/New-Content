@@ -1,6 +1,6 @@
 "type": "flying",
 "name": "Zap",
-"description": "Uses an auto-fire shocker to rapidy fire lasers at enemy targets. Exceptionally fast.",
+"description": "Rapidy fires lasers at enemy targets. Exceptionally fast.",
 "health": 490,
 "research": {
 			"requirements": [

@@ -12,7 +12,7 @@
 		},
 "armor": 5,
 "engineOffset": 7,
-"range": 52,
+"range": 73,
 "flying": true,
 "speed": 6.4,
 "hitSize": 13
@@ -36,20 +36,40 @@
     "alternate": false,
     "y": -4,
     "x": 0,
+	  "rotate": true,
+	  "rotateSpeed": 3.9,
     "mirror": false,
     "reload": 9,
     "shootSound": "laser"
+	  "shootEffect": {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+		"line": true,
+		"sizeTo": 1,
+        		"lifetime": 8,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF",
+			},
     "bullet": {
       "type": "LaserBulletType",
       "colors":["FFF954FF", "FFFC96FF", "FFFFFFFF"],
       "speed": 0,
-      "lifetime": 5,
-      "damage": 10,
+      "lifetime": 10,
+      "damage": 20,
       "pierce": true,
       "pierceCap": 4,
-      "length": 52,
+      "length": 73,
       "status": "shocked",
       "statusDuration": 3
+"hitEffect": {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+		"line": true,
+		"sizeTo": 1,
+        		"lifetime": 8,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF",
+			}
     }
   }
   ]

@@ -164,8 +164,8 @@
   "ejectEffect": "none",
   "bullet": {
   "type": "BasicBulletType",
-  "width": 24,
-  "height": 12,
+  "width": 12,
+  "height": 24,
   "speed": 3.5,
   "lifetime": 80,
   "damage": 53,

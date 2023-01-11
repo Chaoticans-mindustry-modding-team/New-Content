@@ -34,12 +34,10 @@
   {
     "name": "shocker-mount",
     "alternate": false,
-    "controllable": false,
-    "autoTarget": true,
     "y": -4,
     "x": 0,
     "mirror": false,
-    "reload": 5,
+    "reload": 9,
     "shootSound": "laser"
     "bullet": {
       "type": "LaserBulletType",

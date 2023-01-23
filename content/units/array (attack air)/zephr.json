@@ -32,9 +32,11 @@
     "y": -7,
     "reload": 75,
 	"xRand": 5,
-	"shots": 5,
-	"shotDelay": 4
-	"inaccuracy": 3
+	"shoot": {
+		"shots": 3,
+		"shotDelay": 0
+	}
+	"inaccuracy": 6
     "shootSound": "missile",
     "recoil": 2,
 	"shake": 5,
@@ -65,7 +67,7 @@
 	"status": "blasted",
 	"statusDuration": 10,
 		"fragBullets": 2,
-		"fragCone": 30
+		"fragRandomSpread": 30,
 		"fragLifeMin": 1.9,
 		"fragLifeMax": 3.2,
 		"fragVelocityMin": 1.2,

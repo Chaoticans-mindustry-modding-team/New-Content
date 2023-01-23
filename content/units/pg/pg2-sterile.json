@@ -29,8 +29,10 @@
   "recoil": 2,
   "top": false,
   "inaccuracy": 5,
-  "shots": 2
-  "shotDelay": 1
+  "shoot": {
+	  "shots": 2,
+	  "shotDelay": 0
+  }
   "shootSound": "laser",
   "ejectEffect": "none",
   "shake": 4.1,

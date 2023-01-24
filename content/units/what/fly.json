@@ -1,7 +1,12 @@
 {
         "localizedName": "Fly",
 	"description": "the worst thing you ever see",
-        "research": "flare",
+        "research": {
+		"parent": "flare":
+		"requirements": [
+		"copper/20"
+		]
+}
         "speed": 10,
         "accel": 0.9,
         "drag": 0.9,
@@ -31,7 +36,7 @@
     "x": 3,
     "y": 1,
     "reload": 3,
-    "shootSound": "lasershoot",
+    "shootSound": "bolt",
     "recoil": 2.5,
     "bullet": {
 		"damage": 10,

@@ -1,7 +1,16 @@
 {
         "localizedName": "Constructor",
-	"description": "Constructs missile units.",
-        "research": "tf1-constructor",
+	"description": "Fires a healing missile at enemies. Constructs missile units.",
+        "research": {
+	    "parent": "tf1-constructor",
+
+		    
+	"requirements": [
+		    "silicon/235",
+		    "lead/135",
+		    "copper/205",
+		    ]
+}
         "speed": 2.7,
         "accel": 0.05,
         "drag": 0.05,

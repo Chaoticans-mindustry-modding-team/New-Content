@@ -1,7 +1,14 @@
 {
         "localizedName": "Wraith",
-	"description": "[gray]A basic unit created by Terrux. Can fire a short slowing shot.",
-        "research": "flare",
+	"description": "[gray]A basic unit created by Terrux. Can fire a shot that slows enemies..",
+        "research": {
+	    "parent": "flare",
+	    "requirements": [
+		    "silicon/150",
+		    "lead/250",
+		    "copper/125",
+		    ]
+		    }
         "speed": 3,
         "accel": 0.04,
         "drag": 0.01,

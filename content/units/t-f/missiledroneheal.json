@@ -1,7 +1,14 @@
 {
         "localizedName": "Healer Missile Drone",
 	"description": "Fires basic missiles at all nearby enemies.",
-        "research": "tf1-constructor",
+	       "research": {
+	    "parent": "tf1-constructor",
+	    "requirements": [
+		    "silicon/120",
+		    "lead/95",
+		    "copper/155",
+		    ]
+		    }
         "speed": 5,
         "accel": 0.05,
 	"hitsize": 6,

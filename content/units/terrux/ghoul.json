@@ -1,7 +1,14 @@
 {
         "localizedName": "Ghoul",
 	"description": "[gray]The upgraded wraith, its equipped with upgraded slowing shotguns and dark energy bolters.",
-        "research": "flare",
+       "research": {
+	    "parent": "wraith",
+	    "requirements": [
+		    "silicon/350",
+		    "lead/250",
+		    "copper/250",
+		    ]
+		    }
         "speed": 3,
         "accel": 0.04,
         "drag": 0.01,

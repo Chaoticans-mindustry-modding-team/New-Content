@@ -1,7 +1,14 @@
 {
         "localizedName": "Constructor",
 	"description": "Constructs missile units.",
-        "research": "dagger",
+               "research": {
+	    "parent": "poly",
+	    "requirements": [
+		    "silicon/250",
+		    "lead/150",
+		    "titanium/125",
+		    ]
+		    }
         "speed": 2.3,
         "accel": 0.05,
         "drag": 0.05,

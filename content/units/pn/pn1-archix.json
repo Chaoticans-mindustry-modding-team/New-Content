@@ -2,7 +2,15 @@
     "localizedName": "Archix",
     "description": "Fires multiple piercing sap lasers and bolts at all nearby enemies.",
 	"details": "Ship designed for unit combat, assists other units by sapping the enemy, making said enemy take extra damage and move slower.",
-    "research": "dagger",
+           "research": {
+	    "parent": "risso",
+	    "requirements": [
+		    "silicon/250",
+		    "titanium/235",
+		    "spore-pod/255,
+		    "lead/100"
+		    ]
+		    }
     "type": "naval",
     "speed": 1.1,
     "drag": 0.13,

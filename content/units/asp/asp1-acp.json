@@ -2,7 +2,14 @@
     "localizedName": "ACP",
     "description": "Guards other units with it's weak sheild.",
 	"details": "Anticlimactic Central Protector.",
-    "research": "dagger",
+           "research": {
+	    "parent": "retusa",
+	    "requirements": [
+		    "silicon/250",
+		    "lead/100",
+		    "titanium/200,
+		    ]
+		    }
     "type": "naval",
     "speed": 1.2,
     "drag": 0.13,

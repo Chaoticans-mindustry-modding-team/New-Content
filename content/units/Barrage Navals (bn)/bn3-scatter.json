@@ -2,7 +2,14 @@
     "localizedName": "Scatter",
     "description": "Fires Large piercing shells and a barrage of standard bullets at all nearby enemies.",
 	"details": "Risso Clickbait.",
-    "research": "bn2-swarm",
+        "research": {
+	    "parent": "bn2-swarm",
+	    "requirements": [
+		    "silicon/450",
+		    "lead/235",
+		    "titanium/255,
+		    ]
+		    }
     "type": "naval",
     "speed": 1.1,
     "drag": 0.14,
@@ -16,20 +23,22 @@
     "rotateShooting": false,
 	"weapons": [
 		{
-    "name": "big-cannon",
+    "name": "small-cannon",
     "reload": 100,
 	"mirror": false,
     "x": 0,
     "y": 1,
     "shootY": 4,
 	"recoilTime": 100,
-	"inaccuracy": 1,
+	"inaccuracy": 30,
     "rotate": true,
-    "shootSound": "shootBig",
+    "shootSound": "bang",
     "rotateSpeed": 4.2,
     "shootCone": 2,
-    "shots": 4,
-    "shotDelay": 1,
+    "shoot": {
+	"shots": 3,
+	"shotDelay": 0
+}
     "shake": 5,
 	"ejectEffect": "casing2",
 	"bullet": {

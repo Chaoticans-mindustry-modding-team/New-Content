@@ -7,6 +7,7 @@
 	    "requirements": [
 		    "silicon/250",
 		    "lead/100"
+		    ]
 		    }
     "type": "naval",
     "speed": 1.1,

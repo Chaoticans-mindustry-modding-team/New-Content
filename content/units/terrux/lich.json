@@ -1,7 +1,15 @@
 {
-        "localizedName": "Renevant",
-	"description": "[gray]A flying stauger, can fire powerful blasts of dark energy it has upgraded dark bolters and it can shoot large dark energy shells over large distance."
-        "accel": 0.04,
+        "localizedName": "Lich",
+	"description": "[gray]A monster of a unit. Fires dark energy missiles, dark energy shells, dark energy bombs and a deadly laser."
+        "research": {
+	    "parent": "renevant",
+	    "requirements": [
+		    "silicon/750",
+		    "lead/400",
+		    "copper/235",
+		    ]
+		    }
+	"accel": 0.04,
         "drag": 0.01,
         "flying": true,
         "health": 850,
@@ -21,7 +29,7 @@
   "mirror": false,
   "top": false,
   "shake": 4,
-  "shootY": 23,
+  "shootY": 6,
   "reload": 340,
   "recoil": 0,
   "chargeSound": "lasercharge2",
@@ -72,6 +80,7 @@
     "bullet": {
     "type": "FlakBulletType",
     "buildingDamageMultiplier": 1.15,
+			"hitGround": true,
     "shootEffect": {
 		"type": "WaveEffect",
 		"colorFrom": "ffffffff",

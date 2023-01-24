@@ -1,7 +1,15 @@
 {
         "localizedName": "Renevant",
 	"description": "[gray]A flying stauger, can fire powerful blasts of dark energy it has upgraded dark bolters and it can shoot large dark energy shells over large distance."
-        "accel": 0.04,
+        "research": {
+	    "parent": "ghoul",
+	    "requirements": [
+		    "silicon/500",
+		    "lead/355",
+		    "copper/325",
+		    ]
+		    }
+	"accel": 0.04,
         "drag": 0.01,
         "flying": true,
         "health": 850,

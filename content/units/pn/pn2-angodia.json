@@ -2,7 +2,15 @@
     "localizedName": "Angodia",
     "description": "Debuffs nearby enemies with a sapping flamethrower. Heals nearby allied units with a mounted repair point.",
 	"details": "Debuff enemies, heal allies? bruh its not a support boat, exogenesis has a genesux unit oort it can heal, its fine dude",
-    "research": "pn1-archix",
+           "research": {
+	    "parent": "pn1-archix",
+	    "requirements": [
+		    "silicon/475",
+		    "spore-pod/450",
+		    "lead/345",
+		    "titanium/335,
+		    ]
+		    }
     "type": "naval",
     "speed": 0.85,
     "drag": 0.13,

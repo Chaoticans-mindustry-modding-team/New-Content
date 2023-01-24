@@ -2,7 +2,14 @@
     "localizedName": "Swarm",
     "description": "Fires a barrage of heavy bullets at all nearby enemies",
 	"details": "Risso Clickbait.",
-    "research": "bn1-barrage",
+     "research": {
+	    "parent": "bn1-barrage",
+	    "requirements": [
+		    "silicon/350",
+		    "lead/200",
+		    "titanium/150"
+		    ]
+		    }
     "type": "naval",
     "speed": 1.3,
     "drag": 0.13,

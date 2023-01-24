@@ -2,7 +2,12 @@
     "localizedName": "Barrage",
     "description": "Fires a barrage of standard bullets at all nearby enemies.",
 	"details": "Risso Clickbait.",
-    "research": "risso",
+    "research": {
+	    "parent": "risso",
+	    "requirements": [
+		    "silicon/250",
+		    "lead/100"
+		    ],
     "type": "naval",
     "speed": 1.1,
     "drag": 0.13,

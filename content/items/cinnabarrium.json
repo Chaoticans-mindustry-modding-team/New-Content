@@ -1,6 +1,6 @@
 {
   "name": "[#FF3333]Cinnabarrium"
-  "description" "[#FF3333]A red alloy channeled with the power of lasers."
+  "description": "[#FF3333]A red alloy channeled with the power of lasers."
     "cost": 3,
     "hardness": 12,
     "explosiveness": 2,

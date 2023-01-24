@@ -2,7 +2,7 @@
         "localizedName": "Fly",
 	"description": "the worst thing you ever see",
         "research": {
-		"parent": "flare":
+		"parent": "flare"
 		"requirements": [
 		"copper/20"
 		]

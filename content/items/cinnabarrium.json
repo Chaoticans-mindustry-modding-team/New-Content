@@ -1,0 +1,15 @@
+{
+  "name": "[#FF3333]Cinnabarrium"
+  "description" "[#FF3333]A red alloy channeled with the power of lasers."
+    "cost": 3,
+    "hardness": 12,
+    "explosiveness": 2,
+  "charge": 1.5
+    "color": "FF3333FF",
+    "research": {
+    "parent": "surge-alloy",
+    "requirements": [
+    "surge-alloy/200"
+  ]
+  }
+}

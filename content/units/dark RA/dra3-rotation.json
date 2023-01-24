@@ -1,6 +1,6 @@
 {
         "localizedName": "Rotation",
-	"description": "Barrages enemies with lasers and energy orbs. Explodes into lightning on death.",
+	"description": "Barrages enemies with lasers and shrapnel bullets. Fires a large homing energy orb every few seconds. Explodes into lightning on death.",
         "research": {
 			"requirements": [
 			"silicon/500",
@@ -83,13 +83,13 @@
     "shootCone": 15,
     "mirror": false,
 	"alternate": true,
-		"shake": 3,
+		"shake": 9.6666,
     "top": false,
 	"rotate": false,
     "y": 5.2,
 	"x": 0,
     "reload": 36,
-    "shootSound": "shrapnel",
+    "shootSound": "shotgun",
 	"ejectEffect": "none",
 	"smokeEffect": "none",
     "recoil": 2.5,

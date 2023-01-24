@@ -165,8 +165,10 @@
   "bullet": {
   "type": "BasicBulletType",
   "width": 12,
-  "height": 24,
+  "height": 12,
   "speed": 3.5,
+  "shrinkX": 0,
+  "shrinkY": 0,
   "lifetime": 80,
   "damage": 53,
   "sprite": "circle-bullet",
@@ -184,7 +186,7 @@
   "lightningColor": "FF6666FF",
   "lightningLength": 9.3,
   "lightningLengthRand": 4.5,
-  "homingRadius": 24,
+  "homingRadius": 54,
   "homingPower": 0.05
   "hitShake": 8,
   "despawnShake": 8,

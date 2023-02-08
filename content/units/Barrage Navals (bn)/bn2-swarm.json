@@ -47,7 +47,7 @@
     "name": "side-cannon",
     "reload": 18,
 	"mirror": true,
-    "x": 6,
+    "x": -6,
     "y": -2,
     "shootY": 4,
     "recoil": 1.5,
@@ -63,7 +63,8 @@
 		"damage": 10,
 		"speed": 3,
 		"width": 10,
-		"height":5,
+		"height":10,
+	    "shrinkX": 0.2,
 		"hitEffect": "flakExplosion",
 		"splashDamageRadius": 10,
 		"splashDamage": 14

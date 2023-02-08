@@ -19,7 +19,7 @@
         "lead": {
     "type": "ShrapnelBulletType",
     "shootEffect": "none",
-    "damage": 23,
+    "damage": 13,
 	"serrations": 1,
 	"length": 40,
 	"width": 7.5,
@@ -30,7 +30,7 @@
 "titanium": {
     "type": "ShrapnelBulletType",
     "shootEffect": "none",
-    "damage": 39,
+    "damage": 28,
 	"serrations": 2,
 	"length": 40,
 	"width": 7.5,

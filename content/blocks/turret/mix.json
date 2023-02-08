@@ -2,7 +2,7 @@
     "localizedName": "Ignition"
   "description": "Fires a large, short-ranged piercing blast at nearby enemies."
   "type": "ItemTurret",
-    "researchCostMultiplier": 10,
+    "researchCostMultiplier": 0.7,
     "size": 1,
     "health": 350,
     "maxAmmo": 20,

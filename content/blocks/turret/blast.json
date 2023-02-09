@@ -1,22 +1,22 @@
 {
-    "localizedName": "Ignition"
-  "description": "Fires a large, short-ranged piercing blast at nearby enemies."
+    "localizedName": "Blast"
+  "description": "Fires two large, short-ranged piercing blast at nearby enemies."
   "type": "ItemTurret",
     "researchCostMultiplier": 0.7,
-    "size": 1,
+    "size": 2,
     "health": 120,
     "maxAmmo": 30,
     "ammoPerShot": 1,
-    "reload": 30,
+    "reload": 35,
     "range": 60,
     "targetAir": true,
     "targetGround": true,
     "rotateSpeed": 3,
     "recoil": 4,
   "shake": 3
-  "shot": {
+  "shoot": {
   "shots": 2,
-  "shotSpred": 10
+  "shootSpread": 10
 }
     "shootSound": "shotgun"
     "ammoTypes": {

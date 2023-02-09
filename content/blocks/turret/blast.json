@@ -15,8 +15,9 @@
     "recoil": 4,
   "shake": 3
   "shoot": {
+	"type": "ShootSpread"
   "shots": 2,
-  "shootSpread": 10
+  "spread": 25
 }
     "shootSound": "shotgun"
     "ammoTypes": {

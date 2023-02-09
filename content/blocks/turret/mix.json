@@ -18,7 +18,7 @@
     "ammoTypes": {
         "lead": {
     "type": "ShrapnelBulletType",
-    "shootEffect": "none",
+    "shootEffect": "casing1",
     "damage": 13,
 	"serrations": 1,
 	"length": 40,

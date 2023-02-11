@@ -104,7 +104,7 @@
 	  "reload": 35,
 	  "recoil": 3,
 	  "shake": 5
-	  "shoot"{
+	  "shoot": {
     "shots": 2,
     "shotDelay": 2
   }

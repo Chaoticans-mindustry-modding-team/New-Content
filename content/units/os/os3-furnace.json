@@ -23,6 +23,8 @@
 "flying": false,
 "health": 935,
 "rotateShooting": false,
+"hovering": true,
+"shadowElevation": 0.3,
 "immunities": [
 		"burning",
 		"melting"
@@ -102,7 +104,6 @@
 		  "fragBullets": 3,
 		  "fragBullet": {
 			  "damage": 3,
-			  "despawnEffect": "none",
 			  "xShrink": 1,
 			  "lifetime": 16
 		  }

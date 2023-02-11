@@ -21,6 +21,8 @@
 "flying": false,
 "health": 435,
 "rotateShooting": false,
+"hovering": true,
+"shadowElevation": 0.2,
 "immunities": [
 		"burning",
 		"melting"

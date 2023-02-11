@@ -14,18 +14,23 @@
 "legCount": 7,
 "legLength": 30,
 "legTrns": 0.6,
+	"legExtension": -15,
+	"legBaseOffset": 10,
+	"legLengthScl": 0.96,
+	"rippleScale": 2,
+	"legspeed": 0.175,
   "stepShake": 3
-"visualElevation": 0.4,
+"visualElevation": 0.6,
 "legMoveSpace": 1.7,
 "hovering": true,
-"armor": 5,
+"armor": 12,
 "commandLimit": 8,
-"speed": 0.75,
+"speed": 1,
 "flying": false,
 "health": 935,
 "rotateShooting": false,
 "hovering": true,
-"shadowElevation": 0.3,
+"shadowElevation": 0.72,
   "drownMultiplier": 1.75
 "immunities": [
 		"burning",
@@ -39,19 +44,24 @@
   "rotateSpeed": 15,
   "x": 0,
   "y": 0,
+	  	"shoot":{
+	"shots": 5,
+	"shotDelay": 0
+	}
   "reload": 6.5,
   "recoil": 0,
   "shootY": 0,
   "top": false,
   "shake": 1
-  "shootSound": "flame",
-  "soundPitchMin": 0.4,
-  "soundPitchMax": 0.6,
+  "shootSound": "flame2",
+  "soundPitchMin": 0.6,
+  "soundPitchMax": 0.8,
   "ejectEffect": "none",
   "parentizeEffects": false,
   "inaccuracy": 30
   "bullet": {
-            "damage": 25,
+            "damage": 45,
+	  "speed": 16,
             "width": 8,
             "pierce": true,
 			"pierceBuilding": false,
@@ -61,33 +71,19 @@
 	"type": "ParticleEffect",
 	"followParent": false,
 	"particles": 6,
-	"colorFrom": "FF743DFF",
-	"colorTo": "9C3127FF",
-	"sizeFrom": 6,
+	"colorFrom": "DE9959FF",
+	"colorTo": "BA5D4CFF",
+	"sizeFrom": 3,
 	"sizeTo": 0,
 	"cone": 30,
 	"interp": "circleOut",
-  "sizeInterp": "swingIn",
-	"lifetime": 45,
+	"lifetime": 25,
 	"length": 80.5
 	},
 			"speed": 6.5,
             "frontColor": "00000000",
             "backColor": "00000000",
-            "hitEffect": {
-	"type": "ParticleEffect",
-	"followParent": false,
-	"particles": 3,
-	"colorFrom": "FF743DFF",
-	"colorTo": "9C3127FF",
-	"sizeFrom": 6,
-	"sizeTo": 0,
-	"cone": 360,
-	"interp": "circleOut",
-  "sizeInterp": "swingIn",
-	"lifetime": 45,
-	"length": 8
-	},
+            "hitEffect": "none"
 			"status": "melting",
 			"statusDuration": 50,
 			"despawnEffect": "none"
@@ -98,11 +94,12 @@
 	  "mirror": true,
 	  "alternate": true,
 	  "rotate": true,
-	  "rotateSpeed": 4,
-	  "x": 8.5,
+	  "rotateSpeed": 1,
+	  "x": 9,
 	  "y": -3,
 	  "reload": 35,
 	  "recoil": 3,
+	  "inaccuracy": 5.5
 	  "shake": 5
 	  "shoot": {
     "shots": 2,
@@ -116,6 +113,7 @@
 		  "damage": 30,
       "height": 25,
       "width": 10,
+		  "speed": 5.5
       "pierceCap": 3,
       "pierceBuilding": true,
       "lightning": 2,

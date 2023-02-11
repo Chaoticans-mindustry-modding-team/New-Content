@@ -46,8 +46,8 @@
 		"speed": 10,
 		"shrinkX": 0,
 		"shrinkY": 0.1,
-    "width": 17,
-    "height": 7,
+    "width": 7,
+    "height": 25,
     "pierceBuilding": true,
     "pierce": true,
     "pierceCap": 2

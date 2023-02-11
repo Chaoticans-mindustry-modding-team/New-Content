@@ -1,7 +1,7 @@
 {
-"localizedName": "Furnace",
+"localizedName": "Cast",
 "research": {
-	"parent": "os2-kiln",
+	"parent": "os3-kiln",
 	"requirements": [
 	"silicon/1255",
 	"titanium/355",

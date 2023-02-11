@@ -10,7 +10,7 @@
 }
 "description": "Fires standard bullets and a constant stream of flame at all nearby enemies.",
 "type": "legs",
-	"visualElevation": 2,
+	"groundLayer": 75,
 "legCount": 3,
 "legLength": 16,
 "legTrns": 0.6,

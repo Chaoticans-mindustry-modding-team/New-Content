@@ -23,11 +23,11 @@
 "visualElevation": 0.6,
 "legMoveSpace": 1.7,
 "hovering": true,
-"armor": 12,
+"armor": 8,
 "commandLimit": 8,
 "speed": 1,
 "flying": false,
-"health": 935,
+"health": 9000,
 "rotateShooting": false,
 "hovering": true,
 "shadowElevation": 0.72,
@@ -45,7 +45,7 @@
   "x": 0,
   "y": 0,
 	  	"shoot":{
-	"shots": 5,
+	"shots": 3,
 	"shotDelay": 0
 	}
   "reload": 6.5,
@@ -53,14 +53,14 @@
   "shootY": 0,
   "top": false,
   "shake": 1
-  "shootSound": "flame2",
+  "shootSound": "flame",
   "soundPitchMin": 0.6,
   "soundPitchMax": 0.8,
   "ejectEffect": "none",
   "parentizeEffects": false,
-  "inaccuracy": 30
+  "inaccuracy": 15
   "bullet": {
-            "damage": 45,
+            "damage": 55,
 	  "speed": 16,
             "width": 8,
             "pierce": true,
@@ -73,11 +73,11 @@
 	"particles": 6,
 	"colorFrom": "DE9959FF",
 	"colorTo": "BA5D4CFF",
-	"sizeFrom": 3,
-	"sizeTo": 0,
-	"cone": 30,
+	"sizeFrom": 4,
+	"sizeTo": 0.5,
+	"cone": 15,
 	"interp": "circleOut",
-	"lifetime": 25,
+	"lifetime": 30.5,
 	"length": 80.5
 	},
 			"speed": 6.5,

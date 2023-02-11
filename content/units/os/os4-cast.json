@@ -20,7 +20,7 @@
 	"rippleScale": 2,
 	"legspeed": 0.175,
   "stepShake": 3
-"visualElevation": 2,
+"groundLayer": 75,
 "legMoveSpace": 1.7,
 "hovering": true,
 "armor": 8,

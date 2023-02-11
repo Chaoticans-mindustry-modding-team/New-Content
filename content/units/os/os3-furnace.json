@@ -12,6 +12,7 @@
 "description": "Fires a barrage of missiles, bullets and a constant stream of flame at all nearby enemies.",
 "type": "legs",
 "legCount": 5,
+	"visualElevation": 2,
 "legLength": 19.5,
 "legTrns": 0.6,
 "visualElevation": 0.4,

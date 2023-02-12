@@ -1,0 +1,13 @@
+{
+  "name": "Detrisite"
+  "description": "A Metal Refined from scrap."
+    "cost": 3,
+    "hardness": 3,
+    "color": "373761FF",
+    "research": {
+    "parent": "scrap",
+    "requirements": [
+    "scrap/200"
+  ]
+  }
+}

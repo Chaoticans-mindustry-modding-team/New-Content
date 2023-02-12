@@ -1,0 +1,12 @@
+type: wall
+name: Detrisite Wall
+description: Blocks structures from enemy projectiles. Absorbs Lasers
+size: 1
+health: 650
+requirements: [
+plastanium/6
+pscrap/6
+]
+category: defense
+research: copper-wall
+absorbLasers: true

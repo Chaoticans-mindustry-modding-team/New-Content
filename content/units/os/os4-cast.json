@@ -26,6 +26,7 @@
 "armor": 8,
 "commandLimit": 8,
 "speed": 1,
+	"hitSize": 27.5,
 "flying": false,
 "health": 9000,
 "rotateShooting": false,
@@ -60,8 +61,8 @@
   "parentizeEffects": false,
   "inaccuracy": 15
   "bullet": {
-            "damage": 55,
-	  "speed": 16,
+            "damage": 40,
+	  "speed": 20,
             "width": 8,
             "pierce": true,
 			"pierceBuilding": false,
@@ -71,6 +72,7 @@
 	"type": "ParticleEffect",
 	"followParent": false,
 	"particles": 6,
+	  "buildingDamageMultiplier": 1.5
 	"colorFrom": "DE9959FF",
 	"colorTo": "BA5D4CFF",
 	"sizeFrom": 4,
@@ -87,6 +89,8 @@
 			"status": "melting",
 			"statusDuration": 50,
 			"despawnEffect": "none"
+	"hittable": false,
+		  "reflectable": false",
      }
   },
   {
@@ -99,10 +103,10 @@
 	  "y": -3,
 	  "reload": 35,
 	  "recoil": 3,
-	  "inaccuracy": 5.5
+	  "inaccuracy": 1.5
 	  "shake": 5
 	  "shoot": {
-    "shots": 2,
+    "shots": 3,
     "shotDelay": 2
   }
 	  "shootSound": "shootSnap",
@@ -120,7 +124,15 @@
       "lightningLength": 3,
       "lightningDamage": 9,
       "lightningLengthRand": 1,
-      "lightningColor": "FF323DFF"
+      "lightningColor": "FFDE70FF"
+		  "hitEffect": "flakExplosion",
+		  "despawnHit": true,
+		  "splashDamageRadius": 9,
+		  "splashDamage": 15,
+		  "hitShake": 5,
+		  "despawnShake": 5,
+		  "hitSound": "boom"
+		  
 	  }
   },
 ]

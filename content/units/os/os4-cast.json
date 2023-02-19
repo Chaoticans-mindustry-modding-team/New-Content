@@ -61,18 +61,19 @@
   "parentizeEffects": false,
   "inaccuracy": 15
   "bullet": {
-            "damage": 40,
+            "damage": 20,
 	  "speed": 20,
             "width": 8,
             "pierce": true,
 			"pierceBuilding": false,
             "type": "BasicBulletType",
             "lifetime": 5,
+	  "buildingDamageMultiplier": 3,
 		    "shootEffect": {
 	"type": "ParticleEffect",
 	"followParent": false,
 	"particles": 6,
-	  "buildingDamageMultiplier": 1.5
+	  
 	"colorFrom": "DE9959FF",
 	"colorTo": "BA5D4CFF",
 	"sizeFrom": 4,
@@ -131,7 +132,6 @@
 		  "splashDamage": 15,
 		  "hitShake": 5,
 		  "despawnShake": 5,
-		  "hitSound": "boom"
 		  
 	  }
   },

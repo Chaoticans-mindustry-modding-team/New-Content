@@ -52,7 +52,7 @@
   "homingPower": 0.07
 		  "hitEffect": "hitFlameSmall",
 		  "despawnHit": true,
-  "status": "burning":
+  "status": "burning"
   "statusDuration": 84,
 }
 		},

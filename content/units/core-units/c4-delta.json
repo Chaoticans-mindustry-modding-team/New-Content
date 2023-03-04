@@ -17,8 +17,9 @@
   "rotateSpeed": 16.5,
   "accel": 0.15,
   "mineSpeed": 12,
-  "hitSize": 17
+  "hitSize": 13
   "mineTier": 3
+	"lowAltitude": true,
         "armor": 2,
 	"range": 120,
         "engineOffset": 4,
@@ -35,11 +36,16 @@
 	"rotate": false,
     "y": 3.5,
   "shake": 2
-	"x": 4.6,
+	"x": 5.9,
     "reload": 9,
     "shootSound": "shootSnap",
+	"shoot": {
+	"type": "ShootSpread",
+	"shots": 3,
+	"shotDelay": 1,
+	"spread": 2
+},
 	"ejectEffect": "casing2",
-	"smokeEffect": "none",
     "recoil": 2.5,
     "bullet": {
 		  "type": "BasicBulletType",
@@ -47,12 +53,18 @@
       "height": 15,
       "width": 8,
 		  "speed": 4.5,
+	"frontColor": "FF976BFF"
+	    "shootEffect": "hitBulletSmall",
+	"backColor": "DC7548FF"
   "homingRange": 27,
-  "homingPower": 0.07
+  "homingPower": 0.07,
+	"buildingDamageMultiplier": 0.02,
 		  "hitEffect": "hitFlameSmall",
 		  "despawnHit": true,
+	"trailChance": 0.03,
+	"trailColor": "FF976BFF",
   "status": "burning"
-  "statusDuration": 84,
+  "statusDuration": 332,
 }
 		},
      ]

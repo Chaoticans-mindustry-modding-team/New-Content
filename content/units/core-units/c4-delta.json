@@ -21,8 +21,8 @@
   "mineTier": 3
 	"lowAltitude": true,
         "armor": 2,
-	"range": 120,
-        "engineOffset": 4,
+	"range": 291.5,
+        "engineOffset": 7,
 		"TargetAir": true,
         "itemCapacity": 130,
         "circleTarget": false,
@@ -36,10 +36,10 @@
 	"rotate": false,
     "y": 3.5,
   "shake": 2
-	"x": 5.9,
+	"x": -1,
     "reload": 4.5,
     "shootSound": "shootSnap",
-	"ejectEffect": "casing2",
+	"ejectEffect": "casing1",
     "recoil": 2.5,
     "bullet": {
 		  "type": "BasicBulletType",
@@ -48,7 +48,6 @@
       "width": 8,
 		  "speed": 5.5,
 	"frontColor": "FF976BFF"
-	    "shootEffect": "hitBulletSmall",
 	"backColor": "DC7548FF"
   "homingRange": 27,
   "homingPower": 0.07,

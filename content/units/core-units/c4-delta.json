@@ -37,22 +37,16 @@
     "y": 3.5,
   "shake": 2
 	"x": 5.9,
-    "reload": 9,
+    "reload": 4.5,
     "shootSound": "shootSnap",
-	"shoot": {
-	"type": "ShootSpread",
-	"shots": 3,
-	"shotDelay": 1,
-	"spread": 2
-},
 	"ejectEffect": "casing2",
     "recoil": 2.5,
     "bullet": {
 		  "type": "BasicBulletType",
-		  "damage": 13,
+		  "damage": 16,
       "height": 15,
       "width": 8,
-		  "speed": 4.5,
+		  "speed": 5.5,
 	"frontColor": "FF976BFF"
 	    "shootEffect": "hitBulletSmall",
 	"backColor": "DC7548FF"
@@ -63,8 +57,9 @@
 		  "despawnHit": true,
 	"trailChance": 0.03,
 	"trailColor": "FF976BFF",
-  "status": "burning"
+  "status": "burning",
   "statusDuration": 332,
+	"lifetime": 53
 }
 		},
      ]

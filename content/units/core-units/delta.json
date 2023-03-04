@@ -14,7 +14,6 @@
         "flying": true,
         "health": 570,
   "isEnemy": false,
-  "aiController": "BuilderAI",
   "rotateSpeed": 16.5,
   "accel": 0.15,
   "mineSpeed": 12,

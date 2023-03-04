@@ -24,7 +24,7 @@
 	"range": 120,
         "engineOffset": 4,
 		"TargetAir": true,
-        "itemCapacity: 130,
+        "itemCapacity": 130,
         "circleTarget": false,
 	    "weapons": [
 		{

@@ -1,6 +1,6 @@
 {
         "localizedName": "Multi",
-	"description": "Fires clusters of standard bullets at nearby targets. Turrets are auto-crontrolled",
+	"description": "Fires clusters of standard bullets at nearby targets. Turrets are auto-controlled",
         "research": {
 			"requirements": [
 			"silicon/100",
@@ -35,7 +35,7 @@
           "alternate": true,
 			    "shootSound": "pew",
 			    "inaccuracy": 6,
-			    "shot": {
+			    "shoot": {
 			    "shots": 2,
 			    "shotDelay": 1
 		    }

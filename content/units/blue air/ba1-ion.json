@@ -17,7 +17,7 @@
         "engineOffset": 5.5,
 		"TargetAir": false,
         "commandLimit": 5,
-        "circleTarget": false,
+        "circleTarget": true,
   "lowAltitude": false,
 	    "weapons": [
 		{
@@ -28,7 +28,7 @@
 	"rotate": false,
     "x": 0,
     "y": 0,
-    "reload": 10,
+    "reload": 25,
     "shootSound": "none",
     "recoil": 0,
     "bullet": {
@@ -44,7 +44,7 @@
 		"length": 30
 		"cone": 360,
 		"colorFrom": "ffffffff",
-		"colorTo": "aaaaffff",
+		"colorTo": "3333ffff",
     "interp": "circleOut"
 	},
       {
@@ -56,7 +56,7 @@
 		"length": 30
 		"cone": 360,
 		"colorFrom": "ffffffff",
-		"colorTo": "aaaaffff",
+		"colorTo": "3333ffff",
       "interp": "circleOut"
 	},
       {
@@ -66,15 +66,15 @@
 		"sizeTo": 0,
 		"length": 0
 		"cone": 360,
-      "lifetime": 7,
-		"colorFrom": "ffffffff",
-		"colorTo": "aaaaff00",
+      "lifetime": 15,
+		"colorTo": "ffffffff",
+		"colorFrom": "3333ff00",
       "interp": "reverse"
 	},
       {
 		"type": "WaveEffect",
 		"colorFrom": "ffffffff",
-		"colorTo": "aaaaffff",
+		"colorTo": "3333ffff",
 		"sizeTo": 9.5,
       "lifetime": 10,
 	}
@@ -86,8 +86,10 @@
 	"knockback": 2,
 	"impact": true,
 	"keepVelocity": "true",
-    "speed": 2,
-  "drag": 0.046
+    "speed": 1,
+"width": 7,
+"height": 7,
+  "drag": 0.046,
     "lifetime": 45,
   "trailColor": "aaaaffff",
   "trailChance": 0.1,
@@ -96,7 +98,7 @@
 	"statusDuration": 10,
   "sprite": "circle",
   "shrinkX": 2,
-  "shrinkY": 1.76
+  "shrinkY": 2,
 			}
 		}
 	]

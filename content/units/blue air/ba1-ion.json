@@ -1,0 +1,101 @@
+{
+        "localizedName": "Ion",
+	    "description": "Drops small energy bombs on nearby enemies.",
+        "research": {
+			"requirements": [
+			"silicon/100",
+			"titanium/55"
+			],
+			"parent": "flare"
+		},
+        "speed": 5,
+        "accel": 0.05,
+        "drag": 0.01,
+        "flying": true,
+        "health": 135,
+        "armor": 0,
+        "engineOffset": 5.5,
+		"TargetAir": false,
+        "commandLimit": 5,
+        "circleTarget": false,
+  "lowAltitude": false,
+	    "weapons": [
+		{
+    "name": "bomber
+    "shootCone": 360,
+    "mirror": false,
+    "top": false,
+	"rotate": false,
+    "x": 0,
+    "y": 0,
+    "reload": 10,
+    "shootSound": "none",
+    "recoil": 0,
+    "bullet": {
+    "type": "BombBulletType",
+	"hitEffect": {
+    "type": "MultiEffect"
+    "effects": [
+    {
+		"type": "ParticleEffect"
+		"particles": 7,
+		"sizeFrom": 3,
+		"sizeTo": 0,
+		"length": 30
+		"cone": 360,
+		"colorFrom": "ffffffff",
+		"colorTo": "aaaaffff",
+    "interp": "circleOut"
+	},
+      {
+		"type": "ParticleEffect"
+		"particles": 7,
+		"sizeFrom": 3,
+		"sizeTo": 0,
+      "line": true,
+		"length": 30
+		"cone": 360,
+		"colorFrom": "ffffffff",
+		"colorTo": "aaaaffff",
+      "interp": "circleOut"
+	},
+      {
+		"type": "ParticleEffect"
+		"particles": 1,
+		"sizeFrom": 14,
+		"sizeTo": 0,
+		"length": 0
+		"cone": 360,
+      "lifetime": 7,
+		"colorFrom": "ffffffff",
+		"colorTo": "aaaaff00",
+      "interp": "reverse"
+	},
+      {
+		"type": "WaveEffect",
+		"colorFrom": "ffffffff",
+		"colorTo": "aaaaffff",
+		"sizeTo": 9.5,
+      "lifetime": 10,
+	}
+      ]
+    "damage": 12,
+  "splashDamageRadius": 14,
+  "splashDamage": 23
+	"knockback": 2,
+	"impact": true,
+	"keepVelocity": "true",
+    "speed": 2,
+  "drag": 0.046
+    "lifetime": 45,
+  "trailColor": "aaaaffff",
+  "trailChance": 0.1,
+	"status": "shocked",
+	"statusDuration": 10,
+  "sprite": "circle",
+  "shrinkX" 2,
+  "shrinkY
+			}
+		}
+	]
+}

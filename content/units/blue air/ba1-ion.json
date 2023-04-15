@@ -79,6 +79,7 @@
       "lifetime": 10,
 	}
       ]
+}
     "damage": 12,
   "splashDamageRadius": 14,
   "splashDamage": 23

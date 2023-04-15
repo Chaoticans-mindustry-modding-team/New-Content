@@ -14,9 +14,10 @@
         "flying": true,
         "health": 135,
         "armor": 0,
-	"range": 100
+	"range": 140,
         "engineOffset": 5.5,
 		"TargetAir": false,
+	"faceTarget": false,
         "commandLimit": 5,
         "circleTarget": true,
   "lowAltitude": false,
@@ -32,6 +33,7 @@
     "reload": 25,
     "shootSound": "none",
     "recoil": 0,
+			"minShootVelocity": 0.25,
     "bullet": {
     "type": "BombBulletType",
 	"hitEffect": {

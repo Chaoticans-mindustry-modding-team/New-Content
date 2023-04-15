@@ -43,8 +43,8 @@
 		"sizeTo": 0,
 		"length": 30
 		"cone": 360,
-		"colorFrom": "ffffffff",
-		"colorTo": "3333ffff",
+		"colorFrom": "aaaaffff",
+		"colorTo": "4545ffff",
     "interp": "circleOut"
 	},
       {
@@ -55,8 +55,8 @@
       "line": true,
 		"length": 30
 		"cone": 360,
-		"colorFrom": "ffffffff",
-		"colorTo": "3333ffff",
+		"colorFrom": "aaaaffff",
+		"colorTo": "4545ffff",
       "interp": "circleOut"
 	},
       {
@@ -67,14 +67,14 @@
 		"length": 0
 		"cone": 360,
       "lifetime": 15,
-		"colorTo": "ffffffff",
-		"colorFrom": "3333ff00",
+		"colorTo": "aaaaffff",
+		"colorFrom": "4545ff00",
       "interp": "reverse"
 	},
       {
 		"type": "WaveEffect",
-		"colorFrom": "ffffffff",
-		"colorTo": "3333ffff",
+		"colorFrom": "aaaaffff",
+		"colorTo": "4545ffff",
 		"sizeTo": 9.5,
       "lifetime": 10,
 	}
@@ -87,18 +87,22 @@
 	"impact": true,
 	"keepVelocity": "true",
     "speed": 1,
-"width": 7,
-"height": 7,
+"width": 11,
+"height": 11,
   "drag": 0.046,
     "lifetime": 45,
   "trailColor": "aaaaffff",
   "trailChance": 0.1,
+"frontColor": "8888ffff",
+"backColor": "6666ffff",
 	"hitSound": "plasmaboom",
 	"status": "shocked",
 	"statusDuration": 10,
+"hitShake": 3,
+"despawnShake": 3,
   "sprite": "circle",
-  "shrinkX": 2,
-  "shrinkY": 2,
+  "shrinkX": 1,
+  "shrinkY": 1,
 			}
 		}
 	]

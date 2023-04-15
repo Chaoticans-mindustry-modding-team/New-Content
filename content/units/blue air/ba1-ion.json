@@ -84,12 +84,12 @@
       ]
 }
     "damage": 12,
-  "splashDamageRadius": 14,
-  "splashDamage": 23
+  "splashDamageRadius": 17,
+  "splashDamage": 27
 	"knockback": 2,
 	"impact": true,
 	"keepVelocity": "true",
-    "speed": 1,
+    "speed": 0.1,
 "width": 11,
 "height": 11,
   "drag": 0.046,

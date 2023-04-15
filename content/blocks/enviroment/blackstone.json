@@ -1,0 +1,5 @@
+"type": "Floor",
+"name": "Blackstone",
+"variants": 3,
+"itemDrop": "coal",
+"playerUnmineable": true

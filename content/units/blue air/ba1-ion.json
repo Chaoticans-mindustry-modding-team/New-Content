@@ -90,6 +90,7 @@
     "lifetime": 45,
   "trailColor": "aaaaffff",
   "trailChance": 0.1,
+	"hitSound": "plasmaboom",
 	"status": "shocked",
 	"statusDuration": 10,
   "sprite": "circle",

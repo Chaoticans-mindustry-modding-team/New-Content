@@ -21,7 +21,7 @@
   "lowAltitude": false,
 	    "weapons": [
 		{
-    "name": "bomber
+    "name": "bomber"
     "shootCone": 360,
     "mirror": false,
     "top": false,
@@ -93,8 +93,8 @@
 	"status": "shocked",
 	"statusDuration": 10,
   "sprite": "circle",
-  "shrinkX" 2,
-  "shrinkY
+  "shrinkX": 2,
+  "shrinkY": 1.76
 			}
 		}
 	]

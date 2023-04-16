@@ -99,7 +99,7 @@
     "speed": 0.1,
 "width": 9,
 "height": 9,
-  "drag": 0.06,
+  "drag": 0.097,
     "lifetime": 45,
   "trailColor": "aaaaffff",
   "trailChance": 0.1,

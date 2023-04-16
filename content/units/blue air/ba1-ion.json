@@ -1,21 +1,25 @@
 {
         "localizedName": "Ion",
-	    "description": "Drops small energy bombs on nearby enemies.",
+	    "description": "Drops clusters of small energy bombs on nearby enemies.",
+	"details": "Similar to the old, removed grenade. He needs way to much buffing. Uhhh-"
         "research": {
 			"requirements": [
 			"silicon/100",
+				"lead
 			"titanium/55"
 			],
 			"parent": "flare"
 		},
         "speed": 2.1,
         "accel": 0.05,
+	"hideDetails": false,
         "drag": 0.02,
         "flying": true,
-        "health": 135,
+        "health": 250,
         "armor": 0,
 	"range": 180,
         "engineOffset": 5.5,
+	"hitSize": 10,
 		"TargetAir": false,
 	"faceTarget": false,
         "commandLimit": 5,

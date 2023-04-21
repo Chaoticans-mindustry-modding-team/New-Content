@@ -64,7 +64,7 @@
 }
   ],
     "bullet": {
-		  "type": "BasicBulletType",\
+		  "type": "BasicBulletType",
 	    "shootEffect": {
   "type": "MultiEffect",
   "effects": [
@@ -96,8 +96,8 @@
   ]
 }
 		  "damage": 28,
-      "height": 16,
-      "width": 16,
+      "height": 7,
+      "width": 7,
 	    "sprite": "circle",
 	    "shrinkX": 0,
 	    "shrinkY": 0,
@@ -154,7 +154,7 @@
       "sprite": "newunits-shockline",
       "length": 4,
       "cone": 360,
-      "sizeFrom": 6,
+      "sizeFrom": 3,
 	      "lifetime": 4,
       "sizeTo": 0,
       "colorFrom": "ff6666ff",

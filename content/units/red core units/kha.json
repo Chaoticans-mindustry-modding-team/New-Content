@@ -40,7 +40,7 @@
 	"mirror": true,
   "moves": [
   {
-  "type": "partMove",
+  "type": "PartMove",
   "progress": "reload",
   "moveX": -2,
   "moveY": -5,

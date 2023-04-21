@@ -41,7 +41,31 @@
     "reload": 60,
     "shootSound": "blaster",
 	"ejectEffect": "casing1",
-  "shootEffect": {
+  
+    "recoil": 2.5,
+  "parts": [
+  {
+  "name": "-arm",
+  "type": "regionPart",
+  "moveRot": -3,
+  "moveY": -1,
+  "progress": "warmup",
+  "moves": [
+  {
+  "type": "partMove",
+  "progress": "reload",
+  "moveX": -1,
+  "moveY": -2,
+  "moveRot": -5,
+}
+]
+  
+  
+}
+  ],
+    "bullet": {
+		  "type": "BasicBulletType",\
+	    "shootEffect": {
   "type": "MultiEffect",
   "effects": [
   {
@@ -71,32 +95,10 @@
 },
   ]
 }
-    "recoil": 2.5,
-  "parts": [
-  {
-  "name": "-arm",
-  "type": "regionPart",
-  "moveRot": -3,
-  "moveY": -1,
-  "progress": "warmup",
-  "moves": [
-  {
-  "type": "partMove",
-  "progress": "reload",
-  "moveX": -1,
-  "moveY": -2,
-  "moveRot": -5,
-}
-]
-  
-  
-}
-  ],
-    "bullet": {
-		  "type": "BasicBulletType",
 		  "damage": 28,
-      "height": 8,
-      "width": 8,
+      "height": 16,
+      "width": 16,
+	    "sprite": "circle",
 	    "shrinkX": 0,
 	    "shrinkY": 0,
 	    "splashDamageRadius": 27,
@@ -153,6 +155,7 @@
       "length": 4,
       "cone": 360,
       "sizeFrom": 6,
+	      "lifetime": 4,
       "sizeTo": 0,
       "colorFrom": "ff6666ff",
       "colorTo": "ff6666ff"
@@ -160,7 +163,8 @@
       
 		  "despawnHit": true,
 "despawnEffect": "none",
-	"lifetime": 128
+"hitSound": "spark",
+	"lifetime": 63
 }
 		},
      ]

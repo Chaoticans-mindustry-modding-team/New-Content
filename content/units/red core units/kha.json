@@ -23,7 +23,6 @@
   "mineTier": 1
 	"lowAltitude": true,
         "armor": 3,
-	"range": 291.5,
         "engineOffset": 6,
 		"TargetAir": true,
         "itemCapacity": 30,
@@ -46,6 +45,9 @@
   "parts": [
   {
   "name": "kha-arm",
+	"sprite": "kha-arm",
+	"suffix": "-arm",
+	"outline": true,
   "type": "regionPart",
   "moveRot": 5,
   "moveY": -1,
@@ -107,16 +109,16 @@
 		  "speed": 3.6,
 	"frontColor": "FF976BFF"
 	"backColor": "DC7548FF"
-	    "weaveScale": 7,
+	    "weaveScale": 2,
 	    "weaveMag": 8,
   "homingRange": 129,
   "homingPower": 0.07,
 	"buildingDamageMultiplier": 0.1,
-      "lightning": 3,
+      "lightning": 8,
       "lightningCone": 360,
-      "lightningLength": 6,
-      "lightningLengthRand": 2,
-      "lightningDamage": 5,
+      "lightningLength": 2,
+      "lightningLengthRand": 1,
+      "lightningDamage": 12,
       "lightningColor": "ff6666ff",
 		  "hitEffect": {
   "type": "MultiEffect",
@@ -135,6 +137,7 @@
 		"colorFrom": "ff6666ff",
 		"colorTo": "EF5555FF",
 		"sizeTo": 21,
+	"lifetime": 19
 	    },
 {
   "type": "ParticleEffect",

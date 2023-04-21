@@ -1,7 +1,8 @@
 {
         "localizedName": "Kha",
-	"description": "Protects the Solstair core from enemies. Builds Structures.",
-  "details": "v5 glaive anyone?",
+	"description": "Protects the Solstair core from enemies. Builds Structures. Fires small energy orbs.",
+  "details": "offensive core units anyone?",
+	"hideDetails": false,
         "research": {
 			"requirements": [
 			"coreshard/3"
@@ -31,8 +32,7 @@
 		{
     "name": "kha-weapon",
     "shootCone": 15,
-    "mirror": true,
-	"alternate": true,
+    "mirror": false,
     "top": false,
 	"rotate": false,
     "y": 3.5,
@@ -40,14 +40,14 @@
 	"x": -1,
     "reload": 60,
     "shootSound": "blaster",
-	"ejectEffect": "casing1",
+	"ejectEffect": "none",
   
     "recoil": 2.5,
   "parts": [
   {
-  "name": "-arm",
+  "name": "kha-arm",
   "type": "regionPart",
-  "moveRot": -3,
+  "moveRot": 5,
   "moveY": -1,
   "progress": "warmup",
   "moves": [
@@ -56,7 +56,7 @@
   "progress": "reload",
   "moveX": -1,
   "moveY": -2,
-  "moveRot": -5,
+  "moveRot": 8,
 }
 ]
   
@@ -82,6 +82,7 @@
 		"colorFrom": "ff6666ff",
 		"colorTo": "EF5555FF",
 		"sizeTo": 21,
+	"lifetime": 28
 	    },
 {
   "type": "ParticleEffect",
@@ -106,8 +107,8 @@
 		  "speed": 3.6,
 	"frontColor": "FF976BFF"
 	"backColor": "DC7548FF"
-	    "weaveScale": 1.7,
-	    "weaveMag": 2,
+	    "weaveScale": 7,
+	    "weaveMag": 8,
   "homingRange": 129,
   "homingPower": 0.07,
 	"buildingDamageMultiplier": 0.1,
@@ -155,7 +156,7 @@
       "length": 4,
       "cone": 360,
       "sizeFrom": 3,
-	      "lifetime": 4,
+	      "lifetime": 8,
       "sizeTo": 0,
       "colorFrom": "ff6666ff",
       "colorTo": "ff6666ff"
@@ -164,7 +165,12 @@
 		  "despawnHit": true,
 "despawnEffect": "none",
 "hitSound": "spark",
-	"lifetime": 63
+"frontColor": "FF6666FF",
+"backColor": "FF6666FF",
+	"lifetime": 63,
+"trailColor":  "ff6666ff",
+"trailParam": 5,
+"trailLength": 29
 }
 		},
      ]

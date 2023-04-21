@@ -29,20 +29,24 @@
         "circleTarget": false,
 	  "parts": [
   {
-	"suffix": "weapon-arm",
+	"suffix": "-weapon-arm",
 	"outline": true,
   "type": "regionPart",
+	"moveX": -1,
+	"moveY": -4,
+	"moveRot": 14,
+	"progress": "warmup"
 	"mirror": true,
   "moves": [
   {
-  "type": "PartMove",
+  "type": "partMove",
   "progress": "reload",
   "moveX": -2,
   "moveY": -5,
   "moveRot": 8,
 },
 {
-  "type": "PartMove",
+  "type": "partMove",
   "progress": "warmup",
   "moveX": -1,
   "moveY": -4,

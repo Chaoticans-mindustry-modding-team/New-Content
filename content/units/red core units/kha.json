@@ -31,7 +31,8 @@
 		{
     "name": "kha-weapon",
     "shootCone": 15,
-    "mirror": false,
+    "mirror": true,
+	"alternate": false,
     "top": false,
 	"rotate": false,
     "y": 3.5,

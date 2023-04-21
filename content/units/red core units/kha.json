@@ -45,13 +45,12 @@
     "recoil": 2.5,
   "parts": [
   {
-  "name": "kha-arm",
-	"sprite": "kha-arm",
 	"suffix": "-arm",
 	"outline": true,
   "type": "regionPart",
   "moveRot": 5,
   "moveY": -1,
+	"mirror": true,
   "progress": "warmup",
   "moves": [
   {
@@ -62,8 +61,6 @@
   "moveRot": 8,
 }
 ]
-  
-  
 }
   ],
     "bullet": {

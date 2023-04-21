@@ -29,7 +29,7 @@
         "circleTarget": false,
 	    "weapons": [
 		{
-    "name": "delta-weapon",
+    "name": "kha-weapon",
     "shootCone": 15,
     "mirror": true,
 	"alternate": true,
@@ -95,12 +95,18 @@
     "bullet": {
 		  "type": "BasicBulletType",
 		  "damage": 28,
-      "height": 15,
+      "height": 8,
       "width": 8,
-		  "speed": 5.5,
+	    "shrinkX": 0,
+	    "shrinkY": 0,
+	    "splashDamageRadius": 27,
+	    "splashDamage": 67,
+		  "speed": 3.6,
 	"frontColor": "FF976BFF"
 	"backColor": "DC7548FF"
-  "homingRange": 27,
+	    "weaveScale": 1.7,
+	    "weaveMag": 2,
+  "homingRange": 129,
   "homingPower": 0.07,
 	"buildingDamageMultiplier": 0.1,
       "lightning": 3,

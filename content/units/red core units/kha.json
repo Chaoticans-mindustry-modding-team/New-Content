@@ -27,6 +27,30 @@
 		"TargetAir": true,
         "itemCapacity": 30,
         "circleTarget": false,
+	  "parts": [
+  {
+	"suffix": "weapon-arm",
+	"outline": true,
+  "type": "regionPart",
+	"mirror": true,
+  "moves": [
+  {
+  "type": "PartMove",
+  "progress": "reload",
+  "moveX": -2,
+  "moveY": -5,
+  "moveRot": 8,
+},
+{
+  "type": "PartMove",
+  "progress": "warmup",
+  "moveX": -1,
+  "moveY": -4,
+  "moveRot": 14,
+}
+]
+}
+  ],
 	    "weapons": [
 		{
     "name": "kha-weapon",
@@ -43,31 +67,6 @@
 	"ejectEffect": "none",
   
     "recoil": 2.5,
-  "parts": [
-  {
-	"suffix": "-arm",
-	"outline": true,
-  "type": "regionPart",
-	"mirror": true,
-  "progress": "warmup",
-  "moves": [
-  {
-  "type": "partMove",
-  "progress": "reload",
-  "moveX": -2,
-  "moveY": -5,
-  "moveRot": 8,
-},
-{
-  "type": "partMove",
-  "progress": "warmup",
-  "moveX": -1,
-  "moveY": -4,
-  "moveRot": 14,
-}
-]
-}
-  ],
     "bullet": {
 		  "type": "BasicBulletType",
 	    "shootEffect": {

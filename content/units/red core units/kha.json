@@ -1,0 +1,161 @@
+{
+        "localizedName": "Kha",
+	"description": "Protects the Solstair core from enemies. Builds Structures.",
+  "details": "v5 glaive anyone?",
+        "research": {
+			"requirements": [
+			"coreshard/3"
+			],
+			"parent": "alpha"
+		},
+        "speed": 3.15,
+  "template": "ErekirUnitType",
+  "drag": 0.05,
+  "buildSpeed": 0.35,
+        "flying": true,
+        "health": 450,
+  "isEnemy": false,
+  "rotateSpeed": 16.5,
+  "accel": 0.15,
+  "mineSpeed": 12,
+  "hitSize": 13
+  "mineTier": 1
+	"lowAltitude": true,
+        "armor": 3,
+	"range": 291.5,
+        "engineOffset": 6,
+		"TargetAir": true,
+        "itemCapacity": 30,
+        "circleTarget": false,
+	    "weapons": [
+		{
+    "name": "delta-weapon",
+    "shootCone": 15,
+    "mirror": true,
+	"alternate": true,
+    "top": false,
+	"rotate": false,
+    "y": 3.5,
+  "shake": 1
+	"x": -1,
+    "reload": 60,
+    "shootSound": "blaster",
+	"ejectEffect": "casing1",
+  "shootEffect": {
+  "type": "MultiEffect",
+  "effects": [
+  {
+  "type": "ParticleEffect",
+  "particles": 6,
+  "sizeFrom": 3,
+  "sizeTo": 0,
+  "length": 16
+  "colorFrom": "FF6666FF",
+  "colorTo": "FF6666FF"
+},
+{
+		"type": "WaveEffect",
+		"colorFrom": "ff6666ff",
+		"colorTo": "EF5555FF",
+		"sizeTo": 21,
+	    },
+{
+  "type": "ParticleEffect",
+  "particles": 6,
+  "sizeFrom": 3,
+  "sizeTo": 0,
+  "length": 16
+  "line": true,
+  "colorFrom": "FF6666FF",
+  "colorTo": "FF6666FF"
+},
+  ]
+}
+    "recoil": 2.5,
+  "parts": [
+  {
+  "name": "-arm",
+  "type": "regionPart",
+  "moveRot": -3,
+  "moveY": -1,
+  "progress": "warmup",
+  "moves": [
+  {
+  "type": "partMove",
+  "progress": "reload",
+  "moveX": -1,
+  "moveY": -2,
+  "moveRot": -5,
+}
+]
+  
+  
+}
+  ],
+    "bullet": {
+		  "type": "BasicBulletType",
+		  "damage": 28,
+      "height": 15,
+      "width": 8,
+		  "speed": 5.5,
+	"frontColor": "FF976BFF"
+	"backColor": "DC7548FF"
+  "homingRange": 27,
+  "homingPower": 0.07,
+	"buildingDamageMultiplier": 0.1,
+      "lightning": 3,
+      "lightningCone": 360,
+      "lightningLength": 6,
+      "lightningLengthRand": 2,
+      "lightningDamage": 5,
+      "lightningColor": "ff6666ff",
+		  "hitEffect": {
+  "type": "MultiEffect",
+  "effects": [
+  {
+  "type": "ParticleEffect",
+  "particles": 6,
+  "sizeFrom": 3,
+  "sizeTo": 0,
+  "length": 16
+  "colorFrom": "FF6666FF",
+  "colorTo": "FF6666FF"
+},
+{
+		"type": "WaveEffect",
+		"colorFrom": "ff6666ff",
+		"colorTo": "EF5555FF",
+		"sizeTo": 21,
+	    },
+{
+  "type": "ParticleEffect",
+  "particles": 6,
+  "sizeFrom": 3,
+  "sizeTo": 0,
+  "length": 16
+  "line": true,
+  "colorFrom": "FF6666FF",
+  "colorTo": "FF6666FF"
+},
+  ]
+},
+      "trailChance": 0.7,
+      "trailEffect": {
+      "type": "ParticleEffect",
+      "particles": 3
+      "sprite": "newunits-shockline",
+      "length": 4,
+      "cone": 360,
+      "sizeFrom": 6,
+      "sizeTo": 0,
+      "colorFrom": "ff6666ff",
+      "colorTo": "ff6666ff"
+    }
+      
+		  "despawnHit": true,
+"despawnEffect": "none",
+	"lifetime": 128
+}
+		},
+     ]
+}

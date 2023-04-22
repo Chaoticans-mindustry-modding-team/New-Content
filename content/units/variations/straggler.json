@@ -13,7 +13,7 @@
 "type": "mech",
 "armor": 1,
 "commandLimit": 6,
-"speed": 0.5,
+"speed": 1.7,
 "flying": false,
 "targetAir": true,
 "health": 355,
@@ -26,12 +26,12 @@
   "mirror": false,
   "x": 0,
   "y": 0,
-  "reload": 20,
-  "recoil": 2,
+  "reload": 16,
+  "recoil": 0,
   "top": false,
     "inaccuracy": 360,
 	  "shoot": {
-	  "firstShotDelay": 50,
+	  "firstShotDelay": 15,
 	  },
   "shootSound": "explosion",
     "chargeSound": "flame",
@@ -46,8 +46,8 @@
     "suffix": "-blade"
     "layerOffset": -0.001,
     "moveX": -6,
-    "moveY": -3
-    "moveRot": -110,
+    "moveY": -1
+    "moveRot": -290,
     "mirror": true
     "progress": "warmup",
   },
@@ -55,9 +55,9 @@
     "type": "RegionPart",
     "suffix": "-blade"
     "layerOffset": -0.001,
-    "moveX": -6,
-    "moveY": 3
-    "moveRot": 40,
+    "moveX": -4,
+    "moveY": 5
+    "moveRot": 20,
     "mirror": true
     "progress": "warmup",
   }
@@ -66,13 +66,16 @@
 "type": "ExplosionBulletType",
 "splashDamage": 117,
 "splashDamageRadius": 37,
-"fragBullets": 9,
+"fragBullets": 11,
 	"instantDisapear": false,
-	"puddles": 4,
+	"absorbable": false,
+	"hittable": false,
+	"puddles": 5,
 	"puddleRange": 27,
 	"puddleLiquid": "volatile-fluid",
+	"puddleAmount": 23,
 	"incendAmount": 5,
-	"incendSpread": 15,
+	"incendSpread": 29,
 	"despawnEffect": "flakExplosionBig",
 	"hitEffect": "hitFlameSmall"
 	    "chargeEffect": "hitFlameSmall",

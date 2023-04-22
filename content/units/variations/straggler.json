@@ -60,7 +60,7 @@
     "progress": "warmup",
   }
   ],
-"bullet":
+"bullet": {
 "type": "ExplosionBulletType",
 "splashDamage": 117,
 "splashDamageRadius": 37,
@@ -72,6 +72,7 @@
             "lightningColor": "BF92F9",
 			"damage": 38,
      }
+}
   }
 ]
 }

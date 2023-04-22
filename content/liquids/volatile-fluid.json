@@ -1,0 +1,14 @@
+{
+  "localizedName": "Volatile Fluid"
+  "description": "A Mixture of oil and pyratite used in turrets, production and reactors. Extremly Volatile."
+  "details": "arsonist juice",
+  "hideDetails": false,
+"temperature": -1,
+"flammability": 4,
+"viscosity": 0.6
+"heatCapacity": 0.2,
+"explosiveness": 3,
+"effect": "tarred",
+"color": "88e58FF",
+"research": "oil"
+}

@@ -29,6 +29,7 @@
   "reload": 26,
   "recoil": 0,
   "top": false,
+	  "shootOnDeath": true,
     "inaccuracy": 360,
 	  "shoot": {
 	  "firstShotDelay": 25,
@@ -38,9 +39,9 @@
     "shootStatus": "slow",
     "shootStatusDuration": 16,
     "shootWarmupSpeed": 0.2
-	  "shootOnDeath": true,
   "ejectEffect": "none",
   "shake": 5,
+	  "shootCone": 360,
     "parts": [
     {
     "type": "RegionPart",

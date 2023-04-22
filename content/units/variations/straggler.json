@@ -31,10 +31,10 @@
   "top": false,
     "inaccuracy": 360,
 	  "shoot": {
-	  "firstShotDelay": 15,
+	  "firstShotDelay": 50,
 	  },
   "shootSound": "explosion",
-    "chargesound": "flame",
+    "chargeSound": "flame",
     "shootStatus": "slow",
     "shootStatusDuration": 16,
     "shootWarmupSpeed": 0.1
@@ -67,15 +67,17 @@
 "splashDamage": 117,
 "splashDamageRadius": 37,
 "fragBullets": 9,
+	"instantDisapear": false,
 	"puddles": 4,
 	"puddleRange": 27,
-	"puddleLiquid": "oil"
+	"puddleLiquid": "volatile-fluid",
 	"incendAmount": 5,
 	"incendSpread": 15,
+	"despawnEffect": "flakExplosionBig",
+	"hitEffect": "hitFlameSmall"
+	    "chargeEffect": "hitFlameSmall",
   "fragBullet": {
             "type": "FireBulletType",
-    "chargeEffect": "hitFlameSmall",
-    "hitEffect": "flakExplosionBig",
             "lightningColor": "BF92F9",
 			"damage": 38,
      }

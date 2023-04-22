@@ -1,0 +1,77 @@
+{
+"localizedName": "Straggler",
+"research": {
+	"parent": "crawler",
+	"requirements": [
+	"silicon/135",
+	"pyratite/45"
+	]
+}
+"description": "Runs towards enemies and explodes, releasing fire everywhere.",
+  "details": "arsonist crawler",
+  "hideDetails": false,
+"type": "mech",
+"armor": 1,
+"commandLimit": 6,
+"speed": 0.5,
+"flying": false,
+"targetAir": true,
+"health": 355,
+"immunities": [
+		"burning"
+		],
+"weapons": [
+  {
+  "name": "boom",
+  "mirror": false,
+  "x": 0,
+  "y": 0,
+  "reload": 20,
+  "recoil": 2,
+  "top": false,
+    "inaccuracy": 360,
+  "shootSound": "explosion",
+    "chargesound": "flame",
+    "firstShotDelay": 15,
+    "shootStatus": "slow",
+    "shootStatusDuration": 16,
+    "shootWarmupSpeed": 0.4
+  "ejectEffect": "none",
+  "shake": 5,
+    "parts": [
+    {
+    "type": "RegionPart",
+    "suffix": "-blade"
+    "layerOffset": -0.001,
+    "moveX": -6,
+    "moveY": -3
+    "moveRot": -110,
+    "mirror": true
+    "progress": "warmup",
+  },
+  {
+    "type": "RegionPart",
+    "suffix": "-blade"
+    "layerOffset": -0.001,
+    "moveX": -6,
+    "moveY": 3
+    "moveRot": -40,
+    "mirror": true
+    "progress": "warmup",
+  }
+  ],
+"bullet":
+"type": "ExplosionBulletType",
+"splashDamage": 117,
+"splashDamageRadius": 37,
+"fragBullets": 6,
+  "fragBullet": {
+            "type": "FireBulletType",
+    "chargeEffect": "hitFlameSmall",
+    "hitEffect": "flakExplosionBig",
+            "lightningColor": "BF92F9",
+			"damage": 38,
+     }
+  }
+]
+}

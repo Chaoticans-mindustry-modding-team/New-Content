@@ -57,7 +57,7 @@
     "layerOffset": -0.001,
     "moveX": -6,
     "moveY": 3
-    "moveRot": -40,
+    "moveRot": 40,
     "mirror": true
     "progress": "warmup",
   }

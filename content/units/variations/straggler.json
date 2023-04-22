@@ -38,6 +38,7 @@
     "shootStatus": "slow",
     "shootStatusDuration": 16,
     "shootWarmupSpeed": 0.2
+	  "shootOnDeath": true,
   "ejectEffect": "none",
   "shake": 5,
     "parts": [

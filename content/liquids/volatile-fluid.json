@@ -5,7 +5,7 @@
   "hideDetails": false,
 "temperature": 0.7,
 "flammability": 4,
-"viscosity": .7
+"viscosity": 0.7
 "heatCapacity": 0.2,
 "explosiveness": 3,
 "effect": "tarred",

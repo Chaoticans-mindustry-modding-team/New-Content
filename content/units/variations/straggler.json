@@ -7,7 +7,7 @@
 	"pyratite/45"
 	]
 }
-"description": "Runs towards enemies and explodes, releasing fire everywhere.",
+"description": "Runs towards enemies and explodes, releasing a mixture of oil and pyratite everywhere.",
   "details": "arsonist crawler",
   "hideDetails": false,
 "type": "mech",
@@ -30,12 +30,14 @@
   "recoil": 2,
   "top": false,
     "inaccuracy": 360,
+	  "shoot": {
+	  "firstShotDelay": 15,
+	  },
   "shootSound": "explosion",
     "chargesound": "flame",
-    "firstShotDelay": 15,
     "shootStatus": "slow",
     "shootStatusDuration": 16,
-    "shootWarmupSpeed": 0.4
+    "shootWarmupSpeed": 0.1
   "ejectEffect": "none",
   "shake": 5,
     "parts": [
@@ -64,7 +66,12 @@
 "type": "ExplosionBulletType",
 "splashDamage": 117,
 "splashDamageRadius": 37,
-"fragBullets": 6,
+"fragBullets": 9,
+	"puddles": 4,
+	"puddleRange": 27,
+	"puddleLiquid": "oil"
+	"incendAmount": 5,
+	"incendSpread": 15,
   "fragBullet": {
             "type": "FireBulletType",
     "chargeEffect": "hitFlameSmall",

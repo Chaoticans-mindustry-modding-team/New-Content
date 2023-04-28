@@ -4,7 +4,7 @@
         "speed": 2.46,
         "accel": 0.07,
         "drag": 0.05,
-		"outlineColor": "28296EFF",
+		"outlineColor": "23294cFF",
         "flying": true,
         "health": 570,
         "armor": 1,
@@ -12,6 +12,7 @@
         "engineOffset": 8,
 		"targetAir": true,
         "circleTarget": false,
+"hitSize": 11,
 	    "weapons": [
 		{
     "name": "shine-shooter",

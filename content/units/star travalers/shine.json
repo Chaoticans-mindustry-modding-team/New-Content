@@ -26,7 +26,7 @@
 	"ejectEffect": "none",
     "recoil": 2.5,
     "bullet": {
-    "type": "LaserBoltBulletType",
+    "type": "BasicBoltBulletType",
 	"frontColor": "AACCCCFF",
 	"backColor": "669999FF",
 	"lifetime": 120,
@@ -38,8 +38,7 @@
       "shrinkY": 0,
       "homingRadius": 76,
       "homingPower": 0.01666666666,
-      "spin": 9,    
-      "sprite": "newunits-star",
+      "sprite": "star",
       "hitEffect": {
         "type": "ParticleEffect",
         "particles": 8,
@@ -57,7 +56,7 @@
         "particles": 8,
         "colorFrom": "AADDDDFF",
         "colorTo": "AADDDDFF",
-        "sizeFrom": 5,
+        "sizeFrom": 2,
         "sizeTo": 0,
         "interp": "circleOut",
         "sizeInterp": "swingIn",

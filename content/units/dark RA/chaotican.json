@@ -60,7 +60,8 @@
 			},
 	"hitEffect": {
     "type": "MultiEffect",
-    "effects": [
+    "effects": [ 
+	    {
 	    		"type": "ParticleEffect"	
                         "sizeFrom": 2,
 		"line": true,
@@ -75,6 +76,7 @@
 		"colorFrom": "FF6666FF",
 		"colorTo": "FF6666FF",
       "lifetime": 47
+      }
       ]
 "despawnEffect": "none",
 			

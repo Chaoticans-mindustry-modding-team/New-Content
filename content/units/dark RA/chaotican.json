@@ -35,20 +35,21 @@
     "shootSound": "blaster",
     "recoil": 2.5,
     "bullet": {
-    "type": "LaserBoltBulletType",
+    "type": "BasicBulletType",
 	"frontColor": "FF6666FF",
 	"backColor": "DD4444FF",
 	"lifetime": 60
 	"speed": 12,
       "homingPower": 0.1,
       "homingRadius": 126,
-	"damage": 24
-          "weaveScale": 0.01,
+	"damage": 56,
+	    "width": 3,
+          "weaveScale": 0.0001,
     "weaveMag": 2,
-      "hitSound": "spark",
+      "hitSound": "bolt",
       "trailLength": 24,
       "trailColor": "FF6666FF",
-      "trailWith": 3
+      "trailWith": 3,
 	"shootEffect":  {
 	    		"type": "ParticleEffect"	
                         "sizeFrom": 2,
@@ -79,6 +80,7 @@
       }
       ]
 "despawnEffect": "none",
+		"despawnHit": true
 			
 		}
 		}

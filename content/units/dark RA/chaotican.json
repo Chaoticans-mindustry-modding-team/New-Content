@@ -45,9 +45,8 @@
       "homingRadius": 126,
 	"damage": 56,
 	    "width": 3,
-          "weaveScale": 0.0001,
-    "weaveMag": 2,
-      "hitSound": "bolt",
+          "weaveScale": 0.00000001,
+    "weaveMag": 3,
       "trailLength": 24,
       "trailColor": "FF6666FF",
       "trailWith": 3,
@@ -71,16 +70,18 @@
         		"lifetime": 61,
 		"colorFrom": "FF6666FF",
 		"colorTo": "FF6666FF",
+		    "interp": "circleOut"
 			},
       {
       "type": "WaveEffect",
       "sizeTo": 26,
 		"colorFrom": "FF6666FF",
 		"colorTo": "FF6666FF",
-      "lifetime": 47
+      "lifetime": 47,
+	      "interp": "circleOut"
       }
       ]
-"despawnEffect": "none",
+"despawnEffect": "hitFlameSmall",
 		"despawnHit": true
 			
 		}

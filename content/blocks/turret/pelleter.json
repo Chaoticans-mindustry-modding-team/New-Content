@@ -15,7 +15,7 @@
     "recoil": 4,
   "shoot": {
   "shots": 3,
-  "shootDelay": 6,
+  "shotDelay": 6,
 }
     "ammoTypes": {
         "copper": {

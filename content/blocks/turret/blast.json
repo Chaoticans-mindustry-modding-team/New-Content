@@ -1,0 +1,63 @@
+{
+    "localizedName": "Blast"
+  "description": "Fires two large, short-ranged piercing blast at nearby enemies."
+  "type": "ItemTurret",
+    "researchCostMultiplier": 0.7,
+    "size": 2,
+    "health": 120,
+    "maxAmmo": 30,
+    "ammoPerShot": 1,
+    "reload": 35,
+    "range": 60,
+    "targetAir": true,
+    "targetGround": true,
+    "rotateSpeed": 3,
+    "recoil": 4,
+  "shake": 3
+  "shoot": {
+	"type": "ShootSpread"
+  "shots": 2,
+  "spread": 25
+}
+    "shootSound": "shotgun"
+    "ammoTypes": {
+        "lead": {
+    "type": "ShrapnelBulletType",
+    "shootEffect": "casing1",
+    "damage": 25,
+	"serrations": 1,
+	"length": 70,
+	"width": 7.5,
+	"toColor": "A186D1FF",
+"ammoMultiplier": 2,
+  "reloadMultiplier": 1.25
+			},
+"titanium": {
+    "type": "ShrapnelBulletType",
+    "shootEffect": "none",
+    "damage": 35,
+	"serrations": 2,
+	"length": 70,
+	"width": 7.5,
+"ammoMultiplier": 2,
+			},
+"thorium": {
+    "type": "ShrapnelBulletType",
+    "shootEffect": "none",
+    "damage": 50,
+	"serrations": 2,
+	"length": 70,
+	"width": 7.5,
+"ammoMultiplier": 2,
+  "reloadMultiplier": 0.85,
+  "toColor": "F9A3C7FF"
+			}
+    },
+    "requirements": [
+		{ "item": "copper", "amount": 125 },
+    { "item": "graphite", "amount": 125},
+		{ "item": "thorium", "amount": 65 }
+    ],
+    "category": "turret",
+    "research": "mix"
+}

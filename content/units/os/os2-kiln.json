@@ -10,6 +10,7 @@
 }
 "description": "Fires standard bullets and a constant stream of flame at all nearby enemies.",
 "type": "legs",
+	"groundLayer": 75,
 "legCount": 3,
 "legLength": 16,
 "legTrns": 0.6,
@@ -21,6 +22,8 @@
 "flying": false,
 "health": 435,
 "rotateShooting": false,
+"hovering": true,
+"shadowElevation": 0.2,
 "immunities": [
 		"burning",
 		"melting"

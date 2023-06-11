@@ -1,0 +1,215 @@
+{
+        "localizedName": "Atom",
+	    "description": "Drops clusters of small and large energy bombs on nearby enemies.",
+	"details": "Similar to the old, removed dyanmite. EEEE-",
+        "research": {
+			"requirements": [
+			"silicon/165",
+			"lead/85",
+			"titanium/95"
+			],
+			"parent": "ba1-ion"
+		},
+        "speed": 1.7,
+        "accel": 0.03,
+	"hideDetails": false,
+        "drag": 0.02,
+        "flying": true,
+        "health": 470,
+        "armor": 2,
+	"range": 60,
+	"hitSize": 15,
+		"TargetAir": false,
+	"faceTarget": false,
+        "commandLimit": 5,
+        "circleTarget": true,
+  "lowAltitude": false,
+  "engines": [
+  {
+    "x": 2,
+    "y": -9,
+    "rotation": -90,
+    "radius": 2,
+  }
+  {
+    "x": -2,
+    "y": -9,
+    "rotation": -90,
+    "radius": 2,
+  }
+]
+	    "weapons": [
+		{
+    "name": "bomber"
+    "shootCone": 360,
+    "mirror": false,
+    "top": false,
+	"rotate": false,
+    "x": 0,
+    "y": -2,
+    "reload": 66,
+    "shootSound": "mineDeploy",
+    "recoil": 0,
+			"minShootVelocity": 0.35,
+    "bullet": {
+    "type": "BombBulletType",
+	"hitEffect": {
+    "type": "MultiEffect"
+    "effects": [
+    {
+		"type": "ParticleEffect"
+		"particles": 9,
+		"sizeFrom": 5,
+		"sizeTo": 0,
+		"length": 55,
+		"cone": 360,
+		"colorFrom": "aaaaffff",
+		"colorTo": "4545ffff",
+    "interp": "circleOut"
+	},
+      {
+		"type": "ParticleEffect"
+		"particles": 10,
+		"sizeFrom": 5,
+		"sizeTo": 0,
+      "line": true,
+		"length": 55,
+		"cone": 360,
+		"colorFrom": "aaaaffff",
+		"colorTo": "4545ffff",
+      "interp": "circleOut"
+	},
+      {
+		"type": "ParticleEffect"
+		"particles": 1,
+		"sizeFrom": 34,
+		"sizeTo": 0,
+		"length": 0,
+		"cone": 360,
+      "lifetime": 15,
+		"colorTo": "aaaaffff",
+		"colorFrom": "4545ff00",
+      "interp": "reverse"
+	},
+      {
+		"type": "WaveEffect",
+		"colorFrom": "aaaaffff",
+		"colorTo": "4545ffff",
+		"sizeTo": 45,
+      "lifetime": 12
+	}
+      ]
+}
+  "splashDamageRadius": 35,
+  "splashDamage": 66,
+	"knockback": 4,
+	"impact": true,
+	"keepVelocity": false,
+    "speed": 0.9,
+"width": 13,
+"height": 13,
+  "drag": 0.08,
+    "lifetime": 55,
+  "trailColor": "aaaaffff",
+  "trailChance": 0.2,
+"frontColor": "8888ffff",
+"backColor": "6666ffff",
+	"hitSound": "plasmaboom",
+	"status": "shocked",
+	"statusDuration": 10,
+"hitShake": 6,
+"despawnShake": 6,
+  "sprite": "circle",
+"damage": 22,
+  "shrinkX": 0.3,
+  "shrinkY": 0.3,
+			}
+		},
+{
+    "name": "bomber"
+    "shootCone": 360,
+    "mirror": false,
+    "top": false,
+	"rotate": false,
+    "x": 0,
+    "y": -3,
+    "reload": 12.5,
+    "shootSound": "mineDeploy",
+    "recoil": 0,
+			"minShootVelocity": 0.25,
+    "bullet": {
+    "type": "BombBulletType",
+	"hitEffect": {
+    "type": "MultiEffect"
+    "effects": [
+    {
+		"type": "ParticleEffect"
+		"particles": 7,
+		"sizeFrom": 3,
+		"sizeTo": 0,
+		"length": 30
+		"cone": 360,
+		"colorFrom": "aaaaffff",
+		"colorTo": "4545ffff",
+    "interp": "circleOut"
+	},
+      {
+		"type": "ParticleEffect"
+		"particles": 7,
+		"sizeFrom": 3,
+		"sizeTo": 0,
+      "line": true,
+		"length": 30
+		"cone": 360,
+		"colorFrom": "aaaaffff",
+		"colorTo": "4545ffff",
+      "interp": "circleOut"
+	},
+      {
+		"type": "ParticleEffect"
+		"particles": 1,
+		"sizeFrom": 14,
+		"sizeTo": 0,
+		"length": 0
+		"cone": 360,
+      "lifetime": 15,
+		"colorTo": "aaaaffff",
+		"colorFrom": "4545ff00",
+      "interp": "reverse"
+	},
+      {
+		"type": "WaveEffect",
+		"colorFrom": "aaaaffff",
+		"colorTo": "4545ffff",
+		"sizeTo": 9.5,
+      "lifetime": 10,
+	}
+      ]
+}
+  "splashDamageRadius": 17,
+  "splashDamage": 27
+	"knockback": 2,
+	"impact": true,
+	"keepVelocity": false,
+    "speed": 0.8,
+"width": 9,
+"height": 9,
+  "drag": 0.1,
+    "lifetime": 45,
+  "trailColor": "aaaaffff",
+  "trailChance": 0.1,
+"frontColor": "8888ffff",
+"backColor": "6666ffff",
+	"hitSound": "plasmaboom",
+	"status": "shocked",
+	"statusDuration": 10,
+"hitShake": 3,
+"despawnShake": 3,
+  "sprite": "circle",
+"damage": 12,
+  "shrinkX": 0.4,
+  "shrinkY": 0.4,
+			}
+		}
+	]
+}

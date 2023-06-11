@@ -1,0 +1,139 @@
+{
+"localizedName": "Cast",
+"research": {
+	"parent": "os3-kiln",
+	"requirements": [
+	"silicon/1255",
+	"titanium/355",
+	"graphite/225",
+	"lead/1000"
+	]
+}
+"description": "Fires a constant stream of melting flame and bursts of bullets at targets.",
+"type": "legs",
+"legCount": 7,
+"legLength": 30,
+"legTrns": 0.6,
+	"legExtension": -15,
+	"legBaseOffset": 10,
+	"legLengthScl": 0.96,
+	"rippleScale": 2,
+	"legspeed": 0.175,
+  "stepShake": 3
+"groundLayer": 75,
+"legMoveSpace": 1.7,
+"hovering": true,
+"armor": 8,
+"commandLimit": 8,
+"speed": 1,
+	"hitSize": 27.5,
+"flying": false,
+"health": 9000,
+"rotateShooting": false,
+"hovering": true,
+"shadowElevation": 0.72,
+  "drownMultiplier": 1.75
+"immunities": [
+		"burning",
+		"melting"
+		],
+"weapons": [
+  {
+  "name": "cast-weapon",
+  "mirror": false,
+  "rotate": true,
+  "rotateSpeed": 15,
+  "x": 0,
+  "y": 0,
+	  	"shoot":{
+	"shots": 3,
+	"shotDelay": 0
+	}
+  "reload": 6.5,
+  "recoil": 0,
+  "shootY": 0,
+  "top": false,
+  "shake": 1
+  "shootSound": "flame",
+  "soundPitchMin": 0.6,
+  "soundPitchMax": 0.8,
+  "ejectEffect": "none",
+  "parentizeEffects": false,
+  "inaccuracy": 15
+  "bullet": {
+            "damage": 20,
+	  "speed": 20,
+            "width": 8,
+            "pierce": true,
+			"pierceBuilding": false,
+            "type": "BasicBulletType",
+            "lifetime": 5,
+	  "buildingDamageMultiplier": 3,
+		    "shootEffect": {
+	"type": "ParticleEffect",
+	"followParent": false,
+	"particles": 6,
+	  
+	"colorFrom": "DE9959FF",
+	"colorTo": "BA5D4CFF",
+	"sizeFrom": 4,
+	"sizeTo": 0.5,
+	"cone": 15,
+	"interp": "circleOut",
+	"lifetime": 30.5,
+	"length": 80.5
+	},
+			"speed": 6.5,
+            "frontColor": "00000000",
+            "backColor": "00000000",
+            "hitEffect": "none"
+			"status": "melting",
+			"statusDuration": 50,
+			"despawnEffect": "none"
+	"hittable": false,
+		  "reflectable": false",
+     }
+  },
+  {
+	  "name": "large-artillery",
+	  "mirror": true,
+	  "alternate": true,
+	  "rotate": true,
+	  "rotateSpeed": 1,
+	  "x": 9,
+	  "y": -3,
+	  "reload": 35,
+	  "recoil": 3,
+	  "inaccuracy": 1.5
+	  "shake": 5
+	  "shoot": {
+    "shots": 3,
+    "shotDelay": 2
+  }
+	  "shootSound": "shootSnap",
+	  "top": true,
+	  "ejectEffect": "casing2",
+	  "bullet": {
+		  "type": "BasicBulletType",
+		  "damage": 30,
+      "height": 25,
+      "width": 10,
+		  "speed": 5.5
+      "pierceCap": 3,
+      "pierceBuilding": true,
+      "lightning": 2,
+      "lightningLength": 3,
+      "lightningDamage": 9,
+      "lightningLengthRand": 1,
+      "lightningColor": "FFDE70FF"
+		  "hitEffect": "flakExplosion",
+		  "despawnHit": true,
+		  "splashDamageRadius": 9,
+		  "splashDamage": 15,
+		  "hitShake": 5,
+		  "despawnShake": 5,
+		  
+	  }
+  },
+]
+}

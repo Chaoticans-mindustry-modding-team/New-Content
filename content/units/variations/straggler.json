@@ -1,0 +1,92 @@
+{
+"localizedName": "Straggler",
+"research": {
+	"parent": "crawler",
+	"requirements": [
+	"silicon/135",
+	"pyratite/45"
+	]
+}
+"description": "Runs towards enemies and explodes, releasing a mixture of oil and pyratite everywhere.",
+  "details": "arsonist crawler",
+  "hideDetails": false,
+"type": "mech",
+"armor": 1,
+"commandLimit": 6,
+"speed": 1.7,
+"flying": false,
+"targetAir": true,
+"health": 355,
+"immunities": [
+		"burning"
+		],
+"weapons": [
+  {
+  "name": "boom",
+  "mirror": false,
+  "x": 0,
+  "y": 0,
+  "reload": 26,
+  "recoil": 0,
+  "top": false,
+	  "shootOnDeath": true,
+    "inaccuracy": 360,
+	  "shoot": {
+	  "firstShotDelay": 25,
+	  },
+  "shootSound": "explosion",
+    "chargeSound": "flame",
+    "shootStatus": "slow",
+    "shootStatusDuration": 16,
+    "shootWarmupSpeed": 0.2
+  "ejectEffect": "none",
+  "shake": 5,
+	  "shootCone": 360,
+    "parts": [
+    {
+    "type": "RegionPart",
+    "suffix": "-blade"
+    "layerOffset": -0.001,
+    "moveX": -6,
+    "moveY": -1
+    "moveRot": -290,
+    "mirror": true
+    "progress": "warmup",
+  },
+  {
+    "type": "RegionPart",
+    "suffix": "-blade"
+    "layerOffset": -0.001,
+    "moveX": -4,
+    "moveY": 5
+    "moveRot": 20,
+    "mirror": true
+    "progress": "warmup",
+  }
+  ],
+"bullet": {
+"type": "ExplosionBulletType",
+"splashDamage": 139,
+"splashDamageRadius": 78,
+"fragBullets": 11,
+	"instantDisapear": false,
+	"absorbable": false,
+	"hittable": false,
+	"puddles": 5,
+	"puddleRange": 15,
+	"puddleLiquid": "volatile-fluid",
+	"puddleAmount": 23,
+	"incendAmount": 5,
+	"incendSpread": 29,
+	"despawnEffect": "flakExplosionBig",
+	"hitEffect": "hitFlameSmall"
+	    "chargeEffect": "hitFlameSmall",
+  "fragBullet": {
+            "type": "FireBulletType",
+            "lightningColor": "BF92F9",
+			"damage": 38,
+     }
+}
+  }
+]
+}

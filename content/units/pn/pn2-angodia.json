@@ -28,7 +28,7 @@
 	],
 	"weapons": [
 		{
-    "name": "purple-flamethrower",
+    "name": "purple-gun",
     "reload": 3,
 	"mirror": true,
     "x": 4,

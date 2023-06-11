@@ -1,0 +1,27 @@
+type: GenericSmelter
+name: Refiner
+description: Refines scrap into Detrisite. Produces sand as a byproduct.
+size: 2
+consumes: {
+power: 2.5
+items: {
+items: [
+scrap/3
+]
+}
+}
+outputItem: [
+pscrap/1
+sand/5
+]
+requirements: [
+lead/15
+graphite/25
+copper/20
+]
+craftTime: 20
+category: crafting
+research: {
+parent: separator
+objectives: [craters]
+}

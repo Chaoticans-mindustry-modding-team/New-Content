@@ -1,0 +1,46 @@
+{
+    "localizedName": "Ignition"
+  "description": "Fires a large, short-ranged piercing blast at nearby enemies."
+  "type": "ItemTurret",
+    "researchCostMultiplier": 0.7,
+    "size": 1,
+    "health": 350,
+    "maxAmmo": 20,
+    "ammoPerShot": 2,
+    "reload": 30,
+    "range": 35,
+    "targetAir": true,
+    "targetGround": true,
+    "rotateSpeed": 3,
+    "recoil": 4,
+  "shake": 2
+    "shootSound": "shotgun"
+    "ammoTypes": {
+        "lead": {
+    "type": "ShrapnelBulletType",
+    "shootEffect": "casing1",
+    "damage": 13,
+	"serrations": 1,
+	"length": 40,
+	"width": 7.5,
+	"toColor": "A186D1FF",
+"ammoMultiplier": 2,
+  "reloadMultiplier": 1.25
+			},
+"titanium": {
+    "type": "ShrapnelBulletType",
+    "shootEffect": "none",
+    "damage": 28,
+	"serrations": 2,
+	"length": 40,
+	"width": 7.5,
+"ammoMultiplier": 2,
+			}
+    },
+    "requirements": [
+		{ "item": "copper", "amount": 45 },
+		{ "item": "titanium", "amount": 25 }
+    ],
+    "category": "turret",
+    "research": "arc"
+}

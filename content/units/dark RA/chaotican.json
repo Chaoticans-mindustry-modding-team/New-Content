@@ -1,0 +1,91 @@
+{
+        "localizedName": "Circulation",
+	"description": "A speedy unit created by the Arcus. Fires a quick seeking bolt.",
+        "research": {
+			"requirements": [
+			"silicon/125",
+			"lead/35",
+			"cinnabarrium/45"
+			],
+			"parent": "dra1-circulation"
+		},
+        "speed": 3.5,
+        "accel": 0.08,
+        "drag": 0.09,
+		"outlineColor": "0F0F0FFF",
+        "flying": true,
+        "health": 210,
+        "armor": 2,
+	"range": 120,
+        "engineOffset": 5.5,
+		"TargetAir": true,
+	"hitSize": 9,
+        "commandLimit": 8,
+        "circleTarget": true,
+	    "weapons": [
+		{
+    "name": "chaotican-weapon",
+    "shootCone": 40,
+    "mirror": false,
+	"alternate": false,
+    "top": false,
+	"rotate": false,
+    "y": 2,
+	"x": 0,
+    "reload": 63,
+    "shootSound": "blaster",
+    "recoil": 2.5,
+    "bullet": {
+    "type": "BasicBulletType",
+	"frontColor": "FF6666FF",
+	"backColor": "DD4444FF",
+	"lifetime": 60
+	"speed": 12,
+      "homingPower": 0.1,
+      "homingRadius": 126,
+	"damage": 56,
+	    "width": 3,
+          "weaveScale": 0.00000001,
+    "weaveMag": 3,
+      "trailLength": 24,
+      "trailColor": "FF6666FF",
+      "trailWith": 3,
+	"shootEffect":  {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+		"line": true,
+		"sizeTo": 1,
+        		"lifetime": 8,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF",
+			},
+	"hitEffect": {
+    "type": "MultiEffect",
+    "effects": [ 
+	    {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+		"line": true,
+		"sizeTo": 1,
+        		"lifetime": 61,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF",
+		    "interp": "circleOut"
+			},
+      {
+      "type": "WaveEffect",
+      "sizeTo": 26,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF",
+      "lifetime": 47,
+	      "interp": "circleOut"
+      }
+      ]
+"despawnEffect": "hitFlameSmall",
+		"despawnHit": true
+			
+		}
+		}
+		    }
+	]
+}

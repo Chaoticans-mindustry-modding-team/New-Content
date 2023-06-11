@@ -1,7 +1,7 @@
 # New-Units
-its my first mod yipee
-this is a mod taken from smoke of anarchy, credit to maxSmoke for this, smoke of anarchy is no longer downloadable for reasons i dont know about, anyway
-it adds more units
+It's my [green]First[black]*[][] mod! Yay! It adds alot of units. Such as Purple navals, Orange spiders, Blue air-bombers and much more!
+[scarlet]warning not all the trees are finished infact none are.
+[green]Thanks to my spriter for making some of theese awsome sprites!
 # overview
 Units. 
 ##(lol)

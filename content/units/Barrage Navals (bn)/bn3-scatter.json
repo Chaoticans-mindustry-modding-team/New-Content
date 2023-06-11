@@ -30,24 +30,24 @@
     "y": 1,
     "shootY": 4,
 	"recoilTime": 100,
-	"inaccuracy": 30,
+	"inaccuracy": 4,
     "rotate": true,
     "shootSound": "bang",
     "rotateSpeed": 4.2,
     "shootCone": 2,
     "shoot": {
 	"shots": 3,
-	"shotDelay": 0
+	"shotDelay": 3
 }
     "shake": 5,
 	"ejectEffect": "casing2",
 	"bullet": {
-		"damage": 25,
+		"damage": 45,
 		"speed": 10,
 		"shrinkX": 0,
 		"shrinkY": 0.1,
-    "width": 12,
-    "height": 7,
+    "width": 7,
+    "height": 25,
     "pierceBuilding": true,
     "pierce": true,
     "pierceCap": 2
@@ -65,7 +65,8 @@
     "shootCone": 25,
 	"ejectEffect": "casing1",
 	"bullet": {
-		"damage": 9
+		"damage": 9,
+		"speed": 3
 	}
     },
     {
@@ -81,7 +82,8 @@
     "shootCone": 25,
 	"ejectEffect": "casing1",
 	"bullet": {
-		"damage": 9
+		"damage": 9,
+		"speed": 3
 	}
     }
 	

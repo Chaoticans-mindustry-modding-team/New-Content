@@ -1,0 +1,65 @@
+{
+        "localizedName": "Delta",
+	"description": "Protects cores from enemies. Can fire a barrage of incendary bullets. Builds structures.",
+  "details": "v5 glaive anyone?",
+        "research": {
+			"requirements": [
+			"coreshard/3"
+			],
+			"parent": "gamma"
+		},
+        "speed": 4.15,
+  "drag": 0.05,
+  "buildSpeed": 1.75,
+        "flying": true,
+        "health": 570,
+  "isEnemy": false,
+  "rotateSpeed": 16.5,
+  "accel": 0.15,
+  "mineSpeed": 12,
+  "hitSize": 13
+  "mineTier": 3
+	"lowAltitude": true,
+        "armor": 2,
+	"range": 291.5,
+        "engineOffset": 7,
+		"TargetAir": true,
+        "itemCapacity": 130,
+        "circleTarget": false,
+	    "weapons": [
+		{
+    "name": "delta-weapon",
+    "shootCone": 15,
+    "mirror": true,
+	"alternate": true,
+    "top": false,
+	"rotate": false,
+    "y": 3.5,
+  "shake": 2
+	"x": -1,
+    "reload": 4.5,
+    "shootSound": "shootSnap",
+	"ejectEffect": "casing1",
+    "recoil": 2.5,
+    "bullet": {
+		  "type": "BasicBulletType",
+		  "damage": 16,
+      "height": 15,
+      "width": 8,
+		  "speed": 5.5,
+	"frontColor": "FF976BFF"
+	"backColor": "DC7548FF"
+  "homingRange": 27,
+  "homingPower": 0.07,
+	"buildingDamageMultiplier": 0.02,
+		  "hitEffect": "hitFlameSmall",
+		  "despawnHit": true,
+	"trailChance": 0.03,
+	"trailColor": "FF976BFF",
+  "status": "burning",
+  "statusDuration": 332,
+	"lifetime": 53
+}
+		},
+     ]
+}

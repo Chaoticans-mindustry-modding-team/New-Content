@@ -27,7 +27,11 @@
   "reload": 20,
   "recoil": 2,
   "top": false,
-  "shots": 36,
+  "shot": {
+	  "type": "ShootSpread",
+	  "shots": 36,
+	  "spread": 10
+  }
     "spacing": 10,
   "shootSound": "spark",
   "shootEffect":{

@@ -31,7 +31,7 @@
     },
     "requirements": [
 		"lead/55",
-      "copper": 35,
+      "copper/35"
     ],
     "category": "turret",
     "research": "duo"

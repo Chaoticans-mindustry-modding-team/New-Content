@@ -1,0 +1,38 @@
+{
+    "localizedName": "Pelleter"
+  "description": "Pellets homing bullets at nearby enemies over long distances."
+  "type": "ItemTurret",
+    "researchCostMultiplier": 0.7,
+    "size": 1,
+    "health": 240,
+    "maxAmmo": 25,
+    "ammoPerShot": 1,
+    "reload": 120,
+    "range": 310,
+    "targetAir": true,
+    "targetGround": true,
+    "rotateSpeed": 4,
+    "recoil": 4,
+  "shoot": {
+  "shots": 3,
+  "shootDelay": 6,
+}
+    "ammoTypes": {
+        "copper": {
+    "type": "BasicBulletType",
+    "shootEffect": "casing1",
+    "damage": 11,
+	"homingPower": 0.06,
+          "ammoMultiplier": 2,
+          "homingRange": 124,
+          "lifetime": 60,
+          "speed": 4.25,
+			}
+    },
+    "requirements": [
+		"lead/55",
+      "copper": 35,
+    ],
+    "category": "turret",
+    "research": "duo"
+}

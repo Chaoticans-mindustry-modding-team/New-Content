@@ -22,11 +22,11 @@
     "rotateShooting": false,
 	"weapons": [
 		{
-    "name": "minigun",
-    "reload": 5,
+    "name": "tiny-minigun",
+    "reload": 10,
 	"mirror": false,
     "x": 0,
-    "y": 1,
+    "y": -3,
     "shootY": 4,
     "recoil": 1.5,
 	"recoilTime": 100,
@@ -37,8 +37,10 @@
     "shootCone": 2,
 	"ejectEffect": "casing1",
 	"bullet": {
-		"damage": 7,
-		"speed": 5,
+		"damage": 18,
+		"speed": 3,
+	"width": 5,
+	"height": 6,
 		"shrinkX": 0.1,
 	}
 		}

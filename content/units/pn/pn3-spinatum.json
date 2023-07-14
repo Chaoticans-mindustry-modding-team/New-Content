@@ -1,0 +1,174 @@
+{
+    "localizedName": "Archix",
+    "description": "Fires multiple piercing sap lasers and bolts at all nearby enemies.",
+	"details": "Ship designed for unit combat, assists other units by sapping the enemy, making said enemy take extra damage and move slower.",
+           "research": {
+	    "parent": "pn2-angodia",
+	    "requirements": [
+		    "silicon/2950",
+		    "titanium/285",
+		    "spore-pod/355",
+		    "lead/120",
+        "copper/100"
+		    ]
+		    }
+    "type": "naval",
+    "speed": 0.3,
+    "drag": 0.13,
+    "armor": 4.5,
+	"targetAir": true,
+    "hitSize": 29,
+    "health": 980,
+    "accel": 0.2,
+    "rotateSpeed": 2.0,
+    "trailLength": 35,
+    "rotateShooting": false,
+	"weapons": [
+		{
+    "name": "sap-cannon",
+    "reload": 10,
+	"mirror": true,
+    "x": 2,
+    "y": -8,
+    "shootY": 8,
+    "recoil": 1.5,
+    "shake": 1,
+    "rotate": true,
+    "shootSound": "laser",
+    "rotateSpeed": 2.5,
+	"shots": 2,
+	"spacing": 5,
+    "shootCone": 45,
+	"bullet": {
+    "type": "LaserBulletType",
+    "length": 119,
+    "width": 10,
+    "damage": 17,
+    "hitEffect": {
+    "type": "ParticleEffect",
+    "particles": 5,
+    "lifetime": 100,
+    "lightColor": "BF92F9FF",
+    "length": 45,
+    "cone": -360,
+	"sizeFrom": 6,
+	"sizeTo": 0,
+    "lenFrom": 5,
+	"interp": "circleOut",
+    "lenTo": 0,	
+    "colorFrom": "BF92F9FF",
+    "colorTo": "665C9F00"
+    },
+    "status": "sapped",
+	"statusDuration": 100,
+    "colors":["665C9FAA", "BF92F9FF", "ffffff"],
+    "lightColor": "BF92F9FF",
+    "sideAngle": 90,
+    "sideLength": 1,
+    "sideWidth": 1,
+    "hitSound": "sap",
+    "despawnSound": "sap"
+    }
+		}
+	{
+    "name": "large-sap-cannon",
+    "reload": 165.6,
+	"mirror": true,
+    "x": 0,
+    "y": -1,
+    "recoil": 0.98,
+    "rotate": true,
+    "shootSound": "missile",
+    "rotateSpeed": 15.7545304555,
+    "hitSound": "sap",
+    "despawnSound": "sap",
+    "shootCone": 45,
+    "xRand": 6,
+	"inaccuracy": 10,
+	"shot": {
+    "shots": 3,
+	"shotDelay": 7.5
+  }
+	"bullet": {
+    "type": "MissileBulletType"
+    "damage": 3,
+    "splashDamageRadius": 20,
+    "splashDamage": 12,
+	"xShrink": 0,
+    "yShrink":0,
+	"despawnEffect": {
+    "type": "MultiEffect",
+    "effects": [
+      {
+    "type": "ParticleEffect",
+    "particles": 3,
+    "lifetime": 100,
+    "lightColor": "BF92F9FF",
+    "length": 45,
+    "cone": -360,
+	"sizeFrom": 6,
+	"sizeTo": 0,
+    "lenFrom": 5,
+	"interp": "circleOut",
+    "lenTo": 0,	
+    "colorFrom": "BF92F9FF",
+    "colorTo": "665C9F00"
+    },
+      {
+        "type": "WaveEffect",
+        "colorFrom": "BF92F9FF",
+        "colorTo": "665C9F00",
+        "sizeTo": 20,
+        "lifetime": 8
+      }
+    ],
+    },
+	"frontColor": "BF92F9FF",
+	"backColor": "9D70D7FF",
+	"homingRange": 65,
+	"homingPower": 0.0954,
+	"speed": 3,
+    "hitEffect": {
+    "type": "MultiEffect",
+    "effects": [
+      {
+    "type": "ParticleEffect",
+    "particles": 3,
+    "lifetime": 100,
+    "lightColor": "BF92F9FF",
+    "length": 45,
+    "cone": -360,
+	"sizeFrom": 6,
+	"sizeTo": 0,
+    "lenFrom": 5,
+	"interp": "circleOut",
+    "lenTo": 0,	
+    "colorFrom": "BF92F9FF",
+    "colorTo": "665C9F00"
+    },
+      {
+        "type": "WaveEffect",
+        "colorFrom": "BF92F9FF",
+        "colorTo": "665C9F00",
+        "sizeTo": 20,
+        "lifetime": 8
+      }
+    ],
+    },
+    "status": "sapped",
+	"statusDuration": 300,
+	"lightning": 1,
+	"lightningDamage": 0.1,
+	"lightningColor": "BF92F9FF",
+	"lightningLength": 8,
+	"lightningLengthRand": 1,
+	"lightningCone": 360,
+    "width": 7,
+    "height": 7,
+    "trailWidth": 5,
+    "trailLength": 46,
+    "trailColor": "665C9F00"
+    }
+  }
+	]
+}

@@ -1,0 +1,97 @@
+{
+    "localizedName": "Proto"
+  "description": "[red]Fires basic laser bolts at enemy targets."
+  "type": "ItemTurret",
+    "researchCostMultiplier": 1.3,
+    "size": 1,
+    "health": 450,
+    "maxAmmo": 15,
+    "reload": 30,
+    "range": 35,
+    "targetAir": true,
+    "targetGround": true,
+    "rotateSpeed": 6,
+    "shootSound": "laserpew",
+    "ammoTypes": {
+        "cinnabarite": {
+    "type": "LaserBoltBulletType",
+	"frontColor": "FF6666FF",
+	"backColor": "DD4444FF",
+	"lifetime": 30,
+	"speed": 4,
+	"damage": 20,
+          "ammoMultiplier": 2,
+	"shootEffect":  {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+		"line": true,
+		"sizeTo": 1,
+        		"lifetime": 8,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF",
+			},
+	"hitEffect": {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+		"line": true,
+		"sizeTo": 1,
+        		"lifetime": 8,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF",
+			},
+    "despawnEffect": {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+	    "line": true,
+		"sizeTo": 1,
+        		"lifetime": 8,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF",
+			}
+			
+		},
+      "cinnabarrium": {
+    "type": "LaserBoltBulletType",
+	"frontColor": "FF2222FF",
+	"backColor": "DD1111FF",
+	"lifetime": 30,
+	"speed": 8,
+	"damage": 45,
+          "ammoMultiplier": 2,
+	"shootEffect":  {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+		"line": true,
+		"sizeTo": 1,
+        		"lifetime": 8,
+		"colorFrom": "FF2222FF",
+		"colorTo": "FF2222FF",
+			},
+	"hitEffect": {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+		"line": true,
+		"sizeTo": 1,
+        		"lifetime": 8,
+		"colorFrom": "FF2222FF",
+		"colorTo": "FF2222FF",
+			},
+    "despawnEffect": {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+	    "line": true,
+		"sizeTo": 1,
+        		"lifetime": 8,
+		"colorFrom": "FF2222FF",
+		"colorTo": "FF2222FF",
+			}
+			
+		}
+    },
+    "requirements": [
+		{ "item": "copper", "amount": 45 },
+		{ "item": "cinnabarite", "amount": 25 }
+    ],
+    "category": "turret",
+    "research": "duo"
+}

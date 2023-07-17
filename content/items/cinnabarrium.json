@@ -7,7 +7,7 @@
   "charge": 1.5
     "color": "FF3333FF",
     "research": {
-    "parent": "surge-alloy",
+    "parent": "cinnabarite",
     "requirements": [
     "surge-alloy/200"
   ]

@@ -1,0 +1,12 @@
+{
+  "name": "Aluminum",
+  "description": "A light metal used in many power techs.",
+  "details": "more foil hehe",
+  "hideDetails": false,
+    "cost": 2,
+    "hardness": 2,
+    "color": "EEEEEEFF",
+    "research": {
+    "parent": "tin"
+  }
+}

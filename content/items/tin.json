@@ -1,0 +1,12 @@
+{
+  "name": "Tin",
+  "description": "A light metal used for low grade tech.",
+  "details": "foil hehe",
+  "hideDetails": false,
+    "cost": 1,
+    "hardness": 1,
+    "color": "EEEEEEFF",
+    "research": {
+    "parent": "copper"
+  }
+}

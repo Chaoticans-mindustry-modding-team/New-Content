@@ -7,6 +7,6 @@
     "hardness": 5,
     "color": "DDDDDDFF",
     "research": {
-    "parent": "tin"
+    "parent": "aluminum"
   }
 }

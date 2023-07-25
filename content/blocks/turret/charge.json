@@ -14,41 +14,25 @@
     "shootSound": "laserpew",
     "ammoTypes": {
         "cinnabarite": {
-    "type": "LaserBoltBulletType",
-	"frontColor": "FF6666FF",
-	"backColor": "DD4444FF",
-	"lifetime": 30,
-	"speed": 4,
-	"damage": 35,
-          "ammoMultiplier": 2,
-	"shootEffect":  {
+      "type": "LaserBulletType",
+      "colors":["FFF954FF", "FFFC96FF", "FFFFFFFF"],
+      "speed": 0,
+      "lifetime": 10,
+      "damage": 20,
+      "pierce": true,
+      "pierceCap": 4,
+      "length": 73,
+      "status": "shocked",
+      "statusDuration": 3
+"hitEffect": {
 	    		"type": "ParticleEffect"	
                         "sizeFrom": 2,
 		"line": true,
-		"sizeTo": 1,
-        		"lifetime": 8,
-		"colorFrom": "FF6666FF",
-		"colorTo": "FF6666FF",
-			},
-	"hitEffect": {
-	    		"type": "ParticleEffect"	
-                        "sizeFrom": 2,
-		"line": true,
-		"sizeTo": 1,
-        		"lifetime": 8,
-		"colorFrom": "FF6666FF",
-		"colorTo": "FF6666FF",
-			},
-    "despawnEffect": {
-	    		"type": "ParticleEffect"	
-                        "sizeFrom": 2,
-	    "line": true,
 		"sizeTo": 1,
         		"lifetime": 8,
 		"colorFrom": "FF6666FF",
 		"colorTo": "FF6666FF",
 			}
-			
 		},
       "cinnabarrium": {
     "type": "LaserBoltBulletType",

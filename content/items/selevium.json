@@ -5,6 +5,7 @@
   "hideDetails": false,
     "cost": 7,
     "hardness": 4,
+  "explosiveness": 0.3
     "color": "7700FFFF",
     "research": {
     "parent": "cobalt"

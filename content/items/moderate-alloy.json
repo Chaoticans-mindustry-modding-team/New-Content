@@ -5,7 +5,7 @@
   "hideDetails": false,
     "cost": 7,
     "hardness": 7,
-    "color": "8F8A85FF",
+    "color": "4f4f4fFF",
     "research": {
     "parent": "light-alloy"
   }

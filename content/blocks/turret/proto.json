@@ -52,8 +52,8 @@
 		},
       "cinnabarrium": {
     "type": "LaserBoltBulletType",
-	"frontColor": "FF2222FF",
-	"backColor": "DD1111FF",
+	"frontColor": "FF8888FF",
+	"backColor": "DD4444FF",
 	"lifetime": 30,
 	"speed": 8,
 	"damage": 85,
@@ -64,8 +64,8 @@
 		"line": true,
 		"sizeTo": 1,
         		"lifetime": 8,
-		"colorFrom": "FF2222FF",
-		"colorTo": "FF2222FF",
+		"colorFrom": "FF8888FF",
+		"colorTo": "FF8888FF",
 			},
 	"hitEffect": {
 	    		"type": "ParticleEffect"	
@@ -73,8 +73,8 @@
 		"line": true,
 		"sizeTo": 1,
         		"lifetime": 8,
-		"colorFrom": "FF2222FF",
-		"colorTo": "FF2222FF",
+		"colorFrom": "FF8888FF",
+		"colorTo": "FF8888FF",
 			},
     "despawnEffect": {
 	    		"type": "ParticleEffect"	
@@ -82,15 +82,15 @@
 	    "line": true,
 		"sizeTo": 1,
         		"lifetime": 8,
-		"colorFrom": "FF2222FF",
-		"colorTo": "FF2222FF",
+		"colorFrom": "FF8888FF",
+		"colorTo": "FF8888FF",
 			}
 			
 		}
     },
     "requirements": [
-		{ "item": "copper", "amount": 45 },
-		{ "item": "cinnabarite", "amount": 25 }
+		"tin/30",
+	    "cinnabarite/15",
     ],
     "category": "turret",
     "research": "duo"

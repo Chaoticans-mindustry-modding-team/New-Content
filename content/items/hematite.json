@@ -1,0 +1,12 @@
+{
+  "name": "Hematite",
+  "description": "A unique metal used in magnets and units.",
+  "details": "i have nothing to say here.",
+  "hideDetails": false,
+    "cost": 6,
+    "hardness": 6,
+    "color": "ff7e33FF",
+    "research": {
+    "parent": "iron"
+  }
+}

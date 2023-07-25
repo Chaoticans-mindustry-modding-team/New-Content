@@ -20,7 +20,7 @@
 	"backColor": "DD4444FF",
 	"lifetime": 30,
 	"speed": 4,
-	"damage": 35,
+	"damage": 12,
           "ammoMultiplier": 2,
 	"shootEffect":  {
 	    		"type": "ParticleEffect"	
@@ -57,7 +57,7 @@
 	"backColor": "DD4444FF",
 	"lifetime": 30,
 	"speed": 8,
-	"damage": 85,
+	"damage": 38,
           "ammoMultiplier": 2,
 	"shootEffect":  {
 	    		"type": "ParticleEffect"	

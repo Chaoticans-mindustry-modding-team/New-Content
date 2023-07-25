@@ -20,7 +20,7 @@
       "colors":["FF6666FF", "FFaaaaFF", "FFFFFFFF"],
       "speed": 0,
       "lifetime": 10,
-      "damage": 20,
+      "damage": 40,
       "shake": 2,
       "pierce": true,
       "pierceCap": 4,
@@ -42,10 +42,10 @@
 			"colorFrom": "FFAAAAFF",
 			"colorTo":  "FF666600",
 			"particles": 1,
-			"sizeFrom": 9,
+			"sizeFrom": 14,
 			"region": "newunits-circularlightglow",
 			"length": 0,
-			"lifetime": 16
+			"lifetime": 30
 		},
 		{
 		"type": "ParticleEffect"	

@@ -5,6 +5,7 @@
     "researchCostMultiplier": 1.3,
     "size": 1,
     "health": 450,
+    "outlineColor": "070707FF"
     "maxAmmo": 15,
     "reload": 30,
     "range": 120,

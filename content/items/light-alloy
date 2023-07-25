@@ -1,0 +1,12 @@
+{
+  "name": "Light Alloy",
+  "description": "A simple alloy used in numerous structures.
+  "details": "metal hehe",
+  "hideDetails": false,
+    "cost": 4,
+    "hardness": 5,
+    "color": "8F8A85FF",
+    "research": {
+    "parent": "aluminum"
+  }
+}

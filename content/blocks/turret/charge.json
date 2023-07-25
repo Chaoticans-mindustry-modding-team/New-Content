@@ -45,7 +45,6 @@
 			"sizeFrom": 9,
 			"region": "newunits-circularlightglow",
 			"length": 0,
-			"sizeInterp": "expOut",
 			"lifetime": 16
 		},
 		{

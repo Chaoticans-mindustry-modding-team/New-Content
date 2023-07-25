@@ -9,7 +9,7 @@
     "research": {
     "parent": "cinnabarite",
     "requirements": [
-    "surge-alloy/200"
+    "cinnabarite/200"
   ]
   }
 }

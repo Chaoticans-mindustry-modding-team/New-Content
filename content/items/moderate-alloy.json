@@ -1,0 +1,12 @@
+{
+  "name": "Moderate Alloy",
+  "description": "A Moderately tough alloy used in walls, factories, turrets and units.",
+  "details": "better metal",
+  "hideDetails": false,
+    "cost": 7,
+    "hardness": 7,
+    "color": "8F8A85FF",
+    "research": {
+    "parent": "light-alloy"
+  }
+}

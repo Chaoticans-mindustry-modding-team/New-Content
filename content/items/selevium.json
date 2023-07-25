@@ -1,0 +1,12 @@
+{
+  "name": "Selevium",
+  "description": "An odd crystal used for factories and shrapnel. If use din the right ways, it can grow extremely fast.",
+  "details": "minecraft amethyst hehe",
+  "hideDetails": false,
+    "cost": 7,
+    "hardness": 4,
+    "color": "7700FFFF",
+    "research": {
+    "parent": "cobalt"
+  }
+}

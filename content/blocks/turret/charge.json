@@ -1,29 +1,29 @@
 {
-    "localizedName": "Proto"
+    "localizedName": "Charge"
   "description": "[red]Rapidly fires lasers at enemy targets."
   "type": "ItemTurret",
     "researchCostMultiplier": 1.4,
     "size": 2,
     "health":850,
-    "maxAmmo": 15,
-    "reload": 30,
-    "range": 120,
+    "maxAmmo": 20,
+    "reload": 15,
+    "range": 100,
     "targetAir": true,
     "targetGround": true,
     "rotateSpeed": 6,
-    "shootSound": "laserpew",
+	"shake": 2,
+    "shootSound": "laser2",
     "ammoTypes": {
         "cinnabarite": {
       "type": "LaserBulletType",
-      "colors":["FFF954FF", "FFFC96FF", "FFFFFFFF"],
+      "colors":["FF6666FF", "FFaaaaFF", "FFFFFFFF"],
       "speed": 0,
       "lifetime": 10,
       "damage": 20,
+      "shake": 2,
       "pierce": true,
       "pierceCap": 4,
-      "length": 73,
-      "status": "shocked",
-      "statusDuration": 3
+      "length": 100,
 "hitEffect": {
 	    		"type": "ParticleEffect"	
                         "sizeFrom": 2,
@@ -33,49 +33,40 @@
 		"colorFrom": "FF6666FF",
 		"colorTo": "FF6666FF",
 			}
+"shootEffect": {
+	"type": "MultiEffect",
+	"effects": [
+		{
+			"type": "ParticleEffect",
+			"colorFrom": "FFAAAAFF",
+			"colorTo":  "FF666600",
+			"particles": 1,
+			"sizeFrom": 9,
+			"region": "newunits-circularlightglow",
+			"length": 0,
+			"sizeInterp": "expOut",
+			"lifetime": 16
 		},
-      "cinnabarrium": {
-    "type": "LaserBoltBulletType",
-	"frontColor": "FF2222FF",
-	"backColor": "DD1111FF",
-	"lifetime": 30,
-	"speed": 8,
-	"damage": 85,
-          "ammoMultiplier": 2,
-	"shootEffect":  {
-	    		"type": "ParticleEffect"	
-                        "sizeFrom": 2,
+		{
+		"type": "ParticleEffect"	
+                        "sizeFrom": 3,
+			"particles": 13,
 		"line": true,
 		"sizeTo": 1,
         		"lifetime": 8,
-		"colorFrom": "FF2222FF",
-		"colorTo": "FF2222FF",
-			},
-	"hitEffect": {
-	    		"type": "ParticleEffect"	
-                        "sizeFrom": 2,
-		"line": true,
-		"sizeTo": 1,
-        		"lifetime": 8,
-		"colorFrom": "FF2222FF",
-		"colorTo": "FF2222FF",
-			},
-    "despawnEffect": {
-	    		"type": "ParticleEffect"	
-                        "sizeFrom": 2,
-	    "line": true,
-		"sizeTo": 1,
-        		"lifetime": 8,
-		"colorFrom": "FF2222FF",
-		"colorTo": "FF2222FF",
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF",
 			}
-			
-		}
+	]
+}
+		},
+      
     },
     "requirements": [
-		{ "item": "copper", "amount": 45 },
-		{ "item": "cinnabarite", "amount": 25 }
+		"aluminum/47",
+	    "tin/21",
+	    "cinnabarite/30"
     ],
     "category": "turret",
-    "research": "duo"
+    "research": "proto"
 }

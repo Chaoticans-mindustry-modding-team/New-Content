@@ -4,7 +4,8 @@
   "type": "ItemTurret",
     "researchCostMultiplier": 1.4,
     "size": 2,
-    "health":850,
+    "health": 850,
+    "outlineColor": "070707FF"
     "maxAmmo": 20,
     "reload": 15,
     "range": 100,

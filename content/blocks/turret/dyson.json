@@ -24,7 +24,7 @@
       "cinnabarite": {
         "type": "LightningBulletType",
         "damage": 9
-        "status": "laser-shocked",
+        "status": "newunits-laser-shocked",
         "statusDuration": 300,
         "lightning": 2,
         "lightningCone": 30,

@@ -1,0 +1,35 @@
+{
+"type": "StatusEffect",
+"name": "[red]Laser Shock",
+  "speedMultiplier": 0.2,
+  "reloadMultiplier": 0.9
+  "damage": 1,
+  "color": "FF6666FF",
+  "transitionDamage": 35,
+  "affinities": [
+    "shocked",
+    "electrified"
+  ]
+  "opposites": [
+    "wet",
+  ]
+  "applyEffect": {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 4,
+		"line": true,
+		"sizeTo": 0,
+        		"lifetime": 8,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF"
+			},
+    "effect": {
+	    		"type": "ParticleEffect"	
+                        "sizeFrom": 2,
+      "particles": 1,
+		"sizeTo": 0,
+        		"lifetime": 8,
+		"colorFrom": "FF6666FF",
+		"colorTo": "FF6666FF"
+			},
+  "applyExtend": true
+},

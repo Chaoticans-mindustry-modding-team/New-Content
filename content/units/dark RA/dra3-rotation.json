@@ -8,7 +8,7 @@
                         "graphite/200",
 			"lead/50",
 			"copper/100",
-				"cinnabarrite/150"
+				"cinnabarite/150"
 			],
 			"parent": "dra2-flow"
 		},

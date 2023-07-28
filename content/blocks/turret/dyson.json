@@ -15,7 +15,7 @@
   "coolantMultiplier": 0.4
   "xRand": 7,
   "shootY": 22,
-	"shake": 3,'
+	"shake": 3,
   "consumes": {
     "power": 10
   },

@@ -1,0 +1,73 @@
+{
+    "localizedName": "Dyson"
+  "description": "[red]Encases nearby enemies in an electric arc."
+  "type": "ItemTurret",
+    "researchCostMultiplier": 1.4,
+    "size": 3,
+    "health": 1850,
+    "outlineColor": "070707FF"
+    "maxAmmo": 70,
+    "reload": 3,
+    "range": 85,
+    "targetAir": true,
+    "targetGround": true,
+    "rotateSpeed": 2,
+  "coolantMultiplier": 0.4
+  "xRand": 7,
+  "shootY": 22,
+	"shake": 3,'
+  "consumes": {
+    "power": 10
+  },
+    "shootSound": "tinylightning",
+    "ammoTypes": {
+      "cinnabarite": {
+        "type": "LightningBulletType",
+        "damage": 9
+        "status": "laser-shocked",
+        "statusDuration": 300,
+        "lightning": 2,
+        "lightningCone": 30,
+        "lightningColor": "FF6666FF",
+        "lightningLength": 9,
+        "lightningLengthRand": 5
+        "shootEffect": {
+          "type": "MultiEffect",
+          "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 1,
+            "region": "newunits-circularlightglow",
+            "colorFrom": "FFcccc99",
+            "colorTo": "FF6600",
+            "length": 0,
+            "lifetime": 30,
+            "sizeFrom": 7
+          },
+            {
+            "type": "ParticleEffect",
+            "particles": 6,
+            "region": "newunits-circularlightglow",
+            "colorFrom": "FF6666ff",
+            "colorTo": "FF6600",
+            "length": 70,
+            "lifetime": 30,
+              "sizeFrom": 4.5,
+              "interp": "circleOut",
+              "sizeInterp": "swingIn"
+          }
+          ]
+        
+}
+		},
+      
+    },
+    "requirements": [
+		"aluminum/47",
+	    "selevite/56",
+	    "light-alloy/30",
+      "moderate-alloy/60",
+    ],
+    "category": "turret",
+    "research": "charge"
+}

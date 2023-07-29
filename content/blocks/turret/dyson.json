@@ -1,35 +1,35 @@
 {
     "localizedName": "Dyson"
-  "description": "[red]Encases nearby enemies in an electric arc."
+  "description": "[red]Encases nearby enemies in an electric laser arc, slowing them."
   "type": "ItemTurret",
-    "researchCostMultiplier": 1.4,
+    "researchCostMultiplier": 10.5,
     "size": 3,
     "health": 1850,
     "outlineColor": "070707FF"
     "maxAmmo": 70,
-    "reload": 3,
-    "range": 85,
+    "reload": 2,
+    "range": 105,
     "targetAir": true,
     "targetGround": true,
-    "rotateSpeed": 2,
+    "rotateSpeed": 4.5,
   "coolantMultiplier": 0.4
   "xRand": 7,
   "shootY": 22,
-	"shake": 3,
+	"shake": 2,
   "consumes": {
-    "power": 10
+    "power": 2.63
   },
     "shootSound": "tinylightning",
     "ammoTypes": {
       "cinnabarite": {
         "type": "LightningBulletType",
-        "damage": 9
+        "damage": 12
         "status": "newunits-laser-shocked",
         "statusDuration": 300,
         "lightning": 2,
         "lightningCone": 30,
         "lightningColor": "FF6666FF",
-        "lightningLength": 9,
+        "lightningLength": 11,
         "lightningLengthRand": 5
         "shootEffect": {
           "type": "MultiEffect",
@@ -39,22 +39,24 @@
             "particles": 1,
             "region": "newunits-circularlightglow",
             "colorFrom": "FFcccc99",
-            "colorTo": "FF6600",
+            "colorTo": "FF6666FF",
             "length": 0,
             "lifetime": 30,
-            "sizeFrom": 7
+            "sizeFrom": 10,
+	
           },
             {
             "type": "ParticleEffect",
-            "particles": 6,
+            "particles": 4,
             "region": "newunits-circularlightglow",
             "colorFrom": "FF6666ff",
             "colorTo": "FF6600",
             "length": 70,
             "lifetime": 30,
-              "sizeFrom": 4.5,
+              "sizeFrom": 2,
               "interp": "circleOut",
-              "sizeInterp": "swingIn"
+              "sizeInterp": "swingIn",
+		    "cone": 30,
           }
           ]
         

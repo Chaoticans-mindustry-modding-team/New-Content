@@ -10,11 +10,13 @@
     "reload": 2,
     "range": 105,
     "targetAir": true,
+	"shot":{
+		"shots": 2
+	}
     "targetGround": true,
     "rotateSpeed": 4.5,
   "coolantMultiplier": 0.4
-  "xRand": 7,
-  "shootY": 22,
+  "xRand": 3,
 	"shake": 2,
   "consumes": {
     "power": 2.63
@@ -26,11 +28,19 @@
         "damage": 12
         "status": "newunits-laser-shocked",
         "statusDuration": 300,
-        "lightning": 2,
-        "lightningCone": 30,
-        "lightningColor": "FF6666FF",
         "lightningLength": 11,
-        "lightningLengthRand": 5
+	"lightningType": {
+		"type": "lightningBulletType",
+		        "LightningColor": "FF6666FF",
+        "lightningLength": 11,
+        "lightningLengthRand": 5,
+		"damage": 12,
+		"status": "newunits-laser-shocked",
+		"statusDuration": 300,
+		"hitEffect": "none"
+	}
+		
+	      "hitEffect": "none",
         "shootEffect": {
           "type": "MultiEffect",
           "effects": [
@@ -50,7 +60,7 @@
             "particles": 4,
             "region": "newunits-circularlightglow",
             "colorFrom": "FF6666ff",
-            "colorTo": "FF6600",
+            "colorTo": "FF6666FF",
             "length": 70,
             "lifetime": 30,
               "sizeFrom": 2,

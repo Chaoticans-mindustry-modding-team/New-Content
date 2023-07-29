@@ -7,12 +7,9 @@
     "health": 1850,
     "outlineColor": "070707FF"
     "maxAmmo": 70,
-    "reload": 2,
+    "reload": 8,
     "range": 105,
     "targetAir": true,
-	"shot":{
-		"shots": 2
-	}
     "targetGround": true,
     "rotateSpeed": 4.5,
   "coolantMultiplier": 0.4
@@ -28,13 +25,11 @@
         "damage": 12
         "status": "newunits-laser-shocked",
         "statusDuration": 300
-	      "lightning": 1,
+       "lightningLength": 11,
+        "lightningLengthRand": 5,
 	"lightningType": {
 		"type": "LightningBulletType",
 		        "lightningColor": "FF6666FF",
-		"lightning": 1,
-        "lightningLength": 11,
-        "lightningLengthRand": 5,
 		"damage": 12,
 		"status": "newunits-laser-shocked",
 		"statusDuration": 300,

@@ -27,11 +27,12 @@
         "type": "LightningBulletType",
         "damage": 12
         "status": "newunits-laser-shocked",
-        "statusDuration": 300,
-        "lightningLength": 11,
+        "statusDuration": 300
+	      "lightning": 1,
 	"lightningType": {
-		"type": "lightningBulletType",
-		        "LightningColor": "FF6666FF",
+		"type": "LightningBulletType",
+		        "lightningColor": "FF6666FF",
+		"lightning": 1,
         "lightningLength": 11,
         "lightningLengthRand": 5,
 		"damage": 12,

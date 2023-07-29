@@ -6,6 +6,7 @@
   "damage": 1,
   "color": "FF6666FF",
   "transitionDamage": 35,
+	"effectChance": 0.8
   "affinities": [
     "shocked",
     "electrified"
@@ -15,7 +16,7 @@
   ]
   "applyEffect": {
 	    		"type": "ParticleEffect"	
-                        "sizeFrom": 4,
+                        "sizeFrom": 7,
 		"line": true,
 		"sizeTo": 0,
         		"lifetime": 8,
@@ -24,7 +25,7 @@
 			},
     "effect": {
 	    		"type": "ParticleEffect"	
-                        "sizeFrom": 2,
+                        "sizeFrom": 4,
       "particles": 1,
 		"sizeTo": 0,
         		"lifetime": 8,

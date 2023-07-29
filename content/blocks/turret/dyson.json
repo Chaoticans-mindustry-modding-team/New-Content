@@ -28,9 +28,11 @@
         "statusDuration": 300
        "lightningLength": 11,
 	      "fragBullets": 1,
+	      "lightningColor": "FF6666FF",
 	"lightningType": {
+		"type": "LightningBulletType",
 		        "lightningColor": "FF6666FF",
-		"damage": 12,
+		"damage": 25,
 		"status": "newunits-laser-shocked",
 		"statusDuration": 300,
 		"lightningLength": 11,

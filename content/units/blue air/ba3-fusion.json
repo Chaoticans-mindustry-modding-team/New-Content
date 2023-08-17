@@ -1,0 +1,180 @@
+{
+        "localizedName": "Fusion",
+	    "description": "Drops small energy bombs and pulls in enemies.",
+	"details": "tips: auto controlled is better.",
+        "research": {
+			"requirements": [
+			"silicon/225",
+			"lead/115",
+			"titanium/135"
+			],
+			"parent": "ba2-atom"
+		},
+        "speed": 2,
+        "accel": 0.03,
+	"hideDetails": false,
+        "drag": 0.03,
+        "flying": true,
+        "health": 1250,
+        "armor": 3,
+	"range": 60,
+	"hitSize": 15,
+		"TargetAir": false,
+	"faceTarget": false
+        "commandLimit": 5,
+        "circleTarget": true,
+  "lowAltitude": false,
+  "engines": [
+  {
+    "x": 0,
+    "y": -11,
+    "rotation": -90,
+    "radius": 4,
+  },
+  {
+    "x": -7,
+    "y": -10,
+    "rotation": -90,
+    "radius": 3,
+  },
+    {
+    "x": 7,
+    "y": -10,
+    "rotation": -90,
+    "radius": 3,
+  }
+]
+	    "weapons": [
+		{
+    "name": "spread-bomber"
+    "shootCone": 360,
+    "mirror": false,
+    "top": false,
+	"rotate": false,
+    "x": 0,
+    "y": -8,
+    "reload": 23.554,
+    "shootSound": "sap",
+    "recoil": 0,
+      "shoot": {
+        "type": "ShootSpread",
+        "shots": 3,
+        "spread": 30
+      }
+			"minShootVelocity": 0.35,
+    "bullet": {
+    "type": "BombBulletType",
+	"hitEffect": {
+    "type": "MultiEffect"
+    "effects": [
+    {
+		"type": "ParticleEffect"
+		"particles": 9,
+		"sizeFrom": 5,
+		"sizeTo": 0,
+		"length": 55,
+		"cone": 360,
+		"colorFrom": "aaaaffff",
+		"colorTo": "4545ffff",
+    "interp": "circleOut"
+	},
+      {
+		"type": "ParticleEffect"
+		"particles": 10,
+		"sizeFrom": 5,
+		"sizeTo": 0,
+      "line": true,
+		"length": 55,
+		"cone": 360,
+		"colorFrom": "aaaaffff",
+		"colorTo": "4545ffff",
+      "interp": "circleOut"
+	},
+      {
+		"type": "ParticleEffect"
+		"particles": 1,
+		"sizeFrom": 20,
+		"sizeTo": 0,
+		"length": 0,
+		"cone": 360,
+      "lifetime": 15,
+		"colorTo": "aaaaffff",
+		"colorFrom": "4545ff00",
+      "interp": "reverse"
+	},
+      {
+		"type": "WaveEffect",
+		"colorFrom": "aaaaffff",
+		"colorTo": "4545ffff",
+		"sizeTo": 35,
+      "lifetime": 12
+	}
+      ]
+}
+  "splashDamageRadius": 11,
+  "splashDamage": 20,
+	"knockback": 4,
+	"impact": true,
+	"keepVelocity": false,
+    "speed": 0.9,
+"width": 13,
+"height": 13,
+  "drag": 0.08,
+    "lifetime": 55,
+  "trailColor": "aaaaffff",
+  "trailChance": 0.2,
+"frontColor": "8888ffff",
+"backColor": "6666ffff",
+	"hitSound": "plasmaboom",
+	"status": "shocked",
+	"statusDuration": 10,
+"hitShake": 6,
+"despawnShake": 6,
+  "sprite": "circle",
+"damage": 22,
+  "shrinkX": 0.3,
+  "shrinkY": 0.3,
+			}
+		},
+        {
+          "name": "sharp-blue-mount",
+          "x": 4,
+          "y": 1,
+          "reload": 21.5553213,
+          "alternate": true,
+          "controllable": false,
+          "autoTarget": true,
+          "shootSound": "lasershoot",
+          "shootEffect": {
+		"type": "WaveEffect",
+		"colorFrom": "aaaaffff",
+		"colorTo": "4545ffff",
+		"sizeTo": 9,
+      "lifetime": 12
+	},
+          "bullet": {
+    "type": "SapBulletType",
+	"hitEffect": {
+		"type": "ParticleEffect"
+		"particles": 7,
+		"sizeFrom": 2,
+		"sizeTo": 0,
+		"length": 20
+		"cone": 30,
+		"colorFrom": "aaaaffff",
+		"colorTo": "4545ffff",
+	}
+	"color": "aaaaffff",
+    "damage": 6,
+	"knockback": -2,
+	"impact": true,
+	"keepVelocity": "false",
+    "speed": 0.01,
+    "lifetime": 45,
+	"length": 60,
+	"status": "shocked",
+		"collidesTiles": "false
+			}
+        }
+	]
+}

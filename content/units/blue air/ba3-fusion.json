@@ -1,7 +1,7 @@
 {
         "localizedName": "Fusion",
 	    "description": "Drops small energy bombs and pulls in enemies.",
-	"details": "tips: auto controlled is better.",
+	"details": "tips: manually controlled is better.",
         "research": {
 			"requirements": [
 			"silicon/225",
@@ -18,6 +18,7 @@
         "health": 1250,
         "armor": 3,
 	"range": 60,
+	"lowAltitude": true,
 	"hitSize": 15,
 		"TargetAir": false,
 	"faceTarget": false
@@ -118,8 +119,8 @@
 	"impact": true,
 	"keepVelocity": false,
     "speed": 0.9,
-"width": 13,
-"height": 13,
+"width": 5,
+"height": 5,
   "drag": 0.08,
     "lifetime": 55,
   "trailColor": "aaaaffff",
@@ -135,6 +136,7 @@
 "damage": 22,
   "shrinkX": 0.3,
   "shrinkY": 0.3,
+  "layer": "flyingUnitLow"
 			}
 		},
         {

@@ -50,6 +50,7 @@
     "shootCone": 360,
     "mirror": false,
     "top": false,
+    "baseRotation": 180,
 	"rotate": false,
     "x": 0,
     "y": -8,
@@ -142,8 +143,8 @@
           "y": 1,
           "reload": 21.5553213,
           "alternate": true,
-          "controllable": false,
-          "autoTarget": true,
+          "rotate": true,
+          "rotateSpeed": 2.5,
           "shootSound": "lasershoot",
           "shootEffect": {
 		"type": "WaveEffect",

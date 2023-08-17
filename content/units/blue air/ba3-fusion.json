@@ -136,7 +136,7 @@
 "damage": 22,
   "shrinkX": 0.3,
   "shrinkY": 0.3,
-  "layer": "flyingUnitLow"
+  "layer": 89
 			}
 		},
         {

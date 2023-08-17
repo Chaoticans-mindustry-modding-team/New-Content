@@ -173,7 +173,7 @@
     "lifetime": 45,
 	"length": 60,
 	"status": "shocked",
-		"collidesTiles": "false
+		"collidesTiles": false
 			}
         }
 	]

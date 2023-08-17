@@ -1,55 +1,66 @@
 {
-        "localizedName": "Atom",
-	    "description": "Drops bomb clusters and drags in enemies.",
-	"details": "hehehehehehehehehhehehhehehe",
+        "localizedName": "Fusion",
+	    "description": "Drops small energy bombs and pulls in enemies.",
+	"details": "tips: auto controlled is better.",
         "research": {
 			"requirements": [
-			"silicon/255",
+			"silicon/225",
 			"lead/115",
 			"titanium/135"
 			],
 			"parent": "ba2-atom"
 		},
-        "speed": 1.7,
+        "speed": 2,
         "accel": 0.03,
 	"hideDetails": false,
-        "drag": 0.02,
+        "drag": 0.03,
         "flying": true,
-        "health": 470,
-        "armor": 2,
+        "health": 1250,
+        "armor": 3,
 	"range": 60,
 	"hitSize": 15,
 		"TargetAir": false,
-	"faceTarget": false,
+	"faceTarget": false
         "commandLimit": 5,
         "circleTarget": true,
   "lowAltitude": false,
   "engines": [
   {
-    "x": 2,
-    "y": -9,
+    "x": 0,
+    "y": -11,
     "rotation": -90,
-    "radius": 2,
-  }
+    "radius": 4,
+  },
   {
-    "x": -2,
-    "y": -9,
+    "x": -7,
+    "y": -10,
     "rotation": -90,
-    "radius": 2,
+    "radius": 3,
+  },
+    {
+    "x": 7,
+    "y": -10,
+    "rotation": -90,
+    "radius": 3,
   }
 ]
 	    "weapons": [
 		{
-    "name": "bomber"
+    "name": "spread-bomber"
     "shootCone": 360,
     "mirror": false,
     "top": false,
 	"rotate": false,
     "x": 0,
-    "y": -2,
-    "reload": 66,
-    "shootSound": "mineDeploy",
+    "y": -8,
+    "reload": 23.554,
+    "shootSound": "sap",
     "recoil": 0,
+      "shoot": {
+        "type": "ShootSpread",
+        "shots": 3,
+        "spread": 30
+      }
 			"minShootVelocity": 0.35,
     "bullet": {
     "type": "BombBulletType",
@@ -82,7 +93,7 @@
       {
 		"type": "ParticleEffect"
 		"particles": 1,
-		"sizeFrom": 34,
+		"sizeFrom": 20,
 		"sizeTo": 0,
 		"length": 0,
 		"cone": 360,
@@ -95,13 +106,13 @@
 		"type": "WaveEffect",
 		"colorFrom": "aaaaffff",
 		"colorTo": "4545ffff",
-		"sizeTo": 45,
+		"sizeTo": 35,
       "lifetime": 12
 	}
       ]
 }
-  "splashDamageRadius": 35,
-  "splashDamage": 66,
+  "splashDamageRadius": 11,
+  "splashDamage": 20,
 	"knockback": 4,
 	"impact": true,
 	"keepVelocity": false,
@@ -125,91 +136,45 @@
   "shrinkY": 0.3,
 			}
 		},
-{
-    "name": "bomber"
-    "shootCone": 360,
-    "mirror": false,
-    "top": false,
-	"rotate": false,
-    "x": 0,
-    "y": -3,
-    "reload": 12.5,
-    "shootSound": "mineDeploy",
-    "recoil": 0,
-			"minShootVelocity": 0.25,
-    "bullet": {
-    "type": "BombBulletType",
-	"hitEffect": {
-    "type": "MultiEffect"
-    "effects": [
-    {
-		"type": "ParticleEffect"
-		"particles": 7,
-		"sizeFrom": 3,
-		"sizeTo": 0,
-		"length": 30
-		"cone": 360,
-		"colorFrom": "aaaaffff",
-		"colorTo": "4545ffff",
-    "interp": "circleOut"
-	},
-      {
-		"type": "ParticleEffect"
-		"particles": 7,
-		"sizeFrom": 3,
-		"sizeTo": 0,
-      "line": true,
-		"length": 30
-		"cone": 360,
-		"colorFrom": "aaaaffff",
-		"colorTo": "4545ffff",
-      "interp": "circleOut"
-	},
-      {
-		"type": "ParticleEffect"
-		"particles": 1,
-		"sizeFrom": 14,
-		"sizeTo": 0,
-		"length": 0
-		"cone": 360,
-      "lifetime": 15,
-		"colorTo": "aaaaffff",
-		"colorFrom": "4545ff00",
-      "interp": "reverse"
-	},
-      {
+        {
+          "name": "sharp-blue-mount",
+          "x": 4,
+          "y": 1,
+          "reload": 21.5553213,
+          "alternate": true,
+          "controllable": false,
+          "autoTarget": true,
+          "shootSound": "lasershoot",
+          "shootEffect": {
 		"type": "WaveEffect",
 		"colorFrom": "aaaaffff",
 		"colorTo": "4545ffff",
-		"sizeTo": 9.5,
-      "lifetime": 10,
+		"sizeTo": 9,
+      "lifetime": 12
+	},
+          "bullet": {
+    "type": "SapBulletType",
+	"hitEffect": {
+		"type": "ParticleEffect"
+		"particles": 7,
+		"sizeFrom": 2,
+		"sizeTo": 0,
+		"length": 20
+		"cone": 30,
+		"colorFrom": "aaaaffff",
+		"colorTo": "4545ffff",
 	}
-      ]
-}
-  "splashDamageRadius": 17,
-  "splashDamage": 27
-	"knockback": 2,
+	"color": "aaaaffff",
+    "damage": 6,
+	"knockback": -2,
 	"impact": true,
-	"keepVelocity": false,
-    "speed": 0.8,
-"width": 9,
-"height": 9,
-  "drag": 0.1,
+	"keepVelocity": "false",
+    "speed": 0.01,
     "lifetime": 45,
-  "trailColor": "aaaaffff",
-  "trailChance": 0.1,
-"frontColor": "8888ffff",
-"backColor": "6666ffff",
-	"hitSound": "plasmaboom",
+	"length": 60,
 	"status": "shocked",
-	"statusDuration": 10,
-"hitShake": 3,
-"despawnShake": 3,
-  "sprite": "circle",
-"damage": 12,
-  "shrinkX": 0.4,
-  "shrinkY": 0.4,
+		"collidesTiles": "false
 			}
-		}
+        }
 	]
 }

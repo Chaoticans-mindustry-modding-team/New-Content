@@ -172,6 +172,7 @@
 	"knockback": -2,
 	"impact": true,
 	"keepVelocity": "false",
+	"layer": 100,
     "speed": 0.01,
     "lifetime": 45,
 	"length": 60,

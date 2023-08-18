@@ -28,19 +28,19 @@
   "engines": [
   {
     "x": 0,
-    "y": -11,
+    "y": -13,
     "rotation": -90,
     "radius": 4,
   },
   {
     "x": -7,
-    "y": -10,
+    "y": -11,
     "rotation": -90,
     "radius": 3,
   },
     {
     "x": 7,
-    "y": -10,
+    "y": -11,
     "rotation": -90,
     "radius": 3,
   }
@@ -143,7 +143,7 @@
           "name": "sharp-blue-mount",
           "x": 4,
           "y": 1,
-          "reload": 21.5553213,
+          "reload": 11.5553213,
           "alternate": true,
           "rotate": true,
           "rotateSpeed": 2.5,
@@ -163,7 +163,7 @@
 		"sizeFrom": 2,
 		"sizeTo": 0,
 		"length": 20
-		"cone": 30,
+		"cone": 360,
 		"colorFrom": "aaaaffff",
 		"colorTo": "4545ffff",
 	}
@@ -175,7 +175,7 @@
 	"layer": 100,
     "speed": 0.01,
     "lifetime": 45,
-	"length": 60,
+	"length": 75,
 	"status": "shocked",
 		"collidesTiles": false
 			}

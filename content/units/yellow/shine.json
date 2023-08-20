@@ -1,0 +1,44 @@
+{
+"name": "Shine",
+"description": "[gold]Fires a glowing flame at nearby enemies.",
+"health": 1200,
+"armor": 1,
+"flying": true,
+"lowAltitude": true,
+"speed": 3,
+"drag": 0.02,
+"hitSize": 7,
+"engineSize": 3,
+"engineOffset": 11,
+"rotateSpeed": 1.1,
+"weapons": [
+  {
+    "name": "shine-weapon"
+    "x": 0,
+    "y": 8.5,
+    "mirror": false,
+    "shootSound": "none",
+    "loopSound": "torch",
+    "loopSoundVolume": 0.6,
+    "loopSoundPitch": 2.5,
+    "bullet":{
+      "type": "ContinuousFlameBulletType",
+      "damage": 25,
+      "length": 35,
+      "colors": ["fff0c7ff", "ffdb78ff", "ffc936", "ffffffff"]
+      "flareColor": "ffe08aff",
+      "width": 6.8,
+      "lightStroke": 13,
+      "hitEffect": {
+        "type": "ParticleEffect",
+        "particles": 2,
+        "line": true,
+        "sizeFrom": 5,
+        "interp": "circleOut",
+        "lifetime": 20,
+        "length": 7
+      },
+    }
+  }
+  ]
+}

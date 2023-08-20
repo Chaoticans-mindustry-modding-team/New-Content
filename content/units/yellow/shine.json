@@ -6,29 +6,31 @@
 "flying": true,
 "lowAltitude": true,
 "speed": 3,
-"drag": 0.02,
-"hitSize": 7,
+"drag": 0.03,
+"hitSize": 14.5,
 "engineSize": 3,
 "engineOffset": 11,
-"rotateSpeed": 1.1,
+"rotateSpeed": 4,
+"outlineColor": "0d0d0dff",
 "weapons": [
   {
     "name": "shine-weapon"
     "x": 0,
-    "y": 8.5,
+    "y": 5,
     "mirror": false,
     "shootSound": "none",
     "loopSound": "torch",
-    "loopSoundVolume": 0.6,
+    "loopSoundVolume": 0.9,
     "loopSoundPitch": 2.5,
+    "continous": true,
     "bullet":{
       "type": "ContinuousFlameBulletType",
-      "damage": 25,
-      "length": 35,
-      "colors": ["fff0c7ff", "ffdb78ff", "ffc936", "ffffffff"]
+      "damage": 21,
+      "length": 65,
+      "colors": ["fabc0fff", "ffc936ff", "fff0c7ff", "ffffffff"]
       "flareColor": "ffe08aff",
-      "width": 6.8,
-      "lightStroke": 13,
+      "width": 1.7,
+      "lightStroke": 4,
       "hitEffect": {
         "type": "ParticleEffect",
         "particles": 2,
@@ -38,7 +40,17 @@
         "lifetime": 20,
         "length": 7
       },
-    }
+    },
+    "parts": [
+      {
+	"suffix": "-weapon-arm",
+	"outline": true,
+  "outlineColor": "0d0d0dff",
+  "type": "regionPart",
+	"under": true,
+	"moveRot": 15,
+	"progress": "warmup"
+	"mirror": true,
   }
   ]
 }

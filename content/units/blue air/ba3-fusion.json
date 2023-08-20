@@ -127,7 +127,7 @@
   "trailChance": 0.2,
 "frontColor": "8888ffff",
 "backColor": "6666ffff",
-	"hitSound": "plasmaboom",
+	"hitSound": "explosion",
 	"status": "shocked",
 	"statusDuration": 10,
 "hitShake": 6,

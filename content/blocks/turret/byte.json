@@ -17,7 +17,8 @@
   "shoot": {
   "shots": 2,
   "shotDelay": 7,
-}
+	  "outlineColor": "010101fff",
+},
     "ammoTypes": {
         "matrixium": {
     "type": "BasicBulletType",

@@ -1,0 +1,11 @@
+{
+  "name": "[acid]Matrixium",
+  "description": "[acid]A strange source of energy. Seems to be made of 1's and 0's.",
+  "hideDetails": false,
+    "cost": 13,
+    "hardness": 11,
+    "color": "00FF00FF",
+    "research": {
+    "parent": "copper"
+  }
+}

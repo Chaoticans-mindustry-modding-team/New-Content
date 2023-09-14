@@ -19,7 +19,7 @@
   "shotDelay": 7,
 }
     "ammoTypes": {
-        "copper": {
+        "matrixium": {
     "type": "BasicBulletType",
     "shootEffect": {
       "type": "ParticleEffect",
@@ -60,8 +60,8 @@
 			}
     },
     "requirements": [
-		"lead/55",
-      "copper/35"
+		"silicon/55",
+      "matrixium/15"
     ],
     "category": "turret",
     "research": "duo"

@@ -46,17 +46,17 @@
           "sprite": "ohno",
           "trailLength": 11,
           "trailWidth": 2,
-          "trailColor": "88ff88ff"",
-          "frontColor": "88ff88ff"",
-          "backColor": "88ff88ff""
+          "trailColor": "88ff88ff",
+          "frontColor": "88ff88ff",
+          "backColor": "88ff88ff"
           
           "hitEffect": {
       "type": "ParticleEffect",
       "length": 3,
       "sizeFrom": 4,
       "particles": 3,
-      "colorFrom": "88ff88ff"",
-      "colorTo": "88ff88ff""
+      "colorFrom": "88ff88ff",
+      "colorTo": "88ff88ff"
     },
 		"despawnHit": true
 			}

@@ -1,0 +1,68 @@
+{
+    "localizedName": "Byte"
+  "description": "Fires homing bits at enemies."
+  "type": "ItemTurret",
+    "researchCostMultiplier": 0.7,
+    "size": 1,
+    "health":540,
+    "maxAmmo": 25,
+    "ammoPerShot": 1,
+    "reload": 120,
+    "range": 310,
+    "targetAir": true,
+    "targetGround": true,
+    "rotateSpeed": 3,
+    "recoil": 4,
+  "shootSound": "pixelCrunch",
+  "shoot": {
+  "shots": 2,
+  "shotDelay": 7,
+}
+    "ammoTypes": {
+        "copper": {
+    "type": "BasicBulletType",
+    "shootEffect": {
+      "type": "ParticleEffect",
+      "length": 3,
+      "sizeFrom": 4,
+      "particles": 3,
+      "colorFrom": "0dff00ff",
+      "colorTo": "0dff00ff"
+    },
+    "damage": 30,
+	"homingPower": 0.03,
+          "ammoMultiplier": 2,
+          "homingRange": 60,
+          "lifetime": 60,
+          "speed": 4.5,
+          "width": 3,
+          "height": 3,
+          "shrinkX": 0,
+          "shrinkY": 0,
+          "hittable": false,
+          "absorbable": false,
+          "reflectable": false,
+          "sprite": "ohno",
+          "trailLength": 11,
+          "trailWidth": 2,
+          "trailColor": "0dff00ff",
+          "frontColor": "0dff00ff",
+          "backColor": "0dff00ff"
+          
+          "hitEffect": {
+      "type": "ParticleEffect",
+      "length": 3,
+      "sizeFrom": 4,
+      "particles": 3,
+      "colorFrom": "0dff00ff",
+      "colorTo": "0dff00ff"
+    },
+			}
+    },
+    "requirements": [
+		"lead/55",
+      "copper/35"
+    ],
+    "category": "turret",
+    "research": "duo"
+}

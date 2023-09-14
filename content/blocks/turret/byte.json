@@ -13,11 +13,12 @@
     "targetGround": true,
     "rotateSpeed": 3,
     "recoil": 4,
+    "inaccuracy": 10,
     "outlineColor": "010101ff",
     "shootSound": "pixelCrunch",
     "shoot": {
-    "shots": 2,
-    "shotDelay": 7,
+    "shots": 3,
+    "shotDelay": 5,
     },
     "ammoTypes": {
         "matrixium": {

@@ -7,8 +7,8 @@
     "health":540,
     "maxAmmo": 25,
     "ammoPerShot": 1,
-    "reload": 120,
-    "range": 310,
+    "reload": 45,
+    "range": 270,
     "targetAir": true,
     "targetGround": true,
     "rotateSpeed": 3,
@@ -26,8 +26,8 @@
       "length": 3,
       "sizeFrom": 4,
       "particles": 3,
-      "colorFrom": "0dff00ff",
-      "colorTo": "0dff00ff"
+      "colorFrom": "33ff33ff",
+      "colorTo": "33ff33ff"
     },
     "damage": 30,
 	"homingPower": 0.03,
@@ -45,18 +45,19 @@
           "sprite": "ohno",
           "trailLength": 11,
           "trailWidth": 2,
-          "trailColor": "0dff00ff",
-          "frontColor": "0dff00ff",
-          "backColor": "0dff00ff"
+          "trailColor": "33ff33ff",
+          "frontColor": "33ff33ff",
+          "backColor": "33ff33ff"
           
           "hitEffect": {
       "type": "ParticleEffect",
       "length": 3,
       "sizeFrom": 4,
       "particles": 3,
-      "colorFrom": "0dff00ff",
-      "colorTo": "0dff00ff"
+      "colorFrom": "33ff33ff",
+      "colorTo": "33ff33ff"
     },
+		"despawnHit": true
 			}
     },
     "requirements": [

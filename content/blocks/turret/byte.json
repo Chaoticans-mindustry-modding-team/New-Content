@@ -4,11 +4,11 @@
   "type": "ItemTurret",
     "researchCostMultiplier": 0.7,
     "size": 1,
-    "health":540,
+    "health": 540,
     "maxAmmo": 25,
     "ammoPerShot": 1,
     "reload": 45,
-    "range": 270,
+    "range": 240,
     "targetAir": true,
     "targetGround": true,
     "rotateSpeed": 3,
@@ -17,7 +17,7 @@
   "shoot": {
   "shots": 2,
   "shotDelay": 7,
-	  "outlineColor": "010101fff",
+	  "outlineColor": "010101ff",
 },
     "ammoTypes": {
         "matrixium": {
@@ -27,17 +27,17 @@
       "length": 3,
       "sizeFrom": 4,
       "particles": 3,
-      "colorFrom": "33ff33ff",
-      "colorTo": "33ff33ff"
+      "colorFrom": "88ff88ff",
+      "colorTo": "88ff88ff""
     },
     "damage": 30,
 	"homingPower": 0.03,
           "ammoMultiplier": 2,
           "homingRange": 60,
-          "lifetime": 60,
-          "speed": 4.5,
-          "width": 3,
-          "height": 3,
+          "lifetime": 40,
+          "speed": 6,
+          "width": 5,
+          "height": 5,
           "shrinkX": 0,
           "shrinkY": 0,
           "hittable": false,
@@ -46,17 +46,17 @@
           "sprite": "ohno",
           "trailLength": 11,
           "trailWidth": 2,
-          "trailColor": "33ff33ff",
-          "frontColor": "33ff33ff",
-          "backColor": "33ff33ff"
+          "trailColor": "88ff88ff"",
+          "frontColor": "88ff88ff"",
+          "backColor": "88ff88ff""
           
           "hitEffect": {
       "type": "ParticleEffect",
       "length": 3,
       "sizeFrom": 4,
       "particles": 3,
-      "colorFrom": "33ff33ff",
-      "colorTo": "33ff33ff"
+      "colorFrom": "88ff88ff"",
+      "colorTo": "88ff88ff""
     },
 		"despawnHit": true
 			}

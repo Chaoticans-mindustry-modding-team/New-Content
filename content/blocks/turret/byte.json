@@ -28,7 +28,7 @@
       "sizeFrom": 4,
       "particles": 3,
       "colorFrom": "88ff88ff",
-      "colorTo": "88ff88ff""
+      "colorTo": "88ff88ff"
     },
     "damage": 30,
 	"homingPower": 0.03,

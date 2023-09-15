@@ -54,7 +54,7 @@
   "homingPower": 0.07,
 	"buildingDamageMultiplier": 0.02,
 		  "hitEffect": {
-			  "type"; "MultiEffect",
+			  "type": "MultiEffect",
 			  "effects": [
 				  "hitBulletSmall",
 				  "hitFlameSmall"

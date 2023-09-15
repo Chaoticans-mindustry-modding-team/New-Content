@@ -59,6 +59,7 @@
 				  "hitBulletSmall",
 				  "hitFlameSmall"
 			  ]
+		  }
 		  "despawnHit": true,
 			  "despawnEffect": "none"
 	"trailChance": 0.03,

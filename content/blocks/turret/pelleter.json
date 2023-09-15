@@ -1,18 +1,20 @@
 {
     "localizedName": "Pelleter"
-  "description": "Pellets homing bullets at nearby enemies over long distances."
+  "description": "Pellets homing bullets at nearby enemies over extremelylong distances."
+  "details": "snoiper",
+  "hideDetails": false,
   "type": "ItemTurret",
     "researchCostMultiplier": 0.7,
     "size": 1,
     "health": 240,
     "maxAmmo": 25,
     "ammoPerShot": 1,
-    "reload": 120,
-    "range": 310,
+    "reload": 50,
+    "range": 350,
     "targetAir": true,
     "targetGround": true,
     "rotateSpeed": 4,
-    "recoil": 4,
+    "recoil": 2,
   "shoot": {
   "shots": 3,
   "shotDelay": 6,
@@ -25,12 +27,74 @@
 	"homingPower": 0.06,
           "ammoMultiplier": 2,
           "homingRange": 124,
-          "lifetime": 60,
+          "lifetime": 110,
           "speed": 4.25,
+			},
+	"graphite": {
+    "type": "BasicBulletType",
+    "shootEffect": "casing2",
+    "damage": 25,
+	"homingPower": 0.04,
+          "ammoMultiplier": 2,
+          "homingRange": 60,
+          "lifetime": 110,
+          "speed": 4,
+	  "reloadMultiplier": 0.5
+			},
+	"silicon": {
+    "type": "BasicBulletType",
+    "shootEffect": "casing1",
+    "damage": 9,
+	"homingPower": 0.08,
+          "ammoMultiplier": 2,
+          "homingRange": 300,
+          "lifetime": 90,
+          "speed": 5,
+	  "reloadMultiplier": 1.25
+			},
+"matrixium": {
+    "type": "BasicBulletType",
+    "shootEffect": {
+      "type": "ParticleEffect",
+      "length": 3,
+      "sizeFrom": 4,
+      "particles": 3,
+      "colorFrom": "88ff88ff",
+      "colorTo": "88ff88ff"
+    },
+    "damage": 15,
+	"homingPower": 0.03,
+          "ammoMultiplier": 2,
+          "homingRange": 60,
+          "lifetime": 40,
+          "speed": 6,
+          "width": 7,
+          "height": 7,
+          "shrinkX": 0,
+          "shrinkY": 0,
+          "hittable": false,
+          "absorbable": false,
+          "reflectable": false,
+          "sprite": "newunits-square",
+          "trailLength": 11,
+          "trailWidth": 2,
+          "trailColor": "88ff88ff",
+          "frontColor": "88ff88ff",
+          "backColor": "88ff88ff",
+          
+          "hitEffect": {
+      "type": "ParticleEffect",
+      "length": 3,
+      "sizeFrom": 4,
+      "particles": 3,
+      "colorFrom": "88ff88ff",
+      "colorTo": "88ff88ff"
+    },
+		"despawnHit": true
 			}
     },
     "requirements": [
-		"lead/55",
+	"lead/55",
       "copper/35"
     ],
     "category": "turret",

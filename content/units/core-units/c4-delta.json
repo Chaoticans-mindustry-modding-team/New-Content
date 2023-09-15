@@ -30,17 +30,18 @@
 		{
     "name": "delta-weapon",
     "shootCone": 15,
-    "mirror": true,
-	"alternate": true,
+    "mirror": false,
+    "alternate": false,
     "top": false,
-	"rotate": false,
+    "rotate": false,
+    "x": 0
     "y": 3.5,
-  "shake": 2
-	"x": -1,
+    "shake": 2
     "reload": 4.5,
     "shootSound": "shootSnap",
-	"ejectEffect": "casing1",
+    "ejectEffect": "casing1",
     "recoil": 2.5,
+    "layerOffset": -0.1
     "bullet": {
 		  "type": "BasicBulletType",
 		  "damage": 16,
@@ -52,8 +53,14 @@
   "homingRange": 27,
   "homingPower": 0.07,
 	"buildingDamageMultiplier": 0.02,
-		  "hitEffect": "hitFlameSmall",
+		  "hitEffect": {
+			  "type"; "MultiEffect",
+			  "effects": [
+				  "hitBulletSmall",
+				  "hitFlameSmall"
+			  ]
 		  "despawnHit": true,
+			  "despawnEffect": "none"
 	"trailChance": 0.03,
 	"trailColor": "FF976BFF",
   "status": "burning",

@@ -78,39 +78,39 @@
           "cone": 15,
           "interp": "circleOut",
           "lifetime": 30.5,
-          "length": 80.5
+          "length": 157.6
         },
         "frontColor": "00000000",
         "backColor": "00000000",
         "hitEffect": "none",
         "status": "melting",
-        "statusDuration": 50,
+        "statusDuration": 60,
         "despawnEffect": "none",
         "hittable": false,
         "reflectable": "false"
       }
     },
     {
-      "name": "railgun",
+      "name": "clam-turret",
       "mirror": true,
       "alternate": true,
       "rotate": false,
       "top": true,
       "rotateSpeed": 1,
-      "x": 19,
-      "y": 0,
+      "x": 15,
+      "y": -3,
       "reload": 35,
       "recoil": 3,
       "inaccuracy": 4.5,
       "shake": 5,
       "shoot": {
-        "shots": 7,
-        "shotDelay": 3
+        "shots": 3,
+        "shotDelay": 1
       },
-      "shootSound": "shootSnap",
+      "shootSound": "missile",
       "ejectEffect": "casing2",
       "bullet": {
-        "type": "BasicBulletType",
+        "type": "MissileBulletType",
         "damage": 58,
         "height": 25,
         "width": 10,

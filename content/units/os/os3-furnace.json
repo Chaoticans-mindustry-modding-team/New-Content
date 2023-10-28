@@ -13,7 +13,7 @@
 "type": "legs",
 "legCount": 5,
 "groundLayer": 75,
-"legLength": 19.5,
+"legLength": 16.5,
 "legTrns": 0.6,
 "visualElevation": 0.4,
 "legMoveSpace": 1.7,
@@ -53,7 +53,7 @@
             "pierce": true,
 			"pierceBuilding": false,
             "type": "BasicBulletType",
-            "lifetime": 5,
+            "lifetime": 7,
 		    "shootEffect": "shootSmallFlame"
 			"speed": 6.5,
             "frontColor": "00000000",
@@ -121,6 +121,7 @@
 	  "ejectEffect": "casing1",
 	  "bullet": {
 		"damage": 9
+		  "speed": 5.5
 	}
   }
 ]

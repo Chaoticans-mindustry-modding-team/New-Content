@@ -45,7 +45,7 @@
             "backColor": "00000000",
             "hitEffect": "none",
 			"status": "burning",
-			"statusDuration": 5
+			"statusDuration": 80
 			"despawnEffect": "none"
      }
   }

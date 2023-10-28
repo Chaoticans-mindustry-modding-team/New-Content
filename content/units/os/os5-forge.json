@@ -1,5 +1,6 @@
 {
   "localizedName": "Forge",
+  "description": "Fires a power melting stream of flame at near enemy targets. Fires swarms or small missiles and a disarming laser at far enemies.",
   "research": {
     "parent": "os4-cast",
     "requirements": [
@@ -60,10 +61,11 @@
       "inaccuracy": 15,
       "bullet": {
         "damage": 37,
-        "speed": 8,
+        "speed": 9,
         "width": 8,
         "pierce": true,
-        "pierceBuilding": false,
+        "pierceBuilding": true,
+        "pierceCap": 100,
         "type": "BasicBulletType",
         "lifetime": 15.7,
         "buildingDamageMultiplier": 3,
@@ -72,8 +74,8 @@
           "followParent": false,
           "particles": 12,
           "colorFrom": "DE9959FF",
-          "colorTo": "BA5D4CFF",
-          "sizeFrom": 6,
+          "colorTo": "f5822a",
+          "sizeFrom": 2,
           "sizeTo": 0.5,
           "cone": 15,
           "interp": "circleOut",
@@ -95,10 +97,10 @@
       "name": "clam-turret",
       "mirror": true,
       "alternate": false,
-      "rotate": false,
+      "rotate": true,
       "top": true,
-      "rotateSpeed": 1,
-      "x": 15,
+      "rotateSpeed": 3,
+      "x": 9.5,
       "y": -3,
       "reload": 20,
       "recoil": 3,
@@ -106,7 +108,7 @@
       "shake": 5,
       "shoot": {
         "shots": 6,
-        "shotDelay": 0
+        "shotDelay": 5
       },
       "shootSound": "missile",
       "ejectEffect": "casing2",
@@ -114,8 +116,8 @@
         "type": "MissileBulletType",
         "damage": 7,
         "height": 5,
-        "width": 5,
-        "speed": 5,
+        "width": 7,
+        "speed": 7,
         "homingRadius": 46,
         "homingPower": 0.06,
         "hitEffect": "blastExplosion",
@@ -126,7 +128,10 @@
         "despawnShake": 5,
         "weaveScl": 3,
         "weaveMag": 2,
-        "hitSound": "explosion"
+        "hitSound": "explosion",
+        "trailLength": 27,
+        "trailWidth": 3.2,
+        "trailEffect": "missileTrail"
       }
     },
     {
@@ -134,9 +139,9 @@
       "mirror": false,
       "alternate": false,
       "x": 0,
-      "y": -22,
+      "y": -17.2,
       "reload": 75,
-      "recoil": 6,
+      "recoil": 4,
       "shootSound": "laser",
       "rotate": true,
       "rotateSpeed": 1.7,
@@ -148,34 +153,39 @@
         "sideWidth": 1.5,
         "sideLength": 95,
         "width": 25,
-        "length": 486,
+        "length": 279,
+        "colors": [
+          "ec7458aa",
+          "ff9c5aff",
+          "ffffffff"
+        ],
         "shootEffect": {
           "type": "ParticleEffect",
           "followParent": false,
-          "particles": 6,
+          "particles": 30,
           "colorFrom": "DE9959FF",
-          "colorTo": "BA5D4CFF",
-          "sizeFrom": 6,
+          "colorTo": "f5822a",
+          "sizeFrom": 2,
           "sizeTo": 0.5,
           "cone": 5,
           "interp": "circleOut",
           "sizeInterp": "swingIn",
           "lifetime": 30.5,
-          "length": 20
+          "length": 157.6
         },
         "hitEffect": {
           "type": "ParticleEffect",
           "followParent": false,
           "particles": 6,
           "colorFrom": "DE9959FF",
-          "colorTo": "BA5D4CFF",
-          "sizeFrom": 6,
+          "colorTo": "f5822a",
+          "sizeFrom": 2,
           "sizeTo": 0.5,
           "cone": 15,
           "interp": "circleOut",
           "sizeInterp": "swingIn",
           "lifetime": 30.5,
-          "length": 150
+          "length": 157.6
         },
         "status": "disarmed",
         "statusDuration": 26

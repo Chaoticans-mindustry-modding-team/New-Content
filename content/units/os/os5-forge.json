@@ -1,6 +1,8 @@
 {
   "localizedName": "Forge",
   "description": "Fires a power melting stream of flame at near enemy targets. Fires swarms or small missiles and a disarming laser at far enemies.",
+  "details": "If you see him run instantly cuz' he's ginna melt ya in approximately 0.0000017238232343243545324 seconds :nerd:",
+  "hideDetails": false,
   "research": {
     "parent": "os4-cast",
     "requirements": [
@@ -12,7 +14,7 @@
   },
   "type": "legs",
   "legCount": 9,
-  "legLength": 50,
+  "legLength": 68,
   "legTrns": 0.6,
   "legExtension": -15,
   "legBaseOffset": 10,
@@ -30,11 +32,14 @@
   "flying": false,
   "health": 21000,
   "rotateShooting": false,
+  "rotateSpeed": 3.6,
   "shadowElevation": 0.72,
   "drownMultiplier": 1.75,
+  "range": 279,
   "immunities": [
     "burning",
-    "melting"
+    "melting",
+    "blasted"
   ],
   "weapons": [
     {
@@ -60,7 +65,7 @@
       "parentizeEffects": false,
       "inaccuracy": 15,
       "bullet": {
-        "damage": 37,
+        "damage": 26,
         "speed": 9,
         "width": 8,
         "pierce": true,
@@ -74,7 +79,7 @@
           "followParent": false,
           "particles": 12,
           "colorFrom": "DE9959FF",
-          "colorTo": "f5822a",
+          "colorTo": "FA874DFF",
           "sizeFrom": 2,
           "sizeTo": 0.5,
           "cone": 15,
@@ -104,7 +109,7 @@
       "y": -3,
       "reload": 20,
       "recoil": 3,
-      "inaccuracy": 4.5,
+      "inaccuracy": 19,
       "shake": 5,
       "shoot": {
         "shots": 6,
@@ -118,7 +123,7 @@
         "height": 5,
         "width": 7,
         "speed": 7,
-        "homingRadius": 46,
+        "homingRadius": 70,
         "homingPower": 0.06,
         "hitEffect": "blastExplosion",
         "despawnHit": true,
@@ -129,18 +134,18 @@
         "weaveScl": 3,
         "weaveMag": 2,
         "hitSound": "explosion",
-        "trailLength": 27,
-        "trailWidth": 3.2,
+        "trailLength": 15,
+        "trailWidth": 1,
         "trailEffect": "missileTrail"
       }
     },
     {
       "name": "orange-laser-mount",
-      "mirror": false,
+      "mirror": true,
       "alternate": false,
-      "x": 0,
-      "y": -17.2,
-      "reload": 75,
+      "x": 11,
+      "y": -14.2,
+      "reload": 45,
       "recoil": 4,
       "shootSound": "laser",
       "rotate": true,
@@ -163,22 +168,22 @@
           "type": "ParticleEffect",
           "followParent": false,
           "particles": 30,
-          "colorFrom": "DE9959FF",
-          "colorTo": "f5822a",
+          "colorFrom": "ff9c5aff",
+          "colorTo": "ff9c5aff",
           "sizeFrom": 2,
           "sizeTo": 0.5,
           "cone": 5,
           "interp": "circleOut",
           "sizeInterp": "swingIn",
           "lifetime": 30.5,
-          "length": 157.6
+          "length": 267
         },
         "hitEffect": {
           "type": "ParticleEffect",
           "followParent": false,
           "particles": 6,
-          "colorFrom": "DE9959FF",
-          "colorTo": "f5822a",
+          "colorFrom": "ff9c5aff",
+          "colorTo": "ff9c5aff",
           "sizeFrom": 2,
           "sizeTo": 0.5,
           "cone": 15,
@@ -187,8 +192,8 @@
           "lifetime": 30.5,
           "length": 157.6
         },
-        "status": "disarmed",
-        "statusDuration": 26
+        "status": "melting",
+        "statusDuration": 392
       }
     }
   ]

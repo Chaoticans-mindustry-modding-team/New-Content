@@ -12,7 +12,7 @@
 "type": "legs",
 	"groundLayer": 75,
 "legCount": 3,
-"legLength": 6,
+"legLength": 12,
 "legTrns": 0.6,
 "legMoveSpace": 1.4,
 "hovering": true,

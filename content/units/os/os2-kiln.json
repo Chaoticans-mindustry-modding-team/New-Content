@@ -57,7 +57,7 @@
             "backColor": "00000000",
             "hitEffect": "none",
 			"status": "burning",
-			"statusDuration": 15.5,
+			"statusDuration": 130,
 			"despawnEffect": "none",
 	  "collideAir": true
      }

@@ -12,7 +12,7 @@
 "type": "legs",
 	"groundLayer": 75,
 "legCount": 3,
-"legLength": 16,
+"legLength": 12,
 "legTrns": 0.6,
 "legMoveSpace": 1.4,
 "hovering": true,
@@ -57,8 +57,9 @@
             "backColor": "00000000",
             "hitEffect": "none",
 			"status": "burning",
-			"statusDuration": 15.5
-			"despawnEffect": "none"
+			"statusDuration": 130,
+			"despawnEffect": "none",
+	  "collideAir": true
      }
   },
   {

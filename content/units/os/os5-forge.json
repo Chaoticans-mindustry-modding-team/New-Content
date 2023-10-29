@@ -136,7 +136,8 @@
         "hitSound": "explosion",
         "trailLength": 15,
         "trailWidth": 1,
-        "trailEffect": "missileTrail"
+        "trailEffect": "missileTrail",
+        "knockback": 2
       }
     },
     {

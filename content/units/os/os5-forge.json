@@ -65,7 +65,7 @@
       "parentizeEffects": false,
       "inaccuracy": 15,
       "bullet": {
-        "damage": 26,
+        "damage": 24,
         "speed": 9,
         "width": 8,
         "pierce": true,
@@ -119,7 +119,7 @@
       "ejectEffect": "casing2",
       "bullet": {
         "type": "MissileBulletType",
-        "damage": 7,
+        "damage": 11,
         "height": 5,
         "width": 7,
         "speed": 7,
@@ -128,7 +128,7 @@
         "hitEffect": "blastExplosion",
         "despawnHit": true,
         "splashDamageRadius": 17,
-        "splashDamage": 15,
+        "splashDamage": 25,
         "hitShake": 5,
         "despawnShake": 5,
         "weaveScl": 3,

@@ -1,0 +1,67 @@
+{
+  "localizedName": "Sor,
+  "research": {
+    "parent": "dagger",
+    "requirements": [
+      "silicon/175",
+      "surge-alloy/65"
+    ]
+  },
+  "description": "[yellow]Shoots shock artillery at nearby enemies.",
+  "type": "mech",
+  "armor": 0,
+  "commandLimit": 6,
+  "speed": 1,
+  "flying": false,
+  "targetAir": false,
+  "health": 450,
+  "immunities": [
+    "shocked"
+  ],
+  "weapons": [
+    {
+      "name": "shock-artillery-arm",
+      "mirror": true,
+      "alternate": true,
+      "x": 6,
+      "y": 1,
+      "reload": 60,
+      "recoil": 3,
+      "top": false,
+      "shootSound": "artillery",
+      "ejectEffect": "casing2",
+      "shake": 3,
+      "bullet": {
+        "keepVelocity": false,
+        "type": "artilleryBulletType",
+        "collides": true,
+        "collidesTiles": true,
+        "collidesAir": true,
+        "damage": 6,
+        "splashDamageRadius": 24,
+        "splashDamage": 27,
+        "hitEffect": {
+          "type": "ExplosionEffect",
+          "waveColor": "F3E979FF",
+          "sparkColor": "F3E979FF",
+          "waveRad": 13
+        },
+        "shootEffect": "shootHealYellow",
+        "lightning": 5,
+        "lightningDamage": 4,
+        "lightningLength": 2,
+        "lightningCone": 300,
+        "lightningLengthRand": 2,
+        "trailColor": "F3E979FF",
+        "height": 7,
+        "width": 7,
+        "speed": 3,
+        "frontColor": "FFFFFFFF",
+        "backColor": "F3E979FF",
+        "lifetime": 60,
+        "hitSound": "explosion",
+        "despawnSound": "Explosion"
+      }
+    }
+  ]
+}

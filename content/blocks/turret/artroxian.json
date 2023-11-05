@@ -5,7 +5,7 @@
   "type": "ItemTurret",
   "researchCostMultiplier": 10,
   "size": 6,
-  "health": 350,
+  "health": 26720,
   "maxAmmo": 20,
   "ammoPerShot": 6,
   "reload": 200,

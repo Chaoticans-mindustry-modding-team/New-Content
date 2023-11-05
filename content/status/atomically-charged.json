@@ -1,0 +1,38 @@
+{
+  type: StatusEffect
+  name: "[sky]Atomically Charged"
+  description: "[sky]Too much particle energy surges through your circuts."
+  speedMultiplier: 0.6
+  reloadMultiplier: 0.9
+  damage: 27
+  color: 80c9f2ff
+  transitionDamage: 35
+  effectChance: 0.8
+  affinities:
+  [
+    shocked
+    electrified
+    laser-shocked
+  ]
+  opposites:
+  [
+    fast
+    wet
+    freezing
+  ]
+  applyEffect: hitLaser
+  effect:
+  {
+    type: ParticleEffect
+    sizeFrom: 2
+    particles: 1
+    sizeTo: 0
+    lifetime: 8
+    colorFrom: aaaaffff
+    colorTo: aaaaffff
+    sprite: square
+    interp: circleIn
+  }
+  applyExtend: true
+  outline: true
+}

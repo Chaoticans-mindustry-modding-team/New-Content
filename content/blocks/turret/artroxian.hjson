@@ -1,0 +1,127 @@
+{
+  localizedName: Artroxian
+  description: "[blue]The extremely powerful turret of Fusionix concentrated Ion energy into particle energy and shot it out all at once"
+  type: ItemTurret
+  researchCostMultiplier: 10
+  size: 6
+  health: 350
+  maxAmmo: 20
+  ammoPerShot: 6
+  reload: 200
+  range: 35
+  targetAir: true
+  targetGround: true
+  rotateSpeed: 1
+  recoil: 4
+  shake: 30
+  chargeSound: laserCharge
+  shootSound: red
+  shootY: -4
+  shoot: {
+      shots: 8
+      shotDelay: 0
+      firstShotDelay: 100.2 
+  }
+  ammoTypes:
+  {
+    anion-alloy:
+    {
+      type: ShrapnelBulletType
+      shootEffect: casing1
+      damage: 162
+      sprite: circle
+      xShrink: 0
+      yShrink: 0
+      width: 12
+      height: 12
+      frontColor: aaaaffff
+      backColor: aaaaffff
+      trailColor: aaaaffff
+      trailWidth: 5
+      weaveScale: 9
+      weaveMag: 4
+      hitSound: plasmaboom
+      despawnSound: plasmaboom
+      status: atomically-charged
+      statusDuration: 248
+      splashDamage: 279
+      splashDamageRadius: 47
+      scaledSplashDamage: true
+      speed: 8
+      lifetime:
+      shootEffect: {
+          type: MultiEffect
+          followParent: false
+          effects: [
+            {
+                type: ParticleEffect
+                particles: 9
+                colorFrom: aaaaffff
+                colorTo: aaaaffff
+                sizeFrom: 20
+                sizeTo: 0
+                interp: circleOut
+                lifetime: 190
+            }
+            {
+                type: ParticleEffect
+                particles: 17
+                colorFrom: aaaaffff
+                colorTo: aaaaffff
+                sizeFrom: 3
+                sizeTo: 0
+                interp: circleOut
+                line: true
+                lifetime: 160
+            }
+            {
+                type: ExplosionEffect
+                waveColor: aaaaffff
+                sparkColor: aaaaffff
+                smokeColor: aaaaffff
+                waveRad: 30
+                sparkRad: 40
+            }
+            {
+                type: ParticleEffect
+                particles: 1
+                length: 0
+                colorFrom: aaaaffff
+                colorTo: 7777bb00
+                sizeFrom: 8
+                sizeTo: 48
+                lifetime: 16
+            }
+          ]
+      }
+      chargeEffect: {
+          type: MultiEffect
+          followParent: false
+          effects: [
+            {
+                type: ParticleEffect
+                particles: 1
+                colorFrom: "22227700"
+                colorTo: aaaaffff
+                interp: circle
+                sizeFrom: 0
+                sizeTo: 20
+                offsetY: -4
+            }
+          ]
+      }
+    }
+  requirements:
+  [
+    {
+      item: copper
+      amount: 45
+    }
+    {
+      item: titanium
+      amount: 25
+    }
+  ]
+  category: turret
+  research: arc
+}

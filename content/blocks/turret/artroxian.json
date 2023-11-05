@@ -24,18 +24,19 @@
   },
   "ammoTypes": {
     "anion-alloy": {
-      "type": "MultiEffect",
+      "type": "BasicBulletType",
       "shootEffect": "casing1",
       "damage": 162,
       "sprite": "circle",
-      "xShrink": 0,
-      "yShrink": 0,
+      "shrinkX": 0,
+      "shrinkY": 0,
       "width": 12,
       "height": 12,
       "frontColor": "aaaaffff",
       "backColor": "aaaaffff",
       "trailColor": "aaaaffff",
       "trailWidth": 5,
+      "trailLength": 18
       "weaveScale": 9,
       "weaveMag": 4,
       "hitSound": "plasmaboom",

@@ -1,0 +1,12 @@
+{
+  "name": "[blue]Anion Alloy"
+  "description": "[blue]The Fusionix have smelted this peculiar alloy. it has anti-ion properties, which is how it got its name and is used in many of the Fusionix' tech."
+    "cost": 8,
+    "hardness": 12,
+    "explosiveness": 1,
+  "charge": 0.75
+    "color": "005effff",
+    "research": {
+    "parent": "surge-alloy",
+  }
+}

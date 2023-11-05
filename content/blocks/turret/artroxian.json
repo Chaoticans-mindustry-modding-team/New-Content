@@ -1,5 +1,6 @@
 {
   "localizedName": "Artroxian",
+  "name": "Artroxian",
   "description": "[royal]The extremely powerful turret of Fusionix concentrated Ion energy into particle energy and shot it out all at once",
   "type": "ItemTurret",
   "researchCostMultiplier": 10,

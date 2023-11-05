@@ -46,7 +46,9 @@
       "splashDamageRadius": 47,
       "scaledSplashDamage": true,
       "speed": 8,
-      "lifetime": "shootEffect: {",
+      "lifetime": 127,
+      "shootEffect": {
+      "type": "MultiEffect",
       "followParent": false,
       "effects": [
         {
@@ -88,8 +90,7 @@
           "sizeTo": 48,
           "lifetime": 16
         }
-      ]
-    },
+      ],
     "chargeEffect": {
       "type": "MultiEffect",
       "followParent": false,
@@ -119,17 +120,7 @@
         }
       ]
     }
-  },
-  "requirements": [
-    {
-      "item": "copper",
-      "amount": 45
-    },
-    {
-      "item": "titanium",
-      "amount": 25
+  }
     }
-  ],
-  "category": "turret",
-  "research": "arc"
+  }
 }

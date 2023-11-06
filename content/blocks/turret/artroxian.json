@@ -2,7 +2,7 @@
   "localizedName": "Artroxian",
   "name": "Artroxian",
   "description": "[royal]The extremely powerful turret of Fusionix concentrated Ion energy into particle energy and shot it out all at once",
-  "details": "[sky]Defend with pure ions.",
+  "details": "[sky]Defend all the incoming with pure ions. Defend with all ions. Only ions.",
   "hideDetails": false,
   "type": "ItemTurret",
   "researchCostMultiplier": 10,

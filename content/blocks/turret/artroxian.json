@@ -1,5 +1,4 @@
 {
-  "localizedName": "Artroxian",
   "name": "Artroxian",
   "description": "[royal]The extremely powerful turret of Fusionix concentrated Ion energy into particle energy and shot it out all at once",
   "details": "[sky]Defend all the incoming with pure ions. Defend with all ions. Only ions.",
@@ -28,7 +27,80 @@
   "ammoTypes": {
     "anion-alloy": {
       "type": "BasicBulletType",
-      "shootEffect": "casing1",
+      "shootEffect": {
+        "type": "MultiEffect",
+        "followParent": false,
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 9,
+            "colorFrom": "aaaaffff",
+            "colorTo": "aaaaffff",
+            "sizeFrom": 20,
+            "sizeTo": 0,
+            "interp": "circleOut",
+            "lifetime": 190
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 17,
+            "colorFrom": "aaaaffff",
+            "colorTo": "aaaaffff",
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "interp": "circleOut",
+            "line": true,
+            "lifetime": 160
+          },
+          {
+            "type": "ExplosionEffect",
+            "waveColor": "aaaaffff",
+            "sparkColor": "aaaaffff",
+            "smokeColor": "aaaaffff",
+            "waveRad": 30,
+            "sparkRad": 40
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 1,
+            "length": 0,
+            "colorFrom": "aaaaffff",
+            "colorTo": "7777bb00",
+            "sizeFrom": 8,
+            "sizeTo": 48,
+            "lifetime": 16
+          }
+        ],
+        "chargeEffect": {
+          "type": "MultiEffect",
+          "followParent": false,
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 1,
+              "colorFrom": "22227700",
+              "colorTo": "aaaaffff",
+              "interp": "circle",
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "offsetY": -4
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 12,
+              "colorFrom": "22227700",
+              "colorTo": "aaaaffff",
+              "interp": "circleIn",
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "offsetY": -4,
+              "baseLength": 70,
+              "length": 0,
+              "region": "square"
+            }
+          ]
+        }
+      },
       "damage": 162,
       "sprite": "circle",
       "shrinkX": 0,
@@ -39,7 +111,7 @@
       "backColor": "aaaaffff",
       "trailColor": "aaaaffff",
       "trailWidth": 5,
-      "trailLength": 18
+      "trailLength": 18,
       "weaveScale": 9,
       "weaveMag": 4,
       "hitSound": "plasmaboom",
@@ -50,93 +122,18 @@
       "splashDamageRadius": 47,
       "scaledSplashDamage": true,
       "speed": 8,
-      "lifetime": 127,
-      "shootEffect": {
-      "type": "MultiEffect",
-      "followParent": false,
-      "effects": [
-        {
-          "type": "ParticleEffect",
-          "particles": 9,
-          "colorFrom": "aaaaffff",
-          "colorTo": "aaaaffff",
-          "sizeFrom": 20,
-          "sizeTo": 0,
-          "interp": "circleOut",
-          "lifetime": 190
-        },
-        {
-          "type": "ParticleEffect",
-          "particles": 17,
-          "colorFrom": "aaaaffff",
-          "colorTo": "aaaaffff",
-          "sizeFrom": 3,
-          "sizeTo": 0,
-          "interp": "circleOut",
-          "line": true,
-          "lifetime": 160
-        },
-        {
-          "type": "ExplosionEffect",
-          "waveColor": "aaaaffff",
-          "sparkColor": "aaaaffff",
-          "smokeColor": "aaaaffff",
-          "waveRad": 30,
-          "sparkRad": 40
-        },
-        {
-          "type": "ParticleEffect",
-          "particles": 1,
-          "length": 0,
-          "colorFrom": "aaaaffff",
-          "colorTo": "7777bb00",
-          "sizeFrom": 8,
-          "sizeTo": 48,
-          "lifetime": 16
-        }
-      ],
-    "chargeEffect": {
-      "type": "MultiEffect",
-      "followParent": false,
-      "effects": [
-        {
-          "type": "ParticleEffect",
-          "particles": 1,
-          "colorFrom": "22227700",
-          "colorTo": "aaaaffff",
-          "interp": "circle",
-          "sizeFrom": 0,
-          "sizeTo": 20,
-          "offsetY": -4
-        },
-        {
-          "type": "ParticleEffect",
-          "particles": 12,
-          "colorFrom": "22227700",
-          "colorTo": "aaaaffff",
-          "interp": "circleIn",
-          "sizeFrom": 0,
-          "sizeTo": 20,
-          "offsetY": -4,
-          "baseLength": 70,
-          "length": 0,
-          "region": "square"
-        }
-      ]
+      "lifetime": 127
     }
-  }
-    }
-  }
-    "requirements": [
-      "tin/795",
-      "heavy-alloy/120",
-      "selevite/15",
-      "anion-alloy/600",
-      "light-alloy/365",
-      "platinum/265",
-      "iron/40"
-    ],
-    "category": "turret",
-    "research": "duo"
-}
+  },
+  "requirements": [
+    "tin/795",
+    "heavy-alloy/120",
+    "selevite/15",
+    "anion-alloy/600",
+    "light-alloy/365",
+    "platinum/265",
+    "iron/40"
+  ],
+  "category": "turret",
+  "research": "duo"
 }

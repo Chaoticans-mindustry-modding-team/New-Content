@@ -1,0 +1,67 @@
+{
+  "localizedName": "Silky",
+  "description": "Fires a barrage of bullets at nearby enemies.",
+  "details": "Bottom Bext.",
+  "hideDetails": false,
+  "research": {
+    "parent": "risso",
+    "requirements": [
+      "silicon/460",
+      "graphite/170",
+      "lead/200"
+    ]
+  },
+  "type": "naval",
+  "speed": 1.2,
+  "drag": 0.13,
+  "armor": 3,
+  "targetAir": true,
+  "hitSize": 11,
+  "health": 310,
+  "accel": 0.4,
+  "rotateSpeed": 3.3,
+  "trailLength": 20,
+  "rotateShooting": false,
+  "weapons": [
+    {
+      "name": "mount-weapon",
+      "reload": 15,
+      "mirror": false,
+      "x": 3,
+      "y": 3,
+      "rotate": true,
+      "rotateSpeed": 5.5,
+      "shootCone": 6,
+      "inaccuracy": 4
+    },
+    {
+      "name": "silky-mount",
+      "reload": 37,
+      "mirror": false,
+      "x": 0,
+      "y": 1,
+      "rotate": true,
+      "shootSound": "shootSnap",
+      "rotateSpeed": 2,
+      "shootCone": 10,
+      "inaccuracy": 2,
+      "shake": 0.3,
+      "shoot": {
+        "shots": 2,
+        "shotDelay": 6
+      },
+      "bullet": {
+        "damage": 26,
+        "speed": 4.2,
+        "lifetime": 77,
+        "hitEffect": "flakExplosion",
+        "despawnEffect": "none",
+        "despawnHit": true,
+        "splashDamageRadius": 9,
+        "splashDamage": 8,
+        "width": 5,
+        "height": 7
+      }
+    }
+  ]
+}

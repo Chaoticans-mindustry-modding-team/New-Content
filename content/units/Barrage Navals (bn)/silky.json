@@ -12,34 +12,38 @@
     ]
   },
   "type": "naval",
-  "speed": 1.2,
+  "speed": 0.9,
   "drag": 0.13,
   "armor": 3,
   "targetAir": true,
-  "hitSize": 11,
+  "hitSize": 10,
   "health": 310,
   "accel": 0.4,
-  "rotateSpeed": 3.3,
+  "rotateSpeed": 2.7,
   "trailLength": 20,
   "rotateShooting": false,
   "weapons": [
     {
       "name": "mount-weapon",
       "reload": 15,
-      "mirror": false,
+      "mirror": true,
       "x": 3,
       "y": 3,
       "rotate": true,
       "rotateSpeed": 5.5,
       "shootCone": 6,
-      "inaccuracy": 4
+      "inaccuracy": 4,
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 9
+      }
     },
     {
       "name": "silky-mount",
       "reload": 37,
       "mirror": false,
       "x": 0,
-      "y": 1,
+      "y": -2,
       "rotate": true,
       "shootSound": "shootSnap",
       "rotateSpeed": 2,
@@ -59,8 +63,8 @@
         "despawnHit": true,
         "splashDamageRadius": 9,
         "splashDamage": 8,
-        "width": 5,
-        "height": 7
+        "width": 7,
+        "height": 9
       }
     }
   ]

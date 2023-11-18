@@ -19,6 +19,7 @@
   "hitSize": 10,
   "health": 310,
   "accel": 0.4,
+  "range": 320,
   "rotateSpeed": 2.7,
   "trailLength": 20,
   "rotateShooting": false,
@@ -27,7 +28,7 @@
       "name": "mount-weapon",
       "reload": 15,
       "mirror": true,
-      "x": 3,
+      "x": 4,
       "y": 3,
       "rotate": true,
       "rotateSpeed": 5.5,
@@ -35,7 +36,9 @@
       "inaccuracy": 4,
       "bullet": {
         "type": "BasicBulletType",
-        "damage": 9
+        "damage": 9,
+        "speed": 2.5,
+        "lifetime": 60
       }
     },
     {
@@ -43,7 +46,7 @@
       "reload": 37,
       "mirror": false,
       "x": 0,
-      "y": -2,
+      "y": -5,
       "rotate": true,
       "shootSound": "shootSnap",
       "rotateSpeed": 2,

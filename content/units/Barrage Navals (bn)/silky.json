@@ -1,7 +1,7 @@
 {
   "localizedName": "Silky",
   "description": "Fires a barrage of bullets at nearby enemies.",
-  "details": "Bottom Bext.",
+  "details": "Silkies are theorized to be a 'wild mech' that evolved to prey on small tier 1's such as daggers, monos, rissos, and especially flares. They are known for long range to snipe out their prey. They seemed to also have developed a taste for metal, which is why they seek out and eat mechs.\nBottom Bext.",
   "hideDetails": false,
   "research": {
     "parent": "risso",

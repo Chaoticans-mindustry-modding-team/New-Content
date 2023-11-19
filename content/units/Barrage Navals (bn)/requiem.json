@@ -1,0 +1,88 @@
+{
+  "localizedName": "Requiem",
+  "description": "Fires a barrage of missiles and shells at far-away enemies.",
+  "details": "The Requiems are an evolution of the Silkies that have gained more range. they spy on their prey before shooting large shells at them.",
+  "research": {
+    "parent": "silky",
+    "requirements": [
+      "silicon/510",
+      "metaglass/200",
+      "lead/470"
+    ]
+  },
+  "type": "naval",
+  "speed": 0.9,
+  "drag": "0..9",
+  "armor": 6,
+  "targetAir": true,
+  "hitSize": 14,
+  "health": 630,
+  "accel": 0.4,
+  "rotateSpeed": 3.3,
+  "trailLength": 35,
+  "rotateShooting": false,
+  "immunities": [
+    "burning",
+    "sapped"
+  ],
+  "weapons": [
+    {
+      "name": "medium-mount-weapon",
+      "reload": 10,
+      "mirror": true,
+      "x": 5,
+      "y": 3,
+      "rotate": true,
+      "rotateSpeed": 5.5,
+      "inaccuracy": 6,
+      "shootCone": 14,
+      "bullet": {
+        "type": "BasicBulletType",
+        "width": 7,
+        "height": 5,
+        "damage": 16,
+        "speed": 4,
+        "lifetime": 60,
+        "hitEffect": "flakExplosion",
+        "despawnEffect": "none",
+        "despawHit": true,
+        "splashDamageRadius": 9,
+        "splashDamage": 13
+      }
+    },
+    {
+      "name": "light-artillery-mount",
+      "reload": 20,
+      "mirror": true,
+      "x": 5,
+      "y": -8.5,
+      "shake": 1,
+      "rotate": true,
+      "rotateSpeed": 2.6,
+      "shootSound": "shootSnap",
+      "bullet": {
+        "keepVelocity": false,
+        "type": "ArtilleryBulletType",
+        "collides": true,
+        "collidesTiles": true,
+        "collidesAir": true,
+        "damage": 7,
+        "splashDamageRadius": 22,
+        "splashDamage": 27,
+        "hitEffect": "flakExplosion",
+        "height": 7,
+        "width": 7,
+        "speed": 3,
+        "lifetime": 80,
+        "hitSound": "explosion",
+        "despawnSound": "explosion",
+        "sprite": "shell",
+        "shrinkY": 2,
+        "shrinkX": 0,
+        "shrinkInterp": "slope",
+        "status": "blasted",
+        "statusDuration": 60
+      }
+    }
+  ]
+}

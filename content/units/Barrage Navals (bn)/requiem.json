@@ -1,7 +1,7 @@
 {
   "localizedName": "Requiem",
   "description": "Fires a barrage of missiles and shells at far-away enemies.",
-  "details": "The Requiems are an evolution of the Silkies that have gained more range. they spy on their prey before shooting large shells at them.",
+  "details": "The Requiems are an evolution of the Silkies that have gained more range. They usually spy on their prey before shooting large shells at them.",
   "research": {
     "parent": "silky",
     "requirements": [
@@ -51,7 +51,7 @@
       }
     },
     {
-      "name": "light-artillery-mount",
+      "name": "light-artillery-mount2",
       "reload": 20,
       "mirror": true,
       "x": 5,

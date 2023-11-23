@@ -63,24 +63,8 @@
     "parent": "surge-smelter",
     "objectives": [
       {
-        "type": "onPlanet",
+        "type": "OnPlanet",
         "planet": "serpulo"
-      },
-      {
-        "type": "research",
-        "content": "launch-pad"
-      },
-      {
-        "type": "research",
-        "content": "meltdown"
-      },
-      {
-        "type": "research",
-        "content": "surge-alloy"
-      },
-      {
-        "type": "research",
-        "content": "thorium"
       }
     ]
   },

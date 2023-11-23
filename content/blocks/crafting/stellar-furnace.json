@@ -8,6 +8,15 @@
     "type": "DrawMulti",
     "drawers": [
       {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidTile",
+        "drawLiquid": "water",
+        "alpha": 1
+      },
+      {
         "type": "DrawDefault"
       },
       {
@@ -15,14 +24,9 @@
         "flameColor": "96E8FFFF"
       },
       {
-        "type": "DrawGlow",
+        "type": "DrawGlowRegion",
         "suffix": "-stellarglow",
         "color": "96E8FFFF"
-      },
-      {
-        "type": "DrawLiquidTile",
-        "drawLiquid": "water",
-        "alpha": 1
       }
     ]
   },
@@ -33,8 +37,17 @@
   "hasLiquids": true,
   "itemCapacity": 10,
   "liquidCapacity": 30,
-  "craftTime": 60,
-  "craftEffect": "hitLancer",
+  "craftTime": 79,
+  "craftEffect": {
+    "type": "ParticleEffect",
+    "particles": 7,
+    "sizeFrom": 6,
+    "interp": "circleOut",
+    "colorFrom": "96E8FFFF",
+    "colorTo": "96E8FFFF",
+    "length": 14,
+    "lifetime": 60
+  },
   "updateEffect": "none",
   "ambientSound": "flux",
   "ambientSoundVolume": 0.6,

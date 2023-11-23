@@ -30,7 +30,7 @@
       {
         "type": "ParticleEffect",
         "particles": 16,
-        "sizeFrom": 9,
+        "sizeFrom": 7.5,
         "interp": "circleOut",
         "colorFrom": "96E8FFFF",
         "colorTo": "21A1FFFF",
@@ -40,8 +40,8 @@
       {
         "type": "ParticleEffect",
         "particles": 1,
-        "sizeFrom": 7,
-        "sizeTo": 7,
+        "sizeFrom": 12,
+        "sizeTo": 12,
         "region": "newunits-stellar-furnace-stellarglow",
         "interp": "linear",
         "colorFrom": "96E8FFFF",

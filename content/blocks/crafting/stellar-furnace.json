@@ -1,6 +1,6 @@
 {
   "name": "Stellar Furnace",
-  "description": "Enmelds lead, throium and titanium to create stellar alloy.",
+  "description": "Enmelds lead, throium and titanium to create stellar alloy. Needs water as a coolant.",
   "details": "when the",
   "hideDetails": false,
   "researchCostMultiplier": 1,
@@ -13,6 +13,16 @@
       {
         "type": "DrawFlame",
         "flameColor": "96E8FFFF"
+      },
+      {
+        "type": "DrawGlow",
+        "suffix": "-stellarglow",
+        "color": "96E8FFFF"
+      },
+      {
+        "type": "DrawLiquidTile",
+        "drawLiquid": "water",
+        "alpha": 1
       }
     ]
   },
@@ -20,10 +30,14 @@
   "size": 3,
   "hasPower": true,
   "hasItems": true,
+  "hasLiquids": true,
   "itemCapacity": 10,
+  "liquidCapacity": 30,
   "craftTime": 60,
   "craftEffect": "hitLancer",
   "updateEffect": "none",
+  "ambientSound": "flux",
+  "ambientSoundVolume": 0.6,
   "consumes": {
     "power": 6.7,
     "items": {
@@ -32,7 +46,10 @@
         "titanium/2",
         "thorium/1"
       ]
-    }
+    },
+    "liquids": [
+      "water/0.3"
+    ]
   },
   "requirements": [
     "surge-alloy/320",
@@ -42,6 +59,30 @@
     "metaglass/540"
   ],
   "category": "crafting",
-  "research": "surge-smelter",
+  "research": {
+    "parent": "surge-smelter",
+    "objectives": [
+      {
+        "type": "onPlanet",
+        "planet": "serpulo"
+      },
+      {
+        "type": "research",
+        "content": "launch-pad"
+      },
+      {
+        "type": "research",
+        "content": "meltdown"
+      },
+      {
+        "type": "research",
+        "content": "surge-alloy"
+      },
+      {
+        "type": "research",
+        "content": "thorium"
+      }
+    ]
+  },
   "outputItem": "stellar-alloy/4"
 }

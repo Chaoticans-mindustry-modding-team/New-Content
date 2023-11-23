@@ -1,6 +1,6 @@
 {
   "name": "Stellar Furnace",
-  "description": "Uses stellar energy to enmeld lead, throium and titanium into stellar alloy. Needs water as a coolant.",
+  "description": "Enmelds large amounts of lead, throium and titanium to create stellar alloy. Needs water as a coolant.",
   "details": "when the",
   "hideDetails": false,
   "researchCostMultiplier": 1,
@@ -30,22 +30,22 @@
       {
         "type": "ParticleEffect",
         "particles": 16,
-        "sizeFrom": 6,
+        "sizeFrom": 9,
         "interp": "circleOut",
         "colorFrom": "96E8FFFF",
-        "colorTo": "96E8FFFF",
-        "length": 19,
-        "lifetime": 127
+        "colorTo": "21A1FFFF",
+        "length": 21,
+        "lifetime": 180
       },
       {
         "type": "ParticleEffect",
         "particles": 1,
         "sizeFrom": 7,
         "sizeTo": 7,
-        "region": "newunits-stellar-oven-stellarglow",
+        "region": "newunits-stellar-furnace-stellarglow",
         "interp": "linear",
         "colorFrom": "96E8FFFF",
-        "colorTo": "96E8FFFF",
+        "colorTo": "3283FF00",
         "length": 0,
         "baseLength": 0,
         "lifetime": 60
@@ -59,9 +59,9 @@
     "power": 6.7,
     "items": {
       "items": [
-        "lead/3",
-        "titanium/2",
-        "thorium/1"
+        "lead/6",
+        "titanium/5",
+        "thorium/3"
       ]
     },
     "liquids": [

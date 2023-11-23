@@ -1,0 +1,12 @@
+{
+  "name": "Stellar Alloy",
+  "description": "An exotic alloy forged from three materials. It stores an extremely high amount of charges, which can be devastating. Used in high-tier discharge tech or units.",
+  "cost": 20,
+  "hardness": 8,
+  "explosiveness": 0.2,
+  "charge": 5,
+  "color": "B3F1FFFF",
+  "research": {
+    "parent": "surge-alloy"
+  }
+}

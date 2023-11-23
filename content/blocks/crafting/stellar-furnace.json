@@ -1,0 +1,47 @@
+{
+  "name": "Stellar Furnace",
+  "description": "Enmelds lead, throium and titanium to create stellar alloy.",
+  "details": "when the",
+  "hideDetails": false,
+  "researchCostMultiplier": 1,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFlame",
+        "flameColor": "96E8FFFF"
+      }
+    ]
+  },
+  "type": "GenericCrafter",
+  "size": 3,
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 10,
+  "craftTime": 60,
+  "craftEffect": "laserHit",
+  "updateEffect": "none",
+  "consumes": {
+    "power": 6.7,
+    "items": {
+      "items": [
+        "lead/3",
+        "titanium/2",
+        "thorium/1"
+      ]
+    }
+  },
+  "requirements": [
+    "surge-alloy/320",
+    "silicon/790",
+    "plastanium/15",
+    "titanium/160",
+    "metaglass/540"
+  ],
+  "category": "crafting",
+  "research": "surge-smelter",
+  "outputItem": "stellar-alloy/4"
+}

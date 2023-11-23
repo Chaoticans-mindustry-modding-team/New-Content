@@ -22,7 +22,7 @@
   "hasItems": true,
   "itemCapacity": 10,
   "craftTime": 60,
-  "craftEffect": "laserHit",
+  "craftEffect": "hitLancer",
   "updateEffect": "none",
   "consumes": {
     "power": 6.7,

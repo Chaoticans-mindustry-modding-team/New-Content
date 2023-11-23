@@ -1,6 +1,6 @@
 {
   "name": "Stellar Furnace",
-  "description": "Uses stellar energy enmelds lead, throium and titanium into stellar alloy. Needs water as a coolant.",
+  "description": "Uses stellar energy to enmeld lead, throium and titanium into stellar alloy. Needs water as a coolant.",
   "details": "when the",
   "hideDetails": false,
   "researchCostMultiplier": 1,

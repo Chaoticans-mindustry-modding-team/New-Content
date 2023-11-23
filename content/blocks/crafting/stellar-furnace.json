@@ -1,6 +1,6 @@
 {
   "name": "Stellar Furnace",
-  "description": "Enmelds lead, throium and titanium to create stellar alloy. Needs water as a coolant.",
+  "description": "Uses stellar energy enmelds lead, throium and titanium into stellar alloy. Needs water as a coolant.",
   "details": "when the",
   "hideDetails": false,
   "researchCostMultiplier": 1,
@@ -8,25 +8,11 @@
     "type": "DrawMulti",
     "drawers": [
       {
-        "type": "DrawRegion",
-        "suffix": "-bottom"
-      },
-      {
-        "type": "DrawLiquidTile",
-        "drawLiquid": "water",
-        "alpha": 1
-      },
-      {
         "type": "DrawDefault"
       },
       {
         "type": "DrawFlame",
         "flameColor": "96E8FFFF"
-      },
-      {
-        "type": "DrawGlowRegion",
-        "suffix": "-stellarglow",
-        "color": "96E8FFFF"
       }
     ]
   },
@@ -37,16 +23,34 @@
   "hasLiquids": true,
   "itemCapacity": 10,
   "liquidCapacity": 30,
-  "craftTime": 79,
+  "craftTime": 328,
   "craftEffect": {
-    "type": "ParticleEffect",
-    "particles": 7,
-    "sizeFrom": 6,
-    "interp": "circleOut",
-    "colorFrom": "96E8FFFF",
-    "colorTo": "96E8FFFF",
-    "length": 14,
-    "lifetime": 60
+    "type": "MultiEffect",
+    "effects": [
+      {
+        "type": "ParticleEffect",
+        "particles": 16,
+        "sizeFrom": 6,
+        "interp": "circleOut",
+        "colorFrom": "96E8FFFF",
+        "colorTo": "96E8FFFF",
+        "length": 19,
+        "lifetime": 127
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 7,
+        "sizeTo": 7,
+        "region": "newunits-stellar-oven-stellarglow",
+        "interp": "linear",
+        "colorFrom": "96E8FFFF",
+        "colorTo": "96E8FFFF",
+        "length": 0,
+        "baseLength": 0,
+        "lifetime": 60
+      }
+    ]
   },
   "updateEffect": "none",
   "ambientSound": "flux",
@@ -81,5 +85,5 @@
       }
     ]
   },
-  "outputItem": "stellar-alloy/4"
+  "outputItem": "stellar-alloy/2"
 }

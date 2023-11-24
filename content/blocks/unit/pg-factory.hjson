@@ -1,0 +1,26 @@
+type: UnitFactory
+  name: Reaper Factory
+description: Produces sapping units.
+  consumes: {
+power: 2
+  }
+size: 3
+  health: 495
+  plans: [
+{
+unit: pg1-reclusa
+  time: 1080
+requirements: [
+  silicon/20
+  lead/25
+  ]
+  }
+  ]
+requirements: [
+  copper/120
+  lead/120
+  graphite/100
+  silicon/80
+  ]
+  category: units
+  research: flame-factory

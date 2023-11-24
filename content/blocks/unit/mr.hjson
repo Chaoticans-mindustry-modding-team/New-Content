@@ -1,0 +1,26 @@
+type: Reconstructor
+name: Multi Refabricator
+description: Converts mod t1s into the next tier.
+constructTime: 960
+size: 3
+consumes: {
+power: 3
+  items: {
+  items: [
+silicon/50
+  graphite/50
+  lead/50
+    ]
+  }
+}
+upgrades: [
+  ["os1-flame", "os2-kiln"]
+  ["pg1-reclusa", "pg2-sterile"]
+  ]
+  requirements: [
+  copper/200
+  lead/250
+  graphite/200
+  silicon/150
+  ]
+  category: units

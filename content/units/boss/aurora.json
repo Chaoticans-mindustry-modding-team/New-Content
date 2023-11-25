@@ -1,0 +1,97 @@
+{
+  "localizedName": "Aurora",
+  "description": "The boss version of the [orange]Flare[]. It can shot farther, faster and stronger than the flare. It has a smalls explode when it die.",
+  "research": {
+    "requirements": [
+      "silicon/290",
+      "titanium/70"
+    ],
+    "parent": "flare"
+  },
+  "speed": 9,
+  "accel": 0.3,
+  "drag": 0.01,
+  "flying": true,
+  "health": 790,
+  "armor": 2,
+  "engineOffset": 6,
+  "TargetAir": true,
+  "commandLimit": 5,
+  "circleTarget": true,
+  "hitSize": 8,
+  "weapons": [
+    {
+      "name": "red-mount",
+      "shootCone": 15,
+      "mirror": true,
+      "alternate": true,
+      "top": false,
+      "rotate": false,
+      "x": 2,
+      "y": -1,
+      "reload": 15,
+      "shootSound": "shootSnap",
+      "recoil": 2,
+      "bullet": {
+        "type": "BasicBulletType",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "waveRad": 8,
+              "strokeFrom": 2.5,
+              "strokeTo": 1,
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "FF3B3BFF",
+              "lifetime": 5
+            },
+            {
+              "type": "ParticleEffect",
+              "line": true,
+              "sizeFrom": 6,
+              "sizeTo": 4,
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "F21818FF",
+              "lifetime": 20,
+              "length": 12
+            }
+          ]
+        },
+        "backColor": "FF3B3BFF",
+        "damage": 16,
+        "speed": 3,
+        "lifetime": 45,
+        "trailWidth": 2.5,
+        "trailColor": "FF3B3BFF",
+        "trailLength": 39,
+        "despawnHit": true,
+        "despawnEffect": "none"
+      }
+    },
+    {
+      "name": "aurora",
+      "mirror": false,
+      "reload": 1000000,
+      "alternate": false,
+      "shootEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "sizeFrom": 7,
+        "sizeTo": 2,
+        "colorFrom": "FFFFFFFF",
+        "colorTo": "F21818FF",
+        "lifetime": 30,
+        "length": 24
+      },
+      "shake": 3,
+      "bullet": {
+        "type": "ExplosionBulletType",
+        "splashDamage": 49,
+        "splashDamageRadius": 28,
+        "shooteffect": "massiveExplosion",
+        "hitEffect": "pulverize"
+      }
+    }
+  ]
+}

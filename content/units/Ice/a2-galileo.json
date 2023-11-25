@@ -1,9 +1,9 @@
 {
     "localizedName": "Blizzard",
-    "description": "[sky]A strong iceris that fires a blizzard and snowballs witch are great for shrot range tier 1 combat." ,
+    "description": "[sky]An upgrade the the Iceris, Galileo uses frost jets and long-range shards to attack enemy targets." ,
     "type": "legs",
     "groundLayer": 75,
-    "research": "a-orion",
+    "research": "a1-iceris",
 	"speed": 0.5,
 	"hitSize": 12,
 	"health": 890,

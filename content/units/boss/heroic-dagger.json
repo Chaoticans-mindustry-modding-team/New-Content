@@ -1,0 +1,73 @@
+{
+  "localizedName": "Heroic Dagger",
+  "research": {
+    "parent": "dagger",
+    "requirements": [
+      "silicon/490",
+      "lead/200",
+      "titanium/120"
+    ]
+  },
+  "description": "Fires sapping arcs at all nearby enemies.",
+  "type": "mech",
+  "armor": 4,
+  "commandLimit": 6,
+  "speed": 0.7,
+  "flying": false,
+  "targetAir": true,
+  "health": 890,
+  "hitSize": 8,
+  "weapons": [
+    {
+      "name": "red-mount",
+      "shootCone": 20,
+      "mirror": true,
+      "alternate": true,
+      "top": false,
+      "rotate": false,
+      "x": 3.5,
+      "y": 0,
+      "reload": 10,
+      "shootSound": "shootSnap",
+      "recoil": 1,
+      "bullet": {
+        "type": "BasicBulletType",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sizeTo": 8,
+              "strokeFrom": 2.5,
+              "strokeTo": 0.5,
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "FF9494FF",
+              "lifetime": 10
+            },
+            {
+              "type": "ParticleEffect",
+              "line": true,
+              "sizeFrom": 6,
+              "sizeTo": 5,
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "FFB3B3FF",
+              "lifetime": 20,
+              "length": 12
+            }
+          ]
+        },
+        "backColor": "FF9494FF",
+        "damage": 17,
+        "speed": 4,
+        "lifetime": 45,
+        "trailWidth": 1.5,
+        "trailColor": "FF9494FF",
+        "trailLength": 23,
+        "despawnHit": true,
+        "despawnEffect": "none",
+        "width": 7,
+        "height": 9
+      }
+    }
+  ]
+}

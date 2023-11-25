@@ -3,7 +3,7 @@
     "description": "[sky] A strong freezer unit. it has snowball shooters it fires 1 snowball and many snowballs at foes.",
     "type": "legs",
     "groundLayer": 75,
-    "research": "b-galileo",
+    "research": "a2-blizzard",
 	"speed": 0.34,
 	"hitSize": 21,
 	"health": 2600,

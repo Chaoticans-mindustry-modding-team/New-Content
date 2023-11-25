@@ -12,7 +12,7 @@
   },
   "type": "naval",
   "speed": 0.9,
-  "drag": 0.9,
+  "drag": 0.09,
   "armor": 6,
   "targetAir": true,
   "hitSize": 14,

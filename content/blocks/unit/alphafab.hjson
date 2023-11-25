@@ -1,0 +1,27 @@
+type: Reconstructor
+name: Alpha Refabricator
+description: Upgrades new units to their third tier.
+constructTime: 1800
+size: 5
+consumes: {
+power: 6
+  items: {
+  items: [
+silicon/160
+  lead/140
+  titanium/100
+    ]
+  }
+}
+upgrades: [
+  ["os2-kiln", "os3-furnace"]
+  ]
+  requirements: [
+  copper/650
+  lead/800
+  graphite/500
+  silicon/800
+  titanium/450
+  metaglass/390
+  ]
+  category: units

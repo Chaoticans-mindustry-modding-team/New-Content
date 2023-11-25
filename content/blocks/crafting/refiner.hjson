@@ -1,7 +1,15 @@
-type: GenericSmelter
+type: GenericCrafter
 name: Refiner
 description: Refines scrap into Detrisite. Produces sand as a byproduct.
 size: 2
+drawers: [
+{
+
+}
+{
+type: DrawFlame
+}
+]
 consumes: {
 power: 2.5
 items: {

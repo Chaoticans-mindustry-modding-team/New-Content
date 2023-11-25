@@ -1,8 +1,8 @@
 {
     "localizedName": "Iceflood",
     "description": "[sky]A powerful snow unit it has gunners that fire iceballs rapidly and it also has cold plasma missile launchers.",
-    "research": "ravthian-reconstructor",
-    "details": "Show them what the power of a far away star can do",
+    "research": "a4-avalanche",
+    "details": "Show them the power of frost",
     "groundLayer": 75,
     "singleTarget": true,
 	"lightRadius": 200,

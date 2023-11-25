@@ -8,7 +8,7 @@
       "titanium/120"
     ]
   },
-  "description": "Fires sapping arcs at all nearby enemies.",
+  "description": "The boss version of the [orange]Dagger. It is equipped with 2 bullet guns and is quite fast.",
   "type": "mech",
   "armor": 4,
   "commandLimit": 6,
@@ -17,9 +17,10 @@
   "targetAir": true,
   "health": 890,
   "hitSize": 8,
+  "outlineColor": "2D2F39FF",
   "weapons": [
     {
-      "name": "red-mount",
+      "name": "heroic-weapon",
       "shootCone": 20,
       "mirror": true,
       "alternate": true,

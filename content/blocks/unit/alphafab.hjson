@@ -15,6 +15,7 @@ silicon/160
 }
 upgrades: [
   ["os2-kiln", "os3-furnace"]
+  ["pn2-angodia", "pn3-spinatum"]
   ]
   requirements: [
   copper/650

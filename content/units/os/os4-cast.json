@@ -99,7 +99,7 @@
       "rotateSpeed": 3,
       "x": 9,
       "y": -3,
-      "reload": 1000,
+      "reload": 45,
       "recoil": 3,
       "inaccuracy": 1.5,
       "shake": 5,

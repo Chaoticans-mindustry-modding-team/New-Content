@@ -5,7 +5,7 @@
 "research": {
 			"requirements": [
 			"silicon/350",
-			"surge-alloy/25"
+			"electrum/25"
         "graphite/45"
 			],
 			"parent": "ya1-spark"
@@ -13,10 +13,13 @@
 "armor": 5,
 "lowAltitude": true,
 "engineOffset": 7,
-"range": 73,
+"range": 120,
 "flying": true,
 "speed": 6.4,
-"hitSize": 13
+"accel": 0.04,
+"drag": 0.04,
+"hitSize": 13,
+"rotateShooting": false,
 "engines": [
   {
     "x": 3,
@@ -48,18 +51,18 @@
 		"line": true,
 		"sizeTo": 1,
         		"lifetime": 8,
-		"colorFrom": "FF6666FF",
-		"colorTo": "FF6666FF",
+		"colorFrom": "FFFC96FF",
+		"colorTo": "FFFC96FF",
 			},
     "bullet": {
       "type": "LaserBulletType",
-      "colors":["FFF954FF", "FFFC96FF", "FFFFFFFF"],
+      "colors":["FFF954AA", "FFFC96FF", "FFFFFFFF"],
       "speed": 0,
       "lifetime": 10,
-      "damage": 20,
+      "damage": 40,
       "pierce": true,
-      "pierceCap": 4,
-      "length": 73,
+	    "pierceBuildings": true,
+      "length": 120,
       "status": "shocked",
       "statusDuration": 3
 "hitEffect": {
@@ -68,8 +71,8 @@
 		"line": true,
 		"sizeTo": 1,
         		"lifetime": 8,
-		"colorFrom": "FF6666FF",
-		"colorTo": "FF6666FF",
+		"colorFrom": "FFFC96FF",
+		"colorTo": "FFFC96FF",
 			}
     }
   }

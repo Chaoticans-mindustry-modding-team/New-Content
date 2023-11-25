@@ -1,7 +1,7 @@
 {
     "localizedName": "Avalanche",
     "description": "[sky]The Avalanche can spray extreme blizzards and snowballs, and it can fire a devastating wave of powerful snowballs.",
-    "research": "b-kuiper",
+    "research": "a3-snowstorm",
     "groundLayer": 75,
     "type": "legs",
 	"speed": 0.37,

@@ -15,7 +15,15 @@ requirements: [
   lead/25
   ]
   }
+{
+unit: pn1-archix
+time: 1500
+requirements: [
+silicon/40
+metaglass/30
   ]
+}
+]
 requirements: [
   copper/120
   lead/120

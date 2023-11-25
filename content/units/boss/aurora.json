@@ -20,6 +20,9 @@
   "circleTarget": true,
   "hitSize": 9,
   "outlineColor": "2D2F39FF",
+  "engineColor": "FF9494FF",
+  "trailColor": "FF9494FF",
+  "trailLength": 8,
   "weapons": [
     {
       "name": "red-mount",
@@ -42,30 +45,30 @@
               "type": "WaveEffect",
               "sizeTo": 8,
               "strokeFrom": 2.5,
-              "strokeTo": 1,
+              "strokeTo": 0.5,
               "colorFrom": "FFFFFFFF",
               "colorTo": "FF9494FF",
-              "lifetime": 5
+              "lifetime": 10
             },
             {
               "type": "ParticleEffect",
               "line": true,
               "sizeFrom": 6,
-              "sizeTo": 4,
+              "sizeTo": 5,
               "colorFrom": "FFFFFFFF",
-              "colorTo": "FF9494FF",
+              "colorTo": "FFB3B3FF",
               "lifetime": 20,
               "length": 12
             }
           ]
         },
-        "backColor": "FF3B3BFF",
+        "backColor": "FF9494FF",
         "damage": 16,
         "speed": 3,
         "lifetime": 45,
         "trailWidth": 1.5,
-        "trailColor": "FF3B3BFF",
-        "trailLength": 39,
+        "trailColor": "FF9494FF",
+        "trailLength": 23,
         "despawnHit": true,
         "despawnEffect": "none",
         "width": 7,
@@ -92,7 +95,7 @@
       "shake": 3,
       "bullet": {
         "type": "ExplosionBulletType",
-        "splashDamage": 49,
+        "splashDamage": 80,
         "splashDamageRadius": 28,
         "shooteffect": "massiveExplosion",
         "hitEffect": "pulverize",

@@ -5,7 +5,7 @@
 "research": {
 			"requirements": [
 			"silicon/350",
-			"electrum/25"
+			"lead/25"
         "graphite/45"
 			],
 			"parent": "ya1-spark"

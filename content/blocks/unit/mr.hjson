@@ -16,6 +16,7 @@ silicon/50
 upgrades: [
   ["os1-flame", "os2-kiln"]
   ["pg1-reclusa", "pg2-sterile"]
+  ["ya1-spark", "ya2-zap"]
   ]
   requirements: [
   copper/200

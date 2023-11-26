@@ -10,6 +10,7 @@
   "ammoPerShot": 1,
   "reload": 4,
   "recoil": 1,
+  "researchCostMultiplier": 1,
   "range": 48,
   "targetAir": true,
   "targetGround": true,

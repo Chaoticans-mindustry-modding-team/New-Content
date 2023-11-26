@@ -96,7 +96,10 @@
     "requirements": [
 	"lead/55",
       "copper/35"
+	"graphite"
     ],
     "category": "turret",
-    "research": "duo"
+    "research": {
+	    
+    }
 }

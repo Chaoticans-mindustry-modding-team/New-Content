@@ -1,7 +1,7 @@
 {
 "localizedName": "Flame",
 "research": {
-	"parent": "dagger",
+	"parent": "charren",
 	"requirements": [
 	"silicon/120",
 	"titanium/70"

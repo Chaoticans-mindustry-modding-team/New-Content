@@ -1,0 +1,13 @@
+{
+  "name": "Electrum",
+  "description": "Used in middle-tier tech and as shock ammunition",
+  "details": "lower tier surge alloy.",
+  "hideDetails": false,
+    "cost": 6,
+    "hardness": 6,
+"charge": 0.2,
+    "color": "FFEC1CFF",
+    "research": {
+    "parent": "metaglass"
+  }
+}

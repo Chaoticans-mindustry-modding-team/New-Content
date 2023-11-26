@@ -95,8 +95,8 @@
     },
     "requirements": [
 	"lead/55",
-      "copper/35"
-	"graphite"
+      "copper/35",
+      "graphite/15"
     ],
     "category": "turret",
     "research": {

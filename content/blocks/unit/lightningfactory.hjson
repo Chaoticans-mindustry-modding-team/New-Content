@@ -1,6 +1,6 @@
 type: UnitFactory
   name: Lightning Factory
-description: Produces electric units.
+description: Produces electric units. Units can be output directly or moved into reconstructors for upgrading.
   consumes: {
 power: 2
   }
@@ -13,6 +13,7 @@ unit: ya1-spark
 requirements: [
   silicon/25
   lead/30
+  electrum/15
   ]
   }
   ]
@@ -20,6 +21,7 @@ requirements: [
   copper/120
   lead/150
   silicon/150
+electrum/75
   ]
   category: units
   research: flame-factory

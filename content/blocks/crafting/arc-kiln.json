@@ -1,0 +1,56 @@
+{
+  "name": "Arc Kiln",
+  "description": "Smelts gold and iron with electric arcs to make electrum.",
+  "details": "e",
+  "hideDetails": false,
+  "researchCostMultiplier": 1,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFlame",
+        "flameColor": "EBD534FF"
+      }
+    ]
+  },
+  "type": "GenericCrafter",
+  "size": 2,
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 20,
+  "craftTime": 60,
+  "craftEffect": "shootHealYellow",
+  "updateEffect": "none",
+  "ambientSound": "electricembience",
+  "ambientSoundVolume": 0.09,
+  "consumes": {
+    "power": 2.6,
+    "items": {
+      "items": [
+        "gold/1",
+        "iron/1"
+      ]
+    }
+  },
+  "requirements": [
+    "gold/30",
+    "iron/10",
+    "silicon/90"
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "kiln",
+    "objectives": [
+      "metaglass",
+      "fungalPass",
+      {
+        "type": "OnPlanet",
+        "planet": "serpulo"
+      }
+    ]
+  },
+  "outputItem": "electrum/1"
+}

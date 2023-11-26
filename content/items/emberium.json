@@ -1,0 +1,14 @@
+{
+  "name": "Emberium",
+  "description": "[orange]A warm metal used by the Charren in many of their low-grade tech. Extremely flammable.",
+  "details": "fire",
+  "hideDetails": false,
+  "flammability": 1.9,
+  "explosiveness": 0.6,
+    "cost": 4,
+    "hardness": 3,
+    "color": "F28430FF",
+    "research": {
+    "parent": "pyratite"
+  }
+}

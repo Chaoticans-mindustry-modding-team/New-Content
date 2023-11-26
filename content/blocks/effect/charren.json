@@ -1,0 +1,15 @@
+{
+  "localizedName": "[#FFA666]Charren",
+  "description": "The Charren faction.",
+  "alwaysUnlocked": true,
+  "buildVisibility": "editorOnly",
+  "type": "LightBlock",
+  "health": 800,
+  "size": 2,
+  "research": {
+    "root": true,
+    "planet": "serpulo",
+    "name": "[#FFA666]Charren",
+    "requiresUnlock": false
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "Ember Infuser",
+  "description": "Infuses copper and coal with the embers of flame to create Emberium.",
+  "details": "nice and warm in there",
+  "hideDetails": false,
+  "researchCostMultiplier": 10,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFlame",
+        "flameColor": "FCA53AFF"
+      }
+    ]
+  },
+  "type": "GenericCrafter",
+  "size": 2,
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 20,
+  "craftTime": 60,
+  "craftEffect": "pulverize",
+  "updateEffect": "none",
+  "ambientSound": "torch",
+  "ambientSoundVolume": 0.07,
+  "consumes": {
+    "power": 2.1,
+    "items": {
+      "items": [
+        "copper/1",
+        "coal/2"
+      ]
+    }
+  },
+  "requirements": [
+    "lead/60",
+    "graphite/85",
+    "silicon/30"
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "charren",
+    "objectives": [
+      "kiln",
+      "silicon-smelter",
+      {
+        "type": "OnPlanet",
+        "planet": "serpulo"
+      }
+    ]
+  },
+  "outputItem": "emberium/2"
+}

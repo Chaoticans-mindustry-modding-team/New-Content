@@ -1,0 +1,12 @@
+{
+  "name": "Gold",
+  "description": "A rare metal used in various tech and as heavy ammunition.",
+  "details": "MONEY",
+  "hideDetails": false,
+    "cost": 5,
+    "hardness": 4,
+    "color": "F2C830FF",
+    "research": {
+    "parent": "titanium"
+  }
+}

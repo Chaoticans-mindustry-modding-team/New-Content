@@ -15,6 +15,7 @@ y: 0
 top: false
 reload: 60
   shootY: 5
+shootSound: laser
 mirror: true
 alternate: false
 bullet: {

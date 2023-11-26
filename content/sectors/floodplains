@@ -1,0 +1,19 @@
+{
+"localizedName": "Floodplains",
+"description": "A location with large amounts of tar deposits. Signals indicate that a major fire-based army has taken control of this sector. Expel them."
+"sector": 222,
+"captureWave": 40,
+"difficulty": 6,
+"planet": "serpulo",
+"allowLaunchLoadout": true,
+"allowLaunchSchematics": false,
+"addStartingItems": false
+"overrideLaunchDefaults": true
+"research": {
+"parent": "tarFields",
+"objectives": [
+"os2-kiln",
+"mr"
+]
+}
+}

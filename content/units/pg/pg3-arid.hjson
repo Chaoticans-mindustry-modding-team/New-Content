@@ -1,0 +1,30 @@
+type: mech
+name: Arid
+description: Fires sapping lasers at enemy targets. Capable of building.
+health: 950
+armor: 8
+speed: 0.46
+hitSize: 16
+buildSpeed: 0.9
+itemCapacity: 70
+weapons: [
+{
+name: sap-beam
+x: 11
+y: 0
+top: false
+reload: 60
+  shootY: 5
+mirror: true
+alternate: false
+bullet: {
+type: LaserBulletType
+damage: 75
+colors: [
+665C9E
+C093FA
+FFFFFF
+]
+  }
+}
+]

@@ -38,7 +38,7 @@
           "ammoMultiplier": 2,
           "homingRange": 60,
           "lifetime": 75,
-          "speed": 4,
+          "speed": 5,
 	  "reloadMultiplier": 0.5
 			},
 	"silicon": {
@@ -49,7 +49,7 @@
           "ammoMultiplier": 2,
           "homingRange": 300,
           "lifetime": 65,
-          "speed": 5,
+          "speed": 4,
 	  "reloadMultiplier": 1.25
 			},
 "matrixium": {

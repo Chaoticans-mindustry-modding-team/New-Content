@@ -1,6 +1,6 @@
 {
     "localizedName": "Pelleter"
-  "description": "Pellets homing bullets at nearby enemies over extremelylong distances."
+  "description": "Pellets homing bullets at nearby enemies over extremely long distances."
   "details": "snoiper",
   "hideDetails": false,
   "type": "ItemTurret",
@@ -10,7 +10,7 @@
     "maxAmmo": 25,
     "ammoPerShot": 1,
     "reload": 50,
-    "range": 350,
+    "range": 240,
     "targetAir": true,
     "targetGround": true,
     "rotateSpeed": 4,
@@ -27,7 +27,7 @@
 	"homingPower": 0.06,
           "ammoMultiplier": 2,
           "homingRange": 124,
-          "lifetime": 110,
+          "lifetime": 70,
           "speed": 4.25,
 			},
 	"graphite": {
@@ -37,7 +37,7 @@
 	"homingPower": 0.04,
           "ammoMultiplier": 2,
           "homingRange": 60,
-          "lifetime": 110,
+          "lifetime": 75,
           "speed": 4,
 	  "reloadMultiplier": 0.5
 			},
@@ -48,7 +48,7 @@
 	"homingPower": 0.08,
           "ammoMultiplier": 2,
           "homingRange": 300,
-          "lifetime": 90,
+          "lifetime": 65,
           "speed": 5,
 	  "reloadMultiplier": 1.25
 			},

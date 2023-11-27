@@ -2,7 +2,7 @@
   "name": "Silver Ore",
   "type": "OreBlock",
   "oreDefault": true,
-  "oreScale": 32.44,
-  "oreThreshold": 0.85,
+  "oreScale": 31.44,
+  "oreThreshold": 0.87,
   "itemDrop": "silver"
 }

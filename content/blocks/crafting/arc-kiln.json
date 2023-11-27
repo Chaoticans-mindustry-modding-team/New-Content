@@ -1,6 +1,6 @@
 {
   "name": "Arc Kiln",
-  "description": "Smelts gold and iron with electric arcs to make electrum.",
+  "description": "Smelts gold and silver with electric arcs to make electrum.",
   "details": "e",
   "hideDetails": false,
   "researchCostMultiplier": 1,
@@ -31,7 +31,7 @@
     "items": {
       "items": [
         "gold/1",
-        "iron/1"
+        "silver/1"
       ]
     }
   },

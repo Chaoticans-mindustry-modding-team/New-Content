@@ -24,7 +24,7 @@
   "craftTime": 60,
   "craftEffect": "shootHealYellow",
   "updateEffect": "none",
-  "ambientSound": "electricembience",
+  "ambientSound": "electricambience",
   "ambientSoundVolume": 0.09,
   "consumes": {
     "power": 2.6,

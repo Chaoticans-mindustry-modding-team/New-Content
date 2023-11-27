@@ -2,7 +2,7 @@
   "name": "Gold Ore",
   "type": "OreBlock",
   "oreDefault": true,
-  "oreScale": 47.4,
-  "oreThreshold": 0.86,
+  "oreScale": 30.4,
+  "oreThreshold": 0.89,
   "itemDrop": "gold"
 }

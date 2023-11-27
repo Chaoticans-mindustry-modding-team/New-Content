@@ -4,7 +4,7 @@
   "details": "sviler",
   "hideDetails": false,
     "cost": 4,
-    "hardness": 5,
+    "hardness": 3,
     "color": "E3E3E3FF",
     "research": {
     "parent": "titanium"

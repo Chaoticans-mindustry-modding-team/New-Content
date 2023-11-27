@@ -5,7 +5,7 @@
   "hideDetails": false,
     "cost": 4,
     "hardness": 5,
-    "color": "F2C830FF",
+    "color": "E3E3E3FF",
     "research": {
     "parent": "titanium"
   }

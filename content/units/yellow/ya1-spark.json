@@ -6,7 +6,7 @@
 			"silicon/100",
 			"surge-alloy/10"
 			],
-			"parent": "dagger"
+			"parent": "boltrians"
 		},
         "speed": 7.53,
         "accel": 0.07,

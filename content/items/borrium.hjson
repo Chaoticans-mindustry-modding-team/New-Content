@@ -9,6 +9,6 @@
   color: FFA600FF
   research:
   {
-    parent: copper
+    parent: boltrians
   }
 }

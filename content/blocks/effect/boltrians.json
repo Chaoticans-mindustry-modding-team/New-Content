@@ -1,0 +1,15 @@
+{
+  "localizedName": "[#FFE882]Boltrian",
+  "description": "The Boltrian faction.",
+  "alwaysUnlocked": true,
+  "buildVisibility": "editorOnly",
+  "type": "LightBlock",
+  "health": 800,
+  "size": 2,
+  "research": {
+    "root": true,
+    "planet": "serpulo",
+    "name": "[#FFE882]Boltrian",
+    "requiresUnlock": false
+  }
+}

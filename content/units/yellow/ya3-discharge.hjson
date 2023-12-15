@@ -2,39 +2,39 @@
   type: flying
   name: Discharge
   description: Fires a barrage of charged bullets and lightning at enemies. Swiftly fast.
-  health: 600
+  health: 640
   research:
   {
     requirements:
     [
-      silicon/350
-      lead/25
-      graphite/45
+      silicon/700
+      borrium/90
     ]
-    parent: ya1-spark
+    parent: ya2-zap
   }
   armor: 5
   lowAltitude: true
-  engineOffset: 19
+  engineOffset: 9.5
+  engineSize: 5
   range: 120
   flying: true
   speed: 4.9
   accel: 0.03
   drag: 0.03
-  hitSize: 13
+  hitSize: 24
   rotateShooting: false
   engines:
   [
     {
       x: 10
       y: -3.5
-      rotation: 0
+      rotation: 270
       radius: 3
     }
     {
       x: -10
       y: 0
-      rotation: 0
+      rotation: 270
       radius: 3
     }
   ]
@@ -43,7 +43,7 @@
     {
       name: zap-bolter
       x: 8
-      y: 5.5
+      y: 2
       rotate: true
       rotateSpeed: 4.9
       reload: 16
@@ -78,6 +78,7 @@
       shootSound: shootSnap
       inaccuracy: 4
       shootCone: 20
+      layerOffset: -1
       bullet:
       {
         type: BasicBulletType
@@ -87,9 +88,9 @@
         splashDamageRadius: 7
         splashDamage: 9
         damage: 28
-        width: 8
-        hiehgt: 6
-        speed: 5
+        width: 9
+        height: 7
+        speed: 4
         lightning: 5
         lightningColor: FFF582FF
         lightningLength: 4

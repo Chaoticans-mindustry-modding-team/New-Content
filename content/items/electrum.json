@@ -8,6 +8,6 @@
 "charge": 0.2,
     "color": "FFEC1CFF",
     "research": {
-    "parent": "metaglass"
+    "parent": "borrium"
   }
 }

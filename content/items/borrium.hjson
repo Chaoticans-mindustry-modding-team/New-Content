@@ -1,0 +1,14 @@
+{
+  name: Borrium
+  description: Used in surge-lines and as rebounding ammunition. Used by the Boltrians in their lower-tier tech.
+  details: nice day we having?.
+  hideDetails: false
+  cost: 3
+  hardness: 3
+  charge: 0.1
+  color: FFA600FF
+  research:
+  {
+    parent: copper
+  }
+}

@@ -41,7 +41,7 @@
   weapons:
   [
     {
-      name: lightning-weapon
+      name: ligthning-weapon
       x: 8
       y: 2
       rotate: true

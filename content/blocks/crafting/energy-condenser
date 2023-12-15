@@ -1,0 +1,62 @@
+{
+  name: Energy Condenser
+  description: Coagulates energy and stellar power to make liquid energy.
+  details: e
+  hideDetails: false
+  researchCostMultiplier: 1
+  drawer:
+  {
+    type: DrawMulti
+    drawers:
+    [
+      {
+        type: DrawDefault
+      }
+      {
+        type: DrawFlame
+        flameColor: EBD534FF
+      }
+    ]
+  }
+  type: GenericCrafter
+  size: 2
+  hasPower: true
+  hasLiquids: true
+  liquidCapacity: 20
+  craftTime: 60
+  craftEffect: {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      cone: 0
+      lifetime: 30
+      region: newunits-energy-condenser
+  }
+  updateEffect: none
+  ambientSound: electricHum
+  ambientSoundVolume: 0.16
+  consumes:
+  {
+    power: 5.9
+  }
+  requirements:
+  [
+    lead/200
+    graphite/75
+    cosmite/62
+  ]
+  category: crafting
+  research:
+  {
+    parent: duo
+    objectives:
+    [
+      copper
+      {
+        type: OnPlanet
+        planet: serpulo
+      }
+    ]
+  }
+  outputLiquid: liquidenergy/0.9
+}

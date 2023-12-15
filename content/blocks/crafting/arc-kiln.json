@@ -42,7 +42,7 @@
   ],
   "category": "crafting",
   "research": {
-    "parent": "kiln",
+    "parent": "boltrians",
     "objectives": [
       "metaglass",
       "fungalPass",

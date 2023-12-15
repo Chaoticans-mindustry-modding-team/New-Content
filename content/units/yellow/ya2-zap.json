@@ -6,7 +6,7 @@
 			"requirements": [
 			"silicon/350",
 			"lead/25"
-        "graphite/45"
+        "borrium/45"
 			],
 			"parent": "ya1-spark"
 		},
@@ -56,7 +56,7 @@
 			},
     "bullet": {
       "type": "LaserBulletType",
-      "colors":["FFF954AA", "FFFC96FF", "FFFFFFFF"],
+      "colors":["FFE45477", "FFFC96FF", "FFFFFFFF"],
       "speed": 0,
       "lifetime": 10,
       "damage": 40,

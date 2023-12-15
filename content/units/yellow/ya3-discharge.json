@@ -1,0 +1,108 @@
+{
+  type: flying
+  name: Discharge
+  description: Fires a barrage of charged bullets and lightning at enemies. Swiftly fast.
+  health: 600
+  research:
+  {
+    requirements:
+    [
+      silicon/350
+      lead/25
+      graphite/45
+    ]
+    parent: ya1-spark
+  }
+  armor: 5
+  lowAltitude: true
+  engineOffset: 19
+  range: 120
+  flying: true
+  speed: 4.9
+  accel: 0.03
+  drag: 0.03
+  hitSize: 13
+  rotateShooting: false
+  engines:
+  [
+    {
+      x: 20
+      y: -7
+      rotation: 0
+      radius: 3
+    }
+    {
+      x: -20
+      y: 0
+      rotation: 0
+      radius: 3
+    }
+  ]
+  weapons:
+  [
+    {
+      name: zap-bolter
+      x: 16
+      y: 11
+      rotate: true
+      rotateSpeed: 45.9
+      reload: 16
+      mirror: true
+      alternate: true
+      shootSound: spark
+      inaccuracy: 4
+      shoot:
+      {
+        shots: 2
+        shotDelay: 0
+      }
+      shootCone: 30
+      bullet:
+      {
+        type: lightningBulletType
+        damage: 6
+        lightningColor: FFF582FF
+        lightningLength: 9
+        lightningLengthRand: 5
+        hitEffect: shootHealYellow
+      }
+    }
+    {
+      name: shock-ejector
+      x: 6
+      y: 3
+      rotate: false
+      reload: 20
+      mirror: true
+      alternate: true
+      shootSound: shootSnap
+      inaccuracy: 4
+      shootCone: 20
+      bullet:
+      {
+        type: BasicBulletType
+        hitEffect: flakExplosion
+        despawnEffect: none
+        despawnHit: true
+        splashDamageRadius: 7
+        splashDamage: 9
+        damage: 28
+        lightning: 5
+        lightningColor: FFF582FF
+        lightningLength: 15
+        lightningLengthRand: 5
+        hitEffect: shootHealYellow
+        spawnBullets: [
+            {
+        type: lightningBulletType
+        damage: 6
+        lightningColor: FFF582FF
+        lightningLength: 9
+        lightningLengthRand: 5
+        hitEffect: shootHealYellow
+      }
+        ]
+      }
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   type: flying
   name: Discharge
   description: Fires a barrage of charged bullets and lightning at enemies. Swiftly fast.
-  health: 640
+  health: 570
   research:
   {
     requirements:
@@ -41,7 +41,7 @@
   weapons:
   [
     {
-      name: zap-bolter
+      name: lightning-weapon
       x: 8
       y: 2
       rotate: true
@@ -50,11 +50,11 @@
       mirror: true
       alternate: true
       shootSound: spark
-      inaccuracy: 4
+      inaccuracy: 7
       shoot:
       {
         shots: 2
-        shotDelay: 0
+        shotDelay: 2
       }
       shootCone: 30
       bullet:
@@ -70,7 +70,7 @@
     {
       name: shock-ejector
       x: 3
-      y: 1.5
+      y: -1
       rotate: false
       reload: 20
       mirror: true
@@ -87,7 +87,7 @@
         despawnHit: true
         splashDamageRadius: 7
         splashDamage: 9
-        damage: 28
+        damage: 13
         width: 9
         height: 7
         speed: 4

@@ -23,13 +23,13 @@
   "rotateShooting": false,
   "engines": [
     {
-      "x": 6,
+      "x": 10,
       "y": -15,
       "rotation": 255,
       "radius": 3
     },
     {
-      "x": -6,
+      "x": -10,
       "y": -15,
       "rotation": 285,
       "radius": 3
@@ -139,7 +139,7 @@
       "shootCone": 20,
       "heatColor": "FFF582FF",
       "cooldownTime": 50,
-      "shake": 3,
+      "shake": 9,
       "ejectEffect": "none",
       "smokeEffect": {
         "type": "ParticleEffect",
@@ -201,11 +201,12 @@
             }
           ]
         },
+        "recoil": 0.1,
         "despawnEffect": "none",
         "despawnHit": true,
         "splashDamageRadius": 25,
         "splashDamage": 39,
-        "damage": 20,
+        "damage": 32,
         "width": 9,
         "height": 9,
         "speed": 4,
@@ -224,7 +225,7 @@
         "lightningColor": "FFF582FF",
         "lightningLength": 6,
         "lightningLengthRand": 2,
-        "lightningDamage": 28,
+        "lightningDamage": 8,
         "status": "charged",
         "statusDuration": 249
       }

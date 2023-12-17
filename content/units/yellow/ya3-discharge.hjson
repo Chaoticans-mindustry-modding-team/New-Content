@@ -46,16 +46,11 @@
       y: 2
       rotate: true
       rotateSpeed: 4.9
-      reload: 16
+      reload: 8
       mirror: true
       alternate: true
       shootSound: spark
       inaccuracy: 7
-      shoot:
-      {
-        shots: 2
-        shotDelay: 2
-      }
       shootCone: 30
       bullet:
       {
@@ -70,7 +65,7 @@
     {
       name: shock-ejector
       x: 3
-      y: -1
+      y: -3
       rotate: false
       reload: 20
       mirror: true

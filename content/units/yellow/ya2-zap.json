@@ -56,7 +56,7 @@
 			},
     "bullet": {
       "type": "LaserBulletType",
-      "colors":["FFE45477", "FFFC96FF", "FFFFFFFF"],
+      "colors":["FFC45477", "FFFC96FF", "FFFFFFFF"],
       "speed": 0,
       "lifetime": 10,
       "damage": 40,

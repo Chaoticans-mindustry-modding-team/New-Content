@@ -1,7 +1,7 @@
 {
   "type": "flying",
   "name": "Resurge",
-  "description": "Fires a barrage of lightning and energy orbs. Decently fast.",
+  "description": "Fires a barrage of lightning and energy orbs that inflict a special status. Decently fast.",
   "health": 6900,
   "research": {
     "requirements": [
@@ -12,14 +12,14 @@
   },
   "armor": 12,
   "lowAltitude": true,
-  "engineOffset": 17,
+  "engineOffset": 19,
   "engineSize": 5,
-  "range": 120,
+  "range": 208,
   "flying": true,
   "speed": 3.7,
   "accel": 0.03,
   "drag": 0.03,
-  "hitSize": 48,
+  "hitSize": 43,
   "rotateShooting": false,
   "engines": [
     {
@@ -44,7 +44,7 @@
       "rotate": true,
       "rotateSpeed": 1.5,
       "mirror": true,
-      "reload": 9,
+      "reload": 18,
       "shootSound": "piercingEnergy",
       "shootEffect": {
         "type": "ParticleEffect",
@@ -64,7 +64,7 @@
         ],
         "speed": 0,
         "lifetime": 10,
-        "damage": 40,
+        "damage": 64,
         "pierce": true,
         "pierceBuildings": true,
         "length": 140,
@@ -89,7 +89,7 @@
       "rotate": true,
       "rotateSpeed": 1.2,
       "mirror": true,
-      "reload": 27,
+      "reload": 54,
       "shootSound": "piercingEnergy",
       "shootEffect": {
         "type": "ParticleEffect",
@@ -109,7 +109,7 @@
         ],
         "speed": 0,
         "lifetime": 10,
-        "damage": 40,
+        "damage": 80,
         "pierce": true,
         "pierceBuildings": true,
         "length": 140,
@@ -157,9 +157,10 @@
       "shootX": 8,
       "xRand": 4,
       "shooty": 0,
-      "velocityRand": 2,
+      "velocityRnd": 0.6,
+      "recoil": 0,
       "shoot": {
-        "shots": 4,
+        "shots": 3,
         "shotDelay": 0
       },
       "bullet": {
@@ -173,9 +174,9 @@
               "colorFrom": "FFF582FF",
               "colorTo": "FFF582FF",
               "length": 24,
-              "sizeFrom": 4,
+              "sizeFrom": 7,
               "sizeTo": 0,
-              "lifetime": 39,
+              "lifetime": 68,
               "interp": "circleOut"
             },
             {
@@ -186,7 +187,7 @@
               "length": 27,
               "sizeFrom": 2,
               "sizeTo": 0,
-              "lifetime": 20,
+              "lifetime": 50,
               "interp": "circleOut",
               "line": true
             },
@@ -210,15 +211,22 @@
         "speed": 4,
         "hitSound": "lightning: 3",
         "backColor": "FFF582FF",
-        "sprite": "circleBullet",
+        "sprite": "circle-bullet",
         "trailWidth": 4,
+        "trailLength": 24,
+        "weaveScl": 6,
+        "weaveMag": 4,
+        "lifetime": 52,
         "trailColor": "FFF582FF",
         "homingPower": 0.01,
         "homingRange": 108,
+        "lightning": 4,
         "lightningColor": "FFF582FF",
         "lightningLength": 6,
         "lightningLengthRand": 2,
-        "lightningDamage": 28
+        "lightningDamage": 28,
+        "status": "charged",
+        "statusDuration": 249
       }
     }
   ]

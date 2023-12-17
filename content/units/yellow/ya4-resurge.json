@@ -1,7 +1,7 @@
 {
   "type": "flying",
   "name": "Resurge",
-  "description": "Fires a barrage of lightning and energy orbs that inflict a special status. Decently fast.",
+  "description": "Fires a barrage of lightning and energy orbs that inflict a charged status. Decently fast.",
   "health": 6900,
   "research": {
     "requirements": [
@@ -21,6 +21,10 @@
   "drag": 0.03,
   "hitSize": 43,
   "rotateShooting": false,
+  "immunities": [
+    "shocked",
+    "charged"
+  ],
   "engines": [
     {
       "x": 10,
@@ -42,7 +46,7 @@
       "y": 16,
       "x": 11,
       "rotate": true,
-      "rotateSpeed": 1.5,
+      "rotateSpeed": 2.6,
       "mirror": true,
       "reload": 18,
       "shootSound": "piercingEnergy",
@@ -87,7 +91,7 @@
       "y": 2,
       "x": 16,
       "rotate": true,
-      "rotateSpeed": 1.2,
+      "rotateSpeed": 1.7,
       "mirror": true,
       "reload": 54,
       "shootSound": "piercingEnergy",
@@ -135,7 +139,7 @@
       "mirror": true,
       "alternate": false,
       "shootSound": "malignShoot",
-      "inaccuracy": 15,
+      "inaccuracy": 9,
       "shootCone": 20,
       "heatColor": "FFF582FF",
       "cooldownTime": 50,

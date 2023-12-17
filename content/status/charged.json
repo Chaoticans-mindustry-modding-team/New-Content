@@ -1,0 +1,27 @@
+{
+  "type": "StatusEffect",
+  "name": "Charged",
+  "speedMultiplier": 0.8,
+  "reloadMultiplier": 0.9,
+  "color": "FFF582FF",
+  "effectChance": 0.8,
+  "affinities": [
+    "shocked",
+    "electrified",
+    "wet"
+  ],
+  "transitionDamage": 50,
+  "opposites": [
+    "wet"
+  ],
+  "effect": {
+    "type": "ParticleEffect",
+    "particles": 3,
+    "sizeFrom": 2,
+    "sizeTo": 0,
+    "lifetime": 20,
+    "colorFrom": "FFF582FF",
+    "colorTo": "FFF582FF",
+    "line": true
+  }
+}

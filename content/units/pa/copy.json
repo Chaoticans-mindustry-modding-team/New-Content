@@ -35,7 +35,7 @@
       "shootStatus": "unmoving",
       "shootStatusDuration": 60,
       "bullet": {
-        "spawnUnit": "bootleg",
+        "spawnUnit": "copy",
         "instantDissapear": true,
         "lifetime": 0,
         "damage": 0,

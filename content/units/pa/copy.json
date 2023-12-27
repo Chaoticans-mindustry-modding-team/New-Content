@@ -1,0 +1,109 @@
+{
+  "name": "Bootleg",
+  "description": "Fires slow, weak, homing orbs at enemies. Clones itself. Lightweight.",
+  "health": 50,
+  "hitSize": 5,
+  "speed": 3,
+  "accel": 0.1,
+  "drag": 0.04,
+  "flying": true,
+  "engineOffset": 2,
+  "research": {
+    "parent": "flare",
+    "requirements": [
+      "silicon/65",
+      "phase-fabric/80"
+    ],
+    "objectives": []
+  },
+  "targetAir": true,
+  "weapons": [
+    {
+      "name": "cloner",
+      "reload": 500,
+      "x": 0,
+      "y": 0,
+      "shootSound": "respawn",
+      "shoot": {
+        "shots": 1,
+        "shotDelay": 0,
+        "firstShotDelay": 60
+      },
+      "shake": 2,
+      "ejectEffect": "none",
+      "smokeEffect": "none",
+      "shootStatus": "unmoving",
+      "shootStatusDuration": 60,
+      "bullet": {
+        "spawnUnit": "bootleg",
+        "instantDissapear": true,
+        "lifetime": 0,
+        "damage": 0,
+        "chargeEffect": {
+          "particles": 1,
+          "cone": 0,
+          "region": "newunits-bootleg-silhouette",
+          "colorFrom": "ffd37fff",
+          "colorTo": "ffd37fff",
+          "sizeFrom": 0,
+          "sizeTo": 8,
+          "interp": "pow3Out"
+        },
+        "shootEffect": {
+          "colorFrom": "ffd37fff",
+          "colorTo": "ffd37fff",
+          "sizeFrom": 0,
+          "sizeTo": 9,
+          "sides": 4,
+          "lifetime": 30
+        },
+        "despawnHit": false,
+        "hitEffect": "none",
+        "despawnEffect": "none"
+      }
+    },
+    {
+      "name": "bootleg-weapon",
+      "reload": 60,
+      "x": 0,
+      "y": 3,
+      "shootSound": "mineDeploy",
+      "bullet": {
+        "sprite": "circle-bullet",
+        "speed": 2,
+        "homingRange": 380,
+        "homingPower": 0.1,
+        "damage": 8,
+        "splashDamage": 13,
+        "splashDamageRadius": 6,
+        "frontColor": "bf92f9ff",
+        "backColor": "6d56bfff",
+        "lifetime": 76,
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "trailEffect": {
+          "colorFrom": "bf92f9ff",
+          "colorTo": "6d56bfff",
+          "sizeFrom": 0,
+          "sizeTo": 5,
+          "sides": 4,
+          "lifetime": 30
+        },
+        "trailChance": 0,
+        "trailInterval": 4,
+        "hitEffect": {
+          "particles": 4,
+          "line": true,
+          "colorFrom": "bf92f9ff",
+          "colorTo": "6d56bfff",
+          "length": 8
+        },
+        "despawnEffect": "none",
+        "despawnHit": true,
+        "shootEffect": "pulverize",
+        "despawnSound": "plasmaboom",
+        "hitSound": "plasmaboom"
+      }
+    }
+  ]
+}

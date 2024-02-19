@@ -1,0 +1,250 @@
+{
+  "name": "strider",
+  "description": "Fires compressed slag bullets at enemy targets. Resilient to slag and other fire-related entities.",
+  "health": 970,
+  "type": "naval",
+  "speed": 1,
+  "drag": 0.13,
+  "armor": 6,
+  "targetAir": true,
+  "hitSize": 9.5,
+  "accel": 0.4,
+  "rotateSpeed": 2.3,
+  "trailLength": 20,
+  "rotateShooting": false,
+  "template": "ErekirUnitType",
+  "immunities": [
+    "melting"
+  ],
+  "weapons": [
+    {
+      "name": "slag-gun",
+      "reload": 40,
+      "shootSound": "shootAlt",
+      "x": 0,
+      "y": 0,
+      "rotate": true,
+      "rotateSpeed": 1.9,
+      "bullet": {
+        "damage": 29,
+        "splashDamage": 8,
+        "splashDamageRadius": 15,
+        "splashDamagePierce": true,
+        "speed": 5,
+        "width": 5,
+        "height": 5,
+        "puddles": 3,
+        "puddleRange": 13,
+        "puddleLiquid": "slag",
+        "frontColor": "ffcd66ff",
+        "backColor": "e28654ff",
+        "hitSound": "explosion",
+        "despawnHit": true,
+        "despawnEffect": "none",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 3,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "interp": "circleOut",
+              "colorFrom": "ffcd66ff",
+              "colorTo": "ffcd66ff",
+              "length": 21,
+              "lifetime": 37
+            },
+            {
+              "type": "WaveEffect",
+              "particles": 3,
+              "sizeFrom": 3,
+              "sizeTo": 17,
+              "lifetime": 10,
+              "colorFrom": "ffcd66ff",
+              "colorTo": "ffcd66ff"
+            }
+          ]
+        },
+        "shootEffect": {
+          "type": "ParticleEffect",
+          "particles": 3,
+          "sizeFrom": 2,
+          "sizeTo": 0,
+          "interp": "circleOut",
+          "colorFrom": "ffcd66ff",
+          "colorTo": "ffcd66ff",
+          "length": 8,
+          "lifetime": 37,
+          "line": true
+        }
+      }
+    }
+  ]
+}{
+  "name": "strider",
+  "description": "Fires compressed slag bullets at enemy targets. Resilient to slag and other fire-related entities.",
+  "health": 970,
+  "type": "naval",
+  "speed": 1,
+  "drag": 0.13,
+  "armor": 6,
+  "targetAir": true,
+  "hitSize": 9.5,
+  "accel": 0.4,
+  "rotateSpeed": 2.3,
+  "trailLength": 20,
+  "rotateShooting": false,
+  "template": "ErekirUnitType",
+  "immunities": [
+    "melting"
+  ],
+  "weapons": [
+    {
+      "name": "slag-gun",
+      "reload": 40,
+      "shootSound": "shootAlt",
+      "x": 0,
+      "y": 0,
+      "rotate": true,
+      "rotateSpeed": 1.9,
+      "bullet": {
+        "damage": 29,
+        "splashDamage": 8,
+        "splashDamageRadius": 15,
+        "splashDamagePierce": true,
+        "speed": 5,
+        "width": 5,
+        "height": 5,
+        "puddles": 3,
+        "puddleRange": 13,
+        "puddleLiquid": "slag",
+        "frontColor": "ffcd66ff",
+        "backColor": "e28654ff",
+        "hitSound": "explosion",
+        "despawnHit": true,
+        "despawnEffect": "none",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 3,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "interp": "circleOut",
+              "colorFrom": "ffcd66ff",
+              "colorTo": "ffcd66ff",
+              "length": 21,
+              "lifetime": 37
+            },
+            {
+              "type": "WaveEffect",
+              "particles": 3,
+              "sizeFrom": 3,
+              "sizeTo": 17,
+              "lifetime": 10,
+              "colorFrom": "ffcd66ff",
+              "colorTo": "ffcd66ff"
+            }
+          ]
+        },
+        "shootEffect": {
+          "type": "ParticleEffect",
+          "particles": 3,
+          "sizeFrom": 2,
+          "sizeTo": 0,
+          "interp": "circleOut",
+          "colorFrom": "ffcd66ff",
+          "colorTo": "ffcd66ff",
+          "length": 8,
+          "lifetime": 37,
+          "line": true
+        }
+      }
+    }
+  ]
+}{
+  "name": "strider",
+  "description": "Fires compressed slag bullets at enemy targets. Resilient to slag and other fire-related entities.",
+  "health": 970,
+  "type": "naval",
+  "speed": 1,
+  "drag": 0.13,
+  "armor": 6,
+  "targetAir": true,
+  "hitSize": 9.5,
+  "accel": 0.4,
+  "rotateSpeed": 2.3,
+  "trailLength": 20,
+  "rotateShooting": false,
+  "template": "ErekirUnitType",
+  "immunities": [
+    "melting"
+  ],
+  "weapons": [
+    {
+      "name": "slag-gun",
+      "reload": 40,
+      "shootSound": "shootAlt",
+      "x": 0,
+      "y": 0,
+      "rotate": true,
+      "rotateSpeed": 1.9,
+      "bullet": {
+        "damage": 29,
+        "splashDamage": 8,
+        "splashDamageRadius": 15,
+        "splashDamagePierce": true,
+        "speed": 5,
+        "width": 5,
+        "height": 5,
+        "puddles": 3,
+        "puddleRange": 13,
+        "puddleLiquid": "slag",
+        "frontColor": "ffcd66ff",
+        "backColor": "e28654ff",
+        "hitSound": "explosion",
+        "despawnHit": true,
+        "despawnEffect": "none",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 3,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "interp": "circleOut",
+              "colorFrom": "ffcd66ff",
+              "colorTo": "ffcd66ff",
+              "length": 21,
+              "lifetime": 37
+            },
+            {
+              "type": "WaveEffect",
+              "particles": 3,
+              "sizeFrom": 3,
+              "sizeTo": 17,
+              "lifetime": 10,
+              "colorFrom": "ffcd66ff",
+              "colorTo": "ffcd66ff"
+            }
+          ]
+        },
+        "shootEffect": {
+          "type": "ParticleEffect",
+          "particles": 3,
+          "sizeFrom": 2,
+          "sizeTo": 0,
+          "interp": "circleOut",
+          "colorFrom": "ffcd66ff",
+          "colorTo": "ffcd66ff",
+          "length": 8,
+          "lifetime": 37,
+          "line": true
+        }
+      }
+    }
+  ]
+}

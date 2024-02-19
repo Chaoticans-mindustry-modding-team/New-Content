@@ -1,9 +1,9 @@
 {
-  "name": "strider",
+  "name": "Strider",
   "description": "Fires compressed slag bullets at enemy targets. Resilient to slag and other fire-related entities.",
   "health": 970,
   "type": "naval",
-  "speed": 1,
+  "speed": 1.3,
   "drag": 0.13,
   "armor": 6,
   "targetAir": true,
@@ -20,26 +20,33 @@
   "weapons": [
     {
       "name": "slag-gun",
-      "reload": 40,
+      "reload": 20,
       "shootSound": "shootAlt",
       "x": 0,
       "y": 0,
+      "mirror": false,
       "rotate": true,
       "rotateSpeed": 1.9,
+      "shoot": {
+        "shots": 2,
+        "shotDelay": 0
+      },
+      "inaccuracy": 6.5,
       "bullet": {
-        "damage": 29,
+        "damage": 17,
         "splashDamage": 8,
         "splashDamageRadius": 15,
         "splashDamagePierce": true,
         "speed": 5,
-        "width": 5,
-        "height": 5,
+        "width": 8,
+        "height": 7,
         "puddles": 3,
         "puddleRange": 13,
+        "puddleAmount": 20,
         "puddleLiquid": "slag",
         "frontColor": "ffcd66ff",
         "backColor": "e28654ff",
-        "hitSound": "explosion",
+        "hitSound": "splash",
         "despawnHit": true,
         "despawnEffect": "none",
         "hitEffect": {
@@ -47,8 +54,8 @@
           "effects": [
             {
               "type": "ParticleEffect",
-              "particles": 3,
-              "sizeFrom": 4,
+              "particles": 8,
+              "sizeFrom": 5,
               "sizeTo": 0,
               "interp": "circleOut",
               "colorFrom": "ffcd66ff",

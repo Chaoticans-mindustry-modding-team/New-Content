@@ -84,7 +84,8 @@
           "colorTo": "ffcd66ff",
           "length": 8,
           "lifetime": 37,
-          "line": true
+          "line": true,
+          "followParent": false
         }
       }
     }

@@ -1,0 +1,17 @@
+{
+  "name": "Compact Drill",
+  "description": "A small but efficient drill. Requires small amounts of power and can mine up to thorium.",
+  "health": 590,
+  "requirements": [
+    "silicon/40",
+    "lead/55",
+    "surge-alloy/20",
+    "titanium/70"
+  ],
+  "size": 1,
+  "type": "Drill",
+  "tier": 4,
+  "drillTime": 60,
+  "warmupSpeed": 1,
+  "liquidBoostIntensity": 1.2
+}

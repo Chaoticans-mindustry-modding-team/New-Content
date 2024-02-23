@@ -11,7 +11,8 @@
   "size": 1,
   "type": "Drill",
   "tier": 4,
-  "drillTime": 60,
+  "drillTime": 72,
   "warmupSpeed": 1,
   "liquidBoostIntensity": 1.2
+  "category": "drills"
 }

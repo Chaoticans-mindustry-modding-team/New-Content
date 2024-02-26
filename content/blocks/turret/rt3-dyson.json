@@ -74,6 +74,10 @@
 		},
       
     },
+    "drawer": {
+      "type": "DrawTurret",
+      "basePrefix": "laser-"
+    },
     "requirements": [
 		"aluminum/47",
 	    "selevite/56",

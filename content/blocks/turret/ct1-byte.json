@@ -1,6 +1,6 @@
 {
-    "localizedName": "Byte"
-    "description": "Fires homing bits at enemies."
+    "localizedName": "Byte",
+    "description": "Fires homing bits at enemies.",
     "type": "ItemTurret",
     "researchCostMultiplier": 0.7,
     "size": 1,
@@ -18,7 +18,7 @@
     "shootSound": "pixelCrunch",
     "shoot": {
     "shots": 3,
-    "shotDelay": 5,
+    "shotDelay": 5
     },
     "ammoTypes": {
         "matrixium": {
@@ -49,8 +49,7 @@
           "trailWidth": 2,
           "trailColor": "88ff88ff",
           "frontColor": "88ff88ff",
-          "backColor": "88ff88ff"
-          
+          "backColor": "88ff88ff",
           "hitEffect": {
       "type": "ParticleEffect",
       "length": 3,
@@ -61,6 +60,10 @@
     },
 		"despawnHit": true
 			}
+    },
+    "drawer": {
+      "type": "DrawTurret",
+      "basePrefix": "code-"
     },
     "requirements": [
 		"silicon/55",

@@ -15,7 +15,6 @@
   "targetAir": true,
   "targetGround": true,
   "rotateSpeed": 4,
-  "recoil": 2,
   "shootSound": "flame2",
   "ammoTypes": {
     "coal": {

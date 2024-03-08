@@ -87,7 +87,7 @@
 	"frontColor": "F3E979FF",
     "backColor": "ECD36FFF",
     "trailColor": "ECD36FFF",
-    "lifetime": 70,
+    "lifetime": 20,
 	"hitEffect": {
 		"type": "WaveEffect",
 		"colorFrom": "ffffffff",

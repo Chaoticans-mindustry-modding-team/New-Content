@@ -8,7 +8,7 @@
 	"graphite/125",
 	"lead/750"
 	]
-}
+},
 "description": "Fires a barrage of missiles, bullets and a constant stream of flame at all nearby enemies.",
 "type": "legs",
 "legCount": 5,
@@ -24,7 +24,6 @@
 "flying": false,
 "health": 935,
 "rotateShooting": false,
-"hovering": true,
 "shadowElevation": 0.3,
 "immunities": [
 		"burning",
@@ -43,7 +42,7 @@
   "shootY": 0,
   "top": false,
   "shots": 2,
-  "shake": 0.2
+  "shake": 0.2,
   "shootSound": "flame",
   "ejectEffect": "none",
   "parentizeEffects": false,
@@ -54,7 +53,7 @@
 			"pierceBuilding": false,
             "type": "BasicBulletType",
             "lifetime": 7,
-		    "shootEffect": "shootSmallFlame"
+		    "shootEffect": "shootSmallFlame",
 			"speed": 6.5,
             "frontColor": "00000000",
             "backColor": "00000000",
@@ -74,7 +73,7 @@
 	  "y": -3,
 	  "reload": 15,
 	  "recoil": 2,
-	  "shake": 0.7
+	  "shake": 0.7,
 	  "shots": 2,
 	  "shotDelay": 3,
 	  "shootSound": "missile",
@@ -87,9 +86,9 @@
 		  "frontColor": "FFF8E8FF",
 		  "backColor": "F9C27AFF",
 		  "trailColor": "F9C27AFF",
-		  "lifetime": 70,
-		  "weaveScale": 3
-		  "weaveMag": 2
+		  "lifetime": 16.5,
+		  "weaveScale": 3,
+		  "weaveMag": 2,
 		  "homingRange": 20,
 		  "homingPower": 0.1,
 		  "hitSound": "explosion",
@@ -112,7 +111,7 @@
   },
   {
 	  "name": "mount-weapon",
-	  "reload": 20
+	  "reload": 20,
 	  "x": 4,
 	  "y": 4,
 	  "rotate": true,
@@ -120,8 +119,9 @@
 	  "shots": 1,
 	  "ejectEffect": "casing1",
 	  "bullet": {
-		"damage": 9
-		  "speed": 5.5
+		"damage": 9,
+		"speed": 5.5,
+		"lifetime": 15
 	}
   }
 ]

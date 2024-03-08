@@ -15,7 +15,7 @@
         "health": 850,
         "armor": 6,
         "engineOffset": 7.55,
-		"range": 120
+		"range": 170
 		"TargetAir": true,
         "commandLimit": 8,
 		"faceTarget": true,
@@ -92,7 +92,7 @@
 	"frontColor": "242424ff",
     "backColor": "111111ff",
     "trailColor": "242424ff",
-    "lifetime": 120,
+    "lifetime": 26,
 	"hitEffect": {
 		"type": "WaveEffect",
 		"colorFrom": "ffffffff",
@@ -230,8 +230,6 @@
 	],
 	},
     "bullet": {
-	"frontColor": "F3E979FF",
-    "backColor": "ECD36FFF",
     "type": "ArtilleryBulletType",
     "buildingDamageMultiplier": 2.5,
     "damage": 45,

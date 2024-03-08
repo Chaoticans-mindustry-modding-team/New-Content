@@ -89,6 +89,10 @@
 			
 		}
     },
+	"drawer": {
+		"type": "DrawTurret",
+		"basePrefix": "laser-"
+	},
     "requirements": [
 		"tin/30",
 	    "cinnabarite/15",

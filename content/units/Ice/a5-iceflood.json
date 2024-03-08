@@ -12,7 +12,7 @@
 	"health": 557000,
 	"armor": 34,
 	"drag": 0.2,
-	"range": 380,
+	"range": 210,
 	"flying": false,
 	"targetAir": true,
 	"rotateSpeed": 1.5,
@@ -43,7 +43,7 @@
 		"mirror": true,
 		"alternate": false,
 		"inaccuracy": 10,
-		"shootSound": "shootSnap"
+		"shootSound": "shootSnap",
 		"shots": 3,
 		"shotDelay": 1,
 		"bullet": {
@@ -52,12 +52,12 @@
 			"backColor": "aaaaddff",
 			"trailParam": 5,
 			"width": 16,
-			"height": 14
+			"height": 14,
 			"trailColor": "ccccffff",
 			"trailWidth": 4.5,
 			"trailLength": 3,
 			"speed": 5,
-			"lifetime": 150,
+			"lifetime": 42,
 			"hitEffect": {
 					  "type": "ParticleEffect",
 					  "colorTo": "ccccffff",
@@ -71,7 +71,7 @@
 					  "sizeTo": 0.2
 	        },
 			"status": "freezing",
-			"statusDuration": 500,
+			"statusDuration": 500
 		}
 
 	},
@@ -83,7 +83,7 @@
 		"mirror": true,
 		"alternate": true,
 		"inaccuracy": 10,
-		"shootSound": "shootSnap"
+		"shootSound": "shootSnap",
 		"shots": 3,
 		"shotDelay": 1,
 		"bullet": {
@@ -92,12 +92,12 @@
 			"backColor": "aaaaddff",
 			"trailParam": 5,
 			"width": 16,
-			"height": 14
+			"height": 14,
 			"trailColor": "ccccffff",
 			"trailWidth": 4.5,
 			"trailLength": 8,
 			"speed": 10,
-			"lifetime": 150,
+			"lifetime": 21,
 			"hitEffect": {
 					  "type": "ParticleEffect",
 					  "colorTo": "ccccffff",
@@ -111,9 +111,9 @@
 					  "sizeTo": 0.2
 	        },
 			"status": "freezing",
-			"statusDuration": 500,
+			"statusDuration": 500
 		}
-	}
+	},
 		{
 		"name": "zaper",
 		"reload": 120,
@@ -122,7 +122,7 @@
 		"mirror": true,
 		"alternate": true,
 		"inaccuracy": 5,
-		"shootSound": "shootSnap"
+		"shootSound": "shootSnap",
 		"shots": 10,
 		"shotDelay": 1,
 		"bullet": {
@@ -131,12 +131,12 @@
 			"backColor": "aaaaddff",
 			"trailParam": 5,
 			"width": 16,
-			"height": 14
+			"height": 14,
 			"trailColor": "ccccffff",
 			"trailWidth": 4.5,
 			"trailLength": 3,
 			"speed": 5,
-			"lifetime": 150,
+			"lifetime": 42,
 			"hitEffect": {
 					  "type": "ParticleEffect",
 					  "colorTo": "ccccffff",
@@ -150,7 +150,7 @@
 					  "sizeTo": 0.2
 	        },
 			"status": "freezing",
-			"statusDuration": 500,
+			"statusDuration": 500
 		}
 
 	},
@@ -163,12 +163,12 @@
 		"alternate": false,
 		"inaccuracy": 25,
 		"xRand": 5,
-		"shootSound": "missile"
+		"shootSound": "missile",
 		"shots": 8,
 		"shotDelay": 1,
 		"bullet": {
 			"damage": 50,
-			"type": "MissileBulletType"
+			"type": "MissileBulletType",
 			"hitSound": "explosion",
 			"frontColor": "ccccffff",
 			"backColor": "aaaaddff",
@@ -187,7 +187,7 @@
 			"trailWidth": 2.25,
 			"trailLength": 3,
 			"speed": 5,
-			"lifetime": 85,
+			"lifetime": 38,
 			"hitEffect": {
 					  "type": "ParticleEffect",
 					  "colorTo": "ccccffff",
@@ -201,7 +201,7 @@
 					  "sizeTo": 0.2
 	        },
 			"status": "blasted",
-			"statusDuration": 500,
+			"statusDuration": 500
 		}
 
 	}

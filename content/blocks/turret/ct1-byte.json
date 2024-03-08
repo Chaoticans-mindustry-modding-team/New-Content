@@ -1,0 +1,74 @@
+{
+    "localizedName": "Byte",
+    "description": "Fires homing bits at enemies.",
+    "type": "ItemTurret",
+    "researchCostMultiplier": 0.7,
+    "size": 1,
+    "health": 540,
+    "maxAmmo": 25,
+    "ammoPerShot": 1,
+    "reload": 45,
+    "range": 185,
+    "targetAir": true,
+    "targetGround": true,
+    "rotateSpeed": 3,
+    "recoil": 4,
+    "inaccuracy": 10,
+    "outlineColor": "010101ff",
+    "shootSound": "pixelCrunch",
+    "shoot": {
+    "shots": 3,
+    "shotDelay": 5
+    },
+    "ammoTypes": {
+        "matrixium": {
+    "type": "BasicBulletType",
+    "shootEffect": {
+      "type": "ParticleEffect",
+      "length": 3,
+      "sizeFrom": 4,
+      "particles": 3,
+      "colorFrom": "88ff88ff",
+      "colorTo": "88ff88ff"
+    },
+    "damage": 30,
+	"homingPower": 0.03,
+          "ammoMultiplier": 2,
+          "homingRange": 60,
+          "lifetime": 30.8,
+          "speed": 6,
+          "width": 7,
+          "height": 7,
+          "shrinkX": 0,
+          "shrinkY": 0,
+          "hittable": false,
+          "absorbable": false,
+          "reflectable": false,
+          "sprite": "newunits-square",
+          "trailLength": 11,
+          "trailWidth": 2,
+          "trailColor": "88ff88ff",
+          "frontColor": "88ff88ff",
+          "backColor": "88ff88ff",
+          "hitEffect": {
+      "type": "ParticleEffect",
+      "length": 3,
+      "sizeFrom": 4,
+      "particles": 3,
+      "colorFrom": "88ff88ff",
+      "colorTo": "88ff88ff"
+    },
+		"despawnHit": true
+			}
+    },
+    "drawer": {
+      "type": "DrawTurret",
+      "basePrefix": "code-"
+    },
+    "requirements": [
+		"silicon/55",
+      "matrixium/15"
+    ],
+    "category": "turret",
+    "research": "duo"
+}

@@ -1,5 +1,5 @@
 {
-        "localizedName": "Circulation",
+        "localizedName": "Chaotican",
 	"description": "A speedy unit created by the Arcus. Fires a quick seeking bolt.",
         "research": {
 			"requirements": [
@@ -16,10 +16,10 @@
         "flying": true,
         "health": 210,
         "armor": 2,
-	"range": 120,
+		"range": 105,
         "engineOffset": 5.5,
 		"TargetAir": true,
-	"hitSize": 9,
+		"hitSize": 9,
         "commandLimit": 8,
         "circleTarget": true,
 	    "weapons": [
@@ -39,53 +39,51 @@
     "type": "BasicBulletType",
 	"frontColor": "FF6666FF",
 	"backColor": "DD4444FF",
-	"lifetime": 60
+	"lifetime": 8.75,
 	"speed": 12,
-      "homingPower": 0.1,
-      "homingRadius": 126,
+    "homingPower": 0.1,
+    "homingRadius": 126,
 	"damage": 56,
-	    "width": 3,
-          "weaveScale": 0.00000001,
+	"width": 3,
+    "weaveScale": 0.00000001,
     "weaveMag": 3,
-      "trailLength": 24,
-      "trailColor": "FF6666FF",
-      "trailWith": 3,
+    "trailLength": 24,
+    "trailColor": "FF6666FF",
+    "trailWith": 3,
 	"shootEffect":  {
-	    		"type": "ParticleEffect"	
-                        "sizeFrom": 2,
-		"line": true,
-		"sizeTo": 1,
+	    		"type": "ParticleEffect",
+                "sizeFrom": 2,
+				"line": true,
+				"sizeTo": 1,
         		"lifetime": 8,
-		"colorFrom": "FF6666FF",
-		"colorTo": "FF6666FF",
+				"colorFrom": "FF6666FF",
+				"colorTo": "FF6666FF"
 			},
 	"hitEffect": {
     "type": "MultiEffect",
     "effects": [ 
 	    {
-	    		"type": "ParticleEffect"	
-                        "sizeFrom": 2,
+	    "type": "ParticleEffect",	
+        "sizeFrom": 2,
 		"line": true,
 		"sizeTo": 1,
-        		"lifetime": 61,
+        "lifetime": 61,
 		"colorFrom": "FF6666FF",
 		"colorTo": "FF6666FF",
-		    "interp": "circleOut"
+		"interp": "circleOut"
 			},
       {
-      "type": "WaveEffect",
-      "sizeTo": 26,
+      	"type": "WaveEffect",
+      	"sizeTo": 26,
 		"colorFrom": "FF6666FF",
 		"colorTo": "FF6666FF",
-      "lifetime": 47,
-	      "interp": "circleOut"
+      	"lifetime": 47,
+	    "interp": "circleOut"
       }
-      ]
-"despawnEffect": "hitFlameSmall",
+      ],
+		"despawnEffect": "hitFlameSmall",
 		"despawnHit": true
-			
 		}
 		}
-		    }
-	]
+	}]
 }

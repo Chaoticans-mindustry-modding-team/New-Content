@@ -1,12 +1,11 @@
 {
   "type": "Router",
   "name": "Armored Router",
-  "description": "Distributes input items to 3 output directions equally. Stores more and is faster than a standard router. Armored.",
+  "description": "Distributes input items to 3 output directions equally. Faster than a standard router. Armored.",
   "details": "An armored necessary evil. Do not place next to outputs as they will become clogged. Can use as a mini-container (cheaper crate)",
   "hideDetails": false,
   "health": 240,
   "hasItems": true,
-  "itemCapacity": 5,
   "acceptsItems": true,
   "size": 1,
   "unloadable": false,

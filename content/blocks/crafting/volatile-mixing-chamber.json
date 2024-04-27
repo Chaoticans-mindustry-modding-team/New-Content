@@ -1,0 +1,58 @@
+{
+  "name": "Volatile Mixing Chamber",
+  "description": "Mixes oil and pyratite powder at high speeds to produce Volatitum.",
+  "type": "GenericCrafter",
+  "size": 2,
+  "craftTime": 40,
+  "hasPower": true,
+  "hasLiquids": true,
+  "liquidCapacity": 25,
+  "craftEffect": {
+    "type": "ParticleEffect",
+    "particles": 6,
+    "colorFrom": "826140ff",
+    "colorTo": "261d13ff",
+    "length": 8,
+    "interp": "circleOut"
+  },
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidTile",
+        "drawLiquid": "oil",
+        "alpha": 1
+      },
+      {
+        "type": "DrawLiquidTile",
+        "drawLiquid": "volatile-fluid",
+        "alpha": 1
+      },
+      {
+        "type": "DrawDefault"
+      }
+    ]
+  },
+  "outputLiquid": "volatile-fluid/1",
+  "consumes": {
+    "power": 1.2,
+    "liquids": [
+      "oil/0.6"
+    ],
+    "items": [
+      "pyratite/2"
+    ]
+  },
+  "requirements": [
+    "graphite/70",
+    "silicon/270",
+    "copper/50",
+    "titanium/90"
+  ],
+  "category": "crafting",
+  "research": "cryofluid-mixer"
+}

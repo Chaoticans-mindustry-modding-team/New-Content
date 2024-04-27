@@ -1,0 +1,21 @@
+{
+  "type": "Router",
+  "name": "Armored Distributor",
+  "description": "Distributes input items to 7 output directions equally. Stores more and is faster than an armored router. Armored.",
+  "details": "An armored necessary evil. Do not place next to outputs as they will become clogged.)",
+  "hideDetails": false,
+  "health": 760,
+  "hasItems": true,
+  "itemCapacity": 10,
+  "acceptsItems": true,
+  "size": 2,
+  "unloadable": false,
+  "speed": 14,
+  "requirements": [
+    "metaglass/6",
+    "thorium/7",
+    "plastanium/5",
+    "silicon/4",
+    "titanium/6"
+  ]
+}

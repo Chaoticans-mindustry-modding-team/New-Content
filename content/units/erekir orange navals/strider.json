@@ -46,7 +46,7 @@
         "puddleLiquid": "slag",
         "frontColor": "ffcd66ff",
         "backColor": "e28654ff",
-        "hitSound": "splash",
+        "hitSound": "none",
         "despawnHit": true,
         "despawnEffect": "none",
         "hitEffect": {

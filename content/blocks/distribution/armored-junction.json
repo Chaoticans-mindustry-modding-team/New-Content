@@ -1,0 +1,15 @@
+{
+  "type": "Junction",
+  "name": "Armored Junction",
+  "description": "Acts as a bridge for two crossing conveyor belts. Stores more and is faster than a standard junction. Armored.",
+  "size": 1,
+  "health": 200,
+  "capacity": 12,
+  "speed": 30,
+  "requirements": [
+    "metaglass/2",
+    "thorium/2",
+    "plastanium/2",
+    "silicon/1"
+  ]
+}

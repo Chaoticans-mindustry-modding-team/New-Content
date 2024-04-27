@@ -5,7 +5,7 @@
   "size": 1,
   "health": 200,
   "capacity": 12,
-  "speed": 30,
+  "speed": 36,
   "requirements": [
     "metaglass/2",
     "thorium/2",

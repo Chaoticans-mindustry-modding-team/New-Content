@@ -1,6 +1,6 @@
 {
         "localizedName": "Spark",
-	"description": "Fires lightning bolts at enemy targets. Unimaginaably fast.",
+	"description": "Fires lightning bolts at enemy targets. Unimaginably fast.",
         "research": {
 			"requirements": [
 			"silicon/100",

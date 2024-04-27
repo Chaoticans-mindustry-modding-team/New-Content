@@ -1,6 +1,6 @@
 {
-  "localizedName": "Volatile Fluid"
-  "description": "A Mixture of oil and pyratite used in turrets, production and reactors. Extremly Volatile."
+  "localizedName": "Volatitum"
+  "description": "Used in turrets as highly incendary ammunition, reactors, and incendary material synthesis. Highly Volatile."
   "details": "arsonist juice",
   "hideDetails": false,
 "temperature": 0.7,

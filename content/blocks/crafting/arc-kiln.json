@@ -25,7 +25,7 @@
   "craftEffect": "shootHealYellow",
   "updateEffect": "none",
   "ambientSound": "electricambience",
-  "ambientSoundVolume": 0.09,
+  "ambientSoundVolume": 1,
   "consumes": {
     "power": 2.6,
     "items": {

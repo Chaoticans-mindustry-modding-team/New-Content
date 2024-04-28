@@ -1,17 +1,19 @@
 {
   "name": "Scrap Crucible",
-  "description": "Smelts large amounts ofscrap and coal into surge alloy, and creates graphite and thorium as a side product of extraction. Slow. Inefficient.",
+  "description": "Smelts large amounts of scrap and coal into surge alloy, and creates graphite and thorium as a side product of extraction. Slow. Inefficient.",
   "details": "plz do not. scrap to surge but slow and inefficient.",
   "hideDetails": false,
   "type": "GenericCrafter",
-  "size": 4,
-  "craftTime": 189,
+  "size": 3,
+  "craftTime": 264,
   "hasPower": true,
   "hasItems": true,
   "hasLiquid": false,
   "itemCapacity": 18,
   "health": 630,
   "craftEffect": "pulverize",
+  "ambientSound": "smelter",
+  "ambientSoundVolume": 0.12,
   "drawer": {
     "type": "DrawMulti",
     "drawers": [
@@ -20,7 +22,8 @@
       },
       {
         "type": "DrawFlame",
-        "flameRadius": 6
+        "flameRadius": 5,
+        "flameRadiusIn": 2
       }
     ]
   },

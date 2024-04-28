@@ -37,7 +37,7 @@
   },
   "requirements": [
     "gold/30",
-    "iron/10",
+    "silver/10",
     "silicon/90"
   ],
   "category": "crafting",

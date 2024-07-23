@@ -1,3 +1,4 @@
 "type": "Floor",
 "name": "Skale",
-"variants": 3,
+"wall": "skale-wall",
+"variants": 3

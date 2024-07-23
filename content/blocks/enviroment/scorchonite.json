@@ -1,3 +1,5 @@
-"type": "Floor",
+"type": "OreBlock",
 "name": "Scorchonite",
 "variants": 3,
+"oreDefault": false,
+"itemDrop": "phloxium"

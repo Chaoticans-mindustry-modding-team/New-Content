@@ -87,7 +87,7 @@
       "fragBullet": {
         "type": "BasicBulletType",
         "damage": 15,
-        "lifetime": 345,
+        "lifetime": 45,
         "speed": 1.5,
         "homingPower": 0.08,
         "homingRange": 70,

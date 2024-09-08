@@ -62,7 +62,7 @@
       "parentizeEffects": false,
       "inaccuracy": 15,
       "bullet": {
-        "damage": 1,
+        "damage": 15,
         "width": 8,
         "pierce": true,
         "pierceBuilding": false,

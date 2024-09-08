@@ -53,7 +53,8 @@
           "speed": 3.5,
           "width": 5,
           "height": 4,
-          "hitSound": "pew",
+          "hitSound": "shoot",
+          "despawnSound": "shoot",
           "hitSoundPitch": 3,
           "hitSoundVolume": 0.7
         }

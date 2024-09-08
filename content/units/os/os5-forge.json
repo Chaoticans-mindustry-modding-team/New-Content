@@ -114,7 +114,7 @@
       "reload": 5,
       "recoil": 3,
       "inaccuracy": 19,
-      "shake": 5,
+      "shake": 1,
       "shootSound": "missile",
       "ejectEffect": "casing2",
       "bullet": {
@@ -129,7 +129,7 @@
         "despawnHit": true,
         "splashDamageRadius": 17,
         "splashDamage": 20,
-        "hitShake": 3,
+        "hitShake": 1,
         "despawnShake": 5,
         "weaveScl": 3,
         "weaveMag": 2,

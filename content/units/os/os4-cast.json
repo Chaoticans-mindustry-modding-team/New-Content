@@ -6,10 +6,13 @@
       "silicon/1255",
       "titanium/355",
       "graphite/225",
-      "lead/1000"
+      "lead/1000",
+      "emberium/350"
     ]
   },
   "description": "Fires bursts of bullets and a constant stream of melting flame at targets.",
+  "details": "i nerfed him for a while not realising he was overnerfed, and was getting absolutely cooked by arkyid in those times. #justiceforcast",
+  "hideDetails": false,
   "type": "legs",
   "legCount": 7,
   "legLength": 30,
@@ -18,7 +21,7 @@
   "legBaseOffset": 10,
   "legLengthScl": 0.96,
   "legSplashRange": 13,
-  "legSplashDamage": 12,
+  "legSplashDamage": 18,
   "rippleScale": 2,
   "legspeed": 0.175,
   "stepShake": 2,
@@ -27,11 +30,12 @@
   "hovering": true,
   "armor": 8,
   "commandLimit": 8,
-  "speed": 0.9,
+  "speed": 0.6,
   "hitSize": 27.5,
   "flying": false,
   "health": 7650,
   "rotateShooting": false,
+  "rotateSpeed": 2.2,
   "shadowElevation": 0.72,
   "drownMultiplier": 1.75,
   "immunities": [
@@ -62,7 +66,7 @@
       "parentizeEffects": false,
       "inaccuracy": 15,
       "bullet": {
-        "damage": 15,
+        "damage": 26,
         "width": 8,
         "pierce": true,
         "pierceBuilding": false,

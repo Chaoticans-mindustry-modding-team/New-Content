@@ -20,8 +20,9 @@
       "type": "BasicBulletType",
       "damage": 53,
       "ammoMultiplier": 2,
+      "reloadMultiplier": 0.8,
       "lifetime": 60,
-      "speed": 5,
+      "speed": 3,
       "width": 10,
       "height": 9,
       "hitEffect": "flakExplosionBig",
@@ -43,17 +44,18 @@
         "despawnSound": "explosion",
         "splashDamageRadius": 11,
         "splashDamage": 8,
-        "fragLifeMin": 0.6,
+        "fragLifeMin": 0.2,
         "frags": 5,
         "fragBullet": {
           "type": "BasicBulletType",
           "damage": 7,
-          "lifetime": 15,
+          "lifetime": 40,
           "speed": 3.5,
           "width": 5,
           "height": 4,
-          "hitSound": "crackle",
-          "despawnSound": "crackle"
+          "hitSound": "pew",
+          "hitSoundPitch": 3,
+          "hitSoundVolume": 0.7
         }
       }
     }

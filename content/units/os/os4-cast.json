@@ -9,7 +9,7 @@
       "lead/1000"
     ]
   },
-  "description": "Fires a constant stream of melting flame and bursts of bullets at targets.",
+  "description": "Fires bursts of bullets and a constant stream of melting flame at targets.",
   "type": "legs",
   "legCount": 7,
   "legLength": 30,
@@ -17,15 +17,17 @@
   "legExtension": -15,
   "legBaseOffset": 10,
   "legLengthScl": 0.96,
+  "legSplashRange": 13,
+  "legSplashDamage": 12,
   "rippleScale": 2,
   "legspeed": 0.175,
-  "stepShake": 3,
+  "stepShake": 2,
   "groundLayer": 75,
   "legMoveSpace": 1.7,
   "hovering": true,
   "armor": 8,
   "commandLimit": 8,
-  "speed": 1,
+  "speed": 0.9,
   "hitSize": 27.5,
   "flying": false,
   "health": 7650,
@@ -60,13 +62,13 @@
       "parentizeEffects": false,
       "inaccuracy": 15,
       "bullet": {
-        "damage": 20,
+        "damage": 1,
         "width": 8,
         "pierce": true,
         "pierceBuilding": false,
+        "pierceCap": 4,
         "type": "BasicBulletType",
-        "lifetime": 10,
-        "buildingDamageMultiplier": 3,
+        "buildingDamageMultiplier": 2,
         "shootEffect": {
           "type": "ParticleEffect",
           "followParent": false,
@@ -80,7 +82,8 @@
           "lifetime": 30.5,
           "length": 80.5
         },
-        "speed": 8,
+        "speed": 4,
+        "lifetime": 20,
         "frontColor": "00000000",
         "backColor": "00000000",
         "hitEffect": "none",
@@ -88,7 +91,7 @@
         "statusDuration": 280,
         "despawnEffect": "none",
         "hittable": false,
-        "reflectable": "false"
+        "reflectable": false
       }
     },
     {
@@ -101,17 +104,17 @@
       "y": -3,
       "reload": 45,
       "recoil": 3,
-      "inaccuracy": 1.5,
+      "inaccuracy": 3,
       "shake": 5,
       "shoot": {
         "shots": 4,
         "shotDelay": 1
       },
-      "shootSound": "shootSnap",
+      "shootSound": "shoot",
       "top": true,
       "ejectEffect": "casing3",
       "bullet": {
-	"type": "BasicBulletType",
+        "type": "BasicBulletType",
         "damage": 24,
         "height": 19,
         "width": 7,
@@ -124,7 +127,6 @@
         "lightningLengthRand": 1,
         "lightningColor": "FFDE70FF",
         "hitEffect": "flakExplosion",
-	"hitSound": "explosion",
         "despawnHit": true,
         "splashDamageRadius": 9,
         "splashDamage": 26,

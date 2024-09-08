@@ -94,7 +94,7 @@
         },
         "frontColor": "00000000",
         "backColor": "00000000",
-        "hitEffect": "hitFlame",
+        "hitEffect": "fireHit",
         "status": "melting",
         "statusDuration": 463,
         "despawnEffect": "none",

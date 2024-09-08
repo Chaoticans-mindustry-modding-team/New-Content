@@ -84,7 +84,7 @@
           "particles": 12,
           "colorFrom": "FFB52CFF",
           "colorTo": "FD6E26FF",
-          "sizeFrom": 5,
+          "sizeFrom": 3,
           "sizeTo": 0.5,
           "cone": 15,
           "interp": "circleOut",

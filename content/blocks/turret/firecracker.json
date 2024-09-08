@@ -1,0 +1,69 @@
+{
+  "localizedName": "Firecracker",
+  "description": "Fires double-fragmenting fireworks at targets.",
+  "type": "ItemTurret",
+  "researchCostMultiplier": 0.7,
+  "size": 3,
+  "health": 540,
+  "maxAmmo": 25,
+  "reload": 120,
+  "range": 180,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 0.8,
+  "recoil": 4,
+  "inaccuracy": 4,
+  "shake": 2.5,
+  "shootSound": "bang",
+  "ammoTypes": {
+    "graphite": {
+      "type": "BasicBulletType",
+      "damage": 53,
+      "ammoMultiplier": 2,
+      "lifetime": 60,
+      "speed": 5,
+      "width": 10,
+      "height": 9,
+      "hitEffect": "flakExplosionBig",
+      "hitSound": "bigPop",
+      "despawnSound": "bigPop",
+      "splashDamageRadius": 32,
+      "splashDamage": 25,
+      "fragLifeMin": 0.7,
+      "frags": 7,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 20,
+        "lifetime": 31,
+        "speed": 2.5,
+        "width": 8,
+        "height": 5.5,
+        "hitEffect": "flakExplosion",
+        "hitSound": "explosion",
+        "despawnSound": "explosion",
+        "splashDamageRadius": 11,
+        "splashDamage": 8,
+        "fragLifeMin": 0.6,
+        "frags": 5,
+        "fragBullet": {
+          "type": "BasicBulletType",
+          "damage": 7,
+          "lifetime": 15,
+          "speed": 3.5,
+          "width": 5,
+          "height": 4,
+          "hitSound": "crackle",
+          "despawnSound": "crackle"
+        }
+      }
+    }
+  },
+  "requirements": [
+    "silicon/190",
+    "graphite/95",
+    "lead/115",
+    "titanium/145"
+  ],
+  "category": "turret",
+  "research": "ripple"
+}

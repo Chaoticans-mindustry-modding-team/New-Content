@@ -54,9 +54,9 @@
           "width": 5,
           "height": 4,
           "hitSound": "shoot",
-          "despawnSound": "shoot",
+          "despawnHit": true,
           "hitSoundPitch": 3,
-          "hitSoundVolume": 0.7
+          "hitSoundVolume": 0.2
         }
       }
     }

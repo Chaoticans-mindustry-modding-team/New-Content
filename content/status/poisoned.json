@@ -1,0 +1,26 @@
+{
+  "type": "StatusEffect",
+  "name": "Poisoned",
+  "speedMultiplier": 0.85,
+  "damage": 7,
+  "color": "7afc47ff",
+  "transitionDamage": 24,
+  "effectChance": 0.7,
+  "affinities": [
+    "corroded"
+  ],
+  "opposites": [
+    "wet"
+  ],
+  "effect": {
+    "type": "ParticleEffect",
+    "sizeFrom": 3,
+    "particles": 1,
+    "sizeTo": 0,
+    "lifetime": 8,
+    "colorFrom": "7afc47ff",
+    "colorTo": "7afc47ff",
+    "interp": "circleIn"
+  },
+  "applyExtend": true
+}

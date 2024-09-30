@@ -6,7 +6,7 @@
     "parent": "risso",
     "requirements": [
       "silicon/260",
-      "lead/170",
+      "metaglass/170",
       "plastanium/80"
     ]
   },

@@ -1,6 +1,6 @@
 {
   "localizedName": "Rainmaker",
-  "description": "Fires a barrage of rotationally-accelerated artillery at nearby targets.",
+  "description": "Fires a barrage of rotationally-accelerated artillery and flak at nearby targets.",
   "details": "they do not make rain but they rain bullets",
   "research": {
     "parent": "bn1-barrage",
@@ -28,9 +28,9 @@
       "mirror": false,
       "x": 0,
       "y": -5,
-      "inaccuracy": 20,
+      "inaccuracy": 5,
       "rotate": true,
-      "shootSound": "shoot",
+      "shootSound": "artillery",
       "rotateSpeed": 2.2,
       "shootCone": 45,
       "ejectEffect": "casing2Double",
@@ -45,16 +45,20 @@
         "speed": 6,
         "spin": 65,
         "drag": 0.06,
+        "trailSize": 3,
+        "scaleLife": true,
+        "shootEffect": "shootSmall",
         "hitEffect": "flakExplosion",
         "hitSound": "explosion",
         "despawnHit": true,
         "splashDamageRadius": 14,
-        "splashDamage": 36
+        "splashDamage": 36,
+        "despawnShake": 4
       }
     },
     {
       "name": "medium-mount-weapon",
-      "reload": 15,
+      "reload": 10,
       "mirror": true,
       "alternate": true,
       "x": 7,
@@ -62,14 +66,20 @@
       "inaccuracy": 2,
       "rotate": true,
       "rotateSpeed": 4,
+      "shootSound": "shoot",
       "shootCone": 25,
       "ejectEffect": "casing1",
       "bullet": {
-        "damage": 7,
+        "damage": 5,
         "width": 7,
         "height": 9,
         "lifetime": 30,
-        "speed": 4
+        "speed": 4,
+        "shootEffect": "shootSmall",
+        "hitEffect": "flakExplosion",
+        "despawnHit": true,
+        "splashDamageRadius": 12,
+        "splashDamage": 9
       }
     }
   ]

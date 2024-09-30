@@ -32,11 +32,13 @@
       "shootSound": "shoot",
       "rotateSpeed": 3.5,
       "shootCone": 45,
+      "inaccuracy": 6,
       "bullet": {
         "type": "BasicBulletType",
         "damage": 12,
         "width": 8,
         "height": 10,
+        "speed": 4,
         "lifetime": 70,
         "hitEffect": "flakExplosion",
         "splashDamageRadius": 15,
@@ -65,9 +67,9 @@
         "serrations": 0,
         "length": 40,
         "width": 7.5,
-        "colorFrom": "BF92F9FF",
-        "colorTo": "665C9F00",
-        "recoil": 40
+        "fromColor": "BF92F9FF",
+        "toColor": "665C9F00",
+        "recoil": -7
       }
     }
   ]

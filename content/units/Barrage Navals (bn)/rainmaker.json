@@ -15,7 +15,7 @@
   "drag": 0.13,
   "armor": 4.5,
   "targetAir": true,
-  "hitSize": 13.1,
+  "hitSize": 15,
   "health": 445,
   "accel": 0.4,
   "rotateSpeed": 3.3,

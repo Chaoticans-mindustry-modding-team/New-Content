@@ -16,7 +16,7 @@ silicon/50
 upgrades: [
   ["os1-flame", "os2-kiln"]
   ["pg1-reclusa", "pg2-sterile"]
-  ["streak, "streak"] // placeholder
+  ["streak", "streak"] // placeholder
   ["ya1-spark", "ya2-zap"]
   ]
   requirements: [

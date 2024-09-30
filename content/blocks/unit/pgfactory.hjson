@@ -16,11 +16,12 @@ requirements: [
   ]
   }
 {
-unit: pn1-archix
+unit: streak
 time: 1500
 requirements: [
 silicon/40
 metaglass/30
+plastanium/10
   ]
 }
 ]

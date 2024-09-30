@@ -1,7 +1,7 @@
 {
   "localizedName": "Rainmaker",
   "description": "Fires a barrage of rotationally-accelerated artillery at nearby targets.",
-  "details": "they do not make rain but they rain bullets. also bn2-swarm but remade",
+  "details": "they do not make rain but they rain bullets",
   "research": {
     "parent": "bn1-barrage",
     "requirements": [
@@ -15,7 +15,7 @@
   "drag": 0.13,
   "armor": 4.5,
   "targetAir": true,
-  "hitSize": 15,
+  "hitSize": 13.1,
   "health": 445,
   "accel": 0.4,
   "rotateSpeed": 3.3,
@@ -40,8 +40,9 @@
         "lifetime": 60,
         "width": 9,
         "height": 9,
-        "shrinkX": 9,
-        "shrinkY": 9,
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "speed": 6,
         "spin": 65,
         "drag": 0.98,
         "hitEffect": "flakExplosion",
@@ -65,8 +66,8 @@
       "ejectEffect": "casing1",
       "bullet": {
         "damage": 7,
-        "width": 9,
-        "height": 7,
+        "width": 7,
+        "height": 9,
         "lifetime": 30,
         "speed": 4
       }

@@ -6,7 +6,7 @@
     "parent": "bn1-barrage",
     "requirements": [
       "silicon/350",
-      "lead/200",
+      "metaglass/200",
       "titanium/165"
     ]
   },

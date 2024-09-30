@@ -1,6 +1,6 @@
 {
   "localizedName": "Streak",
-  "description": "Fires flak at nearby targets. Can dash forward, damaging anything caught in its path.",
+  "description": "Fires flak at nearby targets. Can dash forward, damaging all ground targets caught in its path.",
   "details": "geometry dash. i thought specialists were sap. No, they aren't. This is redesigns!",
   "research": {
     "parent": "risso",
@@ -74,6 +74,7 @@
         "length": 48,
         "width": 9,
         "lifetime": 40,
+        "collidesAir": false,
         "hitEffect": {
           "type": "ParticleEffect",
           "particles": 3,

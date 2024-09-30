@@ -34,6 +34,7 @@
       "shootCone": 45,
       "inaccuracy": 6,
       "ejectEffect": "casing2",
+      "layerOffset": 2,
       "bullet": {
         "type": "BasicBulletType",
         "damage": 6,
@@ -44,7 +45,7 @@
         "lifetime": 40,
         "hitEffect": "flakExplosion",
         "splashDamageRadius": 15,
-        "splashDamage": 18
+        "splashDamage": 12
       }
     },
     {

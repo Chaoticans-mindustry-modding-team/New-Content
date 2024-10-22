@@ -1,0 +1,74 @@
+{
+  "localizedName": "Corvette",
+  "description": "Fires clusters of velocity-high bullets at nearby targets",
+  "research": {
+    "requirements": [
+      "silicon/220",
+      "titanium/90"
+    ],
+    "parent": "flare"
+  },
+  "speed": 3,
+  "accel": 0.05,
+  "drag": 0.05,
+  "flying": true,
+  "health": 130,
+  "armor": 2,
+  "engineOffset": 6.5,
+  "targetAir": true,
+  "commandLimit": 5,
+  "circleTarget": false,
+  "hitSize": 9,
+  "rotateSpeed": 3,
+  "weapons": [
+    {
+      "name": "corvette-weapon",
+      "shootCone": 20,
+      "mirror": false,
+      "top": false,
+      "rotate": false,
+      "x": 0,
+      "y": -1,
+      "reload": 70,
+      "inaccuracy": 10,
+      "shootSound": "shoot",
+      "recoil": 0,
+      "shot": {
+        "shots": 3,
+        "shotDelay": 6
+      },
+      "bullet": {
+        "type": "BasicBulletType",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            "flakExplosion",
+            {
+              "type": "ParticleEffect",
+              "particles": 7,
+              "colorFrom": "FFA665",
+              "colorTo": "FFA665",
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "lifetime": 15,
+              "interp": "circleOut",
+              "sizeInterp": "circle"
+            }
+          ]
+        },
+        "ejectEffect": "casing2",
+        "despawnEffect": "none",
+        "despawnHit": true,
+        "backColor": "FF9494FF",
+        "damage": 9,
+        "speed": 3,
+        "lifetime": 60,
+        "width": 9,
+        "height": 10,
+        "shrinkY": 0.25,
+        "splashDamageRadius": 16,
+        "splashDamage": 16
+      }
+    }
+  ]
+}

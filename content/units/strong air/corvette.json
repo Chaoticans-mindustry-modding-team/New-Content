@@ -14,7 +14,7 @@
   "flying": true,
   "health": 220,
   "armor": 2,
-  "engineOffset": 7,
+  "engineOffset": 8,
   "targetAir": true,
   "commandLimit": 5,
   "circleTarget": false,

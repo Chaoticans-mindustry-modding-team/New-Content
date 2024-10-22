@@ -14,13 +14,13 @@
   "flying": true,
   "health": 150,
   "armor": 2,
-  "engineOffset": 8,
+  "engineOffset": 6,
   "targetAir": true,
   "commandLimit": 5,
   "circleTarget": false,
-  "hitSize": 13,
-  "rotateSpeed": 3,
-  "range": 180,
+  "hitSize": 8,
+  "rotateSpeed": 4,
+  "range": 181,
   "weapons": [
     {
       "name": "corvette-weapon",
@@ -29,7 +29,7 @@
       "top": false,
       "rotate": false,
       "x": 0,
-      "y": 4,
+      "y": 1,
       "reload": 70,
       "inaccuracy": 5,
       "shootY": 0,
@@ -37,7 +37,8 @@
       "recoil": 0,
       "velocityRnd": 0.2,
       "shoot": {
-        "shots": 3
+        "shots": 3,
+        "shotDelay": 5
       },
       "bullet": {
         "type": "BasicBulletType",

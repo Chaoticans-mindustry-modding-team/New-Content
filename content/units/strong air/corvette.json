@@ -18,7 +18,7 @@
   "targetAir": true,
   "commandLimit": 5,
   "circleTarget": false,
-  "hitSize": 8,
+  "hitSize": 10,
   "rotateSpeed": 4,
   "range": 181,
   "weapons": [

@@ -20,7 +20,7 @@
   "circleTarget": false,
   "hitSize": 10,
   "rotateSpeed": 4,
-  "range": 181,
+  "range": 121,
   "weapons": [
     {
       "name": "corvette-weapon",
@@ -67,12 +67,12 @@
         "backColor": "D06B53FF",
         "damage": 9,
         "speed": 4,
-        "lifetime": 45,
+        "lifetime": 30,
         "width": 9,
         "height": 10,
         "shrinkY": 0.25,
         "splashDamageRadius": 16,
-        "splashDamage": 10,
+        "splashDamage": 16,
         "status": "blasted"
       }
     }

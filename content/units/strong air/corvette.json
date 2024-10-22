@@ -12,13 +12,13 @@
   "accel": 0.05,
   "drag": 0.05,
   "flying": true,
-  "health": 130,
+  "health": 150,
   "armor": 2,
   "engineOffset": 8,
   "targetAir": true,
   "commandLimit": 5,
   "circleTarget": false,
-  "hitSize": 11,
+  "hitSize": 13,
   "rotateSpeed": 3,
   "range": 180,
   "weapons": [
@@ -31,12 +31,13 @@
       "x": 0,
       "y": 4,
       "reload": 70,
-      "inaccuracy": 10,
+      "inaccuracy": 5,
+      "shootY": 0,
       "shootSound": "shoot",
       "recoil": 0,
+      "velocityRnd": 0.2,
       "shoot": {
-        "shots": 3,
-        "shotDelay": 6
+        "shots": 3
       },
       "bullet": {
         "type": "BasicBulletType",
@@ -70,7 +71,8 @@
         "height": 10,
         "shrinkY": 0.25,
         "splashDamageRadius": 16,
-        "splashDamage": 16
+        "splashDamage": 16,
+        "status": "blasted"
       }
     }
   ]

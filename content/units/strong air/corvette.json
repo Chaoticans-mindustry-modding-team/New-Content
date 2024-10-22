@@ -12,7 +12,7 @@
   "accel": 0.05,
   "drag": 0.05,
   "flying": true,
-  "health": 220,
+  "health": 180,
   "armor": 2,
   "engineOffset": 8,
   "targetAir": true,
@@ -72,7 +72,7 @@
         "height": 10,
         "shrinkY": 0.25,
         "splashDamageRadius": 16,
-        "splashDamage": 16,
+        "splashDamage": 10,
         "status": "blasted"
       }
     }

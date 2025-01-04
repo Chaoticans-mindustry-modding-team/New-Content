@@ -18,7 +18,7 @@
   "targetAir": true,
   "hitSize": 12,
   "health": 320,
-  "rotateSpeed": 3.5,
+  "rotateSpeed": 4,
   "trailLength": 0,
   "rotateShooting": false,
   "weapons": [

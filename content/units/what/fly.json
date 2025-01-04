@@ -1,12 +1,6 @@
 {
         "localizedName": "Fly",
 	"description": "the worst thing you ever see",
-        "research": {
-		"parent": "flare"
-		"requirements": [
-		"copper/20"
-		]
-}
         "speed": 10,
         "accel": 0.9,
         "drag": 0.9,

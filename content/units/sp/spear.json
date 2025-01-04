@@ -8,6 +8,9 @@
     "requirements": [
       "silicon/2800",
       "graphite/2800"
+    ],
+    "objectives": [
+      "additiveReconstructor"
     ]
   },
   "type": "naval",

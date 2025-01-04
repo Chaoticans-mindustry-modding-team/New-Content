@@ -2,6 +2,7 @@
   "localizedName": "Spear",
   "description": "Smothers enemies with a flamethrower heals allies with two built-in repair mounts. Can dash forward, damaging all ground targets caught in its path.",
   "details": "Yee. this is the descendant of Angodia! :thing:",
+  "hideDetails": false,
   "research": {
     "parent": "streak",
     "requirements": [

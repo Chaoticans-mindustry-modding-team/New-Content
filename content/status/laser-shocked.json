@@ -1,6 +1,6 @@
 {
 "type": "StatusEffect",
-"name": "[red]Laser Shock",
+"name": "Laser Shock",
   "speedMultiplier": 0.2,
   "reloadMultiplier": 0.9
   "damage": 1,

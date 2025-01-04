@@ -1,10 +1,9 @@
 {
   "type": "StatusEffect",
   "name": "Poisoned",
-  "speedMultiplier": 0.85,
-  "damage": 7,
+  "damage": 0.2,
   "color": "7afc47ff",
-  "transitionDamage": 24,
+  "transitionDamage": 6,
   "effectChance": 0.7,
   "affinities": [
     "corroded"
@@ -21,6 +20,5 @@
     "colorFrom": "7afc47ff",
     "colorTo": "7afc47ff",
     "interp": "circleIn"
-  },
-  "applyExtend": true
+  }
 }

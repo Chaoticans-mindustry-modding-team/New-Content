@@ -17,38 +17,12 @@
   "accel": 0.3,
   "armor": 5,
   "targetAir": true,
-  "hitSize": 12,
+  "hitSize": 14,
   "health": 320,
   "rotateSpeed": 4,
   "trailLength": 0,
   "rotateShooting": false,
   "weapons": [
-    {
-      "name": "purple-flak-gun",
-      "reload": 25,
-      "mirror": false,
-      "x": 0,
-      "y": -4,
-      "rotate": true,
-      "shootSound": "shoot",
-      "rotateSpeed": 3.5,
-      "shootCone": 45,
-      "inaccuracy": 6,
-      "ejectEffect": "casing2",
-      "layerOffset": 2,
-      "bullet": {
-        "type": "BasicBulletType",
-        "damage": 6,
-        "width": 8,
-        "height": 10,
-        "shrinkY": 0.1,
-        "speed": 2.5,
-        "lifetime": 40,
-        "hitEffect": "flakExplosion",
-        "splashDamageRadius": 15,
-        "splashDamage": 12
-      }
-    },
     {
       "name": "streak-weapon",
       "reload": 400,
@@ -95,6 +69,31 @@
         "toColor": "665C9FFF",
         "recoil": -7,
         "despawnHit": false
+      }
+    },
+    {
+      "name": "purple-flak-gun",
+      "reload": 25,
+      "mirror": false,
+      "x": 0,
+      "y": -4,
+      "rotate": true,
+      "shootSound": "shoot",
+      "rotateSpeed": 3.5,
+      "shootCone": 45,
+      "inaccuracy": 6,
+      "ejectEffect": "casing2",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 6,
+        "width": 8,
+        "height": 10,
+        "shrinkY": 0.1,
+        "speed": 2.5,
+        "lifetime": 40,
+        "hitEffect": "flakExplosion",
+        "splashDamageRadius": 15,
+        "splashDamage": 12
       }
     }
   ]

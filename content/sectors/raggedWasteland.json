@@ -1,0 +1,14 @@
+{
+  "localizedName": "Ragged Wastelands",
+  "description": "Centuries of harsh winds and scorching temperatures have molded this shore into a withered wasteland.\n\nSilver, which is rare on Serpulo, is abnormally abundant in this sector. Gather as much of it as possible.\n\nAlthough it may seem barren, the enemy has stationed numerous unique naval units at this location. Eradicate them.",
+  "sector": 97,
+  "captureWave": 20,
+  "difficulty": 3,
+  "planet": "serpulo",
+  "research": {
+    "parent": "windsweptIslands",
+    "objectives": [
+      "retusa"
+    ]
+  }
+}

@@ -25,6 +25,7 @@
   "rotateSpeed": 2.3,
   "trailLength": 22,
   "rotateShooting": false,
+  "range": 192,
   "weapons": [
     {
       "name": "falter-weapon",
@@ -105,13 +106,13 @@
         "pierceBuilding": true,
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
-        "shrinkY": 0.2,
+        "shrinkY": 0.5,
         "shrinkInterp": "circleIn",
         "hittable": false,
         "reflectable": false,
         "absorbable": false,
         "hitSound": "sap",
-        "despawnSound": "none",
+        "despawnSound": "plasmaboom",
         "keepVelocity": false,
         "despawnEffect": {
           "type": "MultiEffect",
@@ -130,7 +131,7 @@
             {
               "type": "WaveEffect",
               "strokeFrom": 3,
-              "strokeTo": 2,
+              "strokeTo": 0,
               "sizeFrom": 0,
               "sizeTo": 25,
               "colorFrom": "BF92F9FF",

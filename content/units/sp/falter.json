@@ -1,242 +1,256 @@
 {
-  "localizedName": "Falter",
-  "description": "Fires dual lasers at nearby enemy targets. Targets enemy projectiles with a point defense turret. Can dash forward, damaging everything in its path and releasing a shockwave that damages and slows anything hit by it.",
-  "details": "makes your heath bar falter",
-  "hideDetails": false,
-  "research": {
-    "parent": "spear",
-    "requirements": [
-      "silicon/10000",
-      "titanium/6100",
-      "metaglass/2800"
-    ],
-    "objectives": [
-      "multiplicative-reconstructor"
+  localizedName: Falter
+  description: Fires dual lasers at nearby enemy targets. Targets enemy projectiles with a point defense turret. Can dash forward, damaging everything in its path and releasing a shockwave that damages and slows anything hit by it.
+  details: makes your heath bar falter
+  hideDetails: false
+  research:
+  {
+    parent: spear
+    requirements:
+    [
+      silicon/10000
+      titanium/6100
+      metaglass/2800
     ]
-  },
-  "type": "naval",
-  "speed": 0.9,
-  "drag": 0.13,
-  "accel": 0.15,
-  "armor": 9,
-  "targetAir": true,
-  "hitSize": 17,
-  "health": 980,
-  "rotateSpeed": 2.3,
-  "trailLength": 22,
-  "rotateShooting": false,
-  "range": 192,
-  "weapons": [
+    objectives:
+    [
+      multiplicative-reconstructor
+    ]
+  }
+  type: naval
+  speed: 0.9
+  drag: 0.13
+  accel: 0.15
+  armor: 9
+  targetAir: true
+  hitSize: 17
+  health: 980
+  rotateSpeed: 2.3
+  trailLength: 22
+  rotateShooting: false
+  range: 192
+  weapons:
+  [
     {
-      "name": "falter-weapon",
-      "reload": 450,
-      "mirror": false,
-      "top": false,
-      "x": 0,
-      "y": 0,
-      "shootY": 24,
-      "recoil": 0,
-      "rotate": false,
-      "shootSound": "bigshot",
-      "shootCone": 45,
-      "inaccuracy": 0,
-      "shake": 4.5,
-      "smokeEffect": "none",
-      "ejectEffect": "casing3Double",
-      "heatColor": "BF92F9FF",
-      "cooldownTime": 450,
-      "bullet": {
-        "type": "ShrapnelBulletType",
-        "shootEffect": "unitDust",
-        "damage": 300,
-        "serrations": 0,
-        "length": 120,
-        "width": 12,
-        "lifetime": 40,
-        "collidesAir": true,
-        "hitEffect": {
-          "type": "ParticleEffect",
-          "particles": 5,
-          "lifetime": 100,
-          "lightColor": "BF92F9FF",
-          "length": 45,
-          "cone": -360,
-          "sizeFrom": 7,
-          "sizeTo": 0,
-          "lenFrom": 5,
-          "interp": "circleOut",
-          "lenTo": 0,
-          "colorFrom": "BF92F9FF",
-          "colorTo": "665C9F00"
-        },
-        "fromColor": "BF92F9FF",
-        "toColor": "665C9FFF",
-        "recoil": -20,
-        "despawnHit": false
+      name: falter-weapon
+      reload: 450
+      mirror: false
+      top: false
+      x: 0
+      y: 0
+      shootY: 24
+      recoil: 0
+      rotate: false
+      shootSound: bigshot
+      shootCone: 45
+      inaccuracy: 0
+      shake: 4.5
+      smokeEffect: none
+      ejectEffect: casing3Double
+      heatColor: BF92F9FF
+      cooldownTime: 450
+      bullet:
+      {
+        type: ShrapnelBulletType
+        shootEffect: unitDust
+        damage: 300
+        serrations: 0
+        length: 120
+        width: 12
+        lifetime: 40
+        collidesAir: true
+        hitEffect:
+        {
+          type: ParticleEffect
+          particles: 5
+          lifetime: 100
+          lightColor: BF92F9FF
+          length: 45
+          cone: -360
+          sizeFrom: 7
+          sizeTo: 0
+          lenFrom: 5
+          interp: circleOut
+          lenTo: 0
+          colorFrom: BF92F9FF
+          colorTo: 665C9F00
+        }
+        fromColor: BF92F9FF
+        toColor: 665C9FFF
+        recoil: -20
+        despawnHit: false
       }
-    },
+    }
     {
-      "name": "falter-weapon-extra",
-      "reload": 450,
-      "mirror": false,
-      "top": false,
-      "x": 0,
-      "y": 0,
-      "shootY": 24,
-      "recoil": 0,
-      "rotate": false,
-      "shootSound": "none",
-      "shootCone": 45,
-      "inaccuracy": 0,
-      "shake": 4.5,
-      "smokeEffect": "none",
-      "ejectEffect": "none",
-      "bullet": {
-        "type": "BasicBulletType",
-        "shootEffect": "none",
-        "width": 32,
-        "height": 12,
-        "speed": 14,
-        "drag": 0.07,
-        "lifetime": 80,
-        "sprite": "newunits-shockwave",
-        "damage": 60,
-        "knockback": 15,
-        "pierce": true,
-        "pierceBuilding": true,
-        "frontColor": "BF92F9FF",
-        "backColor": "9D70D7FF",
-        "shrinkY": 0.5,
-        "shrinkInterp": "circleIn",
-        "hittable": false,
-        "reflectable": false,
-        "absorbable": false,
-        "hitSound": "sap",
-        "despawnSound": "plasmaboom",
-        "keepVelocity": false,
-        "despawnEffect": {
-          "type": "MultiEffect",
-          "effects": [
+      name: falter-weapon-extra
+      reload: 450
+      mirror: false
+      top: false
+      x: 0
+      y: 0
+      shootY: 24
+      recoil: 0
+      rotate: false
+      shootSound: none
+      shootCone: 45
+      inaccuracy: 0
+      shake: 4.5
+      smokeEffect: none
+      ejectEffect: none
+      shootSound: none
+      bullet:
+      {
+        type: BasicBulletType
+        shootEffect: none
+        width: 32
+        height: 12
+        speed: 14
+        drag: 0.07
+        lifetime: 80
+        sprite: newunits-shockwave
+        damage: 60
+        knockback: 15
+        pierce: true
+        pierceBuilding: true
+        frontColor: BF92F9FF
+        backColor: 9D70D7FF
+        shrinkY: 0.5
+        shrinkInterp: circleIn
+        hittable: false
+        reflectable: false
+        absorbable: false
+        hitSound: sap
+        despawnSound: plasmaboom
+        keepVelocity: false
+        despawnEffect: {
+          type: MultiEffect
+          effects:
+          [
             {
-              "type": "ParticleEffect",
-              "particles": 10,
-              "colorFrom": "BF92F9FF",
-              "colorTo": "9D70D7FF",
-              "sizeFrom": 4,
-              "sizeTo": 0,
-              "interp": "circleOut",
-              "sizeInterp": "circleIn",
-              "length": 30
-            },
+              type: ParticleEffect
+              particles: 10
+              colorFrom: BF92F9FF
+              colorTo: 9D70D7FF
+              sizeFrom: 4
+              sizeTo: 0
+              interp: circleOut
+              sizeInterp: circleIn
+              length: 30
+            }
             {
-              "type": "WaveEffect",
-              "strokeFrom": 3,
-              "strokeTo": 0,
-              "sizeFrom": 0,
-              "sizeTo": 25,
-              "colorFrom": "BF92F9FF",
-              "colorTo": "9D70D7FF",
-              "interp": "circleOut"
+              type: WaveEffect
+              strokeFrom: 3
+              strokeTo: 0
+              sizeFrom: 0
+              sizeTo: 25
+              colorFrom: BF92F9FF
+              colorTo: 9D70D7FF
+              interp: circleOut
             }
           ]
-        },
-        "hitEffect": {
-          "type": "MultiEffect",
-          "effects": [
+        }
+        hitEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
             {
-              "type": "ParticleEffect",
-              "particles": 4,
-              "colorFrom": "BF92F9FF",
-              "colorTo": "9D70D7FF",
-              "sizeFrom": 3,
-              "sizeTo": 0,
-              "interp": "circleOut",
-              "sizeInterp": "circleIn",
-              "length": 20
-            },
+              type: ParticleEffect
+              particles: 4
+              colorFrom: BF92F9FF
+              colorTo: 9D70D7FF
+              sizeFrom: 3
+              sizeTo: 0
+              interp: circleOut
+              sizeInterp: circleIn
+              length: 20
+            }
             {
-              "type": "WaveEffect",
-              "sizeFrom": 0,
-              "sizeTo": 15,
-              "colorFrom": "BF92F9FF",
-              "colorTo": "9D70D7FF",
-              "interp": "circleOut"
+              type: WaveEffect
+              sizeFrom: 0
+              sizeTo: 15
+              colorFrom: BF92F9FF
+              colorTo: 9D70D7FF
+              interp: circleOut
             }
           ]
-        },
-        "status": "slow",
-        "statusDuration": 450,
-        "despawnHit": false
+        }
+        status: slow
+        statusDuration: 450
+        despawnHit: false
       }
-    },
+    }
     {
-      "name": "fast-point-defense-mount",
-      "type": "PointDefenseWeapon",
-      "reload": 7,
-      "shootCone": 15,
-      "mirror": false,
-      "top": true,
-      "targetInterval": 10,
-      "targetSwitchInterval": 10,
-      "rotate": true,
-      "controllable": false,
-      "autoTarget": true,
-      "x": 0,
-      "y": 6,
-      "shootSound": "pew",
-      "bullet": {
-        "shootEffect": "sparkShoot",
-        "hitEffect": "pointHit",
-        "damage": 15,
-        "maxRange": 132
+      name: fast-point-defense-mount
+      type: PointDefenseWeapon
+      reload: 7
+      shootCone: 15
+      mirror: false
+      top: true
+      targetInterval: 10
+      targetSwitchInterval: 10
+      rotate: true
+      controllable: false
+      autoTarget: true
+      x: 0
+      y: 6
+      shootSound: pew
+      bullet:
+      {
+        shootEffect: sparkShoot
+        hitEffect: pointHit
+        damage: 6
+        maxRange: 132
       }
-    },
+    }
     {
-      "name": "swift-laser-mount",
-      "reload": 60,
-      "mirror": false,
-      "x": 0,
-      "y": -8,
-      "rotate": true,
-      "shootSound": "laser",
-      "rotateSpeed": 7,
-      "shoot": {
-        "type": "ShootSpread",
-        "shots": 2,
-        "spread": 5
-      },
-      "shootCone": 20,
-      "bullet": {
-        "type": "LaserBulletType",
-        "length": 140,
-        "width": 10,
-        "damage": 20,
-        "hitEffect": {
-          "type": "ParticleEffect",
-          "particles": 5,
-          "lifetime": 100,
-          "lightColor": "BF92F9FF",
-          "length": 45,
-          "cone": -360,
-          "sizeFrom": 6,
-          "sizeTo": 0,
-          "lenFrom": 5,
-          "interp": "circleOut",
-          "lenTo": 0,
-          "colorFrom": "BF92F9FF",
-          "colorTo": "665C9F00"
-        },
-        "status": "sapped",
-        "statusDuration": 100,
-        "colors": [
-          "BF92F966",
-          "BF92F9FF",
-          "ffffff"
-        ],
-        "lightColor": "BF92F9FF",
-        "sideAngle": 90,
-        "sideLength": 1,
-        "sideWidth": 1
+      name: swift-laser-mount
+      reload: 60
+      mirror: false
+      x: 0
+      y: -8
+      rotate: true
+      shootSound: laser
+      rotateSpeed: 7
+      shoot:
+      {
+        type: ShootSpread
+        shots: 2
+        spread: 5
+      }
+      shootCone: 20
+      bullet:
+      {
+        type: LaserBulletType
+        length: 140
+        width: 10
+        damage: 20
+        hitEffect:
+        {
+          type: ParticleEffect
+          particles: 5
+          lifetime: 100
+          lightColor: BF92F9FF
+          length: 45
+          cone: -360
+          sizeFrom: 6
+          sizeTo: 0
+          lenFrom: 5
+          interp: circleOut
+          lenTo: 0
+          colorFrom: BF92F9FF
+          colorTo: 665C9F00
+        }
+        colors:
+        [
+          9D70D766
+          9D70D766
+          ffffff
+        ]
+        lightColor: BF92F9FF
+        sideAngle: 90
+        sideLength: 1
+        sideWidth: 1
       }
     }
   ]

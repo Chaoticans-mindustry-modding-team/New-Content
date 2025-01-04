@@ -93,9 +93,10 @@
       "bullet": {
         "type": "BasicBulletType",
         "shootEffect": "none",
-        "width": 24,
+        "width": 32,
         "height": 12,
         "speed": 9,
+        "drag": 0.02,
         "lifetime": 35,
         "sprite": "newunits-shockwave",
         "damage": 30,

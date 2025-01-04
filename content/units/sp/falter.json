@@ -33,7 +33,7 @@
       "top": false,
       "x": 0,
       "y": 0,
-      "shootY": 8,
+      "shootY": 24,
       "recoil": 0,
       "rotate": false,
       "shootSound": "bigshot",
@@ -47,7 +47,7 @@
       "bullet": {
         "type": "ShrapnelBulletType",
         "shootEffect": "unitDust",
-        "damage": 450,
+        "damage": 300,
         "serrations": 0,
         "length": 120,
         "width": 12,
@@ -71,54 +71,73 @@
         "fromColor": "BF92F9FF",
         "toColor": "665C9FFF",
         "recoil": -20,
-        "despawnHit": false,
-        "spawnBullet": {
-          "type": "BasicBulletType",
-          "shootEffect": "none",
-          "width": 24,
-          "height": 8,
-          "speed": 8,
-          "lifetime": 50,
-          "sprite": "newunits-shockwave",
-          "damage": 30,
-          "knockback": 15,
-          "pierce": true,
-          "pierceBuilding": true,
-          "frontColor": "BF92F9FF",
-          "backColor": "9D70D7FF",
-          "shrinkY": 8,
-          "shrinkInterp": "circleIn",
-          "hittable": false,
-          "reflectable": false,
-          "absorbable": false,
-          "hitEffect": {
-            "type": "MultiEffect",
-            "effects": [
-              {
-                "type": "ParticleEffect",
-                "particles": 4,
-                "colorFrom": "BF92F9FF",
-                "colorTo": "9D70D7FF",
-                "sizeFrom": 3,
-                "sizeTo": 0,
-                "interp": "circleOut",
-                "sizeInterp": "circleIn",
-                "length": 20
-              },
-              {
-                "type": "WaveEffect",
-                "sizeFrom": 0,
-                "sizeTo": 15,
-                "colorFrom": "BF92F9FF",
-                "colorTo": "9D70D7FF",
-                "interp": "circleOut"
-              }
-            ]
-          },
-          "status": "slow",
-          "statusDuration": 450,
-          "despawnHit": false
-        }
+        "despawnHit": false
+      }
+    },
+    {
+      "name": "falter-weapon-extra",
+      "reload": 450,
+      "mirror": false,
+      "top": false,
+      "x": 0,
+      "y": 0,
+      "shootY": 24,
+      "recoil": 0,
+      "rotate": false,
+      "shootSound": "none",
+      "shootCone": 25,
+      "inaccuracy": 0,
+      "shake": 4.5,
+      "smokeEffect": "none",
+      "ejectEffect": "none",
+      "bullet": {
+        "type": "BasicBulletType",
+        "shootEffect": "none",
+        "width": 24,
+        "height": 8,
+        "speed": 16,
+        "lifetime": 50,
+        "sprite": "newunits-shockwave",
+        "damage": 30,
+        "knockback": 15,
+        "pierce": true,
+        "pierceBuilding": true,
+        "frontColor": "BF92F9FF",
+        "backColor": "9D70D7FF",
+        "shrinkY": 8,
+        "shrinkInterp": "circleIn",
+        "hittable": false,
+        "reflectable": false,
+        "absorbable": false,
+        "hitSound": "sap",
+        "despawnSound": "none",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 4,
+              "colorFrom": "BF92F9FF",
+              "colorTo": "9D70D7FF",
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "interp": "circleOut",
+              "sizeInterp": "circleIn",
+              "length": 20
+            },
+            {
+              "type": "WaveEffect",
+              "sizeFrom": 0,
+              "sizeTo": 15,
+              "colorFrom": "BF92F9FF",
+              "colorTo": "9D70D7FF",
+              "interp": "circleOut"
+            }
+          ]
+        },
+        "status": "slow",
+        "statusDuration": 450,
+        "despawnHit": false
       }
     },
     {
@@ -133,6 +152,7 @@
       "rotate": true,
       "controllable": false,
       "autoTarget": true,
+      "x": 0,
       "y": 6,
       "shootSound": "pew",
       "bullet": {
@@ -161,7 +181,7 @@
         "type": "LaserBulletType",
         "length": 140,
         "width": 10,
-        "damage": 10,
+        "damage": 20,
         "hitEffect": {
           "type": "ParticleEffect",
           "particles": 5,

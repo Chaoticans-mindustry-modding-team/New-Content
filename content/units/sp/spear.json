@@ -10,7 +10,7 @@
       "graphite/2800"
     ],
     "objectives": [
-      "additiveReconstructor"
+      "additive-reconstructor"
     ]
   },
   "type": "naval",

@@ -96,7 +96,7 @@
         "width": 32,
         "height": 12,
         "speed": 9,
-        "drag": 0.02,
+        "drag": 0.12,
         "lifetime": 35,
         "sprite": "newunits-shockwave",
         "damage": 30,

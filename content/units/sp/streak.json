@@ -6,9 +6,9 @@
   "research": {
     "parent": "risso",
     "requirements": [
-      "silicon/900",
-      "metaglass/1700",
-      "plastanium/1300"
+      "silicon/1300",
+      "metaglass/2400",
+      "plastanium/1700"
     ]
   },
   "type": "naval",

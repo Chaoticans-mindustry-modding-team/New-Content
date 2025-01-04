@@ -11,7 +11,7 @@
       "plastanium/1700"
     ],
     "objectives": [
-      "windsweptIslands"
+      {"type": "SectorComplete", "preset": "windsweptIslands"}
     ]
   },
   "type": "naval",

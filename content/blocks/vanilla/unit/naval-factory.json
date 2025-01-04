@@ -1,0 +1,30 @@
+{
+  "plans": [
+    {
+      "unit": "risso",
+      "time": 2700,
+      "requirements": [
+        "silicon/20",
+        "metaglass/35"
+      ]
+    },
+    {
+      "unit": "retusa",
+      "time": 3000,
+      "requirements": [
+        "silicon/15",
+        "metaglass/25",
+        "titanium/20"
+      ]
+    },
+    {
+      "unit": "streak",
+      "time": 3000,
+      "requirements": [
+        "silicon/20",
+        "metaglass/35",
+        "plastanium/25"
+      ]
+    }
+  ]
+}

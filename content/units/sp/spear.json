@@ -6,9 +6,8 @@
   "research": {
     "parent": "streak",
     "requirements": [
-      "silicon/380",
-      "metaglass/260",
-      "plastanium/130"
+      "silicon/2800",
+      "graphite/2800"
     ]
   },
   "type": "naval",

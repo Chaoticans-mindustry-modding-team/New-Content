@@ -9,6 +9,9 @@
       "silicon/1300",
       "metaglass/2400",
       "plastanium/1700"
+    ],
+    "objectives": [
+      "windsweptIslands"
     ]
   },
   "type": "naval",

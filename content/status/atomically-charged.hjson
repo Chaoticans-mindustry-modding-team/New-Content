@@ -1,10 +1,9 @@
 {
   type: StatusEffect
-  name: "[sky]Atomically Charged"
-  description: "[sky]Too much particle energy surges through your circuts."
+  name: Atomically Charged
   speedMultiplier: 0.6
   reloadMultiplier: 0.9
-  damage: 27
+  damage: 1
   color: 80c9f2ff
   transitionDamage: 35
   effectChance: 0.8

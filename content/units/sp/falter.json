@@ -94,9 +94,9 @@
         "type": "BasicBulletType",
         "shootEffect": "none",
         "width": 24,
-        "height": 8,
-        "speed": 5,
-        "lifetime": 30,
+        "height": 12,
+        "speed": 9,
+        "lifetime": 35,
         "sprite": "newunits-shockwave",
         "damage": 30,
         "knockback": 15,
@@ -104,7 +104,7 @@
         "pierceBuilding": true,
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
-        "shrinkY": 1,
+        "shrinkY": 0.1,
         "shrinkInterp": "circleIn",
         "hittable": false,
         "reflectable": false,
@@ -112,7 +112,32 @@
         "hitSound": "sap",
         "despawnSound": "none",
         "keepVelocity": false,
-        "despawnEffect": "none",
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 10,
+              "colorFrom": "BF92F9FF",
+              "colorTo": "9D70D7FF",
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "interp": "circleOut",
+              "sizeInterp": "circleIn",
+              "length": 30
+            },
+            {
+              "type": "WaveEffect",
+              "strokeFrom": 3,
+              "strokeTo": 2,
+              "sizeFrom": 0,
+              "sizeTo": 25,
+              "colorFrom": "BF92F9FF",
+              "colorTo": "9D70D7FF",
+              "interp": "circleOut"
+            }
+          ]
+        },
         "hitEffect": {
           "type": "MultiEffect",
           "effects": [

@@ -17,7 +17,7 @@
   "mechFrontSway": 2,
   "mechSideSway": 0.75,
   "itemCapacity": 140,
-  "range": 200,
+  "range": 180,
   "weapons": [
     {
       "name": "tyrant-weapon",
@@ -26,10 +26,11 @@
       "x": 22,
       "y": 0,
       "top": false,
-      "reload": 30,
+      "reload": 20,
       "shake": 3,
       "ejectEffect": "casing4",
       "shootSound": "shootBig",
+      "shootY": 20,
       "shoot": {
         "shots": 3,
         "shotDelay": 4
@@ -38,17 +39,18 @@
       "inaccuracy": 2,
       "bullet": {
         "type": "BasicBulletType",
-        "damage": 90,
-        "speed": 20,
+        "damage": 100,
+        "speed": 18,
         "lifetime": 10,
-        "width": 17,
-        "height": 40,
+        "width": 16,
+        "height": 36,
         "pierce": true,
         "pierceBuilding": true,
+        "pierceCap": 7,
         "shootEffect": "shootBig",
         "hitEffect": "flakExplosionBig",
         "splashDamageRadius": 26,
-        "splashDamage": 24
+        "splashDamage": 36
       }
     }
   ]

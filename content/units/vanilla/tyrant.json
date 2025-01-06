@@ -1,10 +1,10 @@
 {
   "name": "Tyrant",
-  "description": "Fires rounds enormous piercing bullets at enemy targets.",
+  "description": "Fires rounds of enormous piercing bullets at enemy targets.",
   "details": "t6 dagger. Powerful. how does the sprite not look terrible??? im good now???",
   "hideDetails": false,
   "type": "mech",
-  "health": 7800,
+  "health": 78000,
   "armor": 24,
   "speed": 0.3,
   "hitSize": 28,
@@ -39,18 +39,18 @@
       "inaccuracy": 2,
       "bullet": {
         "type": "BasicBulletType",
-        "damage": 100,
+        "damage": 90,
         "speed": 18,
         "lifetime": 10,
-        "width": 16,
-        "height": 36,
+        "width": 15,
+        "height": 35,
         "pierce": true,
         "pierceBuilding": true,
         "pierceCap": 7,
         "shootEffect": "shootBig",
         "hitEffect": "flakExplosionBig",
         "splashDamageRadius": 26,
-        "splashDamage": 36
+        "splashDamage": 30
       }
     }
   ]

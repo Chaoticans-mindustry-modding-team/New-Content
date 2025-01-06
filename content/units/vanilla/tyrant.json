@@ -1,0 +1,55 @@
+{
+  "name": "Tyrant",
+  "description": "Fires rounds enormous piercing bullets at enemy targets.",
+  "details": "t6 dagger. Powerful. how does the sprite not look terrible??? im good now???",
+  "hideDetails": false,
+  "type": "mech",
+  "health": 7800,
+  "armor": 24,
+  "speed": 0.3,
+  "hitSize": 28,
+  "rotateSpeed": 1.4,
+  "targetAir": true,
+  "circleTarget": false,
+  "mechStepParticles": true,
+  "stepShake": 1,
+  "drownTimeMultiplier": 8,
+  "mechFrontSway": 2,
+  "mechSideSway": 0.75,
+  "itemCapacity": 140,
+  "range": 200,
+  "weapons": [
+    {
+      "name": "tyrant-weapon",
+      "mirror": true,
+      "alternate": true,
+      "x": 22,
+      "y": 0,
+      "top": false,
+      "reload": 30,
+      "shake": 3,
+      "ejectEffect": "casing4",
+      "shootSound": "shootBig",
+      "shoot": {
+        "shots": 3,
+        "shotDelay": 4
+      },
+      "recoil": 6,
+      "inaccuracy": 2,
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 90,
+        "speed": 20,
+        "lifetime": 10,
+        "width": 17,
+        "height": 40,
+        "pierce": true,
+        "pierceBuilding": true,
+        "shootEffect": "shootBig",
+        "hitEffect": "flakExplosionBig",
+        "splashDamageRadius": 26,
+        "splashDamage": 24
+      }
+    }
+  ]
+}

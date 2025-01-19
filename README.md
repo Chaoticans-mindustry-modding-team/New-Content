@@ -3,6 +3,9 @@ It's cle's first mod! Yay! it adds a lot lf things, like new paths for units, su
 # WARNING
 This mod is not close to being finished. Bxe patient!
 
+#Others
+Discord server: https://discord.gg/NFdZAQRgSK
+
 Thanks to my spriter Aegires for making some of theese awesome sprites!
 # overview
 Units. (Why wouldn't there be units?), main reason why i made this mod.

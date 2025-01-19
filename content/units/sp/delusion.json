@@ -55,7 +55,7 @@
       "bullet": {
         "type": "ShrapnelBulletType",
         "shootEffect": "unitDust",
-        "damage": 12000,
+        "damage": 1200,
         "serrations": 3,
         "length": 160,
         "width": 12,
@@ -233,7 +233,7 @@
       "shootSound": "laser",
       "smokeEffect": "unitDust",
       "heatColor": "BF92F9FF",
-      "cooldownTime": 500,
+      "cooldownTime": 60,
       "shootY": 8,
       "bullet": {
         "type": "BasicBulletType",

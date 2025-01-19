@@ -1,0 +1,321 @@
+{
+  "localizedName": "Delusion",
+  "description": "Fires a barrage of pulling lasers and shockwaves at enemy target. Can dash forward, heavily damaging everything in its path and releasing a shockwave that damages and slows anything hit by it.",
+  "details": "hits you hard in the head and you become delusional",
+  "hideDetails": false,
+  "research": {
+    "parent": "falter",
+    "requirements": [
+      "silicon/83000",
+      "titanium/73000",
+      "plastanium/62000"
+    ],
+    "objectives": [
+      "exponential-reconstructor"
+    ]
+  },
+  "type": "naval",
+  "speed": 0.75,
+  "drag": 0.12,
+  "accel": 0.15,
+  "armor": 13,
+  "targetAir": true,
+  "hitSize": 32,
+  "health": 11500,
+  "rotateSpeed": 1.8,
+  "trailLength": 50,
+  "trailScl": 3,
+  "waveTrailX": 12,
+  "waveTrailY": -28,
+  "rotateShooting": false,
+  "range": 192,
+  "weapons": [
+    {
+      "name": "delusion-weapon",
+      "reload": 500,
+      "mirror": false,
+      "top": false,
+      "x": 0,
+      "y": 0,
+      "shootY": 24,
+      "recoil": 0,
+      "rotate": false,
+      "shootSound": "bigshot",
+      "shootCone": 50,
+      "inaccuracy": 0,
+      "shake": 5.5,
+      "smokeEffect": "none",
+      "ejectEffect": "none",
+      "heatColor": "BF92F9FF",
+      "cooldownTime": 500,
+      "bullet": {
+        "type": "ShrapnelBulletType",
+        "shootEffect": "unitDust",
+        "damage": 550,
+        "serrations": 3,
+        "length": 160,
+        "width": 12,
+        "lifetime": 50,
+        "collidesAir": true,
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "particles": 5,
+          "lifetime": 100,
+          "lightColor": "BF92F9FF",
+          "length": 50,
+          "cone": -360,
+          "sizeFrom": 7,
+          "sizeTo": 0,
+          "lenFrom": 5,
+          "interp": "circleOut",
+          "lenTo": 0,
+          "colorFrom": "BF92F9FF",
+          "colorTo": "665C9F00"
+        },
+        "fromColor": "BF92F9FF",
+        "toColor": "665C9FFF",
+        "recoil": -30,
+        "despawnHit": false
+      }
+    },
+    {
+      "name": "delusion-weapon-extra",
+      "reload": 550,
+      "mirror": false,
+      "top": false,
+      "x": 0,
+      "y": 0,
+      "shootY": 24,
+      "recoil": 0,
+      "rotate": false,
+      "shootSound": "none",
+      "shootCone": 50,
+      "inaccuracy": 0,
+      "shake": 4.5,
+      "smokeEffect": "none",
+      "ejectEffect": "none",
+      "bullet": {
+        "type": "BasicBulletType",
+        "shootEffect": "none",
+        "width": 48,
+        "height": 24,
+        "speed": 16,
+        "drag": 0.07,
+        "lifetime": 80,
+        "sprite": "newunits-shockwave",
+        "damage": 70,
+        "knockback": 18,
+        "pierce": true,
+        "pierceBuilding": true,
+        "frontColor": "BF92F9FF",
+        "backColor": "9D70D7FF",
+        "shrinkY": 0.5,
+        "shrinkInterp": "circleIn",
+        "hittable": false,
+        "reflectable": false,
+        "absorbable": false,
+        "hitSound": "none",
+        "despawnSound": "plasmaboom",
+        "keepVelocity": false,
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 10,
+              "colorFrom": "BF92F9FF",
+              "colorTo": "9D70D7FF",
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "interp": "circleOut",
+              "sizeInterp": "circleIn",
+              "length": 30
+            },
+            {
+              "type": "WaveEffect",
+              "strokeFrom": 3,
+              "strokeTo": 0,
+              "sizeFrom": 0,
+              "sizeTo": 25,
+              "colorFrom": "BF92F9FF",
+              "colorTo": "9D70D7FF",
+              "interp": "circleOut"
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 4,
+              "colorFrom": "BF92F9FF",
+              "colorTo": "9D70D7FF",
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "interp": "circleOut",
+              "sizeInterp": "circleIn",
+              "length": 20
+            },
+            {
+              "type": "WaveEffect",
+              "sizeFrom": 0,
+              "sizeTo": 15,
+              "colorFrom": "BF92F9FF",
+              "colorTo": "9D70D7FF",
+              "interp": "circleOut"
+            },
+            {
+              "type": "SoundEffect",
+              "effect": "none",
+              "sound": "sap",
+              "minSoundPitch": 1,
+              "maxSoundPitch": 1.4,
+              "minSoundVolume": 1.5,
+              "maxSoundVolume": 1.5
+            }
+          ]
+        },
+        "status": "slow",
+        "statusDuration": 600,
+        "despawnHit": false
+      }
+    },
+    {
+      "name": "beamer-mount",
+      "x": 8,
+      "y": 8,
+      "reload": 30,
+      "alternate": true,
+      "rotate": true,
+      "rotateSpeed": 3,
+      "shootSound": "shoot",
+      "bullet": {
+        "type": "SapBulletType",
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "particles": 7,
+          "sizeFrom": 2,
+          "sizeTo": 0,
+          "length": 20,
+          "cone": 360,
+          "colorFrom": "BF92F9FF",
+          "colorTo": "9D70D7FF",
+          "interp": "circleOut",
+          "sizeInterp": "circleIn"
+        },
+        "frontColor": "BF92F9FF",
+        "backColor": "9D70D7FF",
+        "color": "BF92F9FF",
+        "damage": 20,
+        "knockback": -4,
+        "keepVelocity": false,
+        "lifetime": 45,
+        "length": 100,
+        "status": "slow",
+        "statusDuration": 60,
+        "sapStrength": 0
+      }
+    },
+    {
+      "name": "shockwave-generator",
+      "x": 0,
+      "y": -20,
+      "reload": 70,
+      "mirror": false,
+      "alternate": false,
+      "rotate": true,
+      "rotateSpeed": 1,
+      "shootSound": "laser",
+      "smokeEffect": "unitDust",
+      "heatColor": "BF92F9FF",
+      "cooldownTime": 500,
+      "shootY": 8,
+      "bullet": {
+        "type": "BasicBulletType",
+        "shootEffect": {
+          "type": "WaveEffect",
+          "colorFrom": "BF92F9FF",
+          "colorTo": "BF92F9FF",
+          "sizeFrom": 0,
+          "sizeTo": 9,
+          "sides": 3,
+          "lifetime": 30
+        },
+        "width": 35,
+        "height": 28,
+        "speed": 10,
+        "drag": 0.06,
+        "lifetime": 80,
+        "sprite": "newunits-shockwave",
+        "damage": 30,
+        "knockback": -5,
+        "pierce": true,
+        "pierceBuilding": true,
+        "frontColor": "BF92F9FF",
+        "backColor": "9D70D7FF",
+        "shrinkY": 0.5,
+        "shrinkInterp": "circleIn",
+        "hittable": false,
+        "reflectable": false,
+        "absorbable": false,
+        "hitSound": "sap",
+        "despawnSound": "plasmaboom",
+        "keepVelocity": false,
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 10,
+              "colorFrom": "BF92F9FF",
+              "colorTo": "9D70D7FF",
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "interp": "circleOut",
+              "sizeInterp": "circleIn",
+              "length": 30
+            },
+            {
+              "type": "WaveEffect",
+              "strokeFrom": 3,
+              "strokeTo": 0,
+              "sizeFrom": 0,
+              "sizeTo": 25,
+              "colorFrom": "BF92F9FF",
+              "colorTo": "9D70D7FF",
+              "interp": "circleOut"
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 4,
+              "colorFrom": "BF92F9FF",
+              "colorTo": "9D70D7FF",
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "interp": "circleOut",
+              "sizeInterp": "circleIn",
+              "length": 20
+            },
+            {
+              "type": "WaveEffect",
+              "sizeFrom": 0,
+              "sizeTo": 15,
+              "colorFrom": "BF92F9FF",
+              "colorTo": "9D70D7FF",
+              "interp": "circleOut"
+            }
+          ]
+        },
+        "status": "slow",
+        "statusDuration": 120,
+        "despawnHit": false
+      }
+    }
+  ]
+}

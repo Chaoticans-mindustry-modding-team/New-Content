@@ -74,7 +74,7 @@
       }
     },
     {
-      "name": "purple-heal-weapon",
+      "name": "purple-healer",
       "type": "RepairBeamWeapon",
       "reload": 5,
       "mirror": true,

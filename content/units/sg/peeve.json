@@ -39,6 +39,7 @@
       "shootCone": 50,
       "inaccuracy": 0,
       "ejectEffect": "none",
+      "smokeEffect": "none",
       "bullet": {
         "type": "ShrapnelBulletType",
         "damage": 30,
@@ -70,11 +71,6 @@
         "recoil": -4,
         "despawnHit": false,
         "despawnEffect": "none",
-        "shootEffect": {
-          "type": "SoundEffect",
-          "effect": "none",
-          "sound": "flame2"
-        },
         "smokeEffect": "none",
         "status": "melting",
         "statusDuration": 120

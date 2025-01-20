@@ -40,7 +40,6 @@
       "ejectEffect": "none",
       "bullet": {
         "type": "ShrapnelBulletType",
-        "shootEffect": "none",
         "damage": 20,
         "serrations": 0,
         "length": 7,
@@ -54,7 +53,7 @@
           "lenFrom": 4,
           "lenTo": 2,
           "strokeFrom": 2,
-          "strokeTo": "0.5aaaa",
+          "strokeTo": 0.5,
           "colorFrom": "F9C27AFF",
           "colorTo": "F9C27AFF",
           "line": true
@@ -64,6 +63,7 @@
         "recoil": -2,
         "despawnHit": false,
         "despawnEffect": "none",
+        "shootEffect": "none",
         "smokeEffect": "none"
       }
     }

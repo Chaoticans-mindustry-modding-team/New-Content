@@ -60,7 +60,7 @@
         },
         "fromColor": "F9C27AFF",
         "toColor": "F9C27AFF",
-        "recoil": -2,
+        "recoil": -4,
         "despawnHit": false,
         "despawnEffect": "none",
         "shootEffect": "none",

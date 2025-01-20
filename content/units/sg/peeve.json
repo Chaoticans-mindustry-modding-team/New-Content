@@ -20,12 +20,12 @@
   "targetAir": false,
   "health": 760,
   "hitSize": 14,
-  "range": 8,
+  "range": 10,
   "ammmoType": "coal",
   "weapons": [
     {
       "name": "peeve-weapon",
-      "reload": 15,
+      "reload": 10,
       "mirror": true,
       "alternate": true,
       "top": false,
@@ -43,7 +43,7 @@
         "type": "ShrapnelBulletType",
         "damage": 30,
         "serrations": 0,
-        "length": 8,
+        "length": 10,
         "width": 7,
         "lifetime": 10,
         "collidesAir": false,

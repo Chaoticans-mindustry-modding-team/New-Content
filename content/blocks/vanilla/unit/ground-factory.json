@@ -12,8 +12,8 @@
       "unit": "nova",
       "time": 2400,
       "requirements": [
-        "silicon/20",
-        "lead/30",
+        "silicon/30",
+        "lead/20",
         "titanium/20"
       ]
     },

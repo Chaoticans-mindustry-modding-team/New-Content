@@ -75,7 +75,7 @@
           "effect": "none",
           "sound": "flame2"
         },
-        "smokeEffect": "shootSmallSmoke",
+        "smokeEffect": "none",
         "status": "melting",
         "statusDuration": 120
       }

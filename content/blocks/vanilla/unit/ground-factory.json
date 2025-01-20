@@ -1,0 +1,37 @@
+{
+  "plans": [
+    {
+      "unit": "dagger",
+      "time": 900,
+      "requirements": [
+        "silicon/10",
+        "lead/10"
+      ]
+    },
+    {
+      "unit": "nova",
+      "time": 3000,
+      "requirements": [
+        "silicon/20",
+        "lead/30",
+        "titanium/20"
+      ]
+    },
+    {
+      "unit": "crawler",
+      "time": 600,
+      "requirements": [
+        "silicon/8",
+        "coal/10"
+      ]
+    },
+    {
+      "unit": "critter",
+      "time": 750,
+      "requirements": [
+        "silicon/20",
+        "gold/20"
+      ]
+    }
+  ]
+}

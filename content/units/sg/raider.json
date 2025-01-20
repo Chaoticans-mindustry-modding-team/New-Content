@@ -46,9 +46,9 @@
       "shake": 1,
       "bullet": {
         "type": "ShrapnelBulletType",
-        "damage": 30,
+        "damage": 50,
         "serrations": 0,
-        "length": 30,
+        "length": 40,
         "width": 10,
         "lifetime": 10,
         "collidesAir": false,
@@ -66,8 +66,7 @@
               "colorFrom": "F9C27AFF",
               "colorTo": "F9C27AFF",
               "line": true
-            },
-            "hitFlameSmall"
+            }
           ]
         },
         "fromColor": "F9C27AFF",

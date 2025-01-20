@@ -71,6 +71,7 @@
         "recoil": -4,
         "despawnHit": false,
         "despawnEffect": "none",
+        "shootEffect": "none",
         "smokeEffect": "none",
         "status": "melting",
         "statusDuration": 120

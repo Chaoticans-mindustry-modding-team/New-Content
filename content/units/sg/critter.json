@@ -18,6 +18,7 @@
   "health": 240,
   "hitSize": 8,
   "range": 5,
+  "ammoType": "graphite",
   "weapons": [
     {
       "name": "critter-weapon",

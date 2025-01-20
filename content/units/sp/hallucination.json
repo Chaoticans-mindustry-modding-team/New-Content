@@ -48,19 +48,53 @@
       "shootSound": "laserblast",
       "shootCone": 30,
       "inaccuracy": 0,
-      "shake": 7,
+      "shake": 10,
       "smokeEffect": "none",
       "ejectEffect": "none",
       "heatColor": "BF92F9FF",
       "cooldownTime": 600,
       "bullet": {
         "type": "ShrapnelBulletType",
-        "shootEffect": "unitDust",
+        "shootEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "strokeFrom": 5,
+              "sizeFrom": 0,
+              "sizeTo": 80,
+              "lifetime": 120,
+              "colorFrom": "BF92F9FF",
+              "colorTo": "BF92F9FF",
+              "sides": 6
+            },
+            {
+              "type": "WaveEffect",
+              "strokeFrom": 2.5,
+              "sizeFrom": 0,
+              "sizeTo": 40,
+              "lifetime": 60,
+              "colorFrom": "665C9FFF",
+              "colorTo": "665C9FFF",
+              "sides": 3
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 1,
+              "region": "newunits-circularlightglow",
+              "colorFrom": "BF92F9AA",
+              "colorTo": "665C9F00",
+              "sizeFrom": 45,
+              "sizeTo": 0,
+              "interp": "circleOut"
+            }
+          ]
+        },
         "damage": 11000,
         "serrations": 7,
         "length": 200,
-        "width": 15,
-        "lifetime": 60,
+        "width": 30,
+        "lifetime": 120,
         "collidesAir": true,
         "hitEffect": {
           "type": "ParticleEffect",
@@ -80,7 +114,7 @@
         },
         "fromColor": "BF92F9FF",
         "toColor": "665C9FFF",
-        "recoil": -45,
+        "recoil": -37,
         "despawnHit": false
       }
     },
@@ -116,7 +150,7 @@
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
         "shrinkY": 0.5,
-        "shrinkX": 1.3,
+        "shrinkX": -0.3,
         "shrinkInterp": "circleIn",
         "hittable": false,
         "reflectable": false,
@@ -202,9 +236,11 @@
       "velocityRnd": 0.6,
       "smokeEffect": "shootBigSmoke",
       "ejectEffect": "casing2Double",
+      "shake": 1,
+      "shootY": 8,
       "shoot": {
         "shots": 7,
-        "shotDelay": 1
+        "shotDelay": 0
       },
       "bullet": {
         "type": "BasicBulletType",
@@ -217,7 +253,7 @@
         "knockback": 4,
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
-        "trailWidth": 4,
+        "trailWidth": 3,
         "trailLength": 20,
         "hitEffect": {
           "type": "MultiEffect",
@@ -229,14 +265,14 @@
               "colorTo": "9D70D7FF",
               "sizeFrom": 3,
               "sizeTo": 1,
-              "length": 34,
+              "length": 8,
               "line": true,
               "lifetime": 20
             },
             {
               "type": "waveEffect",
               "sizeFrom": 0,
-              "sizeTo": 14,
+              "sizeTo": 6,
               "colorFrom": "BF92F9FF",
               "colorTo": "9D70D7FF",
               "lifetime": 10,
@@ -251,19 +287,19 @@
           "effects": [
             {
               "type": "ParticleEffect",
-              "particles": 4,
+              "particles": 1,
               "colorFrom": "BF92F9FF",
               "colorTo": "9D70D7FF",
               "sizeFrom": 3,
               "sizeTo": 1,
-              "length": 34,
+              "length": 8,
               "line": true,
               "lifetime": 20
             },
             {
               "type": "waveEffect",
               "sizeFrom": 0,
-              "sizeTo": 14,
+              "sizeTo": 6,
               "colorFrom": "BF92F9FF",
               "colorTo": "9D70D7FF",
               "lifetime": 10,
@@ -278,7 +314,7 @@
       "name": "purple-shotgun",
       "x": 0,
       "y": 0,
-      "reload": 30,
+      "reload": 35,
       "mirror": false,
       "alternate": false,
       "rotate": true,
@@ -288,9 +324,11 @@
       "velocityRnd": 1.2,
       "smokeEffect": "shootBigSmoke",
       "ejectEffect": "casing2Double",
+      "shake": 1,
+      "shootY": 8,
       "shoot": {
         "shots": 4,
-        "shotDelay": 1
+        "shotDelay": 0
       },
       "bullet": {
         "type": "BasicBulletType",
@@ -303,8 +341,9 @@
         "knockback": 3,
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
-        "trailWidth": 4,
+        "trailWidth": 3,
         "trailLength": 20,
+        "trailColor": "9D70D7FF",
         "hitEffect": {
           "type": "MultiEffect",
           "effects": [
@@ -315,14 +354,14 @@
               "colorTo": "9D70D7FF",
               "sizeFrom": 3,
               "sizeTo": 1,
-              "length": 34,
+              "length": 16,
               "line": true,
               "lifetime": 20
             },
             {
               "type": "waveEffect",
               "sizeFrom": 0,
-              "sizeTo": 14,
+              "sizeTo": 8,
               "colorFrom": "BF92F9FF",
               "colorTo": "9D70D7FF",
               "lifetime": 10,
@@ -332,24 +371,25 @@
           ]
         },
         "despawnEffect": "none",
+        "despawnHit": true,
         "shootEffect": {
           "type": "MultiEffect",
           "effects": [
             {
               "type": "ParticleEffect",
-              "particles": 4,
+              "particles": 2,
               "colorFrom": "BF92F9FF",
               "colorTo": "9D70D7FF",
               "sizeFrom": 3,
               "sizeTo": 1,
-              "length": 34,
+              "length": 16,
               "line": true,
               "lifetime": 20
             },
             {
               "type": "waveEffect",
               "sizeFrom": 0,
-              "sizeTo": 14,
+              "sizeTo": 8,
               "colorFrom": "BF92F9FF",
               "colorTo": "9D70D7FF",
               "lifetime": 10,

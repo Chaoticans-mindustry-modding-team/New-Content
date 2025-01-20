@@ -15,7 +15,7 @@
   "drag": 0.4,
   "flying": false,
   "targetAir": false,
-  "health": 180,
+  "health": 240,
   "hitSize": 8,
   "range": 5,
   "weapons": [
@@ -40,7 +40,7 @@
       "ejectEffect": "none",
       "bullet": {
         "type": "ShrapnelBulletType",
-        "damage": 20,
+        "damage": 40,
         "serrations": 0,
         "length": 7,
         "width": 5,

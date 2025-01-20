@@ -52,12 +52,13 @@
           "particles": 3,
           "lifetime": 20,
           "lenFrom": 4,
-          "lenTo": 2,
+          "lenTo": 1,
           "strokeFrom": 2,
           "strokeTo": 0.5,
           "colorFrom": "F9C27AFF",
           "colorTo": "F9C27AFF",
-          "line": true
+          "line": true,
+          "lifetime": 20
         },
         "fromColor": "F9C27AFF",
         "toColor": "F9C27AFF",

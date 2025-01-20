@@ -28,7 +28,7 @@
   "weapons": [
     {
       "name": "raider-weapon",
-      "reload": 50,
+      "reload": 40,
       "mirror": true,
       "alternate": false,
       "top": false,
@@ -46,7 +46,7 @@
       "shake": 1,
       "bullet": {
         "type": "ShrapnelBulletType",
-        "damage": 50,
+        "damage": 65,
         "serrations": 0,
         "length": 40,
         "width": 10,
@@ -58,9 +58,9 @@
             {
               "type": "ParticleEffect",
               "particles": 3,
-              "lifetime": 40,
+              "lifetime": 20,
               "lenFrom": 5,
-              "lenTo": 2,
+              "lenTo": 1,
               "strokeFrom": 2,
               "strokeTo": 0.5,
               "colorFrom": "F9C27AFF",
@@ -71,23 +71,24 @@
         },
         "fromColor": "F9C27AFF",
         "toColor": "F9C27AFF",
-        "recoil": -8,
+        "recoil": -6,
         "knockback": 1,
         "despawnHit": false,
         "despawnEffect": "none",
         "shootEffect": {
           "type": "ParticleEffect",
           "particles": 7,
-          "lifetime": 40,
+          "lifetime": 20,
           "lenFrom": 5,
-          "lenTo": 2,
+          "lenTo": 1,
           "strokeFrom": 2,
           "strokeTo": 0.5,
           "length": 30,
           "colorFrom": "F9C27AFF",
           "colorTo": "F9C27AFF",
           "line": true,
-          "cone": 30
+          "cone": 30,
+          "followParent": false
         },
         "smokeEffect": "none"
       }

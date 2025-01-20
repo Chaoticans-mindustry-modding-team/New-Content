@@ -46,7 +46,7 @@
       "recoil": 0,
       "rotate": false,
       "shootSound": "laserblast",
-      "shootCone": 30,
+      "shootCone": 45,
       "inaccuracy": 0,
       "shake": 10,
       "smokeEffect": "none",
@@ -94,7 +94,7 @@
             }
           ]
         },
-        "damage": 42000,
+        "damage": 4200,
         "serrations": 7,
         "serrationWidth": 16,
         "serrationSpacing": 16,
@@ -135,7 +135,7 @@
       "recoil": 0,
       "rotate": false,
       "shootSound": "none",
-      "shootCone": 30,
+      "shootCone": 45,
       "inaccuracy": 0,
       "shake": 4.5,
       "smokeEffect": "none",
@@ -183,7 +183,7 @@
               "strokeFrom": 5,
               "strokeTo": 0,
               "sizeFrom": 0,
-              "sizeTo": 245,
+              "sizeTo": 45,
               "colorFrom": "BF92F9FF",
               "colorTo": "9D70D7FF",
               "interp": "circleOut",
@@ -239,7 +239,7 @@
       "rotate": true,
       "rotateSpeed": 3.5,
       "shootSound": "shootBig",
-      "inaccuracy": 20,
+      "inaccuracy": 7,
       "velocityRnd": 0.6,
       "smokeEffect": "shootBigSmoke",
       "ejectEffect": "casing2Double",
@@ -260,7 +260,7 @@
         "knockback": 4,
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
-        "trailWidth": 3,
+        "trailWidth": 2,
         "trailLength": 20,
         "trailColor": "9D70D7FF",
         "hitEffect": {
@@ -285,7 +285,7 @@
               "colorTo": "9D70D7FF",
               "lifetime": 10,
               "strokeFrom": 2,
-              "strokeTo": 1
+              "strokeTo": 0.5
             }
           ]
         },
@@ -314,7 +314,7 @@
               "colorTo": "9D70D7FF",
               "lifetime": 10,
               "strokeFrom": 2,
-              "strokeTo": 1,
+              "strokeTo": 0.5,
               "followParent": false
             }
           ]
@@ -331,7 +331,7 @@
       "rotate": true,
       "rotateSpeed": 3.5,
       "shootSound": "shootBig",
-      "inaccuracy": 20,
+      "inaccuracy": 7,
       "velocityRnd": -0.4,
       "smokeEffect": "shootBigSmoke",
       "ejectEffect": "casing2Double",
@@ -352,7 +352,7 @@
         "knockback": 3,
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
-        "trailWidth": 3,
+        "trailWidth": 2,
         "trailLength": 20,
         "trailColor": "9D70D7FF",
         "hitEffect": {
@@ -377,7 +377,7 @@
               "colorTo": "9D70D7FF",
               "lifetime": 10,
               "strokeFrom": 2,
-              "strokeTo": 1
+              "strokeTo": 0.5
             }
           ]
         },
@@ -406,7 +406,7 @@
               "colorTo": "9D70D7FF",
               "lifetime": 10,
               "strokeFrom": 2,
-              "strokeTo": 1,
+              "strokeTo": 0.5,
               "followParent": false
             }
           ]

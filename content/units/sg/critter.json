@@ -2,6 +2,13 @@
   "localizedName": "Critter",
   "description": "Charges at nearby ground targets with flexible dual melee blades.",
   "type": "mech",
+  "research": {
+    "parent": "dagger",
+    "requirements": [
+      "silicon/1300",
+      "gold/1300"
+    ]
+  },
   "armor": 0,
   "speed": 0.7,
   "accel": 0.5,
@@ -10,23 +17,24 @@
   "targetAir": false,
   "health": 180,
   "hitSize": 8,
-  "range": 28,
+  "range": 5,
   "weapons": [
     {
       "name": "critter-weapon",
-      "reload": 40,
+      "reload": 20,
       "mirror": true,
       "alternate": true,
       "top": false,
       "x": 3.5,
       "y": 0,
-      "shootY": 4,
+      "shootY": 6,
       "recoil": -2,
+      "recoilTime": 10,
       "rotate": true,
-      "rotateSpeed": 10,
-      "rotationLimit": 10,
+      "rotateSpeed": 2,
+      "rotationLimit": 35,
       "shootSound": "slice",
-      "shootCone": 15,
+      "shootCone": 45,
       "inaccuracy": 0,
       "smokeEffect": "none",
       "ejectEffect": "none",
@@ -35,27 +43,28 @@
         "shootEffect": "none",
         "damage": 20,
         "serrations": 0,
-        "length": 5,
+        "length": 7,
         "width": 5,
-        "lifetime": 25,
+        "lifetime": 10,
         "collidesAir": false,
         "hitEffect": {
           "type": "ParticleEffect",
           "particles": 3,
           "lifetime": 20,
           "lenFrom": 4,
-          "lenTo": 3,
+          "lenTo": 2,
           "strokeFrom": 2,
-          "strokeTo": 1,
+          "strokeTo": "0.5aaaa",
           "colorFrom": "F9C27AFF",
           "colorTo": "F9C27AFF",
           "line": true
         },
         "fromColor": "F9C27AFF",
         "toColor": "F9C27AFF",
-        "recoil": -1,
+        "recoil": -2,
         "despawnHit": false,
-        "despawnEffect": "none"
+        "despawnEffect": "none",
+        "smokeEffect": "none"
       }
     }
   ]

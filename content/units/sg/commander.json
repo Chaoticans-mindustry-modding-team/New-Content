@@ -31,7 +31,7 @@
   "weapons": [
     {
       "name": "commander-weapon",
-      "reload": 50,
+      "reload": 40,
       "mirror": true,
       "alternate": true,
       "top": false,
@@ -52,7 +52,7 @@
       "layerOffset": -0.001,
       "bullet": {
         "type": "ShrapnelBulletType",
-        "damage": 120,
+        "damage": 130,
         "serrations": 2,
         "length": 30,
         "width": 15,
@@ -77,7 +77,7 @@
         },
         "fromColor": "FFF582FF",
         "toColor": "F9C27AFF",
-        "recoil": -7,
+        "recoil": -8,
         "knockback": 3,
         "despawnHit": false,
         "despawnEffect": "none",
@@ -97,14 +97,14 @@
         },
         "smokeEffect": "none",
         "status": "newunits-charged",
-        "statusDuration": 30,
+        "statusDuration": 60,
         "fragOnHit": true,
-        "fragBullets": 6,
+        "fragBullets": 3,
         "fragBullet": {
           "type": "lightningBulletType",
-          "damage": 16,
-          "lightningColor": "FFF582FF",
-          "lightningLength": 20,
+          "damage": 20,
+          "lightningColor": "F9C27AFF",
+          "lightningLength": 3,
           "lightningLengthRand": 5,
           "hitEffect": "shootHealYellow"
         }
@@ -117,7 +117,7 @@
       "spawnX": 0,
       "spawnY": -7.25,
       "unit": "critter",
-      "spawnTime": 600
+      "spawnTime": 900
     }
   ]
 }

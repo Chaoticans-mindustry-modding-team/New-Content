@@ -20,7 +20,7 @@
   "flying": false,
   "targetAir": false,
   "health": 10000,
-  "hitSize": 26,
+  "hitSize": 23,
   "range": 30,
   "rotateSpeed": 2.7,
   "drownTimeMultiplier": 4,

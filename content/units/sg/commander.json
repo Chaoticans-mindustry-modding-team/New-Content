@@ -52,7 +52,7 @@
       "layerOffset": -0.001,
       "bullet": {
         "type": "ShrapnelBulletType",
-        "damage": 130,
+        "damage": 160,
         "serrations": 2,
         "length": 30,
         "width": 15,
@@ -102,7 +102,7 @@
         "fragBullets": 3,
         "fragBullet": {
           "type": "lightningBulletType",
-          "damage": 20,
+          "damage": 36,
           "lightningColor": "F9C27AFF",
           "lightningLength": 3,
           "lightningLengthRand": 5,

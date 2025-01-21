@@ -1,0 +1,169 @@
+{
+  "localizedName": "Admiral",
+  "description": "Barrages nearby ground targets with quartal long-range blades.",
+  "type": "mech",
+  "research": {
+    "parent": "commander",
+    "requirements": [
+      "silicon/99000",
+      "plastanium/56000",
+      "surge-alloy/46000",
+      "phase-fabric/31000"
+    ],
+    "objectives": [
+      "tetrative-reconstructor"
+    ]
+  },
+  "armor": 19,
+  "speed": 0.45,
+  "accel": 0.3,
+  "drag": 0.4,
+  "flying": false,
+  "targetAir": false,
+  "health": 28000,
+  "hitSize": 30,
+  "range": 60,
+  "rotateSpeed": 2.4,
+  "drownTimeMultiplier": 4,
+  "ammmoType": "thorium",
+  "mechFrontSway": 2,
+  "mechSideSway": 0.7,
+  "mechStepParticles": true,
+  "stepShake": 0.8,
+  "weapons": [
+    {
+      "name": "admiral-weapon-front",
+      "reload": 20,
+      "mirror": true,
+      "alternate": true,
+      "top": false,
+      "x": 19,
+      "y": 12.25,
+      "shootY": 12,
+      "recoil": -6,
+      "recoilTime": 10,
+      "rotate": false,
+      "shootSound": "slice",
+      "shootCone": 60,
+      "inaccuracy": 0,
+      "ejectEffect": "none",
+      "smokeEffect": "none",
+      "shake": 1,
+      "layerOffset": -0.001,
+      "bullet": {
+        "type": "ShrapnelBulletType",
+        "damage": 100,
+        "serrations": 0,
+        "length": 50,
+        "width": 20,
+        "lifetime": 10,
+        "collidesAir": false,
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 3,
+              "lifetime": 20,
+              "lenFrom": 5,
+              "lenTo": 1,
+              "strokeFrom": 2,
+              "strokeTo": 0.5,
+              "colorFrom": "FFF582FF",
+              "colorTo": "F9C27AFF",
+              "line": true
+            }
+          ]
+        },
+        "fromColor": "F9C27AFF",
+        "toColor": "F9C27AFF",
+        "recoil": -5,
+        "knockback": 3,
+        "despawnHit": false,
+        "despawnEffect": "none",
+        "shootEffect": {
+          "type": "ParticleEffect",
+          "particles": 7,
+          "lifetime": 20,
+          "lenFrom": 5,
+          "lenTo": 1,
+          "strokeFrom": 2,
+          "strokeTo": 0.5,
+          "length": 30,
+          "colorFrom": "F9C27AFF",
+          "colorTo": "F9C27AFF",
+          "line": true,
+          "followParent": false
+        },
+        "smokeEffect": "none"
+      }
+    },
+    {
+      "name": "admiral-weapon-back",
+      "reload": 30,
+      "mirror": true,
+      "alternate": false,
+      "top": false,
+      "x": 20.25,
+      "y": -2.74,
+      "shootY": 14,
+      "recoil": -6,
+      "recoilTime": 10,
+      "rotate": false,
+      "shootSound": "slice",
+      "shootCone": 60,
+      "inaccuracy": 0,
+      "ejectEffect": "none",
+      "smokeEffect": "none",
+      "shake": 3,
+      "layerOffset": -0.001,
+      "bullet": {
+        "type": "ShrapnelBulletType",
+        "damage": 130,
+        "serrations": 0,
+        "length": 60,
+        "width": 25,
+        "lifetime": 15,
+        "collidesAir": false,
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 3,
+              "lifetime": 20,
+              "lenFrom": 5,
+              "lenTo": 1,
+              "strokeFrom": 2,
+              "strokeTo": 0.5,
+              "colorFrom": "FFF582FF",
+              "colorTo": "F9C27AFF",
+              "line": true
+            }
+          ]
+        },
+        "fromColor": "F9C27AFF",
+        "toColor": "F9C27AFF",
+        "recoil": -7,
+        "knockback": 3,
+        "despawnHit": false,
+        "despawnEffect": "none",
+        "shootEffect": {
+          "type": "ParticleEffect",
+          "particles": 7,
+          "lifetime": 20,
+          "lenFrom": 5,
+          "lenTo": 1,
+          "strokeFrom": 2,
+          "strokeTo": 0.5,
+          "length": 30,
+          "colorFrom": "F9C27AFF",
+          "colorTo": "F9C27AFF",
+          "line": true,
+          "followParent": false
+        },
+        "smokeEffect": "none"
+      }
+    }
+  ]
+}

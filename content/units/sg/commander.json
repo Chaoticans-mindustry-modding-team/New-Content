@@ -1,0 +1,123 @@
+{
+  "localizedName": "Commander",
+  "description": "Lunges at ground targets with flexible dual charged blades. Constructs critter units.",
+  "type": "mech",
+  "research": {
+    "parent": "raider",
+    "requirements": [
+      "silicon/83000",
+      "titanium/73000",
+      "plastanium/62000"
+    ],
+    "objectives": [
+      "exponential-reconstructor"
+    ]
+  },
+  "armor": 11,
+  "speed": 0.4,
+  "accel": 0.3,
+  "drag": 0.4,
+  "flying": false,
+  "targetAir": false,
+  "health": 10000,
+  "hitSize": 26,
+  "range": 30,
+  "rotateSpeed": 2.7,
+  "drownTimeMultiplier": 4,
+  "ammmoType": "copper",
+  "mechFrontSway": 1.2,
+  "mechStepParticles": true,
+  "stepShake": 0.17,
+  "weapons": [
+    {
+      "name": "commander-weapon",
+      "reload": 50,
+      "mirror": true,
+      "alternate": true,
+      "top": false,
+      "x": 14.5,
+      "y": 1.25,
+      "shootY": 14.5,
+      "recoil": -6,
+      "recoilTime": 30,
+      "rotate": true,
+      "rotateSpeed": 2,
+      "rotationLimit": 45,
+      "shootSound": "slice",
+      "shootCone": 60,
+      "inaccuracy": 0,
+      "ejectEffect": "none",
+      "smokeEffect": "none",
+      "shake": 3,
+      "layerOffset": -0.001,
+      "bullet": {
+        "type": "ShrapnelBulletType",
+        "damage": 120,
+        "serrations": 2,
+        "length": 30,
+        "width": 15,
+        "lifetime": 10,
+        "collidesAir": false,
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 3,
+              "lifetime": 20,
+              "lenFrom": 5,
+              "lenTo": 1,
+              "strokeFrom": 2,
+              "strokeTo": 0.5,
+              "colorFrom": "FFF582FF",
+              "colorTo": "F9C27AFF",
+              "line": true
+            }
+          ]
+        },
+        "fromColor": "FFF582FF",
+        "toColor": "F9C27AFF",
+        "recoil": -7,
+        "knockback": 3,
+        "despawnHit": false,
+        "despawnEffect": "none",
+        "shootEffect": {
+          "type": "ParticleEffect",
+          "particles": 7,
+          "lifetime": 20,
+          "lenFrom": 5,
+          "lenTo": 1,
+          "strokeFrom": 2,
+          "strokeTo": 0.5,
+          "length": 30,
+          "colorFrom": "FFF582FF",
+          "colorTo": "F9C27AFF",
+          "line": true,
+          "followParent": false
+        },
+        "smokeEffect": "none",
+        "status": "newunits-charged",
+        "statusDuration": 30,
+        "fragOnHit": true,
+        "fragBullets": 6,
+        "fragBullet": {
+          "type": "lightningBulletType",
+          "damage": 16,
+          "lightningColor": "FFF582FF",
+          "lightningLength": 20,
+          "lightningLengthRand": 5,
+          "hitEffect": "shootHealYellow"
+        }
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "type": "UnitSpawnAbility",
+      "spawnX": 0,
+      "spawnY": -7.25,
+      "unit": "critter",
+      "spawnTime": 600
+    }
+  ]
+}

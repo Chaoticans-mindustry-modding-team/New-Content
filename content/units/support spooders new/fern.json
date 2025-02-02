@@ -32,7 +32,7 @@
       "reload": 55,
       "shootSound": "missile",
       "ejectEffect": "none",
-      "shootY": 0,
+      "shootY": 2,
       "rotate": false,
       "top": false,
       "recoil": 0,
@@ -41,8 +41,8 @@
       "bullet": {
         "type": "MissileBulletType",
         "sprite": "circle-bullet",
-        "width": 8,
-        "height": 8,
+        "width": 6,
+        "height": 6,
         "shrinkY": 0,
         "damage": 16,
         "speed": 3,
@@ -58,8 +58,9 @@
         "healPercent": 10,
         "collidesTeam": true,
         "hitSound": "none",
-        "weaveMag": 6,
-        "homingPower": 0.1,
+        "waveScale": 4,
+        "weaveMag": 14,
+        "homingPower": 0.04,
         "homingRadius": 32
       }
     }

@@ -32,7 +32,7 @@
       "reload": 55,
       "shootSound": "missile",
       "ejectEffect": "none",
-      "shootY": false,
+      "shootY": 0,
       "rotate": false,
       "top": false,
       "recoil": "none",

@@ -36,7 +36,7 @@
       "rotate": false,
       "top": false,
       "recoil": 0,
-      "inaccuracy": 2,
+      "inaccuracy": 0,
       "shootCone": 30,
       "bullet": {
         "type": "MissileBulletType",
@@ -58,8 +58,8 @@
         "healPercent": 10,
         "collidesTeam": true,
         "hitSound": "none",
-        "waveScale": 20,
-        "weaveMag": 14,
+        "weaveScale": 6,
+        "weaveMag": 1,
         "homingPower": 0.04,
         "homingRadius": 32
       }

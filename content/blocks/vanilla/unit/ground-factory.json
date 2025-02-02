@@ -18,6 +18,15 @@
       ]
     },
     {
+      "unit": "fern",
+      "time": 2600,
+      "requirements": [
+        "silicon/30",
+        "graphite/25",
+        "titanium/20"
+      ]
+    },
+    {
       "unit": "crawler",
       "time": 600,
       "requirements": [

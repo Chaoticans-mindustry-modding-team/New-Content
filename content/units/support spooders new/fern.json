@@ -35,7 +35,7 @@
       "shootY": 0,
       "rotate": false,
       "top": false,
-      "recoil": "none",
+      "recoil": 0,
       "bullet": {
         "type": "MissileBulletType",
         "sprite": "circle-bullet",

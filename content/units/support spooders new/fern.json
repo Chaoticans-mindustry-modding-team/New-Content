@@ -1,0 +1,66 @@
+{
+  "localizedName": "Fern",
+  "research": {
+    "parent": "nova",
+    "requirements": [
+      "silicon/2100",
+      "graphite/1700",
+      "graphite/1300"
+    ]
+  },
+  "description": "Fires homing healing orbs that damage enemy targets and repair allied blocks. Can step over most terrain.",
+  "type": "legs",
+  "groundLayer": 75,
+  "legCount": 3,
+  "legLength": 10,
+  "legMoveSpace": 1.4,
+  "hovering": true,
+  "armor": 140,
+  "speed": 0.8,
+  "drag": 0.4,
+  "flying": false,
+  "health": 435,
+  "rotateShooting": true,
+  "shadowElevation": 0.2,
+  "weapons": [
+    {
+      "name": "fern-weapon",
+      "x": 0,
+      "y": 0,
+      "mirror": false,
+      "alternate": false,
+      "reload": 55,
+      "shootSound": "missile",
+      "ejectEffect": "none",
+      "shootY": false,
+      "rotate": false,
+      "top": false,
+      "recoil": "none",
+      "bullet": {
+        "type": "MissileBulletType",
+        "sprite": "circle-bullet",
+        "width": 3,
+        "height": 3,
+        "shrinkY": 0,
+        "damage": 8,
+        "speed": 7,
+        "lifetime": 45,
+        "frontColor": "FFFFFFFF",
+        "backColor": "98FFA9FF",
+        "smokeEffect": "shootHeal",
+        "shootEffect": "none",
+        "hitEffect": "shootHeal",
+        "despawnEffect": "none",
+        "despawnHit": true,
+        "trailColor": "98FFA9FF",
+        "healPercent": 10,
+        "collidesTeam": true,
+        "hitSound": "none",
+        "weaveMag": 2,
+        "homingPower": 0.1,
+        "homingRadius": 32,
+        "recoil": 1
+      }
+    }
+  ]
+}

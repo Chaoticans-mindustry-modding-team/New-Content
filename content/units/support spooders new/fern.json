@@ -5,10 +5,10 @@
     "requirements": [
       "silicon/2100",
       "graphite/1700",
-      "lead/1300"
+      "titanium/1300"
     ]
   },
-  "description": "Fires homing healing orbs that damage enemy targets and repair allied blocks. Can step over most terrain.",
+  "description": "Fires homing healing orbs that damage enemy targets and repair allied blocks. Can step over most terrain. Can build structures.",
   "type": "legs",
   "groundLayer": 75,
   "legCount": 3,
@@ -22,6 +22,7 @@
   "health": 140,
   "rotateShooting": true,
   "shadowElevation": 0.2,
+  "buildSpeedMultiplier": 0.3,
   "weapons": [
     {
       "name": "fern-weapon",

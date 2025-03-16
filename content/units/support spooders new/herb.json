@@ -1,0 +1,121 @@
+{
+  "localizedName": "Fern",
+  "research": {
+    "parent": "fern",
+    "requirements": [
+      "graphite/2800",
+      "silicon/2800"
+    ],
+    "objectives": [
+      "additveReconstructor"
+    ]
+  },
+  "description": "Pulls in and damages nearby enemies with a mini vortex generator that heals allied blocks. Can step over most terrain.",
+  "type": "legs",
+  "hitSize": 16,
+  "groundLayer": 75,
+  "legCount": 5,
+  "legLength": 6.5,
+  "legMoveSpace": 1.6,
+  "hovering": true,
+  "armor": 4,
+  "speed": 0.8,
+  "drag": 0.4,
+  "flying": false,
+  "health": 460,
+  "rotateShooting": true,
+  "shadowElevation": 0.2,
+  "range": 34,
+  "weapons": [
+    {
+      "name": "herb-weapon",
+      "x": 0,
+      "y": 0,
+      "reload": 10,
+      "alternate": false,
+      "top": false,
+      "mirror": false,
+      "inaccuracy": 2,
+      "shootY": 0,
+      "recoil": 0,
+      "alwaysContinuous": true,
+      "continuous": true,
+      "soundPitchMin": 1,
+      "soundPitchMax": 1,
+      "shootSound": "vortex",
+      "bullet": {
+        "type": "ContinuousFlameBulletType",
+        "colors": [
+          "00000000",
+          "00000000",
+          "00000000",
+          "00000000"
+        ],
+        "damage": 20,
+        "flareWidth": 6,
+        "flareLength": 9,
+        "flareColor": "00000000",
+        "width": 10,
+        "lifetime": 20,
+        "divisions": 20,
+        "length": 34,
+        "status": "slow",
+        "statusDuration": 35,
+        "hitEffect": "none",
+        "drawSize": 660,
+        "collidesTeam": true,
+        "healPercent": 0.8,
+        "knockback": -0.5,
+        "trailChance": 0,
+        "trailInterval": 20,
+        "trailEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 1,
+              "length": 0,
+              "lengthFrom": 30,
+              "randLength": false,
+              "sizeFrom": 12,
+              "sizeTo": 0,
+              "cone": 5,
+              "colorFrom": "98FFA944",
+              "colorTo": "98FFA9AA",
+              "layer": 80,
+              "lifetime": 40,
+              "region": "newunits-shockwave-back",
+              "followParent": true
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 1,
+              "length": 0,
+              "lengthFrom": 34,
+              "randLength": false,
+              "sizeFrom": 4,
+              "sizeTo": 1,
+              "cone": 15,
+              "colorFrom": "98FFA9FF",
+              "colorTo": "98FFA9FF",
+              "followParent": true
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 2,
+              "length": 0,
+              "lengthFrom": 20,
+              "randLength": false,
+              "sizeFrom": 4,
+              "sizeTo": 1,
+              "cone": 15,
+              "colorFrom": "98FFA9FF",
+              "colorTo": "98FFA9FF",
+              "followParent": true
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

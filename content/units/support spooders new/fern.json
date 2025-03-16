@@ -5,7 +5,7 @@
     "requirements": [
       "silicon/2100",
       "graphite/1700",
-      "graphite/1300"
+      "lead/1300"
     ]
   },
   "description": "Fires homing healing orbs that damage enemy targets and repair allied blocks. Can step over most terrain.",

@@ -7,7 +7,7 @@
       "silicon/2800"
     ],
     "objectives": [
-      "additveReconstructor"
+      "additiveReconstructor"
     ]
   },
   "description": "Pulls in and damages nearby enemies with a mini vortex generator that heals allied blocks. Can step over most terrain.",

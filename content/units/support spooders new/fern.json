@@ -24,7 +24,6 @@
   "shadowElevation": 0.2,
   "buildSpeedMultiplier": 0.3,
   "hitSize": 8,
-  "defaultCommand": "repairCommand",
   "isEnemy": false,
   "weapons": [
     {

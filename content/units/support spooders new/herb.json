@@ -12,7 +12,7 @@
   },
   "description": "Pulls in and damages nearby enemies with a mini vortex generator that heals allied blocks. Can step over most terrain.",
   "type": "legs",
-  "hitSize": 16,
+  "hitSize": 14,
   "groundLayer": 74,
   "legCount": 4,
   "legLength": 13,

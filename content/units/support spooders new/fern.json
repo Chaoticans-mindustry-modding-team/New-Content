@@ -23,6 +23,7 @@
   "rotateShooting": true,
   "shadowElevation": 0.2,
   "buildSpeedMultiplier": 0.3,
+  "hitSize": 8,
   "weapons": [
     {
       "name": "fern-weapon",

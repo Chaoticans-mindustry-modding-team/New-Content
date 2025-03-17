@@ -47,6 +47,7 @@
       "soundPitchMax": 1,
       "shootSound": "vortex",
       "loop": true,
+      "parentizeEffects": false,
       "bullet": {
         "type": "ContinuousFlameBulletType",
         "colors": [
@@ -85,8 +86,8 @@
         "knockback": -0.4,
         "shootEffect": "none",
         "smokeEffect": "none",
-        "recoil": 0.03,
-        "bulletInterval": 3,
+        "recoil": 0.01,
+        "bulletInterval": 4,
         "intervalRandomSpread": 0,
         "intervalBullet": {
           "hitEffect": "none",
@@ -100,7 +101,7 @@
                 "length": -34,
                 "baseLength": 34,
                 "randLength": false,
-                "sizeFrom": 1.2,
+                "sizeFrom": 1.5,
                 "sizeTo": 0,
                 "cone": 15,
                 "colorFrom": "98FFA9ff",
@@ -108,7 +109,25 @@
                 "interp": "circleIn",
                 "sizeInterp": "circleIn",
                 "followParent": true,
-                "rotWithParent": true
+                "rotWithParent": true,
+                "lifetime": 20
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 1,
+                "length": -34,
+                "baseLength": 34,
+                "randLength": false,
+                "sizeFrom": 1.2,
+                "sizeTo": 0,
+                "cone": 15,
+                "colorFrom": "98FFA9ff",
+                "colorTo": "98FFA955",
+                "interp": "linear",
+                "sizeInterp": "circleIn",
+                "followParent": true,
+                "rotWithParent": true,
+                "lifetime": 20
               }
             ]
           },

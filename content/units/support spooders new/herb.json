@@ -15,7 +15,7 @@
   "hitSize": 16,
   "groundLayer": 75,
   "legCount": 5,
-  "legLength": 6.5,
+  "legLength": 13,
   "legMoveSpace": 1.6,
   "stepShake": 0,
   "hovering": true,
@@ -44,6 +44,7 @@
       "soundPitchMin": 1,
       "soundPitchMax": 1,
       "shootSound": "vortex",
+      "loop": true,
       "bullet": {
         "type": "ContinuousFlameBulletType",
         "colors": [
@@ -62,60 +63,73 @@
         "length": 24,
         "status": "slow",
         "statusDuration": 35,
-        "hitEffect": "none",
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "particles": 1,
+          "colorFrom": "98FFA9FF",
+          "colorTo": "98FFA900",
+          "sizeFrom": 5,
+          "sizeTo": 0,
+          "line": true,
+          "interp": "circleIn",
+          "sizeInterp": "linear",
+          "baseRotation": 180
+        },
         "drawSize": 660,
         "collidesTeam": true,
         "healPercent": 0.8,
         "knockback": -0.3,
-        "trailChance": 1,
-        "trailInterval": 20,
-        "trailEffect": {
-          "type": "MultiEffect",
-          "effects": [
-            {
-              "type": "ParticleEffect",
-              "particles": 1,
-              "length": 0,
-              "lengthFrom": 30,
-              "randLength": false,
-              "sizeFrom": 12,
-              "sizeTo": 0,
-              "cone": 5,
-              "colorFrom": "98FFA944",
-              "colorTo": "98FFA9AA",
-              "layer": 80,
-              "lifetime": 40,
-              "region": "newunits-shockwave-back",
-              "followParent": true
-            },
-            {
-              "type": "ParticleEffect",
-              "particles": 1,
-              "length": 0,
-              "lengthFrom": 34,
-              "randLength": false,
-              "sizeFrom": 4,
-              "sizeTo": 1,
-              "cone": 15,
-              "layer": 80,
-              "colorFrom": "98FFA9FF",
-              "colorTo": "98FFA9FF",
-              "followParent": true
-            },
-            {
-              "type": "ParticleEffect",
-              "particles": 2,
-              "length": 0,
-              "lengthFrom": 20,
-              "randLength": false,
-              "sizeFrom": 4,
-              "sizeTo": 1,
-              "cone": 15,
-              "colorFrom": "98FFA9FF",
-              "colorTo": "98FFA9FF",
-              "followParent": true
-            }
-          ]
+        "shootEffect": "none",
+        "smokeEffect": "none",
+        "bulletInterval": 5,
+        "intervalBullet": {
+          "hitEffect": "none",
+          "despawnEffect": "none",
+          "despawnHit": false,
+          "shootEffect": {
+            "type": "MultiEffect",
+            "effects": [
+              {
+                "type": "ParticleEffect",
+                "particles": 1,
+                "length": 0,
+                "lengthFrom": 30,
+                "randLength": false,
+                "sizeFrom": 12,
+                "sizeTo": 0,
+                "cone": 5,
+                "colorFrom": "98FFA944",
+                "colorTo": "98FFA9AA",
+                "layer": 80,
+                "lifetime": 40,
+                "region": "newunits-shockwave-back",
+                "followParent": true,
+                "rotWithParent": true
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 1,
+                "length": 0,
+                "lengthFrom": 34,
+                "randLength": false,
+                "sizeFrom": 4,
+                "sizeTo": 1,
+                "cone": 15,
+                "layer": 80,
+                "colorFrom": "98FFA9FF",
+                "colorTo": "98FFA9FF",
+                "followParent": true,
+                "rotWithParent": true
+              }
+            ]
+          },
+          "lifetime": 1,
+          "colorFrom": "00000000",
+          "colorTo": "00000000",
+          "damage": 0,
+          "width": 1,
+          "height": 1,
+          "smokeEffect": "none"
         }
       }
     }

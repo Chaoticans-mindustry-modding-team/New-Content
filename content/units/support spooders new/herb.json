@@ -87,7 +87,11 @@
         "shootEffect": "none",
         "smokeEffect": "none",
         "recoil": 0.01,
+        "pierce": true,
+        "pierceCap": -1,
+        "pierceBuilding": true,
         "bulletInterval": 4,
+        "parentizeEffects": true,
         "intervalRandomSpread": 0,
         "intervalBullet": {
           "hitEffect": "none",

@@ -84,9 +84,8 @@
         "bulletInterval": 5,
         "intervalBullet": {
           "hitEffect": "none",
-          "despawnEffect": "none",
-          "despawnHit": false,
-          "shootEffect": {
+          "despawnHit": true,
+          "despawnEffect": {
             "type": "MultiEffect",
             "effects": [
               {

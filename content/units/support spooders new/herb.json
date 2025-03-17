@@ -27,7 +27,7 @@
   "health": 460,
   "rotateShooting": true,
   "shadowElevation": 0.2,
-  "range": 34,
+  "range": 32,
   "buildSpeed": 0.3,
   "weapons": [
     {

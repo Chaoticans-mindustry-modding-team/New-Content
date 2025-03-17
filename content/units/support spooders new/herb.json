@@ -1,5 +1,5 @@
 {
-  "localizedName": "Fern",
+  "localizedName": "Herb",
   "research": {
     "parent": "fern",
     "requirements": [
@@ -17,6 +17,7 @@
   "legCount": 5,
   "legLength": 6.5,
   "legMoveSpace": 1.6,
+  "stepShake": 0,
   "hovering": true,
   "armor": 4,
   "speed": 0.8,
@@ -51,22 +52,22 @@
           "00000000",
           "00000000"
         ],
-        "damage": 20,
-        "flareWidth": 6,
-        "flareLength": 9,
+        "damage": 12,
+        "flareWidth": 0,
+        "flareLength": 0,
         "flareColor": "00000000",
         "width": 10,
         "lifetime": 20,
         "divisions": 20,
-        "length": 34,
+        "length": 24,
         "status": "slow",
         "statusDuration": 35,
         "hitEffect": "none",
         "drawSize": 660,
         "collidesTeam": true,
         "healPercent": 0.8,
-        "knockback": -0.5,
-        "trailChance": 0,
+        "knockback": -0.3,
+        "trailChance": 1,
         "trailInterval": 20,
         "trailEffect": {
           "type": "MultiEffect",
@@ -96,6 +97,7 @@
               "sizeFrom": 4,
               "sizeTo": 1,
               "cone": 15,
+              "layer": 80,
               "colorFrom": "98FFA9FF",
               "colorTo": "98FFA9FF",
               "followParent": true

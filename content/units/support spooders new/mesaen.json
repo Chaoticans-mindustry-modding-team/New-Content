@@ -170,7 +170,7 @@
       ],
       "bullet": {
         "type": "ShrapnelBulletType",
-        "damage": 130,
+        "damage": 60,
         "serrations": 0,
         "length": 35,
         "width": 16,

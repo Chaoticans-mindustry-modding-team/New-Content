@@ -215,7 +215,6 @@
       "rotationLimit": 90,
       "shootCone": 3,
       "top": true,
-      "outlineRegion": "stinger-outline",
       "bullet": {
         "type": "LiquidBulletType",
         "liquid": "venom",

@@ -222,5 +222,14 @@
         "recoil": -2
       }
     }
+  ],
+  "abilities": [
+    {
+      "type": "mindustry.entities.abilities.ForceFieldAbility",
+      "radius": 72,
+      "regen": 0.5,
+      "max": 200,
+      "cooldown": 60
+    }
   ]
 }

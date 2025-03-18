@@ -65,12 +65,12 @@
       "bullet": {
         "type": "ContinuousFlameBulletType",
         "colors": [
-          "98FFD93F",
-          "98FFC93F",
-          "98FFA94F",
-          "98FFA94F"
+          "98FFD933",
+          "98FFC933",
+          "98FFA944",
+          "98FFA944"
         ],
-        "damage": 5,
+        "damage": 2,
         "flareWidth": 6,
         "flareLength": 5,
         "flareColor": "98FFA988",
@@ -168,10 +168,10 @@
       ],
       "bullet": {
         "type": "ShrapnelBulletType",
-        "damage": 60,
+        "damage": 45,
         "serrations": 0,
         "length": 35,
-        "width": 16,
+        "width": 10,
         "lifetime": 10,
         "collidesAir": true,
         "knockback": 2,

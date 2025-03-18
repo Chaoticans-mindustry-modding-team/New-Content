@@ -1,0 +1,16 @@
+{
+  "type": "StatusEffect",
+  "name": "Maimed",
+  "damage": 0.4,
+  "color": "7AD948FF",
+  "transitionDamage": 260,
+  "speedMultiplier": 0.3,
+  "reloadMultiplier": 0.5,
+  "healthMultiplier": 0.75,
+  "buildSpeedMultiplier": 0.2,
+  "affinities": [
+    "corroded",
+    "newunits-poisoned"
+  ],
+  "effect": "none"
+}

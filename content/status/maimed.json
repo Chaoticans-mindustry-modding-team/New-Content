@@ -3,14 +3,15 @@
   "name": "Maimed",
   "damage": 0.4,
   "color": "7AD948FF",
-  "transitionDamage": 260,
+  "transitionDamage": 220,
   "speedMultiplier": 0.3,
   "reloadMultiplier": 0.5,
-  "healthMultiplier": 0.75,
+  "healthMultiplier": 0.55,
   "buildSpeedMultiplier": 0.2,
   "affinities": [
     "corroded",
-    "newunits-poisoned"
+    "newunits-poisoned",
+    "sapped"
   ],
   "effect": "none"
 }

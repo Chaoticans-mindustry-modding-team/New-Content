@@ -12,7 +12,7 @@
     ]
   },
   "type": "legs",
-  "description": "Slows and damages nearby enemy targets with swift pincer claws while shooting venom orbs at far away enemy targets, maiming them. Repairs structures in front of it with a repair field. Can step over most terrain. Protects nearby allies with a small regenerating shield.",
+  "description": "Slows and damages nearby enemy targets with swift pincer claws while shooting venom orbs at far away enemy targets, maiming them. Repairs structures and burns enemy targets in front of it with a repair torch. Can step over most terrain. Protects nearby allies with a small regenerating shield.",
   "hitSize": 26,
   "groundLayer": 75,
   "rotationSpeed": 2,
@@ -68,7 +68,7 @@
           "98FFD93F",
           "98FFC94F",
           "98FFA95F",
-          "98FFA966"
+          "98FFA94F"
         ],
         "damage": 5,
         "flareWidth": 4,
@@ -78,8 +78,8 @@
         "lifetime": 10,
         "divisions": 10,
         "length": 90,
-        "status": "electrified",
-        "statusDuration": 30,
+        "status": "burning",
+        "statusDuration": 120,
         "hitEffect": {
           "type": "ParticleEffect",
           "particles": 1,
@@ -114,16 +114,16 @@
                 "particles": 2,
                 "length": 75,
                 "randLength": true,
-                "sizeFrom": 4,
-                "sizeTo": 1,
+                "sizeFrom": 1,
+                "sizeTo": 0,
                 "cone": 20,
                 "colorFrom": "98FFA9FF",
                 "colorTo": "98FFA9F00",
-                "interp": "circleOut",
+                "interp": "circleIn",
                 "sizeInterp": "circleIn",
                 "followParent": true,
                 "rotWithParent": true,
-                "lifetime": 60
+                "lifetime": 30
               }
             ]
           },
@@ -152,9 +152,9 @@
       "top": false,
       "layerOffset": -0.001,
       "reload": 15,
-      "shootCone": 15,
+      "shootCone": 20,
       "rotateSpeed": 5,
-      "rotationLimit": 10,
+      "rotationLimit": 35,
       "recoil": -2,
       "parts": [
         {
@@ -162,7 +162,7 @@
           "suffix": "-pincer",
           "moveX": 1,
           "moveY": 3,
-          "moveRot": -16,
+          "moveRot": -13,
           "mirror": true,
           "layerOffset": -0.002,
           "progress": "recoil"
@@ -211,13 +211,18 @@
       "y": -16,
       "reload": 200,
       "shootSound": "shootAlt",
-      "shake": 1,
+      "shake": 2,
       "recoil": -2.5,
       "rotate": true,
-      "rotateSpeed": 1,
+      "rotateSpeed": 2,
       "rotationLimit": 90,
       "shootCone": 3,
       "top": true,
+      "inaccuracy": 2,
+      "shoot": {
+        "shots": 2,
+        "shotDelay": 5
+      },
       "bullet": {
         "type": "LiquidBulletType",
         "liquid": "venom",
@@ -225,7 +230,10 @@
         "statusDuration": 120,
         "lifetime": 45,
         "puddleSize": 4,
+        "puddleLiquid": "venom",
         "puddles": 1,
+        "puddleRange": 8,
+        "puddleAmount": 6,
         "orbSize": 4,
         "speed": 6,
         "damage": 67

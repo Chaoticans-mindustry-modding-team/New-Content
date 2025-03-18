@@ -85,7 +85,7 @@
         "damage": 15,
         "lifetime": 45,
         "speed": 6,
-        "healPercent": 7,
+        "healPercent": 15,
         "collidesTeam": true,
         "hitEffect": "hitLaser",
         "shootEffect": "hitLaser",

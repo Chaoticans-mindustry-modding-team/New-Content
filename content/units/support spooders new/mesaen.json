@@ -65,9 +65,9 @@
         "type": "ContinuousFlameBulletType",
         "colors": [
           "98FFD922",
-          "98FFC955",
-          "98FFA977",
-          "FFFFFF99"
+          "98FFC933",
+          "98FFA944",
+          "98FFA955"
         ],
         "damage": 1,
         "flareWidth": 1,
@@ -149,8 +149,11 @@
       "shake": 0.3,
       "top": false,
       "layerOffset": -0.001,
+      "reload": 20,
+      "shootCone": 15,
       "rotateSpeed": 5,
-      "rotationLimit": 3,
+      "rotationLimit": 10,
+      "recoil": -2,
       "parts": [
         {
           "type": "RegionPart",
@@ -209,9 +212,10 @@
       "recoil": -2.5,
       "rotate": true,
       "rotateSpeed": 1,
-      "rotationLimit": 60,
+      "rotationLimit": 90,
       "shootCone": 3,
       "top": true,
+      "outlineRegion": "stinger-outline",
       "bullet": {
         "type": "LiquidBulletType",
         "liquid": "venom",

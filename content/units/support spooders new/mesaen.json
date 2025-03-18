@@ -12,7 +12,7 @@
     ]
   },
   "type": "legs",
-  "description": "Slows and damages nearby enemy targets with swift pincer claws while shooting venom orbs at far away enemy targets, maiming them. Repairs structures and damages enemy targets in front of it with a repair aura. Can step over most terrain. Protects nearby allies with a small regenerating shield.",
+  "description": "Damages nearby enemy targets with swift pincer claws while shooting venom orbs at far away enemy targets, maiming them. Repairs structures and damages enemy targets in front of it with a repair aura. Can step over most terrain. Protects nearby allies with a small regenerating shield.",
   "hitSize": 26,
   "groundLayer": 75,
   "rotationSpeed": 0.5,
@@ -234,7 +234,33 @@
         "puddleAmount": 6,
         "orbSize": 4,
         "speed": 6,
-        "damage": 67
+        "damage": 67,
+        "splashDamageRadius": 24,
+        "splashDamage": 35,
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "particleEffect",
+              "particles": 6,
+              "length": 27,
+              "colorFrom": "C8FF70FF",
+              "colorTo": "C8FF70FF",
+              "sizeFrom": 2,
+              "sizeTo": 0,
+              "interp": "circleOut",
+              "sizeInterp": "circleIn",
+              "lifetime": 25
+            },
+            {
+              "type": "WaveEffect",
+              "sizeTo": 25,
+              "colorFrom": "C8FF70FF",
+              "colorTo": "C8FF70FF",
+              "lifetime": 20
+            }
+          ]
+        }
       }
     }
   ],

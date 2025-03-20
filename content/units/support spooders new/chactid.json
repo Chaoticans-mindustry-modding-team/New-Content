@@ -163,7 +163,7 @@
         "type": "BasicBulletType",
         "width": 3,
         "height": 3,
-        "damage": 12,
+        "damage": 10,
         "speed": 4,
         "absorbable": false,
         "hittable": false,
@@ -250,7 +250,7 @@
         "speed": 8,
         "damage": 100,
         "splashDamageRadius": 30,
-        "splashDamage": 140,
+        "splashDamage": 60,
         "hitSound": "mud",
         "hitShake": 2,
         "hitEffect": {

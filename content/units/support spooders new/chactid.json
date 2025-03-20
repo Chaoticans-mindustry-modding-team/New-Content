@@ -1,7 +1,7 @@
 {
   "localizedName": "Chactid",
   "research": {
-    "parent": "leech",
+    "parent": "mesaen",
     "requirements": [
       "silicon/99000",
       "plastanium/56000",
@@ -16,7 +16,7 @@
   "description": "Fires a continuous stream of structure-healing flame and clusters of healing orbs at enemy targets. Maims enemy targets with a long range venom launcher. Boosts nearby allies with an overclock boost.",
   "hitSize": 32,
   "groundLayer": 75,
-  "rotationSpeed": 0.25,
+  "rotateSpeed": 1,
   "lockLegBase": true,
   "legContinuousMove": true,
   "legCount": 8,
@@ -48,19 +48,19 @@
     {
       "name": "chactid-weapon",
       "x": 0,
-      "y": 0,
+      "y": 4,
       "mirror": false,
       "alternate": false,
-      "reload": 65,
+      "reload": 73,
       "shootSound": "shockBlast",
       "ejectEffect": "none",
       "shootY": 0,
       "rotate": false,
       "top": false,
       "recoil": 0,
-      "inaccuracy": 25,
+      "inaccuracy": 5,
       "shoot": {
-        "shots": 4,
+        "shots": 5,
         "shotDelay": 0
       },
       "shootCone": 30,
@@ -69,8 +69,8 @@
       "bullet": {
         "type": "MissileBulletType",
         "sprite": "circle-bullet",
-        "width": 8,
-        "height": 8,
+        "width": 12,
+        "height": 12,
         "shrinkY": 0,
         "damage": 35,
         "speed": 3.3,
@@ -92,13 +92,12 @@
         "splashDamage": 35,
         "despawnEffect": "none",
         "hitShake": 0.3,
-        "recoil": 0.3,
         "hitEffect": {
           "type": "MultiEffect",
           "effects": [
             {
               "type": "ParticleEffect",
-              "particles": 3,
+              "particles": 7,
               "line": true,
               "strokeFrom": 1,
               "length": 15,
@@ -113,7 +112,7 @@
               "sizeTo": 13,
               "colorFrom": "98FFA9FF",
               "colorTo": "98FFA9FF",
-              "Lifetime": 25
+              "lifetime": 25
             }
           ]
         }
@@ -122,7 +121,7 @@
     {
       "name": "large-flamethrower",
       "mirror": true,
-      "alternate": false,
+      "alternate": true,
       "x": 12.75,
       "y": 19,
       "shootSound": "flame2",
@@ -131,7 +130,7 @@
       "shake": 0.6,
       "top": false,
       "layerOffset": -0.001,
-      "reload": 10,
+      "reload": 5,
       "shootCone": 20,
       "rotateSpeed": 3,
       "rotationLimit": 45,
@@ -141,7 +140,7 @@
         {
           "type": "RegionPart",
           "suffix": "-barrel",
-          "moveY": -3,
+          "moveY": -1,
           "mirror": true,
           "under": true,
           "progress": "recoil"
@@ -162,8 +161,8 @@
           "particles": 6,
           "colorFrom": "98FFA9FF",
           "colorTo": "CCCCCCFF",
-          "sizeFrom": 4,
-          "sizeTo": 1,
+          "sizeFrom": 1.5,
+          "sizeTo": 0.5,
           "cone": 15,
           "interp": "circleOut",
           "sizeInterp": "circleIn",
@@ -172,6 +171,8 @@
         },
         "pierce": true,
         "pierceCap": 3,
+        "collidesTeam": true,
+        "healPercent": 3,
         "pierceBuilding": false,
         "lifetime": 7.5,
         "frontColor": "00000000",
@@ -210,6 +211,7 @@
       "shootCone": 10,
       "top": true,
       "inaccuracy": 6,
+      "velocityRnd": 0.2,
       "shoot": {
         "shots": 4,
         "shotDelay": 0
@@ -225,11 +227,12 @@
         "puddles": 1,
         "puddleRange": 16,
         "puddleAmount": 6,
-        "orbSize": 6,
+        "orbSize": 3,
         "speed": 8,
         "damage": 100,
         "splashDamageRadius": 30,
         "splashDamage": 35,
+        "hitSound": "mud",
         "hitEffect": {
           "type": "MultiEffect",
           "effects": [

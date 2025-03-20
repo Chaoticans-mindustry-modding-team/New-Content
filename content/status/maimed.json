@@ -5,7 +5,7 @@
   "color": "7AD948FF",
   "transitionDamage": 220,
   "speedMultiplier": 0.3,
-  "reloadMultiplier": 0.5,
+  "reloadMultiplier": 0.8,
   "healthMultiplier": 0.55,
   "buildSpeedMultiplier": 0.2,
   "affinities": [

@@ -72,7 +72,7 @@
         "width": 7,
         "height": 7,
         "shrinkY": 0,
-        "damage": 35,
+        "damage": 10,
         "speed": 3.3,
         "lifetime": 60,
         "frontColor": "FFFFFFFF",
@@ -163,7 +163,7 @@
         "type": "BasicBulletType",
         "width": 3,
         "height": 3,
-        "damage": 32,
+        "damage": 12,
         "speed": 4,
         "absorbable": false,
         "hittable": false,
@@ -252,6 +252,7 @@
         "splashDamageRadius": 30,
         "splashDamage": 140,
         "hitSound": "mud",
+        "hitShake": 2,
         "hitEffect": {
           "type": "MultiEffect",
           "effects": [

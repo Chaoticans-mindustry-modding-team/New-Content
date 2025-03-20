@@ -168,7 +168,26 @@
         "absorbable": false,
         "hittable": false,
         "reflectable": false,
-        "shootEffect": "shootHeal",
+        "shootEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "followParent": false,
+              "particles": 6,
+              "colorFrom": "98FFA9FF",
+              "colorTo": "CCCCCCFF",
+              "sizeFrom": 2.5,
+              "sizeTo": 0.5,
+              "cone": 15,
+              "interp": "circleOut",
+              "sizeInterp": "circleIn",
+              "lifetime": 45,
+              "length": 60
+            },
+            "shootHeal"
+          ]
+        },
         "pierce": true,
         "pierceCap": 3,
         "collidesTeam": true,

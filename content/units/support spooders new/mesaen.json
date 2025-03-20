@@ -15,7 +15,7 @@
   "description": "Damages nearby enemy targets with swift pincer claws while shooting venom orbs at far away enemy targets, maiming them. Repairs structures and damages enemy targets in front of it with a repair aura. Can step over most terrain. Protects nearby allies with a small regenerating shield.",
   "hitSize": 26,
   "groundLayer": 75,
-  "rotationSpeed": 0.5,
+  "rotateSpeed": 0.5,
   "lockLegBase": true,
   "legContinuousMove": true,
   "legCount": 8,

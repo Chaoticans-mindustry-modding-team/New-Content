@@ -19,7 +19,7 @@ Events.on(ClientLoadEvent, e => {
   Vars.control.sound.darkMusic.add(day3);
   Vars.control.sound.darkMusic.add(day4);
   Vars.control.sound.darkMusic.add(game10);
-  Vars.control.sound.bossMusic.add(boss3)
+  Vars.control.sound.bossMusic.add(boss3);
   Vars.control.sound.bossMusic.add(seq); //duck it, seq is boss music
   //duck it, seq is boss music
   //duck it, seq is boss music

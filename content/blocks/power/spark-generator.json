@@ -1,0 +1,48 @@
+{
+  "name": "Spark Generator",
+  "description": "Harvests sparks created through friction between metal pieces.",
+  "type": "ConsumeGenerator",
+  "size": 1,
+  "hasItems": true,
+  "itemCapacity": 5,
+  "ambientSound": "grinding",
+  "ambientSoundVolume": 0.02,
+  "powerProduction": 0.5,
+  "itemDuration": 330,
+  "generateEffectRange": 0,
+  "generateEffect": {
+    "type": "MultiEffect",
+    "effects": [
+      "hitBulletSmall",
+      {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 4,
+        "sizeTo": 4,
+        "region": "newunits-spark-generator-top",
+        "interp": "linear",
+        "colorFrom": "FFDD00FF",
+        "colorTo": "FFDD00FF",
+        "length": 0,
+        "baseLength": 0,
+        "lifetime": 10
+      }
+    ]
+  },
+  "requirements": [
+    "copper/30",
+    "lead/15",
+    "graphite/6"
+  ],
+  "consumes": {
+    "items": {
+      "items": [
+        "copper/1"
+      ]
+    }
+  },
+  "category": "power",
+  "research": {
+    "parent": "combustion-generator"
+  }
+}

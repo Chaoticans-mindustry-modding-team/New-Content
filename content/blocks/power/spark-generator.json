@@ -19,11 +19,13 @@
         "particles": 5,
         "strokeFrom": 1,
         "strokeTo": 0,
-        "lenFrom": 3,
+        "lenFrom": 2,
         "lenTo": 1.5,
         "colorFrom": "FFD37FFF",
         "colorTo": "D4816BFF",
-        "lifetime": 10
+        "lifetime": 10,
+        "line": true,
+        "length": 3
       },
       {
         "type": "ParticleEffect",
@@ -32,8 +34,8 @@
         "sizeTo": 4,
         "region": "newunits-spark-generator-flash",
         "interp": "linear",
-        "colorFrom": "FFDD00FF",
-        "colorTo": "FFDD00FF",
+        "colorFrom": "FFDD33FF",
+        "colorTo": "FFDD3300",
         "length": 0,
         "baseLength": 0,
         "lifetime": 10

@@ -10,16 +10,27 @@
   "powerProduction": 0.5,
   "itemDuration": 330,
   "generateEffectRange": 0,
+  "generateEffectChance": 0.2,
   "generateEffect": {
     "type": "MultiEffect",
     "effects": [
-      "hitBulletSmall",
+      {
+        "type": "ParticleEffect",
+        "particles": 5,
+        "strokeFrom": 1,
+        "strokeTo": 0,
+        "lenFrom": 3,
+        "lenTo": 1.5,
+        "colorFrom": "FFD37FFF",
+        "colorTo": "D4816BFF",
+        "lifetime": 10
+      },
       {
         "type": "ParticleEffect",
         "particles": 1,
         "sizeFrom": 4,
         "sizeTo": 4,
-        "region": "newunits-spark-generator-top",
+        "region": "newunits-spark-generator-flash",
         "interp": "linear",
         "colorFrom": "FFDD00FF",
         "colorTo": "FFDD00FF",

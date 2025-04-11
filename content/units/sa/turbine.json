@@ -15,7 +15,7 @@
   "weapons": [
     {
       "name": "turbine-propeller",
-      "shootCone": 40,
+      "shootCone": 180,
       "mirror": false,
       "top": false,
       "rotate": true,
@@ -44,7 +44,7 @@
           "particles": 6,
           "colorFrom": "BF92F9FF",
           "colorTo": "AAAAAAFF",
-          "sizeFrom": 2,
+          "sizeFrom": 3,
           "sizeTo": 1,
           "cone": 12.5,
           "interp": "circleOut",
@@ -66,7 +66,7 @@
           "colorFrom": "BF92F9FF",
           "colorTo": "AAAAAAFF",
           "line": false,
-          "sizeFrom": 1,
+          "sizeFrom": 2,
           "sizeTo": 0,
           "interp": "circleOut",
           "sizeInterp": "circleIn",

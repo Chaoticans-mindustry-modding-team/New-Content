@@ -1,0 +1,106 @@
+{
+  "localizedName": "Motor",
+  "description": "Fires clusters of four standard bullets at nearby enemy targets.",
+  "accel": 0.15,
+  "drag": 0.14,
+  "flying": true,
+  "health": 670,
+  "armor": 4,
+  "engineOffset": 5,
+  "targetAir": true,
+  "circleTarget": false,
+  "hitSize": 13,
+  "rotateSpeed": 5,
+  "weapons": [
+    {
+      "name": "motor-pelleter",
+      "shootCone": 30,
+      "mirror": true,
+      "alternate": false,
+      "top": false,
+      "rotate": false,
+      "under": true,
+      "x": 4.25,
+      "y": 4.5,
+      "reload": 35,
+      "shootSound": "shootSnap",
+      "recoil": 2,
+      "shoot": {
+        "shots": 2,
+        "shotDelay": 3
+      },
+      "bullet": {
+        "type": "BasicBulletType",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sizeTo": 8,
+              "strokeFrom": 2.5,
+              "strokeTo": 0.5,
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "BF92F9FF",
+              "lifetime": 10
+            },
+            {
+              "type": "ParticleEffect",
+              "line": true,
+              "sizeFrom": 6,
+              "sizeTo": 5,
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "BF92F9FF",
+              "lifetime": 20,
+              "length": 12
+            }
+          ]
+        },
+        "frontColor": "BF92F9FF",
+        "backColor": "9D70D7FF",
+        "damage": 15,
+        "speed": 5,
+        "lifetime": 45,
+        "trailWidth": 1.5,
+        "trailColor": "9D70D7FF",
+        "trailLength": 12,
+        "despawnHit": true,
+        "despawnEffect": "none",
+        "width": 7,
+        "height": 9,
+        "recoil": 0
+      }
+    },
+    {
+      "name": "motor-blade",
+      "reload": 12,
+      "mirror": false,
+      "x": 0,
+      "y": -3.5,
+      "top": true,
+      "shoot": {
+        "shots": 0
+      },
+      "controllable": false,
+      "alwaysShooting": true,
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-blade",
+          "moveRot": 180,
+          "progress": "reload",
+          "color": "FFFFFFFF",
+          "colorTo": "FFFFFF00"
+        },
+        {
+          "type": "RegionPart",
+          "suffix": "-blade",
+          "rotation": 180,
+          "moveRot": 180,
+          "progress": "reload",
+          "color": "FFFFFF00",
+          "colorTo": "FFFFFFFF"
+        }
+      ]
+    }
+  ]
+}

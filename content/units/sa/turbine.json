@@ -33,8 +33,8 @@
         "type": "BasicBulletType",
         "width": 1,
         "height": 1,
-        "damage": 7,
-        "speed": 8,
+        "damage": 2,
+        "speed": 4,
         "absorbable": false,
         "hittable": false,
         "reflectable": false,
@@ -49,7 +49,7 @@
           "cone": 12.5,
           "interp": "circleOut",
           "lifetime": 30.5,
-          "length": 60
+          "length": 30
         },
         "pierce": true,
         "pierceCap": 2,

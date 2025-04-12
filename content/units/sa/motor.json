@@ -86,7 +86,8 @@
           "progress": "reload",
           "color": "FFFFFFFF",
           "colorTo": "FFFFFF00",
-          "layerOffset": 2
+          "layerOffset": 2,
+          "outline": false
         },
         {
           "type": "RegionPart",
@@ -96,7 +97,8 @@
           "progress": "reload",
           "color": "FFFFFF00",
           "colorTo": "FFFFFFFF",
-          "layerOffset": 2
+          "layerOffset": 2,
+          "outline": false
         },
         {
           "type": "RegionPart",

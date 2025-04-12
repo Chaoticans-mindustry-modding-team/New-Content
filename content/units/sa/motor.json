@@ -6,7 +6,7 @@
   "flying": true,
   "health": 670,
   "armor": 3,
-  "engineOffset": 6.5,
+  "engineOffset": 7.5,
   "targetAir": true,
   "circleTarget": false,
   "hitSize": 14,

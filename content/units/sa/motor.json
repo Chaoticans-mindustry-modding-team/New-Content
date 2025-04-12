@@ -1,15 +1,15 @@
 {
   "localizedName": "Motor",
-  "description": "Fires clusters of four standard bullets at nearby enemy targets.",
+  "description": "Fires dual bullets at nearby enemy targets.",
   "accel": 0.15,
   "drag": 0.14,
   "flying": true,
   "health": 670,
   "armor": 4,
-  "engineOffset": 5,
+  "engineOffset": 10,
   "targetAir": true,
   "circleTarget": false,
-  "hitSize": 13,
+  "hitSize": 14,
   "rotateSpeed": 5,
   "weapons": [
     {
@@ -23,12 +23,7 @@
       "x": 4.25,
       "y": 4.5,
       "reload": 35,
-      "shootSound": "shootSnap",
       "recoil": 2,
-      "shoot": {
-        "shots": 2,
-        "shotDelay": 3
-      },
       "bullet": {
         "type": "BasicBulletType",
         "hitEffect": {
@@ -57,8 +52,8 @@
         },
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
-        "damage": 15,
-        "speed": 5,
+        "damage": 30,
+        "speed": 3,
         "lifetime": 45,
         "trailWidth": 1.5,
         "trailColor": "9D70D7FF",
@@ -67,12 +62,12 @@
         "despawnEffect": "none",
         "width": 7,
         "height": 9,
-        "recoil": 0
+        "recoil": 0.3
       }
     },
     {
       "name": "motor-blade",
-      "reload": 12,
+      "reload": 24,
       "mirror": false,
       "x": 0,
       "y": -3.5,
@@ -85,20 +80,32 @@
       "parts": [
         {
           "type": "RegionPart",
-          "suffix": "-blade",
+          "suffix": "-shade",
           "moveRot": 180,
           "progress": "reload",
           "color": "FFFFFFFF",
-          "colorTo": "FFFFFF00"
+          "colorTo": "FFFFFF00",
+          "layerOffset": 1
         },
         {
           "type": "RegionPart",
-          "suffix": "-blade",
+          "suffix": "-shade",
           "rotation": 180,
           "moveRot": 180,
           "progress": "reload",
           "color": "FFFFFF00",
-          "colorTo": "FFFFFFFF"
+          "colorTo": "FFFFFFFF",
+          "layerOffset": 1
+        },
+        {
+          "type": "RegionPart",
+          "suffix": "-blade",
+          "rotation": 0,
+          "moveRot": 180,
+          "progress": "reload",
+          "color": "FFFFFFFF",
+          "colorTo": "FFFFFFFF",
+          "layerOffset": 2
         }
       ]
     }

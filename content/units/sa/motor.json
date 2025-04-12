@@ -5,7 +5,7 @@
   "drag": 0.14,
   "flying": true,
   "health": 670,
-  "armor": 4,
+  "armor": 3,
   "engineOffset": 10,
   "targetAir": true,
   "circleTarget": false,
@@ -22,7 +22,7 @@
       "under": true,
       "x": 4.25,
       "y": 4.5,
-      "reload": 35,
+      "reload": 25,
       "recoil": 2,
       "bullet": {
         "type": "BasicBulletType",
@@ -52,7 +52,7 @@
         },
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
-        "damage": 30,
+        "damage": 37,
         "speed": 3,
         "lifetime": 45,
         "trailWidth": 1.5,
@@ -81,6 +81,7 @@
         {
           "type": "RegionPart",
           "suffix": "-shade",
+          "rotation": 0,
           "moveRot": 180,
           "progress": "reload",
           "color": "FFFFFFFF",
@@ -99,7 +100,7 @@
         },
         {
           "type": "RegionPart",
-          "suffix": "-blade",
+          "suffix": "-flat",
           "rotation": 0,
           "moveRot": 180,
           "progress": "reload",

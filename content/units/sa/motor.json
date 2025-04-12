@@ -86,7 +86,7 @@
           "progress": "reload",
           "color": "FFFFFFFF",
           "colorTo": "FFFFFF00",
-          "layerOffset": 1
+          "layerOffset": 2
         },
         {
           "type": "RegionPart",
@@ -96,7 +96,7 @@
           "progress": "reload",
           "color": "FFFFFF00",
           "colorTo": "FFFFFFFF",
-          "layerOffset": 1
+          "layerOffset": 2
         },
         {
           "type": "RegionPart",
@@ -106,7 +106,7 @@
           "progress": "reload",
           "color": "FFFFFFFF",
           "colorTo": "FFFFFFFF",
-          "layerOffset": 2
+          "layerOffset": 1
         }
       ]
     }

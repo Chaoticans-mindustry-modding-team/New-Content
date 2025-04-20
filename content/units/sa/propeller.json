@@ -1,6 +1,6 @@
 {
   "localizedName": "Propeller",
-  "description": "Fires a barrage of paired bullets at enemies.",
+  "description": "Fires a barrage of paired bullets at enemies. Can strafe without losing speed.",
   "accel": 0.1,
   "drag": 0.08,
   "flying": true,
@@ -11,6 +11,8 @@
   "circleTarget": false,
   "hitSize": 17,
   "rotateSpeed": 3,
+  "strafePenalty": 1,
+  "range": 120,
   "weapons": [
     {
       "name": "motor-pelleter",
@@ -108,7 +110,7 @@
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
         "damage": 35,
-        "speed": 3,
+        "speed": 4,
         "lifetime": 30,
         "trailWidth": 1.5,
         "trailColor": "9D70D7FF",
@@ -119,27 +121,41 @@
         "height": 12,
         "splashDamageRadius": 11,
         "splashDamage": 15,
-        "recoil": 2
+        "recoil": 0.25
       }
     },
     {
       "name": "propeller-blade",
-      "reload": 13,
+      "reload": 130,
       "mirror": false,
-      "x": 0,
-      "y": -1,
+      "x": -3.5,
+      "y": 0.25,
       "top": true,
       "shoot": {
         "shots": 0
       },
       "controllable": false,
       "alwaysShooting": true,
+      "shootSound": "rotors",
+      "soundVolumeMin": 0.1,
+      "soundVolumeMax": 0.1,
+      "soundPitchMin": 2.38095238,
+      "soundPitchMax": 2.38095238,
+      "ejectEffect": {
+        "type": "SoundEffect",
+        "effect": "none",
+        "sound": "rotors",
+        "minVolume": 0.1,
+        "maxVolume": 0.1,
+        "minPitch": 2.38095238,
+        "maxPitch": 2.38095238
+      },
       "parts": [
         {
           "type": "RegionPart",
           "suffix": "-shade",
           "rotation": 0,
-          "moveRot": 180,
+          "moveRot": 1800,
           "progress": "reload",
           "color": "FFFFFFFF",
           "colorTo": "FFFFFF00",
@@ -150,7 +166,7 @@
           "type": "RegionPart",
           "suffix": "-shade",
           "rotation": 180,
-          "moveRot": 180,
+          "moveRot": 1800,
           "progress": "reload",
           "color": "FFFFFF00",
           "colorTo": "FFFFFFFF",
@@ -161,7 +177,7 @@
           "type": "RegionPart",
           "suffix": "-flat",
           "rotation": 0,
-          "moveRot": 180,
+          "moveRot": 1800,
           "progress": "reload",
           "color": "FFFFFFFF",
           "colorTo": "FFFFFFFF",

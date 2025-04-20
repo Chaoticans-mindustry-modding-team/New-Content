@@ -24,9 +24,10 @@
       "under": true,
       "x": 8.25,
       "y": 5,
-      "reload": 65,
+      "reload": 25,
       "recoil": 2,
       "layerOffset": -1,
+      "ejectEffect": "casing1",
       "bullet": {
         "type": "BasicBulletType",
         "hitEffect": {
@@ -76,11 +77,12 @@
       "rotate": false,
       "under": true,
       "layerOffset": -1,
-      "x": 8.25,
-      "y": 5,
-      "reload": 70,
+      "x": 3.5,
+      "y": 9.25,
+      "reload": 45,
       "recoil": 2,
       "shootSound": "shoot",
+      "ejectEffect": "casing2",
       "bullet": {
         "type": "BasicBulletType",
         "hitEffect": {
@@ -109,7 +111,7 @@
         },
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
-        "damage": 35,
+        "damage": 40,
         "speed": 4,
         "lifetime": 30,
         "trailWidth": 1.5,
@@ -128,27 +130,33 @@
       "name": "propeller-blade",
       "reload": 130,
       "mirror": false,
-      "x": -3.5,
-      "y": 0.25,
+      "x": 0,
+      "y": -1,
       "top": true,
       "shoot": {
-        "shots": 0
+        "shots": 1
       },
       "controllable": false,
       "alwaysShooting": true,
-      "shootSound": "rotors",
-      "soundVolumeMin": 0.1,
-      "soundVolumeMax": 0.1,
-      "soundPitchMin": 2.38095238,
-      "soundPitchMax": 2.38095238,
+      "shootSound": "none",
       "ejectEffect": {
         "type": "SoundEffect",
         "effect": "none",
         "sound": "rotors",
-        "minVolume": 0.1,
-        "maxVolume": 0.1,
+        "minVolume": 0.3,
+        "maxVolume": 0.3,
         "minPitch": 2.38095238,
         "maxPitch": 2.38095238
+      },
+      "bullet": {
+        "damage": 0,
+        "instantDisappear": true,
+        "despawnEffect": "none",
+        "hitEffect": "none",
+        "lifetime": 0,
+        "speed": 0,
+        "width": 0,
+        "height": 0
       },
       "parts": [
         {

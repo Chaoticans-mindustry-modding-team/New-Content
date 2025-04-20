@@ -1,6 +1,6 @@
 {
   "localizedName": "Motor",
-  "description": "Fires dual bullets at nearby enemy targets.",
+  "description": "Fires dual bullets at nearby enemy targets. Can strafe without losing speed.",
   "accel": 0.15,
   "drag": 0.14,
   "flying": true,
@@ -11,6 +11,7 @@
   "circleTarget": false,
   "hitSize": 14,
   "rotateSpeed": 5,
+  "strafePenalty": 1,
   "weapons": [
     {
       "name": "motor-pelleter",

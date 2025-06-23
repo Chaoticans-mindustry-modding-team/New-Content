@@ -37,10 +37,10 @@
       "ejectEffect": "casing1",
       "bullet": {
         "type": "BasicBulletType",
-        "damage": 13,
+        "damage": 16,
         "height": 11,
-        "width": 6.5,
-        "speed": 4.5,
+        "width": 8,
+        "speed": 6,
         "homingRange": 50,
         "homingPower": 0.04,
         "buildingDamageMultiplier": 0.02,
@@ -63,6 +63,10 @@
       "ejectEffect": "none",
       "inaccuracy": 3,
       "shootY": 0,
+      "shoot": {
+        "shots": 2,
+        "shotDelay": 3
+      },
       "bullet": {
         "type": "BasicBulletType",
         "damage": 11,

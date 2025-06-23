@@ -62,6 +62,7 @@
       "shootSound": "pew",
       "ejectEffect": "none",
       "inaccuracy": 10,
+      "shootY": 0,
       "bullet": {
         "type": "BasicBulletType",
         "damage": 11,

@@ -58,10 +58,10 @@
       "rotate": false,
       "x": 8,
       "y": -3,
-      "reload": 34,
+      "reload": 12,
       "shootSound": "pew",
       "ejectEffect": "none",
-      "inaccuracy": 10,
+      "inaccuracy": 3,
       "shootY": 0,
       "bullet": {
         "type": "BasicBulletType",

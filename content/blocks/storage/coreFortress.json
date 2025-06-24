@@ -1,0 +1,31 @@
+{
+  "localizedName": "Core: Fortress",
+  "description": "Core of the base. Heavily armored with multiple layers. Stores a colossal amount of resources.",
+  "details": "The fourth and first experimental iteration.",
+  "requirements": [
+    "copper/13000",
+    "lead/13000",
+    "titanium/8000",
+    "plastanium/7000",
+    "thorium/6000"
+  ],
+  "type": "CoreBlock",
+  "itemCapacity": 20000,
+  "size": 6,
+  "health": 13700,
+  "armor": 25,
+  "category": "effect",
+  "researchCostMultplier": 0.12,
+  "unitType": "delta",
+  "unitCapModifier": 32,
+  "research": {
+    "requirements": [
+      "copper/100000",
+      "lead/100000",
+      "titanium/59000",
+      "plastanium/51000",
+      "thorium/43000"
+    ],
+    "parent": "coreNucleus"
+  }
+}

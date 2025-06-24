@@ -18,6 +18,7 @@
   "researchCostMultplier": 0.12,
   "unitType": "delta",
   "unitCapModifier": 32,
+  "thrusterLength": 12,
   "research": {
     "requirements": [
       "copper/100000",

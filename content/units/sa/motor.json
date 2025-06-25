@@ -19,7 +19,8 @@
     ],
     "objectives": [
       "additive-reconstructor"
-    ]
+    ],
+    "parent": "turbine"
   },
   "weapons": [
     {

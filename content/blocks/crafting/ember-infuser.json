@@ -27,7 +27,7 @@
   "ambientSound": "torch",
   "ambientSoundVolume": 0.07,
   "consumes": {
-    "power": 2.1,
+    "power": 0.8,
     "items": {
       "items": [
         "copper/1",

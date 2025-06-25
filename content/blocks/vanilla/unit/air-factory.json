@@ -1,0 +1,27 @@
+{
+  "plans": [
+    {
+      "unit": "flarer",
+      "time": 900,
+      "requirements": [
+        "silicon/15"
+      ]
+    },
+    {
+      "unit": "mono",
+      "time": 2100,
+      "requirements": [
+        "lead/15",
+        "silicon/30"
+      ]
+    },
+    {
+      "unit": "turbine",
+      "time": 1500,
+      "requirements": [
+        "silicon/30",
+        "titanium/20"
+      ]
+    }
+  ]
+}

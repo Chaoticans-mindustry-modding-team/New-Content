@@ -22,7 +22,8 @@
     ],
     "objectives": [
       "multiplicative-reconstructor"
-    ]
+    ],
+    "parent": "motor"
   },
   "weapons": [
     {

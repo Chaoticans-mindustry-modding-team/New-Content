@@ -1,0 +1,190 @@
+{
+  "localizedName": "Aerial",
+  "description": "Fires a barrage of long-range flak. Can strafe without losing speed.",
+  "accel": 0.09,
+  "drag": 0.08,
+  "speed": 2.4,
+  "flying": true,
+  "health": 8700,
+  "armor": 8,
+  "engineOffset": 17,
+  "targetAir": true,
+  "circleTarget": false,
+  "hitSize": 23,
+  "rotateSpeed": 2.8,
+  "strafePenalty": 1,
+  "range": 360,
+  "research": {
+    "requirements": [
+      "titanium/73000",
+      "silicon/83000",
+      "plastanium/62000"
+    ],
+    "objectives": [
+      "exponential-reconstructor"
+    ],
+    "parent": "propeller"
+  },
+  "weapons": [
+    {
+      "name": "aerial-gunner",
+      "shootCone": 30,
+      "mirror": true,
+      "alternate": true,
+      "top": true,
+      "rotate": true,
+      "rotateSpeed": 2.5,
+      "x": 8,
+      "y": 2,
+      "reload": 16,
+      "shootSound": "shootSnap",
+      "ejectEffect": "casing2",
+      "bullet": {
+        "type": "BasicBulletType",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sizeTo": 8,
+              "strokeFrom": 2.5,
+              "strokeTo": 0.5,
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "BF92F9FF",
+              "lifetime": 10
+            },
+            {
+              "type": "ParticleEffect",
+              "line": true,
+              "sizeFrom": 6,
+              "sizeTo": 5,
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "BF92F9FF",
+              "lifetime": 20,
+              "length": 12
+            }
+          ]
+        },
+        "frontColor": "BF92F9FF",
+        "backColor": "9D70D7FF",
+        "damage": 13,
+        "speed": 4,
+        "lifetime": 60,
+        "trailWidth": 2,
+        "trailColor": "9D70D7FF",
+        "trailLength": 12,
+        "despawnHit": true,
+        "despawnEffect": "none",
+        "width": 9,
+        "height": 12
+      }
+    },
+    {
+      "name": "aerial-gunner",
+      "shootCone": 45,
+      "mirror": false,
+      "alternate": false,
+      "top": true,
+      "rotate": true,
+      "rotateSpeed": 2,
+      "x": 0,
+      "y": -4,
+      "reload": 30,
+      "recoil": 2,
+      "shootSound": "shootSnap",
+      "ejectEffect": "casing2",
+      "bullet": {
+        "type": "BasicBulletType",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sizeTo": 8,
+              "strokeFrom": 2.5,
+              "strokeTo": 0.5,
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "BF92F9FF",
+              "lifetime": 10
+            },
+            {
+              "type": "ParticleEffect",
+              "line": true,
+              "sizeFrom": 6,
+              "sizeTo": 5,
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "BF92F9FF",
+              "lifetime": 20,
+              "length": 12
+            }
+          ]
+        },
+        "frontColor": "BF92F9FF",
+        "backColor": "9D70D7FF",
+        "damage": 13,
+        "speed": 4,
+        "lifetime": 90,
+        "trailWidth": 2,
+        "trailColor": "9D70D7FF",
+        "trailLength": 12,
+        "despawnHit": true,
+        "despawnEffect": "none",
+        "width": 9,
+        "height": 12
+      }
+    },
+    {
+      "name": "aerial-blade",
+      "reload": 7,
+      "mirror": false,
+      "x": 0,
+      "y": 7.25,
+      "top": true,
+      "shoot": {
+        "shots": 0
+      },
+      "controllable": false,
+      "alwaysShooting": true,
+      "shootSound": "none",
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-shade",
+          "rotation": 0,
+          "moveRot": 180,
+          "progress": "reload",
+          "color": "FFFFFFFF",
+          "colorTo": "FFFFFF00",
+          "layerOffset": 2,
+          "outline": false
+        },
+        {
+          "type": "RegionPart",
+          "suffix": "-shade",
+          "rotation": 180,
+          "moveRot": 180,
+          "progress": "reload",
+          "color": "FFFFFF00",
+          "colorTo": "FFFFFFFF",
+          "layerOffset": 2,
+          "outline": false
+        },
+        {
+          "type": "RegionPart",
+          "suffix": "-flat",
+          "rotation": 0,
+          "moveRot": 180,
+          "progress": "reload",
+          "color": "FFFFFFFF",
+          "colorTo": "FFFFFFFF",
+          "layerOffset": 1
+        },
+        {
+          "type": "RegionPart",
+          "suffix": "-top",
+          "layerOffset": 3
+        }
+      ]
+    }
+  ]
+}

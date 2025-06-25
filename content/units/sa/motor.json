@@ -12,6 +12,15 @@
   "hitSize": 14,
   "rotateSpeed": 5,
   "strafePenalty": 1,
+  "research": {
+    "requirements": [
+      "graphite/2800",
+      "silicon/2800"
+    ],
+    "objectives": [
+      "additiveReconstructor"
+    ]
+  },
   "weapons": [
     {
       "name": "motor-pelleter",

@@ -17,7 +17,8 @@
     "requirements": [
       "silicon/2100",
       "titanium/1600"
-    ]
+    ],
+    "parent": flare
   },
   "weapons": [
     {

@@ -21,7 +21,7 @@
         "critter", "peeve", "raider", "commander", "admiral",
         "turbine", "motor", "propeller", "aerial",
         "streak", "spear", "falter", "delusion", "hallucination",
-        "silky", "requiem",
+        "silky", "requiem", "dagger",
         // Block
         "ember-infuser", "arc-kiln", "refiner", "volatile-mixing-chamber", "stellar-furnace",
         "detwall", "detwall-large",

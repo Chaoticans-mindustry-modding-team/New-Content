@@ -1,6 +1,7 @@
 {
   "localizedName": "Turbine",
   "description": "Propels itself with a flame jet that damages and burns enemies.",
+  "details": "todo: make research require the sector that introduces these bad bois",
   "speed": 2,
   "accel": 0.02,
   "drag": 0.04,
@@ -12,6 +13,13 @@
   "circleTarget": false,
   "hitSize": 10,
   "rotateSpeed": 7,
+  "research": {
+    "requirements": [
+      "silicon/2100",
+      "titanium/1600"
+    ],
+    "parent": "flare"
+  },
   "weapons": [
     {
       "name": "turbine-propeller",

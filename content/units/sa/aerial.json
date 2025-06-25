@@ -1,45 +1,44 @@
 {
-  "localizedName": "Propeller",
-  "description": "Fires a barrage of paired bullets at enemies. Can strafe without losing speed.",
-  "accel": 0.03,
-  "drag": 0.02,
-  "speed": 2.2,
+  "localizedName": "Aerial",
+  "description": "Fires a barrage of long-range flak. Can strafe without losing speed.",
+  "accel": 0.09,
+  "drag": 0.08,
+  "speed": 2.4,
   "flying": true,
-  "health": 1080,
-  "armor": 4,
-  "engineOffset": 12.5,
+  "health": 8700,
+  "armor": 8,
+  "engineOffset": 17,
   "targetAir": true,
   "circleTarget": false,
-  "hitSize": 17,
-  "rotateSpeed": 3,
+  "hitSize": 23,
+  "rotateSpeed": 2.8,
   "strafePenalty": 1,
-  "range": 120,
+  "range": 360,
   "research": {
     "requirements": [
-      "metaglass/2800",
-      "titanium/6100",
-      "silicon/10000"
+      "titanium/73000",
+      "silicon/83000",
+      "plastanium/62000"
     ],
     "objectives": [
-      "multiplicative-reconstructor"
+      "exponential-reconstructor"
     ],
-    "parent": "motor"
+    "parent": "propeller"
   },
   "weapons": [
     {
-      "name": "motor-pelleter",
+      "name": "aerial-gunner",
       "shootCone": 30,
       "mirror": true,
-      "alternate": false,
-      "top": false,
-      "rotate": false,
-      "under": true,
+      "alternate": true,
+      "top": true,
+      "rotate": true,
+      "rotateSpeed": 2.5,
       "x": 8,
-      "y": 4.75,
-      "reload": 25,
-      "recoil": 2,
-      "layerOffset": -1,
-      "ejectEffect": "casing1",
+      "y": 2,
+      "reload": 16,
+      "shootSound": "shootSnap",
+      "ejectEffect": "casing2",
       "bullet": {
         "type": "BasicBulletType",
         "hitEffect": {
@@ -69,31 +68,30 @@
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
         "damage": 13,
-        "speed": 3,
-        "lifetime": 30,
-        "trailWidth": 1.5,
+        "speed": 4,
+        "lifetime": 60,
+        "trailWidth": 2,
         "trailColor": "9D70D7FF",
         "trailLength": 12,
         "despawnHit": true,
         "despawnEffect": "none",
-        "width": 7,
-        "height": 9
+        "width": 9,
+        "height": 12
       }
     },
     {
-      "name": "propeller-pelleter",
-      "shootCone": 20,
-      "mirror": true,
+      "name": "aerial-gunner",
+      "shootCone": 45,
+      "mirror": false,
       "alternate": false,
-      "top": false,
-      "rotate": false,
-      "under": true,
-      "layerOffset": -1,
-      "x": -3.5,
-      "y": 9.25,
-      "reload": 45,
+      "top": true,
+      "rotate": true,
+      "rotateSpeed": 2,
+      "x": 0,
+      "y": -4,
+      "reload": 30,
       "recoil": 2,
-      "shootSound": "shoot",
+      "shootSound": "shootSnap",
       "ejectEffect": "casing2",
       "bullet": {
         "type": "BasicBulletType",
@@ -102,7 +100,7 @@
           "effects": [
             {
               "type": "WaveEffect",
-              "sizeTo": 12,
+              "sizeTo": 8,
               "strokeFrom": 2.5,
               "strokeTo": 0.5,
               "colorFrom": "FFFFFFFF",
@@ -116,43 +114,31 @@
               "sizeTo": 5,
               "colorFrom": "FFFFFFFF",
               "colorTo": "BF92F9FF",
-              "lifetime": 30,
-              "length": 12
-            },
-            {
-              "type": "ParticleEffect",
-              "sizeFrom": 2,
-              "sizeTo": 0,
-              "colorFrom": "FFFFFFFF",
-              "colorTo": "BF92F9FF",
-              "lifetime": 30,
+              "lifetime": 20,
               "length": 12
             }
           ]
         },
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
-        "damage": 10,
+        "damage": 13,
         "speed": 4,
-        "lifetime": 30,
-        "trailWidth": 1.5,
+        "lifetime": 90,
+        "trailWidth": 2,
         "trailColor": "9D70D7FF",
         "trailLength": 12,
         "despawnHit": true,
         "despawnEffect": "none",
         "width": 9,
-        "height": 12,
-        "splashDamageRadius": 11,
-        "splashDamage": 10,
-        "recoil": 0.25
+        "height": 12
       }
     },
     {
-      "name": "propeller-blade",
-      "reload": 13,
+      "name": "aerial-blade",
+      "reload": 7,
       "mirror": false,
       "x": 0,
-      "y": -1,
+      "y": 7.25,
       "top": true,
       "shoot": {
         "shots": 0

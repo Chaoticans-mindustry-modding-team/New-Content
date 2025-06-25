@@ -14,6 +14,16 @@
   "rotateSpeed": 3,
   "strafePenalty": 1,
   "range": 120,
+  "research": {
+    "requirements": [
+      "metaglass/2800",
+      "titanium/6100",
+      "silicon/10000"
+    ],
+    "objectives": [
+      "multiplicative-reconstructor"
+    ]
+  },
   "weapons": [
     {
       "name": "motor-pelleter",

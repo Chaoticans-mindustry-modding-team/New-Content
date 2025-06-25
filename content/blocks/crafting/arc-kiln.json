@@ -27,7 +27,7 @@
   "ambientSound": "electricambience",
   "ambientSoundVolume": 1,
   "consumes": {
-    "power": 2.6,
+    "power": 2,
     "items": {
       "items": [
         "gold/1",

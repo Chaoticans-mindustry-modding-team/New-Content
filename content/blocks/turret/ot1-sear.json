@@ -1,6 +1,6 @@
 {
   "localizedName": "Sear",
-  "description": "[orange]A small flame turret created by Charren. Ejects flame at nearby enemies.",
+  "description": "A small flame turret created by Charren. Ejects flame at nearby enemies.",
   "details": "better scorch",
   "hideDetails": false,
   "type": "ItemTurret",
@@ -10,7 +10,7 @@
   "ammoPerShot": 1,
   "reload": 4,
   "recoil": 1,
-  "researchCostMultiplier": 1,
+  "researchCostMultiplier": 0.15,
   "range": 48,
   "targetAir": true,
   "targetGround": true,
@@ -99,17 +99,14 @@
     }
   },
   "requirements": [
-    "lead/97",
-    "copper/52",
-    "graphite/71",
-    "emberium/50"
+    "copper/25",
+    "graphite/25",
+    "emberium/12"
   ],
   "category": "turret",
   "research": {
     "parent": "charren",
     "objectives": [
-      "scorch",
-      "pyratite",
       "emberium"
     ]
   }

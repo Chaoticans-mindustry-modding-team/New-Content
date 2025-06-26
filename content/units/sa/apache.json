@@ -119,7 +119,7 @@
       "rotateSpeed": 1.5,
       "x": 0,
       "y": -16.75,
-      "reload": 70,
+      "reload": 80,
       "recoil": 2,
       "shootSound": "laser",
       "ejectEffect": "casing3Double",
@@ -127,6 +127,10 @@
       "shootY": 0,
       "cooldownTime": 42,
       "inaccuracy": 3,
+      "shoot": {
+        "shots": 2,
+        "shotDelay": 7
+      },
       "bullet": {
         "type": "MissileBulletType",
         "hitEffect": {

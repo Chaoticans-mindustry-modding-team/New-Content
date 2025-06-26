@@ -172,7 +172,7 @@
         "backColor": "BF92F9FF",
         "sprite": "missile-large",
         "damage": 60,
-        "splashDamageRadius": 94,
+        "splashDamageRadius": 64,
         "splashDamage": 178,
         "status": "shocked",
         "statusDuration": 75,

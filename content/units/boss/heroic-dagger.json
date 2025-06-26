@@ -10,7 +10,7 @@
       "ground-factory"
     ]
   },
-  "description": "A model of the dagger that is faster, more armored, and has stronger guns.",
+  "description": "A model of the Dagger that is faster, more armored, and has stronger guns.",
   "type": "mech",
   "armor": 4,
   "commandLimit": 6,

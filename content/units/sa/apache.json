@@ -13,7 +13,7 @@
   "circleTarget": false,
   "hitSize": 40,
   "rotateSpeed": 2,
-  "strafePenalty": 1.3,
+  "strafePenalty": 1.2,
   "lowAltitude": true,
   "range": 240,
   "loopSound": "rotors",
@@ -44,9 +44,9 @@
       "reload": 30,
       "shootSound": "missile",
       "ejectEffect": "casing2",
-      "inaccuracy": 8,
+      "inaccuracy": 12,
       "shoot": {
-        "shots": 2
+        "shots": 3
       },
       "bullet": {
         "type": "MissileBulletType",
@@ -68,7 +68,17 @@
               "sizeFrom": 1.5,
               "sizeTo": 0,
               "interp": "circleOut",
-              "sizeInterp": "circleIn",
+              "sizeInterp": "linear",
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "BF92F9FF",
+              "lifetime": 15,
+              "length": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "line": true,
+              "strokeFrom": 1,
+              "strokeTo": 0,
               "colorFrom": "FFFFFFFF",
               "colorTo": "BF92F9FF",
               "lifetime": 15,
@@ -81,7 +91,7 @@
         "damage": 22,
         "splashDamageRadius": 25,
         "splashDamage": 40,
-        "speed": 3,
+        "speed": 4,
         "homingPower": 0.06,
         "homingRadius": 45,
         "lifetime": 80,
@@ -109,13 +119,14 @@
       "rotateSpeed": 1.5,
       "x": 0,
       "y": -16.75,
-      "reload": 190,
+      "reload": 120,
       "recoil": 2,
       "shootSound": "laser",
-      "ejectEffect": "casing2Double",
+      "ejectEffect": "casing3Double",
       "shake": 3,
       "shootY": 0,
       "cooldownTime": 100,
+      "inaccuracy": 3,
       "shoot": {
         "shots": 3,
         "shotDelay": 7
@@ -127,7 +138,7 @@
           "effects": [
             {
               "type": "WaveEffect",
-              "sizeTo": 30,
+              "sizeTo": 45,
               "strokeFrom": 3.5,
               "strokeTo": 0,
               "colorFrom": "FFFFFFFF",
@@ -143,7 +154,7 @@
               "colorFrom": "FFFFFFFF",
               "colorTo": "BF92F9FF",
               "lifetime": 25,
-              "length": 35
+              "length": 50
             },
             {
               "type": "ParticleEffect",
@@ -155,7 +166,7 @@
               "interp": "circleOut",
               "sizeInterp": "circleIn",
               "lifetime": 35,
-              "length": 40
+              "length": 55
             }
           ]
         },
@@ -164,7 +175,7 @@
         "backColor": "BF92F9FF",
         "sprite": "missile-large",
         "damage": 60,
-        "splashDamageRadius": 30,
+        "splashDamageRadius": 47,
         "splashDamage": 100,
         "speed": 6,
         "lifetime": 60,
@@ -174,13 +185,17 @@
         "despawnHit": true,
         "despawnEffect": "none",
         "width": 8,
-        "height": 8,
+        "height": 12,
         "hitShake": 2,
         "hitSound": "spark",
+        "homingPower": 0.04,
+        "homingRadius": 45,
+        "weaveScale": 8,
+        "weaveMag": 3,
         "lightning": 3,
         "lightningDamage": 6,
         "lightningColor": "BF92F9FF",
-        "lightningLength": 4,
+        "lightningLength": 8,
         "lightningLengthRand": 2,
         "trailChance": 0,
         "trailInterval": 10,

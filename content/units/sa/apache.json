@@ -114,7 +114,7 @@
       "reload": 190,
       "recoil": 2,
       "shootSound": "laser",
-      "ejectEffect": "casing2double",
+      "ejectEffect": "casing2Double",
       "shake": 3,
       "shootY": 0,
       "cooldownTime": 100,

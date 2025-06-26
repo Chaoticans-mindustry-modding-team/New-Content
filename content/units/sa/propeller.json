@@ -79,7 +79,7 @@
       }
     },
     {
-      "name": "motor-blade",
+      "name": "propeller-blade",
       "reload": 11,
       "mirror": false,
       "x": 0,

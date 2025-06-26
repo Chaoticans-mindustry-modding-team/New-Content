@@ -7,7 +7,7 @@
   "flying": true,
   "health": 8700,
   "armor": 8,
-  "engineOffset": 17,
+  "engineOffset": 19,
   "targetAir": true,
   "circleTarget": false,
   "hitSize": 23,
@@ -16,7 +16,7 @@
   "lowAltitude": true,
   "range": 240,
   "loopSound": "rotors",
-  "loopSoundVolume": 0.3,
+  "loopSoundVolume": 0.1,
   "research": {
     "requirements": [
       "titanium/73000",
@@ -36,7 +36,7 @@
       "alternate": true,
       "top": true,
       "rotate": true,
-      "rotateSpeed": 2.5,
+      "rotateSpeed": 4,
       "x": 8,
       "y": 2,
       "reload": 10,
@@ -49,9 +49,9 @@
           "effects": [
             {
               "type": "WaveEffect",
-              "sizeTo": 20,
+              "sizeTo": 10,
               "strokeFrom": 2.5,
-              "strokeTo": 0.5,
+              "strokeTo": 0,
               "colorFrom": "FFFFFFFF",
               "colorTo": "BF92F9FF",
               "lifetime": 10
@@ -64,24 +64,24 @@
               "colorFrom": "FFFFFFFF",
               "colorTo": "BF92F9FF",
               "lifetime": 20,
-              "length": 25
+              "length": 12
             }
           ]
         },
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
         "damage": 12,
-        "splashDamageRadius": 22,
+        "splashDamageRadius": 10,
         "splashDamage": 25,
         "speed": 3,
         "lifetime": 60,
-        "trailWidth": 2,
+        "trailWidth": 1.5,
         "trailColor": "9D70D7AA",
         "trailLength": 12,
         "despawnHit": true,
         "despawnEffect": "none",
-        "width": 9,
-        "height": 12
+        "width": 7,
+        "height": 9
       }
     },
     {
@@ -91,13 +91,15 @@
       "alternate": false,
       "top": true,
       "rotate": true,
-      "rotateSpeed": 2,
+      "rotateSpeed": 3,
       "x": 0,
       "y": -4,
       "reload": 24,
       "recoil": 2,
       "shootSound": "shootBig",
       "ejectEffect": "casing2",
+      "shake": 1,
+      "shootY": 0,
       "bullet": {
         "type": "BasicBulletType",
         "hitEffect": {
@@ -105,9 +107,9 @@
           "effects": [
             {
               "type": "WaveEffect",
-              "sizeTo": 20,
+              "sizeTo": 14,
               "strokeFrom": 2.5,
-              "strokeTo": 0.5,
+              "strokeTo": 0,
               "colorFrom": "FFFFFFFF",
               "colorTo": "BF92F9FF",
               "lifetime": 10
@@ -115,19 +117,20 @@
             {
               "type": "ParticleEffect",
               "line": true,
-              "strokeFrom": 4,
-              "strokeTo": 2,
+              "strokeFrom": 1,
+              "strokeTo": 0,
               "colorFrom": "FFFFFFFF",
               "colorTo": "BF92F9FF",
               "lifetime": 20,
-              "length": 25
+              "length": 15
             }
           ]
         },
+        "shootEffect": "shootBig",
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
         "damage": 26,
-        "splashDamageRadius": 22,
+        "splashDamageRadius": 14,
         "splashDamage": 45,
         "speed": 3,
         "lifetime": 80,
@@ -136,8 +139,9 @@
         "trailLength": 12,
         "despawnHit": true,
         "despawnEffect": "none",
-        "width": 11,
-        "height": 14
+        "width": 9,
+        "height": 12,
+        "hitShake": 1
       }
     },
     {

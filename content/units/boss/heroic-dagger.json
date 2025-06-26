@@ -1,7 +1,7 @@
 {
   "localizedName": "Heroic Dagger",
   "research": {
-    "parent": "dagger",
+    "parent": "heroic-reconstructor",
     "requirements": [
       "silicon/1500",
       "titanium/1200"

@@ -1,9 +1,9 @@
 {
   "localizedName": "Aerial",
-  "description": "Fires a barrage of long-range flak. Can strafe without losing speed.",
+  "description": "Fires a barrage of flak. Can strafe without losing speed.",
   "accel": 0.09,
   "drag": 0.08,
-  "speed": 2.4,
+  "speed": 2.1,
   "flying": true,
   "health": 8700,
   "armor": 8,
@@ -14,7 +14,9 @@
   "rotateSpeed": 4,
   "strafePenalty": 1,
   "lowAltitude": true,
-  "range": 540,
+  "range": 240,
+  "loopSound": "rotors",
+  "loopSoundVolume": 0.1,
   "research": {
     "requirements": [
       "titanium/73000",
@@ -28,7 +30,7 @@
   },
   "weapons": [
     {
-      "name": "aerial-gunner",
+      "name": "aerial-gunner-small",
       "shootCone": 30,
       "mirror": true,
       "alternate": true,
@@ -37,7 +39,7 @@
       "rotateSpeed": 2.5,
       "x": 8,
       "y": 2,
-      "reload": 8,
+      "reload": 10,
       "shootSound": "shootSnap",
       "ejectEffect": "casing2",
       "bullet": {
@@ -47,7 +49,7 @@
           "effects": [
             {
               "type": "WaveEffect",
-              "sizeTo": 8,
+              "sizeTo": 20,
               "strokeFrom": 2.5,
               "strokeTo": 0.5,
               "colorFrom": "FFFFFFFF",
@@ -57,27 +59,29 @@
             {
               "type": "ParticleEffect",
               "line": true,
-              "sizeFrom": 6,
-              "sizeTo": 5,
+              "strokeFrom": 4,
+              "strokeTo": 2,
               "colorFrom": "FFFFFFFF",
               "colorTo": "BF92F9FF",
               "lifetime": 20,
-              "length": 12
+              "length": 25
             }
           ]
         },
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
-        "damage": 20,
-        "speed": 6,
+        "damage": 12,
+        "splashDamageRadius": 22,
+        "splashDamage": 25,
+        "speed": 3,
         "lifetime": 60,
-        "trailWidth": 2,
-        "trailColor": "9D70D7FF",
+        "trailWidth": 3,
+        "trailColor": "9D70D7AA",
         "trailLength": 12,
         "despawnHit": true,
         "despawnEffect": "none",
-        "width": 9,
-        "height": 12
+        "width": 14,
+        "height": 18
       }
     },
     {
@@ -90,7 +94,7 @@
       "rotateSpeed": 2,
       "x": 0,
       "y": -4,
-      "reload": 10,
+      "reload": 12,
       "recoil": 2,
       "shootSound": "shootSnap",
       "ejectEffect": "casing2",
@@ -101,7 +105,7 @@
           "effects": [
             {
               "type": "WaveEffect",
-              "sizeTo": 8,
+              "sizeTo": 20,
               "strokeFrom": 2.5,
               "strokeTo": 0.5,
               "colorFrom": "FFFFFFFF",
@@ -111,27 +115,29 @@
             {
               "type": "ParticleEffect",
               "line": true,
-              "sizeFrom": 6,
-              "sizeTo": 5,
+              "strokeFrom": 4,
+              "strokeTo": 2,
               "colorFrom": "FFFFFFFF",
               "colorTo": "BF92F9FF",
               "lifetime": 20,
-              "length": 12
+              "length": 25
             }
           ]
         },
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
-        "damage": 20,
-        "speed": 6,
-        "lifetime": 90,
-        "trailWidth": 2,
-        "trailColor": "9D70D7FF",
+        "damage": 12,
+        "splashDamageRadius": 22,
+        "splashDamage": 25,
+        "speed": 3,
+        "lifetime": 80,
+        "trailWidth": 3,
+        "trailColor": "9D70D7AA",
         "trailLength": 12,
         "despawnHit": true,
         "despawnEffect": "none",
-        "width": 9,
-        "height": 12
+        "width": 14,
+        "height": 18
       }
     },
     {

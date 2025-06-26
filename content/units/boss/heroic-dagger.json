@@ -10,7 +10,7 @@
       "ground-factory"
     ]
   },
-  "description": "The boss version of the [orange]Dagger. It is equipped with 2 bullet guns and is quite fast.",
+  "description": "A model of the dagger that is faster, more armored, and has stronger guns.",
   "type": "mech",
   "armor": 4,
   "commandLimit": 6,

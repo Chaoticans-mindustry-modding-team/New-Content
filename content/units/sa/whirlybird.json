@@ -1,5 +1,5 @@
 {
-  "localizedName": "Propeller",
+  "localizedName": "Whirlybird",
   "description": "Fires a barrage of paired bullets at enemies. Can strafe without losing speed.",
   "accel": 0.03,
   "drag": 0.02,

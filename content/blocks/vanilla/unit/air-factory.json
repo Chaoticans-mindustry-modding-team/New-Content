@@ -16,7 +16,7 @@
       ]
     },
     {
-      "unit": "turbine",
+      "unit": "jet",
       "time": 1500,
       "requirements": [
         "silicon/30",

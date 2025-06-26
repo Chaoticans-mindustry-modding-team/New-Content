@@ -44,9 +44,10 @@
       "reload": 30,
       "shootSound": "missile",
       "ejectEffect": "casing2",
-      "inaccuracy": 12,
+      "inaccuracy": 8,
       "shoot": {
-        "shots": 3
+        "shots": 3,
+        "shotDelay": 4
       },
       "bullet": {
         "type": "MissileBulletType",
@@ -89,7 +90,7 @@
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
         "damage": 22,
-        "splashDamageRadius": 25,
+        "splashDamageRadius": 45,
         "splashDamage": 40,
         "speed": 4,
         "homingPower": 0.06,
@@ -119,7 +120,7 @@
       "rotateSpeed": 1.5,
       "x": 0,
       "y": -16.75,
-      "reload": 80,
+      "reload": 36,
       "recoil": 2,
       "shootSound": "laser",
       "ejectEffect": "casing3Double",
@@ -127,10 +128,6 @@
       "shootY": 0,
       "cooldownTime": 42,
       "inaccuracy": 3,
-      "shoot": {
-        "shots": 2,
-        "shotDelay": 7
-      },
       "bullet": {
         "type": "MissileBulletType",
         "hitEffect": {
@@ -175,7 +172,7 @@
         "backColor": "BF92F9FF",
         "sprite": "missile-large",
         "damage": 60,
-        "splashDamageRadius": 47,
+        "splashDamageRadius": 94,
         "splashDamage": 178,
         "status": "shocked",
         "statusDuration": 75,

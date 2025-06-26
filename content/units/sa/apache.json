@@ -1,0 +1,268 @@
+{
+  "localizedName": "Apache",
+  "description": "Fires a barrage of normal and accelerated missiles at enemy targets. Gains speed while strafing.",
+  "accel": 0.09,
+  "drag": 0.08,
+  "speed": 2.1,
+  "flying": true,
+  "health": 23000,
+  "armor": 14,
+  "engineOffset": 34,
+  "engineSize": 5,
+  "targetAir": true,
+  "circleTarget": false,
+  "hitSize": 40,
+  "rotateSpeed": 2,
+  "strafePenalty": 1.2,
+  "lowAltitude": true,
+  "range": 360,
+  "loopSound": "rotors",
+  "loopSoundVolume": 0.3,
+  "research": {
+    "requirements": [
+      "silicon/99000",
+      "plastanium/56000",
+      "phase-fabric/31000",
+      "surge-alloy/46000"
+    ],
+    "objectives": [
+      "tetrative-reconstructor"
+    ],
+    "parent": "cheyenne"
+  },
+  "weapons": [
+    {
+      "name": "missiles-mount-large",
+      "shootCone": 20,
+      "mirror": true,
+      "alternate": true,
+      "top": true,
+      "rotate": true,
+      "rotateSpeed": 4,
+      "x": 12,
+      "y": -2,
+      "reload": 30,
+      "shootSound": "missile",
+      "ejectEffect": "casing2",
+      "inaccuracy": 8,
+      "shoot": {
+        "shots": 3,
+        "shotDelay": 4
+      },
+      "bullet": {
+        "type": "MissileBulletType",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sizeTo": 25,
+              "strokeFrom": 2.5,
+              "strokeTo": 0,
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "BF92F9FF",
+              "lifetime": 10
+            },
+            {
+              "type": "ParticleEffect",
+              "line": false,
+              "sizeFrom": 1.5,
+              "sizeTo": 0,
+              "interp": "circleOut",
+              "sizeInterp": "linear",
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "BF92F9FF",
+              "lifetime": 15,
+              "length": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "line": true,
+              "strokeFrom": 1,
+              "strokeTo": 0,
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "BF92F9FF",
+              "lifetime": 15,
+              "length": 30
+            }
+          ]
+        },
+        "frontColor": "BF92F9FF",
+        "backColor": "9D70D7FF",
+        "damage": 22,
+        "splashDamageRadius": 45,
+        "splashDamage": 40,
+        "speed": 4,
+        "homingPower": 0.06,
+        "homingRadius": 45,
+        "lifetime": 80,
+        "trailWidth": 1.5,
+        "trailColor": "9D70D7AA",
+        "trailLength": 10,
+        "trailChance": 0,
+        "despawnHit": true,
+        "despawnEffect": "none",
+        "width": 7,
+        "height": 9,
+        "hitSound": "explosion",
+        "hitShake": 1,
+        "weaveScale": 6,
+        "weaveMag": 2
+      }
+    },
+    {
+      "name": "apache-swarm-cannon",
+      "shootCone": 10,
+      "mirror": false,
+      "alternate": false,
+      "top": true,
+      "rotate": true,
+      "rotateSpeed": 1.5,
+      "x": 0,
+      "y": -16.75,
+      "reload": 36,
+      "recoil": 2,
+      "shootSound": "laser",
+      "ejectEffect": "casing3Double",
+      "shake": 3,
+      "shootY": 0,
+      "cooldownTime": 42,
+      "inaccuracy": 3,
+      "bullet": {
+        "type": "MissileBulletType",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sizeTo": 45,
+              "strokeFrom": 3.5,
+              "strokeTo": 0,
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "BF92F9FF",
+              "lifetime": 25,
+              "interp": "circleOut"
+            },
+            {
+              "type": "ParticleEffect",
+              "line": true,
+              "strokeFrom": 1,
+              "strokeTo": 0,
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "BF92F9FF",
+              "lifetime": 25,
+              "length": 50
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 9,
+              "sizeFrom": 5.5,
+              "sizeTo": 3,
+              "colorFrom": "BF92F9FF",
+              "colorTo": "BF92F900",
+              "interp": "circleOut",
+              "sizeInterp": "circleIn",
+              "lifetime": 35,
+              "length": 55
+            }
+          ]
+        },
+        "shootEffect": "shootBig",
+        "frontColor": "FFFFFFFF",
+        "backColor": "BF92F9FF",
+        "sprite": "missile-large",
+        "damage": 60,
+        "splashDamageRadius": 94,
+        "splashDamage": 178,
+        "status": "shocked",
+        "statusDuration": 75,
+        "speed": 6,
+        "lifetime": 60,
+        "trailWidth": 3,
+        "trailColor": "9D70D7AA",
+        "trailLength": 12,
+        "despawnHit": true,
+        "despawnEffect": "none",
+        "width": 8,
+        "height": 12,
+        "hitShake": 2,
+        "hitSound": "spark",
+        "homingPower": 0.04,
+        "homingRadius": 45,
+        "weaveScale": 3,
+        "weaveMag": 1,
+        "lightning": 3,
+        "lightningDamage": 6,
+        "lightningColor": "BF92F9FF",
+        "lightningLength": 8,
+        "lightningLengthRand": 2,
+        "trailChance": 0,
+        "trailInterval": 10,
+        "trailEffect": {
+          "type": "WaveEffect",
+          "sizeTo": 10,
+          "strokeFrom": 3.5,
+          "strokeTo": 0,
+          "colorFrom": "FFFFFFFF",
+          "colorTo": "BF92F9FF",
+          "lifetime": 20,
+          "interp": "circleOut"
+        }
+      }
+    },
+    {
+      "name": "apache-blade",
+      "reload": 7,
+      "mirror": false,
+      "x": 0,
+      "y": 14,
+      "top": true,
+      "shoot": {
+        "shots": 0
+      },
+      "controllable": false,
+      "alwaysShooting": true,
+      "shootSound": "none",
+      "display": false,
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-shade",
+          "rotation": 0,
+          "moveRot": 180,
+          "progress": "reload",
+          "color": "FFFFFFFF",
+          "colorTo": "FFFFFF00",
+          "layerOffset": 2,
+          "outline": false
+        },
+        {
+          "type": "RegionPart",
+          "suffix": "-shade",
+          "rotation": 180,
+          "moveRot": 180,
+          "progress": "reload",
+          "color": "FFFFFF00",
+          "colorTo": "FFFFFFFF",
+          "layerOffset": 2,
+          "outline": false
+        },
+        {
+          "type": "RegionPart",
+          "suffix": "-flat",
+          "rotation": 0,
+          "moveRot": 180,
+          "progress": "reload",
+          "color": "FFFFFFFF",
+          "colorTo": "FFFFFFFF",
+          "layerOffset": 1
+        },
+        {
+          "type": "RegionPart",
+          "suffix": "-top",
+          "layerOffset": 3
+        }
+      ]
+    }
+  ]
+}

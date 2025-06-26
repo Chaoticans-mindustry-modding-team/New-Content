@@ -98,6 +98,8 @@
       "shake": 4.5,
       "smokeEffect": "none",
       "ejectEffect": "none",
+      "display": false,
+      "useAttackRange": false,
       "bullet": {
         "type": "BasicBulletType",
         "shootEffect": "none",

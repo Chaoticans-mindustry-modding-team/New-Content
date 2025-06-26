@@ -20,7 +20,7 @@
     "objectives": [
       "additive-reconstructor"
     ],
-    "parent": "turbine"
+    "parent": "jet"
   },
   "loopSound": "rotors",
   "loopSoundVolume": 0.15,
@@ -90,6 +90,7 @@
       },
       "controllable": false,
       "alwaysShooting": true,
+      "display": false,
       "parts": [
         {
           "type": "RegionPart",

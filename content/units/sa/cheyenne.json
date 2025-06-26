@@ -16,7 +16,7 @@
   "lowAltitude": true,
   "range": 240,
   "loopSound": "rotors",
-  "loopSoundVolume": 0.1,
+  "loopSoundVolume": 0.25,
   "research": {
     "requirements": [
       "titanium/73000",
@@ -26,7 +26,7 @@
     "objectives": [
       "exponential-reconstructor"
     ],
-    "parent": "propeller"
+    "parent": "whirlybird"
   },
   "weapons": [
     {
@@ -157,6 +157,7 @@
       "controllable": false,
       "alwaysShooting": true,
       "shootSound": "none",
+      "display": false,
       "parts": [
         {
           "type": "RegionPart",

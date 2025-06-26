@@ -1,7 +1,7 @@
 {
   "localizedName": "Fern",
   "research": {
-    "parent": "nova",
+    "parent": "dagger",
     "requirements": [
       "silicon/2100",
       "graphite/1700",

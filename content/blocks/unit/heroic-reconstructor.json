@@ -1,0 +1,39 @@
+{
+  "type": "Reconstructor",
+  "name": "Heroic Reconstructor",
+  "description": "Upgrades inputted units to their heroic tier.",
+  "details": "todo add sector",
+  "constructTime": 840,
+  "size": 3,
+  "consumes": {
+    "power": 4,
+    "items": [
+      "silicon/40",
+      "titanium/30"
+    ]
+  },
+  "upgrades": [
+    [
+      "dagger",
+      "heroic-dagger"
+    ],
+    [
+      "flare",
+      "aurora"
+    ]
+  ],
+  "requirements": [
+    "copper/240",
+    "titanium/100",
+    "silicon/360"
+  ],
+  "category": "units",
+  "research": {
+    "requirements": [
+      "copper/8300",
+      "titanium/3200",
+      "silicon/11400"
+    ],
+    "parent": "additive-reconstructor"
+  }
+}

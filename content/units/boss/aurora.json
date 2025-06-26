@@ -1,6 +1,6 @@
 {
   "localizedName": "Aurora",
-  "description": "The boss version of the [orange]Flare[]. It can shot farther, faster and stronger than the flare. It has a smalls explode when it die.",
+  "description": "A model of the Flare that is faster, can shoot further, has more health, and explodes on death.",
   "research": {
     "parent": "heroic-reconstructor",
     "requirements": [

@@ -1,0 +1,249 @@
+{
+  "localizedName": "Apache",
+  "description": "Fires a barrage of normal and accelerated missiles at enemy targets. Gains speed while strafing.",
+  "accel": 0.09,
+  "drag": 0.08,
+  "speed": 2.1,
+  "flying": true,
+  "health": 23000,
+  "armor": 14,
+  "engineOffset": 32,
+  "engineSize": 8,
+  "targetAir": true,
+  "circleTarget": false,
+  "hitSize": 40,
+  "rotateSpeed": 2,
+  "strafePenalty": 1.3,
+  "lowAltitude": true,
+  "range": 240,
+  "loopSound": "rotors",
+  "loopSoundVolume": 0.3,
+  "research": {
+    "requirements": [
+      "silicon/99000",
+      "plastanium/56000",
+      "phase-fabric/31000",
+      "surge-alloy/46000"
+    ],
+    "objectives": [
+      "tetrative-reconstructor"
+    ],
+    "parent": "cheyenne"
+  },
+  "weapons": [
+    {
+      "name": "missiles-mount-large",
+      "shootCone": 20,
+      "mirror": true,
+      "alternate": true,
+      "top": true,
+      "rotate": true,
+      "rotateSpeed": 3,
+      "x": 12,
+      "y": -2,
+      "reload": 65,
+      "shootSound": "missile",
+      "ejectEffect": "casing2",
+      "inaccuracy": 0,
+      "shoot": {
+        "type": "ShootSpread",
+        "shots": 2,
+        "spread": 5
+      },
+      "bullet": {
+        "type": "MissileBulletType",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sizeTo": 15,
+              "strokeFrom": 2.5,
+              "strokeTo": 0,
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "BF92F9FF",
+              "lifetime": 10
+            },
+            {
+              "type": "ParticleEffect",
+              "line": true,
+              "strokeFrom": 1,
+              "strokeTo": 0,
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "BF92F9FF",
+              "lifetime": 20,
+              "length": 17
+            }
+          ]
+        },
+        "frontColor": "BF92F9FF",
+        "backColor": "9D70D7FF",
+        "damage": 22,
+        "splashDamageRadius": 15,
+        "splashDamage": 40,
+        "speed": 2.6,
+        "homingPower": 0.05,
+        "homingRadius": 45,
+        "lifetime": 70,
+        "trailWidth": 1.5,
+        "trailColor": "9D70D7AA",
+        "trailLength": 10,
+        "despawnHit": true,
+        "despawnEffect": "none",
+        "width": 7,
+        "height": 9,
+        "hitSound": "explosion"
+      }
+    },
+    {
+      "name": "apache-swarm-cannon",
+      "shootCone": 10,
+      "mirror": false,
+      "alternate": false,
+      "top": true,
+      "rotate": true,
+      "rotateSpeed": 1.5,
+      "x": 0,
+      "y": -16.75,
+      "reload": 340,
+      "recoil": 2,
+      "shootSound": "laser",
+      "ejectEffect": "casing2",
+      "shake": 3,
+      "shootY": 0,
+      "shoot": {
+        "shots": 3,
+        "shotDelay": 7
+      },
+      "bullet": {
+        "type": "MissileBulletType",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sizeTo": 30,
+              "strokeFrom": 3.5,
+              "strokeTo": 0,
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "BF92F9FF",
+              "lifetime": 25,
+              "interp": "circleOut"
+            },
+            {
+              "type": "ParticleEffect",
+              "line": true,
+              "strokeFrom": 1,
+              "strokeTo": 0,
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "BF92F9FF",
+              "lifetime": 25,
+              "length": 35
+            },
+            {
+              "type": "ParticleEffect",
+              "sizeFrom": 4,
+              "sizeTo": 3,
+              "colorFrom": "BF92F9FF",
+              "colorTo": "BF92F967",
+              "interp": "circleOut",
+              "sizeInterp": "circleIn",
+              "lifetime": 35,
+              "length": 10
+            }
+          ]
+        },
+        "shootEffect": "shootBig",
+        "frontColor": "FFFFFFFF",
+        "backColor": "BF92F9FF",
+        "sprite": "missile-large",
+        "damage": 37,
+        "splashDamageRadius": 30,
+        "splashDamage": 90,
+        "speed": 6,
+        "lifetime": 60,
+        "trailWidth": 3,
+        "trailColor": "9D70D7AA",
+        "trailLength": 12,
+        "despawnHit": true,
+        "despawnEffect": "none",
+        "width": 12,
+        "height": 12,
+        "hitShake": 2,
+        "hitSound": "spark",
+        "lightning": 3,
+        "lightningDamage": 6,
+        "lightningColor": "BF92F9FF",
+        "lightningLength": 4,
+        "lightningLengthRand": 2,
+        "trailChance": 0,
+        "trailInterval": 10,
+        "trailEffect": {
+          "type": "ParticleEffect",
+          "region": "missile-large-back",
+          "particles": 1,
+          "cone": 0,
+          "length": 0,
+          "sizeFrom": 9,
+          "sizeTo": 9,
+          "colorFrom": "BF92F9FF",
+          "ColorTo": "BF92F9FF",
+          "lifetime": 25
+        }
+      }
+    },
+    {
+      "name": "apache-blade",
+      "reload": 6,
+      "mirror": false,
+      "x": 0,
+      "y": 14,
+      "top": true,
+      "shoot": {
+        "shots": 0
+      },
+      "controllable": false,
+      "alwaysShooting": true,
+      "shootSound": "none",
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-shade",
+          "rotation": 0,
+          "moveRot": 180,
+          "progress": "reload",
+          "color": "FFFFFFFF",
+          "colorTo": "FFFFFF00",
+          "layerOffset": 2,
+          "outline": false
+        },
+        {
+          "type": "RegionPart",
+          "suffix": "-shade",
+          "rotation": 180,
+          "moveRot": 180,
+          "progress": "reload",
+          "color": "FFFFFF00",
+          "colorTo": "FFFFFFFF",
+          "layerOffset": 2,
+          "outline": false
+        },
+        {
+          "type": "RegionPart",
+          "suffix": "-flat",
+          "rotation": 0,
+          "moveRot": 180,
+          "progress": "reload",
+          "color": "FFFFFFFF",
+          "colorTo": "FFFFFFFF",
+          "layerOffset": 1
+        },
+        {
+          "type": "RegionPart",
+          "suffix": "-top",
+          "layerOffset": 3
+        }
+      ]
+    }
+  ]
+}

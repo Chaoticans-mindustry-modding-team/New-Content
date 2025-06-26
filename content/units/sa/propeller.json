@@ -90,6 +90,7 @@
       },
       "controllable": false,
       "alwaysShooting": true,
+      "display": false,
       "parts": [
         {
           "type": "RegionPart",

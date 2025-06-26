@@ -5,6 +5,9 @@
     "requirements": [
       "silicon/1500",
       "titanium/1200"
+    ],
+    "objectives": [
+      "ground-factory"
     ]
   },
   "description": "The boss version of the [orange]Dagger. It is equipped with 2 bullet guns and is quite fast.",

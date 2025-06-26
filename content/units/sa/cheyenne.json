@@ -157,7 +157,7 @@
       "controllable": false,
       "alwaysShooting": true,
       "shootSound": "none",
-      "display": true,
+      "display": false,
       "parts": [
         {
           "type": "RegionPart",

@@ -15,7 +15,7 @@
   "strafePenalty": 1,
   "range": 120,
   "loopSound": "rotors",
-  "loopSoundVolume": 0.05,
+  "loopSoundVolume": 0.2,
   "research": {
     "requirements": [
       "metaglass/2800",

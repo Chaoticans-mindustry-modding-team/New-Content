@@ -12,6 +12,7 @@
   "circleTarget": false,
   "hitSize": 10,
   "rotateSpeed": 7,
+  "range": 160,
   "research": {
     "requirements": [
       "silicon/2100",
@@ -72,8 +73,8 @@
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
         "damage": 10,
-        "speed": 6,
-        "lifetime": 75,
+        "speed": 2,
+        "lifetime": 80,
         "trailWidth": 1.5,
         "trailColor": "9D70D7FF",
         "trailLength": 12,

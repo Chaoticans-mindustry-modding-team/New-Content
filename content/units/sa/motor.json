@@ -22,6 +22,8 @@
     ],
     "parent": "turbine"
   },
+  "loopSound": "rotors",
+  "loopSoundVolume": 0.1,
   "weapons": [
     {
       "name": "motor-pelleter",

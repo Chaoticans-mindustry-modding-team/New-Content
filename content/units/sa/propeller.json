@@ -1,5 +1,5 @@
 {
-  "localizedName": "Motor",
+  "localizedName": "Propeller",
   "description": "Fires dual bullets at nearby enemy targets. Can strafe without losing speed.",
   "accel": 0.15,
   "drag": 0.14,

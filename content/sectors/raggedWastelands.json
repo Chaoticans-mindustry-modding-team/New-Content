@@ -2,7 +2,7 @@
   "localizedName": "Ragged Wastelands",
   "description": "Centuries of harsh winds and scorching heat have molded this once beautiful coastline into a rough wasteland. Silver, a rare metal on Serpulo, is present here. The enemy has stationed many unique naval troops around this location. Eradicate the enemy invasions and collect as much resources as possible. Research these unique fighting units.",
   "sector": 37,
-  "captureWave": 20,
+  "captureWave": 21,
   "difficulty": 3,
   "planet": "serpulo",
   "research": {

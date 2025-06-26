@@ -56,6 +56,21 @@
       "despawnEffect": "hitBulletColor",
       "frontColor": "707594ff",
       "backColor": "999ba0ff"
+    },
+    "silver": {
+      "type": "BasicBulletType",
+      "shootEffect": "casing1",
+      "damage": 15,
+      "ammoMultiplier": 3,
+      "lifetime": 40,
+      "speed": 4,
+      "hitEffect": "hitBulletColor",
+      "despawnEffect": "hitBulletColor",
+      "frontColor": "ffffffff",
+      "backColor": "aaaaccff",
+      "pierce": true,
+      "pierceBuilding": true,
+      "pierceCap": 3
     }
   },
   "requirements": [

@@ -80,7 +80,7 @@
     },
     {
       "name": "motor-blade",
-      "reload": 24,
+      "reload": 11,
       "mirror": false,
       "x": 0,
       "y": -3.5,

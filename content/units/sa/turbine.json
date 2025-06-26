@@ -1,7 +1,6 @@
 {
   "localizedName": "Turbine",
   "description": "Propels itself with a flame jet that damages and burns enemies.",
-  "details": "todo: make research require the sector that introduces these bad bois",
   "speed": 2,
   "accel": 0.02,
   "drag": 0.04,
@@ -18,7 +17,10 @@
       "silicon/2100",
       "titanium/1600"
     ],
-    "parent": "flare"
+    "parent": "flare",
+    "objectives": [
+      "barrenPlateau"
+    ]
   },
   "weapons": [
     {

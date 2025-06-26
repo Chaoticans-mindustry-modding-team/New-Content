@@ -3,9 +3,8 @@
   "research": {
     "parent": "dagger",
     "requirements": [
-      "silicon/490",
-      "lead/200",
-      "titanium/120"
+      "silicon/1500",
+      "titanium/1200"
     ]
   },
   "description": "The boss version of the [orange]Dagger. It is equipped with 2 bullet guns and is quite fast.",

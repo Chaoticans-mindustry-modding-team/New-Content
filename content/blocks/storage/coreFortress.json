@@ -27,6 +27,6 @@
       "plastanium/51000",
       "thorium/43000"
     ],
-    "parent": "coreNucleus"
+    "parent": "core-nucleus"
   }
 }

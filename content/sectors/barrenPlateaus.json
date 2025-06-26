@@ -1,0 +1,15 @@
+{
+  "localizedName": "Barren Plateaus",
+  "description": "Out in the deserts lay these arid plateaus. This area lacks major enemy control due to its void of resources. However, the ruins have shown major evidence of a minor enemy base housing a heli-pad and helicopter-type unit factories. Though this area may seem empty, do not be fooled, as the enemy sends large aerial attack forces to fend any cores from this land. Crash their forces and obtain this technology.",
+  "sector": 111,
+  "captureWave": 30,
+  "difficulty": 4,
+  "planet": "serpulo",
+  "research": {
+    "parent": "saltFlats",
+    "objectives": [
+      "water-extractor",
+      "plastanium"
+    ]
+  }
+}

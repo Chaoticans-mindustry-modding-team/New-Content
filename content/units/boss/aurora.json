@@ -2,11 +2,14 @@
   "localizedName": "Aurora",
   "description": "The boss version of the [orange]Flare[]. It can shot farther, faster and stronger than the flare. It has a smalls explode when it die.",
   "research": {
+    "parent": "heroic-reconstructor",
     "requirements": [
-      "silicon/290",
-      "titanium/70"
+      "silicon/1500",
+      "titanium/1200"
     ],
-    "parent": "flare"
+    "objectives": [
+      "air-factory"
+    ]
   },
   "speed": 3.6,
   "accel": 0.01,

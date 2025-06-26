@@ -16,7 +16,7 @@
   "lowAltitude": true,
   "range": 240,
   "loopSound": "rotors",
-  "loopSoundVolume": 0.1,
+  "loopSoundVolume": 0.25,
   "research": {
     "requirements": [
       "titanium/73000",

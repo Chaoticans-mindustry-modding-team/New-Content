@@ -2,3 +2,6 @@ type: Floor
 name: Ferric Rock
 wall: ferric-wall
 variants: 4
+attributes: {
+  ferric: 0.4
+}

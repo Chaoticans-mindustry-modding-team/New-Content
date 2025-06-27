@@ -1,0 +1,4 @@
+type: Floor
+name: Ferric Rock
+wall: ferric-wall
+variants: 4

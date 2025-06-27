@@ -1,0 +1,4 @@
+type: Floor
+name: Basalt Cluster
+wall: basalt-wall
+variants: 3

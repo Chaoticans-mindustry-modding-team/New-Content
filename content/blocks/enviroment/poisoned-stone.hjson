@@ -1,0 +1,7 @@
+type: Floor
+name: Poisoned Stone
+wall: poisoned-stone-wall
+variants: 3
+attributes: {
+  poison: 0.6
+}

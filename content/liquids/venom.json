@@ -3,6 +3,6 @@
   "description": "Highly poisonous, acidic, and corrosive. Capable of hindering enemy mechanics and circutry.",
   "temperature": 0.5,
   "heatCapacity": 0.25,
-  "effect": "newunits-poisoned",
+  "effect": "newunits-maimed",
   "color": "7AD948FF"
 }

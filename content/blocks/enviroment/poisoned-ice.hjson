@@ -6,4 +6,5 @@ variants: 3
 attributes: {
   poison: 0.7
   water: 0.1
+  cold: 0.3
 }

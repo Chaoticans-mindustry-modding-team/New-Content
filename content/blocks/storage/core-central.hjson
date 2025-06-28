@@ -1,0 +1,14 @@
+{
+  localizedName: Core: Central
+  description: Core of the base. Lightly armored. Once it falls, the sector falls too.
+  type: CoreBlock
+  itemCapacity: 900
+  size: 2
+  health: 1200
+  armor: 5
+  category: effect
+  unitType: diversionist
+  unitCapModifier: 4
+  thrusterLength: 8
+  alwaysUnlocked: true
+}

@@ -1,3 +1,4 @@
 type: Floor
 name: Andesite
 variants: 4
+wall: andesite-wall

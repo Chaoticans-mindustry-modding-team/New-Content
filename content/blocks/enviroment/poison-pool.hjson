@@ -7,7 +7,7 @@ speedMultiplier: 0.1
 variants: 0
 liquidDrop: poison
 isLiquid: true
-cacheLayer: arkycite
+cacheLayer: water
 attributes: [
   poison: 1.8
 ]

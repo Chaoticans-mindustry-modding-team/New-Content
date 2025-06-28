@@ -1,6 +1,6 @@
 {
   name: Selevite
-  description: Used in material production and as shrapnel.
+  description: Used in material production and as shrapnel. The parent of many faction alloys.
   details: An extremely odd crystal. If cooled and heated in the right ways, it can grow extremely fast.
   hideDetails: false
   cost: 4

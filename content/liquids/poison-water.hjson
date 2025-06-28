@@ -1,0 +1,22 @@
+{
+  "localizedName": "Poison Water",
+  "description": "Water contaminated with Poison. Unusable as a coolant because that would corrode the machiner,y but it can be stored due to it's corrosive effects being less potent due to its dilution with water.",
+  "details": "Poison is excellent at spreading through water.",
+  "temperature": 0.5,
+  "heatCapacity": 0.3,
+  "coolant": false,
+  "viscosity": 0.55,
+  "boilPoint": 3,
+  "capPuddles": false,
+  "effect": "newunits-poisoned",
+  "color": "9f62d1ff",
+  "canStayOn": [
+    "water",
+    "cryofluid",
+    "slag",
+    "oil",
+    "arkycite",
+    "neoplasm",
+    "poison"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   name: Scorchonite
-  description: A metal used in many areas such as defense, production, and construction.
+  description: A flammable crystalline useful in ignition and weaponry.
   hideDetails: false
   cost: 3
   hardness: 1

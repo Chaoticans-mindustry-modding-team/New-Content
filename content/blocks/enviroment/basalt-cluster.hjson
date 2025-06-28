@@ -2,3 +2,6 @@ type: Floor
 name: Basalt Cluster
 wall: basalt-wall
 variants: 3
+attributes: {
+  water: -0.3
+}

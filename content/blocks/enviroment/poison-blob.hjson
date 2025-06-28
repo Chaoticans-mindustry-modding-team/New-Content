@@ -1,0 +1,58 @@
+type: Seaweed
+breakSound: mud
+name: Poison Blob
+description: A blob of poison. Explodes into poison upon destruction.
+variants: 2
+hittable: true
+destroySound: hardExplosion
+health: 60
+destroyBullet: {
+    type: BasicBulletType
+    instantDisappear: true
+    damage: 0
+    splashDamageRadius: 46
+    splashDamage: 96
+    hitEffect: none
+    status: poisoned
+    statusDuration: 120
+    despawnEffect: {
+        type: MultiEffect
+        effects: [
+            {
+                type: WaveEffect
+                sizeTo: 50
+                interp: circleOut
+                colorFrom: 9f62d1ff
+                colorTo: 9f62d1ff
+                lifetime: 20
+            }
+            {
+                type: ParticleEffect
+                particles: 7
+                interp: circleOut
+                sizeInterp: circleIn
+                colorFrom: 9f62d1aa
+                colorTo: 9f62d1aa
+                sizeFrom: 6
+                sizeTo: 0
+                length: 56
+                lifetime: 60
+            }
+            {
+                type: ParticleEffect
+                particles: 8
+                interp: circleOut
+                sizeInterp: circleIn
+                colorFrom: 9f62d1ff
+                colorTo: 9f62d1ff
+                length: 57
+                lifetime: 30
+                lenTo: 3
+            }
+        ]
+    }
+    puddles: 3
+    puddleRange: 20
+    puddleAmount: 10
+    puddleLiquid: poison
+}

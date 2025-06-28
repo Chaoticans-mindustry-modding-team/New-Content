@@ -1,0 +1,13 @@
+{
+  name: Tritonium
+  description: Used in electronics, unit production, and basically everything.
+  details: Professional Mindustrialists call a shortage of this "Trigoneium".
+  hideDetails: false
+  cost: 2.5
+  hardness: 1
+  color: 778fa6FF
+  research:
+  {
+    parent: cobalt
+  }
+}

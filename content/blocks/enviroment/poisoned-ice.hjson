@@ -3,6 +3,7 @@ name: Poisoned Ice
 dragMultiplier: 1.5
 speedMultiplier: 0.5
 variants: 3
+mapColor: 854db0
 attributes: {
   poison: 0.7
   water: 0.1

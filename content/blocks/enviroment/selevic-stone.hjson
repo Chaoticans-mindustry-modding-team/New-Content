@@ -1,6 +1,7 @@
 type: Floor
 name: Selevic Stone
 variants: 4
+mapColor: 310094ff
 attributes: {
   selevite: 0.5
 }

@@ -1,64 +1,57 @@
-{
-  "type": "Prop",
-  "breakSound": "mud",
-  "name": "Poison Blob",
-  "description": "A blob of poison. Explodes into poison upon destruction.",
-  "variants": 2,
-  "hittable": true,
-  "destroySound": "hardExplosion",
-  "health": 60,
-  "solid": true,
-  "destructible": true,
-  "destroyBullet": {
-    "type": "BasicBulletType",
-    "instantDisappear": true,
-    "damage": 0,
-    "splashDamageRadius": 86,
-    "splashDamage": 280,
-    "knockback": 10,
-    "impact": true,
-    "hitEffect": "none",
-    "status": "poisoned",
-    "statusDuration": 300,
-    "despawnEffect": {
-      "type": "MultiEffect",
-      "effects": [
-        {
-          "type": "WaveEffect",
-          "sizeTo": 90,
-          "interp": "circleOut",
-          "colorFrom": "9f62d1ff",
-          "colorTo": "9f62d1ff",
-          "lifetime": 20
-        },
-        {
-          "type": "ParticleEffect",
-          "particles": 7,
-          "interp": "circleOut",
-          "sizeInterp": "circleIn",
-          "colorFrom": "9f62d1aa",
-          "colorTo": "9f62d1aa",
-          "sizeFrom": 6,
-          "sizeTo": 0,
-          "length": 100,
-          "lifetime": 60
-        },
-        {
-          "type": "ParticleEffect",
-          "particles": 12,
-          "interp": "circleOut",
-          "sizeInterp": "circleIn",
-          "colorFrom": "9f62d1ff",
-          "colorTo": "9f62d1ff",
-          "length": 106,
-          "lifetime": 30,
-          "lenTo": 3
-        }
-      ]
-    },
-    "puddles": 3,
-    "puddleRange": 40,
-    "puddleAmount": 15,
-    "puddleLiquid": "poison"
-  }
+type: Prop
+breakSound: mud
+name: Poison Blob
+variants: 2
+//unused
+destroyBullet: {
+    type: BasicBulletType
+    instantDisappear: true
+    damage: 0
+    splashDamageRadius: 86
+    splashDamage: 280
+    knockback: 10
+    impact: true
+    hitEffect: none
+    status: poisoned
+    statusDuration: 300
+    despawnEffect: {
+        type: MultiEffect
+        effects: [
+            {
+                type: WaveEffect
+                sizeTo: 45
+                interp: circleOut
+                colorFrom: 9f62d1ff
+                colorTo: 9f62d1ff
+                lifetime: 20
+            }
+            {
+                type: ParticleEffect
+                particles: 7
+                interp: circleOut
+                sizeInterp: circleIn
+                colorFrom: 9f62d1aa
+                colorTo: 9f62d1aa
+                sizeFrom: 6
+                sizeTo: 0
+                length: 50
+                lifetime: 60
+            }
+            {
+                type: ParticleEffect
+                particles: 12
+                interp: circleOut
+                sizeInterp: circleIn
+                colorFrom: 9f62d1ff
+                colorTo: 9f62d1ff
+                length: 52
+                lifetime: 30
+                lenTo: 3
+            }
+        ]
+    }
+    puddles: 3
+    puddleRange: 40
+    puddleAmount: 15
+    puddleLiquid: poison
 }

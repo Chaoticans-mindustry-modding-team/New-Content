@@ -1,6 +1,7 @@
 type: Floor
 name: Cryonic Snow
 variants: 3
+mapColor: b8e7ff
 attributes: {
   water: 0.35
   cold: 1

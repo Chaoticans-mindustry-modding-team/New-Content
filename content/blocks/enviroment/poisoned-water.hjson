@@ -1,0 +1,12 @@
+type: floor
+drownTime: 150
+status: newunits-poisoned
+statusDuration: 60
+speedMultiplier: 0.2
+variants: 0
+liquidDrop: poison-water
+isLiquid: true
+cacheLayer: water
+attributes: [
+  poison: 1
+]

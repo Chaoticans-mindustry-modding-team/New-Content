@@ -1,0 +1,10 @@
+type: Floor
+name: Hot Basalt
+variants: 3
+emitLight: true
+lightRadius: 30
+lightColor: ffa50033
+attributes: {
+  heat: 0.5
+  water: -0.6
+}

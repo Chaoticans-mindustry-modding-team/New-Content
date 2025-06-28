@@ -1,0 +1,77 @@
+{
+  localizedName: Diversionist
+  description: Defends the Central core from enemies. Builds structures. Equipped with a pair of short range pistols. Capable of flight.
+  type: mech
+  targetBuildingsMobile: false
+  speed: 0.7
+  drag: 0.3
+  accel: 0.5
+  buildSpeed: 1
+  flying: false
+  canBoost: true
+  boostMultiplier: 1.5
+  health: 460
+  isEnemy: false
+  mineSpeed: 1
+  hitSize: 10
+  mineTier: 2
+  armor: 2
+  range: 72
+  itemCapacity: 30
+  fogRadius: 0
+  weapons:
+  [
+    {
+      name: diversionist-pistol
+      mirror: true
+      alternate: true
+      x: 5.25
+      y: 1.25
+      reload: 26
+      shootSound: pistol
+      top: false
+      rotate: false
+      recoil: 1
+      smokeEffect: none
+      ejectEffect: casing1
+      bullet:
+      {
+        type: LaserBulletType
+        colors:
+        [
+          fff8e8ff
+          fff8e8ff
+          fff8e8ff
+        ]
+        length: 72
+        width: 3
+        sideLength: 0
+        sideWidth: 0
+        damage: 20
+        buildingDamageMultiplier: 0.5
+        pierce: false
+        pierceBuilding: false
+        shootEffect:
+        {
+          type: ParticleEffect
+          colorFrom: fff8e8ff
+          colorTo: fff8e8ff
+          length: 10
+          lifetime: 25
+          cone: 30
+          line: true
+        }
+        hitEffect:
+        {
+          type: ParticleEffect
+          colorFrom: fff8e8ff
+          colorTo: fff8e8ff
+          length: 35
+          lifetime: 30
+          cone: 30
+          line: true
+        }
+      }
+    }
+  ]
+}

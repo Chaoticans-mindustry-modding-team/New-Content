@@ -1,0 +1,7 @@
+type: Floor
+name: Ferric Dust
+variants: 3
+attributes: {
+  ferric: 0.8
+  water: -0.5
+}

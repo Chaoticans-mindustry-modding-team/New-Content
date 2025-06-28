@@ -1,6 +1,7 @@
 type: Floor
 name: Selevic Cluster
 variants: 3
+wall: selevic-stone-wall
 attributes: {
   selevite: 1
 }

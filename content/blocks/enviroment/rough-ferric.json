@@ -1,0 +1,8 @@
+type: Floor
+name: Rough Ferric
+wall: ferric-wall
+variants: 3
+attributes: {
+  ferric: 0.6
+  water: -0.65
+}

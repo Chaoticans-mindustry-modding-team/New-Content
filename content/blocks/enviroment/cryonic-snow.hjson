@@ -1,0 +1,7 @@
+type: Floor
+name: Cryonic Snow
+variants: 3
+attributes: {
+  water: 0.35
+  cold: 0.8
+}

@@ -1,6 +1,7 @@
 type: Floor
 name: Obsidian
 variants: 3
+wall: obsidian-cluster
 attributes: {
   water: -1
 }

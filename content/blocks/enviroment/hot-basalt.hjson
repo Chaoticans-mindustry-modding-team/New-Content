@@ -4,6 +4,7 @@ variants: 3
 emitLight: true
 lightRadius: 30
 lightColor: ffa50033
+wall: basalt-wall
 attributes: {
   heat: 0.5
   water: -0.6

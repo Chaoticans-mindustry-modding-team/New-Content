@@ -6,4 +6,5 @@ variants: 3
 attributes: {
   ferric: 0.2
   water: 0.3
+  cold: 0.6
 }

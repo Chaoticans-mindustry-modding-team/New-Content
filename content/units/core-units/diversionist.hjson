@@ -19,6 +19,7 @@
   range: 72
   itemCapacity: 30
   fogRadius: 0
+  outlineColor: 13111cff
   weapons:
   [
     {
@@ -36,40 +37,36 @@
       ejectEffect: casing1
       bullet:
       {
-        type: LaserBulletType
-        colors:
-        [
-          fff8e8ff
-          fff8e8ff
-          fff8e8ff
-        ]
-        length: 72
-        width: 3
-        sideLength: 0
-        sideWidth: 0
-        damage: 20
+        type: BasicBulletType
+        speed: 6
+        lifetime: 12
+        damage: 16
         buildingDamageMultiplier: 0.5
-        pierce: false
-        pierceBuilding: false
+        width: 5
+        height: 8
         shootEffect:
         {
           type: ParticleEffect
           colorFrom: fff8e8ff
           colorTo: fff8e8ff
           length: 10
-          lifetime: 25
+          lifetime: 15
           cone: 30
           line: true
+          lenFrom: 2
+          lenTo: 1
         }
         hitEffect:
         {
           type: ParticleEffect
           colorFrom: fff8e8ff
           colorTo: fff8e8ff
-          length: 35
-          lifetime: 30
+          length: 10
+          lifetime: 15
           cone: 30
           line: true
+          lenFrom: 2
+          lenTo: 1
         }
       }
     }

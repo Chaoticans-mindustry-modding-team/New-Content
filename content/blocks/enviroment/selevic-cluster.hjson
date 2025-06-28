@@ -1,0 +1,6 @@
+type: Floor
+name: Selevic Cluster
+variants: 3
+attributes: {
+  selevite: 1
+}

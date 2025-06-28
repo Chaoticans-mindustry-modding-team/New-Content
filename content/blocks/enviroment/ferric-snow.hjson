@@ -1,0 +1,8 @@
+type: Floor
+name: Ferric Snow
+variants: 3
+attributes: {
+  ferric: 0.3
+  water: 0.2
+  cold: 0.5
+}

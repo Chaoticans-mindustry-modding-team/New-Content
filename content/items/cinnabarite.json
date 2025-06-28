@@ -1,12 +1,13 @@
 {
-  "name": "[#FF3333]Cinnabarite"
-  "description": "[#FF3333]As seldom as it is on Clexon, seeing it is a rare sight indeed."
-    "cost": 2,
-    "hardness": 7,
-    "explosiveness": 1,
-  "charge": 0.75
-    "color": "FF6666FF",
-    "research": {
-    "parent": "surge-alloy",
+  name: Cinnabarite
+  description: A unique ore channeled with the power of lasers. The basis of making Cinnabarite, a laser alloy.
+  cost: 3
+  hardness: 4
+  explosiveness: 1
+  charge: 1
+  color: FF7777FF
+  research:
+  {
+    parent: tritonium
   }
 }

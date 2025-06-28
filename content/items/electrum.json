@@ -7,7 +7,4 @@
     "hardness": 6,
 "charge": 0.2,
     "color": "FFEC1CFF",
-    "research": {
-    "parent": "borrium"
-  }
 }

@@ -1,4 +1,5 @@
 type: floor
+name: Poison
 drownTime: 60
 status: newunits-poisoned
 statusDuration: 280

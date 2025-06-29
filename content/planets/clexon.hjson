@@ -52,8 +52,8 @@
       seed: 2
       divisions: 6
       radius: 1.000
-      color1: 241913
-      color2: 17100c
+      color1: b05128
+      color2: 692619
       octaves: 3
       persistence: 0.4
       scale: 0.4
@@ -61,86 +61,6 @@
       coct: 2
       cper: 2
       cscl: 0.8
-      cthresh: 1
-    }
-    {
-      type: NoiseMesh
-      seed: 3
-      divisions: 6
-      radius: 1.002
-      color1: 2b1863
-      color2: 46256e
-      octaves: 2
-      persistence: 0.9
-      scale: 0.7
-      mag: 0.3
-      coct: 4
-      cper: 1
-      cscl: 1.8
-      cthresh: 0.8
-    }
-    {
-      type: NoiseMesh
-      divisions: 6
-      seed: 3323
-      radius: 0.998
-      color1: 371861
-      color2: 5e2e99
-      octaves: 4
-      persistence: 0.9
-      scale: 0.7
-      mag: 0.4
-      coct: 1
-      cper: 1
-      cscl: 1.8
-      cthresh: 1
-    }
-    {
-      type: NoiseMesh
-      divisions: 4
-      seed: -5
-      radius: 0.945
-      color1: 6aa95e
-      color2: 80cb71
-      octaves: 4.6
-      persistence: 0.9
-      scale: 0.7
-      mag: 0.9
-      coct: 4
-      cper: 1
-      cscl: 1.8
-      cthresh: 1
-    }
-    {
-      type: NoiseMesh
-      divisions: 4
-      seed: -5
-      radius: 0.884
-      color1: 56c774
-      color2: 3e9d6b
-      octaves: 4.6
-      persistence: 0.9
-      scale: 0.7
-      mag: 1.5
-      coct: 4
-      cper: 1
-      cscl: 4
-      cthresh: 1
-    }
-    {
-      type: NoiseMesh
-      divisions: 4
-      seed: -5
-      radius: 0.818
-      color1: c1c4cb
-      color2: 525252
-      octaves: 4.6
-      persistence: 0.9
-      scale: 0.7
-      mag: 2.2
-      coct: 4
-      cper: 1
-      cscl: 0.7
       cthresh: 1
     }
   ]

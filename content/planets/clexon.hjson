@@ -50,18 +50,50 @@
     {
       type: NoiseMesh
       seed: 2
-      divisions: 6
+      divisions: f
       radius: 1.000
       color1: b05128
       color2: 692619
-      octaves: 3
+      octaves: 4
       persistence: 0.4
-      scale: 0.4
-      mag: 0.4
-      coct: 2
+      scale: 0.1
+      mag: 0.06
+      coct: 4
       cper: 2
-      cscl: 0.8
+      cscl: 0.4
       cthresh: 1
+    }
+    {
+      type: NoiseMesh
+      seed: 2
+      divisions: f
+      radius: 1.001
+      color1: 241913ff
+      color2: 00000000
+      octaves: 3
+      persistence: 0.8
+      scale: 0.03
+      mag: 0.3
+      coct: 4
+      cper: 2
+      cscl: 0.4
+      cthresh: 0.4
+    }
+    {
+      type: NoiseMesh
+      seed: 2
+      divisions: f
+      radius: 1.001
+      color1: 17100cff
+      color2: 00000000
+      octaves: 3
+      persistence: 0.8
+      scale: 0.06
+      mag: 0.2
+      coct: 4
+      cper: 2
+      cscl: 0.4
+      cthresh: 0.6
     }
   ]
   cloudMesh:

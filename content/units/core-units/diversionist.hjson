@@ -10,7 +10,7 @@
   flying: false
   canBoost: true
   boostMultiplier: 1.5
-  health: 460
+  health: 720
   isEnemy: false
   mineSpeed: 1
   hitSize: 10
@@ -20,6 +20,7 @@
   itemCapacity: 45
   fogRadius: 0
   outlineColor: 13111cff
+  mechLegColor: 13111cff
   weapons:
   [
     {
@@ -39,11 +40,11 @@
       {
         type: RailBulletType
         lifetime: 10
-        damage: 18
+        damage: 26
         width: 1
         length: 72
         knockback: 1
-        pointEffectSpace: 4
+        pointEffectSpace: 2
         pierceDamageFactor: 1
         smokeEffect: none
         pointEffect:
@@ -52,8 +53,8 @@
           baseRotation: 0
           rotWithParent: true
           length: 0.0001
-          lenFrom: 4
-          lenTo: 4
+          lenFrom: 2
+          lenTo: 2
           strokeFrom: 3
           strokeTo: 0
           colorFrom: f9c27aff
@@ -75,6 +76,7 @@
         }
         despawnEffect: none
         hitEffect: none
+        pierceEffect: none
         endEffect:
         {
           type: ParticleEffect

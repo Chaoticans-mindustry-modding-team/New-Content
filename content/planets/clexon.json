@@ -14,7 +14,7 @@
     "fscl": 30,
     "fper": 0.4
   },
-  "sectorSize": 2.5,
+  "sectorSize": 3,
   "sectorSeed": 66,
   "startSector": 1,
   "parent": "sun",
@@ -31,7 +31,8 @@
   "defaultEnv": 390,
   "name": "Clexon",
   "unlockedOnLand": [
-    "core-central"
+    "core-central",
+    "diversionist"
   ],
   "icon": "planet",
   "allowLaunchSchematics": false,
@@ -46,25 +47,9 @@
   "mesh": [
     {
       "type": "NoiseMesh",
-      "seed": 98,
-      "divisions": 6,
-      "radius": 1.01,
-      "color1": "28a699",
-      "color2": "28a699",
-      "octaves": 1,
-      "persistence": 0.0001,
-      "scale": 0.0001,
-      "mag": 0.6,
-      "coct": 1,
-      "cper": 1,
-      "cscl": 1,
-      "cthresh": 4
-    },
-    {
-      "type": "NoiseMesh",
       "seed": 2,
       "divisions": 6,
-      "radius": 1.019,
+      "radius": 1,
       "color1": 241913,
       "color2": "17100c",
       "octaves": 3,
@@ -110,7 +95,7 @@
     },
     {
       "type": "NoiseMesh",
-      "divisions": 3,
+      "divisions": 4,
       "seed": -5,
       "radius": 0.945,
       "color1": "6aa95e",
@@ -126,7 +111,7 @@
     },
     {
       "type": "NoiseMesh",
-      "divisions": 6,
+      "divisions": 46,
       "seed": -5,
       "radius": 0.884,
       "color1": "56c774",

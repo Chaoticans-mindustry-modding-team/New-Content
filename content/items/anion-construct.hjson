@@ -1,0 +1,14 @@
+{
+  name: Anion
+  description: An alloy imbuing ions. Used by the Fusionix.
+  details: A construct of materials with ions and anions lined up in harmony. Extremely unstable.
+  cost: 5
+  hardness: 12
+  explosiveness: 3
+  charge: 0.75
+  color: 005effff
+  research:
+  {
+    parent: heavy-alloy
+  }
+}

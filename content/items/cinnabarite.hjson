@@ -1,0 +1,13 @@
+{
+  name: Cinnabarite
+  description: A unique ore channeled with the power of lasers. The basis of making Cinnabarite, a laser alloy.
+  cost: 3
+  hardness: 4
+  explosiveness: 1
+  charge: 1
+  color: FF7777FF
+  research:
+  {
+    parent: tritonium
+  }
+}

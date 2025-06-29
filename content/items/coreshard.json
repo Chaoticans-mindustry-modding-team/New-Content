@@ -5,10 +5,4 @@
     "hardness": 25,
     "color": "FFEE6BFF",
   "charge": 4.5,
-    "research": {
-    "parent": "surge-alloy",
-    "requirements": [
-    "surge-alloy/200"
-  ]
-  }
 }

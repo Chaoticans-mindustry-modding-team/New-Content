@@ -1,0 +1,12 @@
+{
+  name: Heavy Alloy
+  description: A strong alloy used in high-grade tech, advanced unit production, heavy ammunition, and alloy manufacturing.
+  details: The basis of most faction alloys.
+  cost: 6
+  hardness: 15
+  color: 403a4aFF
+  research:
+  {
+    parent: medium-alloy
+  }
+}

@@ -1,0 +1,139 @@
+{
+  generator:
+  {
+    berylChance: 0.45
+    iceChance: 0.15
+    ferricChance: 0.55
+    stoneChance: 0.001
+    radMin: 25
+    radMax: 25
+    berylliumScale: 4
+    copperScale: 0.6
+    scale: 25
+    mag: 0.5
+    thresh: 0.9
+    fscl: 30
+    fper: 0.4
+  }
+  sectorSize: 4
+  sectorSeed: 3
+  startSector: 94
+  parent: sun
+  iconColor: 432980ff
+  atmosphereRadIn: 0
+  atmosphereRadOut: 0.2
+  atmosphereColor: 5e2e99
+  orbitRadius: 43
+  orbitOffset: 62
+  orbitTime: 12000
+  rotateTime: 5000
+  accessible: true
+  allowLaunchToNumbered: false
+  defaultEnv: 390
+  name: Clexon
+  localizedName: Clexon
+  unlockedOnLand:
+  [
+    core-central
+    diversionist
+  ]
+  icon: planet
+  allowLaunchSchematics: false
+  allowLaunchLoadout: false
+  allowWaveSimulation: true
+  allowSectorInvasion: false
+  clearSectorOnLose: true
+  prebuildBase: true
+  allowWaves: true
+  enemyBuildSpeedMultiplier: 1
+  defaultCore: core-central
+  landCloudColor: 854db0dd
+  //SunMesh the goat
+  mesh:
+  [
+    {
+      type: SunMesh
+      divisions: 5
+      radius: 1
+      colors:
+      [
+        //poison lake level 0
+        371861
+        5e2e99
+        //poison stuff level 1
+        46256e
+        8249a6
+        //selevite level 2
+        //volcanic level 3
+        24183b
+        24183b
+        24183b
+        24183b
+        17100c
+        17100c
+        17100c
+        241913
+        //selevic2 level 4
+        8000ff
+        //hot biome level 5
+        de6f00
+        //ferric level 6
+        692619
+        692619
+        b05128
+        b05128
+        //cold biome level 7
+        ff8566
+        fcac97
+        //mountains level 8
+        393b4d
+        7dbeff
+      ]
+      octaves: 8
+      persistence: 0.7
+      scale: 0.7
+      mag: 10
+      pow: 6
+    }
+  ]
+  cloudMesh:
+  [
+    {
+      type: HexSkyMesh
+      speed: 1.7
+      seed: 76
+      divisions: 6
+      radius: 0.2
+      color: 9f62d1
+      octaves: 6
+      persistence: 0.5
+      scl: 2
+      thresh: 0.31
+    }
+        {
+      type: HexSkyMesh
+      speed: 1.7
+      seed: 76
+      divisions: 6
+      radius: 0.15
+      color: 854db0
+      octaves: 3
+      persistence: 0.3
+      scl: 0.8
+      thresh: 0.43
+    }
+    {
+      type: HexSkyMesh
+      speed: 4
+      seed: 76
+      divisions: 6
+      radius: 0.1
+      color: 5e2e99
+      octaves: 3
+      persistence: 0.3
+      scl: 0.4
+      thresh: 0.5
+    }
+  ]
+  alwaysUnlocked: true
+}

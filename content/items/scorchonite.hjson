@@ -1,0 +1,13 @@
+{
+  name: Scorchonite
+  description: A flammable crystalline useful in ignition and weaponry.
+  flammability: 2
+  hideDetails: false
+  cost: 3
+  hardness: 1
+  color: 964b3cff
+  research:
+  {
+    parent: cobalt
+  }
+}

@@ -6,7 +6,7 @@
 			"requirements": [
 			"silicon/350",
 			"lead/25"
-        "borrium/45"
+        "electrum/45"
 			],
 			"parent": "ya1-spark"
 		},

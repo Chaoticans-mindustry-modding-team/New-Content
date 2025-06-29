@@ -35,7 +35,7 @@
       recoil: 1
       ejectEffect: casing1
       shootCone: 1
-      shootY: 6
+      shootY: 12
       bullet:
       {
         type: RailBulletType
@@ -47,7 +47,7 @@
         length: 72
         knockback: 1
         pointEffectSpace: 4
-        pierce: false
+        pierceDamageFactor: 1
         smokeEffect: none
         pointEffect:
         {

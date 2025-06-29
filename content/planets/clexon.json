@@ -14,7 +14,7 @@
     "fscl": 30,
     "fper": 0.4
   },
-  "sectorSize": 2,
+  "sectorSize": 4,
   "sectorSeed": 66,
   "startSector": 10,
   "parent": "sun",
@@ -29,8 +29,10 @@
   "accessible": true,
   "allowLaunchToNumbered": false,
   "defaultEnv": 390,
-  "unlockedOnLand": [],
-  "icon": "terrain",
+  "unlockedOnLand": [
+    "core-central"
+  ],
+  "icon": "planet",
   "allowLaunchSchematics": false,
   "allowLaunchLoadout": false,
   "allowWaveSimulation": true,
@@ -43,8 +45,8 @@
   "mesh": [
     {
       "type": "NoiseMesh",
-      "seed": -1.9923177772737276e+56,
-      "divisions": 4,
+      "seed": 98,
+      "divisions": 6,
       "radius": 1.01,
       "color1": "28a699",
       "color2": "28a699",
@@ -107,7 +109,7 @@
     },
     {
       "type": "NoiseMesh",
-      "divisions": 6,
+      "divisions": 3,
       "seed": -5,
       "radius": 0.945,
       "color1": "6aa95e",

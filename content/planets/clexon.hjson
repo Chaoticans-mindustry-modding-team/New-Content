@@ -32,7 +32,8 @@
   defaultEnv: 390
   name: Clexon
   localizedName: Clexon
-  unlockedOnLand: [
+  unlockedOnLand:
+  [
     core-central
     diversionist
   ]
@@ -52,17 +53,18 @@
       type: SunMesh
       divisions: 5
       radius: 1
-      colors: [
+      colors:
+      [
         b05128
-        692619
+        "692619"
         c7784a
-        
-        
-        
-        
-        
-        
-        
+        de6f00
+        bd3900
+        "241913"
+        17100c
+        2b1863
+        46256e
+        8249a6
       ]
       octaves: 4
       persistence: 0.4

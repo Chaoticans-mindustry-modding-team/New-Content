@@ -47,7 +47,7 @@
         length: 72
         knockback: 1
         pointEffectSpace: 4
-        pierceDamageFactor: 1
+        pierceDamageFactor: 9999
         smokeEffect: none
         pointEffect:
         {

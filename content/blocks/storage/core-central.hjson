@@ -11,4 +11,5 @@
   unitCapModifier: 4
   thrusterLength: 8
   alwaysUnlocked: true
+  showPlanets: Clexon
 }

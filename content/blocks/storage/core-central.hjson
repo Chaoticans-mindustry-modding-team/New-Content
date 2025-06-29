@@ -12,4 +12,10 @@
   thrusterLength: 8
   alwaysUnlocked: true
   showPlanets: Clexon
+  research: {
+	planet: clexon
+	root: true
+	requiresUnlock: false
+	name: "CLexon"
+  }
 }

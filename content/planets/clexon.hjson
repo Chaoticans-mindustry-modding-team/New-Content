@@ -47,6 +47,8 @@
   allowWaves: true
   enemyBuildSpeedMultiplier: 1
   defaultCore: core-central
+  techTree: core-central
+  landCloudColor: 854db0dd
   //SunMesh the goat
   mesh:
   [
@@ -93,6 +95,30 @@
       scale: 0.7
       mag: 10
       pow: 6
+    }
+    {
+        type: HexSkyMesh
+        speed: 0.3
+        seed: 19
+        divisions: 5
+        radius: 1.1
+        color: 5e2e99
+        octaves: 10
+        persistence: 0.3
+        scl: 4
+        thresh: 0.5
+    }
+    {
+        type: HexSkyMesh
+        speed: 0
+        seed: 7
+        divisions: 5
+        radius: 1.001
+        color: 46256e
+        octaves: 7
+        persistence: 0.5
+        scl: 3
+        thresh: 0.4
     }
   ]
   cloudMesh:

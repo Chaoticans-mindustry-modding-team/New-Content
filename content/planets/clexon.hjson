@@ -15,7 +15,7 @@
     fscl: 30
     fper: 0.4
   }
-  sectorSize: 3
+  sectorSize: 3.5
   sectorSeed: 66
   startSector: 1
   parent: sun
@@ -51,7 +51,7 @@
   [
     {
       type: SunMesh
-      divisions: 7
+      divisions: 6
       radius: 1
       colors:
       [
@@ -82,7 +82,7 @@
       ]
       octaves: 8
       persistence: 0.7
-      scale: 0.1
+      scale: 0.4
       mag: 10
       pow: 6
     }

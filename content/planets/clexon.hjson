@@ -15,7 +15,7 @@
     fscl: 30
     fper: 0.4
   }
-  sectorSize: 3
+  sectorSize: 4
   sectorSeed: 66
   startSector: 1
   parent: sun

@@ -16,8 +16,8 @@
     fper: 0.4
   }
   sectorSize: 4
-  sectorSeed: 94
-  startSector: 1
+  sectorSeed: 3
+  startSector: 94
   parent: sun
   iconColor: 432980ff
   atmosphereRadIn: 0

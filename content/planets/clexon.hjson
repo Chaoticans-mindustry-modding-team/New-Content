@@ -113,7 +113,7 @@
     }
     {
       type: NoiseMesh
-      divisions: 46
+      divisions: 4
       seed: -5
       radius: 0.884
       color1: 56c774

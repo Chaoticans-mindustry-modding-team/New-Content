@@ -11,7 +11,7 @@
   unitCapModifier: 4
   thrusterLength: 8
   alwaysUnlocked: true
-  showPlanets: Clexon
+  showPlanets: [clexon]
   research: {
 	planet: clexon
 	root: true

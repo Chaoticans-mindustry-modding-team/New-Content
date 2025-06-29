@@ -47,8 +47,13 @@
   allowWaves: true
   enemyBuildSpeedMultiplier: 1
   defaultCore: core-central
-  techTree: core-central
   landCloudColor: 854db0dd
+  research: {
+	planet: clexon
+	root: true
+	requiresUnlock: false
+	name: Clexon
+}
   //SunMesh the goat
   mesh:
   [

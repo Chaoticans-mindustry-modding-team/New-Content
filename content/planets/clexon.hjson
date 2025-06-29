@@ -15,7 +15,7 @@
     fscl: 30
     fper: 0.4
   }
-  sectorSize: 2.5
+  sectorSize: 3
   sectorSeed: 66
   startSector: 1
   parent: sun
@@ -51,26 +51,40 @@
   [
     {
       type: SunMesh
-      divisions: 5
+      divisions: 7
       radius: 1
       colors:
       [
-        b05128
-        "692619"
-        c7784a
-        de6f00
-        bd3900
-        "241913"
-        17100c
+        //poison lake level 0
+        371861
+        5e2e99
+        //poison stuff level 1
         2b1863
         46256e
         8249a6
+        //selevite level 2
+        8000ff
+        //volcanic level 3
+        24183b
+        17100c
+        241913
+        //hot biome level 4
+        de6f00
+        //ferric level 5
+        692619
+        b05128
+        //cold biome
+        ff8566
+        fcac97
+        //mountains
+        393b4d
+        7dbeff
       ]
-      octaves: 4
-      persistence: 0.4
+      octaves: 8
+      persistence: 0.7
       scale: 0.1
-      mag: 3
-      pow: 1
+      mag: 10
+      pow: 6
     }
   ]
   cloudMesh:

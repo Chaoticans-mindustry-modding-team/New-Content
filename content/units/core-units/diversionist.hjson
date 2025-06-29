@@ -28,7 +28,7 @@
       alternate: true
       x: 4.25
       y: 1
-      reload: 12
+      reload: 11
       shootSound: pistol
       top: false
       rotate: false
@@ -52,9 +52,9 @@
           line: true
           baseRotation: 0
           rotWithParent: true
-          length: 0
-          lenFrom: 4
-          lenTo: 4
+          length: 0.0001
+          lenFrom: 3
+          lenTo: 3
           strokeFrom: 3
           strokeTo: 1
           colorFrom: fff8e8ff

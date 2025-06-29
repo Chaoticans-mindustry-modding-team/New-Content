@@ -17,7 +17,7 @@
   mineTier: 2
   armor: 2
   range: 72
-  itemCapacity: 30
+  itemCapacity: 45
   fogRadius: 0
   outlineColor: 13111cff
   weapons:
@@ -26,24 +26,41 @@
       name: diversionist-pistol
       mirror: true
       alternate: true
-      x: 5.25
-      y: 1.25
-      reload: 26
+      x: 4.25
+      y: 1
+      reload: 12
       shootSound: pistol
       top: false
       rotate: false
       recoil: 1
       smokeEffect: none
       ejectEffect: casing1
+      shootCone: 1
       bullet:
       {
-        type: BasicBulletType
+        type: RailBulletType
         speed: 6
         lifetime: 12
-        damage: 16
+        damage: 18
         buildingDamageMultiplier: 0.5
-        width: 5
-        height: 8
+        width: 3
+        length: 72
+        knockback: 1
+        pointEffectSpace: 4
+        pointEffect:
+        {
+          line: true
+          baseRotation: 0
+          rotWithParent: true
+          length: 0
+          lenFrom: 4
+          lenTo: 4
+          strokeFrom: 3
+          strokeTo: 1
+          colorFrom: fff8e8ff
+          colorTo: fff8e800
+          cone: 0
+        }
         shootEffect:
         {
           type: ParticleEffect

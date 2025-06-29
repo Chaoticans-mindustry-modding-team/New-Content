@@ -19,7 +19,7 @@
   sectorSeed: 94
   startSector: 1
   parent: sun
-  iconColor: ba2d36ff
+  iconColor: 432980ff
   atmosphereRadIn: 0
   atmosphereRadOut: 0.2
   atmosphereColor: 5e2e99

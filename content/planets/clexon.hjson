@@ -31,6 +31,7 @@
   allowLaunchToNumbered: false
   defaultEnv: 390
   name: Clexon
+  localizedName: Clexon
   unlockedOnLand: [
     core-central
     diversionist
@@ -82,25 +83,25 @@
     {
       type: NoiseMesh
       seed: 2
-      divisions: 4
-      radius: 1.001
+      divisions: 5
+      radius: 1.003
       color1: 17100c
       color2: 00000000
       octaves: 3
       persistence: 0.8
-      scale: 0.06
+      scale: 0.03
       mag: 0.2
       coct: 4
       cper: 2
       cscl: 0.4
-      cthresh: 0.6
+      cthresh: 0.3
     }
   ]
   cloudMesh:
   [
     {
       type: HexSkyMesh
-      speed: 2
+      speed: 4
       seed: 76
       divisions: 5
       radius: 0.2
@@ -112,15 +113,15 @@
     }
     {
       type: HexSkyMesh
-      speed: 2
+      speed: 11
       seed: 76
-      divisions: 6
+      divisions: 5
       radius: 0.1
       color: 854db0
       octaves: 3
       persistence: 0.3
       scl: 0.8
-      thresh: 0.6
+      thresh: 0.63
     }
   ]
   alwaysUnlocked: true

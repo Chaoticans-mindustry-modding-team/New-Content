@@ -48,7 +48,7 @@
   enemyBuildSpeedMultiplier: 1
   defaultCore: core-central
   landCloudColor: 854db0dd
-  techTree: core-central
+  techTree: clexon
   //SunMesh the goat
   mesh:
   [

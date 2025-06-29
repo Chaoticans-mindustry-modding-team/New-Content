@@ -33,9 +33,9 @@
       top: false
       rotate: false
       recoil: 1
-      smokeEffect: none
       ejectEffect: casing1
       shootCone: 1
+      shootY: 6
       bullet:
       {
         type: RailBulletType
@@ -43,10 +43,12 @@
         lifetime: 12
         damage: 18
         buildingDamageMultiplier: 0.5
-        width: 3
+        width: 1
         length: 72
         knockback: 1
         pointEffectSpace: 4
+        pierce: false
+        smokeEffect: none
         pointEffect:
         {
           line: true
@@ -56,16 +58,17 @@
           lenFrom: 3
           lenTo: 3
           strokeFrom: 3
-          strokeTo: 1
-          colorFrom: fff8e8ff
-          colorTo: fff8e800
+          strokeTo: 0
+          colorFrom: f9c27aff
+          colorTo: f9c27aff
           cone: 0
+          lifetime: 12
         }
         shootEffect:
         {
           type: ParticleEffect
-          colorFrom: fff8e8ff
-          colorTo: fff8e8ff
+          colorFrom: f9c27aff
+          colorTo:  f9c27aff
           length: 10
           lifetime: 15
           cone: 30
@@ -76,8 +79,20 @@
         hitEffect:
         {
           type: ParticleEffect
-          colorFrom: fff8e8ff
-          colorTo: fff8e8ff
+          colorFrom: f9c27aff
+          colorTo: f9c27aff
+          length: 10
+          lifetime: 15
+          cone: 30
+          line: true
+          lenFrom: 2
+          lenTo: 1
+        }
+        endEffect:
+        {
+          type: ParticleEffect
+          colorFrom: f9c27aff
+          colorTo: f9c27aff
           length: 10
           lifetime: 15
           cone: 30

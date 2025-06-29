@@ -1,127 +1,124 @@
 {
-  generator:
-  {
-    berylChance: 0.45
-    iceChance: 0.15
-    ferricChance: 0.55
-    stoneChance: 0.001
-    radMin: 25
-    radMax: 25
-    berylliumScale: 4
-    copperScale: 0.6
-    scale: 25
-    mag: 0.5
-    thresh: 0.9
-    fscl: 30
-    fper: 0.4
-  }
-  sectorSize: 2.5
-  sectorSeed: 66
-  startSector: 1
-  parent: sun
-  iconColor: ba2d36ff
-  atmosphereRadIn: 0
-  atmosphereRadOut: 0.2
-  atmosphereColor: 5e2e99
-  orbitRadius: 43
-  orbitOffset: 62
-  orbitTime: 12000
-  rotateTime: 5000
-  accessible: true
-  allowLaunchToNumbered: false
-  defaultEnv: 390
-  name: Clexon
-  unlockedOnLand: [
-    core-central
-    diversionist
-  ]
-  icon: planet
-  allowLaunchSchematics: false
-  allowLaunchLoadout: false
-  allowWaveSimulation: true
-  allowSectorInvasion: false
-  clearSectorOnLose: true
-  prebuildBase: true
-  allowWaves: true
-  enemyBuildSpeedMultiplier: 1
-  defaultCore: core-central
-  mesh:
-  [
+  "generator": {
+    "berylChance": 0.45,
+    "iceChance": 0.15,
+    "ferricChance": 0.55,
+    "stoneChance": 0.001,
+    "radMin": 25,
+    "radMax": 25,
+    "berylliumScale": 4,
+    "copperScale": 0.6,
+    "scale": 25,
+    "mag": 0.5,
+    "thresh": 0.9,
+    "fscl": 30,
+    "fper": 0.4
+  },
+  "sectorSize": 2.5,
+  "sectorSeed": 66,
+  "startSector": 1,
+  "parent": "sun",
+  "iconColor": "ba2d36ff",
+  "atmosphereRadIn": 0,
+  "atmosphereRadOut": 0.2,
+  "atmosphereColor": "5e2e99",
+  "orbitRadius": 43,
+  "orbitOffset": 62,
+  "orbitTime": 12000,
+  "rotateTime": 5000,
+  "accessible": true,
+  "allowLaunchToNumbered": false,
+  "defaultEnv": 390,
+  "name": "Clexon",
+  "unlockedOnLand": [
+    "core-central",
+    "diversionist"
+  ],
+  "icon": "planet",
+  "allowLaunchSchematics": false,
+  "allowLaunchLoadout": false,
+  "allowWaveSimulation": true,
+  "allowSectorInvasion": false,
+  "clearSectorOnLose": true,
+  "prebuildBase": true,
+  "allowWaves": true,
+  "enemyBuildSpeedMultiplier": 1,
+  "defaultCore": "core-central",
+  "mesh": [
     {
-      type: NoiseMesh
-      seed: 2
-      divisions: f
-      radius: 1.000
-      color1: b05128
-      color2: 692619
-      octaves: 4
-      persistence: 0.4
-      scale: 0.1
-      mag: 0.06
-      coct: 4
-      cper: 2
-      cscl: 0.4
-      cthresh: 1
-    }
+      "type": "NoiseMesh",
+      "seed": 2,
+      "divisions": "f",
+      "radius": 1,
+      "color1": "b05128",
+      "color2": 692619,
+      "octaves": 4,
+      "persistence": 0.4,
+      "scale": 0.1,
+      "mag": 0.06,
+      "coct": 4,
+      "cper": 2,
+      "cscl": 0.4,
+      "cthresh": 1
+    },
     {
-      type: NoiseMesh
-      seed: 2
-      divisions: f
-      radius: 1.001
-      color1: 241913ff
-      color2: 00000000
-      octaves: 3
-      persistence: 0.8
-      scale: 0.03
-      mag: 0.3
-      coct: 4
-      cper: 2
-      cscl: 0.4
-      cthresh: 0.4
-    }
+      "type": "NoiseMesh",
+      "seed": 2,
+      "divisions": "f",
+      "radius": 1.001,
+      "color1": 241913,
+      "color2": "17100c",
+      "octaves": 3,
+      "persistence": 0.8,
+      "scale": 0.03,
+      "mag": 0.6,
+      "coct": 4,
+      "cper": 2,
+      "cscl": 0.4,
+      "cthresh": 0.4
+    },
     {
-      type: NoiseMesh
-      seed: 2
-      divisions: f
-      radius: 1.001
-      color1: 17100cff
-      color2: 00000000
-      octaves: 3
-      persistence: 0.8
-      scale: 0.06
-      mag: 0.2
-      coct: 4
-      cper: 2
-      cscl: 0.4
-      cthresh: 0.6
+      "type": "NoiseMesh",
+      "seed": 2,
+      "divisions": "f",
+      "radius": 1.001,
+      "color1": "17100c",
+      "color2": "17100c",
+      "octaves": 3,
+      "persistence": 0.8,
+      "scale": 0.06,
+      "mag": 0.5,
+      "coct": 6,
+      "cper": 2,
+      "cscl": 0.4,
+      "cthresh": 0.6
     }
-  ]
-  cloudMesh:
-  [
+  ],
+  "cloudMesh": [
     {
-      type: HexSkyMesh
-      speed: 2
-      seed: 76
-      divisions: 5
-      radius: 0.2
-      color: 9f62d1
-      octaves: 3
-      persistence: 0.3
-      scl: 1
-      thresh: 0.43
-    }
+      "type": "HexSkyMesh",
+      "speed": 2,
+      "seed": 76,
+      "divisions": 5,
+      "radius": 0.2,
+      "color": "9f62d1",
+      "octaves": 3,
+      "persistence": 0.3,
+      "scl": 1,
+      "thresh": 0.43
+    },
     {
-      type: HexSkyMesh
-      speed: 2
-      seed: 76
-      divisions: 6
-      radius: 0.1
-      color: 854db0
-      octaves: 3
-      persistence: 0.3
-      scl: 0.8
-      thresh: 0.6
+      "type": "HexSkyMesh",
+      "speed": 2,
+      "seed": 76,
+      "divisions": 6,
+      "radius": 0.1,
+      "color": "854db0",
+      "octaves": 3,
+      "persistence": 0.3,
+      "scl": 0.8,
+      "thresh": 0.6
     }
-  ]
-  alwaysUnlocked: true
+  ],
+  "alwaysUnlocked": true
 }

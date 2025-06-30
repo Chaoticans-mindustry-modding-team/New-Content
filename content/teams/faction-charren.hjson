@@ -1,0 +1,16 @@
+{
+  type: Team
+  name: Charren
+  color: ffa665
+  id: 6
+  emoji: faction-charren
+  palette:
+  [
+    ff8533
+    ffb554
+    ff8533
+    b04f00
+  ]
+  ignoreUnitCap: true
+  hasPalette: true
+}

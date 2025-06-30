@@ -12,7 +12,7 @@
   category: defense
   research:
   {
-    parent: iron-wall
+    parent: core-central
     requirements:
     [
       iron/150

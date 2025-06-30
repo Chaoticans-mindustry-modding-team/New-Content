@@ -1,20 +1,5 @@
 {
-  generator:
-  {
-    berylChance: 0.45
-    iceChance: 0.15
-    ferricChance: 0.55
-    stoneChance: 0.001
-    radMin: 25
-    radMax: 25
-    berylliumScale: 4
-    copperScale: 0.6
-    scale: 25
-    mag: 0.5
-    thresh: 0.9
-    fscl: 30
-    fper: 0.4
-  }
+  generator: PlanetGenerator
   solarSystem: sun
   sectorSize: 4
   sectorSeed: 3

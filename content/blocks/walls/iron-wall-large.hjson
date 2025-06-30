@@ -4,7 +4,6 @@
   type: Wall
   size: 2
   health: 1620
-  envEnabled: 256
   requirements:
   [
     iron/64

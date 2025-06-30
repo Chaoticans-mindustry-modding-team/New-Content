@@ -6,6 +6,7 @@
   size: 1
   health: 160
   armored: false
+  envEnabled: 256
   requirements:
   [
     iron/8

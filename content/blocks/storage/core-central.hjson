@@ -10,12 +10,10 @@
   unitType: diversionist
   unitCapModifier: 4
   thrusterLength: 8
-  alwaysUnlocked: true
-  showPlanets: [clexon]
   research: {
 	planet: clexon
 	root: true
 	requiresUnlock: false
-	name: "CLexon"
+	name: "Clexon"
   }
 }

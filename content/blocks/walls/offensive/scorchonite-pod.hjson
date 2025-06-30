@@ -3,7 +3,7 @@
   description: "Protects structures from enemy projectiles. Creates a firey explosion upon destruction. \n\n[red]This explosion can damage your own team's blocks, so do not place it next to allied structures. Placing these near eachother could cause a chain reaction."
   type: Wall
   size: 1
-  health: 360
+  health: 90
   requirements:
   [
     iron/20

@@ -1,0 +1,5 @@
+{
+  name: Cinnabarite Ore
+  type: OreBlock
+  itemDrop: cinnabarite
+}

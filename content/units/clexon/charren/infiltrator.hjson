@@ -3,7 +3,7 @@
   description:
     '''
     Fires flaming rounds at nearby enemy targets.
-    
+
     [gray]Faction: [orange]Charren
     '''
   type: mech
@@ -35,6 +35,7 @@
       recoilTime: 45
       ejectEffect: casing1
       shootCone: 5
+      shootY: 5
       inaccuracy: 4
       shootStatus: slow
       shootStatusDuration: 10
@@ -66,22 +67,29 @@
         }
         shootEffect:
         {
-          type: SoundEffect
-          sound: machineGun
-          minVolume: 0.4
-          maxVolume: 0.4
-          effect:
-          {
-            type: ParticleEffect
-            colorFrom: d4733bff
-            colorTo: d4733bff
-            length: 10
-            lifetime: 15
-            cone: 30
-            line: true
-            lenFrom: 2
-            lenTo: 1
-          }
+          type: MultiEffect
+          effects:
+          [
+            hitFlameSmall
+            {
+              type: SoundEffect
+              sound: machineGun
+              minVolume: 0.4
+              maxVolume: 0.4
+              effect:
+              {
+                type: ParticleEffect
+                colorFrom: d4733bff
+                colorTo: d4733bff
+                length: 10
+                lifetime: 15
+                cone: 30
+                line: true
+                lenFrom: 2
+                lenTo: 1
+              }
+            }
+          ]
         }
         despawnEffect: none
         hitEffect: none

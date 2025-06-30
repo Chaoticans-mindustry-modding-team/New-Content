@@ -1,0 +1,21 @@
+{
+  localizedName: Tube Bridge
+  description: Transports items over terrain and buildings.
+  type: DuctBridge
+  speed: 4
+  size: 1
+  health: 160
+  armored: false
+  requirements:
+  [
+    iron/8
+  ]
+  research:
+  {
+    parent: tube-router
+    requirements:
+    [
+      iron/40
+    ]
+  }
+}

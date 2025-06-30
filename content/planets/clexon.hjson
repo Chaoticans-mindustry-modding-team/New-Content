@@ -29,7 +29,7 @@
   allowSectorInvasion: false
   clearSectorOnLose: true
   prebuildBase: true
-  allowWaves: true
+  allowWaves: false
   enemyBuildSpeedMultiplier: 1
   defaultCore: core-central
   landCloudColor: 854db0dd

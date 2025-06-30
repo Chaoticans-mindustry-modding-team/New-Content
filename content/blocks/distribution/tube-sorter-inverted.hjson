@@ -5,7 +5,6 @@
   size: 1
   health: 160
   inverted: true
-  uiIcon: tube-sorter-inverted-full
   requirements:
   [
     iron/2

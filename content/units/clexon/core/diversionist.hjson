@@ -21,7 +21,7 @@
   fogRadius: 0
   outlineColor: 13111cff
   mechLegColor: 13111cff
-  rotateSpeed: 6
+  rotateSpeed: 9
   weapons:
   [
     {
@@ -36,7 +36,7 @@
       rotate: false
       recoil: 1
       ejectEffect: casing1
-      shootCone: 1
+      shootCone: 7
       bullet:
       {
         type: RailBulletType

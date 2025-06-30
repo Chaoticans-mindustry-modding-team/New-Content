@@ -6,7 +6,7 @@
   size: 1
   health: 120
   armored: false
-  uiIcon: tube-ui.png
+  uiIcon: newunits-tube-ui.png
   requirements:
   [
     iron/1

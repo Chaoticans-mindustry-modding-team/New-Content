@@ -8,6 +8,6 @@
   color: 964b3cff
   research:
   {
-    parent: cobalt
+    parent: iron
   }
 }

@@ -1,0 +1,85 @@
+{
+  localizedName: Scorchonite Pod
+  description: Protects structures from enemy projectiles. Explodes into fire upon destruction. \n[red]This explosion can damage your own team's blocks, so do not place it next to allied structures. Placing these near eachother could cause a chain reaction.
+  type: Wall
+  size: 1
+  health: 360
+  requirements:
+  [
+    iron/20
+    scorchonite/15
+  ]
+  category: defense
+  research:
+  {
+    parent: iron-wall
+    requirements:
+    [
+      iron/150
+      scorchonite/250
+    ]
+  }
+  priority: 2
+  destroyBulletSameTeam: false
+  destroySound: none
+  destroyBullet:
+  {
+    type: BasicBulletType
+    instantDisappear: true
+    damage: 0
+    despawnShake: 2
+    splashDamageRadius: 26
+    splashDamage: 62
+    status: burning
+    statusDuration: 200
+    knockback: 2
+    hitEffect: hitFlameSmall
+    despawnHit: false
+    despawnEffect:
+    {
+      type: MultiEffect
+      effects:
+      [
+        {
+          type: WaveEffect
+          colorFrom: d49e68ff
+          colorTo: d49e68ff
+          sizeTo: 24
+          lifetime: 20
+          interp: circleOut
+        }
+        {
+          type: SoundEffect
+          sound: fireExplosion
+          maxPitch: 1
+          minVolume: 2
+          maxVolume: 2
+          effect:
+          {
+            type: ParticleEffect
+            particles: 14
+            colorFrom: d49e68aa
+            colorTo: d49e68aa
+            sizeFrom: 6
+            sizeTo: 0
+            interp: circleOut
+            sizeInterp: circleIn
+            length: 30
+            lifetime: 75
+          }
+        }
+        {
+          type: ParticleEffect
+          line: true
+          particles: 14
+          colorFrom: d49e68aa
+          colorTo: d49e68aa
+          interp: circleOut
+          sizeInterp: circleIn
+          length: 16
+          lifetime: 20
+        }
+      ]
+    }
+  }
+}

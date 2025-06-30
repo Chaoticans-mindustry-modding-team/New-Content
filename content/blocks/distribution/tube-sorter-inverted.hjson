@@ -5,6 +5,7 @@
   size: 1
   health: 160
   inverted: true
+  envEnabled: 256
   requirements:
   [
     iron/2

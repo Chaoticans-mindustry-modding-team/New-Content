@@ -3,7 +3,8 @@
   description: Protects structures from enemy projectiles.
   type: Wall
   size: 2
-  health: 4100
+  health: 1620
+  envEnabled: 256
   requirements:
   [
     iron/64

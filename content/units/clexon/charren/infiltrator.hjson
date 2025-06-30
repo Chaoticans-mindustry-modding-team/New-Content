@@ -1,8 +1,13 @@
 {
   localizedName: Infiltrator
-  description: Fires flaming rounds at nearby enemy targets.
+  description:
+    '''
+    Fires flaming rounds at nearby enemy targets.
+    
+    [gray]Faction: [orange]Charren
+    '''
   type: mech
-  speed: 0.4
+  speed: 0.6
   drag: 0.3
   accel: 0.5
   flying: false
@@ -26,16 +31,18 @@
       shootSound: none
       top: false
       rotate: false
-      recoil: 1.5
+      recoil: 0.6
       recoilTime: 45
       ejectEffect: casing1
       shootCone: 5
       inaccuracy: 4
+      shootStatus: slow
+      shootStatusDuration: 10
       bullet:
       {
         type: RailBulletType
         lifetime: 10
-        damage: 9
+        damage: 11
         length: 60
         pointEffectSpace: 2
         pierceDamageFactor: 1

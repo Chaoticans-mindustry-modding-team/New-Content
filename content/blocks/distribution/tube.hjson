@@ -10,8 +10,8 @@
   [
     iron/1
   ]
-  bridgeReplacement: tubeBridge
-  junctionReplacement: tubeJunction
+  bridgeReplacement: tube-bridge
+  junctionReplacement: tube-junction
   research:
   {
     parent: core-central

@@ -12,7 +12,6 @@
   thrusterLength: 8
   hidden: false
   alwaysUnlocked: true
-  envEnabled: 256
   requirements: [
     iron/900
     cobalt/900

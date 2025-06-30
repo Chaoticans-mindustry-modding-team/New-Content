@@ -22,7 +22,9 @@
   outlineColor: 13111cff
   mechLegColor: 13111cff
   rotateSpeed: 6
-  envRequired: 390
+  envRequired: 465
+  envEnabled: 0
+  envDisabled: 0 // all 3 of these need for clexon units
   weapons:
   [
     {

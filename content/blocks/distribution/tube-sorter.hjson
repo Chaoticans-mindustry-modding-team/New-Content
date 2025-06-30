@@ -4,6 +4,7 @@
   type: Sorter
   size: 1
   health: 160
+  uiIcon: tube-sorter-ui
   requirements:
   [
     iron/2

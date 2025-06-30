@@ -5,7 +5,6 @@
   speed: 26
   size: 1
   health: 240
-  envEnabled: 256
   requirements:
   [
     iron/3

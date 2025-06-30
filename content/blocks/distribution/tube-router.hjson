@@ -1,7 +1,7 @@
 {
   localizedName: Tube Router
   description: Distributes items equally across three directions. Only accepts items from the back side.
-  type: DuctBridge
+  type: DuctRouter
   speed: 4
   size: 1
   health: 260

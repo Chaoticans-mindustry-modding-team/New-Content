@@ -1,0 +1,23 @@
+{
+  localizedName: Tube
+  description: Transports items forward. Does not require power.
+  type: Duct
+  speed: 2
+  size: 1
+  health: 120
+  armored: false
+  requirements:
+  [
+    iron/1
+  ]
+  bridgeReplacement: tubeBridge
+  junctionReplacement: tubeJunction
+  research:
+  {
+    parent: core-central
+    requirements:
+    [
+      iron/15
+    ]
+  }
+}

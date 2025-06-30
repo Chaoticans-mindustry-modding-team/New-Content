@@ -1,0 +1,21 @@
+{
+  localizedName: Tube Junction
+  description: Acts as a bridge for two crossing tubes.
+  type: DuctJunction
+  speed: 4
+  size: 1
+  health: 240
+  armored: false
+  requirements:
+  [
+    iron/3
+  ]
+  research:
+  {
+    parent: tube
+    requirements:
+    [
+      iron/20
+    ]
+  }
+}

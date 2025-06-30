@@ -1,1 +1,105 @@
-
+{
+  localizedName: Infiltrator
+  description: Fires flaming rounds at nearby enemy targets.
+  type: mech
+  targetBuildingsMobile: false
+  speed: 0.4
+  drag: 0.3
+  accel: 0.5
+  flying: false
+  health: 440
+  hitSize: 9
+  range: 60
+  itemCapacity: 45
+  fogRadius: 0
+  outlineColor: 13111cff
+  mechLegColor: 13111cff
+  rotateSpeed: 4
+  weapons:
+  [
+    {
+      name: diversionist-pistol
+      mirror: false
+      alternate: false
+      x: 0
+      y: 1.75
+      reload: 8
+      shootSound: none
+      top: false
+      rotate: false
+      recoil: 1.5
+      recoilTime: 45
+      ejectEffect: casing1
+      shootCone: 1
+      inaccuracy: 10
+      shake: 0.2
+      bullet:
+      {
+        type: RailBulletType
+        lifetime: 10
+        damage: 26
+        width: 1
+        length: 60
+        pointEffectSpace: 2
+        pierceDamageFactor: 1
+        smokeEffect: none
+        pointEffect:
+        {
+          line: true
+          baseRotation: 0
+          rotWithParent: true
+          length: 0.0001
+          lenFrom: 2
+          lenTo: 2
+          strokeFrom: 3
+          strokeTo: 0
+          colorFrom: e6aa6aff
+          colorTo: e6aa6aff
+          cone: 0
+          lifetime: 12
+        }
+        shootEffect:
+        {
+          type: SoundEffect
+          sound: machineGun
+          soundVolumeMin: 0.6
+          soundVolumeMax: 0.6
+          effect:
+          {
+            type: ParticleEffect
+            colorFrom: e6aa6aff
+            colorTo: e6aa6aff
+            length: 10
+            lifetime: 15
+            cone: 30
+            line: true
+            lenFrom: 2
+            lenTo: 1
+          }
+        }
+        despawnEffect: none
+        hitEffect: none
+        pierceEffect: none
+        endEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            hitFlameSmall
+            {
+              type: ParticleEffect
+              colorFrom: e6aa6aff
+              colorTo: e6aa6aff
+              length: 10
+              lifetime: 15
+              cone: 30
+              line: true
+              lenFrom: 2
+              lenTo: 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

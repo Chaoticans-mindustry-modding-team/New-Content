@@ -9,7 +9,6 @@
   type: Wall
   size: 2
   health: 360
-  envEnabled: 256
   requirements:
   [
     iron/80

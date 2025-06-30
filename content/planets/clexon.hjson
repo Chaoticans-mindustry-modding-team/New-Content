@@ -1,5 +1,5 @@
 {
-  generator: PlanetGenerator
+  generator: AsteroidGenerator
   solarSystem: sun
   sectorSize: 4
   sectorSeed: 3

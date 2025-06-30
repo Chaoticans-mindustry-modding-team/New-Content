@@ -1,0 +1,18 @@
+{
+  localizedName: Inverted Tube Sorter
+  description: Sorts items, pushing the selected item to the side and letting others pass through. If no item is selected, let all items pass through.
+  type: Sorter
+  size: 1
+  health: 160
+  inverted: true
+  requirements:
+  [
+    iron/2
+    cobalt/2
+  ]
+  research:
+  {
+    parent: tube-sorter
+    requiresUnlock: false
+  }
+}

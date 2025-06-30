@@ -1,6 +1,6 @@
 {
   localizedName: Large Scorchonite Pod
-  description: Protects structures from enemy projectiles. Creates a large firey explosion upon destruction. \n[red]This explosion can damage your own team's blocks, so do not place it next to allied structures. Placing these near eachother could cause a chain reaction.
+  description: "Protects structures from enemy projectiles. Creates a large firey explosion upon destruction. \n[red]This explosion can damage your own team's blocks, so do not place it next to allied structures. Placing these near eachother could cause a chain reaction."
   type: Wall
   size: 2
   health: 900

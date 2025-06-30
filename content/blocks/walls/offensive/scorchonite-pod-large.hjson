@@ -1,120 +1,117 @@
 {
-  localizedName: Large Scorchonite Pod
-  description:
-    '''
-    Protects structures from enemy projectiles. Creates a large firey explosion with flaming bullets upon destruction. 
-
-    [red]This explosion can damage your own team's blocks, so do not place it next to allied structures. Placing these near eachother could cause a chain reaction.
-    '''
-  type: Wall
-  size: 2
-  health: 900
-  requirements:
-  [
-    iron/80
-    scorchonite/60
-  ]
-  category: defense
-  research:
-  {
-    parent: scorchonite-pod
-    requirements:
-    [
-      iron/800
-      scorchonite/450
+  "localizedName": "Large Scorchonite Pod",
+  "description": "Protects structures from enemy projectiles. Creates a large firey explosion with flaming bullets upon destruction. \n\n[red]This explosion can damage your own team's blocks, so do not place it next to allied structures. Placing these near eachother could cause a chain reaction.",
+  "type": "Wall",
+  "size": 2,
+  "health": 360,
+  "requirements": [
+    "iron/80",
+    "scorchonite/60"
+  ],
+  "category": "defense",
+  "research": {
+    "parent": "scorchonite-pod",
+    "requirements": [
+      "iron/800",
+      "scorchonite/450"
     ]
-  }
-  priority: 2
-  destroyBulletSameTeam: false
-  destroySound: none
-  destroyBullet:
-  {
-    type: BasicBulletType
-    instantDisappear: true
-    damage: 0
-    despawnShake: 4
-    splashDamageRadius: 53
-    splashDamage: 424
-    status: burning
-    statusDuration: 340
-    knockback: 4
-    hitEffect: hitFlameSmall
-    despawnHit: false
-    despawnEffect:
-    {
-      type: MultiEffect
-      effects:
-      [
+  },
+  "priority": 2,
+  "destroyBulletSameTeam": false,
+  "destroySound": "none",
+  "destroyBullet": {
+    "type": "BasicBulletType",
+    "instantDisappear": true,
+    "damage": 0,
+    "despawnShake": 4,
+    "splashDamageRadius": 53,
+    "splashDamage": 424,
+    "status": "burning",
+    "statusDuration": 340,
+    "knockback": 4,
+    "hitEffect": "hitFlameSmall",
+    "despawnHit": false,
+    "despawnEffect": {
+      "type": "MultiEffect",
+      "effects": [
         {
-          type: WaveEffect
-          colorFrom: d49e68ff
-          colorTo: d49e68ff
-          sizeTo: 55
-          lifetime: 25
-          interp: circleOut
-        }
+          "type": "WaveEffect",
+          "colorFrom": "d49e68ff",
+          "colorTo": "d49e68ff",
+          "sizeTo": 55,
+          "lifetime": 25,
+          "interp": "circleOut"
+        },
         {
-          type: SoundEffect
-          sound: fireExplosion
-          maxPitch: 1
-          minVolume: 2
-          maxVolume: 2
-          effect:
-          {
-            type: ParticleEffect
-            particles: 12
-            colorFrom: d49e68aa
-            colorTo: d49e68aa
-            sizeFrom: 5
-            sizeTo: 0
-            interp: circleOut
-            sizeInterp: circleIn
-            length: 55
-            lifetime: 85
+          "type": "SoundEffect",
+          "sound": "fireExplosion",
+          "maxPitch": 1,
+          "minVolume": 2,
+          "maxVolume": 2,
+          "effect": {
+            "type": "ParticleEffect",
+            "particles": 12,
+            "colorFrom": "d49e68aa",
+            "colorTo": "d49e68aa",
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "interp": "circleOut",
+            "sizeInterp": "circleIn",
+            "length": 55,
+            "lifetime": 85
           }
-        }
+        },
         {
-          type: ParticleEffect
-          particles: 12
-          colorFrom: d49e68aa
-          colorTo: d49e68aa
-          sizeFrom: 3
-          sizeTo: 0
-          interp: circleOut
-          sizeInterp: circleIn
-          length: 55
-          lifetime: 75
-        }
+          "type": "ParticleEffect",
+          "particles": 12,
+          "colorFrom": "d49e68aa",
+          "colorTo": "d49e68aa",
+          "sizeFrom": 3,
+          "sizeTo": 0,
+          "interp": "circleOut",
+          "sizeInterp": "circleIn",
+          "length": 55,
+          "lifetime": 75
+        },
         {
-          type: ParticleEffect
-          line: true
-          particles: 14
-          colorFrom: d49e68aa
-          colorTo: d49e68aa
-          interp: circleOut
-          sizeInterp: circleIn
-          length: 60
-          lifetime: 25
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 14,
+          "colorFrom": "d49e68aa",
+          "colorTo": "d49e68aa",
+          "interp": "circleOut",
+          "sizeInterp": "circleIn",
+          "length": 60,
+          "lifetime": 25
         }
       ]
-    }
-    fragBullets: 8
-    fragOnHit: false
-    fragLifeMin: 0.3
-    fragBullet:
-    {
-      type: BasicBulletType
-      damage: 16
-      status: burning
-      statusDuration: 72
-      knockback: 1
-      speed: 6
-      lifetime: 30
-      width: 9
-      height: 9
-      frontColor: d49e68ff
-      backColor: d49e68ff
-      despawnEffect: none
+    },
+    "fragBullets": 8,
+    "fragOnHit": false,
+    "fragLifeMin": 0.3,
+    "fragBullet": {
+      "type": "BasicBulletType",
+      "damage": 16,
+      "status": "burning",
+      "statusDuration": 72,
+      "knockback": 1,
+      "speed": 1,
+      "lifetime": 90,
+      "width": 9,
+      "height": 9,
+      "frontColor": "f2ceaaff",
+      "backColor": "d49e68ff",
+      "trailColor": "d49e68ff",
+      "trailWidth": 2,
+      "trailLength": 12,
+      "despawnEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          "hitBulletSmall",
+          "hitFlameSmall"
+        ]
+      },
+      "hitEffect": "none"
     }
   }
 }

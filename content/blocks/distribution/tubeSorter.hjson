@@ -1,0 +1,21 @@
+{
+  localizedName: Tube Sorter
+  description: Sorts items, letting the selected item pass through and pushing others to the side. If no item is selected, push all items.
+  type: Sorter
+  size: 1
+  health: 160
+  requirements:
+  [
+    iron/2
+    cobalt/2
+  ]
+  research:
+  {
+    parent: tube-router
+    requirements:
+    [
+      iron/25
+      cobalt/25
+    ]
+  }
+}

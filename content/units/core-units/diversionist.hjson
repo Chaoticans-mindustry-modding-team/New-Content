@@ -12,7 +12,7 @@
   boostMultiplier: 1.5
   health: 720
   isEnemy: false
-  mineSpeed: 1
+  mineSpeed: 12
   hitSize: 10
   mineTier: 2
   armor: 2
@@ -21,6 +21,7 @@
   fogRadius: 0
   outlineColor: 13111cff
   mechLegColor: 13111cff
+  rotateSpeed: 6
   weapons:
   [
     {

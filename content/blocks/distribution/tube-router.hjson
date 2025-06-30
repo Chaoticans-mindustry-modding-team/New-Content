@@ -1,0 +1,23 @@
+{
+  localizedName: Tube Router
+  description: Distributes items equally across three directions. Only accepts items from the back side.
+  type: DuctBridge
+  speed: 4
+  size: 1
+  health: 260
+  armored: false
+  configurable: false
+  saveConfig: false
+  requirements:
+  [
+    iron/4
+  ]
+  research:
+  {
+    parent: tube-junction
+    requirements:
+    [
+      iron/35
+    ]
+  }
+}

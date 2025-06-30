@@ -8,7 +8,6 @@
   armored: false
   configurable: false
   saveConfig: false
-  envEnabled: 256
   requirements:
   [
     iron/4

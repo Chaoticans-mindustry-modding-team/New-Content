@@ -29,7 +29,7 @@
     damage: 0
     despawnShake: 2
     splashDamageRadius: 26
-    splashDamage: 62
+    splashDamage: 106
     status: burning
     statusDuration: 200
     knockback: 2
@@ -57,10 +57,10 @@
           effect:
           {
             type: ParticleEffect
-            particles: 14
+            particles: 20
             colorFrom: d49e68aa
             colorTo: d49e68aa
-            sizeFrom: 6
+            sizeFrom: 3
             sizeTo: 0
             interp: circleOut
             sizeInterp: circleIn

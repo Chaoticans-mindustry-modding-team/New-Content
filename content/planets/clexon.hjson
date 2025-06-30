@@ -15,6 +15,12 @@
     fscl: 30
     fper: 0.4
   }
+  research: {
+	  planet: clexon
+	  root: true
+	  requiresUnlock: false
+	  name: "Clexon"
+  }
   sectorSize: 4
   sectorSeed: 3
   startSector: 94

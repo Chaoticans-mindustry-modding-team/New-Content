@@ -29,7 +29,7 @@
   rotateTime: 5000
   accessible: true
   allowLaunchToNumbered: false
-  defaultEnv: 257
+  defaultEnv: 641
   name: Clexon
   localizedName: Clexon
   unlockedOnLand:

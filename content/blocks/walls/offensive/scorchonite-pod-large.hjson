@@ -1,6 +1,11 @@
 {
   localizedName: Large Scorchonite Pod
-  description: "Protects structures from enemy projectiles. Creates a large firey explosion upon destruction. \n\n[red]This explosion can damage your own team's blocks, so do not place it next to allied structures. Placing these near eachother could cause a chain reaction."
+  description:
+    '''
+    Protects structures from enemy projectiles. Creates a large firey explosion with flaming bullets upon destruction. 
+
+    [red]This explosion can damage your own team's blocks, so do not place it next to allied structures. Placing these near eachother could cause a chain reaction.
+    '''
   type: Wall
   size: 2
   health: 900
@@ -29,7 +34,7 @@
     damage: 0
     despawnShake: 4
     splashDamageRadius: 53
-    splashDamage: 280
+    splashDamage: 424
     status: burning
     statusDuration: 340
     knockback: 4
@@ -60,7 +65,7 @@
             particles: 12
             colorFrom: d49e68aa
             colorTo: d49e68aa
-            sizeFrom: 8
+            sizeFrom: 5
             sizeTo: 0
             interp: circleOut
             sizeInterp: circleIn
@@ -69,17 +74,17 @@
           }
         }
         {
-            type: ParticleEffect
-            particles: 12
-            colorFrom: d49e68aa
-            colorTo: d49e68aa
-            sizeFrom: 4
-            sizeTo: 0
-            interp: circleOut
-            sizeInterp: circleIn
-            length: 55
-            lifetime: 75
-          }
+          type: ParticleEffect
+          particles: 12
+          colorFrom: d49e68aa
+          colorTo: d49e68aa
+          sizeFrom: 3
+          sizeTo: 0
+          interp: circleOut
+          sizeInterp: circleIn
+          length: 55
+          lifetime: 75
+        }
         {
           type: ParticleEffect
           line: true
@@ -92,6 +97,24 @@
           lifetime: 25
         }
       ]
+    }
+    fragBullets: 8
+    fragOnHit: false
+    fragLifeMin: 0.3
+    fragBullet:
+    {
+      type: BasicBulletType
+      damage: 16
+      status: burning
+      statusDuration: 72
+      knockback: 1
+      speed: 6
+      lifetime: 30
+      width: 9
+      height: 9
+      frontColor: d49e68ff
+      backColor: d49e68ff
+      despawnEffect: none
     }
   }
 }

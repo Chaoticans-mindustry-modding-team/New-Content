@@ -12,10 +12,17 @@
   thrusterLength: 8
   hidden: false
   alwaysUnlocked: true
-  research: {
-	planet: clexon
-	root: true
-	requiresUnlock: false
-	name: Clexon
+  requirements: [
+    iron/900
+    cobalt/900
+    tritonium/900
+    light-alloy/900
+  ]
+  research:
+  {
+    planet: clexon
+    root: true
+    requiresUnlock: false
+    name: Clexon
   }
 }

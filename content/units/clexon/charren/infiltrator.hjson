@@ -2,7 +2,6 @@
   localizedName: Infiltrator
   description: Fires flaming rounds at nearby enemy targets.
   type: mech
-  targetBuildingsMobile: false
   speed: 0.4
   drag: 0.3
   accel: 0.5
@@ -18,7 +17,7 @@
   weapons:
   [
     {
-      name: diversionist-pistol
+      name: infiltrator-weapon
       mirror: false
       alternate: false
       x: 0
@@ -30,19 +29,19 @@
       recoil: 1.5
       recoilTime: 45
       ejectEffect: casing1
-      shootCone: 1
-      inaccuracy: 10
-      shake: 0.2
+      shootCone: 5
+      inaccuracy: 4
       bullet:
       {
         type: RailBulletType
         lifetime: 10
-        damage: 26
-        width: 1
+        damage: 9
         length: 60
         pointEffectSpace: 2
         pierceDamageFactor: 1
         smokeEffect: none
+        status: burning
+        statusDuration: 60
         pointEffect:
         {
           line: true
@@ -53,8 +52,8 @@
           lenTo: 2
           strokeFrom: 3
           strokeTo: 0
-          colorFrom: e6aa6aff
-          colorTo: e6aa6aff
+          colorFrom: d4733bff
+          colorTo: d4733bff
           cone: 0
           lifetime: 12
         }
@@ -62,13 +61,13 @@
         {
           type: SoundEffect
           sound: machineGun
-          soundVolumeMin: 0.6
-          soundVolumeMax: 0.6
+          minVolume: 0.4
+          maxVolume: 0.4
           effect:
           {
             type: ParticleEffect
-            colorFrom: e6aa6aff
-            colorTo: e6aa6aff
+            colorFrom: d4733bff
+            colorTo: d4733bff
             length: 10
             lifetime: 15
             cone: 30
@@ -88,8 +87,8 @@
             hitFlameSmall
             {
               type: ParticleEffect
-              colorFrom: e6aa6aff
-              colorTo: e6aa6aff
+              colorFrom: d4733bff
+              colorTo: d4733bff
               length: 10
               lifetime: 15
               cone: 30

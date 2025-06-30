@@ -6,7 +6,7 @@
     My first mod! It adds in a lot of new vanilla branches, but I'll leave you to finding out what those are.
     [green]Thanks to my spriter Aegires for making some of theese awesome sprites!
 
-    [red]This mod is very abitious. And unfinished. I'm probably going to add new planets.
+    [red]This mod is very ambitious. And unfinished. I'm probably going to add new planets. One is already in the works.
     '''
   author: Rylid Umil
   version: 5
@@ -34,6 +34,13 @@
     // Erekir
         // Unit
         "strider",
+    // Clexon
+        // Unit
+        "diversionist",
+        //Block
+        "iron-wall", "iron-wall-large", "scorchonite-pod", "scorchonite-pod-large",
+        "tube", "tube-junction", "tube-bridge", "tube-sorter", "tube-sorter-inverted", "tube-router",
+        "core-central",
     //Status
     "charged", "poisoned", "maimed", "laser-shocked", "atomically-charged"
   ]

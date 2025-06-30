@@ -42,7 +42,6 @@
         type: RailBulletType
         lifetime: 10
         damage: 26
-        width: 1
         length: 72
         knockback: 1
         pointEffectSpace: 2

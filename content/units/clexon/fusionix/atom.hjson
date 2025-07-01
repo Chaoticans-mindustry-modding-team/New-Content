@@ -43,10 +43,10 @@
         splashDamageRadius: 14
         splashDamage: 15
         keepVelocity: false
-        speed: 0.8
+        speed: 2
         width: 9
         height: 9
-        drag: 0.1
+        drag: 0.08
         lifetime: 45
         trailColor: 4df9ffff
         trailChance: 0.1
@@ -77,7 +77,7 @@
           frontColor: a6fbffff
           backColor: 4df9ffff
           splashDamageRadius: 8
-          splashDamage: 30
+          splashDamage: 55
           hitSound: pistol
           hitShake: 0.3
           despawnHit: true

@@ -3,13 +3,13 @@
   description: Defends the Central core from enemies. Builds structures. Equipped with a pair of short range pistols. Capable of flight.
   type: mech
   targetBuildingsMobile: false
-  speed: 1.1
+  speed: 0.95
   drag: 0.3
   accel: 0.5
   buildSpeed: 2.5
   flying: false
   canBoost: true
-  boostMultiplier: 2.5
+  boostMultiplier: 1.75
   health: 720
   isEnemy: false
   mineSpeed: 20

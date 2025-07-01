@@ -14,7 +14,7 @@
   armor: 3
   range: 100
   engineOffset: 8
-  hitSize: 14
+  hitSize: 12
   targetAir: false
   faceTarget: false
   commandLimit: 5
@@ -32,22 +32,14 @@
       rotate: false
       x: 0
       y: -2
-      reload: 75
+      reload: 65
       shootSound: mineDeploy
       recoil: 0
       minShootVelocity: 0.25
       bullet:
       {
         type: BombBulletType
-        hitEffect:
-        {
-          type: WaveEffect
-          colorFrom: a6fbffff
-          colorTo: a6fbffff
-          sizeTo: 10
-          lifetime: 45
-          interp: circleOut
-        }
+        hitEffect: none
         splashDamageRadius: 14
         splashDamage: 15
         keepVelocity: false
@@ -60,7 +52,7 @@
         trailChance: 0.1
         frontColor: a6fbffff
         backColor: 4df9ffff
-        hitSound: plasmaboom
+        hitSound: noammo
         hitShake: 1
         despawnHit: true
         sprite: circle-bullet
@@ -69,16 +61,17 @@
         shrinkY: 0.4
         shootEffect: none
         despawnEffect: none
-        fragBullets: 4
+        fragBullets: 7
+        fragLifeMin: 0.5
         fragBullet:
         {
           type: BasicBulletType
-          sprite: newunits-circle-bullet
+          sprite: newunits-energy-mine
           spin: 1
           width: 4
           height: 4
           collidesAir: false
-          speed: 4
+          speed: 2
           drag: 0.07
           lifetime: 200
           frontColor: a6fbffff
@@ -89,6 +82,7 @@
           hitShake: 0.3
           despawnHit: true
           despawnEffect: none
+          shrinkX: 0.1
           hitEffect:
           {
             type: MultiEffect

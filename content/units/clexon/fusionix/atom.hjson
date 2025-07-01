@@ -6,15 +6,15 @@
 
     [gray]Faction: [sky]Fusionix
     '''
-  speed: 2.1
-  accel: 0.05
+  speed: 2.3
+  accel: 0.04
   drag: 0.03
   flying: true
-  health: 460
-  armor: 0
+  health: 1040
+  armor: 3
   range: 100
   engineOffset: 5.5
-  hitSize: 7
+  hitSize: 14
   targetAir: false
   faceTarget: false
   commandLimit: 5
@@ -32,7 +32,7 @@
       rotate: false
       x: 0
       y: -2
-      reload: 11
+      reload: 75
       shootSound: mineDeploy
       recoil: 0
       minShootVelocity: 0.25
@@ -44,8 +44,9 @@
           type: WaveEffect
           colorFrom: a6fbffff
           colorTo: a6fbffff
-          sizeTo: 15
-          lifetime: 10
+          sizeTo: 10
+          lifetime: 45
+          interp: CircleOut
         }
         splashDamageRadius: 14
         splashDamage: 15
@@ -55,11 +56,11 @@
         height: 9
         drag: 0.1
         lifetime: 45
-        trailColor: 47c8ffff
+        trailColor: 4df9ffff
         trailChance: 0.1
         frontColor: a6fbffff
-        backColor: 47c8ffff
-        hitSound: clank
+        backColor: 4df9ffff
+        hitSound: plasmaboom
         hitShake: 1
         despawnHit: true
         sprite: circle-bullet
@@ -67,25 +68,27 @@
         shrinkX: 0.4
         shrinkY: 0.4
         shootEffect: none
-        fragBullets: 3
+        despawnEffect: none
+        fragBullets: 4
         fragBullet:
         {
           type: BasicBulletType
-          sprite: newunits-square
+          sprite: newunits-circle-bullet
           spin: 1
-          width: 9
-          height: 9
+          width: 4
+          height: 4
           collidesAir: false
           speed: 4
           drag: 0.07
-          lifetime: 600
+          lifetime: 200
           frontColor: a6fbffff
-          backColor: 47c8ffff
+          backColor: 4df9ffff
           splashDamageRadius: 8
           splashDamage: 12
-          hitSound: none
+          hitSound: pistol
           hitShake: 0.3
           despawnHit: true
+          despawnEffect: none
           hitEffect:
           {
             type: MultiEffect
@@ -103,6 +106,7 @@
                 interp: circleOut
                 region: newunits-square
                 offset: 45
+                useRotation: false
               }
               {
                 type: ParticleEffect
@@ -112,8 +116,8 @@
                 length: 0
                 cone: 360
                 lifetime: 15
-                colorTo: a6fbffff
-                colorFrom: a6fbff00
+                colorTo: a6fbff00
+                colorFrom: a6fbffff
               }
               {
                 type: WaveEffect

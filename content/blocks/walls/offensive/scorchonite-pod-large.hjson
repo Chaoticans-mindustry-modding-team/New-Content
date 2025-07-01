@@ -8,11 +8,11 @@
     '''
   type: Wall
   size: 2
-  health: 360
+  health: 420
   requirements:
   [
-    iron/80
-    scorchonite/60
+    iron/20
+    scorchonite/39
   ]
   category: defense
   research:
@@ -20,8 +20,8 @@
     parent: scorchonite-pod
     requirements:
     [
-      iron/800
-      scorchonite/450
+      iron/45
+      scorchonite/60
     ]
   }
   priority: 2

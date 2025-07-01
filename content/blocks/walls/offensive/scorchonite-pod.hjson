@@ -3,11 +3,11 @@
   description: "Protects structures from enemy projectiles. Creates a firey explosion upon destruction. \n\n[red]This explosion can damage your own team's blocks, so do not place it next to allied structures. Placing these near eachother could cause a chain reaction."
   type: Wall
   size: 1
-  health: 90
+  health: 190
   requirements:
   [
-    iron/20
-    scorchonite/15
+    iron/5
+    scorchonite/9
   ]
   category: defense
   research:
@@ -15,8 +15,8 @@
     parent: core-central
     requirements:
     [
-      iron/150
-      scorchonite/250
+      iron/20
+      scorchonite/30
     ]
   }
   priority: 2

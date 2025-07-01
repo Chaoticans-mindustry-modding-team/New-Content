@@ -21,7 +21,7 @@
         "critter", "peeve", "raider", "commander", "admiral",
         "jet", "propeller", "whirlybird", "cheyenne", "apache",
         "streak", "spear", "falter", "delusion", "hallucination",
-        "silky", "requiem", "dagger",
+        "silky", "requiem",
         // Block
         "ember-infuser", "arc-kiln", "refiner", "volatile-mixing-chamber", "stellar-furnace",
         "detwall", "detwall-large",
@@ -29,14 +29,14 @@
         "spark-generator",
         "compact-drill",
         "core-fortress", "crate",
-        "pelleter", "ot1-sear", "mix", "blast", "clammer",
+        "pelleter", "ot1-sear", "firecracker",
         "flame-factory", "lightningfactory",
     // Erekir
         // Unit
         "strider",
     // Clexon
         // Unit
-        "diversionist",
+        "infiltrator", "wrecker", "diversionist", 
         //Block
         "iron-wall", "iron-wall-large", "scorchonite-pod", "scorchonite-pod-large",
         "tube", "tube-junction", "tube-bridge", "tube-sorter", "tube-sorter-inverted", "tube-router",

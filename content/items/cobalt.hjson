@@ -1,7 +1,7 @@
 {
   name: Cobalt
   description: Used in electronics, batteries, alloy production, and defense.
-  cost: 2
+  cost: 1
   hardness: 2
   color: 6460bfFF
   research:

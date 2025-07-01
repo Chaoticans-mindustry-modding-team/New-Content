@@ -1,0 +1,146 @@
+{
+  localizedName: Neutron
+  description:
+    '''
+    Runs towards enemy targets and charges up a self-destruct, causing a large energy explosion.
+
+    [gray]Faction: [sky]Fusionix
+    '''
+  type: mech
+  speed: 1.3
+  drag: 0.3
+  accel: 0.5
+  flying: false
+  health: 600
+  hitSize: 10
+  range: 60
+  itemCapacity: 20
+  outlineColor: 13111cff
+  mechLegColor: 13111cff
+  rotateSpeed: 4
+  weapons:
+  [
+    {
+      name: boom
+      mirror: false
+      x: 0
+      y: 0
+      reload: 26
+      recoil: 0
+      top: false
+      shootOnDeath: true
+      shoot:
+      {
+        firstShotDelay: 40
+      }
+      shootSound: moderateLaser
+      chargeSound: laserCharge2
+      shootStatus: slow
+      shootStatusDuration: 40
+      shootWarmupSpeed: 0.2
+      ejectEffect: none
+      shake: 5
+      shootCone: 360
+      parentizeEffects: true
+      bullet:
+      {
+        type: ExplosionBulletType
+        splashDamage: 216
+        splashDamageRadius: 45
+        instantDisapear: false
+        absorbable: false
+        hittable: false
+        status: charged
+        statusDuration: 35
+        despawnEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            {
+              type: WaveEffect
+              sizeTo: 40
+              colorFrom: a6fbffff
+              colorTo: a6fbffff
+              lifetime: 30
+              interp: circleOut
+            }
+            {
+                type: ParticleEffect
+                particles: 12
+                sizeFrom: 4
+                sizeTo: 0
+                interp: linear
+                sizeInterp: circleOut
+                region: square
+                rotation: 45
+                length: 43
+                offset: 45
+            }
+            {
+                type: SoundEffect
+                sound: shootHard
+                maxPitch: 1
+                minVolume: 0.7
+                maxVolume: 0.7
+                effect: none
+            }
+          ]
+        }
+        hitEffect: hitLaser
+        chargeEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            {
+              type: WaveEffect
+              sizeFrom: 28
+              sizeTo: 0
+              colorFrom: a6fbffaa
+              colorTo: a6fbffff
+              strokeFrom: 0
+              strokeTo: 2
+              lifetime: 40
+              sides: 8
+              followParent: true
+            }
+            {
+              type: ParticleEffect
+              particles: 4
+              colorFrom: a6fbff00
+              colorTo: a6fbffff
+              sizeFrom: 2
+              sizeTo: 3
+              lifetime: 40
+              length: 0
+              baseLength: 30
+            }
+            {
+              type: ParticleEffect
+              particles: 4
+              colorFrom: a6fbff00
+              colorTo: a6fbffff
+              sizeFrom: 2
+              sizeTo: 3
+              lifetime: 35
+              length: 0
+              baseLength: 20
+            }
+            {
+              type: ParticleEffect
+              particles: 4
+              colorFrom: a6fbff00
+              colorTo: a6fbffff
+              sizeFrom: 2
+              sizeTo: 3
+              lifetime: 30
+              length: 0
+              baseLength: 10
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

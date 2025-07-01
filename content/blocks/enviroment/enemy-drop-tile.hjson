@@ -4,5 +4,5 @@ description: Place this near enemy spawns so people don't abuse Pods on enemy sp
 variants: 0
 placeableOn: false
 emitLight: true
-lightRadius: 30
-lightColor: ffffffff
+lightRadius: 60
+lightColor: ffffff66

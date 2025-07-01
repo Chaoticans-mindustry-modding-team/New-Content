@@ -1,0 +1,115 @@
+{
+  localizedName: Wrecker
+  description:
+    '''
+    Fires blasts of flaming shells at nearby enemy targets.
+
+    [gray]Faction: [orange]Charren
+    '''
+  type: mech
+  speed: 0.5
+  drag: 0.3
+  accel: 0.5
+  flying: false
+  health: 890
+  armor: 2
+  hitSize: 14
+  range: 60
+  itemCapacity: 55
+  outlineColor: 13111cff
+  mechLegColor: 13111cff
+  rotateSpeed: 2.5
+  weapons:
+  [
+    {
+      name: titan-blaster
+      mirror: false
+      alternate: false
+      x: 5.5
+      y: 5.25
+      reload: 35
+      shootSound: shotHard
+      top: false
+      layerOffset: -0.001
+      rotate: false
+      recoil: -2
+      recoilTime: 45
+      ejectEffect: casing2
+      shootCone: 10
+      inaccuracy: 4
+      shootStatus: slow
+      shootStatusDuration: 25
+      shake: 1.5
+      shoot:
+      {
+        type: ShootSpread
+        shots: 2
+        spacing: 3.5
+      }
+      bullet:
+      {
+        type: BasicBulletType
+        damage: 16
+        speed: 4
+        lifetime: 27
+        width: 6
+        height: 9
+        trailWidth: 1.5
+        frontColor: e6aa6a
+        backColor: d4733b
+        trailColor: d4733b
+        trailLength: 7
+        splashDamageRadius: 17
+        splashDamage: 9
+        status: burning
+        statusDuration: 30
+        hitEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            hitFlameSmall
+            fireHit
+          ]
+        }
+        despawnEffect:
+        {
+          type: MultiEffect
+          effects: [
+            fireHit
+            {
+                type: WaveEffect
+                sizeTo: 20
+                lifetime: 20
+                colorFrom: d4733bff
+                colorTo: d4733bff
+            }
+            {
+                type: ParticleEffect
+                particles: 8
+                line: true
+                colorFrom: d4733bff
+                colorTo: d4733bff
+                interp: circleOut
+                sizeInterp: circleIn
+                lifetime: 45
+                length: 22
+            }
+            {
+                type: ParticleEffect
+                particles: 8
+                colorFrom: d4733bee
+                colorTo: d4733baa
+                interp: circleOut
+                sizeInterp: circleIn
+                lifetime: 50
+                sizeFrom: 2
+                sizeTo: 0
+                length: 20
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

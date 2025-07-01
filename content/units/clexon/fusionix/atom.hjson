@@ -46,7 +46,7 @@
           colorTo: a6fbffff
           sizeTo: 10
           lifetime: 45
-          interp: CircleOut
+          interp: circleOut
         }
         splashDamageRadius: 14
         splashDamage: 15

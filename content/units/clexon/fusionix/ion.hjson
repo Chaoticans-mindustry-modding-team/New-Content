@@ -32,7 +32,7 @@
       rotate: false
       x: 0
       y: -2
-      reload: 11
+      reload: 16
       shootSound: clank
       recoil: 0
       minShootVelocity: 0.25
@@ -99,6 +99,7 @@
         shrinkX: 0.4
         shrinkY: 0.4
         shootEffect: none
+        smokeEffect: none
       }
     }
   ]

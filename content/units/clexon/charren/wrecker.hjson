@@ -22,21 +22,20 @@
   weapons:
   [
     {
-      name: titan-blaster
-      mirror: false
-      alternate: false
+      name: wrecker-blaster
+      mirror: true
+      alternate: true
       x: 5.5
       y: 5.25
-      reload: 35
+      reload: 40
       shootSound: shotHard
       top: false
       layerOffset: -0.001
       rotate: false
-      recoil: -2
+      recoil: 2
       recoilTime: 45
       ejectEffect: casing2
-      shootCone: 10
-      inaccuracy: 4
+      shootCone: 15
       shootStatus: slow
       shootStatusDuration: 25
       shake: 1.5
@@ -52,17 +51,17 @@
         damage: 16
         speed: 4
         lifetime: 27
-        width: 6
-        height: 9
+        width: 9
+        height: 14
         trailWidth: 1.5
         frontColor: e6aa6a
         backColor: d4733b
         trailColor: d4733b
         trailLength: 7
-        splashDamageRadius: 17
+        splashDamageRadius: 15
         splashDamage: 9
         status: burning
-        statusDuration: 30
+        statusDuration: 300
         hitEffect:
         {
           type: MultiEffect
@@ -79,8 +78,8 @@
             fireHit
             {
                 type: WaveEffect
-                sizeTo: 20
-                lifetime: 20
+                sizeTo: 15
+                lifetime: 10
                 colorFrom: d4733bff
                 colorTo: d4733bff
             }
@@ -92,8 +91,12 @@
                 colorTo: d4733bff
                 interp: circleOut
                 sizeInterp: circleIn
-                lifetime: 45
+                lifetime: 20
                 length: 22
+                strokeFrom: 0.3
+                strokeTo: 0
+                lenFrom: 2
+                lenTo: 0
             }
             {
                 type: ParticleEffect
@@ -102,7 +105,7 @@
                 colorTo: d4733baa
                 interp: circleOut
                 sizeInterp: circleIn
-                lifetime: 50
+                lifetime: 25
                 sizeFrom: 2
                 sizeTo: 0
                 length: 20

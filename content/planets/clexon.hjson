@@ -22,7 +22,7 @@
     diversionist
   ]
   icon: planet
-  allowLaunchSchematics: false
+  allowLaunchSchematics: true
   allowLaunchLoadout: false
   allowWaveSimulation: true
   allowSectorInvasion: false
@@ -32,6 +32,14 @@
   enemyBuildSpeedMultiplier: 1
   defaultCore: core-central
   landCloudColor: 854db0dd
+  ruleSetter: {
+      lighting: true
+      ambientLight: 452f55e3
+      cloudColor: 854db0dd
+      coreIncinerates: true
+      airUseSpawns: true
+      randomWaveAI: true
+  }
   //SunMesh the goat
   mesh:
   [

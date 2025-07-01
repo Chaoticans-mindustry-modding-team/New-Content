@@ -1,6 +1,6 @@
 {
   name: Scorchonite
-  description: A flammable crystalline useful in ignition and weaponry.
+  description: A flammable crystalline used in material production, explosive pods, and as scorching ammunition.
   flammability: 2
   hideDetails: false
   cost: 3

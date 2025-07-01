@@ -15,7 +15,6 @@
   hitSize: 9
   range: 60
   itemCapacity: 45
-  fogRadius: 0
   outlineColor: 13111cff
   mechLegColor: 13111cff
   rotateSpeed: 4
@@ -31,7 +30,7 @@
       shootSound: none
       top: false
       rotate: false
-      recoil: 0.6
+      recoil: 1
       recoilTime: 45
       ejectEffect: casing1
       shootCone: 5

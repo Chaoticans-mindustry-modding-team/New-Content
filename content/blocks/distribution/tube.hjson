@@ -19,5 +19,6 @@
     [
       iron/15
     ]
+    objectives: [ferricPlains]
   }
 }

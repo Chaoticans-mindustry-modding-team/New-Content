@@ -15,7 +15,6 @@
   rotateTime: 5000
   accessible: true
   allowLaunchToNumbered: false
-  name: Clexon
   localizedName: Clexon
   unlockedOnLand:
   [

@@ -13,7 +13,7 @@
   flying: false
   health: 600
   armor: 1
-  hitSize: 10
+  hitSize: 11
   range: 60
   itemCapacity: 20
   outlineColor: 13111cff
@@ -67,16 +67,19 @@
                 particles: 12
                 sizeFrom: 6
                 sizeTo: 0
-                interp: linear
+                interp: circleOut
                 sizeInterp: circleIn
                 region: newunits-square
                 rotation: 45
                 length: 46
                 offset: 45
+                colorFrom: a6fbffff
+                colorTo: a6fbffff
+                useRotation: false
             }
             {
                 type: SoundEffect
-                sound: moderateLaser
+                sound: shockRifle
                 maxPitch: 1
                 minVolume: 0.5
                 maxVolume: 0.5

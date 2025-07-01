@@ -1,7 +1,7 @@
 {
   "plans": [
     {
-      "unit": "flarer",
+      "unit": "flare",
       "time": 900,
       "requirements": [
         "silicon/15"

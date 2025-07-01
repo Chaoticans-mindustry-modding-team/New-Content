@@ -32,7 +32,7 @@
       rotate: false
       x: 0
       y: -2
-      reload: 65
+      reload: 55
       shootSound: mineDeploy
       recoil: 0
       minShootVelocity: 0.25
@@ -56,7 +56,7 @@
         hitShake: 1
         despawnHit: true
         sprite: circle-bullet
-        damage: 12
+        damage: 66
         shrinkX: 0.4
         shrinkY: 0.4
         shootEffect: none
@@ -77,12 +77,13 @@
           frontColor: a6fbffff
           backColor: 4df9ffff
           splashDamageRadius: 8
-          splashDamage: 12
+          splashDamage: 30
           hitSound: pistol
           hitShake: 0.3
           despawnHit: true
           despawnEffect: none
           shrinkX: 0.1
+          damage: 9
           hitEffect:
           {
             type: MultiEffect

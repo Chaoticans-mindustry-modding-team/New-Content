@@ -2,9 +2,9 @@
   name: Iron
   description: A metal used in many areas such as defense, production, and construction.
   hideDetails: false
-  cost: 2
+  cost: 1
   hardness: 1
-  color: DDDDDDFF
+  color: c7a7a7ff
   research:
   {
     parent: core-central

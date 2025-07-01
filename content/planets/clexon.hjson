@@ -32,6 +32,7 @@
   enemyBuildSpeedMultiplier: 1
   defaultCore: core-central
   landCloudColor: 854db0dd
+  /* stupid hjson
   ruleSetter: {
       lighting: true
       ambientLight: 452f55e3
@@ -40,6 +41,7 @@
       airUseSpawns: true
       randomWaveAI: true
   }
+  */
   //SunMesh the goat
   mesh:
   [

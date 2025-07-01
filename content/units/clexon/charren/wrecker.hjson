@@ -28,7 +28,7 @@
       x: 5.5
       y: 5.25
       reload: 35
-      shootSound: shotHard
+      shootSound: shootHard
       top: false
       layerOffset: -0.001
       rotate: false

@@ -5,4 +5,4 @@ variants: 0
 placeableOn: false
 emitLight: true
 lightRadius: 60
-lightColor: ffffff66
+lightColor: ff333366

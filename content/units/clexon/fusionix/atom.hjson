@@ -1,0 +1,131 @@
+{
+  localizedName: Atom
+  description:
+    '''
+    Drops clusters of energy mines on nearby enemy targets.
+
+    [gray]Faction: [sky]Fusionix
+    '''
+  speed: 2.1
+  accel: 0.05
+  drag: 0.03
+  flying: true
+  health: 460
+  armor: 0
+  range: 100
+  engineOffset: 5.5
+  hitSize: 7
+  targetAir: false
+  faceTarget: false
+  commandLimit: 5
+  circleTarget: true
+  lowAltitude: false
+  outlineColor: 13111cff
+  mechLegColor: 13111cff
+  weapons:
+  [
+    {
+      name: bomber
+      shootCone: 360
+      mirror: false
+      top: false
+      rotate: false
+      x: 0
+      y: -2
+      reload: 11
+      shootSound: mineDeploy
+      recoil: 0
+      minShootVelocity: 0.25
+      bullet:
+      {
+        type: BombBulletType
+        hitEffect:
+        {
+          type: WaveEffect
+          colorFrom: a6fbffff
+          colorTo: a6fbffff
+          sizeTo: 15
+          lifetime: 10
+        }
+        splashDamageRadius: 14
+        splashDamage: 15
+        keepVelocity: false
+        speed: 0.8
+        width: 9
+        height: 9
+        drag: 0.1
+        lifetime: 45
+        trailColor: 47c8ffff
+        trailChance: 0.1
+        frontColor: a6fbffff
+        backColor: 47c8ffff
+        hitSound: clank
+        hitShake: 1
+        despawnHit: true
+        sprite: circle-bullet
+        damage: 12
+        shrinkX: 0.4
+        shrinkY: 0.4
+        shootEffect: none
+        fragBullets: 3
+        fragBullet:
+        {
+          type: BasicBulletType
+          sprite: newunits-square
+          spin: 1
+          width: 9
+          height: 9
+          collidesAir: false
+          speed: 4
+          drag: 0.07
+          lifetime: 600
+          frontColor: a6fbffff
+          backColor: 47c8ffff
+          splashDamageRadius: 8
+          splashDamage: 12
+          hitSound: none
+          hitShake: 0.3
+          despawnHit: true
+          hitEffect:
+          {
+            type: MultiEffect
+            effects:
+            [
+              {
+                type: ParticleEffect
+                particles: 7
+                sizeFrom: 5
+                sizeTo: 0
+                length: 15
+                cone: 360
+                colorFrom: a6fbffff
+                colorTo: a6fbffff
+                interp: circleOut
+                region: newunits-square
+                offset: 45
+              }
+              {
+                type: ParticleEffect
+                particles: 1
+                sizeFrom: 0
+                sizeTo: 14
+                length: 0
+                cone: 360
+                lifetime: 15
+                colorTo: a6fbffff
+                colorFrom: a6fbff00
+              }
+              {
+                type: WaveEffect
+                colorFrom: a6fbffff
+                colorTo: a6fbffff
+                sizeTo: 9
+                lifetime: 10
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

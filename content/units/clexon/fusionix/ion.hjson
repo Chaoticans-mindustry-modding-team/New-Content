@@ -1,0 +1,117 @@
+{
+  localizedName: Ion
+  description:
+    '''
+    Drops small energy bombs on enemy targets.
+    
+    [gray]Faction: [sky]Fusionix
+    '''
+  speed: 2.1
+  accel: 0.05
+  drag: 0.03
+  flying: true
+  health: 460
+  armor: 0
+  range: 100
+  engineOffset: 5.5
+  hitSize: 7
+  targetAir: false
+  faceTarget: false
+  commandLimit: 5
+  circleTarget: true
+  lowAltitude: false
+  outlineColor: 13111cff
+  mechLegColor: 13111cff
+  weapons:
+  [
+    {
+      name: bomber
+      shootCone: 360
+      mirror: false
+      top: false
+      rotate: false
+      x: 0
+      y: -2
+      reload: 11
+      shootSound: clank
+      recoil: 0
+      minShootVelocity: 0.25
+      bullet:
+      {
+        type: BombBulletType
+        hitEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            {
+              type: ParticleEffect
+              particles: 7
+              sizeFrom: 4
+              sizeTo: 0
+              length: 30
+              cone: 360
+              colorFrom: a6fbffff
+              colorTo: a6fbffff
+              interp: circleOut
+              region: newunits-square
+              offset: 45
+            }
+            {
+              type: ParticleEffect
+              particles: 7
+              sizeFrom: 5
+              sizeTo: 0
+              line: true
+              length: 30
+              cone: 360
+              colorFrom: a6fbffff
+              colorTo: a6fbffff
+              interp: circleOut
+              region: newunits-square
+              offset: 45
+            }
+            {
+              type: ParticleEffect
+              particles: 1
+              sizeFrom: 14
+              sizeTo: 0
+              length: 0
+              cone: 360
+              lifetime: 15
+              colorTo: a6fbffff
+              colorFrom: a6fbff00
+              interp: reverse
+            }
+            {
+              type: WaveEffect
+              colorFrom: a6fbffff
+              colorTo: a6fbffff
+              sizeTo: 9.5
+              lifetime: 10
+            }
+          ]
+        }
+        splashDamageRadius: 17
+        splashDamage: 50
+        keepVelocity: false
+        speed: 0.8
+        width: 9
+        height: 9
+        drag: 0.1
+        lifetime: 45
+        trailColor: aaaaffff
+        trailChance: 0.1
+        frontColor: 8888ffff
+        backColor: 6666ffff
+        despawnSound: hardExplosion
+        despawnShake: 1
+        sprite: circle
+        damage: 12
+        shrinkX: 0.4
+        shrinkY: 0.4
+        shootEffect: none
+      }
+    }
+  ]
+}

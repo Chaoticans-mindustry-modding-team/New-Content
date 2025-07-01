@@ -43,10 +43,10 @@
         splashDamageRadius: 14
         splashDamage: 15
         keepVelocity: false
-        speed: 2
+        speed: 2.5
         width: 9
         height: 9
-        drag: 0.08
+        drag: 0.05
         lifetime: 45
         trailColor: 4df9ffff
         trailChance: 0.1

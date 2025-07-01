@@ -56,20 +56,7 @@
               interp: circleOut
               region: newunits-square
               offset: 45
-            }
-            {
-              type: ParticleEffect
-              particles: 7
-              sizeFrom: 5
-              sizeTo: 0
-              line: true
-              length: 30
-              cone: 360
-              colorFrom: a6fbffff
-              colorTo: a6fbffff
-              interp: circleOut
-              region: newunits-square
-              offset: 45
+              useRotation: false
             }
             {
               type: ParticleEffect
@@ -105,6 +92,8 @@
         frontColor: a6fbffff
         backColor: 4df9ffff
         despawnSound: hardExplosion
+        hitSound: none
+        despawnEffect: none
         despawnShake: 1
         sprite: circle
         shrinkX: 0.4

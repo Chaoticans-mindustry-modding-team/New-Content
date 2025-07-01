@@ -17,7 +17,7 @@
   mineTier: 2
   armor: 2
   range: 72
-  itemCapacity: 45
+  itemCapacity: 150
   fogRadius: 0
   outlineColor: 13111cff
   mechLegColor: 13111cff

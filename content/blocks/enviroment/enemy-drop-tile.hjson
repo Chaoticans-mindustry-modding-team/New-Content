@@ -3,3 +3,6 @@ name: Enemy Drop Tile
 description: Place this near enemy spawns so people don't abuse Pods on enemy spawns.
 variants: 0
 placeableOn: false
+emitLight: true
+lightRadius: 30
+lightColor: ffffffff

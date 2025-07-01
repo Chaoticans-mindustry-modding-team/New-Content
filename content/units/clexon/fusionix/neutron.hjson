@@ -12,6 +12,7 @@
   accel: 0.5
   flying: false
   health: 600
+  armor: 1
   hitSize: 10
   range: 60
   itemCapacity: 20
@@ -25,16 +26,12 @@
       mirror: false
       x: 0
       y: 0
+      shootY: 0
       reload: 26
       recoil: 0
       top: false
       shootOnDeath: true
-      shoot:
-      {
-        firstShotDelay: 40
-      }
-      shootSound: moderateLaser
-      chargeSound: laserCharge2
+      shootSound: shotHard
       shootStatus: slow
       shootStatusDuration: 40
       shootWarmupSpeed: 0.2
@@ -51,7 +48,7 @@
         absorbable: false
         hittable: false
         status: charged
-        statusDuration: 35
+        statusDuration: 55
         despawnEffect:
         {
           type: MultiEffect
@@ -68,78 +65,26 @@
             {
                 type: ParticleEffect
                 particles: 12
-                sizeFrom: 4
+                sizeFrom: 6
                 sizeTo: 0
                 interp: linear
-                sizeInterp: circleOut
-                region: square
+                sizeInterp: circleIn
+                region: newunits-square
                 rotation: 45
-                length: 43
+                length: 46
                 offset: 45
             }
             {
                 type: SoundEffect
-                sound: shootHard
+                sound: moderateLaser
                 maxPitch: 1
-                minVolume: 0.7
-                maxVolume: 0.7
+                minVolume: 0.5
+                maxVolume: 0.5
                 effect: none
             }
           ]
         }
         hitEffect: hitLaser
-        chargeEffect:
-        {
-          type: MultiEffect
-          effects:
-          [
-            {
-              type: WaveEffect
-              sizeFrom: 28
-              sizeTo: 0
-              colorFrom: a6fbffaa
-              colorTo: a6fbffff
-              strokeFrom: 0
-              strokeTo: 2
-              lifetime: 40
-              sides: 8
-              followParent: true
-            }
-            {
-              type: ParticleEffect
-              particles: 4
-              colorFrom: a6fbff00
-              colorTo: a6fbffff
-              sizeFrom: 2
-              sizeTo: 3
-              lifetime: 40
-              length: 0
-              baseLength: 30
-            }
-            {
-              type: ParticleEffect
-              particles: 4
-              colorFrom: a6fbff00
-              colorTo: a6fbffff
-              sizeFrom: 2
-              sizeTo: 3
-              lifetime: 35
-              length: 0
-              baseLength: 20
-            }
-            {
-              type: ParticleEffect
-              particles: 4
-              colorFrom: a6fbff00
-              colorTo: a6fbffff
-              sizeFrom: 2
-              sizeTo: 3
-              lifetime: 30
-              length: 0
-              baseLength: 10
-            }
-          ]
-        }
       }
     }
   ]

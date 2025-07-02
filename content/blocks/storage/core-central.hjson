@@ -2,7 +2,7 @@
   localizedName: Core: Central
   description: Core of the base. Lightly armored. Once it falls, the sector falls too.
   type: CoreBlock
-  itemCapacity: 900
+  itemCapacity: 2600
   size: 2
   health: 1200
   armor: 5
@@ -13,10 +13,10 @@
   hidden: false
   alwaysUnlocked: true
   requirements: [
-    iron/900
-    cobalt/900
-    tritonium/900
-    light-alloy/900
+    iron/2000
+    cobalt/2000
+    antimony/2000
+    light-alloy/2000
   ]
   research:
   {

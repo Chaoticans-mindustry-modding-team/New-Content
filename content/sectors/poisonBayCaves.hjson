@@ -1,0 +1,16 @@
+{
+  localizedName: Poison Bay Caves
+  description:
+    '''
+    [red]Poison[] has infested this planet and its oceans. [stat]Cobalt[] reserves have been detected here. Use these reserves and to automate the collection of resources and fend off [sky]Fusionix[]'s forces.
+    
+    [gray]Attacker: [sky]Fusionix
+    '''
+  captureWave: 6
+  difficulty: 2
+  planet: clexon
+  sector: 217
+  research: {
+      parent: ferricPlains
+  }
+}

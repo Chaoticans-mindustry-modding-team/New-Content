@@ -29,20 +29,22 @@ Events.on(ClientLoadEvent, e => {
   //duck it, seq is boss music
   Vars.control.sound.darkMusic.add(seq);
 });
-Events.run(ClientLoad, () => {
-  function moddedItem(content) {
-    return Vars.content.item(content);
+// Thanks to maboroshiX | Reind
+Events.run(ClientLoadEvent, () => {
+  // Definition of methods
+  let moddedItem = contentName => Vars.content.item(contentName);
+  let moddedLiquid = contentName => Vars.content.liquid(contentName);
+  // if needed for blocks or units or basically stuff that isnt an item, make a new function later but for now only Items. or add a parameter
+  function addNode(contentChild, contentParent, index) {
+    if(contentChild == null || contentParent == null) return;
+    if(index == null) index = 0;
+
+    contentParent.techNodes.get(index).children.add(
+      TechTree.nodeProduce(contentChild, () => {}),
+    );
   };
-  function moddedLiquid(content) {
-    return Vars.content.liquid(content);
-  };
-  function addVanillaNode(child, parent, parentNodeID) {
-    let childContent = child;
-    let parentContent = parent;
-    let node = TechTree.nodeProduce(childContent, () => {});
-    let parentNode = parentContent.techNodes.get(parentNodeID);
-    parentNode.children.add(node);
-  };
-  addVanillaNode(Liquids.water, moddedItem("newunits-iron"), 0);
-  addVanillaNode(Liquids.cryofluid, Liquids.water, 2);
-})
+
+  // Application of methods
+  addNode(Liquids.water, moddedItem("newunits-iron"));
+  addNode(Liquids.cryofluid, Liquids.water, 2);
+});

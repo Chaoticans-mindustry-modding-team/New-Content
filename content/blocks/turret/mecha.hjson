@@ -22,7 +22,7 @@
   }
   consumes:
   {
-    power: 0.2
+    power: 0.4
     coolant:
     {
       amount: 0.15
@@ -32,7 +32,7 @@
   {
     iron:
     {
-      damage: 20
+      damage: 11
       width: 8
       height: 10
       speed: 6
@@ -57,9 +57,11 @@
                 colorTo: 856d6dff
                 lifetime: 15
                 line: true
-                length: 10
+                length: 7
                 strokeFrom: 1
-                strokeTo: 0.5
+                strokeTo: 0.25
+                lenFrom: 3
+                lenTo: 1
             }
         ]
       }
@@ -69,7 +71,7 @@
     }
     cobalt:
     {
-      damage: 32
+      damage: 22
       knockback: 2
       width: 8
       height: 10
@@ -95,9 +97,11 @@
                 colorTo: 5e73db
                 lifetime: 15
                 line: true
-                length: 10
+                length: 7
                 strokeFrom: 1
-                strokeTo: 0.5
+                strokeTo: 0.25
+                lenFrom: 3
+                lenTo: 1
             }
         ]
       }
@@ -106,7 +110,7 @@
     }
     scorchonite:
     {
-      damage: 46
+      damage: 39
       width: 8
       height: 10
       speed: 6
@@ -133,9 +137,11 @@
                 colorTo: d4733bff
                 lifetime: 15
                 line: true
-                length: 10
+                length: 7
                 strokeFrom: 1
-                strokeTo: 0.5
+                strokeTo: 0.25
+                lenFrom: 3
+                lenTo: 1
             }
         ]
       }

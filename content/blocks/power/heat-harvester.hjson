@@ -3,7 +3,7 @@
   description: Generates power from hot tiles. Hotter tiles produce more power.
   type: ThermalGenerator
   size: 2
-  health: 600
+  health: 320
   powerProduction: 1.2
   generateEffect: {
       type: ParticleEffect

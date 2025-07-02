@@ -38,5 +38,6 @@
         type: OnSector
         preset: poisonBayCaves
       }
+    ]
   }
 }

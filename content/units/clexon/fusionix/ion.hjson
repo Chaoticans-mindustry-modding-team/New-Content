@@ -31,7 +31,7 @@
       rotate: false
       x: 0
       y: -2
-      reload: 16
+      reload: 44
       shootSound: clank
       recoil: 0
       minShootVelocity: 0.25
@@ -48,7 +48,7 @@
               particles: 7
               sizeFrom: 4
               sizeTo: 0
-              length: 30
+              length: 45
               cone: 360
               colorFrom: a6fbffff
               colorTo: a6fbffff
@@ -60,14 +60,13 @@
             {
               type: ParticleEffect
               particles: 1
-              sizeFrom: 14
-              sizeTo: 0
+              sizeFrom: 0
+              sizeTo: 40
               length: 0
               cone: 360
               lifetime: 15
-              colorTo: a6fbffff
-              colorFrom: a6fbff00
-              interp: reverse
+              colorFrom: a6fbffff
+              colorTo: a6fbff00
             }
             {
               type: WaveEffect
@@ -79,7 +78,7 @@
           ]
         }
         splashDamageRadius: 17
-        splashDamage: 32
+        splashDamage: 60
         keepVelocity: false
         speed: 0.8
         width: 9

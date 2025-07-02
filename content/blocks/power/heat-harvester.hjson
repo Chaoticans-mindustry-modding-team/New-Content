@@ -4,7 +4,7 @@
   type: ThermalGenerator
   size: 2
   health: 320
-  powerProduction: 1.2
+  powerProduction: 1.4
   generateEffect: {
       type: ParticleEffect
       particles: 3

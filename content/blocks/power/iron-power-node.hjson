@@ -1,0 +1,28 @@
+{
+  localizedName: Iron Power Node
+  description: Transports power to connected blocks. Transmits power to and from adjacent blocks.
+  type: PowerNode
+  size: 1
+  maxNodes: 5
+  laserRange: 35
+  health: 160
+  armored: false
+  requirements:
+  [
+    iron/4
+    cobalt/9
+  ]
+  research:
+  {
+    parent: core-central
+    requirements:
+    [
+      iron/9
+      cobalt/15
+    ]
+    objectives:
+    [
+      ferricPlains
+    ]
+  }
+}

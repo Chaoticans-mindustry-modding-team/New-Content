@@ -38,6 +38,7 @@ Events.run(ClientLoadEvent, () => {
     contentParent.techNodes.get(index).children.add(
       TechTree.nodeProduce(contentChild, () => {}),
     );
+    contentChild.shownPlanets.addAll(contentParent.shownPlanets);
   };
 
   // Application of methods

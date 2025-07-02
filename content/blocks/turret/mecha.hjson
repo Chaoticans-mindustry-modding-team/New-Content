@@ -113,7 +113,7 @@
     }
     scorchonite:
     {
-      damage: 39
+      damage: 22
       knockback: 0.3
       width: 8
       height: 10

@@ -1,12 +1,12 @@
 {
   localizedName: Mecha
-  description: Fires bursts of iron, cobalt, or scorchonite bullets at nearby enemy targets. Requires power.
+  description: Fires bursts of cobalt or scorchonite bullets at nearby enemy targets. Requires power.
   type: ItemTurret
   size: 1
   health: 515
   outlineColor: 13111cff
   maxAmmo: 20
-  reload: 30
+  reload: 45
   range: 72
   targetAir: true
   targetGround: true
@@ -23,7 +23,7 @@
   }
   consumes:
   {
-    power: 0.3
+    power: 0.8
     coolant:
     {
       amount: 0.15
@@ -31,6 +31,7 @@
   }
   ammoTypes:
   {
+    /*
     iron:
     {
       damage: 11
@@ -70,10 +71,11 @@
       backColor: 856d6dff
       ammoMultiplier: 2
     }
+    */
     cobalt:
     {
       damage: 22
-      knockback: 2
+      knockback: 0.5
       width: 8
       height: 10
       speed: 6
@@ -159,8 +161,8 @@
   }
   requirements:
   [
-    iron/45
-    cobalt/35
+    iron/80
+    cobalt/45
   ]
   category: turret
   research:
@@ -171,9 +173,10 @@
       iron/75
       cobalt/45
     ]
-    objectives:
-    [
-      ferricPlains
-    ]
+    objectives: [
+      {
+        type: OnSector
+        preset: poisonBayCaves
+      }
   }
 }

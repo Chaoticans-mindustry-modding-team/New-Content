@@ -2,6 +2,7 @@
   name: Iron Drill
   description: Mines items from tiles it is placed on. Only capable of mining first tier resources. Requires power.
   health: 700
+  size: 3
   consumes:
   {
     power: 2

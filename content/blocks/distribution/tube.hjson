@@ -21,9 +21,8 @@
     ]
     objectives: [
       {
-        type: SectorComplete
-        preset: ferricPlains
+        type: OnSector
+        preset: poisonBayCaves
       }
-    ]
   }
 }

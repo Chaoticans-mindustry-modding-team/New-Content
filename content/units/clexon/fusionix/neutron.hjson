@@ -7,7 +7,7 @@
     [gray]Faction: [sky]Fusionix
     '''
   type: mech
-  speed: 1.3
+  speed: 1.8
   drag: 0.3
   accel: 0.5
   flying: false
@@ -19,6 +19,7 @@
   outlineColor: 13111cff
   mechLegColor: 13111cff
   rotateSpeed: 4
+  controller: SuicideAI
   weapons:
   [
     {

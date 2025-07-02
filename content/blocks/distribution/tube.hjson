@@ -2,7 +2,7 @@
   localizedName: Tube
   description: Transports items forward. Does not require power.
   type: Duct
-  speed: 7
+  speed: 5
   size: 1
   health: 120
   armored: false

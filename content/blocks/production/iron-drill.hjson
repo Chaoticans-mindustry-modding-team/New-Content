@@ -33,12 +33,10 @@
       iron/30
       cobalt/5
     ]
-    objectives:
-    [
+    objectives: [
       {
-        type: SectorComplete
-        preset: ferricPlains
+        type: OnSector
+        preset: poisonBayCaves
       }
-    ]
   }
 }

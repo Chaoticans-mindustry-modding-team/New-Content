@@ -1,21 +1,22 @@
 {
   localizedName: Mecha
-  description: Fires bursts of iron, cobalt, or scorchonite bullets at nearby enemy targets. Requires power
+  description: Fires bursts of iron, cobalt, or scorchonite bullets at nearby enemy targets. Requires power.
   type: ItemTurret
   size: 1
   health: 515
   outlineColor: 13111cff
   maxAmmo: 20
-  reload: 45
+  reload: 30
   range: 72
   targetAir: true
   targetGround: true
-  rotateSpeed: 3
+  rotateSpeed: 5
   shootSound: rifle
   coolantMultiplier: 5
   inaccuracy: 12
   velocityRnd: 0.6
-  shootY: 3
+  shake: 0.5
+  shootY: 2
   shoot:
   {
     shots: 5

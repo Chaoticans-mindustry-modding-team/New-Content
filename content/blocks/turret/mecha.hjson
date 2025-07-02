@@ -1,6 +1,6 @@
 {
   localizedName: Mecha
-  description: Fires bursts of iron, cobalt, or scorchonite bullets at nearby enemy targets.
+  description: Fires bursts of iron, cobalt, or scorchonite bullets at nearby enemy targets. Requires power
   type: ItemTurret
   size: 1
   health: 515
@@ -22,7 +22,7 @@
   }
   consumes:
   {
-    power: 0.4
+    power: 0.3
     coolant:
     {
       amount: 0.15
@@ -48,7 +48,7 @@
                 colorFrom: c7a7a7ff
                 colorTo: 856d6dff
                 lifetime: 10
-                sizeTo: 5
+                sizeTo: 3
             }
             {
                 type: ParticleEffect
@@ -59,8 +59,8 @@
                 line: true
                 length: 7
                 strokeFrom: 1
-                strokeTo: 0.25
-                lenFrom: 3
+                strokeTo: 0.5
+                lenFrom: 2
                 lenTo: 1
             }
         ]
@@ -88,7 +88,7 @@
                 colorFrom: 8691cfff
                 colorTo: 5e73db
                 lifetime: 10
-                sizeTo: 5
+                sizeTo: 3
             }
             {
                 type: ParticleEffect
@@ -99,8 +99,8 @@
                 line: true
                 length: 7
                 strokeFrom: 1
-                strokeTo: 0.25
-                lenFrom: 3
+                strokeTo: 0.5
+                lenFrom: 2
                 lenTo: 1
             }
         ]
@@ -128,7 +128,7 @@
                 colorFrom: e6aa6aff
                 colorTo: d4733bff
                 lifetime: 10
-                sizeTo: 5
+                sizeTo: 3
             }
             {
                 type: ParticleEffect
@@ -139,8 +139,8 @@
                 line: true
                 length: 7
                 strokeFrom: 1
-                strokeTo: 0.25
-                lenFrom: 3
+                strokeTo: 0.5
+                lenFrom: 2
                 lenTo: 1
             }
         ]

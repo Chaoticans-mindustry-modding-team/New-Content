@@ -168,7 +168,7 @@
   category: turret
   research:
   {
-    parent: core-central
+    parent: scorchonite-pod
     requirements:
     [
       iron/75

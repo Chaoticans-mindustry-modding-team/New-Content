@@ -16,21 +16,21 @@
       sizeTo: 0
       length: 9
   }
-  effectChance: 0.07
+  effectChance: 0.04
   attribute: heat
   category: power
   requirements:
   [
-    iron/30
-    cobalt/25
+    iron/10
+    cobalt/15
   ]
   research:
   {
     parent: iron-power-node
     requirements:
     [
-      iron/100
-      cobalt/150
+      iron/25
+      cobalt/35
     ]
   }
 }

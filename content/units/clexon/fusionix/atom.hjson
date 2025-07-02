@@ -6,7 +6,7 @@
 
     [gray]Faction: [sky]Fusionix
     '''
-  speed: 0.7
+  speed: 1.4
   accel: 0.04
   drag: 0.03
   flying: true
@@ -23,6 +23,7 @@
   outlineColor: 13111cff
   mechLegColor: 13111cff
   itemCapacity: 0
+  autoDropBombs: true
   weapons:
   [
     {

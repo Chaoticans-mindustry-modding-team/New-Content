@@ -1,0 +1,10 @@
+{
+  name: Rexon Alloy
+  description: Used in advanced defensive measures and high-tier unit construction.
+  cost: 3
+  color: 4dab7fff
+  research:
+  {
+    parent: antimony
+  }
+}

@@ -18,6 +18,7 @@
   }
   effectChance: 0.07
   attribute: heat
+  category: power
   requirements:
   [
     iron/30

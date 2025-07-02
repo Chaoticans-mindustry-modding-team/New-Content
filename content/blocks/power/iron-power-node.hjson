@@ -4,14 +4,14 @@
   type: PowerNode
   size: 1
   maxNodes: 5
-  laserRange: 35
+  laserRange: 8
   health: 160
-  armored: false
   requirements:
   [
     iron/4
     cobalt/9
   ]
+  category: power
   research:
   {
     parent: core-central

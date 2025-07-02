@@ -13,10 +13,7 @@
   hidden: false
   alwaysUnlocked: true
   requirements: [
-    iron/2000
-    cobalt/2000
-    antimony/2000
-    light-alloy/2000
+    iron/900
   ]
   research:
   {

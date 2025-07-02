@@ -32,5 +32,11 @@
       iron/25
       cobalt/35
     ]
+    objectives: [
+      {
+        type: SectorComplete
+        preset: ferricPlains
+      }
+    }
   }
 }

@@ -74,8 +74,8 @@
     */
     cobalt:
     {
-      damage: 22
-      knockback: 0.5
+      damage: 16
+      knockback: 0.3
       width: 8
       height: 10
       speed: 6
@@ -114,6 +114,7 @@
     scorchonite:
     {
       damage: 39
+      knockback: 0.3
       width: 8
       height: 10
       speed: 6

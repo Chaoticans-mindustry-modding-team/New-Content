@@ -6,10 +6,6 @@ mod.meta.description = Core.bundle.get("mod.description");
 // special thanks to meep for the help!!
 */
 //is this relevant?^^^
-import arc.struct.*;
-import mindustry.content.*;
-import mindustry.content.TechTree.*;
-import mindustry.type.*;
 let day2 = Vars.tree.loadMusic("day2"); //new-world creepy vibes like / alternate
 let day3 = Vars.tree.loadMusic("day3"); //ye
 let day4 = Vars.tree.loadMusic("day4"); //ye

@@ -1,0 +1,41 @@
+{
+  name: Iron Drill
+  description: Mines items from tiles it is placed on. Only capable of mining first tier resources. Requires power.
+  health: 700
+  consumes:
+  {
+    power: 2
+    liquid:
+    {
+      liquid: water 
+      //placeholder, make a booster liquid later, or possibly a booster item
+      amount: 0.31
+      booster: true
+      optional: true
+    }
+  }
+  size: 1
+  type: Drill
+  tier: 2
+  drillTime: 60
+  liquidBoostIntensity: 1.6
+  category: production
+  requirements:
+  [
+    iron/45
+    cobalt/35
+  ]
+  research:
+  {
+    parent: core-central
+    requirements:
+    [
+      iron/200
+      cobalt/150
+    ]
+    objectives:
+    [
+      ferricPlains
+    ]
+  }
+}

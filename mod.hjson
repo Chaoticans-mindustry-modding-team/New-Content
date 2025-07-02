@@ -36,12 +36,21 @@
         "strider",
     // Clexon
         // Unit
-        "infiltrator", "wrecker", "diversionist", 
-        //Block
+            // Charren
+            "infiltrator", "wrecker", 
+            //Fusionix
+            "neutron",
+            "ion", "atom",
+            // Core
+            "diversionist", 
+        // Block
         "iron-wall", "iron-wall-large", "scorchonite-pod", "scorchonite-pod-large",
         "tube", "tube-junction", "tube-bridge", "tube-sorter", "tube-sorter-inverted", "tube-router",
+        "heat-harvester",
+        "iron-drill",
         "core-central",
+        "mecha",
     //Status
-    "charged", "poisoned", "maimed", "laser-shocked", "atomically-charged"
+        "charged", "poisoned", "maimed", "laser-shocked", "atomically-charged"
   ]
 }

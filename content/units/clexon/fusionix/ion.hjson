@@ -21,6 +21,9 @@
   lowAltitude: false
   outlineColor: 13111cff
   autoDropBombs: true
+  targetFlags: [
+    turret
+  ]
   weapons:
   [
     {

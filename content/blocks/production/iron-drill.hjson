@@ -17,8 +17,8 @@
   }
   type: Drill
   tier: 2
-  drillTime: 60
-  liquidBoostIntensity: 1.6
+  drillTime: 80
+  liquidBoostIntensity: 1.1
   category: production
   requirements:
   [
@@ -35,7 +35,10 @@
     ]
     objectives:
     [
-      ferricPlains
+      {
+        type: SectorComplete
+        preset: ferricPlains
+      }
     ]
   }
 }

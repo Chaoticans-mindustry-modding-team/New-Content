@@ -51,7 +51,7 @@
               particles: 7
               sizeFrom: 4
               sizeTo: 0
-              length: 45
+              length: 20
               cone: 360
               colorFrom: a6fbffff
               colorTo: a6fbffff
@@ -64,7 +64,7 @@
               type: ParticleEffect
               particles: 1
               sizeFrom: 0
-              sizeTo: 40
+              sizeTo: 8.5
               length: 0
               cone: 360
               lifetime: 15
@@ -80,7 +80,7 @@
             }
           ]
         }
-        splashDamageRadius: 17
+        splashDamageRadius: 19
         splashDamage: 60
         keepVelocity: false
         speed: 0.8

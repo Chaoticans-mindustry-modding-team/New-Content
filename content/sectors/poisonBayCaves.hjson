@@ -6,7 +6,7 @@
     
     [gray]Attacker: [sky]Fusionix
     '''
-  captureWave: 6
+  captureWave: 10
   difficulty: 2
   planet: clexon
   sector: 217

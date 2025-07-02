@@ -1,0 +1,111 @@
+{
+  localizedName: Mecha
+  description: Fires bursts of iron, cobalt, or scorchonite bullets at nearby enemy targets.
+  type: ItemTurret
+  size: 1
+  health: 500
+  outlineColor: 13111cff
+  maxAmmo: 20
+  reload: 45
+  range: 90
+  targetAir: true
+  targetGround: true
+  rotateSpeed: 3
+  shootSound: rifle
+  coolantMultiplier: 1.6
+  inaccuracy: 7
+  velocityRnd: 0.22
+  shoot:
+  {
+    shots: 3
+  }
+  consumes:
+  {
+    power: 0.2
+    coolant:
+    {
+      amount: 0.2
+    }
+  }
+  ammoTypes:
+  {
+    iron:
+    {
+      damage: 20
+      width: 8
+      height: 10
+      speed: 6
+      lifetime: 15
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: hitBulletSmall
+      frontColor: ffffffff
+      backColor: c7a7a7ff
+      ammoMultiplier: 2
+    }
+    cobalt:
+    {
+      damage: 32
+      knockback: 2
+      width: 8
+      height: 10
+      speed: 6
+      lifetime: 15
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: hitBulletSmall
+      frontColor: ffffffff
+      backColor: 8691cfff
+      ammoMultiplier: 2
+      reloadMultiplier: 0.7
+    }
+    scorchonite:
+    {
+      damage: 46
+      width: 8
+      height: 10
+      speed: 6
+      lifetime: 15
+      despawnHit: true
+      despawnEffect: none
+      hitEffect:
+      {
+        type: MultiEffect
+        effects:
+        [
+          hitBulletSmall
+          fireHit
+        ]
+      }
+      frontColor: e6aa6aff
+      backColor: d4733bff
+      ammoMultiplier: 3
+      status: burning
+      statusDuration: 662
+    }
+  }
+  drawer:
+  {
+    type: DrawTurret
+    basePrefix: clexon-
+  }
+  requirements:
+  [
+    iron/30
+    cobalt/35
+  ]
+  category: turret
+  research:
+  {
+    parent: core-central
+    requirements:
+    [
+      iron/60
+      cobalt/45
+    ]
+    objectives:
+    [
+      ferricPlains
+    ]
+  }
+}

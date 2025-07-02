@@ -5,7 +5,7 @@
   size: 2
   consumes:
   {
-    power: 2
+    power: 0.8
     liquid:
     {
       liquid: water 
@@ -22,16 +22,16 @@
   category: production
   requirements:
   [
-    iron/45
-    cobalt/35
+    iron/25
+    cobalt/9
   ]
   research:
   {
     parent: core-central
     requirements:
     [
-      iron/200
-      cobalt/150
+      iron/30
+      cobalt/5
     ]
     objectives:
     [

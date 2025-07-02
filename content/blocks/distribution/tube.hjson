@@ -19,6 +19,11 @@
     [
       iron/15
     ]
-    objectives: [ferricPlains]
+    objectives: [
+      {
+        type: SectorComplete
+        preset: ferricPlains
+      }
+    }
   }
 }

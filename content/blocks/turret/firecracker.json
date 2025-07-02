@@ -15,7 +15,7 @@
   "inaccuracy": 4,
   "shake": 2.5,
   "shootSound": "bang",
-  "coolantMultiplier": 1,
+  "coolantMultiplier": 1.5,
   "consumes": {
     "coolant": {
       "amount": 0.2

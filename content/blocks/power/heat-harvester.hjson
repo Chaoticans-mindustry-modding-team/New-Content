@@ -37,6 +37,6 @@
         type: SectorComplete
         preset: ferricPlains
       }
-    }
+    ]
   }
 }

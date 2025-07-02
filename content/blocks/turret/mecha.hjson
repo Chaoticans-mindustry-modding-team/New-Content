@@ -117,7 +117,7 @@
         type: MultiEffect
         effects: [
             fireHit
-            hitFireSmall
+            hitFlameSmall
             {
                 type: WaveEffect
                 strokeTo: 0.5

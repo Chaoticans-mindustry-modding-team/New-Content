@@ -11,4 +11,8 @@
   planet: clexon
   sector: 94
   alwaysUnlocked: true
+  research: {
+    parent: core-central
+    requiresUnlock: false
+  }
 }

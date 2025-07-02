@@ -26,3 +26,20 @@ Events.on(ClientLoadEvent, e => {
   //duck it, seq is boss music
   Vars.control.sound.darkMusic.add(seq);
 });
+Events.run(ClientLoad, () => {
+  function UnlockableContent moddedItem(string content) {
+    return Vars.content.item(content)
+  };
+  function UnlockableContent moddedLiquid(string content) {
+    return Vars.content.liquid(content)
+  };
+  function void addVanillaNode(UnlockableContent child, UnlockableContent parent, int parentNodeID) {
+    let childContent = child;
+    let parentContent = parent;
+    let node = TechTree.nodeProduce(childContent, () => {});
+    let parentNode = parentContent.techNodes.get(parentNodeID);
+    parentNode.children.add(node);
+  };
+  addVanillaNode(Liquids.water, moddedItem("newunits-iron"), 0);
+  addVanillaNode(Liquids.cryofluid, Liquids.water, 2);
+})

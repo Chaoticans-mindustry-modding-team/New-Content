@@ -27,13 +27,13 @@ Events.on(ClientLoadEvent, e => {
   Vars.control.sound.darkMusic.add(seq);
 });
 Events.run(ClientLoad, () => {
-  function UnlockableContent moddedItem(string content) {
+  function moddedItem(content) {
     return Vars.content.item(content)
   };
-  function UnlockableContent moddedLiquid(string content) {
+  function moddedLiquid(content) {
     return Vars.content.liquid(content)
   };
-  function void addVanillaNode(UnlockableContent child, UnlockableContent parent, int parentNodeID) {
+  function addVanillaNode(child, parent, parentNodeID) {
     let childContent = child;
     let parentContent = parent;
     let node = TechTree.nodeProduce(childContent, () => {});

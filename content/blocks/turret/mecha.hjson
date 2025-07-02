@@ -3,28 +3,29 @@
   description: Fires bursts of iron, cobalt, or scorchonite bullets at nearby enemy targets.
   type: ItemTurret
   size: 1
-  health: 500
+  health: 515
   outlineColor: 13111cff
   maxAmmo: 20
   reload: 45
-  range: 90
+  range: 72
   targetAir: true
   targetGround: true
   rotateSpeed: 3
   shootSound: rifle
-  coolantMultiplier: 1.6
-  inaccuracy: 7
-  velocityRnd: 0.22
+  coolantMultiplier: 5
+  inaccuracy: 12
+  velocityRnd: 0.6
+  shootY: 3
   shoot:
   {
-    shots: 3
+    shots: 5
   }
   consumes:
   {
     power: 0.2
     coolant:
     {
-      amount: 0.2
+      amount: 0.15
     }
   }
   ammoTypes:
@@ -38,9 +39,32 @@
       lifetime: 15
       despawnHit: true
       despawnEffect: none
-      hitEffect: hitBulletSmall
-      frontColor: ffffffff
-      backColor: c7a7a7ff
+      hitEffect: {
+        type: MultiEffect
+        effects: [
+            {
+                type: WaveEffect
+                strokeTo: 0.5
+                colorFrom: c7a7a7ff
+                colorTo: 856d6dff
+                lifetime: 10
+                sizeTo: 5
+            }
+            {
+                type: ParticleEffect
+                particles: 8
+                colorFrom: c7a7a7ff
+                colorTo: 856d6dff
+                lifetime: 15
+                line: true
+                length: 10
+                strokeFrom: 1
+                strokeTo: 0.5
+            }
+        ]
+      }
+      frontColor: c7a7a7ff
+      backColor: 856d6dff
       ammoMultiplier: 2
     }
     cobalt:
@@ -53,11 +77,32 @@
       lifetime: 15
       despawnHit: true
       despawnEffect: none
-      hitEffect: hitBulletSmall
-      frontColor: ffffffff
-      backColor: 8691cfff
-      ammoMultiplier: 2
-      reloadMultiplier: 0.7
+      hitEffect: {
+        type: MultiEffect
+        effects: [
+            {
+                type: WaveEffect
+                strokeTo: 0.5
+                colorFrom: 8691cfff
+                colorTo: 5e73db
+                lifetime: 10
+                sizeTo: 5
+            }
+            {
+                type: ParticleEffect
+                particles: 8
+                colorFrom: 8691cfff
+                colorTo: 5e73db
+                lifetime: 15
+                line: true
+                length: 10
+                strokeFrom: 1
+                strokeTo: 0.5
+            }
+        ]
+      }
+      frontColor: 8691cfff
+      backColor: 5e73db
     }
     scorchonite:
     {
@@ -68,18 +113,34 @@
       lifetime: 15
       despawnHit: true
       despawnEffect: none
-      hitEffect:
-      {
+       hitEffect: {
         type: MultiEffect
-        effects:
-        [
-          hitBulletSmall
-          fireHit
+        effects: [
+            fireHit
+            hitFireSmall
+            {
+                type: WaveEffect
+                strokeTo: 0.5
+                colorFrom: e6aa6aff
+                colorTo: d4733bff
+                lifetime: 10
+                sizeTo: 5
+            }
+            {
+                type: ParticleEffect
+                particles: 8
+                colorFrom: e6aa6aff
+                colorTo: d4733bff
+                lifetime: 15
+                line: true
+                length: 10
+                strokeFrom: 1
+                strokeTo: 0.5
+            }
         ]
       }
       frontColor: e6aa6aff
       backColor: d4733bff
-      ammoMultiplier: 3
       status: burning
       statusDuration: 662
     }
@@ -91,7 +152,7 @@
   }
   requirements:
   [
-    iron/30
+    iron/45
     cobalt/35
   ]
   category: turret
@@ -100,7 +161,7 @@
     parent: core-central
     requirements:
     [
-      iron/60
+      iron/75
       cobalt/45
     ]
     objectives:

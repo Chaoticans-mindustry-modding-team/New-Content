@@ -6,11 +6,11 @@
 
     [gray]Faction: [sky]Fusionix
     '''
-  speed: 2.3
+  speed: 0.7
   accel: 0.04
   drag: 0.03
   flying: true
-  health: 1040
+  health: 700
   armor: 3
   range: 100
   engineOffset: 8
@@ -22,6 +22,7 @@
   lowAltitude: false
   outlineColor: 13111cff
   mechLegColor: 13111cff
+  itemCapacity: 0
   weapons:
   [
     {

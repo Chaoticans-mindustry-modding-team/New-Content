@@ -18,5 +18,9 @@
     "arkycite",
     "neoplasm",
     "poison"
-  ]
+  ],
+  "research": {
+    "parent": "water",
+    "planet": "clexon"
+  }
 }

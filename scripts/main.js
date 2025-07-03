@@ -40,12 +40,17 @@ Events.run(ClientLoadEvent, () => {
       TechTree.nodeProduce(contentChild, () => {}),
     );
     contentChild.shownPlanets.addAll(contentParent.shownPlanets);
+    contentChild.databaseTabs.addAll(contentParent.databaseTabs);
   };
 
   // Application of methods
   let clexon = moddedPlanet("newunits-clexon");
   addNode(Liquids.water, moddedItem("newunits-iron"));
   addNode(Liquids.cryofluid, Liquids.water, 2);
+  addNode(moddedLiquid("newunits-poison-water"), Liquids.water, 2);
+  addNode(moddedLiquid("newunits-poison"), moddedLiquid("newunits-poison-water"), 0);
   Liquids.water.shownPlanets.add(clexon);
   Liquids.cryofluid.shownPlanets.add(clexon);
+  moddedLiquid("newunits-poison-water").shownPlanets.add(clexon);
+  moddedLiquid("newunits-poison").shownPlanets.add(clexon);
 });

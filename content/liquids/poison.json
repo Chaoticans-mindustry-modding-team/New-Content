@@ -20,5 +20,8 @@
     "arkycite",
     "neoplasm",
     "poison-water"
-  ]
+  ],
+  "research": {
+    "parent": "poison-water"
+  }
 }

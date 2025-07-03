@@ -30,6 +30,7 @@ Events.run(ClientLoadEvent, () => {
   // Definition of methods
   let moddedItem = contentName => Vars.content.item(contentName);
   let moddedLiquid = contentName => Vars.content.liquid(contentName);
+  let moddedPlanet = contentName => vars.content.planet(contentName);
   // if needed for blocks or units or basically stuff that isnt an item, make a new function later but for now only Items. or add a parameter
   function addNode(contentChild, contentParent, index) {
     if(contentChild == null || contentParent == null) return;
@@ -42,6 +43,9 @@ Events.run(ClientLoadEvent, () => {
   };
 
   // Application of methods
+  let clexon = moddedPlanet("newunits-clexon");
   addNode(Liquids.water, moddedItem("newunits-iron"));
   addNode(Liquids.cryofluid, Liquids.water, 2);
+  Liquids.water.shownPlanets.add(clexon);
+  Liquids.cryofluid.shownPlanets.add(clexon);
 });

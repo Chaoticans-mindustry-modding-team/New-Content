@@ -2,130 +2,57 @@
   localizedName: Atom
   description:
     '''
-    Drops clusters of energy mines on nearby enemy targets.
+    Fires a continuous stream of plasma at nearby enemy targets.
 
     [gray]Faction: [sky]Fusionix
     '''
-  speed: 1.4
+  speed: 1.2
   accel: 0.04
   drag: 0.03
   flying: true
   health: 700
   armor: 3
-  range: 100
+  range: 55
   engineOffset: 8
   hitSize: 12
   targetAir: false
   faceTarget: false
-  commandLimit: 5
-  circleTarget: true
-  lowAltitude: false
+  circleTarget: false
+  lowAltitude: true
   outlineColor: 13111cff
-  mechLegColor: 13111cff
   itemCapacity: 0
-  autoDropBombs: true
   weapons:
   [
     {
-      name: bomber
-      shootCone: 360
+      name: atom-torch
+      shootCone: 30
       mirror: false
-      top: false
-      rotate: false
+      top: true
       x: 0
-      y: -2
-      reload: 55
-      shootSound: mineDeploy
-      recoil: 0
+      y: -2.5
+      shootSound: none
+      loopSound: torch2
+      loopSoundVolume: 0.6
+      continuous: true
+      alwaysContinuous: true
+      rotate: true
+      rotateSpeed: 4
+      recoil: 1
       minShootVelocity: 0.25
-      bullet:
-      {
-        type: BombBulletType
-        hitEffect: none
-        splashDamageRadius: 14
-        splashDamage: 15
-        keepVelocity: false
-        speed: 2.5
-        width: 9
-        height: 9
-        drag: 0.05
-        lifetime: 45
-        trailColor: 4df9ffff
-        trailChance: 0.1
-        frontColor: a6fbffff
-        backColor: 4df9ffff
-        hitSound: noammo
-        hitShake: 1
-        despawnHit: true
-        sprite: circle-bullet
-        damage: 66
-        shrinkX: 0.4
-        shrinkY: 0.4
-        shootEffect: none
-        despawnEffect: none
-        fragBullets: 7
-        fragLifeMin: 0.5
-        fragBullet:
-        {
-          type: BasicBulletType
-          sprite: newunits-energy-mine
-          spin: 1
-          width: 4
-          height: 4
-          collidesAir: false
-          speed: 2
-          drag: 0.07
-          lifetime: 200
-          frontColor: a6fbffff
-          backColor: 4df9ffff
-          splashDamageRadius: 8
-          splashDamage: 55
-          hitSound: pistol
-          hitShake: 0.3
-          despawnHit: true
-          despawnEffect: none
-          shrinkX: 0.1
-          damage: 9
-          hitEffect:
-          {
-            type: MultiEffect
-            effects:
-            [
-              {
-                type: ParticleEffect
-                particles: 7
-                sizeFrom: 5
-                sizeTo: 0
-                length: 15
-                cone: 360
-                colorFrom: a6fbffff
-                colorTo: a6fbffff
-                interp: circleOut
-                region: newunits-square
-                offset: 45
-                useRotation: false
-              }
-              {
-                type: ParticleEffect
-                particles: 1
-                sizeFrom: 0
-                sizeTo: 14
-                length: 0
-                cone: 360
-                lifetime: 15
-                colorTo: a6fbff00
-                colorFrom: a6fbffff
-              }
-              {
-                type: WaveEffect
-                colorFrom: a6fbffff
-                colorTo: a6fbffff
-                sizeTo: 9
-                lifetime: 10
-              }
-            ]
-          }
-        }
+      bullet: {
+          type: ContinuousFlameBulletType
+          damage: 3
+          length: 55
+          pierceCap: 1
+          status: burning
+          statusDuration: 370
+          colors: [
+            1765bf33
+            47c8ff55
+            70d8ff77
+            a6fbffcc
+            ffffffff
+          ]
       }
     }
   ]

@@ -30,7 +30,7 @@ Events.run(ClientLoadEvent, () => {
   // Definition of methods
   let moddedItem = contentName => Vars.content.item(contentName);
   let moddedLiquid = contentName => Vars.content.liquid(contentName);
-  let moddedPlanet = contentName => vars.content.planet(contentName);
+  let moddedPlanet = contentName => Vars.content.planet(contentName);
   // if needed for blocks or units or basically stuff that isnt an item, make a new function later but for now only Items. or add a parameter
   function addNode(contentChild, contentParent, index) {
     if(contentChild == null || contentParent == null) return;

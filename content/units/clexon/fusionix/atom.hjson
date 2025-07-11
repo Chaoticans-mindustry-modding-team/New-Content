@@ -30,7 +30,7 @@
       top: true
       x: 0
       y: -2.5
-      shootSound: torch
+      shootSound: torch2
       continuous: true
       alwaysContinuous: true
       rotate: true
@@ -54,12 +54,14 @@
             sizeFrom: 2
             colorFrom: a6fbffcc
             colorTo: a6fbffcc
-            lifetime: 5
+            lifetime: 30
+            interp: circleOut
+            length: 4
           }
           colors: [
-            1765bf33
-            47c8ff66
-            70d8ffcc
+            1765bf55
+            47c8ffcc
+            70d8ffdd
             a6fbffee
             ffffffff
           ]

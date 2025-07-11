@@ -162,8 +162,8 @@
   }
   requirements:
   [
-    iron/80
-    cobalt/45
+    iron/35
+    cobalt/20
   ]
   category: turret
   research:

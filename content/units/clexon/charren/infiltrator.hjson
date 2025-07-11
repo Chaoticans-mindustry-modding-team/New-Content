@@ -42,6 +42,7 @@
       {
         type: RailBulletType
         lifetime: 10
+        collidesTerrain: true
         damage: 11
         length: 60
         pointEffectSpace: 2

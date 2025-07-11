@@ -54,9 +54,9 @@
         width: 9
         height: 16
         trailWidth: 1
-        frontColor: d4733b
-        backColor: 943d18
-        trailColor: 943d18
+        frontColor: ffffffff
+        backColor: ff772eff
+        trailColor: ff772eff
         trailLength: 7
         splashDamageRadius: 15
         splashDamage: 9
@@ -80,15 +80,15 @@
                 type: WaveEffect
                 sizeTo: 15
                 lifetime: 10
-                colorFrom: d4733bff
-                colorTo: d4733bff
+                colorFrom: ff772eff
+                colorTo: ff772eff
             }
             {
                 type: ParticleEffect
                 particles: 8
                 line: true
-                colorFrom: d4733bff
-                colorTo: d4733bff
+                colorFrom: ff772eff
+                colorTo: ff772eff
                 interp: circleOut
                 sizeInterp: circleIn
                 lifetime: 20
@@ -101,8 +101,8 @@
             {
                 type: ParticleEffect
                 particles: 8
-                colorFrom: d4733bee
-                colorTo: d4733baa
+                colorFrom: ff772eff
+                colorTo: ff772eff
                 interp: circleOut
                 sizeInterp: circleIn
                 lifetime: 25

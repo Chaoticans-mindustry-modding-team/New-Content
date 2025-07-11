@@ -4,6 +4,7 @@
   type: Wall
   size: 2
   health: 1620
+  buildCostMultiplier: 2
   requirements:
   [
     iron/64

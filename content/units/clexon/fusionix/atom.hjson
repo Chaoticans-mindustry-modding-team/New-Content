@@ -39,7 +39,7 @@
       recoilTime: 30
       bullet: {
           type: ContinuousFlameBulletType
-          damage: 5.3
+          damage: 7
           width: 1.5
           length: 55
           pierceCap: 2

@@ -6,7 +6,7 @@
   speed: 0.95
   drag: 0.3
   accel: 0.5
-  buildSpeed: 2.5
+  buildSpeed: 1
   flying: false
   canBoost: true
   boostMultiplier: 2.1

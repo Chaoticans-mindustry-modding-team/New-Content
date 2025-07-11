@@ -38,7 +38,6 @@
     lifetime: 30
     speed: 4
     damage: 15
-    shootEffect: shoot
     hitEffect: hitLancer
     despawnEffect: none
     lightning: 3
@@ -49,6 +48,7 @@
     statusDuration: 60
     collidesTerrain: true
   }
+  shootEffect: shoot
   drawer:
   {
     type: DrawTurret

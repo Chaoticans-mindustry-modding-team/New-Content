@@ -41,11 +41,12 @@
       minShootVelocity: 0.25
       bullet: {
           type: ContinuousFlameBulletType
-          damage: 3
+          damage: 9.3
           length: 55
           pierceCap: 1
           status: burning
           statusDuration: 370
+          flareColor: a6fbffcc
           colors: [
             1765bf33
             47c8ff55

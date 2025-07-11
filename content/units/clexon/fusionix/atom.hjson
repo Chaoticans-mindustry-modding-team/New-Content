@@ -30,28 +30,37 @@
       top: true
       x: 0
       y: -2.5
-      shootSound: none
-      loopSound: torch2
-      loopSoundVolume: 0.6
+      shootSound: torch
       continuous: true
       alwaysContinuous: true
       rotate: true
       rotateSpeed: 4
       recoil: 1
-      minShootVelocity: 0.25
+      recoilTime: 30
       bullet: {
           type: ContinuousFlameBulletType
-          damage: 9.3
+          damage: 5.3
+          width: 1.5
           length: 55
-          pierceCap: 1
+          pierceCap: 2
           status: burning
           statusDuration: 370
+          flareWidth: 2
+          flareLength: 10
           flareColor: a6fbffcc
+          hitEffect: {
+            type: ParticleEffect
+            particles: 3
+            sizeFrom: 2
+            colorFrom: a6fbffcc
+            colorTo: a6fbffcc
+            lifetime: 5
+          }
           colors: [
             1765bf33
-            47c8ff55
-            70d8ff77
-            a6fbffcc
+            47c8ff66
+            70d8ffcc
+            a6fbffee
             ffffffff
           ]
       }

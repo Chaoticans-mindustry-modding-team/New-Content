@@ -1,0 +1,6 @@
+type: Floor
+name: Charred Earth
+variants: 3
+attributes: {
+  water: -0.7
+}

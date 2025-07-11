@@ -1,5 +1,5 @@
 type: floor
-namw: Shallow Poison Rock
+name: Shallow Poison Rock
 status: newunits-poisoned
 statusDuration: 45
 speedMultiplier: 0.35

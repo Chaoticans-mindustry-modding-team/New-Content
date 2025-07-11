@@ -1,0 +1,4 @@
+type: Floor
+name: Iron Floor
+variants: 0
+placeableOn: false

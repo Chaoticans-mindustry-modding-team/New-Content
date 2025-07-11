@@ -54,7 +54,7 @@
         width: 9
         height: 16
         trailWidth: 1
-        frontColor: ffffffff
+        frontColor: ffa97aff
         backColor: ff772eff
         trailColor: ff772eff
         trailLength: 7

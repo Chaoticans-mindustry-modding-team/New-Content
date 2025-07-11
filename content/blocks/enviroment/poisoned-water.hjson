@@ -1,5 +1,5 @@
 type: floor
-namw: Poisoned Water
+name: Poisoned Water
 drownTime: 150
 status: newunits-poisoned
 statusDuration: 60

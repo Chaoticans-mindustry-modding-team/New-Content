@@ -36,7 +36,7 @@
       shootCone: 5
       shootY: 5
       inaccuracy: 4
-      shootStatus: slow
+      shootStatus: newunits-bit-slow
       shootStatusDuration: 10
       bullet:
       {

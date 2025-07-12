@@ -1,0 +1,57 @@
+{
+  name: Small Alloy Forge
+  description: Smelts iron and cobalt into light alloy.
+  drawer:
+  {
+    type: DrawMulti
+    drawers:
+    [
+      {
+        type: DrawDefault
+      }
+      {
+        type: DrawFlame
+        flameColor: a1a1bfff
+      }
+    ]
+  }
+  type: GenericCrafter
+  size: 2
+  hasPower: true
+  hasItems: true
+  itemCapacity: 20
+  craftTime: 45
+  craftEffect: pulverize
+  updateEffect: none
+  ambientSound: smelter
+  ambientSoundVolume: 0.07
+  consumes:
+  {
+    power: 0.8
+    items:
+    {
+      items:
+      [
+        iron/2
+        cobalt/2
+      ]
+    }
+  }
+  requirements:
+  [
+    iron/45
+    cobalt/15
+    antimony/35
+  ]
+  category: crafting
+  research:
+  {
+    parent: iron-drill
+    requirements: [
+        iron/120
+        cobalt/45
+        antimony/95
+    ]
+  }
+  outputItem: light-alloy2
+}

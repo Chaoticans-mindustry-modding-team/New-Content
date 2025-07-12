@@ -5,7 +5,7 @@
   size: 1
   health: 600
   outlineColor: 13111cff
-  reload: 15
+  reload: 11
   range: 120
   targetAir: true
   targetGround: true

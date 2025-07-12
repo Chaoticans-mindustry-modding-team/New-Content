@@ -11,7 +11,7 @@
   targetGround: true
   rotateSpeed: 4
   shootSound: lasershoot2
-  coolantMultiplier: 6
+  coolantMultiplier: 5
   inaccuracy: 2
   shootY: 1.5
   ejectEffect: none
@@ -46,8 +46,16 @@
         colorFrom: ffffffff
         colorTo: ffffffaa
     }
+    smokeEffect: {
+        type: WaveEffect
+        lifetime: 10
+        sizeTo: 4
+        strokeTo: 0.5
+        colorFrom: ffffffff
+        colorTo: ffffffaa
+    }
     despawnEffect: none
-    despawnHit: false
+    despawnHit: true
     status: newunits-bit-slow
     statusDuration: 60
     collidesTerrain: true

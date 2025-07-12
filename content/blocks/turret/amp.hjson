@@ -1,6 +1,6 @@
 {
   localizedName: Amp
-  description: Fires bolts that shock and slow enemies.
+  description: Fires slowing bolts at enemy targets.
   type: PowerTurret
   size: 1
   health: 600
@@ -13,14 +13,14 @@
   shootSound: lasershoot2
   coolantMultiplier: 6
   inaccuracy: 2
-  shootY: 2
+  shootY: 1.5
   ejectEffect: none
   shootCone: 25
   shoot:
   {
     type: ShootAlternate
     barrels: 2
-    spread: 1.5
+    spread: 3
   }
   consumes:
   {
@@ -38,13 +38,17 @@
     lifetime: 30
     speed: 4
     damage: 15
-    hitEffect: hitLancer
+    hitEffect: {
+        type: WaveEffect
+        lifetime: 10
+        sizeTo: 4
+        strokeTo: 0.5
+        colorFrom: ffffffff
+        colorTo: ffffffaa
+    }
     despawnEffect: none
-    lightning: 3
-    lightningColor: ffffffdd
-    lightningDamage: 6
-    lightningLength: 4
-    status: slow
+    despawnHit: false
+    status: newunits-bit-slow
     statusDuration: 60
     collidesTerrain: true
   }

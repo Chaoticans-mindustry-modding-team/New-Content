@@ -1,0 +1,19 @@
+{
+  localizedName: Large Alloy Wall
+  description: Protects structures from enemy projectiles.
+  type: Wall
+  size: 2
+  health: 2680
+  buildCostMultiplier: 2
+  requirements:
+  [
+    light-alloy/64
+  ]
+  category: defense
+  research: {
+      parent: alloy-wall
+      requirements: [
+        light-alloy/450
+      ]
+  }
+}

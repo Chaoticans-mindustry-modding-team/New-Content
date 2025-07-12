@@ -1,0 +1,9 @@
+{
+  type: StatusEffect
+  name: Bit Slow
+  speedMultiplier: 0.8
+  opposites: [
+    fast
+  ]
+  color: a2a2a2ff
+}

@@ -48,7 +48,7 @@
     statusDuration: 60
     collidesTerrain: true
   }
-  shootEffect: shoot
+  shootEffect: none
   drawer:
   {
     type: DrawTurret

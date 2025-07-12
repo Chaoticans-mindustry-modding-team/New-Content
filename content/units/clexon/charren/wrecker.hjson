@@ -36,8 +36,6 @@
       recoilTime: 45
       ejectEffect: casing2
       shootCone: 15
-      shootStatus: slow
-      shootStatusDuration: 45
       shake: 1.5
       shoot:
       {

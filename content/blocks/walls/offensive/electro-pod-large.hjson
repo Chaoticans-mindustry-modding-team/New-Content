@@ -29,7 +29,7 @@
     instantDisappear: true
     damage: 0
     despawnShake: 2
-    splashDamageRadius: 50
+    splashDamageRadius: 36
     splashDamage: 100
     status: charged
     statusDuration: 450
@@ -48,7 +48,7 @@
           type: WaveEffect
           colorFrom: ffd27eff
           colorTo: ffd27eff
-          sizeTo: 50
+          sizeTo: 36
           lifetime: 20
           interp: circleOut
         }
@@ -68,8 +68,8 @@
           colorTo: ffd27eff
           interp: circleOut
           sizeInterp: circleIn
-          length: 16
-          lifetime: 60
+          length: 36
+          lifetime: 45
         }
       ]
     }

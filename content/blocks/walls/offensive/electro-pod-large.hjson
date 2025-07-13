@@ -4,7 +4,7 @@
   type: Wall
   size: 2
   health: 460
-  buildCostMultiplier: 1.5
+  buildCostMultiplier: 1
   requirements:
   [
     cobalt/24

@@ -21,7 +21,7 @@
   hasItems: true
   itemCapacity: 20
   craftTime: 45
-  craftEffect: smeltSmoke
+  craftEffect: smeltsmoke
   updateEffect: none
   ambientSound: smelter
   ambientSoundVolume: 0.07

@@ -1,28 +1,23 @@
 {
-  localizedName: Large Scorchonite Pod
-  description:
-    '''
-    Protects structures from enemy projectiles. Creates a large firey explosion with flaming bullets upon destruction. 
-
-    [red]This explosion can damage your own team's blocks, so do not place it next to allied structures. Placing these near eachother could cause a chain reaction.
-    '''
+  localizedName: Large Electro-Pod
+  description: "Protects structures from enemy projectiles. Heavily discharges lightning upon destruction. \n\n[red]This lightning can damage your own team's blocks, so do not place it next to allied structures. Placing these near eachother could cause a chain reaction."
   type: Wall
   size: 2
-  health: 420
+  health: 460
   buildCostMultiplier: 1.5
   requirements:
   [
-    iron/20
-    scorchonite/39
+    cobalt/24
+    antimony/24
   ]
   category: defense
   research:
   {
-    parent: scorchonite-pod
+    parent: electro-pod-pod
     requirements:
     [
-      iron/45
-      scorchonite/60
+      cobalt/150
+      antimony/150
     ]
   }
   priority: 2
@@ -33,13 +28,16 @@
     type: BasicBulletType
     instantDisappear: true
     damage: 0
-    despawnShake: 4
-    splashDamageRadius: 53
-    splashDamage: 424
-    status: burning
-    statusDuration: 340
-    knockback: 4
-    hitEffect: hitFlameSmall
+    despawnShake: 2
+    splashDamageRadius: 36
+    splashDamage: 100
+    status: charged
+    statusDuration: 450
+    hitEffect: hitLancer
+    lightning: 9
+    lightningLength: 12
+    lightningColor: ffd27eff
+    lightningDamage: 36
     despawnHit: false
     despawnEffect:
     {
@@ -48,86 +46,32 @@
       [
         {
           type: WaveEffect
-          colorFrom: d49e68ff
-          colorTo: d49e68ff
-          sizeTo: 55
-          lifetime: 25
+          colorFrom: ffd27eff
+          colorTo: ffd27eff
+          sizeTo: 36
+          lifetime: 20
           interp: circleOut
         }
         {
           type: SoundEffect
-          sound: fireExplosion
+          sound: shockRifle
           maxPitch: 1
-          minVolume: 2
-          maxVolume: 2
-          effect:
-          {
-            type: ParticleEffect
-            particles: 12
-            colorFrom: d49e68aa
-            colorTo: d49e68aa
-            sizeFrom: 5
-            sizeTo: 0
-            interp: circleOut
-            sizeInterp: circleIn
-            length: 55
-            lifetime: 85
-          }
-        }
-        {
-          type: ParticleEffect
-          particles: 12
-          colorFrom: d49e68aa
-          colorTo: d49e68aa
-          sizeFrom: 3
-          sizeTo: 0
-          interp: circleOut
-          sizeInterp: circleIn
-          length: 55
-          lifetime: 75
+          minVolume: 1.4
+          maxVolume: 1.4
+          effect: none
         }
         {
           type: ParticleEffect
           line: true
           particles: 14
-          colorFrom: d49e68aa
-          colorTo: d49e68aa
+          colorFrom: ffd27eff
+          colorTo: ffd27eff
           interp: circleOut
           sizeInterp: circleIn
-          length: 60
-          lifetime: 25
+          length: 36
+          lifetime: 45
         }
       ]
-    }
-    fragBullets: 8
-    fragOnHit: false
-    fragLifeMin: 0.3
-    fragBullet:
-    {
-      type: BasicBulletType
-      damage: 16
-      status: burning
-      statusDuration: 72
-      knockback: 1
-      speed: 1
-      lifetime: 90
-      width: 9
-      height: 9
-      frontColor: f2ceaaff
-      backColor: d49e68ff
-      trailColor: d49e68ff
-      trailWidth: 2
-      trailLength: 12
-      despawnEffect:
-      {
-        type: MultiEffect
-        effects:
-        [
-          hitBulletSmall
-          hitFlameSmall
-        ]
-      }
-      hitEffect: none
     }
   }
 }

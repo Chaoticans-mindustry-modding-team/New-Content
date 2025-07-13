@@ -1,23 +1,28 @@
 {
-  localizedName: Large Electro-Pod
-  description: "Protects structures from enemy projectiles. Heavily discharges lightning upon destruction. \n\n[red]This lightning can damage your own team's blocks, so do not place it next to allied structures. Placing these near eachother could cause a chain reaction."
+  localizedName: Large Scorchonite Pod
+  description:
+    '''
+    Protects structures from enemy projectiles. Creates a large firey explosion with flaming bullets upon destruction. 
+
+    [red]This explosion can damage your own team's blocks, so do not place it next to allied structures. Placing these near eachother could cause a chain reaction.
+    '''
   type: Wall
   size: 2
-  health: 460
+  health: 420
   buildCostMultiplier: 1.5
   requirements:
   [
-    cobalt/24
-    antimony/24
+    iron/20
+    scorchonite/39
   ]
   category: defense
   research:
   {
-    parent: electro-pod-pod
+    parent: scorchonite-pod
     requirements:
     [
-      cobalt/150
-      antimony/150
+      iron/45
+      scorchonite/60
     ]
   }
   priority: 2
@@ -28,16 +33,13 @@
     type: BasicBulletType
     instantDisappear: true
     damage: 0
-    despawnShake: 2
-    splashDamageRadius: 36
-    splashDamage: 100
-    status: charged
-    statusDuration: 450
-    hitEffect: hitLancer
-    lightning: 9
-    lightningLength: 12
-    lightningColor: ffd27eff
-    lightningDamage: 36
+    despawnShake: 4
+    splashDamageRadius: 53
+    splashDamage: 424
+    status: burning
+    statusDuration: 340
+    knockback: 4
+    hitEffect: hitFlameSmall
     despawnHit: false
     despawnEffect:
     {
@@ -46,32 +48,86 @@
       [
         {
           type: WaveEffect
-          colorFrom: ffd27eff
-          colorTo: ffd27eff
-          sizeTo: 36
-          lifetime: 20
+          colorFrom: d49e68ff
+          colorTo: d49e68ff
+          sizeTo: 55
+          lifetime: 25
           interp: circleOut
         }
         {
           type: SoundEffect
-          sound: shockRifle
+          sound: fireExplosion
           maxPitch: 1
-          minVolume: 1.4
-          maxVolume: 1.4
-          effect: none
+          minVolume: 2
+          maxVolume: 2
+          effect:
+          {
+            type: ParticleEffect
+            particles: 12
+            colorFrom: d49e68aa
+            colorTo: d49e68aa
+            sizeFrom: 5
+            sizeTo: 0
+            interp: circleOut
+            sizeInterp: circleIn
+            length: 55
+            lifetime: 85
+          }
+        }
+        {
+          type: ParticleEffect
+          particles: 12
+          colorFrom: d49e68aa
+          colorTo: d49e68aa
+          sizeFrom: 3
+          sizeTo: 0
+          interp: circleOut
+          sizeInterp: circleIn
+          length: 55
+          lifetime: 75
         }
         {
           type: ParticleEffect
           line: true
           particles: 14
-          colorFrom: ffd27eff
-          colorTo: ffd27eff
+          colorFrom: d49e68aa
+          colorTo: d49e68aa
           interp: circleOut
           sizeInterp: circleIn
-          length: 36
-          lifetime: 45
+          length: 60
+          lifetime: 25
         }
       ]
+    }
+    fragBullets: 8
+    fragOnHit: false
+    fragLifeMin: 0.3
+    fragBullet:
+    {
+      type: BasicBulletType
+      damage: 16
+      status: burning
+      statusDuration: 72
+      knockback: 1
+      speed: 1
+      lifetime: 90
+      width: 9
+      height: 9
+      frontColor: f2ceaaff
+      backColor: d49e68ff
+      trailColor: d49e68ff
+      trailWidth: 2
+      trailLength: 12
+      despawnEffect:
+      {
+        type: MultiEffect
+        effects:
+        [
+          hitBulletSmall
+          hitFlameSmall
+        ]
+      }
+      hitEffect: none
     }
   }
 }

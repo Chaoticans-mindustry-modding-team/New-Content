@@ -1,5 +1,4 @@
 {
-  "type": "StatusEffect",
   "name": "Poisoned",
   "damage": 1.8,
   "color": "9f62d1ff",

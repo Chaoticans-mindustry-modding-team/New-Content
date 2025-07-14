@@ -17,7 +17,7 @@
   "armor": 0,
   "range": 315,
   "engineOffset": 9.75,
-  "TargetAir": true,
+  "targetAir": true,
   "itemCapacity": 130,
   "fogRadius": 0,
   "circleTarget": false,

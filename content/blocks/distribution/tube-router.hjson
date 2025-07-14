@@ -5,7 +5,6 @@
   speed: 4
   size: 1
   health: 260
-  armored: false
   configurable: false
   saveConfig: false
   requirements:

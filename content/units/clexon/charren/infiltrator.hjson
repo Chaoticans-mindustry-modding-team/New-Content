@@ -41,7 +41,7 @@
       bullet:
       {
         type: RailBulletType
-        collidesTerrain: true
+        collideTerrain: true
         lifetime: 10
         collidesTerrain: true
         damage: 11

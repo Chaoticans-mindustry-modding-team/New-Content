@@ -8,7 +8,6 @@
   "craftTime": 264,
   "hasPower": true,
   "hasItems": true,
-  "hasLiquid": false,
   "itemCapacity": 18,
   "health": 630,
   "craftEffect": "pulverize",

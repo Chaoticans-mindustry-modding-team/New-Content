@@ -4,7 +4,7 @@
   type: Sorter
   size: 1
   health: 160
-  inverted: true
+  invert: true
   requirements:
   [
     iron/2

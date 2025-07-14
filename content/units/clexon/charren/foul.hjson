@@ -9,7 +9,7 @@
   type: legs
   groundLayer: 75
   legCount: 4
-  legLength: 6
+  legLength: 10
   legMoveSpace: 1
   hovering: true
   shadowElevation: 0.3
@@ -33,7 +33,7 @@
       x: 0
       y: 2.5
       reload: 36
-      shootSound: shoot2
+      shootSound: shoot3
       top: false
       rotate: false
       recoil: 0
@@ -46,15 +46,15 @@
         shots: 3
         shotDelay: 0
       }
-      velocityRnd: 0.9
+      velocityRnd: 0.1
       bullet:
       {
         type: BasicBulletType
         collidesTerrain: true
         width: 8
         height: 10
-        shrinkY: 0.9
-        frontColor: ffffffff
+        shrinkY: 0.1
+        frontColor: ff9955ff
         backColor: ff7744ff
         hitColor: ff7744ff
         hitEffect:
@@ -66,7 +66,7 @@
                 type: WaveEffect
                 sizeTo: 4
                 lifetime: 10
-                colorFrom: ff7777ff
+                colorFrom: ff9955ff
                 colorTo: ff7744ff
                 strokeTo: 0.5
             }
@@ -80,17 +80,18 @@
                 strokeFrom: 1
                 strokeTo: 0.5
                 length: 6
-                colorFrom: ff7777ff
+                colorFrom: ff9955ff
                 colorTO: ff7744ff
             }
           ]
         }
-        despawnHit: false
+        despawnHit: true
+        despawnEffect: none
         damage: 36
         speed: 5
         lifetime: 26
         trailColor: ff7744ff
-        trailWidth: 0.4
+        trailWidth: 1
         trailLength: 8
         status: burning
         statusDuration: 200

@@ -62,8 +62,27 @@
           type: MultiEffect
           effects:
           [
-            hitColor
-            flameHit
+            {
+                type: WaveEffect
+                sizeTo: 4
+                lifetime: 10
+                colorFrom: ff7777ff
+                colorTo: ff7744ff
+                strokeTo: 0.5
+            }
+            {
+                type: ParticleEffect
+                particles: 7
+                lifetime: 13
+                line: true
+                lenFrom: 2.5
+                lenTo: 2
+                strokeFrom: 1
+                strokeTo: 0.5
+                length: 6
+                colorFrom: ff7777ff
+                colorTO: ff7744ff
+            }
           ]
         }
         despawnHit: false

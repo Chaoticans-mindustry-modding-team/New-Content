@@ -18,8 +18,7 @@
   "health": 790,
   "armor": 2,
   "engineOffset": 6,
-  "TargetAir": true,
-  "commandLimit": 5,
+  "targetAir": true,
   "circleTarget": true,
   "hitSize": 9,
   "outlineColor": "2D2F39FF",
@@ -84,23 +83,29 @@
       "reload": 1000000,
       "alternate": false,
       "shootCone": 360,
-      "shootOnDeath": false,
-      "shootEffect": {
-        "type": "ParticleEffect",
-        "line": true,
-        "sizeFrom": 7,
-        "sizeTo": 2,
-        "colorFrom": "FFFFFFFF",
-        "colorTo": "F21818FF",
-        "lifetime": 30,
-        "length": 24
-      },
+      "shootOnDeath": true,
+      "controllable": false,
       "shake": 3,
       "bullet": {
         "type": "ExplosionBulletType",
         "splashDamage": 80,
         "splashDamageRadius": 28,
-        "shooteffect": "massiveExplosion",
+        "shootEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            "massiveExplosion",
+            {
+              "type": "ParticleEffect",
+              "line": true,
+              "sizeFrom": 7,
+              "sizeTo": 2,
+              "colorFrom": "FFFFFFFF",
+              "colorTo": "F21818FF",
+              "lifetime": 30,
+              "length": 24
+            }
+          ]
+        },
         "hitEffect": "pulverize",
         "killShooter": false
       }

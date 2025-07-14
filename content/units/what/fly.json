@@ -9,8 +9,7 @@
         "armor": 0,
         "engineOffset": 3.5,
 		"engineSize": 0.5,
-		"TargetAir": true,
-        "commandLimit": 8,
+		"targetAir": true,
         "circleTarget": false,
 	    "weapons": [
 		    {
@@ -29,11 +28,11 @@
 	"rotateSpeed": 12.5,
     "x": 3,
     "y": 1,
-    "reload": 3,
-    "shootSound": "bolt",
+    "reload": 2,
+    "shootSound": "laserpew",
     "recoil": 2.5,
     "bullet": {
-		"damage": 10,
+		"damage": 30,
 		"speed": 999,
 		"maxRange": 35,
 	}

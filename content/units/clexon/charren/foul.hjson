@@ -1,0 +1,81 @@
+{
+  localizedName: Foul
+  description:
+    '''
+    Fires clusters of superheated iron at enemy targets.
+
+    [gray]Faction: [orange]Charren
+    '''
+  type: legs
+  groundLayer: 75
+  legCount: 4
+  legLength: 6
+  legMoveSpace: 1
+  hovering: true
+  shadowElevation: 0.3
+  speed: 0.5
+  drag: 0.3
+  accel: 0.5
+  flying: false
+  health: 560
+  hitSize: 10
+  range: 130
+  itemCapacity: 30
+  outlineColor: 13111cff
+  mechLegColor: 13111cff
+  rotateSpeed: 3
+  weapons:
+  [
+    {
+      name: foul-weapon
+      mirror: false
+      alternate: false
+      x: 0
+      y: 2.5
+      reload: 36
+      shootSound: shoot2
+      top: false
+      rotate: false
+      recoil: 0
+      ejectEffect: casing1
+      shootCone: 5
+      shootY: 0
+      inaccuracy: 15
+      shoot:
+      {
+        shots: 3
+        shotDelay: 0
+      }
+      velocityRnd: 0.9
+      bullet:
+      {
+        type: BasicBulletType
+        collidesTerrain: true
+        width: 8
+        height: 10
+        shrinkY: 0.9
+        frontColor: ffffffff
+        backColor: ff7744ff
+        hitColor: ff7744ff
+        hitEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            hitColor
+            flameHit
+          ]
+        }
+        despawnHit: false
+        damage: 36
+        speed: 5
+        lifetime: 26
+        trailColor: ff7744ff
+        trailWidth: 0.4
+        trailLength: 8
+        status: burning
+        statusDuration: 200
+      }
+    }
+  ]
+}

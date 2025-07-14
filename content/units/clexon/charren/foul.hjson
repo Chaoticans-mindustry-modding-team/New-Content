@@ -42,10 +42,10 @@
       ejectEffect: casing1
       shootCone: 5
       shootY: 0
-      inaccuracy: 15
+      inaccuracy: 10
       shoot:
       {
-        shots: 3
+        shots: 4
         shotDelay: 0
       }
       velocityRnd: 0.1
@@ -90,7 +90,7 @@
         }
         despawnHit: true
         despawnEffect: none
-        damage: 36
+        damage: 14
         speed: 5
         lifetime: 26
         trailColor: ff7744ff

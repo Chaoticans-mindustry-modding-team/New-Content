@@ -46,6 +46,7 @@
       bullet:
       {
         type: BasicBulletType
+        collideTerrain: true
         damage: 16
         speed: 4
         lifetime: 27

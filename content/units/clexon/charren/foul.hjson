@@ -13,6 +13,7 @@
   legContinuousMove: true
   lockLegBase: true
   legMoveSpace: 1
+  legForwardScl: 0.7
   hovering: true
   shadowElevation: 0.3
   speed: 0.5
@@ -35,7 +36,7 @@
       x: 0
       y: 2.5
       reload: 36
-      shootSound: shoot3
+      shootSound: none
       top: false
       rotate: false
       recoil: 0
@@ -60,6 +61,14 @@
         frontColor: ff9955ff
         backColor: ff7744ff
         hitColor: ff7744ff
+        shootEffect: {
+            type: SoundEffect
+            sound: shoot2
+            minVolume: 0.5
+            maxVolume: 0.5
+            maxPitch: 1
+            effect: none
+        }
         hitEffect:
         {
           type: MultiEffect
@@ -67,7 +76,7 @@
           [
             {
                 type: WaveEffect
-                sizeTo: 6
+                sizeTo:4
                 lifetime: 10
                 colorFrom: ff9955ff
                 colorTo: ff7744ff
@@ -76,15 +85,15 @@
             {
                 type: ParticleEffect
                 particles: 7
-                lifetime: 13
+                lifetime: 15
                 line: true
-                lenFrom: 2.5
-                lenTo: 1
+                lenFrom: 3
+                lenTo: 2
                 strokeFrom: 1
                 strokeTo: 0.5
-                length: 9
+                length: 10
                 colorFrom: ff9955ff
-                colorT0: ff7744ff
+                colorTo: ff7744ff
             }
           ]
         }

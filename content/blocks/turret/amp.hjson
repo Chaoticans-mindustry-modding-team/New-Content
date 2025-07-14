@@ -14,7 +14,6 @@
   coolantMultiplier: 5
   inaccuracy: 2
   shootY: 1.5
-  ejectEffect: none
   shootCone: 25
   shoot:
   {
@@ -58,7 +57,7 @@
     despawnHit: true
     status: newunits-bit-slow
     statusDuration: 60
-    collidesTerrain: true
+    collideTerrain: true
   }
   shootEffect: none
   drawer:

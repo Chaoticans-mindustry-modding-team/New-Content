@@ -10,6 +10,8 @@
   groundLayer: 75
   legCount: 4
   legLength: 10
+  legContinuousMove: true
+  lockLegBase: true
   legMoveSpace: 1
   hovering: true
   shadowElevation: 0.3
@@ -50,7 +52,8 @@
       bullet:
       {
         type: BasicBulletType
-        collidesTerrain: true
+        collideTerrain: true
+        recoil: 0.4
         width: 8
         height: 10
         shrinkY: 0.1
@@ -64,7 +67,7 @@
           [
             {
                 type: WaveEffect
-                sizeTo: 4
+                sizeTo: 6
                 lifetime: 10
                 colorFrom: ff9955ff
                 colorTo: ff7744ff
@@ -76,12 +79,12 @@
                 lifetime: 13
                 line: true
                 lenFrom: 2.5
-                lenTo: 2
+                lenTo: 1
                 strokeFrom: 1
                 strokeTo: 0.5
-                length: 6
+                length: 9
                 colorFrom: ff9955ff
-                colorTO: ff7744ff
+                colorT0: ff7744ff
             }
           ]
         }

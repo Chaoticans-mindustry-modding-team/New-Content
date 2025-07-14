@@ -70,7 +70,7 @@
       frontColor: c7a7a7ff
       backColor: 856d6dff
       ammoMultiplier: 2
-      collidesTerrain: true
+      collideTerrain: true
     }
     */
     cobalt:
@@ -111,7 +111,7 @@
       }
       frontColor: 8691cfff
       backColor: 5e73db
-      collidesTerrain: true
+      collideTerrain: true
     }
     scorchonite:
     {
@@ -155,7 +155,7 @@
       backColor: d4733bff
       status: burning
       statusDuration: 662
-      collidesTerrain: true
+      collideTerrain: true
     }
   }
   drawer:

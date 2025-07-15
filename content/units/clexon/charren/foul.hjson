@@ -22,14 +22,11 @@
   flying: false
   health: 560
   hitSize: 10
-  range: 104
+  range: 130
   itemCapacity: 30
   outlineColor: 13111cff
   mechLegColor: 13111cff
   rotateSpeed: 3
-  immunities: [
-    burning
-  ]
   weapons:
   [
     {
@@ -38,7 +35,7 @@
       alternate: false
       x: 0
       y: 2.5
-      reload: 36
+      reload: 26
       shootSound: none
       top: false
       rotate: false
@@ -46,7 +43,7 @@
       ejectEffect: casing1
       shootCone: 5
       shootY: 0
-      inaccuracy: 5
+      inaccuracy: 10
       shoot:
       {
         shots: 4
@@ -57,7 +54,7 @@
       {
         type: BasicBulletType
         collideTerrain: true
-        recoil: 0.4
+        recoil: 0.15
         width: 8
         height: 10
         shrinkY: 0.1
@@ -67,10 +64,9 @@
         shootEffect: {
             type: SoundEffect
             sound: shoot2
-            minVolume: 0.9
-            maxVolume: 0.9
-            minPitch: 0.7
-            maxPitch: 0.9
+            minVolume: 0.5
+            maxVolume: 0.5
+            maxPitch: 1
             effect: none
         }
         hitEffect:
@@ -104,7 +100,7 @@
         despawnHit: true
         despawnEffect: none
         damage: 14
-        speed: 4
+        speed: 5
         lifetime: 26
         trailColor: ff7744ff
         trailWidth: 1

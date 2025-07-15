@@ -5,6 +5,7 @@
   size: 2
   health: 320
   powerProduction: 1.4
+  floating: true
   generateEffect: {
       type: ParticleEffect
       particles: 3

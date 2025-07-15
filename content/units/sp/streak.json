@@ -24,7 +24,6 @@
   "health": 320,
   "rotateSpeed": 4,
   "trailLength": 0,
-  "rotateShooting": false,
   "weapons": [
     {
       "name": "streak-weapon",
@@ -40,13 +39,13 @@
       "shootCone": 25,
       "inaccuracy": 0,
       "shake": 3,
-      "smokeEffect": "none",
       "ejectEffect": "casing3Double",
       "heatColor": "BF92F9FF",
       "cooldownTime": 400,
       "bullet": {
         "type": "ShrapnelBulletType",
         "shootEffect": "unitDust",
+        "smokeEffect": "none",
         "damage": 100,
         "serrations": 0,
         "length": 48,

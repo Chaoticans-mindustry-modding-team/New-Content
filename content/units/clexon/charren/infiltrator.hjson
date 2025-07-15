@@ -18,6 +18,9 @@
   outlineColor: 13111cff
   mechLegColor: 13111cff
   rotateSpeed: 4
+  immunities: [
+    burning
+  ]
   weapons:
   [
     {

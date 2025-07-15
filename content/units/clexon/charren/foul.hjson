@@ -22,7 +22,7 @@
   flying: false
   health: 560
   hitSize: 10
-  range: 130
+  range: 104
   itemCapacity: 30
   outlineColor: 13111cff
   mechLegColor: 13111cff
@@ -46,7 +46,7 @@
       ejectEffect: casing1
       shootCone: 5
       shootY: 0
-      inaccuracy: 10
+      inaccuracy: 5
       shoot:
       {
         shots: 4
@@ -104,7 +104,7 @@
         despawnHit: true
         despawnEffect: none
         damage: 14
-        speed: 5
+        speed: 4
         lifetime: 26
         trailColor: ff7744ff
         trailWidth: 1

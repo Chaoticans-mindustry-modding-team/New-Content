@@ -20,7 +20,6 @@
   "accel": 0.4,
   "rotateSpeed": 3.3,
   "trailLength": 35,
-  "rotateShooting": false,
   "immunities": [
     "burning",
     "sapped"
@@ -45,7 +44,7 @@
         "lifetime": 60,
         "hitEffect": "flakExplosion",
         "despawnEffect": "none",
-        "despawHit": true,
+        "despawnHit": true,
         "splashDamageRadius": 9,
         "splashDamage": 13
       }

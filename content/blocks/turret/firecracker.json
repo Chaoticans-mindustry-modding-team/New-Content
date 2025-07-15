@@ -6,7 +6,7 @@
   "size": 3,
   "health": 540,
   "maxAmmo": 25,
-  "reload": 134,
+  "reload": 155,
   "range": 180,
   "targetAir": true,
   "targetGround": true,
@@ -37,7 +37,7 @@
       "splashDamageRadius": 32,
       "splashDamage": 85,
       "fragLifeMin": 0.7,
-      "frags": 7,
+      "fragBullets": 7,
       "fragBullet": {
         "type": "BasicBulletType",
         "damage": 20,
@@ -51,7 +51,7 @@
         "splashDamageRadius": 11,
         "splashDamage": 34,
         "fragLifeMin": 0.2,
-        "frags": 12,
+        "fragBullets": 12,
         "fragBullet": {
           "type": "BasicBulletType",
           "damage": 7,
@@ -83,7 +83,7 @@
       "splashDamageRadius": 32,
       "splashDamage": 85,
       "fragLifeMin": 0.7,
-      "frags": 7,
+      "fragBullets": 7,
       "fragBullet": {
         "type": "BasicBulletType",
         "damage": 15,
@@ -99,7 +99,7 @@
         "splashDamageRadius": 11,
         "splashDamage": 27,
         "fragLifeMin": 0.4,
-        "frags": 12,
+        "fragBullets": 12,
         "fragBullet": {
           "type": "BasicBulletType",
           "damage": 7,
@@ -136,7 +136,7 @@
       "statusDuration": 720,
       "makeFire": true,
       "fragLifeMin": 0.7,
-      "frags": 7,
+      "fragBullets": 7,
       "fragBullet": {
         "type": "BasicBulletType",
         "damage": 17,
@@ -155,7 +155,7 @@
         "status": "burning",
         "statusDuration": 335,
         "fragLifeMin": 0.2,
-        "frags": 12,
+        "fragBullets": 12,
         "fragBullet": {
           "type": "BasicBulletType",
           "damage": 9,
@@ -196,7 +196,7 @@
       "knockback": 6,
       "fragRandomSpread": 70,
       "fragLifeMin": 0.7,
-      "frags": 7,
+      "fragBullets": 7,
       "fragBullet": {
         "type": "BasicBulletType",
         "damage": 26,
@@ -213,7 +213,7 @@
         "splashDamage": 34,
         "knockback": 3,
         "fragLifeMin": 0.2,
-        "frags": 12,
+        "fragBullets": 12,
         "fragBullet": {
           "type": "BasicBulletType",
           "damage": 10,

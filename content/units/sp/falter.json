@@ -24,7 +24,6 @@
   "health": 980,
   "rotateSpeed": 2.3,
   "trailLength": 22,
-  "rotateShooting": false,
   "range": 192,
   "weapons": [
     {
@@ -41,7 +40,6 @@
       "shootCone": 45,
       "inaccuracy": 0,
       "shake": 4.5,
-      "smokeEffect": "none",
       "ejectEffect": "casing3Double",
       "heatColor": "BF92F9FF",
       "cooldownTime": 450,
@@ -54,6 +52,7 @@
         "width": 12,
         "lifetime": 40,
         "collidesAir": true,
+        "smokeEffect": "none",
         "hitEffect": {
           "type": "ParticleEffect",
           "particles": 5,
@@ -89,7 +88,6 @@
       "shootCone": 45,
       "inaccuracy": 0,
       "shake": 4.5,
-      "smokeEffect": "none",
       "ejectEffect": "none",
       "display": false,
       "useAttackRange": false,
@@ -101,6 +99,7 @@
         "speed": 14,
         "drag": 0.07,
         "lifetime": 80,
+        "smokeEffect": "none",
         "sprite": "newunits-shockwave",
         "damage": 60,
         "knockback": 15,

@@ -45,7 +45,7 @@
         type: ExplosionBulletType
         splashDamage: 216
         splashDamageRadius: 45
-        instantDisapear: false
+        instantDisappear: false
         absorbable: false
         hittable: false
         status: charged
@@ -71,7 +71,6 @@
                 interp: circleOut
                 sizeInterp: circleIn
                 region: newunits-square
-                rotation: 45
                 length: 46
                 offset: 45
                 colorFrom: a6fbffff

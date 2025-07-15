@@ -5,7 +5,6 @@
   speed: 4
   size: 1
   health: 160
-  armored: false
   requirements:
   [
     iron/8

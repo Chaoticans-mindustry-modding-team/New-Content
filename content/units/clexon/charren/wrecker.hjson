@@ -41,7 +41,7 @@
       {
         type: ShootSpread
         shots: 3
-        spacing: 3.5
+        spread: 8
       }
       bullet:
       {

@@ -22,7 +22,6 @@
   "range": 320,
   "rotateSpeed": 2.7,
   "trailLength": 20,
-  "rotateShooting": false,
   "weapons": [
     {
       "name": "mount-weapon",

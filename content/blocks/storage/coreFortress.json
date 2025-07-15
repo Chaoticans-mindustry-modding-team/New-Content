@@ -3,11 +3,11 @@
   "description": "Core of the base. Heavily armored with multiple layers. Stores a colossal amount of resources.",
   "details": "The fourth and first experimental iteration.",
   "requirements": [
-    "copper/13000",
     "lead/13000",
-    "titanium/8000",
-    "plastanium/7000",
-    "thorium/6000"
+    "titanium/13000",
+    "thorium/8000",
+    "phase-fabric/7000",
+    "surge-alloy/6000"
   ],
   "type": "CoreBlock",
   "itemCapacity": 20000,
@@ -15,17 +15,16 @@
   "health": 13700,
   "armor": 25,
   "category": "effect",
-  "researchCostMultplier": 0.12,
   "unitType": "delta",
   "unitCapModifier": 32,
   "thrusterLength": 12,
   "research": {
     "requirements": [
-      "copper/100000",
       "lead/100000",
-      "titanium/59000",
-      "plastanium/51000",
-      "thorium/43000"
+      "titanium/100000",
+      "thorium/59000",
+      "phase-fabric/51000",
+      "surge-alloy/43000"
     ],
     "parent": "core-nucleus"
   }

@@ -10,7 +10,6 @@
   "powerProduction": 0.5,
   "itemDuration": 330,
   "generateEffectRange": 0,
-  "generateEffectChance": 0.2,
   "generateEffect": {
     "type": "MultiEffect",
     "effects": [

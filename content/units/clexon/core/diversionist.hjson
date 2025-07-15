@@ -77,7 +77,6 @@
         despawnEffect: none
         hitEffect: none
         pierceEffect: none
-        collidesTerrain: true
         endEffect:
         {
           type: ParticleEffect

@@ -1,5 +1,4 @@
 {
-  type: StatusEffect
   name: Bit Slow
   speedMultiplier: 0.8
   opposites: [

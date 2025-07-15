@@ -1,5 +1,4 @@
 {
-  "type": "StatusEffect",
   "name": "Maimed",
   "damage": 0.4,
   "color": "7AD948FF",

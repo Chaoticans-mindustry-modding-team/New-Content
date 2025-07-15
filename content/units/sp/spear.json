@@ -23,7 +23,6 @@
   "health": 780,
   "rotateSpeed": 3,
   "trailLength": 20,
-  "rotateShooting": false,
   "weapons": [
     {
       "name": "spear-weapon",
@@ -39,7 +38,6 @@
       "shootCone": 25,
       "inaccuracy": 0,
       "shake": 4,
-      "smokeEffect": "none",
       "ejectEffect": "casing3Double",
       "heatColor": "BF92F9FF",
       "cooldownTime": 450,
@@ -49,6 +47,7 @@
         "damage": 200,
         "serrations": 0,
         "length": 62,
+        "smokeEffect": "none",
         "width": 9,
         "lifetime": 40,
         "collidesAir": false,

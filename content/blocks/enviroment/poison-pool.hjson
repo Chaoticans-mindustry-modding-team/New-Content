@@ -6,6 +6,7 @@ statusDuration: 280
 speedMultiplier: 0.1
 variants: 0
 liquidDrop: poison
+liquidMultiplier: 1.5
 isLiquid: true
 cacheLayer: water
 attributes: [

@@ -67,9 +67,10 @@
         shootEffect: {
             type: SoundEffect
             sound: shoot2
-            minVolume: 0.5
-            maxVolume: 0.5
-            maxPitch: 1
+            minVolume: 0.9
+            maxVolume: 0.9
+            minPitch: 0.7
+            maxPitch: 0.9
             effect: none
         }
         hitEffect:

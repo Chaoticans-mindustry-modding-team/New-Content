@@ -28,9 +28,7 @@
   "trailScl": 3.25,
   "waveTrailX": 14,
   "waveTrailY": -32,
-  "rotateShooting": false,
   "range": 350,
-  "aimDist": 2,
   "immunities": [
     "slow"
   ],
@@ -49,7 +47,6 @@
       "shootCone": 45,
       "inaccuracy": 0,
       "shake": 10,
-      "smokeEffect": "none",
       "ejectEffect": "none",
       "heatColor": "BF92F9FF",
       "cooldownTime": 600,
@@ -66,6 +63,7 @@
               "lifetime": 120,
               "colorFrom": "BF92F9FF",
               "colorTo": "BF92F9FF",
+              "smokeEffect": "none",
               "sides": 6,
               "followParent": false
             },
@@ -138,7 +136,6 @@
       "shootCone": 45,
       "inaccuracy": 0,
       "shake": 4.5,
-      "smokeEffect": "none",
       "ejectEffect": "none",
       "display": false,
       "useAttackRange": false,
@@ -164,6 +161,7 @@
         "reflectable": false,
         "absorbable": false,
         "hitSound": "none",
+        "smokeEffect": "none",
         "despawnSound": "plasmaboom",
         "keepVelocity": false,
         "despawnEffect": {
@@ -219,10 +217,10 @@
               "type": "SoundEffect",
               "effect": "none",
               "sound": "sap",
-              "minSoundPitch": 1,
-              "maxSoundPitch": 1.4,
-              "minSoundVolume": 1.5,
-              "maxSoundVolume": 1.5
+              "minPitch": 1,
+              "maxPitch": 1.4,
+              "minVolume": 1.5,
+              "maxVolume": 1.5
             }
           ]
         },
@@ -243,7 +241,6 @@
       "shootSound": "shootBig",
       "inaccuracy": 7,
       "velocityRnd": 0.6,
-      "smokeEffect": "shootBigSmoke",
       "ejectEffect": "casing2Double",
       "shake": 1,
       "shootY": 8,
@@ -260,6 +257,7 @@
         "height": 16,
         "shrinkY": 0.8,
         "knockback": 4,
+        "smokeEffect": "shootBigSmoke",
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
         "trailWidth": 2,
@@ -335,7 +333,6 @@
       "shootSound": "shootBig",
       "inaccuracy": 7,
       "velocityRnd": -0.4,
-      "smokeEffect": "shootBigSmoke",
       "ejectEffect": "casing2Double",
       "shake": 1,
       "shootY": 8,
@@ -352,6 +349,7 @@
         "height": 16,
         "shrinkY": 0.8,
         "knockback": 3,
+        "smokeEffect": "shootBigSmoke",
         "frontColor": "BF92F9FF",
         "backColor": "9D70D7FF",
         "trailWidth": 2,

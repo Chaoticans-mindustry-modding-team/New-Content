@@ -16,7 +16,6 @@
   hitSize: 9
   targetAir: false
   faceTarget: false
-  commandLimit: 5
   circleTarget: true
   lowAltitude: false
   outlineColor: 13111cff

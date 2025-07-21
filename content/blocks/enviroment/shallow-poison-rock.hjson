@@ -1,6 +1,6 @@
 type: floor
 name: Shallow Poison Rock
-status: newunits-poisoned
+status: slow
 statusDuration: 45
 speedMultiplier: 0.35
 variants: 3

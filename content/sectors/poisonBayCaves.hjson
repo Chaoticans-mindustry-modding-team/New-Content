@@ -12,5 +12,9 @@
   sector: 217
   research: {
       parent: ferricPlains
+      objectives: [
+        type: SectorComplete
+        preset: ferricPlains
+      ]
   }
 }

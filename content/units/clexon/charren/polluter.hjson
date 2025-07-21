@@ -1,0 +1,122 @@
+{
+  localizedName: Polluter
+  description:
+    '''
+    Fires a stream of soot and flame at nearby enemy targets.
+
+    [gray]Faction: [orange]Charren
+    '''
+  type: legs
+  groundLayer: 76
+  legCount: 6
+  legLength: 17
+  legStraightness: 0.3
+  legContinuousMove: true
+  lockLegBase: true
+  legMoveSpace: 1.3
+  legForwardScl: 0.7
+  hovering: true
+  shadowElevation: 0.3
+  speed: 0.4
+  drag: 0.3
+  accel: 0.5
+  flying: false
+  health: 1120
+  hitSize: 17
+  range: 130
+  itemCapacity: 50
+  outlineColor: 13111cff
+  mechLegColor: 13111cff
+  rotateSpeed: 2.2
+  immunities:
+  [
+    burning
+  ]
+  weapons:
+  [
+    {
+      name: polluter-flamethrower
+      mirror: true
+      alternate: false
+      x: 9
+      y: 0
+      reload: 5
+      shootSound: flame3
+      top: false
+      rotate: false
+      recoil: 1
+      recoilTime: 30
+      cooldownTime: 60
+      ejectEffect: none
+      shootCone: 13
+      shootY: 4
+      inaccuracy: 0
+      bullet:
+      {
+        type: BulletType
+        speed: 7
+        lifetime: 12
+        hitSize: 9
+        status: burning
+        statusDuration: 260
+        knockback: 0.8
+        shootEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            {
+              type: ParticleEffect
+              particles: 3
+              length: 84
+              interp: circleOut
+              sizeInterp: circleIn
+              colorFrom: 524f49
+              colorTo: 3d3b36ff
+              sizeFrom: 3
+              sizeTo: 0
+              lifetime: 20
+              followParent: true
+              cone: 10
+            }
+            {
+              type: ParticleEffect
+              particles: 5
+              length: 84
+              interp: circleOut
+              sizeInterp: circleIn
+              colorFrom: ffef73ff
+              colorTo: e89f31ff
+              sizeFrom: 3
+              sizeTo: 0
+              lifetime: 20
+              followParent: true
+              cone: 10
+            }
+          ]
+        }
+        hitEffect:
+        {
+          type: ParticleEffect
+          particles: 4
+          length: 8
+          interp: circleOut
+          sizeInterp: circleIn
+          colorFrom: ffef73ff
+          colorTo: e89f31ff
+          line: true
+          lenFrom: 2
+          lenTo: 1
+          strokeFrom: 1
+          strokeTo: 0.5
+          lifetime: 20
+          followParent: true
+          rotWithParent: true
+          cone: 18
+        }
+        keepVelocity: false
+        hittable: false
+      }
+    }
+  ]
+}

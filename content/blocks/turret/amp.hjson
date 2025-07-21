@@ -56,7 +56,7 @@
     despawnEffect: none
     despawnHit: true
     status: newunits-bit-slow
-    statusDuration: 60
+    statusDuration: 20
     collideTerrain: true
   }
   shootEffect: none

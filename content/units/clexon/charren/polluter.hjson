@@ -2,19 +2,20 @@
   localizedName: Polluter
   description:
     '''
-    Fires a stream of soot and flame at nearby enemy targets.
+    Fires a stream of sulfur flame at nearby enemy targets.
 
     [gray]Faction: [orange]Charren
     '''
   type: legs
   groundLayer: 76
   legCount: 6
-  legLength: 17
+  legLength: 16
   legStraightness: 0.3
   legContinuousMove: true
   lockLegBase: true
-  legMoveSpace: 1.3
+  legMoveSpace: 0.6
   legForwardScl: 0.7
+  stepShake: 0
   hovering: true
   shadowElevation: 0.3
   speed: 0.4
@@ -22,7 +23,7 @@
   accel: 0.5
   flying: false
   health: 1120
-  hitSize: 17
+  hitSize: 14
   range: 130
   itemCapacity: 50
   outlineColor: 13111cff
@@ -38,9 +39,9 @@
       name: polluter-flamethrower
       mirror: true
       alternate: false
-      x: 9
-      y: 0
-      reload: 5
+      x: 7.5
+      y: 1
+      reload: 3.5
       shootSound: flame3
       top: false
       rotate: false
@@ -55,11 +56,12 @@
       {
         type: BulletType
         speed: 7
-        lifetime: 12
+        lifetime: 7
         hitSize: 9
         status: burning
         statusDuration: 260
-        knockback: 0.8
+        knockback: 0.4
+        damage: 26
         shootEffect:
         {
           type: MultiEffect
@@ -67,29 +69,15 @@
           [
             {
               type: ParticleEffect
-              particles: 3
-              length: 84
-              interp: circleOut
-              sizeInterp: circleIn
-              colorFrom: 524f49
-              colorTo: 3d3b36ff
-              sizeFrom: 3
-              sizeTo: 0
-              lifetime: 20
-              followParent: true
-              cone: 10
-            }
-            {
-              type: ParticleEffect
-              particles: 5
-              length: 84
+              particles: 7
+              length: 49
               interp: circleOut
               sizeInterp: circleIn
               colorFrom: ffef73ff
               colorTo: e89f31ff
-              sizeFrom: 3
+              sizeFrom: 2
               sizeTo: 0
-              lifetime: 20
+              lifetime: 40
               followParent: true
               cone: 10
             }
@@ -116,6 +104,8 @@
         }
         keepVelocity: false
         hittable: false
+        despawnEffect: none
+        despawnHit: false
       }
     }
   ]

@@ -6,7 +6,7 @@
   health: 515
   outlineColor: 13111cff
   maxAmmo: 20
-  reload: 45
+  reload: 50
   range: 72
   targetAir: true
   targetGround: true
@@ -17,16 +17,17 @@
   velocityRnd: 0.6
   shake: 0.5
   shootY: 2
+  ammoPerShot: 3
   shoot:
   {
     shots: 5
   }
   consumes:
   {
-    power: 0.8
+    power: 1
     coolant:
     {
-      amount: 0.15
+      amount: 0.17
     }
   }
   ammoTypes:

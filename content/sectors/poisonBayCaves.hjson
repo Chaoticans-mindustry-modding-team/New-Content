@@ -11,10 +11,12 @@
   planet: clexon
   sector: 217
   research: {
-      parent: ferricPlains
-      objectives: [
+    parent: ferricPlains
+    objectives: [
+      {
         type: SectorComplete
         preset: ferricPlains
-      ]
+      }
+    ]
   }
 }

@@ -61,7 +61,7 @@
         status: burning
         statusDuration: 260
         knockback: 0.4
-        damage: 11
+        damage: 18
         shootEffect:
         {
           type: MultiEffect

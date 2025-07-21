@@ -4,7 +4,7 @@
   flammability: 2
   hideDetails: false
   cost: 1
-  hardness: 1
+  hardness: 0
   color: 964b3cff
   research:
   {

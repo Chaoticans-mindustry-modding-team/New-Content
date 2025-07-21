@@ -10,6 +10,7 @@
     {
       liquid: water 
       //placeholder, make a booster liquid later, or possibly a booster item
+      // just kidding you can use water because poison water exists, cryofluid exists, so water exists (in low quantities and extraction of coolants)
       amount: 0.31
       booster: true
       optional: true
@@ -17,8 +18,8 @@
   }
   type: Drill
   tier: 2
-  drillTime: 80
-  liquidBoostIntensity: 1.1
+  drillTime: 110
+  liquidBoostIntensity: 1.2
   category: production
   requirements:
   [

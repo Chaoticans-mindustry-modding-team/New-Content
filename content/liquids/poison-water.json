@@ -1,6 +1,6 @@
 {
   "localizedName": "Poison Water",
-  "description": "Water contaminated with Poison. Unusable as a coolant because that would corrode the machiner,y but it can be stored due to it's corrosive effects being less potent due to its dilution with water.",
+  "description": "Water contaminated with Poison. Unusable as a coolant.",
   "details": "Poison is excellent at spreading through water.",
   "temperature": 0.5,
   "heatCapacity": 0.3,

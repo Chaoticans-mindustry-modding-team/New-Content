@@ -12,6 +12,7 @@
   ]
   rotBridgeReplacement: iron-bridge-conduit
   junctionReplacement: iron-liquid-crosser
+  category: liquid
   research:
   {
     parent: micro-pump

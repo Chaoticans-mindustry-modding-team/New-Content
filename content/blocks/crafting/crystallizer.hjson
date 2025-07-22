@@ -30,7 +30,7 @@
         colorTo: bd42ffaa
         interp: linear
         sizeInterp: slope
-        lifetime: 20
+        lifetime: 45
         sizeFrom: 0
         sizeTo: 3
         length: 16

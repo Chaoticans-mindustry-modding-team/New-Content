@@ -4,5 +4,5 @@ variants: 4
 mapColor: 310094ff
 wall: selevic-stone-wall
 attributes: {
-  selevite: 0.5
+  crystal: 1
 }

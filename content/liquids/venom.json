@@ -1,8 +1,9 @@
 {
   "localizedName": "Venom",
-  "description": "Highly poisonous, acidic, and corrosive. Capable of hindering enemy mechanics and circutry.",
+  "description": "Synthetic acid capable of severely hindering mechanics and programming.",
   "temperature": 0.5,
   "heatCapacity": 0.25,
   "effect": "newunits-maimed",
-  "color": "7AD948FF"
+  "color": "7AD948FF",
+  "coolant": false
 }

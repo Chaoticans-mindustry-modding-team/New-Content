@@ -1,0 +1,85 @@
+{
+  name: Tritonium Calefactor
+  description: 
+  type: GenericCrafter
+  size: 3
+  craftTime: 120
+  hasPower: true
+  hasLiquids: true
+  hasItems: true
+  liquidCapacity: 15
+  itemCapacity: 20
+  ambientSound: furnace
+  ambientSoundVolume: 0.1
+  craftEffect:
+  {
+      type: ParticleEffect
+      particles: 5
+      region: newunits-square
+      offset: 45
+      colorFrom: add0dbff
+      colorTo: add0dbff
+      lifetime: 20
+      sizeFrom: 4
+      sizeTo: 0
+      length: 9
+  }
+  drawer: {
+    type: DrawMulti
+    drawers:
+    [
+      {
+        type: DrawRegion
+        suffix: -bottom
+      }
+      {
+        type: DrawLiquidTile
+        drawLiquid: slag
+        alpha: 1
+      }
+      {
+        type: DrawBubbles
+        color: ffbd94ff
+        amount: 8
+        spread: 4
+      }
+      {
+        type: DrawDefault
+      }
+      {
+        type: DrawGlowRegion
+        suffix: -glow
+        color: eaa270ff
+      }
+    ]
+  }
+  outputItem: tritonium/5
+  consumes:
+  {
+    power: 2.1
+    items: [
+      iron/3
+    ]
+    liquids:
+    [
+      slag/0.2
+    ]
+  }
+  requirements:
+  [
+    iron/60
+    antimony/22
+    light-alloy/25
+    selevite/20
+  ]
+  category: crafting
+  research: {
+    parent: small-alloy-forge
+    requirements: [
+      iron/250
+      antimony/100
+      light-alloy/120
+      selevite/75
+    ]
+  }
+}

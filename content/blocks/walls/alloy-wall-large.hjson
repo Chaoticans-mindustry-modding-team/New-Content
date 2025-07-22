@@ -1,9 +1,10 @@
 {
   localizedName: Large Alloy Wall
-  description: Protects structures from enemy projectiles.
+  description: Protects structures from enemy projectiles. Armored
   type: Wall
   size: 2
-  health: 2680
+  health: 1840
+  armor: 6
   buildCostMultiplier: 4
   requirements:
   [

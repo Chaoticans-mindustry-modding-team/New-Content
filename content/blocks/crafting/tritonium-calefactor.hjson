@@ -3,7 +3,7 @@
   description: Forges slag and iron into tritonium.
   type: GenericCrafter
   size: 3
-  craftTime: 30
+  craftTime: 45
   hasPower: true
   hasLiquids: true
   hasItems: true
@@ -14,7 +14,7 @@
   craftEffect:
   {
       type: ParticleEffect
-      particles: 5
+      particles: 4
       region: newunits-square
       offset: 45
       colorFrom: add0dbff
@@ -22,7 +22,7 @@
       lifetime: 20
       sizeFrom: 4
       sizeTo: 0
-      length: 9
+      length: 16
   }
   drawer: {
     type: DrawMulti
@@ -50,20 +50,19 @@
         type: DrawGlowRegion
         suffix: -glow
         color: eaa270aa
-        layer: 35.01
       }
     ]
   }
-  outputItem: tritonium/2
+  outputItem: tritonium/3
   consumes:
   {
     power: 2.1
     items: [
-      iron/3
+      iron/2
     ]
     liquids:
     [
-      slag/0.2
+      slag/0.1
     ]
   }
   requirements:

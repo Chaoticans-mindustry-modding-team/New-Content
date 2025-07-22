@@ -7,7 +7,7 @@
   buildCostMultiplier: 2
   requirements:
   [
-    iron/64
+    iron/24
   ]
   category: defense
   research: {

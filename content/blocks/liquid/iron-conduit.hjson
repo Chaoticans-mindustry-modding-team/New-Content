@@ -6,6 +6,7 @@
   health: 90
   liquidCapacity: 10
   liquidPressure: 1.2
+  botColor: 1c1a24ff
   requirements:
   [
     iron/1

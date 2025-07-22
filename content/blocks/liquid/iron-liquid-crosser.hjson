@@ -10,6 +10,7 @@
     iron/5
     cobalt/2
   ]
+  category: liquid
   research:
   {
     parent: iron-conduit

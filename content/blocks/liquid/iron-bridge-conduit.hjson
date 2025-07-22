@@ -1,5 +1,5 @@
 {
-  localizedName: Iron Liquid Bridge
+  localizedName: Iron Bridge Conduit
   description: Transports liquids over structures and terrain. Stores a small amount of liquid.
   type: DirectionLiquidBridge
   size: 1

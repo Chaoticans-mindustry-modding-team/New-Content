@@ -8,6 +8,6 @@
   color: FF7777FF
   research:
   {
-    parent: tritonium
+    parent: heavy-alloy
   }
 }

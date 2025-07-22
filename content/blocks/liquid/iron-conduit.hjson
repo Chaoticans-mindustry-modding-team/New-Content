@@ -10,8 +10,8 @@
   [
     iron/1
   ]
-  rotBridgeReplacement: iron-liquid-splitter
-  junctionReplacement: tube-junction
+  rotBridgeReplacement: iron-bridge-conduit
+  junctionReplacement: iron-liquid-crosser
   research:
   {
     parent: micro-pump

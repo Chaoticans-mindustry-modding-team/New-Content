@@ -11,7 +11,7 @@
   liquidCapacity: 80
   itemCapacity: 20
   ambientSound: freezerloop
-  ambientSoundVolume: 0.02
+  ambientSoundVolume: 0.04
   attribute: crystal
   baseEfficiency: 1
   maxBoost: 6
@@ -30,7 +30,7 @@
         colorTo: bd42ffaa
         interp: linear
         sizeInterp: slope
-        lifetime: 45
+        lifetime: 60
         sizeFrom: 0
         sizeTo: 3
         length: 16
@@ -65,9 +65,7 @@
         amount: 6
         spread: 3
         sides: 4
-        strokeMin: 0.3
-        fill: true
-        timeScl: 60
+        strokeMin: 0
       }
       {
         type: DrawDefault

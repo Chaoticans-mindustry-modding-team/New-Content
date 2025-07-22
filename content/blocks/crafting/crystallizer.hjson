@@ -1,0 +1,111 @@
+{
+  name: Crystallizer
+  description: Crystallizes certain chemicals out of Poison to make selevite crystals. More efficient on crystal tiles.
+  type: AttributeCrafter
+  size: 2
+  craftTime: 116
+  health: 800
+  hasPower: true
+  hasLiquids: true
+  hasItems: true
+  liquidCapacity: 80
+  itemCapacity: 20
+  ambientSound: freezerloop
+  ambientSoundVolume: 0.02
+  attribute: crystal
+  baseEfficiency: 1
+  maxBoost: 6
+  craftEffect:
+  {
+    type: DrawMulti
+    effects:
+    [
+      {
+        type: ParticleEffect
+        particles: 4
+        region: newunits-square
+        offset: 45
+        colorFrom: bd42ff55
+        colorTo: bd42ff55
+        interp: linear
+        sizeInterp: slope
+        lifetime: 20
+        sizeFrom: 4
+        sizeTo: 0
+        length: 16
+      }
+      {
+          type: WaveEffect
+          lifetime: 45
+          sides: 4
+          colorFrom: bd42ffff
+          colorTo: bd42ffff
+          sizeTo: 18
+      }
+    ]
+  }
+  drawer:
+  {
+    type: DrawMulti
+    drawers:
+    [
+      {
+        type: DrawRegion
+        suffix: -bottom
+      }
+      {
+        type: DrawLiquidTile
+        drawLiquid: poison
+        alpha: 1
+      }
+      {
+        type: DrawBubbles
+        color: bd42ffff
+        amount: 6
+        spread: 3
+        sides: 4
+      }
+      {
+        type: DrawDefault
+      }
+      {
+        type: DrawRegion
+        suffix: -top
+      }
+    ]
+  }
+  outputItem: selevite/2
+  consumes:
+  {
+    power: 1.2
+    liquids:
+    [
+      poison/0.166667
+    ]
+  }
+  requirements:
+  [
+    cobalt/50
+    antimony/40
+    light-alloy/25
+  ]
+  category: production
+  research:
+  {
+    parent: iron-drill
+    requirements:
+    [
+      cobalt/1000
+      antimony/800
+      light-alloy/400
+    ]
+    objectives:
+    [
+      poison
+      {
+        type: SectorComplete
+        preset: toxicEstuary
+      }
+    ]
+  }
+}

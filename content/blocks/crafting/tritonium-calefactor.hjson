@@ -81,5 +81,8 @@
       light-alloy/120
       selevite/75
     ]
+    objectives: [
+      slag
+    ]
   }
 }

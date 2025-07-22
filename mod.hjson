@@ -22,35 +22,40 @@
         "jet", "propeller", "whirlybird", "cheyenne", "apache",
         "streak", "spear", "falter", "delusion", "hallucination",
         "silky", "requiem",
+        "heroic-dagger", "aurora",
         // Block
-        "ember-infuser", "arc-kiln", "refiner", "volatile-mixing-chamber", "stellar-furnace",
+        "ember-infuser", "arc-kiln", "refiner", "volatile-mixing-chamber", "stellar-furnace", "scrap-crucible",
         "detwall", "detwall-large",
         "armored-junction", "armored-router", "armored-distributor",
         "spark-generator",
         "compact-drill",
         "core-fortress", "crate",
         "pelleter", "ot1-sear", "firecracker",
-        "flame-factory", "lightningfactory",
+        "flame-factory", "lightningfactory", "heroic-reconstructor",
     // Erekir
         // Unit
-        "strider",
     // Clexon
         // Unit
             // Charren
             "infiltrator", "wrecker", 
+            "foul", "polluter",
             //Fusionix
             "neutron",
             "ion", "atom",
             // Core
             "diversionist", 
         // Block
-        "iron-wall", "iron-wall-large", "scorchonite-pod", "scorchonite-pod-large",
+        "small-alloy-forge", "tritonium-calefactor",
+        "iron-wall", "iron-wall-large", "alloy-wall", "alloy-wall-large",
+        "scorchonite-pod", "scorchonite-pod-large", "electro-pod", "electro-pod-large",
         "tube", "tube-junction", "tube-bridge", "tube-sorter", "tube-sorter-inverted", "tube-router",
         "heat-harvester",
         "iron-drill",
         "core-central",
-        "mecha",
+        "mecha", "amp",
     //Status
-        "charged", "poisoned", "maimed", "laser-shocked", "atomically-charged"
+        "charged", "poisoned", "maimed", "laser-shocked", "atomically-charged",
+    //Sectors
+        "raggedWastelands", "barrenPlateaus", "ferricPlains", "poisonBayCaves", "toxicEstuary"
   ]
 }

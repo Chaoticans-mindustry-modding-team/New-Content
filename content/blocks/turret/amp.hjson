@@ -80,8 +80,10 @@
       antimony/50
     ]
     objectives: [
-      type: OnSector
-      preset: toxicEstuary
+      {
+        type: OnSector
+        preset: toxicEstuary
+      }
     ]
   }
 }

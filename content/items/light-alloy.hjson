@@ -2,7 +2,7 @@
   name: Light Alloy
   description: Used in lower tier structures and unit fabrication.
   hideDetails: false
-  cost: 3
+  cost: 1.2
   hardness: 5
   color: 83878fFF
   research:

@@ -1,0 +1,23 @@
+{
+  localizedName: Iron Liquid Splitter
+  description: Distrubutes inputted liquids equally in all 3 directions. Can store a small amount of liquid.
+  type: Conduit
+  size: 1
+  health: 90
+  liquidCapacity: 60
+  liquidPressure: 1.2
+  solid: false
+  underBullets: true
+  requirements:
+  [
+    iron/4
+  ]
+  research:
+  {
+    parent: iron-conduit
+    requirements:
+    [
+      iron/45
+    ]
+  }
+}

@@ -1,9 +1,10 @@
 {
   localizedName: Alloy Wall
-  description: Protects structures from enemy projectiles.
+  description: Protects structures from enemy projectiles. Armored
   type: Wall
   size: 1
-  health: 670
+  health: 460
+  armor: 5
   buildCostMultiplier: 4
   requirements:
   [

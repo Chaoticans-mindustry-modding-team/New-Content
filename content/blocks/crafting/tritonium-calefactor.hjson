@@ -1,16 +1,16 @@
 {
   name: Tritonium Calefactor
-  description: Forges iron and slag into tritonium.
+  description: Forges slag and iron into tritonium.
   type: GenericCrafter
   size: 3
-  craftTime: 120
+  craftTime: 30
   hasPower: true
   hasLiquids: true
   hasItems: true
   liquidCapacity: 15
   itemCapacity: 20
   ambientSound: furnace
-  ambientSoundVolume: 0.1
+  ambientSoundVolume: 0.04
   craftEffect:
   {
       type: ParticleEffect
@@ -49,11 +49,12 @@
       {
         type: DrawGlowRegion
         suffix: -glow
-        color: eaa270ff
+        color: eaa270aa
+        layer: 35.01
       }
     ]
   }
-  outputItem: tritonium/5
+  outputItem: tritonium/2
   consumes:
   {
     power: 2.1

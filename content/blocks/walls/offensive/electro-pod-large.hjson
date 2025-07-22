@@ -13,7 +13,7 @@
   category: defense
   research:
   {
-    parent: electro-pod-pod
+    parent: electro-pod
     requirements:
     [
       cobalt/150

@@ -13,6 +13,7 @@
     iron/4
     cobalt/2
   ]
+  category: liquid
   research:
   {
     parent: iron-liquid-crosser

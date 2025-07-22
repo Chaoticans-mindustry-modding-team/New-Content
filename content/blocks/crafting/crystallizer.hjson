@@ -3,7 +3,7 @@
   description: Crystallizes certain chemicals out of Poison to make selevite crystals. More efficient on crystal tiles.
   type: AttributeCrafter
   size: 2
-  craftTime: 116
+  craftTime: 40
   health: 800
   hasPower: true
   hasLiquids: true
@@ -15,35 +15,21 @@
   attribute: crystal
   baseEfficiency: 1
   maxBoost: 6
-  boostScale: 0.25 # 4 tiles, 1 tile with 100% boost gives 25%
+  boostScale: 0.25
   craftEffect:
   {
-    type: MultiEffect
-    effects:
-    [
-      {
-        type: ParticleEffect
-        particles: 4
-        region: newunits-square
-        offset: 45
-        colorFrom: bd42ffaa
-        colorTo: bd42ffaa
-        interp: linear
-        sizeInterp: slope
-        lifetime: 60
-        sizeFrom: 0
-        sizeTo: 3
-        length: 16
-      }
-      {
-          type: WaveEffect
-          lifetime: 20
-          sides: 4
-          colorFrom: bd42ffaa
-          colorTo: bd42ffaa
-          sizeTo: 12
-      }
-    ]
+    type: ParticleEffect
+    particles: 2
+    region: newunits-square
+    offset: 45
+    colorFrom: bd42ffaa
+    colorTo: bd42ffaa
+    interp: linear
+    sizeInterp: slope
+    lifetime: 60
+    sizeFrom: 0
+    sizeTo: 3
+    length: 16
   }
   drawer:
   {
@@ -76,13 +62,13 @@
       }
     ]
   }
-  outputItem: selevite/3
+  outputItem: selevite/1
   consumes:
   {
     power: 1.2
     liquids:
     [
-      poison/0.166667
+      poison/0.
     ]
   }
   requirements:

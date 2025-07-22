@@ -1,6 +1,6 @@
 {
   name: Tritonium Calefactor
-  description: 
+  description: Forges iron and slag into tritonium.
   type: GenericCrafter
   size: 3
   craftTime: 120

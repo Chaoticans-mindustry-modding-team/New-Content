@@ -17,7 +17,7 @@
   maxBoost: 6
   craftEffect:
   {
-    type: DrawMulti
+    type: MultiEffect
     effects:
     [
       {

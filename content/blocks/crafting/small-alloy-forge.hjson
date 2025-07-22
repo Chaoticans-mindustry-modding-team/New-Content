@@ -52,6 +52,10 @@
         cobalt/45
         antimony/95
     ]
+    objectives: [
+      type: OnSector
+      preset: toxicEstuary
+    ]
   }
   outputItem: light-alloy/3
 }

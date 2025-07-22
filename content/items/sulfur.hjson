@@ -1,0 +1,12 @@
+{
+  name: Sulfur
+  description: Used in chemical reactions, material synthesis, and as flammable ammo.
+  flammability: 0.8
+  cost: 1
+  hardness: 0
+  color: ffff59ff
+  research:
+  {
+    parent: iron
+  }
+}

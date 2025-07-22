@@ -10,6 +10,7 @@
       iron/10
       cobalt/10
     ]
+    category: liquid
     research: {
         parent: iron-drill
         requirements: [

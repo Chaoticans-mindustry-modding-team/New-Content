@@ -49,5 +49,6 @@ Events.run(ClientLoadEvent, () => {
   addNode(Liquids.cryofluid, Liquids.water, 2);
   addNode(Liquids.slag, moddedItem("newunits-iron"));
   addNode(moddedLiquid("newunits-poison-water"), Liquids.water, 2);
-  addNode(moddedLiquid("newunits-poison"), moddedLiquid("newunits-poison-water"), 0);
+  addNode(moddedLiquid("newunits-poison"), Liquids.water, 2);
+  addNode(moddedItem("newunits-selevite"), moddedLiquid("newunits-poison"));
 });

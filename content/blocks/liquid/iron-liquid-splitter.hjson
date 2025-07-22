@@ -11,13 +11,15 @@
   requirements:
   [
     iron/4
+    cobalt/2
   ]
   research:
   {
-    parent: iron-conduit
+    parent: iron-liquid-crosser
     requirements:
     [
       iron/45
+      cobalt/20
     ]
   }
 }

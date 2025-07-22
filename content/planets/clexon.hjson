@@ -23,7 +23,7 @@
   ]
   icon: planet
   allowLaunchSchematics: true
-  allowLaunchLoadout: false
+  allowLaunchLoadout: true
   allowWaveSimulation: true
   allowSectorInvasion: false
   clearSectorOnLose: true

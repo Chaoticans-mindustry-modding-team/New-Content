@@ -1,7 +1,7 @@
 {
   name: Cinnabarium
   description: An alloy channeled with the power of lasers. Used mainly by the Arcus.
-  cost: 5
+  cost: 4
   hardness: 16
   explosiveness: 2
   charge: 1.5

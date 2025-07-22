@@ -1,7 +1,7 @@
 {
   name: Medium Alloy
   description: A tough alloy used in medium tier structures, defense, ammunition, and unit reconstruction.
-  cost: 4
+  cost: 2
   hardness: 7
   color: 494d45FF
   research:

@@ -12,6 +12,7 @@
   sector: 217
   research: {
     parent: ferricPlains
+    requiresUnlock: false
     objectives: [
       {
         type: SectorComplete

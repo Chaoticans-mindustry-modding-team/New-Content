@@ -4,6 +4,7 @@
   type: GenericCrafter
   size: 3
   craftTime: 45
+  health: 760
   hasPower: true
   hasLiquids: true
   hasItems: true

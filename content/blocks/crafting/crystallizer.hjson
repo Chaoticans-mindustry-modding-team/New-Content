@@ -26,8 +26,8 @@
         particles: 4
         region: newunits-square
         offset: 45
-        colorFrom: bd42ff00
-        colorTo: bd42ff55
+        colorFrom: bd42ffaa
+        colorTo: bd42ffaa
         interp: linear
         sizeInterp: slope
         lifetime: 20
@@ -61,10 +61,13 @@
       }
       {
         type: DrawBubbles
-        color: bd42ffff
+        color: 9f62d1cc
         amount: 6
         spread: 3
         sides: 4
+        strokeMin: 0.3
+        fill: true
+        timeScl: 60
       }
       {
         type: DrawDefault

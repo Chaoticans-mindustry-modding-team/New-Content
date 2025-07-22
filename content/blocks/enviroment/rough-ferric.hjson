@@ -4,5 +4,5 @@ wall: ferric-wall
 variants: 3
 attributes: {
   ferric: 0.6
-  water: -0.65
+  water: -0.75
 }

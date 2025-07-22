@@ -15,6 +15,7 @@
   research:
   {
     parent: poisonBayCaves
+    requiresUnlock: false
     objectives:
     [
       {

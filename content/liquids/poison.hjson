@@ -1,34 +1,27 @@
 {
-  localizedName: Poison
-  description:
-    '''
-    A highly toxic liquid. Extremely corrosive, and can melt most mechanical circutry. Capable of growing crystals.",
-    "details": "Likely synthetic. Most life forms on Clexon have been contaminated with this substance and it has tainted most of the water supply. Extremely hard to destroy. 
-
-    Certain chemicals in it can crystallize out in certain conditions, the type of crystal formed varies depending on the crystallization conditions. The most common one is [purple]Selevite[]. Other types have been discovered but they are unstable and have not been given official names nor been used in technology.
-    '''
-  temperature: 0.5
-  heatCapacity: 0.1
-  coolant: false
-  viscosity: 0.6
-  boilPoint: 6
-  capPuddles: false
-  effect: newunits-poisoned
-  blockReactive: false
-  incinerable: false
-  color: 5e2e99ff
-  canStayOn:
-  [
-    water
-    cryofluid
-    slag
-    oil
-    arkycite
-    neoplasm
-    poison-water
-  ]
-  research:
-  {
-    parent: poison-water
+  "localizedName": "Poison",
+  "description": "A highly toxic liquid. Extremely corrosive, and can melt most mechanical circutry. Capable of growing crystals.",
+  "details": "Likely synthetic. Most life forms on Clexon have been contaminated with this substance and it has tainted most of the water supply. Extremely hard to destroy. \n\nCertain chemicals in it can crystallize out in certain conditions, the type of crystal formed varies depending on the crystallization conditions. The most common one is [purple]Selevite[]. Other types have been discovered but they are unstable and have not been given official names nor been used in technology.",
+  "temperature": 0.5,
+  "heatCapacity": 0.1,
+  "coolant": false,
+  "viscosity": 0.6,
+  "boilPoint": 6,
+  "capPuddles": false,
+  "effect": "newunits-poisoned",
+  "blockReactive": false,
+  "incinerable": false,
+  "color": "9f62d1ff",
+  "canStayOn": [
+    "water",
+    "cryofluid",
+    "slag",
+    "oil",
+    "arkycite",
+    "neoplasm",
+    "poison-water"
+  ],
+  "research": {
+    "parent": "poison-water"
   }
 }

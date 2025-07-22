@@ -15,6 +15,7 @@
   attribute: crystal
   baseEfficiency: 1
   maxBoost: 6
+  boostScale: 0.25 # 4 tiles, 1 tile with 100% boost gives 25%
   craftEffect:
   {
     type: MultiEffect
@@ -25,22 +26,22 @@
         particles: 4
         region: newunits-square
         offset: 45
-        colorFrom: bd42ff55
+        colorFrom: bd42ff00
         colorTo: bd42ff55
         interp: linear
         sizeInterp: slope
         lifetime: 20
-        sizeFrom: 4
-        sizeTo: 0
+        sizeFrom: 0
+        sizeTo: 3
         length: 16
       }
       {
           type: WaveEffect
-          lifetime: 45
+          lifetime: 20
           sides: 4
-          colorFrom: bd42ffff
-          colorTo: bd42ffff
-          sizeTo: 18
+          colorFrom: bd42ffaa
+          colorTo: bd42ffaa
+          sizeTo: 12
       }
     ]
   }
@@ -74,7 +75,7 @@
       }
     ]
   }
-  outputItem: selevite/2
+  outputItem: selevite/3
   consumes:
   {
     power: 1.2

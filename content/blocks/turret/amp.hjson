@@ -79,5 +79,9 @@
       iron/100
       antimony/50
     ]
+    objectives: [
+      type: OnSector
+      preset: toxicEstuary
+    ]
   }
 }

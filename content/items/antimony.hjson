@@ -1,7 +1,7 @@
 {
   name: Antimony
   description: Used in batteries, electro-pods, and alloy production.
-  cost: 1.3
+  cost: 1.1
   hardness: 2
   color: a1a1bfff
   research:

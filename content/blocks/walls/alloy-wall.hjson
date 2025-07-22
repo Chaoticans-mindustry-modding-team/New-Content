@@ -7,7 +7,7 @@
   buildCostMultiplier: 2
   requirements:
   [
-    light-alloy/16
+    light-alloy/6
   ]
   category: defense
   research: {

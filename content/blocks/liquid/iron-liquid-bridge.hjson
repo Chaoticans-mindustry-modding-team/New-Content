@@ -1,0 +1,24 @@
+{
+  localizedName: Iron Liquid Bridge
+  description: Transports liquids over structures and terrain. Stores a small amount of liquid.
+  type: DirectionLiquidBridge
+  size: 1
+  health: 120
+  hasPower: false
+  liquidCapacity: 60
+  underBullets: true
+  requirements:
+  [
+    iron/5
+    cobalt/3
+  ]
+  research:
+  {
+    parent: iron-liquid-splitter
+    requirements:
+    [
+      iron/60
+      cobalt/30
+    ]
+  }
+}

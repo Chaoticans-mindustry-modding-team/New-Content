@@ -3,7 +3,7 @@
   description: Protects structures from enemy projectiles. Armored
   type: Wall
   size: 1
-  health: 460
+  health: 520
   armor: 5
   buildCostMultiplier: 4
   requirements:

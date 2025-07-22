@@ -2,4 +2,8 @@
 "name": "Scorchonite",
 "variants": 3,
 "oreDefault": false,
-"itemDrop": "scorchonite"
+"itemDrop": "scorchonite",
+"attributes": {
+  "water": -1,
+  "ferric": 0.1
+}

@@ -1,0 +1,5 @@
+type: Floor
+name: Sulfur
+variants: 3
+oreDefault: false
+itemDrop: sulfur

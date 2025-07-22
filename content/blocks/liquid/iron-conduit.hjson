@@ -1,0 +1,23 @@
+{
+  localizedName: Iron Conduit
+  description: Moves liquids forward.
+  type: Conduit
+  size: 1
+  health: 90
+  liquidCapacity: 10
+  liquidPressure: 1.2
+  requirements:
+  [
+    iron/1
+  ]
+  rotBridgeReplacement: iron-liquid-splitter
+  junctionReplacement: tube-junction
+  research:
+  {
+    parent: micro-pump
+    requirements:
+    [
+      iron/20
+    ]
+  }
+}

@@ -47,6 +47,7 @@ Events.run(ClientLoadEvent, () => {
   let clexon = moddedPlanet("newunits-clexon");
   addNode(Liquids.water, moddedItem("newunits-iron"));
   addNode(Liquids.cryofluid, Liquids.water, 2);
+  addNode(Liquids.slag, moddedItem("newunits-iron"));
   addNode(moddedLiquid("newunits-poison-water"), Liquids.water, 2);
   addNode(moddedLiquid("newunits-poison"), moddedLiquid("newunits-poison-water"), 0);
 });

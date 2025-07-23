@@ -7,26 +7,16 @@
   outlineColor: 13111cff
   shootCone: 30
   liquidCapacity: 10
-  reload: 20
+  reload: 4
   range: 90
   targetAir: true
   targetGround: true
   rotateSpeed: 3
-  loopSound: none
-  shootSound: none
   shootY: 6
-  recoil: 1
+  recoil: 0.2
   velocityRnd: 0.1
   ammoPerShot: 4
   inaccuracy: 13
-  shootEffect: {
-      type: SoundEffect
-      sound: splash
-      minVolume: 0.4
-      maxVolume: 1
-      maxPitch: 1
-      effect: none
-  }
   shoot: {
       shots: 2
       shotDelay: 1
@@ -57,7 +47,7 @@
     slag: {
         type: LiquidBulletType
         liquid: slag
-        damage: 10
+        damage: 6
         knockback: 1.2
         speed: 3
         lifetime: 30
@@ -66,7 +56,7 @@
         statusDuration: 120
     }
     poison-water: {
-        damage: 6
+        damage: 4
         type: LiquidBulletType
         liquid: poison-water
         knockback: 1

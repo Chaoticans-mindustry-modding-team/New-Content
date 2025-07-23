@@ -6,8 +6,8 @@
   health: 1360
   outlineColor: 13111cff
   shootCone: 30
-  liquidCapacity: 30
-  reload: 52
+  liquidCapacity: 10
+  reload: 20
   range: 90
   targetAir: true
   targetGround: true
@@ -22,13 +22,13 @@
   shootEffect: {
       type: SoundEffect
       sound: splash
-      minVolume: 0.5
+      minVolume: 0.4
       maxVolume: 1
       maxPitch: 1
       effect: none
   }
   shoot: {
-      shots: 5
+      shots: 2
       shotDelay: 1
   }
   ammoTypes:

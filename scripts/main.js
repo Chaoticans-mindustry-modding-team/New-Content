@@ -9,7 +9,7 @@ Events.run(ClientLoadEvent, () => {
   function addNode(contentChild, contentParent, index, planet) {
     if(contentChild == null || contentParent == null) return;
     if(index == null) index = 0;
-    if(index == "last") index = contentParent.techNodes.size - 1; // Index of last technoder
+    if(index < 0) index = contentParent.techNodes.size + index; // Index of last technode
 
     contentParent.techNodes.get(index).children.add(
       TechTree.nodeProduce(contentChild, () => {}),
@@ -19,18 +19,18 @@ Events.run(ClientLoadEvent, () => {
       contentChild.shownPlanets.addAll(contentParent.shownPlanets);
       contentChild.databaseTabs.addAll(contentParent.databaseTabs);
     } else {
-      contentChild.shownPlanets.addAll(planet);
-      contentChild.databaseTabs.addAll(planet);
+      contentChild.shownPlanets.add(all);
+      contentChild.databaseTabs.add(all);
     };
   };
 
   // Application of methods
   let clexon = moddedPlanet("newunits-clexon");
   addNode(Liquids.water, moddedItem("newunits-iron"));
-  addNode(Liquids.cryofluid, Liquids.water, "last");
+  addNode(Liquids.cryofluid, Liquids.water, -1);
   addNode(Liquids.slag, moddedItem("newunits-iron"));
-  addNode(moddedLiquid("newunits-poison-water"), Liquids.water, "last", clexon);
-  addNode(moddedLiquid("newunits-poison"), Liquids.water, "last", clexon);
+  addNode(moddedLiquid("newunits-poison-water"), Liquids.water, -1, clexon);
+  addNode(moddedLiquid("newunits-poison"), Liquids.water, -1, clexon);
   addNode(moddedItem("newunits-selevite"), moddedLiquid("newunits-poison"), null, clexon);
   addNode(Items.coal, moddedItem("newunits-scorchonite"));
   addNode(Items.silicon, Items.coal, "last");

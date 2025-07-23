@@ -32,7 +32,7 @@
       type: ShieldRegenFieldAbility
       amount: 50
       max: 100
-      reload: 80
+      reload: 180
       range: 60
     }
   ]
@@ -65,25 +65,28 @@
         length: 200
         status: melting
         statusDuration: 460
-        shootEffect: type: MultiEffect
-        effects:
-        [
-          {
-            type: ParticleEffect
-            region: newunits-longer-diamond
-            useRotation: true
-            sizeFrom: 4
-            sizeTo: 0
-            colorFrom: ffa97aff
-            colorTo: ffa97aff
-            length: 0
-            lifetime: 30
-          }
-          {
+        shootEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            {
+              type: ParticleEffect
+              region: newunits-longer-diamond
+              useRotation: true
+              sizeFrom: 4
+              sizeTo: 0
+              colorFrom: ffa97aff
+              colorTo: ffa97aff
+              length: 0
+              lifetime: 30
+            }
+            {
               type: WaveEffect
               sizeTo: 19
-          }
-        ]
+            }
+          ]
+        }
         smokeEffect: none
         pointEffectSpacing: 5.5
         pointEffect:

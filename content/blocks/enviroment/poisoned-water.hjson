@@ -1,7 +1,7 @@
 type: floor
 name: Poisoned Water
 drownTime: 150
-status: newunits-poisoned
+status: newunits-lightly-poisoned
 statusDuration: 60
 speedMultiplier: 0.2
 variants: 0

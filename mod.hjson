@@ -11,7 +11,7 @@
     [gold]As of Version 7x1, the mod's custom and new music has been moved to Chaoticans-mindustry-modding-team/New-Content-Music.
     '''
   author: Rylid Umil
-  version: 7x2
+  version: 7x3
   minGameVersion: 147
   contentOrder:
   [
@@ -47,14 +47,15 @@
             // Core
             "diversionist", 
         // Block
-        "small-alloy-forge", "tritonium-calefactor",
+        "small-alloy-forge", "crusher", "amberglass-kiln", "tritonium-calefactor",
         "iron-wall", "iron-wall-large", "alloy-wall", "alloy-wall-large",
         "scorchonite-pod", "scorchonite-pod-large", "electro-pod", "electro-pod-large",
         "tube", "tube-junction", "tube-bridge", "tube-sorter", "tube-sorter-inverted", "tube-router",
-        "heat-harvester",
-        "iron-drill",
+        "micro-pump", "iron-conduit", "iron-liquid-splitter", "iron-liquid-crosser", "iron-bridge-conduit",
+        "heat-harvester", "ignition-generator",
+        "iron-drill", "crystallizer",
         "core-central",
-        "mecha", "amp",
+        "mecha", "amp" "meteor", "soak",
         //Item
         "iron", "cobalt", "antimony", "scorchonite", "light-alloy", "sulfur", "selevite", "tritonium", "medium-alloy", "rexon-alloy", "heavy-alloy", "anion-construct", "cinnabarite", "cinnabarium",
         //Liquid

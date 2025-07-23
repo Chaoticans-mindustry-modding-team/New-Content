@@ -1,0 +1,95 @@
+{
+  localizedName: Soak
+  description: Fires bursts of fluid at enemies. Durability is insufficient for holding potent acids or extremely hot liquids.
+  type: LiquidTurret
+  size: 2
+  health: 1360
+  outlineColor: 13111cff
+  shootCone: 30
+  liquidCapacity: 30
+  reload: 5
+  range: 90
+  targetAir: true
+  targetGround: true
+  rotateSpeed: 3
+  loopSound: none
+  shootSound: splash
+  shootY: 6
+  recoil: 0.1
+  velocityRnd: 0.1
+  ammoPerShot: 4
+  inaccuracy: 13
+  shootEffect: shootLiquid
+  shoot: {
+      shots: 8
+  }
+  flags: [
+    turret
+    extinguisher
+  ]
+  ammoTypes:
+  {
+    water: {
+        type: LiquidBulletType
+        knockback: 1
+        layer: 98 //Prevent Bloom
+        speed: 6
+        lifetime: 15
+        orbSize: 1.8
+    }
+    cryofluid: {
+        type: LiquidBulletType
+        knockback: 1.1
+        speed: 6
+        lifetime: 15
+        orbSize: 1.8
+    }
+    slag: {
+        type: LiquidBulletType
+        damage: 17
+        knockback: 1.2
+        speed: 6
+        lifetime: 15
+        orbSize: 1.8
+    }
+    poison-water: {
+        damage: 6
+        type: LiquidBulletType
+        knockback: 1
+        layer: 98
+        speed: 6
+        lifetime: 15
+        orbSize: 1.8
+    }
+  }
+  drawer:
+  {
+    type: DrawTurret
+    basePrefix: clexon-
+  }
+  requirements:
+  [
+    iron/60
+    light-alloy/20
+    selevite/40
+  ]
+  category: turret
+  research:
+  {
+    parent: meteor
+    requirements:
+    [
+      iron/600
+      light-alloy/300
+      selevite/450
+    ]
+    objectives:
+    [
+      micro-pump
+      {
+          type: Produce
+          content: slag
+      }
+    ]
+  }
+}

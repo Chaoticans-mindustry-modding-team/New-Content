@@ -14,7 +14,7 @@
   shootSound: rifle
   coolantMultiplier: 5
   inaccuracy: 12
-  velocityRnd: 0.6
+  velocityRnd: 0.12
   shake: 0.5
   shootY: 2
   ammoPerShot: 3
@@ -38,7 +38,7 @@
       damage: 11
       width: 8
       height: 10
-      speed: 6
+      speed: 6.5
       lifetime: 15
       despawnHit: true
       despawnEffect: none
@@ -80,7 +80,7 @@
       knockback: 0.3
       width: 8
       height: 10
-      speed: 6
+      speed: 6.5
       lifetime: 15
       despawnHit: true
       despawnEffect: none

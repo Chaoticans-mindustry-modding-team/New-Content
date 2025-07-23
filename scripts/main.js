@@ -33,5 +33,5 @@ Events.run(ClientLoadEvent, () => {
   addNode(moddedLiquid("newunits-poison"), Liquids.water, -1, clexon);
   addNode(moddedItem("newunits-selevite"), moddedLiquid("newunits-poison"), null, clexon);
   addNode(Items.coal, moddedItem("newunits-scorchonite"));
-  addNode(Items.silicon, Items.coal, "last");
+  addNode(Items.silicon, Items.coal, -1);
 });

@@ -7,7 +7,7 @@
   outlineColor: 13111cff
   shootCone: 30
   liquidCapacity: 30
-  reload: 37
+  reload: 50
   range: 90
   targetAir: true
   targetGround: true
@@ -27,6 +27,7 @@
   {
     water: {
         type: LiquidBulletType
+        liquid: water
         knockback: 1
         layer: 98 //Prevent Bloom
         speed: 6
@@ -35,6 +36,7 @@
     }
     cryofluid: {
         type: LiquidBulletType
+        liquid: cryofluid
         knockback: 1.1
         speed: 6
         lifetime: 15
@@ -42,6 +44,7 @@
     }
     slag: {
         type: LiquidBulletType
+        liquid: slag
         damage: 17
         knockback: 1.2
         speed: 6
@@ -51,6 +54,7 @@
     poison-water: {
         damage: 6
         type: LiquidBulletType
+        liquid: poison-water
         knockback: 1
         layer: 98
         speed: 6

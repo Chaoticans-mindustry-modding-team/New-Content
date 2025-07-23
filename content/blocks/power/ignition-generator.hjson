@@ -7,7 +7,7 @@
   hasItems: true
   itemCapacity: 10
   ambientSound: combustion
-  ambientSoundVolume: 0.03
+  ambientSoundVolume: 0.02
   powerProduction: 2.6
   itemDuration: 20
   generateEffectRange: 0
@@ -20,7 +20,7 @@
       {
         type: ParticleEffect
         particles: 3
-        sizeFrom: 0.5
+        sizeFrom: 2
         sizeTo: 5
         colorFrom: 806c5444
         colorTo: 806c5400
@@ -36,7 +36,7 @@
       {
         type: ParticleEffect
         particles: 3
-        sizeFrom: 0.5
+        sizeFrom: 2
         sizeTo: 5
         colorFrom: 806c5444
         colorTo: 806c5400
@@ -52,7 +52,7 @@
       {
         type: ParticleEffect
         particles: 3
-        sizeFrom: 0.5
+        sizeFrom: 2
         sizeTo: 5
         colorFrom: 806c5444
         colorTo: 806c5400
@@ -68,7 +68,7 @@
       {
         type: ParticleEffect
         particles: 3
-        sizeFrom: 0.5
+        sizeFrom: 2
         sizeTo: 5
         colorFrom: 806c5444
         colorTo: 806c5400

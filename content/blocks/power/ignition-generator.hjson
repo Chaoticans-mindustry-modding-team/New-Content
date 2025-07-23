@@ -119,7 +119,7 @@
     ]
     objectives: [
       {
-        type: Onsector
+        type: OnSector
         preset: scorchedSkalelands
       }
     ]

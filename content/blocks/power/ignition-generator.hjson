@@ -117,5 +117,11 @@
         cobalt/450
         light-alloy/300
     ]
+    objectives: [
+      {
+        type: Onsector
+        preset: scorchedSkalelands
+      }
+    ]
   }
 }

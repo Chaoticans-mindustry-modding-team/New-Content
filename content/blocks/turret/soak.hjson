@@ -23,10 +23,6 @@
   shoot: {
       shots: 8
   }
-  flags: [
-    turret
-    extinguisher
-  ]
   ammoTypes:
   {
     water: {

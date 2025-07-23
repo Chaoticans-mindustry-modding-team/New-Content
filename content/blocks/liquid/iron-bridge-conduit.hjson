@@ -10,16 +10,16 @@
   category: liquid
   requirements:
   [
-    iron/5
-    cobalt/3
+    iron/12
+    amberglass/12
   ]
   research:
   {
     parent: iron-liquid-splitter
     requirements:
     [
-      iron/60
-      cobalt/30
+      iron/80
+      amberglass/80
     ]
   }
 }

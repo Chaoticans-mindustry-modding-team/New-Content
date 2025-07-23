@@ -1,6 +1,6 @@
 {
   name: Heavily Poisoned
-  damage: 2.6
+  damage: 3.8
   color: 5e2e99ff
   effectChance: 0.4
   transitionDamage: 35

@@ -7,8 +7,8 @@
   solid: true
   requirements:
   [
-    iron/5
-    cobalt/2
+    iron/3
+    amberglass/3
   ]
   category: liquid
   research:
@@ -16,8 +16,8 @@
     parent: iron-conduit
     requirements:
     [
-      iron/60
-      cobalt/20
+      iron/40
+      amberglass/40
     ]
   }
 }

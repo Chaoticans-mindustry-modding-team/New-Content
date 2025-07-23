@@ -60,7 +60,6 @@
       status: burning
       statusDuration: 265
       buildingDamageMultiplier: 0.5
-      ammoMultiplier: 2
       damage: 74
       splashDamageRadius: 27
       splashDamage: 35
@@ -127,7 +126,6 @@
       status: burning
       statusDuration: 460
       buildingDamageMultiplier: 0.5
-      ammoMultiplier: 2
       damage: 103
       splashDamageRadius: 35
       splashDamage: 46

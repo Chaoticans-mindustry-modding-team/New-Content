@@ -9,8 +9,9 @@
   ambientSound: combustion
   ambientSoundVolume: 0.05
   powerProduction: 2.6
-  itemDuration: 30
+  itemDuration: 20
   generateEffectRange: 0
+  effectChance: 0.4
   generateEffect:
   {
     type: MultiEffect
@@ -76,7 +77,7 @@
         sizeInterp: linear
         length: 18
         cone: 3
-        offsetX: 5
+        offsetX: 0
         offsetY: -5
         baseRotation: 45
       }

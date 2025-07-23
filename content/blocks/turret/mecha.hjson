@@ -20,7 +20,7 @@
   ammoPerShot: 3
   shoot:
   {
-    shots: 5
+    shots: 4
   }
   consumes:
   {
@@ -77,7 +77,7 @@
     cobalt:
     {
       damage: 16
-      knockback: 0.3
+      knockback: 0.6
       width: 8
       height: 10
       speed: 6.5
@@ -117,7 +117,7 @@
     scorchonite:
     {
       damage: 22
-      knockback: 0.3
+      knockback: 0.4
       width: 8
       height: 10
       speed: 6

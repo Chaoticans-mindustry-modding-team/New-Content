@@ -80,7 +80,7 @@
   category: production
   research:
   {
-    parent: iron-drill
+    parent: crusher
     requirements:
     [
       cobalt/1000
@@ -89,10 +89,9 @@
     ]
     objectives:
     [
-      poison
       {
-        type: SectorComplete
-        preset: toxicEstuary
+        type: Produce
+        content: poison
       }
     ]
   }

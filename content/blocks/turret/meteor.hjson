@@ -81,14 +81,14 @@
             length: 26
           }
           {
-              type: WaveEffect
-              colorFrom: 6babffff
-              colorTo: 0044ffff
-              sizeTo: 27
-              lifetime: 12
-              lightColor: 000000ff
+            type: WaveEffect
+            colorFrom: 6babffff
+            colorTo: 0044ffff
+            sizeTo: 27
+            lifetime: 12
+            lightOpacity: 0
           }
-          ]
+        ]
       }
       despawnHit: true
       hitShake: 1
@@ -148,12 +148,12 @@
             length: 30
           }
           {
-              type: WaveEffect
-              colorFrom: ffb361ff
-              colorTo: ff6600ff
-              sizeTo: 35
-              lifetime: 12
-              lightColor: 00000000
+            type: WaveEffect
+            colorFrom: ffb361ff
+            colorTo: ff6600ff
+            sizeTo: 35
+            lifetime: 12
+            lightOpacity: 0
           }
         ]
       }

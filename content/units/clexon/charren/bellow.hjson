@@ -1,0 +1,86 @@
+{
+  localizedName: Bellow
+  description:
+    '''
+    Fires a medium-range incendiary railgun bolt at enemy targets. Buffs itself and allied units with a shield.
+
+    [gray]Faction: [orange]Charren
+    '''
+  type: mech
+  groundLayer: 76
+  speed: 0.4
+  drag: 0.3
+  accel: 0.5
+  flying: false
+  health: 1120
+  hitSize: 14
+  range: 130
+  itemCapacity: 50
+  outlineColor: 13111cff
+  mechLegColor: 13111cff
+  rotateSpeed: 2.2
+  immunities:
+  [
+    burning
+  ]
+  abilities: [
+    {
+        type: ShieldRegenFieldAbility
+        amount: 50
+        max: 100
+        reload: 80
+        range: 60
+    }
+  ]
+  weapons:
+  [
+    {
+      name: bellow-railgun
+      mirror: true
+      alternate: true
+      x: 11.5
+      y: 0
+      shootX: 0.25
+      shootY: 2.75
+      reload: 72
+      recoil: 4
+      shake: 3
+      ejectEffect: casing3
+      shootSound: railgun
+      bullet: {
+          type: RailBulletType
+          damage: 320
+          knockback: 4
+          pierceDamageFactor: 999
+          incendAmount: 4
+          incendSpread: 12
+          incendChance: 0.8
+          shootEffect: {
+              type: ParticleEffect
+              region: newunits-long-diamond
+              useRotation: true
+              offset: 90
+              sizeFrom: 8
+              sizeTo: 0
+              colorFrom: e6aa6aff
+              colorTo: e6aa6aff
+              length: 0
+              lifetime: 30
+          }
+          smokeEffect: none
+          pointEffect: {
+              type: ParticleEffect
+              region: newunits-longest-diamond
+              useRotation: true
+              offset: 90
+              sizeFrom: 6
+              sizeTo: 0
+              lifetime: 60
+              colorFrom: e6aa6aff
+              colorTo: e6aa6aff
+              length: 0
+          }
+      }
+    }
+  ]
+}

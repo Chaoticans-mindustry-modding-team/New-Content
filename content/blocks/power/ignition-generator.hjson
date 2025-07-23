@@ -11,7 +11,7 @@
   powerProduction: 2.6
   itemDuration: 20
   generateEffectRange: 0
-  effectChance: 0.4
+  effectChance: 0.03
   generateEffect:
   {
     type: MultiEffect
@@ -22,7 +22,7 @@
         particles: 3
         sizeFrom: 2
         sizeTo: 5
-        colorFrom: 47403044
+        colorFrom: 47403077
         colorTo: 47403000
         lifetime: 300
         interp: linear
@@ -38,7 +38,7 @@
         particles: 3
         sizeFrom: 2
         sizeTo: 5
-        colorFrom: 47403044
+        colorFrom: 47403077
         colorTo: 47403000
         lifetime: 300
         interp: linear
@@ -54,7 +54,7 @@
         particles: 3
         sizeFrom: 2
         sizeTo: 5
-        colorFrom: 47403044
+        colorFrom: 4740307
         colorTo: 47403000
         lifetime: 300
         interp: linear

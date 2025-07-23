@@ -13,15 +13,18 @@
   accel: 0.5
   flying: false
   health: 1120
-  hitSize: 14
-  range: 130
+  hitSize: 17
+  range: 175
   itemCapacity: 50
   outlineColor: 13111cff
   mechLegColor: 13111cff
   rotateSpeed: 2.2
+  mechFrontSway: 0.6
+  mechSideSway: 0.5
   immunities:
   [
     burning
+    melting
   ]
   abilities: [
     {
@@ -36,6 +39,7 @@
   [
     {
       name: bellow-railgun
+      top: false
       mirror: true
       alternate: true
       x: 11.5
@@ -45,6 +49,7 @@
       reload: 72
       recoil: 4
       shake: 3
+      shootCone: 8
       ejectEffect: casing3
       shootSound: railgun
       bullet: {
@@ -55,6 +60,7 @@
           incendAmount: 4
           incendSpread: 12
           incendChance: 0.8
+          length: 175
           shootEffect: {
               type: ParticleEffect
               region: newunits-long-diamond
@@ -62,22 +68,23 @@
               offset: 90
               sizeFrom: 8
               sizeTo: 0
-              colorFrom: e6aa6aff
-              colorTo: e6aa6aff
+              colorFrom: ffa97aff
+              colorTo: ffa97aff
               length: 0
               lifetime: 30
           }
           smokeEffect: none
+          pointEffectSpacing: 6
           pointEffect: {
               type: ParticleEffect
               region: newunits-longest-diamond
               useRotation: true
               offset: 90
-              sizeFrom: 6
+              sizeFrom: 1
               sizeTo: 0
               lifetime: 60
-              colorFrom: e6aa6aff
-              colorTo: e6aa6aff
+              colorFrom: ffa97aff
+              colorTo: ffa97aff
               length: 0
           }
       }

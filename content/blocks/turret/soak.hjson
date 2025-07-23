@@ -1,6 +1,6 @@
 {
   localizedName: Soak
-  description: Fires fluid at enemies.. Durability is insufficient for holding potent acids or extremely hot liquids.
+  description: Fires fluid at enemies. Durability is insufficient for holding potent acids or extremely hot liquids.
   type: LiquidTurret
   size: 2
   health: 1360
@@ -92,10 +92,6 @@
     objectives:
     [
       micro-pump
-      {
-          type: Produce
-          content: slag
-      }
     ]
   }
 }

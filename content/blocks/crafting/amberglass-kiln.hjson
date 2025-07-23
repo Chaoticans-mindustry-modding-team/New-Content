@@ -1,0 +1,60 @@
+{
+  name: Amberglass Kiln
+  description: Fuses molten sand with iron and sulfur to make amberglass.
+  drawer:
+  {
+    type: DrawMulti
+    drawers:
+    [
+      {
+        type: DrawDefault
+      }
+      {
+        type: DrawFlame
+        flameColor: ffc485ff
+      }
+    ]
+  }
+  type: GenericCrafter
+  size: 2
+  hasPower: true
+  hasItems: true
+  itemCapacity: 20
+  craftTime: 75
+  craftEffect: smeltsmoke
+  ambientSound: smelter
+  ambientSoundVolume: 0.022
+  consumes:
+  {
+    power: 3
+    items:
+    [
+      iron/1
+      sulfur/1
+      sand/2
+    ]
+  }
+  requirements:
+  [
+    iron/30
+    cobalt/30
+    light-alloy/15
+  ]
+  category: crafting
+  research:
+  {
+    parent: small-alloy-forge
+    requirements: [
+        iron/200
+        cobalt/200
+        light-alloy/150
+    ]
+    objectives: [
+        {
+            type: Produce
+            content: sulfur
+        }
+    ]
+  }
+  outputItem: amberglass/4
+}

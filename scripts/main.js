@@ -9,7 +9,7 @@ Events.run(ClientLoadEvent, () => {
   function addNode(contentChild, contentParent, index, planet) {
     if(contentChild == null || contentParent == null) return;
     if(index == null) index = 0;
-    if(index == "last") index = contentParent.techNodes.size - 1; // Index of last technode
+    if(index == "last") index = contentParent.techNodes.size - 1; // Index of last technoder
 
     contentParent.techNodes.get(index).children.add(
       TechTree.nodeProduce(contentChild, () => {}),

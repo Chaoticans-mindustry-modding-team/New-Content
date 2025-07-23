@@ -20,7 +20,7 @@
   hasPower: true
   hasItems: true
   itemCapacity: 20
-  craftTime: 75
+  craftTime: 32
   craftEffect: smeltsmoke
   ambientSound: smelter
   ambientSoundVolume: 0.022
@@ -30,7 +30,7 @@
     items:
     [
       iron/1
-      sulfur/1
+      sulfur/2
       sand/2
     ]
   }
@@ -43,7 +43,7 @@
   category: crafting
   research:
   {
-    parent: crusher
+    parent: small-alloy-forge
     requirements: [
         iron/200
         cobalt/200
@@ -56,5 +56,5 @@
         }
     ]
   }
-  outputItem: amberglass/4
+  outputItem: amberglass/2
 }

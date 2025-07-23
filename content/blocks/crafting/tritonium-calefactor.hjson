@@ -83,7 +83,10 @@
       selevite/75
     ]
     objectives: [
-      slag
+      {
+        type: Produce
+        content: slag
+      }
     ]
   }
 }

@@ -2,7 +2,7 @@
   localizedName: Bellow
   description:
     '''
-    Fires a medium-range incendiary railgun bolt at enemy targets. Buffs itself and allied units with a shield.
+    Fires a medium-range incendiary railgun bolt at enemy targets. Gives itself and allied units shield.
 
     [gray]Faction: [orange]Charren
     '''
@@ -43,7 +43,7 @@
       top: false
       mirror: true
       alternate: true
-      x: 11.5
+      x: 11.25
       y: 0
       shootX: 0.25
       shootY: 4

@@ -33,7 +33,7 @@
       frontColor: 6babffff
       backColor: 2c64ffff
       trailColor: 2c64ffff
-      trailWidth: 4
+      trailWidth: 3.7
       trailLength: 6
       width: 7
       height: 7
@@ -100,7 +100,7 @@
       frontColor: ffb361ff
       backColor: ff8324ff
       trailColor: ff8324ff
-      trailWidth: 4
+      trailWidth: 3.7
       trailLength: 6
       width: 7
       height: 7

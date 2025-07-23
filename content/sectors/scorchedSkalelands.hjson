@@ -1,0 +1,26 @@
+{
+  localizedName: Scorched Skalelands
+  description:
+    '''
+    Northeast of the plains lie a large stretch of skale rock. Not much [purple]poison[] claimed this area, but there are numerous [purple]selevite[] clusters where it has.
+
+    [orange]Charren[] is once again sending troops to dispatch of your base. Defend against them, harvest [purple]selevite[] and [yellow]sulfur[], smelt [orange]amberglass[], and pump [orange]slag[] to use in turrets.
+    [gray]Attacker: [orange]Charren
+    '''
+  captureWave: 10
+  difficulty: 3
+  planet: clexon
+  sector: 399
+  research:
+  {
+    parent: toxicEstuary
+    requiresUnlock: false
+    objectives:
+    [
+      {
+        type: SectorComplete
+        preset: toxicEstuary
+      }
+    ]
+  }
+}

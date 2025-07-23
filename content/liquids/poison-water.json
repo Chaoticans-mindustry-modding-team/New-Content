@@ -8,7 +8,7 @@
   "viscosity": 0.55,
   "boilPoint": 3,
   "capPuddles": false,
-  "effect": "newunits-poisoned",
+  "effect": "newunits-lightly-poisoned",
   "color": "9f62d1ff",
   "canStayOn": [
     "water",

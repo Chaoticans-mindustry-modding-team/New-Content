@@ -24,7 +24,7 @@
         sides: 4
         sinMag: 0.5
         sinScl: 3
-        lenOffset: -2
+        lenOffset: -2.5
       }
       {
         type: DrawDefault

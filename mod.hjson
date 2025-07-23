@@ -57,7 +57,7 @@
         "core-central",
         "mecha", "amp" "meteor", "soak",
         //Item
-        "iron", "cobalt", "antimony", "scorchonite", "light-alloy", "sulfur", "selevite", "tritonium", "medium-alloy", "rexon-alloy", "heavy-alloy", "anion-construct", "cinnabarite", "cinnabarium",
+        "iron", "cobalt", "antimony", "scorchonite", "light-alloy", "sulfur", "selevite", "amberglass", "tritonium", "medium-alloy", "rexon-alloy", "heavy-alloy", "anion-construct", "cinnabarite", "cinnabarium",
         //Liquid
     //Status
     "charged", "lightly-poisoned", "poisoned", "heavily-poisoned", "maimed", "laser-shocked", "atomically-charged",

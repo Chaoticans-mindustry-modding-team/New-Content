@@ -52,6 +52,7 @@
         status: burning
         statusDuration: 80
         despawnEffect: none
+        lightOpacity: 0
       }
     }
   ]

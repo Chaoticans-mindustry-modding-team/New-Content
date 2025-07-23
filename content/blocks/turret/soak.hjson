@@ -1,6 +1,6 @@
 {
   localizedName: Soak
-  description: Fires bursts of fluid at enemies. Durability is insufficient for holding potent acids or extremely hot liquids.
+  description: Fires fluid at enemies.. Durability is insufficient for holding potent acids or extremely hot liquids.
   type: LiquidTurret
   size: 2
   health: 1360
@@ -12,7 +12,7 @@
   targetAir: true
   targetGround: true
   rotateSpeed: 3
-  shootY: 6
+  shootY: 8
   recoil: 0.2
   velocityRnd: 0.1
   ammoPerShot: 4
@@ -56,7 +56,7 @@
         statusDuration: 120
     }
     poison-water: {
-        damage: 4
+        damage: 3
         type: LiquidBulletType
         liquid: poison-water
         knockback: 1
@@ -64,7 +64,7 @@
         speed: 3
         lifetime: 30
         orbSize: 3
-        status: newunits-poisoned
+        status: newunits-lightly-poisoned
         statusDuration: 120
     }
   }

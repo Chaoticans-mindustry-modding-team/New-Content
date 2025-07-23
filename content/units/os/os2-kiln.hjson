@@ -1,0 +1,101 @@
+{
+  localizedName: Kiln
+  research:
+  {
+    parent: os1-flame
+    requirements:
+    [
+      silicon/230
+      titanium/120
+      graphite/45
+    ]
+  }
+  description: Fires flak and a constant stream of flame at all nearby enemies.
+  type: legs
+  groundLayer: 75
+  legCount: 3
+  legLength: 12
+  legTrns: 0.6
+  legMoveSpace: 1.4
+  hovering: true
+  armor: 4
+  commandLimit: 8
+  speed: 0.6
+  flying: false
+  health: 435
+  rotateShooting: false
+  shadowElevation: 0.2
+  range: 215
+  immunities:
+  [
+    burning
+    melting
+  ]
+  weapons:
+  [
+    {
+      name: kiln-weapon
+      mirror: false
+      rotate: true
+      rotateSpeed: 15
+      x: 0
+      y: 0
+      reload: 6.5
+      recoil: 0
+      shootY: 0
+      top: false
+      shots: 2
+      shootSound: flame
+      ejectEffect: none
+      parentizeEffects: false
+      bullet:
+      {
+        damage: 6
+        width: 8
+        pierce: true
+        pierceBuilding: false
+        type: BasiclBulletType
+        lifetime: 6
+        shootEffect: shootSmallFlame
+        speed: 9
+        frontColor: 00000000
+        backColor: 00000000
+        hitEffect: none
+        status: burning
+        statusDuration: 130
+        despawnEffect: none
+        collideAir: true
+	lightOpacity: 0
+      }
+    }
+    {
+      name: orange-gunner
+      mirror: true
+      alternate: true
+      rotate: true
+      rotateSpeed: 4
+      x: 5.5
+      y: -3.5
+      reload: 15
+      recoil: 3
+      shake: 0.3
+      shootSound: shootSnap
+      top: true
+      shootEffect: shootBig
+      bullet:
+      {
+        type: BasicBulletType
+        damage: 15
+        speed: 2.5
+        lifetime: 43
+        width: 5
+        height: 8.5
+        hitEffect: flakExplosion
+        splashDamageRadius: 12.5
+        splashDamage: 6
+        status: blasted
+        statusDuration: 5
+      }
+    }
+  ]
+}

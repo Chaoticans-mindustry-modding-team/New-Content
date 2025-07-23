@@ -1,6 +1,6 @@
 {
   name: Lightly Poisoned
-  damage: 0.6
+  damage: 0.3
   color: 9f62d1ff
   effectChance: 0.2
   transitionDamage: 30

@@ -7,12 +7,12 @@
     [gray]Faction: [orange]Charren
     '''
   type: mech
-  groundLayer: 76
+  health: 3100
+  armor: 11
   speed: 0.4
   drag: 0.3
   accel: 0.5
   flying: false
-  health: 1120
   hitSize: 17
   range: 200
   itemCapacity: 50
@@ -80,10 +80,16 @@
               colorTo: ffa97aff
               length: 0
               lifetime: 30
+              rotWithParent: true
             }
             {
               type: WaveEffect
               sizeTo: 19
+              colorFrom: ddddddaa
+              colorTo: ddddddaa
+              lightOpacity: 0
+              lifetime: 7
+              rotWithParent: true
             }
           ]
         }

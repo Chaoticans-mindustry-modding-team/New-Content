@@ -22,8 +22,8 @@
       {
         type: DrawPistons
         sides: 4
-        sinMag: 2
-        lenOffset: 2
+        sinMag: 1
+        lenOffset: -2
       }
       {
         type: DrawDefault

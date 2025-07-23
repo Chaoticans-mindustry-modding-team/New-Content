@@ -111,7 +111,7 @@
   ]
   research:
   {
-    parent: heatHarvester
+    parent: heat-harvester
     requirements: [
         iron/600
         cobalt/450

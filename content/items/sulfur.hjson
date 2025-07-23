@@ -1,6 +1,6 @@
 {
   name: Sulfur
-  description: Used in chemical reactions, material synthesis, and as flammable ammo.
+  description: Used in chemical reactions, material synthesis, and as flammable ammunition.
   flammability: 1.3
   cost: 1
   hardness: 0

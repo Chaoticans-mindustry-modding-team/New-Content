@@ -68,7 +68,7 @@
     power: 1.2
     liquids:
     [
-      poison/0.
+      poison/0.5
     ]
   }
   requirements:

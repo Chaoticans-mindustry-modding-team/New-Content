@@ -7,15 +7,15 @@
     liquidCapacity: 10
     health: 160
     requirements: [
-      iron/10
-      cobalt/10
+      iron/15
+      amberglass/15
     ]
     category: liquid
     research: {
         parent: iron-drill
         requirements: [
-            iron/75
-            cobalt/75
+            iron/20
+            amberglass/20
         ]
         objectives: [
             {

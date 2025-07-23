@@ -1,0 +1,11 @@
+type: floor
+name: Shallow Poison Water Rock
+speedMultiplier: 0.8
+variants: 3
+liquidDrop: poison-water
+isLiquid: true
+shallow: true
+cacheLayer: water
+attributes: [
+  poison: 0.6
+]

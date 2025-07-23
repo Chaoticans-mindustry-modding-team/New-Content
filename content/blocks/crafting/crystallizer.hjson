@@ -75,7 +75,7 @@
   [
     cobalt/50
     antimony/40
-    light-alloy/25
+    amberglass/25
   ]
   category: production
   research:
@@ -85,7 +85,7 @@
     [
       cobalt/1000
       antimony/800
-      light-alloy/400
+      amberglass/400
     ]
     objectives:
     [

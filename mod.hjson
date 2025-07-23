@@ -11,7 +11,7 @@
     [gold]As of Version 7x1, the mod's custom and new music has been moved to Chaoticans-mindustry-modding-team/New-Content-Music.
     '''
   author: Rylid Umil
-  version: 7x1
+  version: 7x2
   minGameVersion: 147
   contentOrder:
   [
@@ -59,7 +59,7 @@
         "iron", "cobalt", "antimony", "scorchonite", "light-alloy", "sulfur", "selevite", "tritonium", "medium-alloy", "rexon-alloy", "heavy-alloy", "anion-construct", "cinnabarite", "cinnabarium",
         //Liquid
     //Status
-    "charged", "poisoned", "maimed", "laser-shocked", "atomically-charged",
+    "charged", "lightly-poisoned", "poisoned", "heavily-poisoned", "maimed", "laser-shocked", "atomically-charged",
     //Sectors
     "raggedWastelands", "barrenPlateaus", "ferricPlains", "poisonBayCaves", "toxicEstuary"
   ]

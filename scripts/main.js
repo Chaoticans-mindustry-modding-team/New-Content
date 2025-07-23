@@ -27,10 +27,12 @@ Events.run(ClientLoadEvent, () => {
   // Application of methods
   let clexon = moddedPlanet("newunits-clexon");
   addNode(Liquids.water, moddedItem("newunits-iron"));
-  addNode(Liquids.cryofluid, Liquids.water, -1);
+  addNode(Liquids.cryofluid, Liquids.water, -1, clexon);
   addNode(Liquids.slag, moddedItem("newunits-iron"));
   addNode(moddedLiquid("newunits-poison-water"), Liquids.water, -1, clexon);
   addNode(moddedLiquid("newunits-poison"), Liquids.water, -1, clexon);
   addNode(moddedItem("newunits-selevite"), moddedLiquid("newunits-poison"), null, clexon);
   addNode(Items.coal, moddedItem("newunits-scorchonite"));
+  addNode(Items.scrap, moddedItem("newunits-iron"));
+  addNode(Items.sand, Items.scrap, -1, clexon);
 });

@@ -73,8 +73,8 @@
               length: 49
               interp: circleOut
               sizeInterp: circleIn
-              colorFrom: ffef73ff
-              colorTo: e89f31ff
+              colorFrom: 6babffff
+              colorTo: 0044ffff
               sizeFrom: 2
               sizeTo: 0
               lifetime: 40
@@ -90,8 +90,8 @@
           length: 8
           interp: circleOut
           sizeInterp: circleIn
-          colorFrom: ffef73ff
-          colorTo: e89f31ff
+          colorFrom: 6babffff
+          colorTo: 0044ffff
           line: true
           lenFrom: 2
           lenTo: 1

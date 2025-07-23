@@ -1,7 +1,7 @@
 type: floor
 name: Deep Poison
 drownTime: 45
-status: newunits-poisoned
+status: newunits-heavily-poisoned
 statusDuration: 360
 speedMultiplier: 0.06
 variants: 0

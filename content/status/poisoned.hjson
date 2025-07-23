@@ -1,0 +1,22 @@
+{
+  name: Poisoned
+  damage: 1.8
+  color: 854db0ff
+  effectChance: 0.3
+  transitionDamage: 30
+  affinities:
+  [
+    corroded
+  ]
+  effect:
+  {
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 1
+    sizeTo: 0
+    lifetime: 35
+    colorFrom: 854db0ff
+    colorTo: 854db0ff
+    length: 0
+  }
+}

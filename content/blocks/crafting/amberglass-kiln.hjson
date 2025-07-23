@@ -43,7 +43,7 @@
   category: crafting
   research:
   {
-    parent: small-alloy-forge
+    parent: crusher
     requirements: [
         iron/200
         cobalt/200

@@ -43,7 +43,6 @@
       trailChance: 0
       trailInterval: 5
       shootEffect: shootBig
-      smokeEffect: shootSmoke
       trailEffect:
       {
         type: ParticleEffect
@@ -108,7 +107,6 @@
       trailChance: 0
       trailInterval: 5
       shootEffect: shootBig
-      smokeEffect: shootSmoke
       trailEffect:
       {
         type: ParticleEffect

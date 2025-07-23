@@ -7,7 +7,7 @@
   hasItems: true
   itemCapacity: 10
   ambientSound: combustion
-  ambientSoundVolume: 0.05
+  ambientSoundVolume: 0.03
   powerProduction: 2.6
   itemDuration: 20
   generateEffectRange: 0

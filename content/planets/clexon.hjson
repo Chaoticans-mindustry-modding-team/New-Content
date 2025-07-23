@@ -16,6 +16,7 @@
   accessible: true
   allowLaunchToNumbered: false
   localizedName: Clexon
+  landMusic: landClexon
   unlockedOnLand:
   [
     core-central

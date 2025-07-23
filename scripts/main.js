@@ -9,6 +9,7 @@ Events.run(ClientLoadEvent, () => {
   function addNode(contentChild, contentParent, index, planet) {
     if(contentChild == null || contentParent == null) return;
     if(index == null) index = 0;
+    if(index == "last") index = contentParent.techNodes.size; // Index of last technode + 1
 
     contentParent.techNodes.get(index).children.add(
       TechTree.nodeProduce(contentChild, () => {}),
@@ -26,9 +27,11 @@ Events.run(ClientLoadEvent, () => {
   // Application of methods
   let clexon = moddedPlanet("newunits-clexon");
   addNode(Liquids.water, moddedItem("newunits-iron"));
-  addNode(Liquids.cryofluid, Liquids.water, 2);
+  addNode(Liquids.cryofluid, Liquids.water, "last");
   addNode(Liquids.slag, moddedItem("newunits-iron"));
-  addNode(moddedLiquid("newunits-poison-water"), Liquids.water, 2, clexon);
-  addNode(moddedLiquid("newunits-poison"), Liquids.water, 2, clexon);
+  addNode(moddedLiquid("newunits-poison-water"), Liquids.water, "last", clexon);
+  addNode(moddedLiquid("newunits-poison"), Liquids.water, "last", clexon);
   addNode(moddedItem("newunits-selevite"), moddedLiquid("newunits-poison"), null, clexon);
+  addNode(Items.coal, moddedItem("newunits-scorchonite"));
+  addNode(Items.silicon, Items.coal, "last");
 });

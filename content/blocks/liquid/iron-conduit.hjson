@@ -20,7 +20,8 @@
     parent: micro-pump
     requirements:
     [
-      iron/20
+      iron/9
+      amberglass/9
     ]
   }
 }

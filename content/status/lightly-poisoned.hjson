@@ -1,0 +1,22 @@
+{
+  name: Lightly Poisoned
+  damage: 0.5
+  color: 9f62d1ff
+  effectChance: 0.2
+  transitionDamage: 30
+  affinities:
+  [
+    corroded
+  ]
+  effect:
+  {
+    type: ParticleEffect
+    particles: 1
+    sizeFrom: 0.5
+    sizeTo: 0
+    lifetime: 30
+    colorFrom: 9f62d1ff
+    colorTo: 9f62d1ff
+    length: 0
+  }
+}

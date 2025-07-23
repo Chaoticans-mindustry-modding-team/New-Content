@@ -2,7 +2,7 @@
   name: Crusher
   description: Crushes scrap into sand.
   type: GenericCrafter
-  size: 3
+  size: 1
   craftTime: 45
   health: 260
   hasPower: true

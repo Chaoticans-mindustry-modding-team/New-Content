@@ -62,6 +62,7 @@
         statusDuration: 260
         knockback: 0.4
         damage: 18
+        lightOpacity: 0
         shootEffect:
         {
           type: MultiEffect

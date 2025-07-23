@@ -1,8 +1,8 @@
 type: floor
 name: Shallow Poison Rock
-speedMultiplier: 0.8
+speedMultiplier: 0.7
 variants: 3
-liquidDrop: poison-water
+liquidDrop: poison
 isLiquid: true
 shallow: true
 cacheLayer: water

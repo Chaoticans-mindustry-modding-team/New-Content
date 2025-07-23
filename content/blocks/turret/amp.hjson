@@ -23,7 +23,7 @@
   }
   consumes:
   {
-    power: 2
+    power: 3.5
     coolant:
     {
       amount: 0.15

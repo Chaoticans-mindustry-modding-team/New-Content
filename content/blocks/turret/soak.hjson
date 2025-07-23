@@ -13,15 +13,23 @@
   targetGround: true
   rotateSpeed: 3
   loopSound: none
-  shootSound: splash
+  shootSound: none
   shootY: 6
-  recoil: 0.1
+  recoil: 1
   velocityRnd: 0.1
   ammoPerShot: 4
   inaccuracy: 13
-  shootEffect: shootLiquid
+  shootEffect: {
+      type: SoundEffect
+      sound: splash
+      minVolume: 0.5
+      maxVolume: 1
+      maxPitch: 1
+      effect: none
+  }
   shoot: {
       shots: 8
+      shotDelay: 1
   }
   ammoTypes:
   {
@@ -30,26 +38,32 @@
         liquid: water
         knockback: 1
         layer: 98 //Prevent Bloom
-        speed: 6
-        lifetime: 15
-        orbSize: 1.8
+        speed: 3
+        lifetime: 30
+        orbSize: 3
+        status: wet
+        statusDuration: 120
     }
     cryofluid: {
         type: LiquidBulletType
         liquid: cryofluid
         knockback: 1.1
-        speed: 6
-        lifetime: 15
-        orbSize: 1.8
+        speed: 3
+        lifetime: 30
+        orbSize: 3
+        status: wet
+        statusDuration: 120
     }
     slag: {
         type: LiquidBulletType
         liquid: slag
         damage: 17
         knockback: 1.2
-        speed: 6
-        lifetime: 15
-        orbSize: 1.8
+        speed: 3
+        lifetime: 30
+        orbSize: 3
+        status: wet
+        statusDuration: 120
     }
     poison-water: {
         damage: 6
@@ -57,9 +71,11 @@
         liquid: poison-water
         knockback: 1
         layer: 98
-        speed: 6
-        lifetime: 15
-        orbSize: 1.8
+        speed: 3
+        lifetime: 30
+        orbSize: 3
+        status: wet
+        statusDuration: 120
     }
   }
   drawer:

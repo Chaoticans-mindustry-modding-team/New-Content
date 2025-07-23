@@ -10,6 +10,7 @@
   requirements:
   [
     iron/1
+    amberglass/1
   ]
   rotBridgeReplacement: iron-bridge-conduit
   junctionReplacement: iron-liquid-crosser

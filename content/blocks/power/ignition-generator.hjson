@@ -1,0 +1,71 @@
+{
+  name: Ignition Generator
+  description: Generates power by igniting flammable materials. Will explode if fueled with an explosive item for long enough.
+  type: ConsumeGenerator
+  size: 2
+  hasItems: true
+  itemCapacity: 10
+  ambientSound: combustion
+  ambientSoundVolume: 0.05
+  powerProduction: 1.2
+  itemDuration: 60
+  generateEffectRange: 0
+  generateEffect:
+  {
+    type: MultiEffect
+    effects:
+    [
+      {
+        type: ParticleEffect
+        particles: 2
+        sizeFrom: 2
+        sizeTo: 5
+        colorFrom: 474030aa
+        colorTo: 47403000
+        lifetime: 300
+        interp: linear
+        sizeInterp: linear
+        length: 8
+        cone: 3
+        offsetX: 4
+        offsetY: 4
+        baseRotation: -45
+      }
+    ]
+  }
+  drawer:
+  {
+    type: DrawMulti
+    drawers:
+    [
+      {
+        type: DrawDefault
+      }
+      {
+        type: DrawGlowRegion
+        suffix: -glow
+        color: ff0000aa
+      }
+    ]
+  }
+  consumes:
+  {
+    itemFlammable: {}
+    itemExplode: {}
+  }
+  category: power
+  requirements: [
+    iron/80
+    cobalt/40
+    light-alloy/20
+  ]
+  research:
+  {
+    parent: heatHarvester
+    requirements: [
+        iron/600
+        cobalt/450
+        light-alloy/300
+    ]
+  }
+}

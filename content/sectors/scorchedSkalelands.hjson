@@ -7,7 +7,7 @@
     [orange]Charren[] is once again sending troops to dispatch of your base. Defend against them, harvest [purple]selevite[] and [yellow]sulfur[], smelt [orange]amberglass[], and pump [orange]slag[] to use in turrets.
     [gray]Attacker: [orange]Charren
     '''
-  captureWave: 10
+  captureWave: 15
   difficulty: 3
   planet: clexon
   sector: 399

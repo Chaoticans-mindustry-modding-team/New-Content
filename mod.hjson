@@ -7,9 +7,11 @@
     [green]Thanks to my spriter Aegires for making some of theese awesome sprites!
 
     [red]This mod is very ambitious. And unfinished. I'm probably going to add new planets. One is already in the works.
+
+    [gold]As of Version 7x1, the mod's custom and new music has been moved to Chaoticans-mindustry-modding-team/New-Content-Music.
     '''
   author: Rylid Umil
-  version: 5
+  version: 7x1
   minGameVersion: 147
   contentOrder:
   [

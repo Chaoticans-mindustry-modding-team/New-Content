@@ -55,8 +55,6 @@
         colorFrom: 6babffff
         colorTo: 0044ffff
         length: 9
-        cone: 30
-        baseRotation: 180
       }
       despawnEffect: none
       status: burning
@@ -89,17 +87,11 @@
               sizeTo: 16
               lifetime: 5
           }
-          {
-              type: SoundEffect
-              sound: explosion2
-              minPitch: 0.4
-              maxPitch: 0.6
-              effect: none
-          }
-        ]
+          ]
       }
       despawnHit: true
       hitShake: 1
+      hitSound: explosion
     }
     scorchonite:
     {
@@ -129,8 +121,6 @@
         colorFrom: ffb361ff
         colorTo: a11800ff
         length: 9
-        baseRotation: 180
-        cone: 38
       }
       despawnEffect: none
       status: burning
@@ -163,17 +153,11 @@
               sizeTo: 20
               lifetime: 5
           }
-          {
-              type: SoundEffect
-              sound: explosion2
-              minPitch: 0.4
-              maxPitch: 0.6
-              effect: none
-          }
         ]
       }
       despawnHit: true
       hitshake: 1.5
+      hitSound: explosion
     }
   }
   drawer:

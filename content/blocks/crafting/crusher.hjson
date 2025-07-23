@@ -57,7 +57,7 @@
         content: scrap
       }
       {
-        type: Onsector
+        type: OnSector
         preset: scorchedSkalelands
       }
     ]

@@ -85,7 +85,8 @@
               colorFrom: 6babffff
               colorTo: 0044ffff
               sizeTo: 27
-              lifetime: 5
+              lifetime: 12
+              lightColor: 000000ff
           }
           ]
       }
@@ -105,7 +106,7 @@
       height: 7
       shrinkY: 0
       speed: 3
-      lifetime: 446
+      lifetime: 46
       sprite: circle-bullet
       trailChance: 0
       trailInterval: 1
@@ -127,7 +128,7 @@
       statusDuration: 460
       buildingDamageMultiplier: 0.5
       ammoMultiplier: 2
-      damage: 146
+      damage: 103
       splashDamageRadius: 35
       splashDamage: 46
       hitEffect:
@@ -151,7 +152,8 @@
               colorFrom: ffb361ff
               colorTo: ff6600ff
               sizeTo: 35
-              lifetime: 5
+              lifetime: 12
+              lightColor: 00000000
           }
         ]
       }

@@ -14,7 +14,7 @@
   flying: false
   health: 1120
   hitSize: 17
-  range: 175
+  range: 200
   itemCapacity: 50
   outlineColor: 13111cff
   mechLegColor: 13111cff
@@ -26,13 +26,14 @@
     burning
     melting
   ]
-  abilities: [
+  abilities:
+  [
     {
-        type: ShieldRegenFieldAbility
-        amount: 50
-        max: 100
-        reload: 80
-        range: 60
+      type: ShieldRegenFieldAbility
+      amount: 50
+      max: 100
+      reload: 80
+      range: 60
     }
   ]
   weapons:
@@ -45,48 +46,59 @@
       x: 11.5
       y: 0
       shootX: 0.25
-      shootY: 2.75
+      shootY: 4
       reload: 72
       recoil: 4
       shake: 3
       shootCone: 8
       ejectEffect: casing3
       shootSound: railgun
-      bullet: {
-          type: RailBulletType
-          damage: 320
-          knockback: 4
-          pierceDamageFactor: 999
-          incendAmount: 4
-          incendSpread: 12
-          incendChance: 0.8
-          length: 175
-          shootEffect: {
-              type: ParticleEffect
-              region: newunits-long-diamond
-              useRotation: true
-              offset: 90
-              sizeFrom: 8
-              sizeTo: 0
-              colorFrom: ffa97aff
-              colorTo: ffa97aff
-              length: 0
-              lifetime: 30
+      bullet:
+      {
+        type: RailBulletType
+        damage: 280
+        knockback: 8
+        pierceDamageFactor: 999
+        incendAmount: 4
+        incendSpread: 12
+        incendChance: 0.8
+        length: 200
+        status: melting
+        statusDuration: 460
+        shootEffect: type: MultiEffect
+        effects:
+        [
+          {
+            type: ParticleEffect
+            region: newunits-longer-diamond
+            useRotation: true
+            sizeFrom: 4
+            sizeTo: 0
+            colorFrom: ffa97aff
+            colorTo: ffa97aff
+            length: 0
+            lifetime: 30
           }
-          smokeEffect: none
-          pointEffectSpacing: 6
-          pointEffect: {
-              type: ParticleEffect
-              region: newunits-longest-diamond
-              useRotation: true
-              offset: 90
-              sizeFrom: 1
-              sizeTo: 0
-              lifetime: 60
-              colorFrom: ffa97aff
-              colorTo: ffa97aff
-              length: 0
+          {
+              type: WaveEffect
+              sizeTo: 19
           }
+        ]
+        smokeEffect: none
+        pointEffectSpacing: 5.5
+        pointEffect:
+        {
+          type: ParticleEffect
+          region: newunits-longest-diamond
+          useRotation: true
+          offset: 90
+          sizeFrom: 2
+          sizeTo: 0
+          lifetime: 23
+          colorFrom: ffa97aff
+          colorTo: ffa97aff
+          length: 0
+        }
       }
     }
   ]

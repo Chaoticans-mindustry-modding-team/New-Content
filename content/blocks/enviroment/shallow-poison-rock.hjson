@@ -1,8 +1,6 @@
 type: floor
 name: Shallow Poison Rock
-status: slow
-statusDuration: 45
-speedMultiplier: 0.35
+speedMultiplier: 0.8
 variants: 3
 liquidDrop: poison-water
 isLiquid: true

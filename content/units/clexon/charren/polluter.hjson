@@ -23,6 +23,7 @@
   accel: 0.5
   flying: false
   health: 1120
+  armor: 5
   hitSize: 14
   range: 130
   itemCapacity: 50

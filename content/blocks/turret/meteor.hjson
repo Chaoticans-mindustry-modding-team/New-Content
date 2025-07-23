@@ -13,9 +13,9 @@
   rotateSpeed: 3
   shootSound: hardExplosion
   coolantMultiplier: 5
-  ammoPerShot: 2
+  ammoPerShot: 5
   shake: 1
-  shootY: 5
+  shootY: 4
   recoil: 3
   ejectEffect: casing2
   consumes:
@@ -57,6 +57,7 @@
         length: 9
       }
       despawnEffect: none
+      ammoMultiplier: 1
       status: burning
       statusDuration: 265
       buildingDamageMultiplier: 0.5
@@ -129,6 +130,7 @@
       damage: 103
       splashDamageRadius: 35
       splashDamage: 46
+      ammoMultiplier: 1
       hitEffect:
       {
         type: MultiEffect

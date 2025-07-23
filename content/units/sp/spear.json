@@ -134,6 +134,7 @@
         "frontColor": "00000000",
         "backColor": "00000000",
         "despawnEffect": "none",
+        "lightOpacity": 0,
         "hitEffect": {
           "type": "ParticleEffect",
           "followParent": false,

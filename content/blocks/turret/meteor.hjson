@@ -7,15 +7,16 @@
   outlineColor: 13111cff
   maxAmmo: 10
   reload: 75
-  range: 90
+  range: 140
   targetAir: true
   targetGround: true
   rotateSpeed: 3
   shootSound: hardExplosion
-  coolantMultiplier: 6
+  coolantMultiplier: 5
   ammoPerShot: 2
   shake: 1
-  shootY: 6
+  shootY: 5
+  recoil: 3
   ejectEffect: casing2
   consumes:
   {
@@ -32,32 +33,34 @@
       frontColor: 6babffff
       backColor: 2c64ffff
       trailColor: 2c64ffff
-      trailWidth: 1
+      trailWidth: 3
       trailLength: 3
       width: 7
       height: 7
       shrinkY: 0
       speed: 3
-      lifetime: 30
+      lifetime: 46
       sprite: circle-bullet
       trailChance: 0
-      trailInterval: 5
+      trailInterval: 1
       shootEffect: shootBig
       trailEffect:
       {
         type: ParticleEffect
         particles: 4
-        sizeFrom: 2
+        sizeFrom: 1.5
         sizeTo: 0
-        lifetime: 45
+        lifetime: 25
         interp: linear
         colorFrom: 6babffff
         colorTo: 0044ffff
         length: 9
+        cone: 30
+        baseRotation: 180
       }
       despawnEffect: none
       status: burning
-      statusDuration: 300
+      statusDuration: 265
       buildingDamageMultiplier: 0.5
       ammoMultiplier: 2
       damage: 54
@@ -73,7 +76,7 @@
             particles: 9
             sizeFrom: 3
             sizeTo: 0
-            lifetime: 60
+            lifetime: 20
             interp: linear
             colorFrom: 6babffff
             colorTo: 0044ffff
@@ -84,19 +87,27 @@
               colorFrom: 6babffff
               colorTo: 0044ffff
               sizeTo: 16
-              lifetime: 15
+              lifetime: 5
+          }
+          {
+              type: SoundEffect
+              sound: explosion2
+              minPitch: 0.4
+              maxPitch: 0.6
+              effect: none
           }
         ]
       }
       despawnHit: true
+      hitShake: 1
     }
     scorchonite:
     {
       type: BasicBulletType
       frontColor: ffb361ff
-      backColor: ff6600ff
-      trailColor: a11800ff
-      trailWidth: 1
+      backColor: ff8324ff
+      trailColor: ff8324ff
+      trailWidth: 3
       trailLength: 3
       width: 7
       height: 7
@@ -105,7 +116,7 @@
       lifetime: 30
       sprite: circle-bullet
       trailChance: 0
-      trailInterval: 5
+      trailInterval: 1
       shootEffect: shootBig
       trailEffect:
       {
@@ -113,20 +124,22 @@
         particles: 4
         sizeFrom: 2
         sizeTo: 0
-        lifetime: 45
+        lifetime: 25
         interp: linear
         colorFrom: ffb361ff
         colorTo: a11800ff
         length: 9
+        baseRotation: 180
+        cone: 38
       }
       despawnEffect: none
       status: burning
       statusDuration: 460
       buildingDamageMultiplier: 0.5
       ammoMultiplier: 2
-      damage: 54
+      damage: 74
       splashDamageRadius: 24
-      splashDamage: 14
+      splashDamage: 36
       hitEffect:
       {
         type: MultiEffect
@@ -137,7 +150,7 @@
             particles: 11
             sizeFrom: 3
             sizeTo: 0
-            lifetime: 60
+            lifetime: 20
             interp: linear
             colorFrom: ffb361ff
             colorTo: a11800ff
@@ -148,11 +161,19 @@
               colorFrom: ffb361ff
               colorTo: ff6600ff
               sizeTo: 20
-              lifetime: 15
+              lifetime: 5
+          }
+          {
+              type: SoundEffect
+              sound: explosion2
+              minPitch: 0.4
+              maxPitch: 0.6
+              effect: none
           }
         ]
       }
       despawnHit: true
+      hitshake: 1.5
     }
   }
   drawer:

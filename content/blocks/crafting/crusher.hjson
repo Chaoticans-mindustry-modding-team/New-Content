@@ -1,0 +1,60 @@
+{
+  name: Crusher
+  description: Crushes scrap into sand.
+  type: GenericCrafter
+  size: 3
+  craftTime: 45
+  health: 260
+  hasPower: true
+  hasItems: true
+  itemCapacity: 10
+  ambientSound: grinding
+  ambientSoundVolume: 0.025
+  craftEffect: pulverize
+  drawer: {
+    type: DrawMulti
+    drawers:
+    [
+      {
+        type: DrawRegion
+        suffix: -bottom
+      }
+      {
+        type: DrawPistons
+        sides: 4
+        sinMag: 2
+        lenOffset: 2
+      }
+      {
+        type: DrawDefault
+      }
+    ]
+  }
+  outputItem: sand/2
+  consumes:
+  {
+    power: 0.78
+    items: [
+      scrap/1
+    ]
+  }
+  requirements:
+  [
+    iron/60
+    cobalt/30
+  ]
+  category: crafting
+  research: {
+    parent: iron-drill
+    requirements: [
+      iron/100
+      cobalt/50
+    ]
+    objectives: [
+      {
+        type: Produce
+        content: scrap
+      }
+    ]
+  }
+}

@@ -7,7 +7,7 @@
   outlineColor: 13111cff
   shootCone: 30
   liquidCapacity: 30
-  reload: 50
+  reload: 52
   range: 90
   targetAir: true
   targetGround: true
@@ -28,7 +28,7 @@
       effect: none
   }
   shoot: {
-      shots: 8
+      shots: 5
       shotDelay: 1
   }
   ammoTypes:
@@ -51,18 +51,18 @@
         speed: 3
         lifetime: 30
         orbSize: 3
-        status: wet
+        status: freezing
         statusDuration: 120
     }
     slag: {
         type: LiquidBulletType
         liquid: slag
-        damage: 17
+        damage: 10
         knockback: 1.2
         speed: 3
         lifetime: 30
         orbSize: 3
-        status: wet
+        status: melting
         statusDuration: 120
     }
     poison-water: {
@@ -74,7 +74,7 @@
         speed: 3
         lifetime: 30
         orbSize: 3
-        status: wet
+        status: newunits-poisoned
         statusDuration: 120
     }
   }

@@ -11,7 +11,7 @@
   requirements:
   [
     iron/4
-    cobalt/2
+    amberglass/4
   ]
   category: liquid
   research:
@@ -19,8 +19,8 @@
     parent: iron-liquid-crosser
     requirements:
     [
-      iron/45
-      cobalt/20
+      iron/30
+      amberglass/30
     ]
   }
 }

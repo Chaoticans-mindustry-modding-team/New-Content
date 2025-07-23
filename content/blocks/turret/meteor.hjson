@@ -179,8 +179,9 @@
     parent: mecha
     requirements:
     [
-      iron/75
-      cobalt/45
+      iron/270
+      scorchonite/100
+      antimony/80
     ]
     objectives:
     [

@@ -41,8 +41,8 @@
   }
   requirements:
   [
-    iron/60
-    cobalt/30
+    iron/20
+    cobalt/15
   ]
   category: crafting
   research: {
@@ -55,6 +55,10 @@
       {
         type: Produce
         content: scrap
+      }
+      {
+        type: Onsector
+        preset: scorchedSkalelands
       }
     ]
   }

@@ -8,8 +8,8 @@
   itemCapacity: 10
   ambientSound: combustion
   ambientSoundVolume: 0.05
-  powerProduction: 0.9
-  itemDuration: 60
+  powerProduction: 2.6
+  itemDuration: 30
   generateEffectRange: 0
   generateEffect:
   {
@@ -21,7 +21,7 @@
         particles: 3
         sizeFrom: 2
         sizeTo: 5
-        colorFrom: 47403055
+        colorFrom: 47403044
         colorTo: 47403000
         lifetime: 300
         interp: linear
@@ -30,6 +30,54 @@
         cone: 3
         offsetX: 5
         offsetY: 0
+        baseRotation: 45
+      }
+      {
+        type: ParticleEffect
+        particles: 3
+        sizeFrom: 2
+        sizeTo: 5
+        colorFrom: 47403044
+        colorTo: 47403000
+        lifetime: 300
+        interp: linear
+        sizeInterp: linear
+        length: 18
+        cone: 3
+        offsetX: 0
+        offsetY: 5
+        baseRotation: 45
+      }
+      {
+        type: ParticleEffect
+        particles: 3
+        sizeFrom: 2
+        sizeTo: 5
+        colorFrom: 47403044
+        colorTo: 47403000
+        lifetime: 300
+        interp: linear
+        sizeInterp: linear
+        length: 18
+        cone: 3
+        offsetX: -5
+        offsetY: 0
+        baseRotation: 45
+      }
+      {
+        type: ParticleEffect
+        particles: 3
+        sizeFrom: 2
+        sizeTo: 5
+        colorFrom: 47403044
+        colorTo: 47403000
+        lifetime: 300
+        interp: linear
+        sizeInterp: linear
+        length: 18
+        cone: 3
+        offsetX: 5
+        offsetY: -5
         baseRotation: 45
       }
     ]

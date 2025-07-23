@@ -19,8 +19,8 @@ Events.run(ClientLoadEvent, () => {
       contentChild.shownPlanets.addAll(contentParent.shownPlanets);
       contentChild.databaseTabs.addAll(contentParent.databaseTabs);
     } else {
-      contentChild.shownPlanets.add(all);
-      contentChild.databaseTabs.add(all);
+      contentChild.shownPlanets.add(planet);
+      contentChild.databaseTabs.add(planet);
     };
   };
 

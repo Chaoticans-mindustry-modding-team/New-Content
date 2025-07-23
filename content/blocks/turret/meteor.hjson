@@ -1,0 +1,188 @@
+{
+  localizedName: Meteor
+  description: Launches fireballs of flammable material at enemy targets.
+  type: ItemTurret
+  size: 2
+  health: 730
+  outlineColor: 13111cff
+  maxAmmo: 10
+  reload: 75
+  range: 90
+  targetAir: true
+  targetGround: true
+  rotateSpeed: 3
+  shootSound: hardExplosion
+  coolantMultiplier: 6
+  ammoPerShot: 2
+  shake: 1
+  shootY: 6
+  ejectEffect: casing2
+  consumes:
+  {
+    coolant:
+    {
+      amount: 0.2
+    }
+  }
+  ammoTypes:
+  {
+    sulfur:
+    {
+      type: BasicBulletType
+      frontColor: 6babffff
+      backColor: 2c64ffff
+      trailColor: 2c64ffff
+      trailWidth: 1
+      trailLength: 3
+      width: 7
+      height: 7
+      shrinkY: 0
+      speed: 3
+      lifetime: 30
+      sprite: circle-bullet
+      trailChance: 0
+      trailInterval: 5
+      shootEffect: shootBig
+      smokeEffect: shootSmoke
+      trailEffect:
+      {
+        type: ParticleEffect
+        particles: 4
+        sizeFrom: 2
+        sizeTo: 0
+        lifetime: 45
+        interp: linear
+        colorFrom: 6babffff
+        colorTo: 0044ffff
+        length: 9
+      }
+      despawnEffect: none
+      status: burning
+      statusDuration: 300
+      buildingDamageMultiplier: 0.5
+      ammoMultiplier: 2
+      damage: 54
+      splashDamageRadius: 19
+      splashDamage: 14
+      hitEffect:
+      {
+        type: MultiEffect
+        effects:
+        [
+          {
+            type: ParticleEffect
+            particles: 9
+            sizeFrom: 3
+            sizeTo: 0
+            lifetime: 60
+            interp: linear
+            colorFrom: 6babffff
+            colorTo: 0044ffff
+            length: 20
+          }
+          {
+              type: WaveEffect
+              colorFrom: 6babffff
+              colorTo: 0044ffff
+              sizeTo: 16
+              lifetime: 15
+          }
+        ]
+      }
+      despawnHit: true
+    }
+    scorchonite:
+    {
+      type: BasicBulletType
+      frontColor: ffb361ff
+      backColor: ff6600ff
+      trailColor: a11800ff
+      trailWidth: 1
+      trailLength: 3
+      width: 7
+      height: 7
+      shrinkY: 0
+      speed: 3
+      lifetime: 30
+      sprite: circle-bullet
+      trailChance: 0
+      trailInterval: 5
+      shootEffect: shootBig
+      smokeEffect: shootSmoke
+      trailEffect:
+      {
+        type: ParticleEffect
+        particles: 4
+        sizeFrom: 2
+        sizeTo: 0
+        lifetime: 45
+        interp: linear
+        colorFrom: ffb361ff
+        colorTo: a11800ff
+        length: 9
+      }
+      despawnEffect: none
+      status: burning
+      statusDuration: 460
+      buildingDamageMultiplier: 0.5
+      ammoMultiplier: 2
+      damage: 54
+      splashDamageRadius: 24
+      splashDamage: 14
+      hitEffect:
+      {
+        type: MultiEffect
+        effects:
+        [
+          {
+            type: ParticleEffect
+            particles: 11
+            sizeFrom: 3
+            sizeTo: 0
+            lifetime: 60
+            interp: linear
+            colorFrom: ffb361ff
+            colorTo: a11800ff
+            length: 24
+          }
+          {
+              type: WaveEffect
+              colorFrom: ffb361ff
+              colorTo: ff6600ff
+              sizeTo: 20
+              lifetime: 15
+          }
+        ]
+      }
+      despawnHit: true
+    }
+  }
+  drawer:
+  {
+    type: DrawTurret
+    basePrefix: clexon-
+  }
+  requirements:
+  [
+    iron/75
+    scorchonite/30
+    antimony/20
+  ]
+  category: turret
+  research:
+  {
+    parent: mecha
+    requirements:
+    [
+      iron/75
+      cobalt/45
+    ]
+    objectives:
+    [
+      {
+        type: SectorComplete
+        preset: toxicEstuary
+      }
+    ]
+  }
+}

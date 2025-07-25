@@ -10,6 +10,7 @@
   difficulty: 1
   planet: clexon
   sector: 721
+  originalPosition: 94
   alwaysUnlocked: true
   research: {
     parent: core-central

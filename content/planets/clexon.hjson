@@ -61,8 +61,6 @@
         //selevite level 2
         //volcanic level 3
         24183b
-        24183b
-        17100c
         17100c
         17100c
         241913
@@ -88,10 +86,10 @@
         f2957e
       ]
       octaves: 8
-      persistence: 0.7
+      persistence: 0.6
       scale: 0.7
-      mag: 10
-      pow: 5.5
+      mag: 11
+      pow: 6
     }
   ]
   cloudMesh:

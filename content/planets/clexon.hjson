@@ -93,9 +93,9 @@
         f2957e
         f49a7f
       ]
-      octaves: 5
+      octaves: 6
       persistence: 0.65
-      scl: 3
+      scl: 0.5
       mag: 5
       pow: 4
     }

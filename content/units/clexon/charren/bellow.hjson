@@ -57,8 +57,8 @@
       {
         type: RailBulletType
         damage: 230
-        knockback: 8
-        pierceDamageFactor: 0.3
+        knockback: 13
+        pierceDamageFactor: 0.15
         incendAmount: 4
         incendSpread: 12
         incendChance: 0.8
@@ -107,6 +107,21 @@
           colorFrom: ffa97aff
           colorTo: ffa97aff
           length: 0
+        }
+        pierceEffect: {
+            type: ParticleEffect
+            particles: 4
+            line: true
+            interp: circleOut
+            sizeInterp: circleIn
+            lenFrom: 3
+            lenTo: 1
+            strokeFrom: 1
+            strokeTo: 0.75
+            colorFrom: ffa97aff
+            colorTo: ffa97aff
+            cone: 5
+            length: 10
         }
       }
     }

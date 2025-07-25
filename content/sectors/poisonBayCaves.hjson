@@ -10,6 +10,7 @@
   difficulty: 2
   planet: clexon
   sector: 721
+  originalPosition: 217
   research: {
     parent: ferricPlains
     requiresUnlock: false

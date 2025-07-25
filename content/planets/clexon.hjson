@@ -60,7 +60,8 @@
         452076
         542a8d
         //poison stuff level 1
-        74578a
+        633689
+        723f97
         8249a6
         //selevite level 2
         //volcanic level 3
@@ -92,11 +93,11 @@
         f2957e
         f49a7f
       ]
-      octaves: 5
-      persistence: 0.6
+      octaves: 4
+      persistence: 0.4
       scale: 1.7
       mag: 5
-      pow: 6
+      pow: 5
     }
   ]
   cloudMesh:

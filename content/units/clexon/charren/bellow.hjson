@@ -8,7 +8,7 @@
     '''
   type: mech
   health: 280
-  armor: 9
+  armor: -9999
   speed: 0.35
   drag: 0.3
   accel: 0.5
@@ -56,7 +56,7 @@
       bullet:
       {
         type: RailBulletType
-        damage: 280
+        damage: 0
         knockback: 8
         pierceDamageFactor: 999
         incendAmount: 4

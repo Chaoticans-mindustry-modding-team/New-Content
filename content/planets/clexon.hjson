@@ -93,11 +93,11 @@
         f2957e
         f49a7f
       ]
-      octaves: 4
-      persistence: 0.4
-      scale: 1.7
+      octaves: 5
+      persistence: 0.65
+      scale: 3
       mag: 5
-      pow: 5
+      pow: 4
     }
   ]
   cloudMesh:

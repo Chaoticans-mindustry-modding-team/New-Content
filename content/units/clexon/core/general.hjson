@@ -16,7 +16,7 @@
   hitSize: 10
   mineTier: 3
   armor: 4
-  range: 150
+  range: 180
   itemCapacity: 200
   engineOffset: 8
   fogRadius: 0
@@ -53,9 +53,9 @@
         knockback: 2
         damage: 33
         lifetime: 30
-        speed: 5
+        speed: 6
         sprite: missile
-        width: 9
+        width: 7
         height: 12
         frontColor: ffffffff
         backColor: f9c27aff

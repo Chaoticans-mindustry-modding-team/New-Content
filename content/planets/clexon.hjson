@@ -7,7 +7,7 @@
   parent: sun
   iconColor: 4b2682ff
   atmosphereRadIn: 0
-  atmosphereRadOut: 0.6
+  atmosphereRadOut: 0.2
   atmosphereColor: 5e2e99
   orbitRadius: 32
   orbitOffset: 62

@@ -7,7 +7,7 @@
   parent: sun
   iconColor: 4b2682ff
   atmosphereRadIn: 0
-  atmosphereRadOut: 0.6
+  atmosphereRadOut: 1.2
   atmosphereColor: 5e2e99
   orbitRadius: 32
   orbitOffset: 62
@@ -90,7 +90,7 @@
       persistence: 0.6
       scale: 0.7
       mag: 1
-      pow: 0.6
+      pow: 5.8
     }
   ]
   cloudMesh:

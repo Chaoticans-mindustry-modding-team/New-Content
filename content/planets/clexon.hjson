@@ -103,8 +103,8 @@
   [
     {
       type: HexSkyMesh
-      speed: 1.7
-      seed: 76
+      speed: 1.2
+      seed: 22
       divisions: 6
       radius: 0.2
       color: 9f62d1
@@ -135,7 +135,7 @@
       octaves: 3
       persistence: 0.3
       scl: 0.4
-      thresh: 0.5
+      thresh: 0.4
     }
   ]
   alwaysUnlocked: true

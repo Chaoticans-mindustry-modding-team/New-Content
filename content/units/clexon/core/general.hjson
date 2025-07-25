@@ -1,0 +1,82 @@
+{
+  localizedName: General
+  description: Defends the Mecca core from enemies. Builds structures. Equipped with dual rocket launchers. Capable of flight.
+  type: mech
+  targetBuildingsMobile: false
+  speed: 1.2
+  drag: 0.3
+  accel: 0.5
+  buildSpeed: 1.5
+  flying: false
+  canBoost: true
+  boostMultiplier: 2
+  health: 1560
+  isEnemy: false
+  mineSpeed: 20
+  hitSize: 10
+  mineTier: 3
+  armor: 4
+  range: 150
+  itemCapacity: 200
+  fogRadius: 0
+  outlineColor: 13111cff
+  mechLegColor: 13111cff
+  rotateSpeed: 14
+  drownTimeMultiplier: 2
+  immunities: [
+    newunits-lightly-poisoned
+  ]
+  weapons:
+  [
+    {
+      name: general-launcher
+      mirror: true
+      alternate: true
+      x: 5.75
+      y: 1
+      reload: 28
+      shootSound: rocket
+      top: false
+      rotate: false
+      recoil: 2
+      ejectEffect: casing2
+      shootCone: 7
+      shootStatus: newunits-bit-slow
+      shootStatusDuration: 30
+      inaccuracy: 3
+      shake: 0.3
+      bullet:
+      {
+        type: BulletType
+        knockback: 2
+        damage: 25
+        lifetime: 30
+        speed: 5
+        sprite: missile
+        width: 8
+        height: 12
+        frontColor: ffffffff
+        backColor: f9c27aff
+        trailColor: f9c27aff
+        trailLength: 6
+        trailWidth: 1
+        hitSound: explosionFrag
+        despawnEffect: none
+        despawnHit: true
+        splashDamageRadius: 30
+        hitEffect: {
+            type: ExplosionEffect
+            waveColor: f9c27aff
+            sparkColor: f9c27aff
+            waveRad: 16
+            sparkRad: 18
+            smokeSize: 3
+            smokeSizeBase: 0
+            smokeRad: 18
+            smokes: 6
+            sparks: 5
+        }
+      }
+    }
+  ]
+}

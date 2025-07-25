@@ -94,10 +94,10 @@
         f49a7f
       ]
       octaves: 6
-      persistence: 0.65
-      scl: 0.5
+      persistence: 0.7
+      scl: 0.3
       mag: 5
-      pow: 5.5
+      pow: 4.5
     }
   ]
   cloudMesh:

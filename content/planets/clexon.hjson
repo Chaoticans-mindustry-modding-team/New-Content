@@ -90,7 +90,7 @@
       persistence: 0.6
       scale: 0.7
       mag: 1
-      pow: 60.6
+      pow: 0.6
     }
   ]
   cloudMesh:

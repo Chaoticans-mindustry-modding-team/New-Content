@@ -25,11 +25,5 @@
         light-alloy/4000
         amberglass/2000
     ]
-    objectives: [
-        {
-            type: CaptureSector
-            preset: scorchedSkalelands
-        }
-    ]
   }
 }

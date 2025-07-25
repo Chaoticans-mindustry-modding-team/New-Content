@@ -11,8 +11,8 @@
     [gold]As of Version 7x1, the mod's custom and new music has been moved to Chaoticans-mindustry-modding-team/New-Content-Music.
     '''
   author: Rylid Umil
-  version: 7x3
-  minGameVersion: 147
+  version: 8x4
+  minGameVersion: 150
   contentOrder:
   [
     // Serpulo

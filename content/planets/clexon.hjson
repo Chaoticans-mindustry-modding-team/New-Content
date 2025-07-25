@@ -55,42 +55,49 @@
       [
         //poison lake level 0
         371861
+        542a8d
         5e2e99
         //poison stuff level 1
         46256e
+        552e7c
+        64378a
         8249a6
         //selevite level 2
         //volcanic level 3
         24183b
+        2c1f46
         17100c
-        17100c
+        1d140f
         241913
         //selevic2 level 4
         8000ff
+        6b00d6
         //hot skale biome level 5
         de6f00
+        ee8818
         ffa230
         //ferric level 6
         692619
-        692619
-        692619
-        692619
+        8c3b20
         b05128
-        b05128
-        b05128
+        bb6438
+        c7784a
         //cold biome level 7
         ff8566
         fcac97
-        //mountains level 8
+        //top level 8
         393b4d
+        51566e
         7dbeff
+        b8e7ff
         f2957e
+        f49a7f
       ]
-      octaves: 8
+      octaves: 5
       persistence: 0.6
       scale: 0.7
-      mag: 1
-      pow: 5.8
+      mag: 5
+      pow: 4.5
     }
   ]
   cloudMesh:

@@ -9,7 +9,8 @@
   captureWave: 6
   difficulty: 1
   planet: clexon
-  sector: 94
+  sector: 716
+  originalPosition: 94
   alwaysUnlocked: true
   research: {
     parent: core-central

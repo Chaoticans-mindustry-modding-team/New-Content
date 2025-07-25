@@ -55,6 +55,8 @@
       [
         //poison lake level 0
         371861
+        391965
+        3d1b6b
         452076
         542a8d
         //poison stuff level 1
@@ -92,9 +94,9 @@
       ]
       octaves: 5
       persistence: 0.6
-      scale: 1.4
+      scale: 1.7
       mag: 5
-      pow: 7.1
+      pow: 6
     }
   ]
   cloudMesh:

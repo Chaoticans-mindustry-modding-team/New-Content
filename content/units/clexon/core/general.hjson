@@ -18,11 +18,13 @@
   armor: 4
   range: 150
   itemCapacity: 200
+  engineOffset: 8
   fogRadius: 0
   outlineColor: 13111cff
   mechLegColor: 13111cff
   rotateSpeed: 14
   drownTimeMultiplier: 2
+  mechSideSway: 0.5
   immunities: [
     newunits-lightly-poisoned
   ]
@@ -32,9 +34,9 @@
       name: general-launcher
       mirror: true
       alternate: true
-      x: 5.75
+      x: 6.75
       y: 1
-      reload: 28
+      reload: 14
       shootSound: rocket
       top: false
       rotate: false
@@ -47,23 +49,25 @@
       shake: 0.3
       bullet:
       {
-        type: BulletType
+        type: BasicBulletType
         knockback: 2
-        damage: 25
+        damage: 33
         lifetime: 30
         speed: 5
         sprite: missile
-        width: 8
+        width: 9
         height: 12
         frontColor: ffffffff
         backColor: f9c27aff
         trailColor: f9c27aff
         trailLength: 6
-        trailWidth: 1
+        trailWidth: 1.5
         hitSound: explosionFrag
         despawnEffect: none
         despawnHit: true
         splashDamageRadius: 30
+        splashDamage: 42
+        status: blasted
         hitEffect: {
             type: ExplosionEffect
             waveColor: f9c27aff

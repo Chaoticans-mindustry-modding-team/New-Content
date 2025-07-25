@@ -11,7 +11,8 @@
   captureWave: 10
   difficulty: 2
   planet: clexon
-  sector: 710
+  sector: 720
+  originalPosition: 710
   research:
   {
     parent: poisonBayCaves

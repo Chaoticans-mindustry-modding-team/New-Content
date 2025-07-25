@@ -1,0 +1,35 @@
+{
+  localizedName: Core: Mecca
+  description: Core of the base. Moderately armored. Once it falls, the sector falls too.
+  type: CoreBlock
+  itemCapacity: 4500
+  size: 3
+  health: 3900
+  armor: 8
+  category: effect
+  unitType: general
+  unitCapModifier: 8
+  thrusterLength: 14
+  requirements: [
+    iron/2000
+    cobalt/2000
+    light-alloy/1600
+    amberglass/600
+  ]
+  research:
+  {
+    parent: core-central
+    requirements: [
+        iron/5000
+        cobalt/5000
+        light-alloy/4000
+        amberglass/2000
+    ]
+    objectives: [
+        {
+            type: CaptureSector
+            preset: scorchedSkalelands
+        }
+    ]
+  }
+}

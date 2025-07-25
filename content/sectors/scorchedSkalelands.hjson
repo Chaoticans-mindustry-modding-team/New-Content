@@ -11,6 +11,7 @@
   difficulty: 3
   planet: clexon
   sector: 711
+  originalPosition: 399
   research:
   {
     parent: toxicEstuary

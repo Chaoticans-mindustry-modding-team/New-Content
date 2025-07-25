@@ -9,7 +9,8 @@
   captureWave: 10
   difficulty: 2
   planet: clexon
-  sector: 217
+  sector: 721
+  originalPosition: 217
   research: {
     parent: ferricPlains
     requiresUnlock: false

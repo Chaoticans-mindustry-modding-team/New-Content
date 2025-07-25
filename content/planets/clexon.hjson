@@ -3,7 +3,7 @@
   solarSystem: sun
   sectorSize: 4
   sectorSeed: 3
-  startSector: 94
+  startSector: 716
   parent: sun
   iconColor: 4b2682ff
   atmosphereRadIn: 0

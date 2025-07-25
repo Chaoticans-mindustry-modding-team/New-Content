@@ -95,7 +95,7 @@
       ]
       octaves: 5
       persistence: 0.65
-      scale: 3
+      scale: 30
       mag: 5
       pow: 4
     }

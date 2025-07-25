@@ -7,9 +7,9 @@
     [gray]Faction: [orange]Charren
     '''
   type: mech
-  health: 3100
-  armor: 11
-  speed: 0.4
+  health: 0
+  armor: 9
+  speed: 0.35
   drag: 0.3
   accel: 0.5
   flying: false

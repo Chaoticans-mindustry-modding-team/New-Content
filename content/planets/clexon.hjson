@@ -48,7 +48,7 @@
   [
     {
       type: SunMesh
-      divisions: 7
+      divisions: 6
       radius: 1
       colors:
       [

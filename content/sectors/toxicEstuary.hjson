@@ -12,6 +12,7 @@
   difficulty: 2
   planet: clexon
   sector: 720
+  originalPosition: 710
   research:
   {
     parent: poisonBayCaves

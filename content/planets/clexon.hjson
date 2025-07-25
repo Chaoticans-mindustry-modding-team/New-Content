@@ -7,7 +7,7 @@
   parent: sun
   iconColor: 4b2682ff
   atmosphereRadIn: 0
-  atmosphereRadOut: 1.2
+  atmosphereRadOut: 1.6
   atmosphereColor: 5e2e99
   orbitRadius: 32
   orbitOffset: 62
@@ -43,7 +43,7 @@
       randomWaveAI: true
   }
   */
-  radius: 1 //biggy
+  radius: 1.4 //biggy
   //SunMesh the goat
   mesh:
   [

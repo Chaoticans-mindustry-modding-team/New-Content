@@ -43,7 +43,7 @@
       randomWaveAI: true
   }
   */
-  radius: 1.5 //biggy
+  radius: 1 //biggy
   //SunMesh the goat
   mesh:
   [

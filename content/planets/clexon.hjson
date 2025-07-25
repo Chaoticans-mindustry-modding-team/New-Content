@@ -55,12 +55,10 @@
       [
         //poison lake level 0
         371861
+        452076
         542a8d
-        5e2e99
         //poison stuff level 1
-        46256e
-        552e7c
-        64378a
+        74578a
         8249a6
         //selevite level 2
         //volcanic level 3
@@ -71,7 +69,6 @@
         241913
         //selevic2 level 4
         8000ff
-        6b00d6
         //hot skale biome level 5
         de6f00
         ee8818
@@ -93,11 +90,11 @@
         f2957e
         f49a7f
       ]
-      octaves: 5
+      octaves: 3
       persistence: 0.6
       scale: 0.7
       mag: 5
-      pow: 4.5
+      pow: 4
     }
   ]
   cloudMesh:

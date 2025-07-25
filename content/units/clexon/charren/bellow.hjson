@@ -7,8 +7,8 @@
     [gray]Faction: [orange]Charren
     '''
   type: mech
-  health: 280
-  armor: -9999
+  health: 2800
+  armor: 9
   speed: 0.35
   drag: 0.3
   accel: 0.5
@@ -47,7 +47,7 @@
       y: 0
       shootX: 0.25
       shootY: 4
-      reload: 72
+      reload: 134
       recoil: 4
       shake: 3
       shootCone: 8
@@ -56,9 +56,9 @@
       bullet:
       {
         type: RailBulletType
-        damage: 0
+        damage: 230
         knockback: 8
-        pierceDamageFactor: 999
+        pierceDamageFactor: 0.3
         incendAmount: 4
         incendSpread: 12
         incendChance: 0.8

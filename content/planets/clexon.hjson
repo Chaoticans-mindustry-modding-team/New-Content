@@ -5,11 +5,11 @@
   sectorSeed: 3
   startSector: 94
   parent: sun
-  iconColor: 432980ff
+  iconColor: 4b2682ff
   atmosphereRadIn: 0
   atmosphereRadOut: 0.2
   atmosphereColor: 5e2e99
-  orbitRadius: 43
+  orbitRadius: 32
   orbitOffset: 62
   orbitTime: 12000
   rotateTime: 5000
@@ -43,12 +43,13 @@
       randomWaveAI: true
   }
   */
+  radius: 1.5 //biggy
   //SunMesh the goat
   mesh:
   [
     {
       type: SunMesh
-      divisions: 6
+      divisions: 7
       radius: 1
       colors:
       [

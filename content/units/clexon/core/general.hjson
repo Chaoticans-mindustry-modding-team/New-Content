@@ -70,7 +70,7 @@
         splashDamage: 42
         status: blasted
         trailInterval: 3
-        trailChance: 0
+        trailChance: 1
         trailEffect: {
             type: ParticleEffect
             particles: 0

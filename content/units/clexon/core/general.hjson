@@ -24,8 +24,9 @@
   mechLegColor: 13111cff
   rotateSpeed: 14
   drownTimeMultiplier: 2
-  mechSideSway: 0.5
-  immunities: [
+  mechSideSway: 0.2
+  immunities:
+  [
     newunits-lightly-poisoned
   ]
   weapons:
@@ -35,8 +36,8 @@
       mirror: true
       alternate: true
       x: 6.75
-      y: 1
-      reload: 14
+      y: 0
+      reload: 13
       shootSound: rocket
       top: false
       rotate: false
@@ -60,7 +61,7 @@
         frontColor: ffffffff
         backColor: f9c27aff
         trailColor: f9c27aff
-        trailLength: 6
+        trailLength: 12
         trailWidth: 1.5
         hitSound: explosionFrag
         despawnEffect: none
@@ -68,17 +69,30 @@
         splashDamageRadius: 30
         splashDamage: 42
         status: blasted
-        hitEffect: {
-            type: ExplosionEffect
-            waveColor: f9c27aff
-            sparkColor: f9c27aff
-            waveRad: 16
-            sparkRad: 18
-            smokeSize: 3
-            smokeSizeBase: 0
-            smokeRad: 18
-            smokes: 6
-            sparks: 5
+        trailInterval: 3
+        trailChance: 0
+        trailEffect: {
+            type: ParticleEffect
+            particles: 0
+            sizeFrom: 3
+            sizeTo: 0
+            interp: circleOut
+            sizeInterp: circleIn
+            colorFrom: 555555aa
+            colorTo; 555555aa
+        }
+        hitEffect:
+        {
+          type: ExplosionEffect
+          waveColor: f9c27aff
+          sparkColor: f9c27aff
+          waveRad: 16
+          sparkRad: 18
+          smokeSize: 3
+          smokeSizeBase: 0
+          smokeRad: 18
+          smokes: 6
+          sparks: 5
         }
       }
     }

@@ -71,16 +71,19 @@
         status: blasted
         trailInterval: 1
         trailChance: 1
+        layer: 101
         trailEffect: {
             type: ParticleEffect
-            particles: 2
-            sizeFrom: 2.25
+            particles: 1
+            sizeFrom: 2.5
             sizeTo: 0
             interp: circleOut
             sizeInterp: circleIn
             colorFrom: 555555aa
             colorTo: 555555aa
-            length: 4.5
+            lifetime: 20
+            length: 5
+            layer: 100
         }
         hitEffect:
         {

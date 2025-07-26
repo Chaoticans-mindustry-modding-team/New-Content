@@ -44,7 +44,7 @@
       recoil: 2
       ejectEffect: casing2
       shootCone: 7
-      shootStatus: newunits-bit-slow
+      shootStatus: slow
       shootStatusDuration: 30
       inaccuracy: 3
       shake: 0.3
@@ -73,14 +73,14 @@
         trailChance: 1
         trailEffect: {
             type: ParticleEffect
-            particles: 1
-            sizeFrom: 1
+            particles: 2
+            sizeFrom: 2.25
             sizeTo: 0
             interp: circleOut
             sizeInterp: circleIn
             colorFrom: 555555aa
             colorTo: 555555aa
-            length: 2
+            length: 4.5
         }
         hitEffect:
         {

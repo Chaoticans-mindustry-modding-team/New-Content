@@ -69,17 +69,18 @@
         splashDamageRadius: 30
         splashDamage: 42
         status: blasted
-        trailInterval: 3
-        trailChance: 0
+        trailInterval: 1
+        trailChance: 1
         trailEffect: {
             type: ParticleEffect
             particles: 1
-            sizeFrom: 3
+            sizeFrom: 1
             sizeTo: 0
             interp: circleOut
             sizeInterp: circleIn
             colorFrom: 555555aa
             colorTo: 555555aa
+            length: 2
         }
         hitEffect:
         {

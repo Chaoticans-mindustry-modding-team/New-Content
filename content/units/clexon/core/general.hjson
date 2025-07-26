@@ -79,7 +79,7 @@
             interp: circleOut
             sizeInterp: circleIn
             colorFrom: 555555aa
-            colorTo; 555555aa
+            colorTo: 555555aa
         }
         hitEffect:
         {

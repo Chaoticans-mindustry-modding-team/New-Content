@@ -25,7 +25,7 @@
   health: 1120
   armor: 5
   hitSize: 14
-  range: 130
+  range: 49
   itemCapacity: 50
   outlineColor: 13111cff
   mechLegColor: 13111cff

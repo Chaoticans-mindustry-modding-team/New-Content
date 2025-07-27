@@ -1,0 +1,75 @@
+{
+  localizedName: Soldier
+  description: Fires weighted bullets at enemies.
+  type: mech
+  targetBuildingsMobile: false
+  speed: 0.4
+  drag: 0.3
+  accel: 0.5
+  flying: false
+  health: 600
+  hitSize: 9
+  armor: 4
+  range: 150
+  itemCapacity: 10
+  outlineColor: 13111cff
+  mechLegColor: 13111cff
+  rotateSpeed: 2
+  weapons:
+  [
+    {
+      name: diversionist-pistol
+      mirror: true
+      alternate: true
+      x: 6.25
+      y: 1.5
+      reload: 32
+      shootSound: parry
+      top: false
+      rotate: false
+      recoil: 2
+      recoilTime: 36
+      ejectEffect: casing2
+      shootCone: 10
+      bullet:
+      {
+        type: BasicBulletType
+        frontColor: fff8e8ff
+        backColor: f9c27aff
+        width: 8
+        height: 15
+        speed: 6
+        lifetime: 25
+        knockback: 6
+        damage: 44
+        despawnEffect: none
+        despawnHit: true
+        hitEffect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: WaveEffect
+                    colorFrom: fff8e8ff
+                    colorTo: f9c27aff
+                    lifetime: 8
+                    sizeTo: 4
+                    strokeFrom: 1
+                    strokeTo: 0.5
+                }
+                {
+                    type: ParticleEffect
+                    particles: 4
+                    colorFrom: fff8e8ff
+                    colorTo: f9c27aff
+                    lifetime: 14
+                    lenFrom: 3
+                    lenTo: 1
+                    strokeFrom: 1
+                    strokeTo: 0.5
+                }
+            ]
+        }
+      }
+    }
+  ]
+}

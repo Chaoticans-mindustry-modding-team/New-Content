@@ -3,7 +3,7 @@
   description: Fires weighted bullets at enemies.
   type: mech
   targetBuildingsMobile: false
-  speed: 0.4
+  speed: 0.6
   drag: 0.3
   accel: 0.5
   flying: false
@@ -18,7 +18,7 @@
   weapons:
   [
     {
-      name: diversionist-pistol
+      name: soldier-gun
       mirror: true
       alternate: true
       x: 6.25
@@ -40,10 +40,11 @@
         height: 15
         speed: 6
         lifetime: 25
-        knockback: 6
+        knockback: 5
         damage: 44
         despawnEffect: none
         despawnHit: true
+        impact: true
         hitEffect: {
             type: MultiEffect
             effects: [
@@ -52,13 +53,13 @@
                     colorFrom: fff8e8ff
                     colorTo: f9c27aff
                     lifetime: 8
-                    sizeTo: 4
+                    sizeTo: 6.5
                     strokeFrom: 1
                     strokeTo: 0.5
                 }
                 {
                     type: ParticleEffect
-                    particles: 4
+                    particles: 2
                     colorFrom: fff8e8ff
                     colorTo: f9c27aff
                     lifetime: 14
@@ -66,6 +67,21 @@
                     lenTo: 1
                     strokeFrom: 1
                     strokeTo: 0.5
+                    line: true
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    cone: 20
+                    useRotation: true
+                    colorFrom: fff8e8ff
+                    colorTo: f9c27aff
+                    lifetime: 14
+                    lenFrom: 3
+                    lenTo: 1
+                    strokeFrom: 1
+                    strokeTo: 0.5
+                    line: true
                 }
             ]
         }

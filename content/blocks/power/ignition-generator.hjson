@@ -8,8 +8,8 @@
   itemCapacity: 10
   ambientSound: combustion
   ambientSoundVolume: 0.02
-  powerProduction: 2.6
-  itemDuration: 20
+  powerProduction: 3.6
+  itemDuration: 22
   generateEffectRange: 0
   effectChance: 0.03
   generateEffect:

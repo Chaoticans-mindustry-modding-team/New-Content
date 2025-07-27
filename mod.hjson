@@ -11,7 +11,7 @@
     [gold]As of Version 7x1, the mod's custom and new music has been moved to Chaoticans-mindustry-modding-team/New-Content-Music.
     '''
   author: Rylid Umil
-  version: 8x5
+  version: 8x6
   minGameVersion: 150
   contentOrder:
   [
@@ -62,6 +62,31 @@
     //Status
     "charged", "lightly-poisoned", "poisoned", "heavily-poisoned", "maimed", "laser-shocked", "atomically-charged",
     //Sectors
-    "raggedWastelands", "barrenPlateaus", "ferricPlains", "poisonBayCaves", "toxicEstuary"
+    "raggedWastelands", "barrenPlateaus", "ferricPlains", "poisonBayCaves", "toxicEstuary",
+    //Terrain
+        //Clexon
+            //Poison
+            "deep-poison", "poison-water", "poison-pool", "shallow-poison-water-rock", "shallow-poison-rock",
+            "poisoned-ice", "poisoned-stone", "poisoned-shale",
+            //Crystal
+            "selevic-stone", "selevic-cluster",
+            //Volcanic
+            "andesite", "basalt-cluster", "obsidian", "hot-basalt"
+            //Hot Biome
+            "skale", "sulfur",
+            //Ferric
+            "ferric-ice", "ferric-rock", "rough-ferric", "ferric-dust", "ferric-snow", "scorchonite-ore", 
+            //Mountainous
+            "slate", "rough-cobalt", "cryonic-snow",
+            //Other
+            "charred-earth", "iron-floor-damaged", "iron-floor",
+            //Wall
+            "poisoned-stone-wall", "selevic-stone-wall", "andesite-wall", "basalt-wall", "obsidian-wall", "skale-wall",
+            "ferric-wall", "ferric-ice-wall", "slate-wall", "cobalt-wall", "cryonic-wall",
+            //Prop
+            "poison-blob", "andesite-boulder", "skale-boulder", "red-ferric-boulder", "ferric-ice-boulder",
+        //Other
+            //Misc
+            "blackstone", "waste"
   ]
 }

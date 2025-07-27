@@ -8,13 +8,13 @@
   accel: 0.5
   flying: false
   health: 600
-  hitSize: 9
-  armor: 4
+  hitSize: 13
+  armor: 2.5
   range: 150
   itemCapacity: 10
   outlineColor: 13111cff
   mechLegColor: 13111cff
-  rotateSpeed: 2
+  rotateSpeed: 2.5
   weapons:
   [
     {
@@ -41,7 +41,7 @@
         speed: 6
         lifetime: 25
         knockback: 5
-        damage: 44
+        damage: 33
         despawnEffect: none
         despawnHit: true
         impact: true

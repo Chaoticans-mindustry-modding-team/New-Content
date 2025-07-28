@@ -12,6 +12,7 @@
   planet: clexon
   sector: 711
   originalPosition: 399
+  overrideLaunchDefaults: true
   research:
   {
     parent: toxicEstuary

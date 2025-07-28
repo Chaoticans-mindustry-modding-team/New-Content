@@ -25,6 +25,8 @@
   icon: planet
   allowLaunchSchematics: true
   allowLaunchLoadout: true
+  overrideLaunchDefaults: true
+  # prepare thyself
   allowWaveSimulation: true
   allowSectorInvasion: false
   clearSectorOnLose: true

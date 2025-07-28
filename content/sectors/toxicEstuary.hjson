@@ -13,6 +13,7 @@
   planet: clexon
   sector: 720
   originalPosition: 710
+  overrideLaunchDefaults: true
   research:
   {
     parent: poisonBayCaves

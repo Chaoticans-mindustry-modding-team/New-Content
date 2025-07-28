@@ -11,6 +11,7 @@
   planet: clexon
   sector: 721
   originalPosition: 217
+  overrideLaunchDefaults: true
   research: {
     parent: ferricPlains
     requiresUnlock: false

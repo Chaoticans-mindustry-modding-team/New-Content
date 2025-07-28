@@ -12,6 +12,7 @@
   sector: 716
   originalPosition: 94
   alwaysUnlocked: true
+  overrideLaunchDefaults: true
   research: {
     parent: core-central
     requiresUnlock: false

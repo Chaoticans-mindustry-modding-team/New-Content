@@ -1,0 +1,100 @@
+{
+  localizedName: Knight
+  description: Fires volleys of piercing bullets at nearby enemy targets.
+  type: mech
+
+  speed: 0.7
+  drag: 0.3
+  accel: 0.4
+  flying: false
+  health: 970
+  hitSize: 17
+  armor: 4
+  range: 11.5
+  itemCapacity: 25
+  outlineColor: 13111cff
+  mechLegColor: 13111cff
+  rotateSpeed: 3
+  weapons:
+  [
+    {
+      name: knight-gun
+      mirror: true
+      alternate: true
+      x: 8.25
+      y: 0.25
+      reload: 132
+      shootSound: donk
+      top: false
+      rotate: false
+      recoil: 3
+      recoilTime: 135
+      ejectEffect: casing3
+      shootCone: 10
+      shake: 0.5
+      inaccuracy: 6
+      shoot: {
+          shots: 3
+          shotDelay: 10
+      }
+      bullet:
+      {
+        type: BasicBulletType
+        frontColor: fff8e8ff
+        backColor: f9c27aff
+        width: 12
+        height: 18
+        pierce: true
+        pierceBuilding: true
+        pierceCap: 2
+        speed: 10
+        lifetime: 11.5
+        knockback: 7
+        damage: 40
+        despawnEffect: none
+        despawnHit: true
+        impact: true
+        hitEffect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: WaveEffect
+                    colorFrom: fff8e8ff
+                    colorTo: f9c27aff
+                    lifetime: 8
+                    sizeTo: 6.5
+                    strokeFrom: 1
+                    strokeTo: 0.5
+                }
+                {
+                    type: ParticleEffect
+                    particles: 2
+                    colorFrom: fff8e8ff
+                    colorTo: f9c27aff
+                    lifetime: 14
+                    lenFrom: 3
+                    lenTo: 1
+                    strokeFrom: 1
+                    strokeTo: 0.5
+                    line: true
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    cone: 20
+                    useRotation: true
+                    colorFrom: fff8e8ff
+                    colorTo: f9c27aff
+                    lifetime: 14
+                    lenFrom: 3
+                    lenTo: 1
+                    strokeFrom: 1
+                    strokeTo: 0.5
+                    line: true
+                }
+            ]
+        }
+      }
+    }
+  ]
+}

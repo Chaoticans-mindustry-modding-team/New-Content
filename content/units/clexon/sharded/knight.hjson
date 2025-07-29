@@ -8,9 +8,9 @@
   accel: 0.4
   flying: false
   health: 970
-  hitSize: 17
+  hitSize: 14
   armor: 4
-  range: 11.5
+  range: 160
   itemCapacity: 25
   outlineColor: 13111cff
   mechLegColor: 13111cff
@@ -23,7 +23,7 @@
       alternate: true
       x: 8.25
       y: 0.25
-      reload: 132
+      reload: 76
       shootSound: donk
       top: false
       rotate: false
@@ -32,25 +32,25 @@
       ejectEffect: casing3
       shootCone: 10
       shake: 0.5
-      inaccuracy: 6
+      inaccuracy: 3
       shoot: {
           shots: 3
-          shotDelay: 10
+          shotDelay: 4
       }
       bullet:
       {
         type: BasicBulletType
         frontColor: fff8e8ff
         backColor: f9c27aff
-        width: 12
-        height: 18
+        width: 10
+        height: 16
         pierce: true
         pierceBuilding: true
         pierceCap: 2
-        speed: 10
-        lifetime: 11.5
+        speed: 8
+        lifetime: 20
         knockback: 7
-        damage: 40
+        damage: 20
         despawnEffect: none
         despawnHit: true
         impact: true

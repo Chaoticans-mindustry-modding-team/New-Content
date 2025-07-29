@@ -42,14 +42,14 @@
         type: BasicBulletType
         frontColor: fff8e8ff
         backColor: f9c27aff
-        width: 10
-        height: 16
+        width: 12
+        height: 18
         pierce: true
         pierceBuilding: true
         pierceCap: 2
         speed: 8
         lifetime: 20
-        knockback: 7
+        knockback: 2
         damage: 20
         despawnEffect: none
         despawnHit: true

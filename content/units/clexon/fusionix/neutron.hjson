@@ -23,7 +23,7 @@
   weapons:
   [
     {
-      name: death-weapon
+      name: death-weapon-fusionix
       mirror: false
       x: 0
       y: 0

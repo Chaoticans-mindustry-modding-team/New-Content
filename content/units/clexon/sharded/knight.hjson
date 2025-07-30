@@ -28,7 +28,6 @@
       top: false
       rotate: false
       recoil: 3
-      recoilTime: 135
       ejectEffect: casing3
       shootCone: 10
       shake: 0.5

@@ -12,7 +12,7 @@
   [
     {
       unit: soldier
-      time: 840
+      time: 1200
       requirements:
       [
         tritonium/30
@@ -21,7 +21,7 @@
     }
     {
       unit: infiltrator
-      time: 840
+      time: 1000
       requirements:
       [
         tritonium/25
@@ -30,7 +30,7 @@
     }
     {
       unit: foul
-      time: 840
+      time: 1360
       requirements:
       [
         tritonium/30
@@ -40,7 +40,7 @@
     }
     {
       unit: neutron
-      time: 840
+      time: 900
       requirements:
       [
         tritonium/35
@@ -49,7 +49,7 @@
     }
     {
       unit: ion
-      time: 840
+      time: 900
       requirements:
       [
         tritonium/20

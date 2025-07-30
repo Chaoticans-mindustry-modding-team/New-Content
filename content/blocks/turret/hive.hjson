@@ -1,0 +1,140 @@
+{
+  localizedName: Hive
+  description: Launches clusters of flak at enemy aircraft.
+  type: ItemTurret
+  size: 2
+  health: 900
+  outlineColor: 13111cff
+  maxAmmo: 30
+  reload: 8
+  range: 225
+  targetAir: true
+  targetGround: false
+  rotateSpeed: 4
+  shootSound: rifle2
+  coolantMultiplier: 5
+  shake: 0.2
+  shootY: 4
+  recoil: 2
+  inaccuracy: 15
+  ejectEffect: casing2
+  shoot:
+  {
+    type: ShootAlternate
+    barrels: 3
+    spread: 3
+  }
+  consumes:
+  {
+    coolant:
+    {
+      amount: 0.28
+    }
+    power: 1.2
+  }
+  ammoTypes:
+  {
+    iron:
+    {
+      type: BasicBulletType
+      frontColor: ffffffff
+      backColor: e6c5c5ff
+      speed: 5
+      lifetime: 45
+      width: 9
+      height: 12
+      collidesAir: true
+      collidesGround: false
+      damage: 23
+      hitEffect:
+      {
+        type: MultiEffect
+        effects:
+        [
+          {
+            type: WaveEffect
+            sizeTo: 4
+            lifetime: 10
+            colorFrom: ffffffff
+            colorTo: e6c5c5ff
+            strokeTo: 0.5
+          }
+          {
+            type: ParticleEffect
+            particles: 7
+            lifetime: 15
+            line: true
+            lenFrom: 3
+            lenTo: 1.5
+            strokeFrom: 1
+            strokeTo: 0.3
+            length: 10
+            colorFrom: ffffffff
+            colorTo: e6c5c5ff
+          }
+        ]
+      }
+    }
+    tritonium:
+    {
+      type: BasicBulletType
+      frontColor: ffffffff
+      backColor: add0dbff
+      speed: 5
+      lifetime: 45
+      width: 9
+      height: 12
+      collidesAir: true
+      collidesGround: false
+      damage: 44
+      hitEffect:
+      {
+        type: MultiEffect
+        effects:
+        [
+          {
+            type: WaveEffect
+            sizeTo: 4
+            lifetime: 10
+            colorFrom: ffffffff
+            colorTo: add0dbff
+            strokeTo: 0.5
+          }
+          {
+            type: ParticleEffect
+            particles: 7
+            lifetime: 15
+            line: true
+            lenFrom: 3
+            lenTo: 1.5
+            strokeFrom: 1
+            strokeTo: 0.3
+            length: 10
+            colorFrom: ffffffff
+            colorTo: add0dbff
+          }
+        ]
+      }
+    }
+  }
+  drawer:
+  {
+    type: DrawTurret
+    basePrefix: clexon-
+  }
+  requirements:
+  [
+    cobalt/120
+    tritonium/80
+  ]
+  category: turret
+  research:
+  {
+    parent: meteor
+    requirements:
+    [
+      cobalt/1000
+      tritonium/800
+    ]
+  }
+}

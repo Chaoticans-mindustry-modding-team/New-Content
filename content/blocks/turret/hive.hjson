@@ -45,7 +45,8 @@
       height: 12
       collidesAir: true
       collidesGround: false
-      damage: 23
+      damage: 18
+      ammoMultiplier: 2
       hitEffect:
       {
         type: MultiEffect
@@ -89,6 +90,7 @@
       collidesAir: true
       collidesGround: false
       damage: 44
+      ammoMultiplier: 1
       hitEffect:
       {
         type: MultiEffect
@@ -134,9 +136,11 @@
       damage: 82
       lightning: 3
       lightningDamage: 32
-      lightningLength: 4
+      lightningLength: 7
+      lightningColor: 7dd199ff
       status: slow
       statusDuration: 20
+      ammoMultiplier: 1
       hitEffect:
       {
         type: MultiEffect

@@ -23,7 +23,7 @@
   weapons:
   [
     {
-      name: boom
+      name: death-weapon
       mirror: false
       x: 0
       y: 0

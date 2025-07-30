@@ -15,6 +15,13 @@
   outlineColor: 13111cff
   mechLegColor: 13111cff
   rotateSpeed: 2.5
+  research: {
+    parent: assembly
+    requirements: [
+      tritonium/2100
+      cobalt/2100
+    ]
+  }
   weapons:
   [
     {

@@ -33,7 +33,7 @@
       shake: 0.5
       inaccuracy: 2
       shoot: {
-          shots: 2
+          shots: 3
           shotDelay: 2
       }
       bullet:
@@ -52,7 +52,7 @@
         speed: 8
         lifetime: 20
         knockback: 2
-        damage: 20
+        damage: 32
         despawnEffect: none
         despawnHit: true
         impact: true

@@ -23,8 +23,8 @@
       alternate: true
       x: 8.25
       y: 0.25
-      reload: 76
-      shootSound: donk
+      reload: 54
+      shootSound: shootAlt
       top: false
       rotate: false
       recoil: 3
@@ -32,18 +32,21 @@
       ejectEffect: casing3
       shootCone: 10
       shake: 0.5
-      inaccuracy: 3
+      inaccuracy: 2
       shoot: {
-          shots: 3
-          shotDelay: 4
+          shots: 2
+          shotDelay: 2
       }
       bullet:
       {
         type: BasicBulletType
         frontColor: fff8e8ff
         backColor: f9c27aff
-        width: 12
-        height: 18
+        width: 9
+        height: 12
+        trailColor: f9c27aff
+        trailLength: 6
+        trailWidth: 1.5
         pierce: true
         pierceBuilding: true
         pierceCap: 2

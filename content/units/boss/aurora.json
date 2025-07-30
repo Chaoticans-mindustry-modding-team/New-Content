@@ -78,7 +78,7 @@
       }
     },
     {
-      "name": "aurora-weapon",
+      "name": "death-weapon",
       "mirror": false,
       "reload": 1000000,
       "alternate": false,
@@ -107,7 +107,7 @@
           ]
         },
         "hitEffect": "pulverize",
-        "killShooter": false
+        "killShooter":true
       }
     }
   ]

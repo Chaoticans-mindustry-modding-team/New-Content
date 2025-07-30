@@ -21,8 +21,7 @@
     requirements: [
         iron/5000
         cobalt/5000
-        light-alloy/4000
-        amberglass/2000
+        light-alloy/4500
     ]
   }
 }

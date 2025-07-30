@@ -35,8 +35,8 @@
   requirements:
   [
     cobalt/200
-    tritonium/190
     light-alloy/125
+    tritonium/190
   ]
   category: units
 }

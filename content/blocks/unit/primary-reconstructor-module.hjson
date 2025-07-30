@@ -4,6 +4,7 @@
   description: Upgrades inputted units to the second tier.
   constructTime: 1460
   size: 2
+  regionSuffix: -clexon
   consumes:
   {
     power: 2.5

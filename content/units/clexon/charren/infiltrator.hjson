@@ -18,6 +18,13 @@
   outlineColor: 13111cff
   mechLegColor: 13111cff
   rotateSpeed: 4
+  research: {
+    parent: assembly
+    requirements: [
+      tritonium/1700
+      scorchonite/1300
+    ]
+  }
   immunities: [
     burning
   ]

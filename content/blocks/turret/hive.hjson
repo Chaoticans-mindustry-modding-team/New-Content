@@ -6,7 +6,7 @@
   health: 900
   outlineColor: 13111cff
   maxAmmo: 30
-  reload: 8
+  reload: 6
   range: 225
   targetAir: true
   targetGround: false
@@ -14,9 +14,9 @@
   shootSound: rifle2
   coolantMultiplier: 5
   shake: 0.2
-  shootY: 4
+  shootY: 5
   recoil: 2
-  inaccuracy: 15
+  inaccuracy: 12
   ejectEffect: casing2
   shoot:
   {
@@ -30,7 +30,7 @@
     {
       amount: 0.28
     }
-    power: 1.2
+    power: 2
   }
   ammoTypes:
   {
@@ -65,15 +65,17 @@
             lifetime: 15
             line: true
             lenFrom: 3
-            lenTo: 1.5
+            lenTo: 1
             strokeFrom: 1
-            strokeTo: 0.3
+            strokeTo: 0.5
             length: 10
             colorFrom: ffffffff
             colorTo: e6c5c5ff
           }
         ]
       }
+      despawnHit: true
+      despawnEffect: none
     }
     tritonium:
     {
@@ -106,15 +108,65 @@
             lifetime: 15
             line: true
             lenFrom: 3
-            lenTo: 1.5
+            lenTo: 1
             strokeFrom: 1
-            strokeTo: 0.3
+            strokeTo: 0.5
             length: 10
             colorFrom: ffffffff
             colorTo: add0dbff
           }
         ]
       }
+      despawnHit: true
+      despawnEffect: none
+    }
+    rexon-alloy:
+    {
+      type: BasicBulletType
+      frontColor: ffffffff
+      backColor: 7dd199ff
+      speed: 5
+      lifetime: 45
+      width: 9
+      height: 12
+      collidesAir: true
+      collidesGround: false
+      damage: 82
+      lightning: 3
+      lightningDamage: 32
+      lightningLength: 4
+      status: slow
+      statusDuration: 20
+      hitEffect:
+      {
+        type: MultiEffect
+        effects:
+        [
+          {
+            type: WaveEffect
+            sizeTo: 4
+            lifetime: 10
+            colorFrom: ffffffff
+            colorTo: 7dd199ff
+            strokeTo: 0.5
+          }
+          {
+            type: ParticleEffect
+            particles: 7
+            lifetime: 15
+            line: true
+            lenFrom: 3
+            lenTo: 1
+            strokeFrom: 1
+            strokeTo: 0.5
+            length: 10
+            colorFrom: ffffffff
+            colorTo: 7dd199ff
+          }
+        ]
+      }
+      despawnHit: true
+      despawnEffect: none
     }
   }
   drawer:

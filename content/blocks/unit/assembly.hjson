@@ -1,0 +1,75 @@
+{
+  type: UnitFactory
+  name: Assembly
+  description: Produces tier 1 units. Outputted units can be used directly or moved into reconstructor modules for upgrading.
+  consumes:
+  {
+    power: 1.67
+  }
+  size: 2
+  health: 670
+  plans:
+  [
+    {
+      unit: soldier
+      time: 840
+      requirements:
+      [
+        tritonium/30
+        cobalt/30
+      ]
+    }
+    {
+      unit: infiltrator
+      time: 840
+      requirements:
+      [
+        tritonium/25
+        scorchonite/20
+      ]
+    }
+    {
+      unit: foul
+      time: 840
+      requirements:
+      [
+        tritonium/30
+        cobalt/20
+        scorchonite/30
+      ]
+    }
+    {
+      unit: neutron
+      time: 840
+      requirements:
+      [
+        tritonium/35
+        antimony/20
+      ]
+    }
+    {
+      unit: ion
+      time: 840
+      requirements:
+      [
+        tritonium/20
+        cobalt/25
+      ]
+    }
+  ]
+  requirements:
+  [
+    iron/160
+    cobalt/70
+    tritonium/90
+  ]
+  category: units
+  research: {
+    parent: core-central
+    requirements: [
+        iron/200
+        cobalt/100
+        tritonium/130
+    ]
+  }
+}

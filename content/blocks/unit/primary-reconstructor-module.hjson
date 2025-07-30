@@ -1,0 +1,42 @@
+{
+  type: Reconstructor
+  name: Primary Reconstructor Module
+  description: Upgrades inputted units to the second tier.
+  constructTime: 1460
+  size: 2
+  consumes:
+  {
+    power: 2.5
+    items:
+    [
+      tritonium/40
+      light-alloy/40
+    ]
+  }
+  upgrades:
+  [
+    [
+      soldier
+      knight
+    ]
+    [
+      infiltrator
+      wrecker
+    ]
+    [
+      foul
+      polluter
+    ]
+    [
+      ion
+      atom
+    ]
+  ]
+  requirements:
+  [
+    cobalt/200
+    tritonium/190
+    light-alloy/125
+  ]
+  category: units
+}

@@ -8,6 +8,7 @@
   }
   size: 2
   health: 670
+  regionSuffix: -clexon
   plans:
   [
     {

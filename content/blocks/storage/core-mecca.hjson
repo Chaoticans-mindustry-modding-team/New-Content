@@ -13,8 +13,7 @@
   requirements: [
     iron/2000
     cobalt/2000
-    light-alloy/1600
-    amberglass/600
+    light-alloy/1800
   ]
   research:
   {

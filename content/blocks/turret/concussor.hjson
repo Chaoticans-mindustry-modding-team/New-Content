@@ -6,15 +6,14 @@
   health: 800
   outlineColor: 13111cff
   maxAmmo: 10
-  reload: 75
-  shake: 4
+  reload: 110
   range: 210
   targetAir: true
   targetGround: true
   rotateSpeed: 4
   shootSound: revolver
   coolantMultiplier: 5
-  shake: 0.2
+  shake: 5
   shootY: 5
   recoil: 4
   recoilTime: 80
@@ -39,8 +38,8 @@
       lifetime: 30
       width: 12
       height: 16
-      knockback: 6
-      damage: 96
+      knockback: 8
+      damage: 156
       ammoMultiplier: 1
       hitEffect:
       {
@@ -83,8 +82,8 @@
       lifetime: 30
       width: 12
       height: 16
-      knockback: 4
-      damage: 104
+      knockback: 6
+      damage: 139
       ammoMultiplier: 1
       hitEffect:
       {
@@ -127,8 +126,8 @@
       lifetime: 30
       width: 12
       height: 16
-      knockback: 10
-      damage: 188
+      knockback: 14
+      damage: 280
       ammoMultiplier: 1
       hitEffect:
       {

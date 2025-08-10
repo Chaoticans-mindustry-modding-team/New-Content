@@ -1,6 +1,6 @@
 {
   localizedName: Concussor
-  description: Ejects large, heavy bullets at enemy targets.
+  description: Ejects large, heavy homing bullets at enemy targets.
   type: ItemTurret
   size: 2
   health: 800
@@ -10,7 +10,7 @@
   range: 210
   targetAir: true
   targetGround: true
-  rotateSpeed: 4
+  rotateSpeed: 6
   shootSound: revolver
   coolantMultiplier: 5
   shake: 5
@@ -72,6 +72,8 @@
       despawnHit: true
       despawnEffect: none
       impact: true
+      homingRange: 50
+      homingPower: 0.05
     }
     medium-alloy:
     {
@@ -116,6 +118,8 @@
       despawnHit: true
       despawnEffect: none
       impact: true
+      homingRange: 50
+      homingPower: 0.05
     }
     heavy-alloy:
     {
@@ -160,6 +164,8 @@
       despawnHit: true
       despawnEffect: none
       impact: true
+      homingRange: 50
+      homingPower: 0.05
     }
   }
   drawer:

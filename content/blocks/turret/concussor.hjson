@@ -1,0 +1,185 @@
+{
+  localizedName: Concussor
+  description: Ejects large, heavy bullets at enemy targets.
+  type: ItemTurret
+  size: 2
+  health: 800
+  outlineColor: 13111cff
+  maxAmmo: 10
+  reload: 75
+  shake: 4
+  range: 210
+  targetAir: true
+  targetGround: true
+  rotateSpeed: 4
+  shootSound: revolver
+  coolantMultiplier: 5
+  shake: 0.2
+  shootY: 5
+  recoil: 4
+  recoilTime: 80
+  cooldownTime: 120
+  inaccuracy: 2
+  ejectEffect: casing3
+  consumes:
+  {
+    coolant:
+    {
+      amount: 0.3
+    }
+  }
+  ammoTypes:
+  {
+    tritonium:
+    {
+      type: BasicBulletType
+      frontColor: ffffffff
+      backColor: add0dbff
+      speed: 7
+      lifetime: 30
+      width: 12
+      height: 16
+      knockback: 8
+      damage: 96
+      ammoMultiplier: 1
+      hitEffect:
+      {
+        type: MultiEffect
+        effects:
+        [
+          {
+            type: WaveEffect
+            sizeTo: 6
+            lifetime: 10
+            colorFrom: ffffffff
+            colorTo: add0dbff
+            strokeTo: 0.5
+          }
+          {
+            type: ParticleEffect
+            particles: 8
+            lifetime: 15
+            line: true
+            lenFrom: 3
+            lenTo: 1
+            strokeFrom: 2
+            strokeTo: 0.5
+            length: 12
+            colorFrom: ffffffff
+            colorTo: add0dbff
+          }
+        ]
+      }
+      despawnHit: true
+      despawnEffect: none
+    }
+    medium-alloy:
+    {
+      type: BasicBulletType
+      frontColor: ffffffff
+      backColor: b0c4abff
+      speed: 7
+      lifetime: 30
+      width: 12
+      height: 16
+      knockback: 5
+      damage: 104
+      ammoMultiplier: 1
+      hitEffect:
+      {
+        type: MultiEffect
+        effects:
+        [
+          {
+            type: WaveEffect
+            sizeTo: 6
+            lifetime: 10
+            colorFrom: ffffffff
+            colorTo: b0c4abff
+            strokeTo: 0.5
+          }
+          {
+            type: ParticleEffect
+            particles: 8
+            lifetime: 15
+            line: true
+            lenFrom: 3
+            lenTo: 1
+            strokeFrom: 2
+            strokeTo: 0.5
+            length: 12
+            colorFrom: ffffffff
+            colorTo: b0c4abff
+          }
+        ]
+      }
+      despawnHit: true
+      despawnEffect: none
+    }
+    heavy-alloy:
+    {
+      type: BasicBulletType
+      frontColor: ffffffff
+      backColor: 9e86a3ff
+      speed: 7
+      lifetime: 30
+      width: 12
+      height: 16
+      knockback: 14
+      damage: 188
+      ammoMultiplier: 1
+      hitEffect:
+      {
+        type: MultiEffect
+        effects:
+        [
+          {
+            type: WaveEffect
+            sizeTo: 6
+            lifetime: 10
+            colorFrom: ffffffff
+            colorTo: 9e86a3ff
+            strokeTo: 0.5
+          }
+          {
+            type: ParticleEffect
+            particles: 8
+            lifetime: 15
+            line: true
+            lenFrom: 3
+            lenTo: 1
+            strokeFrom: 2
+            strokeTo: 0.5
+            length: 12
+            colorFrom: ffffffff
+            colorTo: 9e86a3ff
+          }
+        ]
+      }
+      despawnHit: true
+      despawnEffect: none
+    }
+  }
+  drawer:
+  {
+    type: DrawTurret
+    basePrefix: clexon-
+  }
+  requirements:
+  [
+    iron/120
+    light-alloy/80
+    tritonium/40
+  ]
+  category: turret
+  research:
+  {
+    parent: meteor
+    requirements:
+    [
+      iron/600
+      light-alloy/500
+      tritonium/350
+    ]
+  }
+}

@@ -39,7 +39,7 @@
       lifetime: 30
       width: 12
       height: 16
-      knockback: 8
+      knockback: 6
       damage: 96
       ammoMultiplier: 1
       hitEffect:
@@ -72,6 +72,7 @@
       }
       despawnHit: true
       despawnEffect: none
+      impact: true
     }
     medium-alloy:
     {
@@ -82,7 +83,7 @@
       lifetime: 30
       width: 12
       height: 16
-      knockback: 5
+      knockback: 4
       damage: 104
       ammoMultiplier: 1
       hitEffect:
@@ -115,6 +116,7 @@
       }
       despawnHit: true
       despawnEffect: none
+      impact: true
     }
     heavy-alloy:
     {
@@ -125,7 +127,7 @@
       lifetime: 30
       width: 12
       height: 16
-      knockback: 14
+      knockback: 10
       damage: 188
       ammoMultiplier: 1
       hitEffect:
@@ -158,6 +160,7 @@
       }
       despawnHit: true
       despawnEffect: none
+      impact: true
     }
   }
   drawer:

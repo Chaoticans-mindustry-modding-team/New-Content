@@ -47,6 +47,7 @@
         pointEffectSpace: 2
         pierceDamageFactor: 1
         smokeEffect: none
+        buildingDamageMultiplier: 0.2
         pointEffect:
         {
           line: true

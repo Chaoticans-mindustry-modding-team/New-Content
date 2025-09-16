@@ -1,0 +1,54 @@
+{
+  name: Beam Mender
+  description: Continuously repairs the closest damaged block in its vicinity
+  type: PowerTurret
+  size: 2
+  health: 700
+  range: 72
+  targetAir: false
+  targetGround: false
+  targetBlocks: false
+  targetHealing: true
+  rotateSpeed: 4
+  shootSound: none
+  consumes: {
+      power: 2.5
+  }
+  shootY: 2
+  shootCone: 0
+  repairSpeed: 0.1
+  rotate: true
+  beamWidth: 1
+  loopSound: pulse
+  bullet:
+  {
+    type: BasicBulletType
+    maxRange: 72
+    despawnEffect: none
+    hitEffect: none
+  }
+  shootEffect: none
+  drawer:
+  {
+    type: DrawDefault
+  }
+  requirements:
+  [
+    iron/60
+    cobalt/35
+    tritonium/20
+  ]
+  category: effect
+  researchCostMultiplier: 2
+  research:
+  {
+    parent: heat-harvester
+    objectives:
+    [
+      {
+        type: OnSector
+        preset: toxicEstuary
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 {
   name: Beam Mender
-  description: Continuously repairs the closest damaged block in its vicinity
+  description: Continuously repairs the closest damaged block in its vicinity.
   type: PowerTurret
   size: 3
   health: 700
@@ -11,27 +11,23 @@
   targetHealing: true
   rotateSpeed: 4
   shootSound: none
-  consumes: {
-      power: 2.5
+  consumes:
+  {
+    power: 2.5
   }
   shootY: 2
   shootCone: 0
   beamWidth: 1
   loopSound: pulse
+  playerControllable: false
   shootType:
   {
-    type: BasicBulletType
-    maxRange: 72
-    despawnEffect: none
-    hitEffect: none
-    healPercent: 4
-    collideTeam: true
+    type: PointLaserBulletType
+    collidesTeam: true
+    healPercent: 2
+    range: 72
   }
   shootEffect: none
-  drawer:
-  {
-    type: DrawDefault
-  }
   requirements:
   [
     iron/60

@@ -20,7 +20,7 @@
   rotate: true
   beamWidth: 1
   loopSound: pulse
-  bullet:
+  shootType:
   {
     type: BasicBulletType
     maxRange: 72

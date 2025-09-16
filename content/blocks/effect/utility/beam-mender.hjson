@@ -16,7 +16,6 @@
   }
   shootY: 2
   shootCone: 0
-  repairSpeed: 0.1
   beamWidth: 1
   loopSound: pulse
   shootType:
@@ -25,6 +24,8 @@
     maxRange: 72
     despawnEffect: none
     hitEffect: none
+    healPercent: 4
+    collideTeam: true
   }
   shootEffect: none
   drawer:

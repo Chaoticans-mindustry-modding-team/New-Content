@@ -2,7 +2,7 @@
   name: Beam Mender
   description: Continuously repairs the closest damaged block in its vicinity
   type: PowerTurret
-  size: 2
+  size: 3
   health: 700
   range: 72
   targetAir: false
@@ -17,7 +17,6 @@
   shootY: 2
   shootCone: 0
   repairSpeed: 0.1
-  rotate: true
   beamWidth: 1
   loopSound: pulse
   shootType:

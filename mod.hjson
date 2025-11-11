@@ -11,7 +11,7 @@
     [gold]As of Version 7x1, the mod's custom and new music has been moved to Chaoticans-mindustry-modding-team/New-Content-Music.
     '''
   author: Rylid Umil
-  version: 8x7
+  version: 8x8
   minGameVersion: 150
   contentOrder:
   [
@@ -38,24 +38,27 @@
         // Unit
     // Clexon
         // Unit
+            // Sharded
+            "soldier", "knight",
             // Charren
-            "infiltrator", "wrecker", 
+            "infiltrator", "wrecker", "bellower",
             "foul", "polluter",
             //Fusionix
             "neutron",
             "ion", "atom",
             // Core
-            "diversionist", 
+            "diversionist", "general", "corps",
         // Block
         "small-alloy-forge", "crusher", "amberglass-kiln", "tritonium-calefactor",
         "iron-wall", "iron-wall-large", "alloy-wall", "alloy-wall-large",
         "scorchonite-pod", "scorchonite-pod-large", "electro-pod", "electro-pod-large",
         "tube", "tube-junction", "tube-bridge", "tube-sorter", "tube-sorter-inverted", "tube-router",
         "micro-pump", "iron-conduit", "iron-liquid-splitter", "iron-liquid-crosser", "iron-bridge-conduit",
-        "heat-harvester", "ignition-generator",
+        "iron-power-node", "heat-harvester", "ignition-generator",
         "iron-drill", "crystallizer",
-        "core-central",
-        "mecha", "amp" "meteor", "soak",
+        "core-central", "core-mecca", "core-burg",
+        "mecha", "amp" "meteor", "soak", "hive", "concussor",
+        "assembly", "primary-reconstructor-module",
         //Item
         "iron", "cobalt", "antimony", "scorchonite", "light-alloy", "sulfur", "selevite", "amberglass", "tritonium", "medium-alloy", "rexon-alloy", "heavy-alloy", "anion-construct", "cinnabarite", "cinnabarium",
         //Liquid

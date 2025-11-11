@@ -44,7 +44,7 @@
         recoil: 1
         knockback: 0.2
         lifetime: 90
-        speed: 2.5
+        speed: 2
         width: 10
         height: 10
         collides: true
@@ -57,6 +57,8 @@
         splashDamage: 100
         status: blasted
         despawnHit: true
+        hitsound: explosionFrag
+        despawnSound: explosionFrag
         despawnEffect: none
         hitEffect:
         {

@@ -1,0 +1,75 @@
+{
+  localizedName: Corps
+  description: Defends the Burg core from enemies. Builds structures. Equipped with a pair of short range pistols. Capable of flight.
+  type: mech
+  targetBuildingsMobile: false
+  speed: 0.5
+  drag: 0.3
+  accel: 0.5
+  buildSpeed: 0.1
+  flying: false
+  health: 1500
+  isEnemy: false
+  mineSpeed: 2.5
+  hitSize: 11
+  mineTier: 1
+  armor: 5
+  range: 72
+  itemCapacity: 50
+  fogRadius: 0
+  outlineColor: 13111cff
+  mechLegColor: 13111cff
+  rotateSpeed: 4
+  weapons:
+  [
+    {
+      name: corps-weapon
+      mirror: false
+      x: 0
+      y: 10
+      reload: 70
+      shootSound: artillery2
+      top: false
+      rotate: false
+      recoil: 0
+      shootY: 4
+      ejectEffect: casing1
+      shootCone: 7
+      shake: 1
+      cooldownTime: 95
+      bullet:
+      {
+        type: ArtilleryBulletType
+        shootEffect: shootBig
+        recoil: 4
+        knockback: 0.2
+        lifetime: 90
+        speed: 2.5
+        width: 10
+        height: 10
+        collides: true
+        collidesTiles: true
+        frontColor: ffffffff
+        backColor: ffa1a1ff
+        buildingDamageMultiplier: 1.35
+        damage: 30
+        splashDamageRadius: 20
+        splashDamage: 40
+        status: blasted
+        hitEffect:
+        {
+          type: ExplosionEffect
+          waveColor: ffa1a1ff
+          sparkColor: ffa1a1ff
+          waveRad: 18
+          sparkRad: 22
+          smokeSize: 4
+          smokeSizeBase: 0
+          smokeRad: 23
+          smokes: 8
+          sparks: 5
+        }
+      }
+    }
+  ]
+}

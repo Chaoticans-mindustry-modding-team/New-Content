@@ -1,0 +1,30 @@
+{
+  localizedName: Core: Burg
+  description: Core of the base. Moderately armored. Once it falls, the sector falls too. More armored and tuned for battle than a Central.
+  type: CoreBlock
+  itemCapacity: 500
+  size: 2
+  health: 3000
+  armor: 7
+  category: effect
+  unitType: corps
+  teamPassable: true
+  unitCapModifier: 3
+  thrusterLength: 9
+  requirements:
+  [
+    iron/1000
+    light-alloy/600
+    tritonium/200
+  ]
+  research:
+  {
+    parent: core-central
+    requirements:
+    [
+      iron/3000
+      light-alloy/2000
+      tritonium/1000
+    ]
+  }
+}

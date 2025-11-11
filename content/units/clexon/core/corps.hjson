@@ -3,7 +3,7 @@
   description: Defends the Burg core from enemies. Builds structures. Equipped with a pair of short range pistols. Capable of flight.
   type: mech
   targetBuildingsMobile: false
-  speed: 0.5
+  speed: 0.4
   drag: 0.3
   accel: 0.5
   buildSpeed: 0.1
@@ -26,8 +26,8 @@
       name: corps-weapon
       mirror: false
       x: 0
-      y: 10
-      reload: 70
+      y: 0
+      reload: 75
       shootSound: artillery2
       top: false
       rotate: false
@@ -41,7 +41,7 @@
       {
         type: ArtilleryBulletType
         shootEffect: shootBig
-        recoil: 4
+        recoil: 1
         knockback: 0.2
         lifetime: 90
         speed: 2.5
@@ -53,9 +53,11 @@
         backColor: ffa1a1ff
         buildingDamageMultiplier: 1.35
         damage: 30
-        splashDamageRadius: 20
-        splashDamage: 40
+        splashDamageRadius: 23
+        splashDamage: 100
         status: blasted
+        despawnHit: true
+        despawnEffect: none
         hitEffect:
         {
           type: ExplosionEffect

@@ -57,7 +57,7 @@
         splashDamage: 100
         status: blasted
         despawnHit: true
-        hitsound: explosionFrag
+        hitSound: explosionFrag
         despawnSound: explosionFrag
         despawnEffect: none
         hitEffect:

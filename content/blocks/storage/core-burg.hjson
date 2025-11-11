@@ -8,7 +8,7 @@
   armor: 7
   category: effect
   unitType: corps
-  teamPassable: true
+  solid: false
   unitCapModifier: 3
   thrusterLength: 9
   requirements:

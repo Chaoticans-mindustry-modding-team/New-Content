@@ -12,7 +12,7 @@
     '''
   author: Rylid Umil
   version: 8x8
-  minGameVersion: 150
+  minGameVersion: 153
   contentOrder:
   [
     // Serpulo

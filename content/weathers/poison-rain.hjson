@@ -1,0 +1,15 @@
+type: RainWeather
+name: Poison Rain
+description: Poison is raining from the sky.
+color: 5e2e99
+status: newunits-lightly-poisoned
+statusDuration: 120
+liquid: poison
+sound: rain
+soundVol: 0.3
+attrs: {
+    light: -0.2
+    water: -0.2
+    poison: 0.5
+}
+duration: 12000

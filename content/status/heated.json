@@ -1,0 +1,21 @@
+{
+  name: Heated
+  speedMultiplier: 0.8
+  effect: {
+      type: ParticleEffect
+      particles: 1
+      colorFrom: e6352544
+      colorT0: e6352500
+      length: 0
+      baseLength: 0
+      sizeFrom: 0
+      sizeTo: 3
+      lifetime: 60
+      interp: linear
+  }
+  opposites: [
+    wet
+    freezing
+  ]
+  color: e63525ff
+}

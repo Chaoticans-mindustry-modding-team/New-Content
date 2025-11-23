@@ -1,0 +1,24 @@
+type: ParticleWeather
+name: Ferric Sandstorm
+description: Iron dust is blowing everywhere.
+color: b05128
+noiseColor: b05128
+drawNoise: true
+particleRegion: particle
+useWindVector: true
+sizeMax: 160
+sizeMin: 100
+minAlpha: 0
+maxAlpha: 0.3
+density: 1600
+baseSpeed: 6
+attrs: {
+    light: -0.2
+    water: -0.2
+    ferric: 0.5
+}
+opacityMultiplier: 0.4
+force: 0.2
+sound: wind
+soundVol: 1
+duration: 18000

@@ -1,0 +1,24 @@
+type: ParticleWeather
+name: Heat Wave
+description: It's really hot.
+color: e6352588
+noiseColor: e6352588
+duration: 10800
+noiseLayers: 4
+noiseLayerSclM: 0.9
+noiseLayerAlphaM: 0.3
+noiseLayerSpeedM: 0.5
+baseSpeed: 0.03
+noiseScale: 1500
+noisePath: fog
+drawParticles: false
+drawNoise: true
+useWindVector: false
+xspeed: 0.5
+yspeed: 0.01
+attrs: {
+    water: -1
+    heat: 0.3
+}
+status: heated
+statusDuration: 600

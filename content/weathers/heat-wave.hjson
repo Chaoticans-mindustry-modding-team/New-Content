@@ -1,8 +1,8 @@
 type: ParticleWeather
 name: Heat Wave
 description: It's really hot.
-color: e6352588
-noiseColor: e6352588
+color: e6352522
+noiseColor: e6352522
 duration: 10800
 noiseLayers: 4
 noiseLayerSclM: 0.9

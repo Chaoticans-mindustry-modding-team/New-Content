@@ -8,7 +8,7 @@
   armor: 8
   category: effect
   unitType: general
-  unitCapModifier: 8
+  unitCapModifier: 5
   thrusterLength: 14
   requirements: [
     iron/2000

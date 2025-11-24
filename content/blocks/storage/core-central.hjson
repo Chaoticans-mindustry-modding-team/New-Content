@@ -8,7 +8,7 @@
   armor: 5
   category: effect
   unitType: diversionist
-  unitCapModifier: 4
+  unitCapModifier: 2
   thrusterLength: 8
   alwaysUnlocked: true
   requirements: [

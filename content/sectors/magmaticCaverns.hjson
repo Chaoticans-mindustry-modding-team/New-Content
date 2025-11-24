@@ -22,10 +22,6 @@
         type: SectorComplete
         preset: scorchedSkalelands
       }
-      {
-        type: research
-        content: assembly
-      }
     ]
   }
 }

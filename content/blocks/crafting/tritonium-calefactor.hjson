@@ -83,10 +83,7 @@
       amberglass/75
     ]
     objectives: [
-      {
-        type: Produce
-        content: slag
-      }
+      slag
       {
         type: SectorComplete
         preset: scorchedSkalelands

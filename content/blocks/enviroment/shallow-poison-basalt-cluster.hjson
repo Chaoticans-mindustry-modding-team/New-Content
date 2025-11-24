@@ -1,0 +1,14 @@
+{
+  type: floor
+  name: Shallow Poison Basalt Cluster
+  speedMultiplier: 0.7
+  variants: 3
+  liquidDrop: poison
+  isLiquid: true
+  shallow: true
+  cacheLayer: water
+  attributes:
+  {
+    poison: 0.7
+  }
+}

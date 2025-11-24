@@ -7,7 +7,7 @@
   outlineColor: 13111cff
   maxAmmo: 10
   reload: 110
-  range: 210
+  range: 105
   targetAir: true
   targetGround: true
   rotateSpeed: 6
@@ -35,7 +35,7 @@
       frontColor: ffffffff
       backColor: add0dbff
       speed: 7
-      lifetime: 30
+      lifetime: 15
       width: 12
       height: 16
       knockback: 8
@@ -81,7 +81,7 @@
       frontColor: ffffffff
       backColor: b0c4abff
       speed: 7
-      lifetime: 30
+      lifetime: 15
       width: 12
       height: 16
       knockback: 6
@@ -127,7 +127,7 @@
       frontColor: ffffffff
       backColor: 9e86a3ff
       speed: 7
-      lifetime: 30
+      lifetime: 15
       width: 12
       height: 16
       knockback: 14

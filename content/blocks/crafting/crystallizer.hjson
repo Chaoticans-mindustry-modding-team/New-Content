@@ -16,7 +16,7 @@
   baseEfficiency: 0
   minEfficiency: 0.01
   maxBoost: 6
-  boostScale: 1
+  boostScale: 0.25
   craftEffect:
   {
     type: ParticleEffect

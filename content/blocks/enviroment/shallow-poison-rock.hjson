@@ -6,6 +6,6 @@ liquidDrop: poison
 isLiquid: true
 shallow: true
 cacheLayer: water
-attributes: [
+attributes: {
   poison: 0.8
-]
+}

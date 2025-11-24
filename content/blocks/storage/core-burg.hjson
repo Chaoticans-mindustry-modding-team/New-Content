@@ -9,7 +9,7 @@
   category: effect
   unitType: corps
   solid: false
-  unitCapModifier: 3
+  unitCapModifier: 5
   thrusterLength: 9
   requirements:
   [

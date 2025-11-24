@@ -1,0 +1,28 @@
+{
+  type: ParticleWeather
+  name: Poison Storm
+  description: Poison clouds loom overhead.
+  color: 5e2e99dd
+  noiseColor: 5e2e99dd
+  drawNoise: true
+  particleRegion: particle
+  useWindVector: true
+  sizeMax: 160
+  sizeMin: 100
+  minAlpha: 0
+  maxAlpha: 0.5
+  density: 1800
+  baseSpeed: 0.4
+  status: newunits-lightly-poisoned
+  statusDuration: 120
+  attrs:
+  {
+    light: -0.2
+    poison: 0.5
+  }
+  opacityMultiplier: 0.4
+  force: 0.02
+  sound: lowwind
+  soundVol: 1
+  duration: 18000
+}

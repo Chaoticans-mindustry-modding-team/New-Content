@@ -11,13 +11,14 @@
     [gold]As of Version 7x1, the mod's custom and new music has been moved to Chaoticans-mindustry-modding-team/New-Content-Music.
     '''
   author: Rylid Umil
-  version: 8x8
+  version: 8x9
   minGameVersion: 153
   contentOrder:
   [
     // Serpulo
         // Unit
         "tyrant",
+        "delta",
         "os1-flame", "os2-kiln", "os3-furnace", "os4-cast", "os5-forge",
         "fern", "herb", "leech", "mesaen", "chactid",
         "critter", "peeve", "raider", "commander", "admiral",
@@ -25,6 +26,8 @@
         "streak", "spear", "falter", "delusion", "hallucination",
         "silky", "requiem",
         "heroic-dagger", "aurora",
+        "ya1-spark", "ya2-zap", "ya3-discharge", "ya4-resurge",
+        "fly", //The worst thing you ever see
         // Block
         "ember-infuser", "arc-kiln", "refiner", "volatile-mixing-chamber", "stellar-furnace", "scrap-crucible",
         "detwall", "detwall-large",
@@ -41,7 +44,7 @@
             // Sharded
             "soldier", "knight",
             // Charren
-            "infiltrator", "wrecker", "bellower",
+            "infiltrator", "wrecker", "bellow",
             "foul", "polluter",
             //Fusionix
             "neutron",
@@ -63,13 +66,14 @@
         "iron", "cobalt", "antimony", "scorchonite", "light-alloy", "sulfur", "selevite", "amberglass", "tritonium", "medium-alloy", "rexon-alloy", "heavy-alloy", "anion-construct", "cinnabarite", "cinnabarium",
         //Liquid
     //Status
-    "charged", "lightly-poisoned", "poisoned", "heavily-poisoned", "maimed", "laser-shocked", "atomically-charged",
+    "charged", "lightly-poisoned", "poisoned", "heavily-poisoned", "maimed", "laser-shocked", "atomically-charged", "bit-slow", "heated",
     //Sectors
-    "raggedWastelands", "barrenPlateaus", "ferricPlains", "poisonBayCaves", "toxicEstuary",
+    "raggedWastelands", "barrenPlateaus", "ferricPlains", "poisonBayCaves", "toxicEstuary", "scorchedSkalelands", "magmaticCaverns"
     //Terrain
         //Clexon
             //Poison
-            "deep-poison", "poison-water", "poison-pool", "shallow-poison-water-rock", "shallow-poison-rock",
+            "deep-poison", "poisoned-water", "poison-pool", "shallow-poison-water-rock", "shallow-poison-rock",
+            "shallow-poison-andesite", "shallow-poison-basalt-cluster",
             "poisoned-ice", "poisoned-stone", "poisoned-shale",
             //Crystal
             "selevic-stone", "selevic-cluster",
@@ -78,16 +82,20 @@
             //Hot Biome
             "skale", "sulfur",
             //Ferric
-            "ferric-ice", "ferric-rock", "rough-ferric", "ferric-dust", "ferric-snow", "scorchonite-ore", 
+            "ferric-ice", "ferric-rock", "rough-ferric", "ferric-dust", "ferric-snow", "scorchonite-ore", "sulfur-tile",
             //Mountainous
             "slate", "rough-cobalt", "cryonic-snow",
             //Other
             "charred-earth", "iron-floor-damaged", "iron-floor",
             //Wall
-            "poisoned-stone-wall", "selevic-stone-wall", "andesite-wall", "basalt-wall", "obsidian-wall", "skale-wall",
+            "poisoned-stone-wall", "selevic-stone-wall", "andesite-wall", "basalt-wall", "obsidian-cluster", "skale-wall",
             "ferric-wall", "ferric-ice-wall", "slate-wall", "cobalt-wall", "cryonic-wall",
             //Prop
-            "poison-blob", "andesite-boulder", "skale-boulder", "red-ferric-boulder", "ferric-ice-boulder",
+            "poison-blob", "andesite-boulder", "skale-boulder", "red-ferric-boulder", "ferric-snow-boulder", "cobalt-boulder",
+            //Metal
+            "iron-structure",
+            //Ore
+            "ore-silver", "ore-gold", "ore=iron", "ore-cobalt", "ore-antimony", ""
         //Other
             //Misc
             "blackstone", "waste"

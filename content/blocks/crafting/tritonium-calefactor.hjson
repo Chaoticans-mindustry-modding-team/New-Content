@@ -83,7 +83,6 @@
       amberglass/75
     ]
     objectives: [
-      slag
       {
         type: SectorComplete
         preset: scorchedSkalelands

@@ -1,0 +1,11 @@
+type: floor
+name: Shallow Poison Andesite
+speedMultiplier: 0.7
+variants: 4
+liquidDrop: poison
+isLiquid: true
+shallow: true
+cacheLayer: water
+attributes: {
+  poison: 0.7
+}

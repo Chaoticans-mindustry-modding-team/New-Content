@@ -72,5 +72,11 @@
         cobalt/100
         tritonium/130
     ]
+    objectives: [
+      {
+        type: OnSector
+        preset: magmaticCaverns
+      }
+    ]
   }
 }

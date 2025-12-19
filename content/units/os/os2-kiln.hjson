@@ -45,7 +45,7 @@
       shootY: 0
       top: false
       shots: 2
-      shootSound: flame
+      shootSound: shootFlame
       ejectEffect: none
       parentizeEffects: false
       bullet:
@@ -79,7 +79,7 @@
       reload: 15
       recoil: 3
       shake: 0.3
-      shootSound: shootSnap
+      shootSound: shoot
       top: true
       shootEffect: shootBig
       bullet:
@@ -99,3 +99,4 @@
     }
   ]
 }
+

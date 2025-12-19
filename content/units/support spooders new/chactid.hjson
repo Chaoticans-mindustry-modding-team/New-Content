@@ -1,0 +1,222 @@
+{
+  localizedName: Chactid
+  research:
+  {
+    parent: mesaen
+    requirements:
+    [
+      silicon/99000
+      plastanium/56000
+      phase-fabric/31000
+      surge-alloy/46000
+    ]
+    objectives:
+    [
+      tetrative-reconstructor
+    ]
+  }
+  type: legs
+  description: Fires a continuous stream of structure-healing flame and clusters of healing orbs at enemy targets. Maims enemy targets with a long range venom launcher. Boosts nearby allies with an overclock boost.
+  hitSize: 32
+  groundLayer: 75
+  rotateSpeed: 1
+  lockLegBase: true
+  legContinuousMove: true
+  legCount: 8
+  legLength: 25
+  legForwardScl: 1.6
+  legMoveSpace: 1.05
+  legStraightness: 0.3
+  rippleScl: 1.3
+  baseLegStraightness: 0.6
+  stepShake: 0.7
+  legGroupSize: 2
+  legBaseOffset: 9
+  legExtension: -6
+  legStraightLength: 0.9
+  legMaxLength: 1.3
+  hovering: true
+  armor: 11
+  speed: 0.5
+  drag: 0.43
+  flying: false
+  health: 21000
+  rotateShooting: true
+  shadowElevation: 0.3
+  range: 270
+  buildSpeed: 3
+  legSplashDamage: 24
+  legSplashRange: 12
+  stepSound: walkerStep
+  stepSoundVolume: 1.25
+  stepSoundPitch: 0.9
+  weapons:
+  [
+    {
+      name: large-flamethrower
+      mirror: true
+      alternate: true
+      x: 12.75
+      y: 19
+      shootSound: shootFlamePlasma
+      rotate: true
+      shootY: 5
+      top: false
+      layerOffset: -0.001
+      reload: 5
+      shootCone: 20
+      rotateSpeed: 3
+      rotationLimit: 45
+      recoil: 1
+      inaccuracy: 15
+      parts:
+      [
+        {
+          type: RegionPart
+          suffix: -barrel
+          moveY: -1
+          mirror: true
+          under: true
+          progress: recoil
+        }
+      ]
+      bullet:
+      {
+        type: BasicBulletType
+        width: 3
+        height: 3
+        damage: 10
+        speed: 4
+        absorbable: false
+        hittable: false
+        reflectable: false
+        shootEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            {
+              type: ParticleEffect
+              followParent: false
+              particles: 6
+              colorFrom: 98FFA9FF
+              colorTo: CCCCCCFF
+              sizeFrom: 2.5
+              sizeTo: 0.5
+              cone: 15
+              interp: circleOut
+              sizeInterp: circleIn
+              lifetime: 45
+              length: 60
+            }
+            shootHeal
+          ]
+        }
+        pierce: true
+        pierceCap: 3
+        collidesTeam: true
+        healPercent: 3
+        pierceBuilding: false
+        lifetime: 15
+        frontColor: 00000000
+        backColor: 00000000
+        despawnEffect: none
+        hitEffect:
+        {
+          type: ParticleEffect
+          followParent: false
+          particles: 3
+          colorFrom: 98FFA9FF
+          colorTo: 98FFA9FF
+          line: true
+          strokeFrom: 2
+          strokeTo: 0
+          cone: 12.5
+          interp: circleOut
+          sizeInterp: circleIn
+          lifetime: 25
+          length: 8
+        }
+      }
+    }
+    {
+      name: large-stinger
+      mirror: false
+      alternate: false
+      x: 0
+      y: -18
+      reload: 220
+      shootSound: shootBreachCarbide
+      shake: 5
+      recoil: -5
+      rotate: true
+      rotateSpeed: 1.5
+      rotationLimit: 110
+      shootCone: 10
+      top: true
+      inaccuracy: 6
+      velocityRnd: 0.2
+      shoot:
+      {
+        shots: 4
+        shotDelay: 0
+      }
+      bullet:
+      {
+        type: LiquidBulletType
+        liquid: venom
+        status: newunits-maimed
+        statusDuration: 200
+        lifetime: 45
+        puddleSize: 4
+        puddleLiquid: venom
+        puddles: 1
+        puddleRange: 16
+        puddleAmount: 6
+        orbSize: 3
+        speed: 8
+        damage: 100
+        splashDamageRadius: 30
+        splashDamage: 60
+        hitSound: mud
+        hitShake: 2
+        hitEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            {
+              type: particleEffect
+              particles: 6
+              length: 33
+              colorFrom: C8FF70FF
+              colorTo: C8FF70FF
+              sizeFrom: 2
+              sizeTo: 0
+              interp: circleOut
+              sizeInterp: circleIn
+              lifetime: 25
+            }
+            {
+              type: WaveEffect
+              sizeTo: 31
+              colorFrom: C8FF70FF
+              colorTo: C8FF70FF
+              lifetime: 20
+            }
+          ]
+        }
+      }
+    }
+  ]
+  abilities:
+  [
+    {
+      type: StatusFieldAbility
+      effect: overclock
+      duration: 300
+      reload: 350
+      range: 55
+    }
+  ]
+}

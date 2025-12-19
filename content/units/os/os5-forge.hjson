@@ -40,6 +40,8 @@
   shadowElevation: 0.72
   drownMultiplier: 1.75
   range: 279
+  stepSound: walkerStep
+  stepSoundVolume: 1.2
   immunities:
   [
     burning
@@ -65,7 +67,7 @@
       shootY: 0
       top: false
       shake: 0.875
-      shootSound: flame
+      shootSound: shootFlame
       soundPitchMin: 0.6
       soundPitchMax: 0.8
       ejectEffect: none
@@ -122,7 +124,7 @@
       recoil: 3
       inaccuracy: 19
       shake: 1
-      shootSound: missile
+      shootSound: shootMissile
       ejectEffect: casing2
       bullet:
       {

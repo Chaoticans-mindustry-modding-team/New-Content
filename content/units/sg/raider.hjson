@@ -1,0 +1,106 @@
+{
+  localizedName: Raider
+  description: Strikes ground targets with dual long-range blades. 
+  type: mech
+  research:
+  {
+    parent: peeve
+    requirements:
+    [
+      silicon/10000
+      titanium/6100
+      metaglass/2800
+    ]
+    objectives:
+    [
+      multiplicative-reconstructor
+    ]
+  }
+  armor: 9
+  speed: 0.6
+  accel: 0.5
+  drag: 0.4
+  flying: false
+  targetAir: false
+  health: 1160
+  hitSize: 14
+  range: 40
+  rotateSpeed: 4
+  ammmoType: graphite
+  mechFrontSway: 0.6
+  weapons:
+  [
+    {
+      name: raider-weapon
+      reload: 40
+      mirror: true
+      alternate: true
+      top: false
+      x: 8
+      y: -0.5
+      shootY: 9.5
+      recoil: -5
+      recoilTime: 30
+      rotate: false
+      shootSound: slice
+      shootCone: 60
+      inaccuracy: 0
+      ejectEffect: none
+      smokeEffect: none
+      shake: 1
+      bullet:
+      {
+        type: ShrapnelBulletType
+        damage: 65
+        serrations: 0
+        length: 40
+        width: 10
+        lifetime: 10
+        collidesAir: false
+        pierceArmor
+        hitEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            {
+              type: ParticleEffect
+              particles: 3
+              lifetime: 20
+              lenFrom: 5
+              lenTo: 1
+              strokeFrom: 2
+              strokeTo: 0.5
+              colorFrom: F9C27AFF
+              colorTo: F9C27AFF
+              line: true
+            }
+          ]
+        }
+        fromColor: F9C27AFF
+        toColor: F9C27AFF
+        recoil: -2.5
+        knockback: 1
+        despawnHit: false
+        despawnEffect: none
+        shootEffect:
+        {
+          type: ParticleEffect
+          particles: 7
+          lifetime: 20
+          lenFrom: 5
+          lenTo: 1
+          strokeFrom: 2
+          strokeTo: 0.5
+          length: 30
+          colorFrom: F9C27AFF
+          colorTo: F9C27AFF
+          line: true
+          cone: 30
+          followParent: false
+        }
+        smokeEffect: none
+      }
+    }
+  ]
+}

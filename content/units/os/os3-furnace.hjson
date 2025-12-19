@@ -28,6 +28,7 @@
   rotateShooting: false
   shadowElevation: 0.3
   range: 135
+  stepSound: walkerStepSmall
   immunities:
   [
     burning
@@ -130,4 +131,5 @@
     }
   ]
 }
+
 

@@ -202,7 +202,7 @@
         width: 8
         height: 12
         hitShake: 2
-        hitSound: spark
+        hitSound: explosionObviate
         homingPower: 0.04
         homingRange: 45
         weaveScale: 3

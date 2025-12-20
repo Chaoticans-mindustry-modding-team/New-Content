@@ -9,7 +9,7 @@
   flying: false
   targetAir: false
   health: 570
-  hitSize: 15
+  hitSize: 12
   range: 120
   ammmoType: coal
   weapons:
@@ -23,23 +23,38 @@
       rotate: true
       shootSound: shootLancer
       rotateSpeed: 7
-      chargeEffect:
+      shoot:
       {
-        type: MultiEffect
-        effects:
-        [
-          {
-            type: ParticleEffect
-            colorFrom: BF92F9FF
-            colorTo: FFFFFFFF
-            sizeFrom: 0
-            sizeTo: 4
-            interp: circleIn
-            length: 0
-            particles: 1
-            lifetime: 40
-          }
-          {
+        firstShotDelay: 40
+      }
+      chargeSound: chargeLancer
+      soundVolumeMin: 0.6
+      soundVolumeMax: 0.6
+      shootCone: 20
+      shake: 1
+      bullet:
+      {
+        type: LaserBulletType
+        length: 120
+        width: 10
+        damage: 80
+        chargeEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            {
+              type: ParticleEffect
+              colorFrom: BF92F9FF
+              colorTo: FFFFFFFF
+              sizeFrom: 0
+              sizeTo: 4
+              interp: circleIn
+              length: 0
+              particles: 1
+              lifetime: 40
+            }
+            {
               type: ParticleEffect
               line: true
               particles: 5
@@ -54,19 +69,9 @@
               strokeFrom: 0.5
               strokeTo: 0.5
               lifetime: 40
-          }
-        ]
-      }
-      shoot: {
-          firstShotDelay: 40
-      }
-      shootCone: 20
-      bullet:
-      {
-        type: LaserBulletType
-        length: 120
-        width: 10
-        damage: 80
+            }
+          ]
+        }
         hitEffect:
         {
           type: ParticleEffect

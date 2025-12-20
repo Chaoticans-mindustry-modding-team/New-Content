@@ -32,7 +32,7 @@
       recoil: 0
       top: false
       shots: 1
-      shootSound: flame
+      shootSound: shootFlame
       ejectEffect: none
       parentizeEffects: false
       bullet:
@@ -57,3 +57,4 @@
     }
   ]
 }
+

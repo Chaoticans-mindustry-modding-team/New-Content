@@ -46,16 +46,16 @@
       y: 2
       rotate: true
       rotateSpeed: 4.9
-      reload: 8
+      reload: 20
       mirror: true
       alternate: true
-      shootSound: spark
+      shootSound: shootArc
       inaccuracy: 7
       shootCone: 30
       bullet:
       {
         type: lightningBulletType
-        damage: 6
+        damage: 9
         lightningColor: FFF582FF
         lightningLength: 9
         lightningLengthRand: 5
@@ -70,14 +70,14 @@
       reload: 20
       mirror: true
       alternate: true
-      shootSound: shootSnap
+      shootSound: shootSalvo
       inaccuracy: 4
       shootCone: 20
       layerOffset: -1
       bullet:
       {
         type: BasicBulletType
-        hitEffect: flakExplosion
+        hitEffect: shootHealYellow
         despawnEffect: none
         despawnHit: true
         splashDamageRadius: 7
@@ -91,17 +91,17 @@
         lightningLength: 4
         lightningLengthRand: 2
         lightningDamage: 4
-        hitEffect: shootHealYellow
-        spawnBullets: [
-            {
-        type: lightningBulletType
-        damage: 6
-        lightningColor: FFF582FF
-        lightningLength: 9
-        lightningLengthRand: 5
-        lightningDamage: 7
-        hitEffect: shootHealYellow
-      }
+        spawnBullets:
+        [
+          {
+            type: lightningBulletType
+            damage: 6
+            lightningColor: FFF582FF
+            lightningLength: 9
+            lightningLengthRand: 5
+            lightningDamage: 7
+            hitEffect: shootHealYellow
+          }
         ]
       }
     }

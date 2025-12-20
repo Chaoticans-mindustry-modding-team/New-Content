@@ -1,0 +1,111 @@
+{
+  localizedName: Private
+  description: Fires rapid piercing laser beams at nearby enemy targets. Assists Commanders.
+  type: mech
+  armor: 3
+  speed: 0.75
+  accel: 0.5
+  drag: 0.4
+  flying: false
+  targetAir: false
+  health: 570
+  hitSize: 12
+  range: 120
+  ammmoType: coal
+  weapons:
+  [
+    {
+      name: private-laser
+      reload: 80
+      mirror: false
+      x: 0
+      y: -3
+      rotate: true
+      shootSound: shootLancer
+      rotateSpeed: 7
+      shoot:
+      {
+        firstShotDelay: 40
+      }
+      chargeSound: chargeLancer
+      soundVolumeMin: 0.6
+      soundVolumeMax: 0.6
+      shootCone: 20
+      shake: 1
+      parentizeEffects: true
+      shootStatus: unmoving
+      shootStatusDuration: 40
+      bullet:
+      {
+        type: LaserBulletType
+        length: 120
+        width: 10
+        damage: 80
+        chargeEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            {
+              type: ParticleEffect
+              colorFrom: BF92F9FF
+              colorTo: FFFFFFFF
+              sizeFrom: 0
+              sizeTo: 4
+              interp: circleIn
+              length: 0
+              particles: 1
+              lifetime: 40
+              followParent: true
+              rotWithParent: true
+            }
+            {
+              type: ParticleEffect
+              line: true
+              particles: 5
+              baseLength: 10
+              length: 0
+              interp: linear
+              sizeInterp: circleIn
+              colorFrom: BF92F9FF
+              colorTo: BF92F9FF
+              lenFrom: 1
+              lenTo: 3
+              strokeFrom: 0.5
+              strokeTo: 0.5
+              lifetime: 40
+              followParent: true
+              rotWithParent: true
+            }
+          ]
+        }
+        hitEffect:
+        {
+          type: ParticleEffect
+          particles: 5
+          lifetime: 100
+          lightColor: BF92F9FF
+          length: 45
+          cone: -360
+          sizeFrom: 6
+          sizeTo: 0
+          lenFrom: 5
+          interp: circleOut
+          lenTo: 0
+          colorFrom: BF92F9FF
+          colorTo: 665C9F00
+        }
+        colors:
+        [
+          9D70D766
+          9D70D766
+          ffffff
+        ]
+        lightColor: BF92F9FF
+        sideAngle: 35
+        sideLength: 1
+        sideWidth: 1
+      }
+    }
+  ]
+}

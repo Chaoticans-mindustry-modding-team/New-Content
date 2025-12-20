@@ -1,0 +1,217 @@
+{
+  localizedName: Whirlybird
+  description: Fires a barrage of paired bullets at enemies. Can strafe without losing speed.
+  accel: 0.03
+  drag: 0.02
+  speed: 2.2
+  flying: true
+  health: 1080
+  armor: 4
+  engineOffset: 12.5
+  targetAir: true
+  circleTarget: false
+  hitSize: 17
+  rotateSpeed: 3
+  strafePenalty: 1
+  range: 120
+  loopSound: rotors
+  loopSoundVolume: 0.15
+  research:
+  {
+    requirements:
+    [
+      metaglass/2800
+      titanium/6100
+      silicon/10000
+    ]
+    objectives:
+    [
+      multiplicative-reconstructor
+    ]
+    parent: propeller
+  }
+  weapons:
+  [
+    {
+      name: motor-pelleter
+      shootCone: 30
+      mirror: true
+      alternate: false
+      top: false
+      rotate: false
+      x: 8
+      y: 4.75
+      reload: 25
+      recoil: 2
+      layerOffset: -1
+      ejectEffect: casing1
+      shootSound: shoot2
+      bullet:
+      {
+        type: BasicBulletType
+        hitEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            {
+              type: WaveEffect
+              sizeTo: 8
+              strokeFrom: 2.5
+              strokeTo: 0.5
+              colorFrom: FFFFFFFF
+              colorTo: BF92F9FF
+              lifetime: 10
+            }
+            {
+              type: ParticleEffect
+              line: true
+              sizeFrom: 6
+              sizeTo: 5
+              colorFrom: FFFFFFFF
+              colorTo: BF92F9FF
+              lifetime: 20
+              length: 12
+            }
+          ]
+        }
+        frontColor: BF92F9FF
+        backColor: 9D70D7FF
+        damage: 13
+        speed: 3
+        lifetime: 30
+        trailWidth: 1.5
+        trailColor: 9D70D7FF
+        trailLength: 12
+        despawnHit: true
+        despawnEffect: none
+        width: 7
+        height: 9
+      }
+    }
+    {
+      name: propeller-pelleter
+      shootCone: 20
+      mirror: true
+      alternate: false
+      top: false
+      rotate: false
+      layerOffset: -1
+      x: -3.5
+      y: 9.25
+      reload: 45
+      recoil: 2
+      shootSound: shoot2
+      ejectEffect: casing2
+      bullet:
+      {
+        type: BasicBulletType
+        hitEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            {
+              type: WaveEffect
+              sizeTo: 12
+              strokeFrom: 2.5
+              strokeTo: 0.5
+              colorFrom: FFFFFFFF
+              colorTo: BF92F9FF
+              lifetime: 10
+            }
+            {
+              type: ParticleEffect
+              line: true
+              sizeFrom: 6
+              sizeTo: 5
+              colorFrom: FFFFFFFF
+              colorTo: BF92F9FF
+              lifetime: 30
+              length: 12
+            }
+            {
+              type: ParticleEffect
+              sizeFrom: 2
+              sizeTo: 0
+              colorFrom: FFFFFFFF
+              colorTo: BF92F9FF
+              lifetime: 30
+              length: 12
+            }
+          ]
+        }
+        frontColor: BF92F9FF
+        backColor: 9D70D7FF
+        damage: 10
+        speed: 4
+        lifetime: 30
+        trailWidth: 1.5
+        trailColor: 9D70D7FF
+        trailLength: 12
+        despawnHit: true
+        despawnEffect: none
+        width: 9
+        height: 12
+        splashDamageRadius: 11
+        splashDamage: 10
+      }
+    }
+    {
+      name: whirlybird-blade
+      reload: 9
+      mirror: false
+      x: 0
+      y: 4
+      top: true
+      shoot:
+      {
+        shots: 0
+      }
+      controllable: false
+      alwaysShooting: true
+      shootSound: none
+      display: false
+      parts:
+      [
+        {
+          type: RegionPart
+          suffix: -shade
+          rotation: 0
+          moveRot: 180
+          progress: reload
+          color: FFFFFFFF
+          colorTo: FFFFFF00
+          layerOffset: 2
+          outline: false
+        }
+        {
+          type: RegionPart
+          suffix: -shade
+          rotation: 180
+          moveRot: 180
+          progress: reload
+          color: FFFFFF00
+          colorTo: FFFFFFFF
+          layerOffset: 2
+          outline: false
+        }
+        {
+          type: RegionPart
+          suffix: -flat
+          rotation: 0
+          moveRot: 180
+          progress: reload
+          color: FFFFFFFF
+          colorTo: FFFFFFFF
+          layerOffset: 1
+        }
+        {
+          type: RegionPart
+          suffix: -top
+          layerOffset: 3
+        }
+      ]
+    }
+  ]
+}

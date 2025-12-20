@@ -52,7 +52,7 @@
       shake: 3
       shootCone: 8
       ejectEffect: casing3
-      shootSound: railgun
+      shootSound: shootOmura
       bullet:
       {
         type: RailBulletType

@@ -1,0 +1,116 @@
+{
+  localizedName: Admiral
+  description: Lunges at enemies with enormous piercing blades.
+  type: mech
+  research:
+  {
+    parent: commander
+    requirements:
+    [
+      silicon/99000
+      plastanium/56000
+      surge-alloy/46000
+      phase-fabric/31000
+    ]
+    objectives:
+    [
+      tetrative-reconstructor
+    ]
+  }
+  armor: 19
+  speed: 0.45
+  accel: 0.3
+  drag: 0.4
+  flying: false
+  targetAir: false
+  health: 28000
+  hitSize: 30
+  range: 80
+  rotateSpeed: 2.4
+  drownTimeMultiplier: 4
+  ammmoType: thorium
+  mechFrontSway: 2
+  mechSideSway: 0.7
+  mechStepParticles: true
+  stepShake: 0.8
+  stepSound: mechStepHeavy
+  stepSoundVolume: 0.9
+  stepSoundPitch: 0.9
+  weapons:
+  [
+    {
+      name: admiral-weapon
+      reload: 68
+      mirror: true
+      alternate: true
+      top: false
+      x: 22
+      y: 2.75
+      shootY: 23
+      recoil: -9
+      recoilTime: 35
+      rotate: true
+      rotateSpeed: 2
+      rotationLimit: 50
+      shootSound: sliceBig
+      shootCone: 60
+      inaccuracy: 0
+      ejectEffect: none
+      smokeEffect: none
+      shake: 6
+      layerOffset: -0.001
+      bullet:
+      {
+        type: ShrapnelBulletType
+        damage: 660
+        serrations: 2
+        length: 80
+        width: 10
+        lifetime: 13
+        collidesAir: false
+        pierceArmor: true
+        hitEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            {
+              type: ParticleEffect
+              particles: 3
+              lifetime: 20
+              lenFrom: 5
+              lenTo: 1
+              strokeFrom: 2
+              strokeTo: 0.5
+              colorFrom: F9C27AFF
+              colorTo: F9C27AFF
+              line: true
+            }
+          ]
+        }
+        fromColor: F9C27AFF
+        toColor: F9C27AFF
+        recoil: -9.5
+        knockback: 2
+        despawnHit: false
+        despawnEffect: none
+        shootEffect:
+        {
+          type: ParticleEffect
+          particles: 7
+          lifetime: 20
+          lenFrom: 5
+          lenTo: 1
+          strokeFrom: 2
+          strokeTo: 0.5
+          length: 30
+          colorFrom: F9C27AFF
+          colorTo: F9C27AFF
+          line: true
+          followParent: false
+        }
+        smokeEffect: none
+      }
+    }
+  ]
+}

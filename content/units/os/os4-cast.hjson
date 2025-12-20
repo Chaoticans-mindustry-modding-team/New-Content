@@ -12,7 +12,7 @@
       emberium/350
     ]
   }
-  description: Fires bursts of bullets and a constant stream of melting flame at targets.
+  description: Fires heavy bullets and a constant stream of melting flame at targets.
   type: legs
   legCount: 7
   legLength: 30
@@ -38,6 +38,7 @@
   rotateSpeed: 2.2
   shadowElevation: 0.72
   drownMultiplier: 1.75
+  stepSound: walkerStep
   immunities:
   [
     burning
@@ -62,7 +63,7 @@
       shootY: 0
       top: false
       shake: 1
-      shootSound: flame
+      shootSound: shootFlame
       soundPitchMin: 0.6
       soundPitchMax: 0.8
       ejectEffect: none
@@ -112,16 +113,11 @@
       rotateSpeed: 3
       x: 9
       y: -3
-      reload: 45
+      reload: 15
       recoil: 3
       inaccuracy: 3
       shake: 5
-      shoot:
-      {
-        shots: 4
-        shotDelay: 1
-      }
-      shootSound: shoot
+      shootSound: shrapnel2
       top: true
       ejectEffect: casing3
       bullet:

@@ -11,8 +11,8 @@
     [gold]As of Version 7x1, the mod's custom and new music has been moved to Chaoticans-mindustry-modding-team/New-Content-Music.
     '''
   author: Rylid Umil
-  version: 8x9
-  minGameVersion: 153
+  version: 8x10
+  minGameVersion: 154
   contentOrder:
   [
     // Serpulo
@@ -21,7 +21,7 @@
         "delta",
         "os1-flame", "os2-kiln", "os3-furnace", "os4-cast", "os5-forge",
         "fern", "herb", "leech", "mesaen", "chactid",
-        "critter", "peeve", "raider", "commander", "admiral",
+        "critter", "peeve", "raider", "commander", "private", "admiral",
         "jet", "propeller", "whirlybird", "cheyenne", "apache",
         "streak", "spear", "falter", "delusion", "hallucination",
         "silky", "requiem",
@@ -95,7 +95,7 @@
             //Metal
             "iron-structure",
             //Ore
-            "ore-silver", "ore-gold", "ore=iron", "ore-cobalt", "ore-antimony", ""
+            "ore-silver", "ore-gold", "ore=iron", "ore-cobalt", "ore-antimony",
         //Other
             //Misc
             "blackstone", "waste"

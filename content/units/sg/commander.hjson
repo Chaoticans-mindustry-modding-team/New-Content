@@ -47,7 +47,7 @@
       rotate: true
       rotateSpeed: 2
       rotationLimit: 50
-      shootSound: slice
+      shootSound: sliceBig
       shootCone: 60
       inaccuracy: 0
       ejectEffect: none

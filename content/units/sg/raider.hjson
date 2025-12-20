@@ -60,7 +60,7 @@
         width: 10
         lifetime: 10
         collidesAir: false
-        pierceArmor
+        pierceArmor: true
         hitEffect:
         {
           type: MultiEffect

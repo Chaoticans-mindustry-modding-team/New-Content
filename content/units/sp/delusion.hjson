@@ -205,7 +205,7 @@
       alternate: true
       rotate: true
       rotateSpeed: 5
-      shootSound: sap
+      shootSound: shootSap
       bullet:
       {
         type: SapBulletType

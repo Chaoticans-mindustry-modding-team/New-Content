@@ -59,10 +59,10 @@
       bullet:
       {
         type: ShrapnelBulletType
-        damage: 1000
+        damage: 660
         serrations: 2
-        length: 75
-        width: 13
+        length: 80
+        width: 10
         lifetime: 13
         collidesAir: false
         pierceArmor: true
@@ -79,13 +79,13 @@
               lenTo: 1
               strokeFrom: 2
               strokeTo: 0.5
-              colorFrom: FFF582FF
+              colorFrom: F9C27AFF
               colorTo: F9C27AFF
               line: true
             }
           ]
         }
-        fromColor: FFF582FF
+        fromColor: F9C27AFF
         toColor: F9C27AFF
         recoil: -9.5
         knockback: 2
@@ -101,7 +101,7 @@
           strokeFrom: 2
           strokeTo: 0.5
           length: 30
-          colorFrom: FFF582FF
+          colorFrom: F9C27AFF
           colorTo: F9C27AFF
           line: true
           followParent: false

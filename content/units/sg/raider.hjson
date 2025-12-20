@@ -28,6 +28,9 @@
   rotateSpeed: 4
   ammmoType: graphite
   mechFrontSway: 0.6
+  stepSound: mechStep
+  stepSoundVolume: 0.7
+  stepSoundPitch: 1.1
   weapons:
   [
     {

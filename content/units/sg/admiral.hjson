@@ -33,6 +33,9 @@
   mechSideSway: 0.7
   mechStepParticles: true
   stepShake: 0.8
+  stepSound: mechStepHeavy
+  stepSoundVolume: 0.9
+  stepSoundPitch: 0.9
   weapons:
   [
     {

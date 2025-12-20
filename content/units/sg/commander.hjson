@@ -31,6 +31,8 @@
   mechFrontSway: 1.2
   mechStepParticles: true
   stepShake: 0.17
+  stepSound: mechStepHeavy
+  stepSoundVolume: 0.8
   weapons:
   [
     {

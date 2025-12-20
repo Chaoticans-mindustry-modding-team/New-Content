@@ -1,6 +1,6 @@
 {
   localizedName: Raider
-  description: Strikes ground targets with dual long-range blades. 
+  description: Strikes ground targets with dual long-range blades.
   type: mech
   research:
   {
@@ -29,7 +29,7 @@
   ammmoType: graphite
   mechFrontSway: 0.6
   stepSound: mechStep
-  stepSoundVolume: 0.7
+  stepSoundVolume: 0.4
   stepSoundPitch: 1.1
   weapons:
   [
@@ -45,12 +45,15 @@
       recoil: -5
       recoilTime: 30
       rotate: false
-      shootSound: slice
+      shootSound: sliceBig
+      soundPitchMin: 1
+      soundPitchMax: 1.2
       shootCone: 60
       inaccuracy: 0
       ejectEffect: none
       smokeEffect: none
       shake: 1
+      layerOffset: -0.001
       bullet:
       {
         type: ShrapnelBulletType

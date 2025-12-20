@@ -120,7 +120,7 @@
         reflectable: false
         absorbable: false
         hitSound: sap
-        despawnSound: plasmaboom
+        despawnSound: explosionQuad
         keepVelocity: false
         despawnEffect:
         {

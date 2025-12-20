@@ -1,0 +1,93 @@
+{
+  type: flying
+  name: Zap
+  description: Rapidy fires lasers at enemy targets. Exceptionally fast.
+  health: 420
+  research:
+  {
+    requirements:
+    [
+      silicon/350
+      lead/25
+      electrum/45
+    ]
+    parent: ya1-spark
+  }
+  armor: 5
+  lowAltitude: true
+  engineOffset: 7
+  range: 120
+  flying: true
+  speed: 6.4
+  accel: 0.04
+  drag: 0.04
+  hitSize: 13
+  rotateShooting: false
+  engines:
+  [
+    {
+      x: 3
+      y: -1.5
+      rotation: 315
+      radius: 3
+    }
+    {
+      x: -3
+      y: -1.5
+      rotation: 215
+      radius: 3
+    }
+  ]
+  weapons:
+  [
+    {
+      name: shocker-mount
+      alternate: false
+      y: -4
+      x: 0
+      rotate: true
+      rotateSpeed: 3.9
+      mirror: false
+      reload: 24
+      shootSound: shootLancer
+      shootEffect:
+      {
+        type: ParticleEffect
+        sizeFrom: 2
+        line: true
+        sizeTo: 1
+        lifetime: 8
+        colorFrom: FFFC96FF
+        colorTo: FFFC96FF
+      }
+      bullet:
+      {
+        type: LaserBulletType
+        colors:
+        [
+          FFC45477
+          FFFC96FF
+          FFFFFFFF
+        ]
+        speed: 0
+        lifetime: 10
+        damage: 25
+        pierce: true
+        pierceBuildings: true
+        length: 120
+        status: shocked
+        statusDuration: 3
+        hitEffect:
+        {
+          type: ParticleEffect
+          sizeFrom: 2
+          line: true
+          sizeTo: 1
+          lifetime: 8
+          colorFrom: FFFC96FF
+          colorTo: FFFC96FF
+        }
+      }
+    }
+  ]
+}

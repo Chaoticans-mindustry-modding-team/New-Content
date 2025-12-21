@@ -56,7 +56,7 @@
         despawnEffect: none
         despawnHit: true
         impact: true
-        collidesTerrain: true
+        collideTerrain: true
         hitEffect: {
             type: MultiEffect
             effects: [

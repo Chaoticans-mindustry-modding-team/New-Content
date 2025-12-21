@@ -9,6 +9,17 @@
   {
     powerBuffered: 4000
   }
+  drawers: {
+      type: DrawMulti
+      drawers: [
+        {
+            type: DrawDefault
+        }
+        {
+            type: DrawPower
+        }
+      ]
+  }
   baseExplosiveness: 1
   requirements: [
     antimony/260

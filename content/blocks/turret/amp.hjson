@@ -5,7 +5,7 @@
   size: 1
   health: 600
   outlineColor: 13111cff
-  reload: 11
+  reload: 13
   range: 120
   targetAir: true
   targetGround: true
@@ -23,7 +23,7 @@
   }
   consumes:
   {
-    power: 3.5
+    power: 5
     coolant:
     {
       amount: 0.15
@@ -36,7 +36,7 @@
     backColor: ccccffdd
     lifetime: 30
     speed: 4
-    damage: 15
+    damage: 12
     hitEffect: {
         type: WaveEffect
         lifetime: 10

@@ -1,0 +1,21 @@
+{
+  name: Antimony Battery
+  type: Battery
+  description: Stores power in times of surplus energy. Outputs power in times of deficit. Huge power capacity. Sandbox only. 
+  size: 3
+  health: 1450
+  category: power
+  consumes:
+  {
+    powerBuffered: 4000
+  }
+  baseExplosiveness: 1
+  requirements: [
+    antimony/260
+    medium-alloy/120
+    cobalt/1200
+  ]
+  research: {
+      parent: iron-power-node
+  }
+}

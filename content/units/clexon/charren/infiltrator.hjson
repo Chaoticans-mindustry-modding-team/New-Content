@@ -61,6 +61,7 @@
         smokeEffect: none
         status: burning
         statusDuration: 60
+        collideTerrain: true
         pointEffect:
         {
           line: true

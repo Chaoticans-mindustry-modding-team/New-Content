@@ -45,9 +45,10 @@
         length: 72
         knockback: 1
         pointEffectSpace: 2
-        pierceDamageFactor: 1
+        pierceDamageFactor: 100
         smokeEffect: none
         buildingDamageMultiplier: 0.02
+        collideTerrain: true
         pointEffect:
         {
           line: true

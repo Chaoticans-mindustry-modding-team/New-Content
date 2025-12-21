@@ -51,7 +51,7 @@
         damage: 33
         despawnEffect: none
         despawnHit: true
-        collidesTerrain: true
+        collideTerrain: true
         hitEffect: {
             type: MultiEffect
             effects: [

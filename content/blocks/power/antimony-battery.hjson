@@ -9,7 +9,7 @@
   {
     powerBuffered: 4000
   }
-  drawers: {
+  drawer: {
       type: DrawMulti
       drawers: [
         {

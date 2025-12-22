@@ -6,26 +6,26 @@
 
     [gray]Faction: [sky]Fusionix
     '''
-  speed: 1.2
-  accel: 0.03
-  drag: 0.03
+  speed: 1.3
+  accel: 0.05
+  drag: 0.02
   hovering: true
-  flying: true
   canDrown: false
-  rotateSpeed: 1
+  rotateSpeed: 3
   omniMovement: false
   health: 700
   armor: 3
   hitsize: 12
-  engineOffset: 6
+  engineOffset: 5.5
   engineSize: 2.5
   itemCapacity: 0
-  useEngineELevation: false
+  useEngineElevation: false
   moveSound: fieldloop
   moveSoundVolume: 0.3
   outlineColor: 13111cff
   trailLength: 10
   range: 90
+  shadiwElevation: 0.2
   parts:
   [
     {
@@ -38,6 +38,7 @@
       stroke: 2
       minStroke: 0
       layerOffset: -0.001
+      sides: 5
       color: a6fbffff
     }
   ]
@@ -50,7 +51,7 @@
       mirror: true
       alternate: true
       reload: 50
-      shootSound: shrapnel2
+      shootSound: shootSalvo
       ejectEffect: none
       inaccuracy: 13
       lifeRnd: 0.2
@@ -62,7 +63,7 @@
       rotateSpeed: 5
       shoot:
       {
-        shots: 3
+        shots: 4
       }
       bullet:
       {
@@ -72,7 +73,7 @@
         backColor: a6fbffff
         width: 6
         height: 10
-        speed: 5
+        speed: 4
         lifetime: 18
         trailColor: a6fbffff
         trailWidth: 0.8
@@ -89,18 +90,21 @@
             {
               type: ParticleEffect
               particles: 5
-              length: 8
+              length: 4
               lifetime: 20
               colorFrom: a6fbffff
               colorTo: a6fbffff
               sizeFrom: 3
+              region: newunits-square
+              offset: 45
+              rotWithParent: false
             }
             {
                 type: WaveEffect
                 colorFrom: a6fbffff
                 colorTo: a6fbffff
                 sizeTo: 9
-                lifetime: 10
+                lifetime: 5
             }
           ]
         }

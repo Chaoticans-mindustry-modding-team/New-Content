@@ -1,0 +1,44 @@
+{
+  name: Tritonium Drill
+  description: Mines items from tiles it is placed on. Capable of mining second tier resources.
+  health: 1200
+  size: 3
+  consumes:
+  {
+    power: 2
+    liquid:
+    {
+      liquid: water 
+      amount: 0.31
+      booster: true
+      optional: true
+    }
+  }
+  type: Drill
+  tier: 3
+  drillTime: 80
+  liquidBoostIntensity: 1.2
+  category: production
+  requirements:
+  [
+    cobalt/150
+    amberglass/100
+    tritonium/100
+  ]
+  research:
+  {
+    parent: iron-drill
+    requirements:
+    [
+      cobalt/2950
+    amberglass/2300
+    tritonium/2300
+    ]
+    objectives: [
+      {
+        type: SectorCapture
+        preset: magmaticCaverns
+      }
+    ]
+  }
+}

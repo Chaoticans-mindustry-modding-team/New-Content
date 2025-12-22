@@ -10,6 +10,7 @@
   accel: 0.03
   drag: 0.03
   hovering: true
+  flying: true
   canDrown: false
   rotateSpeed: 1
   omniMovement: false
@@ -21,9 +22,10 @@
   itemCapacity: 0
   useEngineELevation: false
   moveSound: fieldloop
-  moveSoundVolume: 0.5
+  moveSoundVolume: 0.3
   outlineColor: 13111cff
   trailLength: 10
+  range: 90
   parts:
   [
     {
@@ -34,6 +36,7 @@
       radius: 6
       phase: 90
       stroke: 2
+      minStroke: 0
       layerOffset: -0.001
       color: a6fbffff
     }
@@ -55,9 +58,8 @@
       velocityRnd: 0.2
       extraVelocity: 0.1
       shake: 1
-      rotates: true
-      rotateSpeed: 3
-      rotationLimit: 45
+      rotate: true
+      rotateSpeed: 5
       shoot:
       {
         shots: 3
@@ -70,8 +72,8 @@
         backColor: a6fbffff
         width: 6
         height: 10
-        speed: 6
-        lifetime: 20
+        speed: 5
+        lifetime: 18
         trailColor: a6fbffff
         trailWidth: 0.8
         trailLength: 4

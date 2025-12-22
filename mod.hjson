@@ -10,7 +10,7 @@
 
     [gold]As of Version 7x1x, the mod's custom and new music has been moved to Chaoticans-mindustry-modding-team/New-Content-Music.
     '''
-  author: Rylid Umil
+  author: Rylid Umil & Aegires
   subtitle: Adds new content.
   version: 8x1x11
   minGameVersion: 154
@@ -49,7 +49,8 @@
             "foul", "polluter",
             //Fusionix
             "neutron",
-            "ion", "atom",
+            "ion", "atom", "fusion",
+            "repulsion", "opposition",
             // Core
             "diversionist", "general", "corps",
         // Block
@@ -59,7 +60,7 @@
         "tube", "tube-junction", "tube-bridge", "tube-sorter", "tube-sorter-inverted", "tube-router",
         "micro-pump", "iron-conduit", "iron-liquid-splitter", "iron-liquid-crosser", "iron-bridge-conduit",
         "iron-power-node", "heat-harvester", "ignition-generator",
-        "iron-drill", "crystallizer",
+        "iron-drill", "tritonium-drill", "crystallizer",
         "core-central", "core-mecca", "core-burg",
         "mecha", "amp" "meteor", "soak", "hive", "concussor",
         "assembly", "primary-reconstructor-module",
@@ -69,7 +70,8 @@
     //Status
     "charged", "lightly-poisoned", "poisoned", "heavily-poisoned", "maimed", "laser-shocked", "atomically-charged", "bit-slow", "heated",
     //Sectors
-    "raggedWastelands", "barrenPlateaus", "ferricPlains", "poisonBayCaves", "toxicEstuary", "scorchedSkalelands", "magmaticCaverns"
+    "raggedWastelands", "barrenPlateaus", 
+    "ferricPlains", "poisonBayCaves", "toxicEstuary", "scorchedSkalelands", "magmaticCaverns",
     //Terrain
         //Clexon
             //Poison

@@ -9,7 +9,7 @@
   {
           type: ParticleEffect
           particles: 1
-          sizeFrom: 4
+          sizeFrom: 1
           sizeTo: 0
           region: newunits-square
           length: 0

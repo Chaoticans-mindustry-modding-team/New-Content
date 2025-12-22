@@ -44,7 +44,7 @@
       y: -2.25
       mirror: true
       alternate: false
-      reload: 45
+      reload: 72
       shootSound: rifle
       ejectEffect: none
       inaccuracy: 13
@@ -59,6 +59,7 @@
       bullet:
       {
         type: BasicBulletType
+        damage: 12
         frontColor: a6fbffff
         backColor: 4df9ffff
         width: 7

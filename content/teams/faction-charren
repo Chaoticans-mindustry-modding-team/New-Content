@@ -3,7 +3,6 @@
   name: Charren
   color: ffa665
   id: 7
-  emoji: faction-charren
   palette:
   [
     ff8533
@@ -11,6 +10,5 @@
     ff8533
     b04f00
   ]
-  ignoreUnitCap: true
   hasPalette: true
 }

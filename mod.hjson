@@ -8,10 +8,11 @@
 
     [red]This mod is very ambitious. And unfinished. I'm probably going to add new planets. One is already in the works.
 
-    [gold]As of Version 7x1, the mod's custom and new music has been moved to Chaoticans-mindustry-modding-team/New-Content-Music.
+    [gold]As of Version 7x1x, the mod's custom and new music has been moved to Chaoticans-mindustry-modding-team/New-Content-Music.
     '''
   author: Rylid Umil
-  version: 8x10
+  subtitle: Adds new content.
+  version: 8x1x11
   minGameVersion: 154
   contentOrder:
   [

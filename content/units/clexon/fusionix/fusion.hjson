@@ -1,19 +1,18 @@
 {
-  localizedName: Atom
+  localizedName: Fusion
   description:
     '''
-    Fires a continuous stream of plasma at nearby enemy targets.
+    Pulls in units with beaming lasers and bolts them with charged ions.
 
     [gray]Faction: [sky]Fusionix
     '''
-  speed: 1.2
-  accel: 0.04
+  speed: 1.3
+  accel: 0.023
   drag: 0.03
   flying: true
-  health: 700
+  health: 2200
   armor: 3
-  range: 55
-  engineOffset: 8
+  range: 78
   hitSize: 18
   targetAir: false
   faceTarget: false

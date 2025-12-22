@@ -7,21 +7,23 @@
     [gray]Faction: [sky]Fusionix
     '''
   speed: 1.2
-  accel: 0.02
+  accel: 0.03
   drag: 0.03
   hovering: true
   canDrown: false
   rotateSpeed: 1
-  omniMovement: true
+  omniMovement: false
   health: 700
   armor: 3
   hitsize: 12
-  engineOffset: 5.5
+  engineOffset: 6
   engineSize: 2.5
   itemCapacity: 0
   useEngineELevation: false
   moveSound: fieldloop
-  moveSoundVolume: 0.75
+  moveSoundVolume: 0.5
+  outlineColor: 13111cff
+  trailLength: 10
   parts:
   [
     {
@@ -43,32 +45,36 @@
       x: 3.5
       y: -2.25
       mirror: true
-      alternate: false
-      reload: 72
-      shootSound: rifle
+      alternate: true
+      reload: 50
+      shootSound: shrapnel2
       ejectEffect: none
       inaccuracy: 13
       lifeRnd: 0.2
       extraLife: 0.1
       velocityRnd: 0.2
       extraVelocity: 0.1
+      shake: 1
+      rotates: true
+      rotateSpeed: 3
+      rotationLimit: 45
       shoot:
       {
-        shots: 4
+        shots: 3
       }
       bullet:
       {
         type: BasicBulletType
         damage: 12
-        frontColor: a6fbffff
-        backColor: 4df9ffff
-        width: 7
-        height: 12
+        frontColor: ffffffff
+        backColor: a6fbffff
+        width: 6
+        height: 10
         speed: 6
-        lifetime: 30
-        trailColor: 4df9ffff
-        trailWidth: 2
-        trailLength: 12
+        lifetime: 20
+        trailColor: a6fbffff
+        trailWidth: 0.8
+        trailLength: 4
         hitEffect: none
         knockback: 2
         status: shocked

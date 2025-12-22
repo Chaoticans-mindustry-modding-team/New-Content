@@ -62,13 +62,15 @@
         hitEffect:
         {
           type: ParticleEffect
-          particles: 7
+          particles: 4
           sizeFrom: 2
           sizeTo: 0
-          length: 20
+          length: 10
           cone: 360
           colorFrom: a6fbffff
           colorTo: a6fbffff
+          region: newunits-square
+          offset: 45
         }
         color: a6fbffff
         damage: 6
@@ -78,6 +80,8 @@
         layer: 100
         lifetime: 45
         length: 75
+        status: newunits-ionized
+        statusDuration: 60
         shootEffect:
         {
           type: WaveEffect
@@ -89,7 +93,7 @@
       }
     }
     {
-      name: fusionix-zapper
+      name: fusion-zapper
       x: 0
       y: -6
       rotate: true
@@ -100,20 +104,20 @@
       shootSound: tinylightning
       shake: 0.4
       inaccuracy: 4
-      shot:
+      soundVolumeMin: 0.7
+      soundVolumeMax: 0.7
+      shoot:
       {
         shots: 2
       }
       shootCone: 30
       bullet:
       {
-        type: lightningBulletType
+        type: LightningBulletType
         damage: 10
         lightningColor: a6fbffff
         lightningLength: 13
         lightningLengthRand: 5
-        status: newunits-ionized
-        statusDuration: 60
         hitEffect:
         {
           type: ParticleEffect

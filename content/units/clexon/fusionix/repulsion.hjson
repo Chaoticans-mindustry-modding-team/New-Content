@@ -1,0 +1,101 @@
+{
+  localizedName: Repulsion
+  description:
+    '''
+    Fires volleys of energy shells at nearby enemy targets.
+
+    [gray]Faction: [sky]Fusionix
+    '''
+  speed: 1.2
+  accel: 0.02
+  drag: 0.03
+  hovering: true
+  canDrown: false
+  rotateSpeed: 1
+  omniMovement: true
+  health: 700
+  armor: 3
+  hitsize: 12
+  engineOffset: 5.5
+  engineSize: 2.5
+  itemCapacity: 0
+  useEngineELevation: false
+  moveSound: fieldloop
+  moveSoundVolume: 0.75
+  parts:
+  [
+    {
+      type: HoverPart
+      x: 4.5
+      y: -5
+      mirror: true
+      radius: 6
+      phase: 90
+      stroke: 2
+      layerOffset: -0.001
+      color: a6fbffff
+    }
+  ]
+  weapons:
+  [
+    {
+      name: repulsion-blaster
+      x: 3.5
+      y: -2.25
+      mirror: true
+      alternate: false
+      reload: 45
+      shootSound: rifle
+      ejectEffect: none
+      inaccuracy: 13
+      lifeRnd: 0.2
+      extraLife: 0.1
+      velocityRnd: 0.2
+      extraVelocity: 0.1
+      shoot:
+      {
+        shots: 4
+      }
+      bullet:
+      {
+        type: BasicBulletType
+        frontColor: a6fbffff
+        backColor: 4df9ffff
+        width: 7
+        height: 12
+        speed: 6
+        lifetime: 30
+        trailColor: 4df9ffff
+        trailWidth: 2
+        trailLength: 12
+        hitEffect: none
+        knockback: 2
+        status: shocked
+        despawnHit: true
+        despawnEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            {
+              type: ParticleEffect
+              particles: 5
+              length: 8
+              lifetime: 20
+              colorFrom: a6fbffff
+              colorTo: a6fbffff
+              sizeFrom: 3
+            }
+            {
+                type: WaveEffect
+                colorFrom: a6fbffff
+                colorTo: a6fbffff
+                sizeTo: 9
+                lifetime: 10
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

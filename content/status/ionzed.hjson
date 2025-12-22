@@ -1,0 +1,23 @@
+{
+  name: Ionized
+  speedMultiplier: 0.7
+  buildSpeedMultiplier: 0.3
+  damage: 0.12
+  color: a6fbffff
+  effectChance: 0.5
+  effect:
+  {
+          type: ParticleEffect
+          particles: 1
+          sizeFrom: 4
+          sizeTo: 0
+          region: newunits-square
+          length: 0
+          offset: 45
+          lifetime: 20
+          colorFrom: a6fbffff
+          colorTo: a6fbffff
+          useRotation: false
+        }
+  outline: true
+}

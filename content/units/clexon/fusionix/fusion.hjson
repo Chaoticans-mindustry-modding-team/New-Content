@@ -1,0 +1,134 @@
+{
+  localizedName: Atom
+  description:
+    '''
+    Fires a continuous stream of plasma at nearby enemy targets.
+
+    [gray]Faction: [sky]Fusionix
+    '''
+  speed: 1.2
+  accel: 0.04
+  drag: 0.03
+  flying: true
+  health: 700
+  armor: 3
+  range: 55
+  engineOffset: 8
+  hitSize: 18
+  targetAir: false
+  faceTarget: false
+  circleTarget: false
+  lowAltitude: true
+  outlineColor: 13111cff
+  itemCapacity: 25
+  targetFlags:
+  [
+    reactor
+  ]
+  engines:
+  [
+    {
+      x: 0
+      y: -13
+      rotation: -90
+      radius: 4
+    }
+    {
+      x: -7
+      y: -11
+      rotation: -90
+      radius: 3
+    }
+    {
+      x: 7
+      y: -11
+      rotation: -90
+      radius: 3
+    }
+  ]
+  weapons:
+  [
+    {
+      name: fusion-beamer
+      x: 4.25
+      y: 3
+      reload: 12
+      alternate: true
+      rotate: true
+      rotateSpeed: 2.5
+      shootSound: shootLaser
+      bullet:
+      {
+        type: SapBulletType
+        hitEffect:
+        {
+          type: ParticleEffect
+          particles: 7
+          sizeFrom: 2
+          sizeTo: 0
+          length: 20
+          cone: 360
+          colorFrom: a6fbffff
+          colorTo: a6fbffff
+        }
+        color: a6fbffff
+        damage: 6
+        knockback: -3
+        impact: false
+        keepVelocity: true
+        layer: 100
+        lifetime: 45
+        length: 75
+        shootEffect:
+        {
+          type: WaveEffect
+          colorFrom: a6fbffff
+          colorTo: a6fbffff
+          sizeTo: 5
+          lifetime: 12
+        }
+      }
+    }
+    {
+      name: fusionix-zapper
+      x: 0
+      y: -6
+      rotate: true
+      rotateSpeed: 2
+      rotationLimit: 30
+      reload: 10
+      mirror: false
+      shootSound: tinylightning
+      shake: 0.4
+      inaccuracy: 4
+      shot:
+      {
+        shots: 2
+      }
+      shootCone: 30
+      bullet:
+      {
+        type: lightningBulletType
+        damage: 10
+        lightningColor: a6fbffff
+        lightningLength: 13
+        lightningLengthRand: 5
+        status: newunits-ionized
+        statusDuration: 60
+        hitEffect:
+        {
+          type: ParticleEffect
+          particles: 5
+          sizeFrom: 3
+          sizeTo: 0
+          region: newunits-square
+          length: 8
+          offset: 45
+          colorFrom: a6fbffff
+          colorTo: a6fbffff
+          useRotation: false
+        }
+      }
+    }
+  ]
+}

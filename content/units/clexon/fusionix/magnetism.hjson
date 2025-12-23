@@ -17,7 +17,7 @@
   omniMovement: false
   health: 2100
   armor: 6
-  hitSize: 32
+  hitSize: 28
   engineOffset: 11.5
   engineSize: 5
   itemCapacity: 50
@@ -46,7 +46,7 @@
     }
     {
       type: HoverPart
-      x: 9.5
+      x: 7
       y: 6
       mirror: true
       radius: 8
@@ -67,13 +67,14 @@
       y: -8.25
       mirror: false
       reload: 6
-      shootSound: pistol
+      shootSound: machineGun
+      soundVolumeMin: 0.5
+      soundVolumeMax: 0.5
       ejectEffect: none
       inaccuracy: 4
       rotate: true
       rotateSpeed: 3
-      shootY: 4
-      shake: 1
+      shootY: 9
       bullet:
       {
         type: RailBulletType
@@ -83,11 +84,10 @@
         damage: 30
         length: 60
         pointEffectSpace: 2
-        pierceDamageFactor: 0
+        pierceDamageFactor: 0.1
         pierceCap: 2
         smokeEffect: none
-        status: burning
-        statusDuration: 60
+        status: shocked
         pointEffect:
         {
           line: true
@@ -106,8 +106,8 @@
         shootEffect:
         {
           type: ParticleEffect
-          colorFrom: ff772eff
-          colorTo: ff772eff
+          colorFrom: a6fbffff
+          colorTo: a6fbffff
           length: 10
           lifetime: 15
           cone: 30
@@ -117,25 +117,28 @@
         }
         despawnEffect: none
         hitEffect: none
-        pierceEffect: none
+        pierceEffect: {
+          type: ParticleEffect
+          colorFrom: a6fbffff
+          colorTo: a6fbffff
+          length: 10
+          lifetime: 15
+          cone: 30
+          line: true
+          lenFrom: 2
+          lenTo: 1
+        }
         endEffect:
         {
-          type: MultiEffect
-          effects:
-          [
-            hitFlameSmall
-            {
-              type: ParticleEffect
-              colorFrom: a6fbffff
-              colorTo: a6fbffff
-              length: 10
-              lifetime: 15
-              cone: 30
-              line: true
-              lenFrom: 2
-              lenTo: 1
-            }
-          ]
+          type: ParticleEffect
+          colorFrom: a6fbffff
+          colorTo: a6fbffff
+          length: 10
+          lifetime: 15
+          cone: 30
+          line: true
+          lenFrom: 2
+          lenTo: 1
         }
       }
     }
@@ -159,19 +162,20 @@
       {
         type: BasicBulletType
         damage: 60
-        knockback: 5
+        knockback: 10
         impact: false
         frontColor: ffffffff
         backColor: a6fbffff
         width: 8
         height: 8
         shrinkY: 0
-        speed: 8
-        lifetime: 20
+        speed: 4
+        lifetime: 40
         trailColor: a6fbffff
         trailWidth: 2
         trailLength: 4
         status: ionized
+        statusDuration: 570
         sprite: shell
         despawnHit: true
         despawnEffect: none

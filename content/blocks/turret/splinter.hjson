@@ -117,21 +117,6 @@
               damage: 49
               knockback: 5
               impact: true
-              shootEffect: {
-                type: ParticleEffect
-                cone: 30
-                particles: 8
-                lifetime: 20
-                line: true
-                lenFrom: 3
-                lenTo: 1
-                strokeFrom: 2
-                strokeTo: 0
-                length: 20
-                colorFrom: bd42ffff
-                colorTo: bd42ffff
-                useRotation: true
-              }
               hitEffect:
               {
                 type: ParticleEffect
@@ -151,10 +136,25 @@
             }
             {
               type: ExplosionBulletType
-              despawnEffect: none
+              despawnEffect:
+              {
+                type: ParticleEffect
+                cone: 30
+                particles: 8
+                lifetime: 20
+                line: true
+                lenFrom: 3
+                lenTo: 1
+                strokeFrom: 2
+                strokeTo: 0
+                length: 20
+                colorFrom: bd42ffff
+                colorTo: bd42ffff
+                useRotation: true
+              }
               hitEffect: none
-              despawnHit: true
-              hitsound: shatter
+              despawnHit: false
+              despawnSound: shatter
               killShooter: false
             }
           ]

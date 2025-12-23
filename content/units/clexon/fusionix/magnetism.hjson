@@ -1,0 +1,238 @@
+{
+  localizedName: Magnetism
+  description:
+    '''
+    Fires energy rounds at enemy targets. Equipped with an autocontrolled energy grenade launcher. Can hover over bodies of liquid
+
+    [gray]Faction: [sky]Fusionix
+    '''
+  type: hover
+  speed: 1.1
+  accel: 0.03
+  drag: 0.03
+  hovering: true
+  flying: false
+  canDrown: false
+  rotateSpeed: 2
+  omniMovement: false
+  health: 2100
+  armor: 6
+  hitSize: 32
+  engineOffset: 11.5
+  engineSize: 5
+  itemCapacity: 50
+  useEngineElevation: false
+  moveSound: fieldloop
+  moveSoundVolume: 0.35
+  outlineColor: 13111cff
+  trailLength: 14
+  range: 160
+  shadowElevation: 0.3
+  parts:
+  [
+    {
+      type: HoverPart
+      x: 9
+      y: -9
+      mirror: true
+      radius: 7
+      phase: 90
+      stroke: 2
+      minStroke: 0
+      layerOffset: -0.001
+      sides: 6
+      circles: 3
+      color: a6fbffff
+    }
+    {
+      type: HoverPart
+      x: 9.5
+      y: 6
+      mirror: true
+      radius: 8
+      phase: 90
+      stroke: 2
+      minStroke: 0
+      layerOffset: -0.001
+      sides: 6
+      circles: 3
+      color: a6fbffff
+    }
+  ]
+  weapons:
+  [
+    {
+      name: magnetism-gatling
+      x: 0
+      y: -8.25
+      mirror: false
+      reload: 6
+      shootSound: pistol
+      ejectEffect: none
+      inaccuracy: 4
+      rotate: true
+      rotateSpeed: 3
+      shootY: 4
+      shake: 1
+      bullet:
+      {
+        type: RailBulletType
+        collideTerrain: true
+        lifetime: 10
+        collidesTerrain: true
+        damage: 30
+        length: 60
+        pointEffectSpace: 2
+        pierceDamageFactor: 0
+        pierceCap: 2
+        smokeEffect: none
+        status: burning
+        statusDuration: 60
+        pointEffect:
+        {
+          line: true
+          baseRotation: 0
+          rotWithParent: true
+          length: 0.0001
+          lenFrom: 2
+          lenTo: 2
+          strokeFrom: 3
+          strokeTo: 0
+          colorFrom: a6fbffff
+          colorTo: a6fbffff
+          cone: 0
+          lifetime: 12
+        }
+        shootEffect:
+        {
+          type: ParticleEffect
+          colorFrom: ff772eff
+          colorTo: ff772eff
+          length: 10
+          lifetime: 15
+          cone: 30
+          line: true
+          lenFrom: 2
+          lenTo: 1
+        }
+        despawnEffect: none
+        hitEffect: none
+        pierceEffect: none
+        endEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            hitFlameSmall
+            {
+              type: ParticleEffect
+              colorFrom: a6fbffff
+              colorTo: a6fbffff
+              length: 10
+              lifetime: 15
+              cone: 30
+              line: true
+              lenFrom: 2
+              lenTo: 1
+            }
+          ]
+        }
+      }
+    }
+    {
+      name: repulsion-blaster
+      x: 9.25
+      y: -3
+      mirror: false
+      alternate: false
+      reload: 500
+      shootSound: grenadeLaunch
+      shake: 3
+      inaccuracy: 5
+      controllable: false
+      aiControllable: true
+      autoTarget: true
+      rotate: true
+      rotationSpeed: 3
+      ejectEffect: none
+      bullet:
+      {
+        type: BasicBulletType
+        damage: 60
+        knockback: 5
+        impact: false
+        frontColor: ffffffff
+        backColor: a6fbffff
+        width: 8
+        height: 8
+        shrinkY: 0
+        speed: 8
+        lifetime: 20
+        trailColor: a6fbffff
+        trailWidth: 2
+        trailLength: 4
+        status: ionized
+        sprite: shell
+        despawnHit: true
+        despawnEffect: none
+        hitSound: shockRifle
+        splashDamage: 214
+        splashDamageRadius: 16
+        shootEffect:
+        {
+          type: ParticleEffect
+          particles: 5
+          length: 6
+          lifetime: 50
+          colorFrom: a6fbffff
+          colorTo: a6fbffff
+          sizeFrom: 3
+          region: newunits-square
+          offset: 45
+          useRotation: false
+        }
+        hitEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            {
+              type: ParticleEffect
+              particles: 10
+              length: 18
+              lifetime: 30
+              colorFrom: a6fbffaa
+              colorTo: a6fbf00
+              sizeFrom: 5
+              region: newunits-square
+              offset: 45
+              useRotation: false
+            }
+            {
+              type: WaveEffect
+              colorFrom: a6fbffff
+              colorTo: a6fbffff
+              sizeTo: 32
+              lifetime: 15
+            }
+            {
+              type: ParticleEffect
+              line: true
+              colorFrom: a6fbffff
+              colorTo: a6fbffff
+              lifetime: 20
+              particles: 8
+              lenFrom: 2
+              lenTo: 1
+              strokeFrom: 1
+              strokeTo: 0
+              interp: linear
+              sizeInterp: circleIn
+              length: 18
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

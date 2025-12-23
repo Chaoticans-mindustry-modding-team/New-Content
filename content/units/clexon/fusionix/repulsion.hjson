@@ -80,11 +80,11 @@
         trailColor: a6fbffff
         trailWidth: 0.8
         trailLength: 4
-        hitEffect: none
+        despawnEffect: none
         knockback: 2
         status: shocked
         despawnHit: true
-        despawnEffect:
+        hitEffect:
         {
           type: MultiEffect
           effects:

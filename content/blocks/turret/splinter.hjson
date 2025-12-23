@@ -1,0 +1,135 @@
+{
+  localizedName: Splinter
+  description: Launches volatile crystallizing Selevite shards at nearby enemy targets.
+  type: ItemTurret
+  size: 3
+  health: 1900
+  outlineColor: 13111cff
+  maxAmmo: 20
+  ammoPerShot: 4
+  reload: 150
+  range: 105
+  targetAir: true
+  targetGround: true
+  rotateSpeed: 6
+  shootSound: shootCleroi
+  coolantMultiplier: 5
+  shake: 4
+  shootY: -1
+  recoil: 5
+  recoilTime: 120
+  inaccuracy: 3
+  consumes:
+  {
+    coolant:
+    {
+      amount: 0.5
+    }
+  }
+  ammoTypes:
+  {
+    selevite:
+    {
+      type: BasicBulletType
+      frontColor: bd42ffff
+      backColor: 8000ffff
+      speed: 8
+      lifetime: 15
+      width: 12
+      height: 20
+      damage: 70
+      ammoMultiplier: 1
+      sprite: newunits-crystal-bullet
+      trailColor: bd42ffff
+      trailChance: 0.1
+      hitEffect:
+      {
+        type: MultiEffect
+        effects:
+        [
+          {
+            type: ParticleEffect
+            particles: 8
+            lifetime: 20
+            line: true
+            lenFrom: 3
+            lenTo: 1
+            strokeFrom: 2
+            strokeTo: 0
+            length: 20
+            colorFrom: bd42ffff
+            colorTo: bd42ffff
+          }
+        ]
+      }
+      despawnHit: true
+      despawnEffect: none
+      hitSound: explosion
+      homingRange: 50
+      homingPower: 0.05
+      fragBullets: 3
+      fragLifeMin: 0.3
+      fragLifeMax: 1
+      fragVelocityMin: 0.8
+      fragVelocityMax: 1
+      fragRandomSpread: 30
+      fragBullet:
+      {
+        type: BasicBulletType
+        frontColor: bd42ffff
+        backColor: 8000ffff
+        speed: 10
+        lifetime: 6
+        width: 3
+        height: 5
+        shrinkY: 1
+        damage: 20
+        sprite: newunits-crystal-bullet
+        bulletInterval: 2
+        hitEffect: none
+        despawnEffect: none
+        intervalRandomSpread: 10
+        weaveMag: 20
+        weaveScl: 1.823
+        intervalBullet: {
+            type: MultiBullet
+            bullets: [
+                {
+                    type: ExplosionBulletType
+                    despawnEffect: none
+                    hitEffect: none
+                    despawnHit: true
+                    hitsound: shatter
+                }
+                {
+                    type: ShrapnelBulletType
+                    length: 8
+                    serrations: 0
+                    fromColor: bd42ffff
+                    toColor: 8000ffff
+                    lifetime: 20
+                    damage: 50
+                }
+            ]
+        }
+      }
+    }
+  }
+  drawer:
+  {
+    type: DrawTurret
+    basePrefix: clexon-
+  }
+  requirements:
+  [
+    iron/280
+    selevite/400
+    tritonium/200
+  ]
+  category: turret
+  research:
+  {
+    parent: concussor
+    objectives: []
+  }
+}

@@ -8,7 +8,7 @@
   maxAmmo: 20
   ammoPerShot: 4
   reload: 100
-  range: 105
+  range: 205
   targetAir: true
   targetGround: true
   rotateSpeed: 1.5
@@ -37,7 +37,7 @@
       lifetime: 15
       width: 8
       height: 16
-      damage: 160
+      damage: 35
       ammoMultiplier: 1
       sprite: newunits-crystal-bullet
       trailColor: bd42ffff
@@ -73,12 +73,12 @@
       despawnEffect: none
       hitSound: explosion
       fragBullets: 3
-      fragLifeMin: 0.3
-      fragLifeMax: 2
+      fragLifeMin: 1.5
+      fragLifeMax: 3
       fragVelocityMin: 0.8
       fragVelocityMax: 1
       fragRandomSpread: 55
-      splashDamage: 150
+      splashDamage: 45
       splashDamageRadius: 18
       fragBullet:
       {

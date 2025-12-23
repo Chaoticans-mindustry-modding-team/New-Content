@@ -17,7 +17,7 @@
   omniMovement: false
   health: 960
   armor: 3
-  hitSize: 29
+  hitSize: 16
   engineOffset: 9
   engineSize: 3
   itemCapacity: 0
@@ -46,7 +46,7 @@
     {
       type: HoverPart
       x: 4.5
-      y: 5
+      y: 4
       mirror: true
       radius: 7
       phase: 90
@@ -91,7 +91,7 @@
         speed: 3
         lifetime: 45
         trailColor: a6fbffff
-        trailWidth: .5
+        trailWidth: 1.5
         trailLength: 8
         hitEffect: {
             type: ParticleEffect
@@ -109,7 +109,6 @@
             length: 14
         }
         status: shocked
-        despawnHit: false
         sprite: circle-bullet
         despawnEffect:
         {

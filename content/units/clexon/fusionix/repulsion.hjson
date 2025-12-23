@@ -23,7 +23,7 @@
   itemCapacity: 0
   useEngineElevation: false
   moveSound: fieldloop
-  moveSoundVolume: 0.3
+  moveSoundVolume: 0.2
   outlineColor: 13111cff
   trailLength: 10
   range: 90
@@ -34,6 +34,19 @@
       type: HoverPart
       x: 4.5
       y: -5
+      mirror: true
+      radius: 5
+      phase: 90
+      stroke: 2
+      minStroke: 0
+      layerOffset: -0.001
+      sides: 5
+      color: a6fbffff
+    }
+    {
+      type: HoverPart
+      x: 4.5
+      y: 4.75
       mirror: true
       radius: 6
       phase: 90
@@ -60,7 +73,6 @@
       extraLife: 0.1
       velocityRnd: 0.2
       extraVelocity: 0.1
-      shake: 1
       rotate: true
       rotateSpeed: 5
       shoot:

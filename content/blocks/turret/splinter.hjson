@@ -25,6 +25,9 @@
     {
       amount: 0.5
     }
+    liquids: [
+        poison/1
+    ]
   }
   ammoTypes:
   {

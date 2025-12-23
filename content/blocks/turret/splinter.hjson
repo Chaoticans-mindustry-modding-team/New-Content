@@ -114,9 +114,12 @@
               fromColor: bd42ffff
               toColor: 8000ffff
               lifetime: 20
-              damage: 49
+              damage: 9
               knockback: 5
               impact: true
+              pierceCap: -1
+              pierce: true
+              pierceBuilding: true
               hitEffect:
               {
                 type: ParticleEffect

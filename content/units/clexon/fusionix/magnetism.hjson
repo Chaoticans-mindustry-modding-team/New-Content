@@ -68,8 +68,7 @@
       mirror: false
       reload: 5
       shootSound: machineGun
-      soundVolumeMin: 0.5
-      soundVolumeMax: 0.5
+      shootSoundVolume: 0.4
       ejectEffect: none
       inaccuracy: 4
       rotate: true

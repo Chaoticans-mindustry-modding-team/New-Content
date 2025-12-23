@@ -66,7 +66,7 @@
       x: 0
       y: -8.25
       mirror: false
-      reload: 6
+      reload: 5
       shootSound: machineGun
       soundVolumeMin: 0.5
       soundVolumeMax: 0.5
@@ -79,13 +79,12 @@
       {
         type: RailBulletType
         collideTerrain: true
-        lifetime: 10
-        collidesTerrain: true
-        damage: 30
+        lifetime: 8
+        damage: 9
         length: 60
         pointEffectSpace: 2
-        pierceDamageFactor: 0.1
-        pierceCap: 2
+        pierceDamageFactor: 1
+        pierceCap: 1
         smokeEffect: none
         status: shocked
         pointEffect:
@@ -117,17 +116,7 @@
         }
         despawnEffect: none
         hitEffect: none
-        pierceEffect: {
-          type: ParticleEffect
-          colorFrom: a6fbffff
-          colorTo: a6fbffff
-          length: 10
-          lifetime: 15
-          cone: 30
-          line: true
-          lenFrom: 2
-          lenTo: 1
-        }
+        pierceEffect: none
         endEffect:
         {
           type: ParticleEffect
@@ -181,7 +170,7 @@
         despawnEffect: none
         hitSound: shockRifle
         splashDamage: 214
-        splashDamageRadius: 16
+        splashDamageRadius: 32
         shootEffect:
         {
           type: ParticleEffect
@@ -203,7 +192,7 @@
             {
               type: ParticleEffect
               particles: 10
-              length: 18
+              length: 36
               lifetime: 30
               colorFrom: a6fbffaa
               colorTo: a6fbf00
@@ -232,7 +221,7 @@
               strokeTo: 0
               interp: linear
               sizeInterp: circleIn
-              length: 18
+              length: 37
             }
           ]
         }

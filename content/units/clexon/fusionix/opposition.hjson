@@ -1,0 +1,142 @@
+{
+  localizedName: Opposition
+  description:
+    '''
+    Fires piercing energy disks at nearby enemy targets.
+
+    [gray]Faction: [sky]Fusionix
+    '''
+  type: hover
+  speed: 1.4
+  accel: 0.04
+  drag: 0.03
+  hovering: true
+  flying: false
+  canDrown: false
+  rotateSpeed: 3
+  omniMovement: false
+  health: 1480
+  armor: 3
+  hitSize: 128
+  engineOffset: 9
+  engineSize: 3
+  itemCapacity: 0
+  useEngineElevation: false
+  moveSound: fieldloop
+  moveSoundVolume: 0.3
+  outlineColor: 13111cff
+  trailLength: 12
+  range: 135
+  shadowElevation: 0.2
+  parts:
+  [
+    {
+      type: HoverPart
+      x: 6.25
+      y: -7.25
+      mirror: true
+      radius: 6
+      phase: 90
+      stroke: 2
+      minStroke: 0
+      layerOffset: -0.001
+      sides: 5
+      color: a6fbffff
+    }
+    {
+      type: HoverPart
+      x: 5.5
+      y: 6
+      mirror: true
+      radius: 7
+      phase: 90
+      stroke: 2
+      minStroke: 0
+      layerOffset: -0.001
+      sides: 5
+      color: a6fbffff
+    }
+  ]
+  weapons:
+  [
+    {
+      name: opposition-blaster
+      x: 0
+      y: -3.75
+      mirror: false
+      reload: 45
+      shootSound: lasershoot2
+      ejectEffect: none
+      inaccuracy: 2
+      rotate: true
+      rotateSpeed: 5
+      shoot:
+      {
+        shots: 2
+        shotDelay: 10
+      }
+      bullet:
+      {
+        type: BasicBulletType
+        damage: 30
+        pierce: true
+        pierceBuilding: true
+        pierceCap: 2
+        frontColor: ffffffff
+        backColor: a6fbffff
+        width: 11
+        height: 11
+        shrinkY: 0
+        speed: 3
+        lifetime: 45
+        trailColor: a6fbffff
+        trailWidth: 0.9
+        trailLength: 8
+        despawnEffect: {
+            type: ParticleEffect
+            line: true
+            colorFrom: a6fbffff
+            colorTo: a6fbffff
+            lifetime: 20
+            particles: 6
+            lenFrom: 2
+            lenTo: 1
+            strokeFrom: 1
+            strokeTo: 0
+            interp: circleOut
+            sizeInterp: circleIn
+            length: 14
+        }
+        status: shocked
+        despawnHit: false
+        sprite: circle-bullet
+        hitEffect:
+        {
+          type: MultiEffect
+          effects:
+          [
+            {
+              type: ParticleEffect
+              particles: 5
+              length: 4
+              lifetime: 50
+              colorFrom: a6fbffff
+              colorTo: a6fbffff
+              sizeFrom: 3
+              region: newunits-square
+              offset: 45
+              useRotation: false
+            }
+            {
+              type: WaveEffect
+              colorFrom: a6fbffff
+              colorTo: a6fbffff
+              sizeTo: 8
+              lifetime: 15
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -8,7 +8,8 @@
   maxAmmo: 20
   ammoPerShot: 4
   reload: 100
-  range: 10565r: true
+  range: 105
+  targetAir: true
   targetGround: true
   rotateSpeed: 1.5
   shootSound: shatter

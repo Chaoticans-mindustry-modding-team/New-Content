@@ -7,16 +7,15 @@
   outlineColor: 13111cff
   maxAmmo: 20
   ammoPerShot: 4
-  reload: 150
-  range: 105
-  targetAir: true
+  reload: 100
+  range: 10565r: true
   targetGround: true
-  rotateSpeed: 6
+  rotateSpeed: 1.5
   shootSound: shatter
-  coolantMultiplier: 5
+  coolantMultiplier: 2
   shake: 4
   shootY: -1
-  recoil: 5
+  recoil: 1
   recoilTime: 120
   inaccuracy: 3
   consumes:
@@ -37,7 +36,7 @@
       lifetime: 15
       width: 8
       height: 16
-      damage: 70
+      damage: 160
       ammoMultiplier: 1
       sprite: newunits-crystal-bullet
       trailColor: bd42ffff
@@ -72,15 +71,13 @@
       despawnHit: true
       despawnEffect: none
       hitSound: explosion
-      homingRange: 50
-      homingPower: 0.05
       fragBullets: 3
       fragLifeMin: 0.3
       fragLifeMax: 2
       fragVelocityMin: 0.8
       fragVelocityMax: 1
-      fragRandomSpread: 30
-      splashDamage: 40
+      fragRandomSpread: 55
+      splashDamage: 150
       splashDamageRadius: 18
       fragBullet:
       {
@@ -92,7 +89,7 @@
         width: 3
         height: 5
         shrinkY: 1
-        damage: 20
+        damage: 9
         sprite: newunits-crystal-bullet
         bulletInterval: 2
         hitEffect: none
@@ -117,9 +114,10 @@
               fromColor: bd42ffff
               toColor: 8000ffff
               lifetime: 20
-              damage: 9
+              damage: 30
               knockback: 5
               impact: true
+              wdith: 20
               hitEffect:
               {
                 type: ParticleEffect

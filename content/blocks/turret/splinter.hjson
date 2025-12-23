@@ -98,6 +98,9 @@
         hitEffect: none
         despawnEffect: none
         intervalRandomSpread: 10
+        pierceCap: -1
+        pierce: true
+        pierceBuilding: true
         weaveMag: 5
         weaveScl: 0.2
         trailWidth: 0.5
@@ -117,9 +120,6 @@
               damage: 9
               knockback: 5
               impact: true
-              pierceCap: -1
-              pierce: true
-              pierceBuilding: true
               hitEffect:
               {
                 type: ParticleEffect

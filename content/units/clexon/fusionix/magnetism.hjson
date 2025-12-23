@@ -79,8 +79,8 @@
         type: RailBulletType
         collideTerrain: true
         lifetime: 8
-        damage: 9
-        length: 60
+        damage: 13
+        length: 90
         pointEffectSpace: 2
         pierceDamageFactor: 1
         pierceCap: 1
@@ -136,7 +136,7 @@
       y: -3
       mirror: false
       alternate: false
-      reload: 500
+      reload: 460
       shootSound: grenadeLaunch
       shake: 3
       inaccuracy: 5
@@ -168,8 +168,8 @@
         despawnHit: true
         despawnEffect: none
         hitSound: shockRifle
-        splashDamage: 214
-        splashDamageRadius: 32
+        splashDamage: 314
+        splashDamageRadius: 36
         shootEffect:
         {
           type: ParticleEffect

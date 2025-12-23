@@ -17,7 +17,7 @@
   omniMovement: false
   health: 700
   armor: 3
-  hitSize: 24
+  hitSize: 11
   engineOffset: 5.5
   engineSize: 2.5
   itemCapacity: 0

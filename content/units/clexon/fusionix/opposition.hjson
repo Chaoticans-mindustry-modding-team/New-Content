@@ -15,9 +15,9 @@
   canDrown: false
   rotateSpeed: 3
   omniMovement: false
-  health: 1480
+  health: 960
   armor: 3
-  hitSize: 128
+  hitSize: 29
   engineOffset: 9
   engineSize: 3
   itemCapacity: 0
@@ -45,8 +45,8 @@
     }
     {
       type: HoverPart
-      x: 5.5
-      y: 6
+      x: 4.5
+      y: 5
       mirror: true
       radius: 7
       phase: 90
@@ -70,6 +70,7 @@
       inaccuracy: 2
       rotate: true
       rotateSpeed: 5
+      shootY: 4
       shoot:
       {
         shots: 2
@@ -84,15 +85,15 @@
         pierceCap: 2
         frontColor: ffffffff
         backColor: a6fbffff
-        width: 11
-        height: 11
+        width: 7
+        height: 7
         shrinkY: 0
         speed: 3
         lifetime: 45
         trailColor: a6fbffff
-        trailWidth: 0.9
+        trailWidth: .5
         trailLength: 8
-        despawnEffect: {
+        hitEffect: {
             type: ParticleEffect
             line: true
             colorFrom: a6fbffff
@@ -110,7 +111,7 @@
         status: shocked
         despawnHit: false
         sprite: circle-bullet
-        hitEffect:
+        despawnEffect:
         {
           type: MultiEffect
           effects:

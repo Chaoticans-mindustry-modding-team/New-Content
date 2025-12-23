@@ -99,7 +99,7 @@
               sizeFrom: 3
               region: newunits-square
               offset: 45
-              rotWithParent: false
+              useRotation: false
             }
             {
                 type: WaveEffect

@@ -12,7 +12,7 @@
   targetAir: true
   targetGround: true
   rotateSpeed: 6
-  shootSound: shootCleroi
+  shootSound: shatter
   coolantMultiplier: 5
   shake: 4
   shootY: -1
@@ -60,6 +60,13 @@
             colorFrom: bd42ffff
             colorTo: bd42ffff
           }
+          {
+            type: WaveEffect
+            lifetime: 20
+            sizeTo: 18
+            colorFrom: bd42ffff
+            colorTo: bd42ffff
+          }
         ]
       }
       despawnHit: true
@@ -73,6 +80,8 @@
       fragVelocityMin: 0.8
       fragVelocityMax: 1
       fragRandomSpread: 30
+      splashDamage: 40
+      splashDamageRadius: 18
       fragBullet:
       {
         type: BasicBulletType
@@ -89,10 +98,12 @@
         hitEffect: none
         despawnEffect: none
         intervalRandomSpread: 10
-        weaveMag: 20
-        weaveScl: 1.823
+        weaveMag: 5
+        weaveScl: 0.2
+        trailWidth: 0.5
+        trailColor: bd42ffff
         intervalBullet: {
-            type: MultiBullet
+            type: MultiBulletType
             bullets: [
                 {
                     type: ExplosionBulletType
@@ -108,7 +119,9 @@
                     fromColor: bd42ffff
                     toColor: 8000ffff
                     lifetime: 20
-                    damage: 50
+                    damage: 49
+                    knockback: 5
+                    impact: true
                 }
             ]
         }

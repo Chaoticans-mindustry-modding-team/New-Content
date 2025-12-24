@@ -2,7 +2,7 @@ type: CanvasBlock
   name: Stainless Canvas
 description: Displays a simple image with a pre-defined palette. Editable.
   size: 2
-  palette: { 1c1a24, 3c3645, 655a6e, bd3900, db7f4d, ffa665, 310094, 6100e0, 8000ff, bd42ff, 24183b, 854db0, 9f62d1, 7dbeff, b8e7ff, dbf7ff, ffffff }
+  palette: { 1c1a24_ff, 3c3645_ff, 655a6e_ff, bd3900_ff, db7f4d_ff, ffa665_ff, 310094_ff, 6100e0_ff, 8000ff_ff, bd42ff_ff, 24183b_ff, 854db0_ff, 9f62d1_ff, 7dbeff_ff, b8e7ff_ff, dbf7ff_ff, ffffff_ff }
 requirements: [
   iron/5
   cobalt/2

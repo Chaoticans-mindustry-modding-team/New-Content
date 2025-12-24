@@ -2,6 +2,7 @@ type: CanvasBlock
   name: Stainless Canvas
 description: Displays a simple image with a pre-defined palette. Editable.
   size: 2
+canvasSize: 17
   palette: {
 "1c1a24_ff", 
 "3c3645_ff", 
@@ -12,11 +13,11 @@ description: Displays a simple image with a pre-defined palette. Editable.
 "310094_ff", 
 "6100e0_ff",
 "8000ff_ff",
-"bd42ff_ff", 
-"24183b_ff", 
+"bd42ff_ff",
+"24183b_ff",
 "854db0_ff",
 "9f62d1_ff",
-"7dbeff_ff", 
+"7dbeff_ff",
 "b8e7ff_ff",
 "dbf7ff_ff",
 "ffffff_ff"

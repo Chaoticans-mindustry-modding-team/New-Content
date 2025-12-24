@@ -1,0 +1,66 @@
+{
+  name: Medium Alloy Crucible
+  description: Smelts cobalt, sulfur, and tritonium into Medium Alloy.
+  drawer:
+  {
+    type: DrawMulti
+    drawers:
+    [
+      {
+        type: DrawDefault
+      }
+      {
+        type: DrawFlame
+        flameColor: a1a1bfff
+      }
+    ]
+  }
+  type: GenericCrafter
+  size: 3
+  hasPower: true
+  hasItems: true
+  itemCapacity: 40
+  craftTime: 80
+  craftEffect: smeltsmoke
+  updateEffect: none
+  ambientSound: smelter
+  ambientSoundVolume: 0.07
+  consumes:
+  {
+    power: 3.5
+    items:
+    {
+      items:
+      [
+        cobalt/8
+        sulfur/4
+        tritonium/1
+      ]
+    }
+  }
+  requirements:
+  [
+    cobalt/300
+    antimony/200
+    amberglass/200
+    tritonium/200
+  ]
+  category: crafting
+  /*research:
+  {
+    parent: small-alloy-forge
+    requirements: [
+        iron/120
+        cobalt/45
+        antimony/95
+    ]
+    objectives: [
+      {
+        type: OnSector
+        preset: To Be Made
+      }
+    ]
+  }
+  */
+  outputItem: medium-alloy/2
+}

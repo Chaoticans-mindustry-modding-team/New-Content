@@ -5,12 +5,13 @@ description: Slowly repairs structures within it's range. Requires power. Can be
   size: 2
   consumes: {
 power: 3
+items: {
 items: [
-  item: [
-  item: selevite
-    optional: true
-    ]
+selevite/1
 ]
+booster: true,
+optional: true
+    }
   }
 range: 90
   baseColor: bd42ff

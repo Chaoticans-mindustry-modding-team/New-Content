@@ -6,10 +6,10 @@ description: Slowly repairs structures within it's range. Requires power. Can be
   consumes: {
 power: 3
 items: [
-  item: {
+  item: [
   item: selevite
     optional: true
-    }
+    ]
 ]
   }
 range: 90

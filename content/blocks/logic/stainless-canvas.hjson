@@ -1,0 +1,11 @@
+type: CanvasBlock
+  name: Stainless Canvas
+description: Displays a simple image with a pre-defined palette. Editable.
+  size: 2
+  palette: { 1c1a24, 3c3645, 655a6e, bd3900, db7f4d, ffa665, 310094, 6100e0, 8000ff, bd42ff, 24183b, 854db0, 9f62d1, 7dbeff, b8e7ff, dbf7ff, ffffff }
+requirements: [
+  iron/5
+  cobalt/2
+  ]
+  category: logic
+  research: stainless-message

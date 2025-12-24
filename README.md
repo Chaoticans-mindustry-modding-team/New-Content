@@ -1,3 +1,4 @@
+Discord link: https://discord.gg/qT8NBcDg78
 # New-Units
 It's cle's first mod! Yay! it adds a lot lf things, like new paths for units, such as purple navals, alternate paths, such as silky orange naval alternate path or barrage orange naval path, and even enw factions and regiments such as Arcus and Fusionix! I have worked hard on this mod, so you should try it!
 # WARNING

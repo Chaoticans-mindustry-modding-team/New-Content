@@ -16,6 +16,7 @@
   }
   type: Drill
   tier: 3
+itemCapacity: 20
   drillTime: 80
   liquidBoostIntensity: 1.2
   category: production

@@ -2,7 +2,7 @@
   localizedName: Large Medium Alloy Wall
   description: Protects structures from enemy projectiles. Armored.
   type: Wall
-  size: 1
+  size: 2
   health: 3120
   armor: 10
   buildCostMultiplier: 4

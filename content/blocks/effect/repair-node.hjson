@@ -1,0 +1,27 @@
+type: MendProjector
+  name: Repair Node
+description: Slowly repairs structures within it's range. Requires power. Can be boosted using Selevite. Sandbox only.
+  //TODO may need balanced
+  size: 2
+  consumes: {
+power: 3
+  item: {
+  item: selevite
+    optional: true
+    }
+  }
+range: 90
+  baseColor: bd42ff
+phaseColor: bd42ff
+  phaseRangeBoost: 50
+  reload: 420
+  healPercent: 8.5
+  phaseBoost: 10
+  buildVisibility: sandboxOnly
+   //in sandbox until rylid confirms it/tweaks it if he wishes
+  requirements: [
+  cobalt/100
+  light-alloy/80
+  tritonium/50
+  ]
+  category: effect

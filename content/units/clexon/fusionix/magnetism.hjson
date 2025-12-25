@@ -66,7 +66,7 @@
       x: 0
       y: -8.25
       mirror: false
-      reload: 11
+      reload: 110
       shootSound: shootHard2
       shootSoundVolume: 0.9
       ejectEffect: none
@@ -78,18 +78,18 @@
       bullet:
       {
         type: BasicBulletType
-        damage: 56
+        damage: 60
         frontColor: ffffffff
         backColor: a6fbffff
-        width: 16
+        width: 10
         height: 20
-        speed: 8
-        lifetime: 32
+        speed: 5
+        lifetime: 40
         trailColor: a6fbffff
         pierce: true
         pierceBuilding: true
         pierceCap: 2
-        trailWidth: 1.5
+        trailWidth: 2.4
         trailLength: 4
         despawnEffect: none
         knockback: 2

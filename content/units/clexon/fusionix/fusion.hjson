@@ -73,7 +73,7 @@
           offset: 45
         }
         color: a6fbffff
-        damage: 6
+        damage: 24
         knockback: -3
         impact: false
         keepVelocity: true

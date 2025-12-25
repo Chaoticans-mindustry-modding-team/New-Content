@@ -49,6 +49,7 @@
       inaccuracy: 5
       ejectEffect: casing3
       shootSound: shootReign
+      layerOffset: -0.001
       bullet:
       {
         type: BasicBulletType

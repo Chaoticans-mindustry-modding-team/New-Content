@@ -2,7 +2,7 @@
   localizedName: Magnetism
   description:
     '''
-    Fires energy rounds at enemy targets. Equipped with an autocontrolled energy grenade launcher. Can hover over bodies of liquid
+    Fires piercing energy rounds at enemy targets. Equipped with an autocontrolled energy grenade launcher. Can hover over bodies of liquid
 
     [gray]Faction: [sky]Fusionix
     '''
@@ -66,67 +66,75 @@
       x: 0
       y: -8.25
       mirror: false
-      reload: 5
-      shootSound: machineGun
-      shootSoundVolume: 0.4
+      reload: 13
+      shootSound: shootHard2
+      shootSoundVolume: 0.9
       ejectEffect: none
       inaccuracy: 4
       rotate: true
       rotateSpeed: 3
       shootY: 9
+      shake: 1
       bullet:
       {
-        type: RailBulletType
-        collideTerrain: true
-        lifetime: 8
-        damage: 13
-        length: 90
-        pointEffectSpace: 2
-        pierceDamageFactor: 1
-        pierceCap: 1
-        smokeEffect: none
-        status: shocked
-        pointEffect:
-        {
-          line: true
-          baseRotation: 0
-          rotWithParent: true
-          length: 0.0001
-          lenFrom: 2
-          lenTo: 2
-          strokeFrom: 3
-          strokeTo: 0
-          colorFrom: a6fbffff
-          colorTo: a6fbffff
-          cone: 0
-          lifetime: 12
-        }
-        shootEffect:
-        {
-          type: ParticleEffect
-          colorFrom: a6fbffff
-          colorTo: a6fbffff
-          length: 10
-          lifetime: 15
-          cone: 30
-          line: true
-          lenFrom: 2
-          lenTo: 1
-        }
+        type: BasicBulletType
+        damage: 48
+        frontColor: ffffffff
+        backColor: a6fbffff
+        width: 8
+        height: 14
+        speed: 5
+        lifetime: 25
+        trailColor: a6fbffff
+        pierce: true
+        pierceBuilding: true
+        pierceCap: 2
+        trailWidth: 1
+        trailLength: 4
         despawnEffect: none
-        hitEffect: none
-        pierceEffect: none
-        endEffect:
+        knockback: 2
+        status: shocked
+        despawnHit: true
+        hitEffect:
         {
-          type: ParticleEffect
-          colorFrom: a6fbffff
-          colorTo: a6fbffff
-          length: 10
-          lifetime: 15
-          cone: 30
-          line: true
-          lenFrom: 2
-          lenTo: 1
+          type: MultiEffect
+          effects:
+          [
+            {
+              type: ParticleEffect
+              particles: 3
+              length: 4
+              lifetime: 20
+              colorFrom: a6fbffff
+              colorTo: a6fbffff
+              sizeFrom: 3
+              region: newunits-square
+              offset: 45
+              useRotation: false
+            }
+            {
+                type: WaveEffect
+                colorFrom: a6fbffff
+                colorTo: a6fbffff
+                sizeTo: 5
+                lifetime: 10
+            }
+            {
+              type: ParticleEffect
+              line: true
+              colorFrom: a6fbffff
+              colorTo: a6fbffff
+              lifetime: 20
+              particles: 8
+              lenFrom: 2
+              lenTo: 1
+              strokeFrom: 1
+              strokeTo: 0
+              interp: linear
+              sizeInterp: circleIn
+              length: 7
+            }
+          ]
         }
       }
     }

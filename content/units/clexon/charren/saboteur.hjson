@@ -36,7 +36,7 @@ localizedName: Saboteur
       x: 16.75
       y: 0
       shootX: 0.25
-      shootY: 6
+      shootY: 8
       reload: 9
       recoil: 4
       shake: 3
@@ -56,7 +56,7 @@ localizedName: Saboteur
         incendAmount: 6
         incendSpread: 18
         incendChance: 0.8
-        length: 50 
+        height: 50 
           width: 25
         status: burning
         statusDuration: 460

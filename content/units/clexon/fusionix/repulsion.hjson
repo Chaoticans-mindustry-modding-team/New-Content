@@ -2,7 +2,7 @@
   localizedName: Repulsion
   description:
     '''
-    Fires volleys of energy shells at nearby enemy targets.
+    Fires volleys of energy shells at nearby enemy targets. Can hover over bodies of liquid.
 
     [gray]Faction: [sky]Fusionix
     '''
@@ -45,8 +45,8 @@
     }
     {
       type: HoverPart
-      x: 4.5
-      y: 4.75
+      x: 4
+      y: 4
       mirror: true
       radius: 6
       phase: 90

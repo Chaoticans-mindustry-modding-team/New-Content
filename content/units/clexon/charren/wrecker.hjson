@@ -64,6 +64,7 @@
         splashDamage: 9
         status: burning
         statusDuration: 300
+        despawnEffect: none
         hitEffect:
         {
           type: MultiEffect

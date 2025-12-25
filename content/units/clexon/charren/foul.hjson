@@ -47,7 +47,8 @@
       x: 0
       y: 2.5
       reload: 26
-      shootSound: none
+      shootSound: shoot2
+      shootSoundVolume: 0.5
       top: false
       rotate: false
       recoil: 0
@@ -69,17 +70,8 @@
         width: 8
         height: 10
         shrinkY: 0.1
-        frontColor: ff9955ff
+        frontColor: ffa229ff
         backColor: ff7744ff
-        hitColor: ff7744ff
-        shootEffect: {
-            type: SoundEffect
-            sound: shoot2
-            minVolume: 0.5
-            maxVolume: 0.5
-            maxPitch: 1
-            effect: none
-        }
         hitEffect:
         {
           type: MultiEffect
@@ -89,7 +81,7 @@
                 type: WaveEffect
                 sizeTo:4
                 lifetime: 10
-                colorFrom: ff9955ff
+                colorFrom: ffa229ff
                 colorTo: ff7744ff
                 strokeTo: 0.5
             }
@@ -103,7 +95,7 @@
                 strokeFrom: 1
                 strokeTo: 0.5
                 length: 10
-                colorFrom: ff9955ff
+                colorFrom: ffa229ff
                 colorTo: ff7744ff
             }
           ]
@@ -113,7 +105,7 @@
         damage: 14
         speed: 5
         lifetime: 26
-        trailColor: ff7744ff
+        trailColor: ff4d00ff
         trailWidth: 1
         trailLength: 8
         status: burning

@@ -136,7 +136,7 @@
                 type: WaveEffect
                 sizeTo: 4
                 lifetime: 10
-                colorFrom: ff9955ff
+                colorFrom: ffa229ff
                 colorTo: ff7744ff
                 strokeTo: 0.5
               }
@@ -150,7 +150,7 @@
                 strokeFrom: 1
                 strokeTo: 0.5
                 length: 10
-                colorFrom: ff9955ff
+                colorFrom: ffa229ff
                 colorTo: ff7744ff
               }
             ]

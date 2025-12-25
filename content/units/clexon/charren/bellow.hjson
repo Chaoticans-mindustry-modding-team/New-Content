@@ -21,6 +21,8 @@
   rotateSpeed: 2.2
   mechFrontSway: 0.6
   mechSideSway: 0.5
+  stepSound: mechStep
+  stepSoundVolume: 0.5
   immunities:
   [
     burning

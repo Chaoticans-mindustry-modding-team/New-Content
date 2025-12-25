@@ -26,15 +26,10 @@ itemCapacity: 20
     amberglass/100
     tritonium/100
   ]
+researchCostMultiplier: 3.5
   research:
   {
     parent: iron-drill
-    requirements:
-    [
-      cobalt/2950
-    amberglass/2300
-    tritonium/2300
-    ]
     objectives: [
       {
         type: SectorCapture

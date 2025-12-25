@@ -63,19 +63,19 @@
         incendAmount: 3
         incendSpread: 8
         incendChance: 1
-        height: 35
-        width: 10
+        height: 30
+        width: 15
         status: burning
         statusDuration: 460
-        fragBullets: 3
+        fragBullets: 2
         fragRandomSpread: 15
         fragLifeMin: 0.8
         fragLifeMax: 1
         frontColor: ffa229ff
         backColor: ff772eff
         trailColor: ff4d00ff
-        trailWidth: 2
-        trailLength: 20
+        trailWidth: 1
+        trailLength: 5
         fragOnHit: false
         splashDamageRadius: 30
         splashDamage: 42
@@ -91,20 +91,20 @@
               type: ParticleEffect
               colorFrom: ffa229ff
               colorTo: ff4d00ff
-              particles: 3
-              sizeFrom: 2
+              particles: 8
+              sizeFrom: 1
               sizeTo: 0
               interp: circleOut
               sizeInterp: circleIn
               length: 30
-              lifetime: 20
+              lifetime: 30
             }
             {
               type: WaveEffect
               lifetime: 10
               colorFrom: ffa229ff
-              colorTo: ff4d00ff
-              strokeFrom: 0.5
+              colorTo: ff772eff
+              strokeFrom: 1
               strokeTo: 0
               sizeTo: 32
             }
@@ -117,17 +117,17 @@
           type: BasicBulletType
           damage: 20
           knockback: 3.5
-          speed: 4
-          lifetime: 60
-          height: 8
-          width: 12
+          speed: 6
+          lifetime: 15
+          width: 8
+          height: 12
           status: burning
           statusDuration: 200
           frontColor: ffa229ff
           backColor: ff772eff
           trailColor: ff4d00ff
-          trailWidth: 1
-          trailLength: 10
+          trailWidth: 0.5
+          trailLength: 4
           despawnHit: true
           despawnEffect: none
           hitEffect:

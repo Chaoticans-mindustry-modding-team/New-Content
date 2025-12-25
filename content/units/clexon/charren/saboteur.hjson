@@ -1,7 +1,8 @@
-localizedName: Saboteur
+{
+  localizedName: Saboteur
   description:
     '''
-    Fires incendiary frag rounds at enemy targets.
+    Fires heavy piercing incendiary frag rounds at enemy targets.
 
     [gray]Faction: [orange]Charren
     '''
@@ -24,6 +25,7 @@ localizedName: Saboteur
   [
     burning
     melting
+    heated
     bit-slow
   ]
   weapons:
@@ -33,53 +35,128 @@ localizedName: Saboteur
       top: false
       mirror: true
       alternate: true
-      x: 16.75
-      y: 0
+      x: 19.75
+      y: 1.75
       shootX: 0.25
-      shootY: 8
+      shootY: 12
       reload: 9
       recoil: 4
       shake: 3
       shootCone: 8
+      inaccuracy: 5
       ejectEffect: casing3
       shootSound: shootReign
       bullet:
       {
         type: BasicBulletType
         damage: 65
-        knockback: 2
-        speed: 6
+        knockback: 3.5
+        speed: 8
         lifetime: 25
         pierce: true
-          pierceCap: 5
-        pierceDamageFactor: 0.90
-        incendAmount: 6
-        incendSpread: 18
-        incendChance: 0.8
-        height: 50 
-          width: 25
+        pierceBuilding: true
+        pierceCap: 3
+        pierceDamageFactor: 0.9
+        incendAmount: 3
+        incendSpread: 8
+        incendChance: 1
+        height: 35
+        width: 10
         status: burning
         statusDuration: 460
-          fragBullets: 2
-          fragSpread: 40
-          fragRandomSpread: 0
-          backColor: 943d18
-          frontColor: d4733b
-          fragBullet: {
-          type: BasicBulletType
-          damage: 30
-            status: burning
-            backColor: 943d18
-          frontColor: d4733b
-            pierce: true
-            pierceCap: 3
-            }
-        /* shootEffect:
+        fragBullets: 3
+        fragRandomSpread: 15
+        fragLifeMin: 0.8
+        fragLifeMax: 1
+        frontColor: ffa229ff
+        backColor: ff772eff
+        trailColor: ff4d00ff
+        trailWidth: 2
+        trailLength: 20
+        fragOnHit: false
+        splashDamageRadius: 30
+        splashDamage: 42
+        despawnHit: true
+        despawnEffect: none
+        shootEffect: shootBig
+        hitEffect:
         {
           type: MultiEffect
-          effects: []
-        } no shoot effect yet*/
-        smokeEffect: none
+          effects:
+          [
+            {
+              type: ParticleEffect
+              colorFrom: ffa229ff
+              colorTo: ff4d00ff
+              particles: 3
+              sizeFrom: 2
+              sizeTo: 0
+              interp: circleOut
+              sizeInterp: circleIn
+              length: 30
+              lifetime: 20
+            }
+            {
+              type: WaveEffect
+              lifetime: 10
+              colorFrom: ffa229ff
+              colorTo: ff4d00ff
+              strokeFrom: 0.5
+              strokeTo: 0
+              sizeTo: 32
+            }
+            fireHit
+            flameHitSmall
+          ]
+        }
+        fragBullet:
+        {
+          type: BasicBulletType
+          damage: 20
+          knockback: 3.5
+          speed: 4
+          lifetime: 60
+          height: 8
+          width: 12
+          status: burning
+          statusDuration: 200
+          frontColor: ffa229ff
+          backColor: ff772eff
+          trailColor: ff4d00ff
+          trailWidth: 1
+          trailLength: 10
+          despawnHit: true
+          despawnEffect: none
+          hitEffect:
+          {
+            type: MultiEffect
+            effects:
+            [
+              {
+                type: WaveEffect
+                sizeTo: 4
+                lifetime: 10
+                colorFrom: ff9955ff
+                colorTo: ff7744ff
+                strokeTo: 0.5
+              }
+              {
+                type: ParticleEffect
+                particles: 7
+                lifetime: 15
+                line: true
+                lenFrom: 3
+                lenTo: 2
+                strokeFrom: 1
+                strokeTo: 0.5
+                length: 10
+                colorFrom: ff9955ff
+                colorTo: ff7744ff
+              }
+            ]
           }
+        }
+      }
     }
-    ]
+  ]
+}

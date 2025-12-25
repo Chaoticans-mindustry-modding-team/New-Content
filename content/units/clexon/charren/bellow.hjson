@@ -56,9 +56,9 @@
       bullet:
       {
         type: RailBulletType
-        damage: 230
+        damage: 470
         knockback: 13
-        pierceDamageFactor: 0.15
+        pierceDamageFactor: 0.13
         incendAmount: 4
         incendSpread: 12
         incendChance: 0.8

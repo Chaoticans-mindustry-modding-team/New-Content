@@ -75,7 +75,7 @@
         frontColor: ffa229ff
         backColor: ff772eff
         trailColor: ff4d00ff
-        trailWidth: 1
+        trailWidth: 1.5
         trailLength: 5
         fragOnHit: false
         splashDamageRadius: 30

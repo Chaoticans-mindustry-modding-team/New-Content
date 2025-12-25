@@ -35,7 +35,7 @@ localizedName: Saboteur
 speed: 6
 lifetime: 25
       alternate: true
-      x: 14.25
+      x: 16.75
       y: 0
       shootX: 0.25
       shootY: 6

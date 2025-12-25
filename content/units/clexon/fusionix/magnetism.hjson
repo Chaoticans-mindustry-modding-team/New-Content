@@ -15,7 +15,7 @@
   canDrown: false
   rotateSpeed: 2
   omniMovement: false
-  health: 2100
+  health: 2400
   armor: 6
   hitSize: 22
   engineOffset: 11.5
@@ -66,7 +66,7 @@
       x: 0
       y: -8.25
       mirror: false
-      reload: 13
+      reload: 11
       shootSound: shootHard2
       shootSoundVolume: 0.9
       ejectEffect: none
@@ -78,18 +78,18 @@
       bullet:
       {
         type: BasicBulletType
-        damage: 48
+        damage: 56
         frontColor: ffffffff
         backColor: a6fbffff
-        width: 8
-        height: 14
-        speed: 5
-        lifetime: 25
+        width: 16
+        height: 20
+        speed: 8
+        lifetime: 32
         trailColor: a6fbffff
         pierce: true
         pierceBuilding: true
         pierceCap: 2
-        trailWidth: 1
+        trailWidth: 1.5
         trailLength: 4
         despawnEffect: none
         knockback: 2
@@ -107,7 +107,7 @@
               lifetime: 20
               colorFrom: a6fbffff
               colorTo: a6fbffff
-              sizeFrom: 3
+              sizeFrom: 2
               region: newunits-square
               offset: 45
               useRotation: false

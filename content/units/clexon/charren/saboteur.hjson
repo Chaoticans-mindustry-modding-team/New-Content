@@ -32,8 +32,6 @@ localizedName: Saboteur
       name: saboteur-weapon
       top: false
       mirror: true
-speed: 6
-lifetime: 25
       alternate: true
       x: 16.75
       y: 0
@@ -50,6 +48,8 @@ lifetime: 25
         type: BasicBulletType
         damage: 65
         knockback: 2
+        speed: 6
+        lifetime: 25
         pierce: true
           pierceCap: 5
         pierceDamageFactor: 0.90

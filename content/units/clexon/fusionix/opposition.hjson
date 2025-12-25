@@ -2,7 +2,7 @@
   localizedName: Opposition
   description:
     '''
-    Fires piercing energy disks at nearby enemy targets.
+    Fires piercing energy disks at nearby enemy targets. Can hover over bodies of liquid.
 
     [gray]Faction: [sky]Fusionix
     '''

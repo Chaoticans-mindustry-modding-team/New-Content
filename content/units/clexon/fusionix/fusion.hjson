@@ -108,13 +108,13 @@
       soundVolumeMax: 0.7
       shoot:
       {
-        shots: 2
+        shots: 3
       }
       shootCone: 30
       bullet:
       {
         type: LightningBulletType
-        damage: 10
+        damage: 40
         lightningColor: a6fbffff
         lightningLength: 13
         lightningLengthRand: 5

@@ -42,7 +42,7 @@
       y: 1.75
       shootX: 0.25
       shootY: 12
-      reload: 9
+      reload: 5
       recoil: 4
       shake: 3
       shootCone: 8
@@ -53,7 +53,7 @@
       bullet:
       {
         type: BasicBulletType
-        damage: 65
+        damage: 85
         knockback: 3.5
         speed: 8
         lifetime: 25

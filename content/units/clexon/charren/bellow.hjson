@@ -76,8 +76,8 @@
               useRotation: true
               sizeFrom: 4
               sizeTo: 0
-              colorFrom: ffa97aff
-              colorTo: ffa97aff
+              colorFrom: ffa229ff
+              colorTo: ff4d00ff
               length: 0
               lifetime: 30
               rotWithParent: true
@@ -86,7 +86,7 @@
               type: WaveEffect
               sizeTo: 19
               colorFrom: ddddddaa
-              colorTo: ddddddaa
+              colorTo: dddddda33
               lightOpacity: 0
               lifetime: 7
               rotWithParent: true
@@ -104,8 +104,8 @@
           sizeFrom: 2
           sizeTo: 0
           lifetime: 23
-          colorFrom: ffa97aff
-          colorTo: ffa97aff
+          colorFrom: ffa229ff
+          colorTo: ff4d00ff
           length: 0
         }
         pierceEffect: {
@@ -118,8 +118,8 @@
             lenTo: 1
             strokeFrom: 1
             strokeTo: 0.75
-            colorFrom: ffa97aff
-            colorTo: ffa97aff
+            colorFrom: ffa229ff
+            colorTo: ff4d00ff
             cone: 5
             length: 10
         }

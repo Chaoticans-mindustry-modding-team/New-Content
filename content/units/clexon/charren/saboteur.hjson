@@ -32,6 +32,8 @@ localizedName: Saboteur
       name: saboteur-weapon
       top: false
       mirror: true
+speed: 6
+lifetime: 25
       alternate: true
       x: 14.25
       y: 0

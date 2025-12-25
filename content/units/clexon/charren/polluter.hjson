@@ -30,6 +30,8 @@
   outlineColor: 13111cff
   mechLegColor: 13111cff
   rotateSpeed: 2.2
+  stepSound: walkerStepSmall
+  stepSoundVolume: 0.3
   immunities:
   [
     burning

@@ -9,6 +9,6 @@ liquidDrop: poison
 liquidMultiplier: 2
 isLiquid: true
 cacheLayer: water
-attributes: [
+attributes: {
   poison: 3
-]
+}

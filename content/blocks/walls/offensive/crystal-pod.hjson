@@ -70,6 +70,9 @@
     fragVelocityMax: 1
     splashDamage: 60
     splashDamageRadius: 18
+    killShooter: false
+    status: newunits-crystallizing
+    statusDuration: 500
     fragBullet:
     {
       type: BasicBulletType
@@ -93,6 +96,8 @@
       weaveScl: 0.2
       trailWidth: 0.5
       trailColor: bd42ffff
+      status: newunits-crystallizing
+      statusDuration: 400
       intervalBullet:
       {
         type: MultiBulletType
@@ -109,6 +114,8 @@
             knockback: 5
             impact: true
             wdith: 20
+            status: newunits-crystallizing
+            statusDuration: 360
             hitEffect:
             {
               type: ParticleEffect

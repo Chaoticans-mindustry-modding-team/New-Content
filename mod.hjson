@@ -11,8 +11,8 @@
     [gold]As of Version 7x1x, the mod's custom and new music has been moved to Chaoticans-mindustry-modding-team/New-Content-Music.
     '''
   author: Rylid Umil & Aegires
-  subtitle: Adds new content.
-  version: 8x1x11
+  subtitle: Adds [yellow]new content[].
+  version: 8x1x13
   minGameVersion: 154
   contentOrder:
   [
@@ -45,12 +45,12 @@
             // Sharded
             "soldier", "knight",
             // Charren
-            "infiltrator", "wrecker", "bellow",
+            "infiltrator", "wrecker", "bellow", "saboteur",
             "foul", "polluter",
             //Fusionix
             "neutron",
             "ion", "atom", "fusion",
-            "repulsion", "opposition",
+            "repulsion", "opposition", "magnetism",
             // Core
             "diversionist", "general", "corps",
         // Block

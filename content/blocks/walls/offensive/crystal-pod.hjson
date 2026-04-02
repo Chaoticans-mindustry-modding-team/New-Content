@@ -60,6 +60,7 @@
         }
       ]
     }
+    hitShake: 3
     despawnHit: true
     despawnEffect: none
     hitSound: shatter

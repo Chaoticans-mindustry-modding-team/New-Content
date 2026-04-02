@@ -24,7 +24,7 @@
     [
       iron/450
       selevite/1000
-      medium-alloy/200
+      meidum-alloy/200
     ]
   }
   priority: 2
@@ -69,7 +69,6 @@
     fragLifeMax: 2
     fragVelocityMin: 0.6
     fragVelocityMax: 1
-    fragRandomSpread: 55
     splashDamage: 100
     splashDamageRadius: 40
     killShooter: false

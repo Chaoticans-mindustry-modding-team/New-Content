@@ -24,7 +24,7 @@
     [
       iron/450
       selevite/1000
-      meidum-alloy/200
+      medium-alloy/200
     ]
   }
   priority: 2

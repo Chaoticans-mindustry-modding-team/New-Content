@@ -1,0 +1,163 @@
+{
+  localizedName: Large Crystal Pod
+  description:
+    '''
+    Protects structures from enemy projectiles. Creates a large burst of crystallization upon destruction. 
+
+    [red]This crystallization can damage your own team's blocks, so do not place it next to allied structures. Placing these near eachother could cause a chain reaction.
+    '''
+  type: Wall
+  size: 2
+  health: 800
+  buildCostMultiplier: 1
+  requirements:
+  [
+    iron/20
+    selevite/48
+    medium-alloy/16
+  ]
+  category: defense
+  research:
+  {
+    parent: crystal-pod
+    requirements:
+    [
+      iron/450
+      selevite/1000
+      meidum-alloy/200
+    ]
+  }
+  priority: 2
+  destroyBulletSameTeam: false
+  destroySound: none
+  destroyBullet:
+  {
+    type: ExplosionBulletType
+    hitEffect:
+    {
+      type: MultiEffect
+      effects:
+      [
+        {
+          type: ParticleEffect
+          particles: 10
+          lifetime: 20
+          line: true
+          lenFrom: 4
+          lenTo: 1
+          strokeFrom: 2.5
+          strokeTo: 0
+          length: 44
+          colorFrom: bd42ffff
+          colorTo: bd42ffff
+        }
+        {
+          type: WaveEffect
+          lifetime: 20
+          sizeTo: 40
+          colorFrom: bd42ffff
+          colorTo: bd42ffff
+        }
+      ]
+    }
+    hitShake: 6
+    despawnHit: true
+    despawnEffect: none
+    hitSound: shatter
+    fragBullets: 5
+    fragLifeMin: 1
+    fragLifeMax: 2
+    fragVelocityMin: 0.6
+    fragVelocityMax: 1
+    fragRandomSpread: 55
+    splashDamage: 100
+    splashDamageRadius: 40
+    killShooter: false
+    status: newunits-crystallizing
+    statusDuration: 580
+    fragBullet:
+    {
+      type: BasicBulletType
+      frontColor: bd42ffff
+      backColor: 8000ffff
+      speed: 12
+      lifetime: 10
+      width: 4
+      height: 5
+      shrinkY: 1
+      damage: 12
+      sprite: newunits-crystal-bullet
+      bulletInterval: 2
+      hitEffect: none
+      despawnEffect: none
+      intervalRandomSpread: 10
+      pierceCap: -1
+      pierce: true
+      pierceBuilding: true
+      weaveMag: 9
+      weaveScl: 0.2
+      trailWidth: 0.5
+      trailColor: bd42ffff
+      status: newunits-crystallizing
+      statusDuration: 480
+      intervalBullet:
+      {
+        type: MultiBulletType
+        bullets:
+        [
+          {
+            type: ShrapnelBulletType
+            length: 16
+            serrations: 0
+            fromColor: bd42ffff
+            toColor: 8000ffff
+            lifetime: 20
+            damage: 57
+            knockback: 6
+            impact: true
+            wdith: 20
+            status: newunits-crystallizing
+            statusDuration: 440
+            hitEffect:
+            {
+              type: ParticleEffect
+              particles: 8
+              lifetime: 20
+              line: true
+              lenFrom: 3
+              lenTo: 1
+              strokeFrom: 2
+              strokeTo: 0
+              length: 20
+              colorFrom: bd42ffff
+              colorTo: bd42ffff
+            }
+          }
+          {
+            type: ExplosionBulletType
+            despawnEffect:
+            {
+              type: ParticleEffect
+              cone: 30
+              particles: 8
+              lifetime: 20
+              line: true
+              lenFrom: 3
+              lenTo: 1
+              strokeFrom: 2
+              strokeTo: 0
+              length: 20
+              colorFrom: bd42ffff
+              colorTo: bd42ffff
+              useRotation: true
+            }
+            hitEffect: none
+            despawnHit: false
+            despawnSound: shatter
+            killShooter: false
+          }
+        ]
+      }
+    }
+  }
+}

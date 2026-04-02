@@ -63,13 +63,12 @@
     despawnHit: true
     despawnEffect: none
     hitSound: shatter
-    fragBullets: 1
-    fragLifeMin: 2
-    fragLifeMax: 3
+    fragBullets: 3
+    fragLifeMin: 1
+    fragLifeMax: 2
     fragVelocityMin: 0.5
     fragVelocityMax: 1
-    fragRandomSpread: 55
-    splashDamage: 45
+    splashDamage: 60
     splashDamageRadius: 18
     fragBullet:
     {
